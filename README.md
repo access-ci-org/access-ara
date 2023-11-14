@@ -8,6 +8,7 @@
     change your terminal to use bash (git bash works well) or manually install the requirements in `app/requirements.txt`
     and reset the database using `reset_database.py`
 3. Run the app with  `cd app`, ```flask run``` or ```python3 -m flask run```
+    - To run in production, use `uwsgi --ini wsgi.ini` (make edits in the wsgi.ini file as necessary)
 
 ## Developing
 1. Follow the above steps to set up your application

@@ -19,7 +19,7 @@ query_logger = logging.getLogger(__name__)
 query_logger.setLevel('INFO')
 
 #Handler/Formatter for query logs. Send to query.logs
-query_handler = logging.FileHandler("queryInfo.log", mode='w')
+query_handler = logging.FileHandler("queryInfo.log", mode='a')
 rec_handler = logging.FileHandler("formInfo.log", mode='a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 query_handler.setFormatter(formatter)
