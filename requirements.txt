@@ -6,4 +6,5 @@ lxml==4.9.3
 beautifulsoup4
 pandas==2.1.1
 uwsgi
+pyuwsgi
 pytest
