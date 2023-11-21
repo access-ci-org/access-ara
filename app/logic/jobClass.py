@@ -1,5 +1,5 @@
-from models.rps import RPS
-from models.rpJobClass import RpJobClass
+from ..models.rps import RPS
+from ..models.rpJobClass import RpJobClass
 
 def get_job_classes(rpName):
     rp = RPS.select().where(RPS.name==rpName)

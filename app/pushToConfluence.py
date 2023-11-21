@@ -89,7 +89,7 @@ def create_rp_softwares_conf_pages(conf, rpNamesList):
     softwareTablesDict = get_rp_software_tables(rpNamesList)
     parent_id = 245202949
     for rpName in rpNamesList:
-        title = f'{rpName} Softwares'
+        title = f'{rpName} Software'
         body = ''
         for table in softwareTablesDict[rpName]:
             body += table.to_html(index=False,classes='confluenceTable')

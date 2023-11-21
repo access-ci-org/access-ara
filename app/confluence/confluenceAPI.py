@@ -2,18 +2,18 @@ import os
 from dotenv import load_dotenv
 from atlassian import Confluence
 import pandas as pd
-# from APIValidation import validate_table_1, validate_table_2, validate_table_3, validate_table_4, validate_table_5, validate_table_6
 
 def get_conf(url='https://access-ci.atlassian.net'):
 
-   load_dotenv()
+    load_dotenv() # Load the .env file
 
-   altas_user = os.getenv("atlassian_username")
-   conf_token = os.getenv("confluence_token")
+    url = os.getenv("confluence_url")
+    altas_user = os.getenv("atlassian_username")
+    conf_token = os.getenv("confluence_token")
 
-   # The URL endpoint
-   conf = Confluence(url=url, username=altas_user, password=conf_token)
-   return conf
+    # The URL endpoint
+    conf = Confluence(url=url, username=altas_user, password=conf_token)
+    return conf
 
 def create_conf_page(conf,title,body,parent_id=None,space="AccessInternalContentDevelopment"):
    try:

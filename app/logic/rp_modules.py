@@ -9,12 +9,11 @@ def get_modules_and_versions(file,allModulesAndVersions={}):
         currentModules: a list of module names in the given file
         allModulesAndVersions: the param dict updated with the data from the file
 
-    The input file must contain the raw output gotten from running
-    'module avail &> <file-name>.txt' on an RP
+    reference the module/software section of the readme for info on the file format
     """
     with open(file) as f:
             content = f.read()
-    mods = re.split('\s{2,}|\n',content)
+    mods = re.split('\s{2,}|\n',content)    #separate things with more than 2 spaces or a newline
     if 'Where:' in mods:
         desc = mods.index('Where:')
         mods = mods[:desc]
@@ -34,7 +33,7 @@ def get_modules_and_versions(file,allModulesAndVersions={}):
                 else:
                     allModulesAndVersions[moduleName] = moduleVersion
             else:
-                # If the app has no version
+                # If the module has no versions
                 if mod not in currentModules:
                     currentModules.append(mod)
                 if (mod not in allModulesAndVersions):
