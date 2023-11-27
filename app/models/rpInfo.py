@@ -1,5 +1,7 @@
 from . import *
 from .rps import RPS
+
+# Creates the model for RpInfo
 class RpInfo(BaseModel):
     id = PrimaryKeyField()
     rp = ForeignKeyField(RPS)
