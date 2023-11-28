@@ -111,6 +111,7 @@ def log_form_data(formData):
     response = swap_val_to_text(vmNeeded)
     input_logger.info("User Input - VM Needed - %s", response)
 
+#Helper function so log file is more readable
 def swap_val_to_text(radioVal):
     if radioVal == None:
         return 'No input from user'
