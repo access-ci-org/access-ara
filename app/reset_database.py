@@ -17,6 +17,10 @@ import sys
 import re
 
 def recreate_tables():
+
+    """
+    delete and recreate all of the tables in the database
+    """
     db.connect(reuse_if_open=True)
     
     with db.atomic() as transaction:
@@ -35,6 +39,11 @@ def recreate_tables():
     db.close()
 
 def reset_with_test_data():
+
+    """
+    Add test data to the database. This data is used for testing our application 
+    and is not meant to be used for the actual application.
+    """
     db.connect(reuse_if_open=True)
     rps = [
     {"name":"ACES", "scratch_tb":1, "longterm_tb":100, "graphical":2},
@@ -122,6 +131,7 @@ def reset_with_test_data():
     {"gui_name":"CACAO"},
     ]
     
+    # which GUIs belong to which RPs
     rpGUI_together = {
         "Open OnDemand":['bridges-2', 'expanse', 'anvil', 'aces', 'faster'],
         "RStudio":['aces'],
@@ -132,6 +142,7 @@ def reset_with_test_data():
     
 
     with db.atomic() as transaction:
+        #try adding the data to the database. If there is an error, rollback the transaction
         try:
             print("Adding RPS data")
             RPS.insert_many(rps).on_conflict_replace().execute()
@@ -324,7 +335,7 @@ def add_softwares():
             print("Adding data to Software")
             Software.insert_many(modulesAndVersions.items(), fields=[Software.software_name,Software.version]).on_conflict_replace().execute()
 
-            #associate modules with specific RP
+            #associate modules(softwares) with specific RP
             rpSoftware = []
             for item in rpSftw.items():
                 rp = RPS.get(RPS.name == item[0])
