@@ -49,6 +49,7 @@ def get_score():
     return json.dumps(recommendations, sort_keys=True)
     # return redirect(url_for('recommender_page',recommendations=recommendations))
     
+# get_info function pulls from the rpInfo database to get blurbs, links, and documentation links
 @app.route("/get_info", methods=['POST'])
 def get_info():
     info = RpInfo.select()

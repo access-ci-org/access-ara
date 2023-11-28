@@ -324,7 +324,8 @@ def add_softwares():
     print("Adding data to RpSoftware")
     RpSoftware.insert_many(rpSoftware,fields=[RpSoftware.rp,RpSoftware.software,RpSoftware.suitability]).on_conflict_replace().execute()
     db.close()
-
+    
+#Adds "info" to the database. This incudes a blurb about them, a link to the ACCESS resources website, and the individual documentation link
 def add_info():
     db.connect(reuse_if_open=True)
     #info about the RP's as well as links to their websites
@@ -344,6 +345,7 @@ def add_info():
             {'rp':RPS.get(RPS.name == 'open science grid'), 'blurb': r"A virtual HTCondor pool made up of resources from the Open Science Grid (OSG). Recommended for high throughput jobs using a single core, or a small number of threads which can fit on a single compute node.", 'link': r"https://allocations.access-ci.org/resources", 'documentation': r"https://portal.osg-htc.org/documentation/"},
             {'rp':RPS.get(RPS.name == 'open storage network'), 'blurb': r"The Open Storage Network (OSN) is an NSF-funded cloud storage resource, geographically distributed among several pods. Cloud-style storage of project datasets for access using AWS S3-compatible tools. The minimum allocation is 10TB. Storage allocations up to 300TB may be requested via the ACCESS resource allocation process.", 'link': r"https://allocations.access-ci.org/resources", 'documentation': r"https://openstoragenetwork.readthedocs.io/en/latest/"}]
     print('Adding data to RpInfo')
+    #Inserts info data into the database
     RpInfo.insert_many(rpInfo,fields=[RpInfo.rp,RpInfo.blurb,RpInfo.link,RpInfo.documentation]).on_conflict_replace().execute()
     #close the database
     db.close()
