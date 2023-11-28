@@ -46,37 +46,37 @@
        - To capture that output into a file, (first make sure you are in your scratch or work space)
        - run  `module avail &> <file-name>.txt` (replace `file-name` with a descriptive name)
 2. Accessing the .sh file:
-       - Depending on the system, you can run `nano <file_name>.sh` and edit the file as need be
-            - If `nano` is not azvailable, you can run `vi <file_name>.sh`
-       - The file should have these command lines in them:
-          - `rm <hpc_name>_modules.txt`
-          - `module avail &> <hpc_name>_modules.txt`
-          - `scp <hpc_name>_modules <access_username>@access-ara.ccs.uky.edu:` (Read the SSH Section to make sure you have the connection between the RP and the ACCESS System)
-        - Exit and save the .sh file, and then use this command in the terminal: `chmod u+x <file_name>.sh`
-          - This will ensure that the .sh file is activated
+    - Depending on the system, you can run `nano <file_name>.sh` and edit the file as need be
+      - If `nano` is not azvailable, you can run `vi <file_name>.sh`
+    - The file should have these command lines in them:
+      - `rm <hpc_name>_modules.txt`
+      - `module avail &> <hpc_name>_modules.txt`
+      - `scp <hpc_name>_modules <access_username>@access-ara.ccs.uky.edu:` (Read the SSH Section to make sure you have the connection between the RP and the ACCESS System)
+    - Exit and save the .sh file, and then use this command in the terminal: `chmod u+x <file_name>.sh`
+      - This will ensure that the .sh file is activated
 3. Accessing the Crontab:
-        - In the terminal command line of a HPC, run `crontab -e`
-        - To run the .sh file at a specific time every day, type `<minute(0-59)> <hour(0-23)> * * * /<file_name>.sh`
-        - Save and exit the crontab list
+    - In the terminal command line of a HPC, run `crontab -e`
+    - To run the .sh file at a specific time every day, type `<minute(0-59)> <hour(0-23)> * * * /<file_name>.sh`
+    - Save and exit the crontab list
 4. Transferring the file to the Software directory
-        - In the ACCESS home directory, create a .sh and access it
-        - In the .sh file, type these lines of code:
-           - `mv <hpc_name>_modules.txt /home/gazula/ACCESS_Project/Software`
-           - (This line needs to be replicated for every HPC that has a text file in the ACCESS home directory)
+    - In the ACCESS home directory, create a .sh and access it
+    - In the .sh file, type these lines of code:
+        - `mv <hpc_name>_modules.txt /home/gazula/ACCESS_Project/Software`
+        - (This line needs to be replicated for every HPC that has a text file in the ACCESS home directory)
         - Save and exit the file, and run `chmod u+x <file_name>.sh`
 
 ## Creating an SSH key for each HPC
 1. In each HPC system, run this command in the terminal: `ssh-keygen -t rsa`
 2. Then run `cat id_rsa` in the terminal, and copy the key so it is readily available
 3. Enter into the ACCESS system using `ssh access-ara.ccs.uky.edu -l <access_username>`
-4.     It will ask for yuor password the first time you enter the ACCESS system
-5. In the ACCESS home directory, run this command in the terminal: `vi authorized_keys`
-6.     If it is not there, run `ls` to check what is in the directory, but it should be there
-7. Paste the id_rsa key that was copied into the "authorized_keys" file
-8.     Make sure there are no spaces or gaps in the pasted key or else it will not work
-9. Save the file and exit
-10.     To make sure the key worked, exit the ACCESS system and try `ssh access-ara.ccs.uky.edu -l <access_username>` again
-11.     A password should not be required from this point on, but if there is, then the key was not correctly put in the "authorized_keys" file in the ACCESS system
+    - It will ask for yuor password the first time you enter the ACCESS system
+4. In the ACCESS home directory, run this command in the terminal: `vi authorized_keys`
+    - If it is not there, run `ls` to check what is in the directory, but it should be there
+5. Paste the id_rsa key that was copied into the "authorized_keys" file
+    - Make sure there are no spaces or gaps in the pasted key or else it will not work
+6. Save the file and exit
+    - To make sure the key worked, exit the ACCESS system and try `ssh access-ara.ccs.uky.edu -l <access_username>` again
+    - A password should not be required from this point on, but if there is, then the key was not correctly put in the "authorized_keys" file in the ACCESS system
 
 **TODO:**
 See the issues on GitHub for TODO items
