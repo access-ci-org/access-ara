@@ -45,20 +45,20 @@
 1. To get a list of the available modules on an HPC run `module avail` if there is a need to get the list manually
        - To capture that output into a file, (first make sure you are in your scratch or work space)
        - run  `module avail &> <file-name>.txt` (replace `file-name` with a descriptive name)
-2. Accessing the .sh file:
+2. Accessing the .sh file on each HPC system:
     - Depending on the system, you can run `nano <file_name>.sh` and edit the file as need be
-      - If `nano` is not azvailable, you can run `vi <file_name>.sh`
+      - If `nano` is not available, you can run `vi <file_name>.sh`
     - The file should have these command lines in them:
       - `rm <hpc_name>_modules.txt`
       - `module avail &> <hpc_name>_modules.txt`
       - `scp <hpc_name>_modules <access_username>@access-ara.ccs.uky.edu:` (Read the SSH Section to make sure you have the connection between the RP and the ACCESS System)
     - Exit and save the .sh file, and then use this command in the terminal: `chmod u+x <file_name>.sh`
       - This will ensure that the .sh file is activated
-3. Accessing the Crontab:
+3. Accessing the Crontab in each HPC system:
     - In the terminal command line of a HPC, run `crontab -e`
     - To run the .sh file at a specific time every day, type `<minute(0-59)> <hour(0-23)> * * * /<file_name>.sh`
     - Save and exit the crontab list
-4. Transferring the file to the Software directory
+4. Transferring the file to the Software directory:
     - In the ACCESS home directory, create a .sh and access it
     - In the .sh file, type these lines of code:
         - `mv <hpc_name>_modules.txt /home/gazula/ACCESS_Project/Software`
