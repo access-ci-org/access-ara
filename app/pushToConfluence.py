@@ -1,5 +1,6 @@
 from models.rps import RPS
 from models.rpMemory import RpMemory
+from models.rpSoftware import RpSoftware
 from logic.research import get_research_fields
 from logic.jobClass import get_job_classes
 from logic.softwares import get_softwares 
@@ -67,9 +68,7 @@ def get_rp_software_tables(rpNamesList):
     for rpName in rpNamesList:
         tablesDict[rpName] = []
         softwares = get_softwares(rpName)
-        rpSoftware={'Software Packages': [software.software.software_name for software in softwares],
-                    'Suitability':[software.suitability for software in softwares],
-                    'CPU/GPU':''}
+        rpSoftware={'Software Packages': [software.software.software_name for software in softwares]}
         df = pd.DataFrame(data=rpSoftware)
         tablesDict[rpName].append(df)
     return tablesDict
@@ -95,10 +94,24 @@ def create_rp_softwares_conf_pages(conf, rpNamesList):
             body += table.to_html(index=False,classes='confluenceTable')
         create_conf_page(conf,title=title,body=body,parent_id=parent_id)
 
+def create_total_rp_softwares_conf_pages(conf, rpNamesList):
+    softwareDict = get_rp_software_tables(rpNamesList)
+    parent_id = 245202949
+    title = "All RP Software"
+    body = ''
+    for rpName in rpNamesList:
+        for table in softwareDict[rpName]:
+            body += rpName.to_html(Index=False, classes='confluenceTable')
+            body += table.to_html(index=False, classes='confluenceTable')
+
+    create_conf_page(conf, title=title, body=body, parent_id=parent_id)
+
+
 def create_all_rp_conf_pages():
     conf = get_conf()
     rps = RPS.select().order_by(RPS.name)
     rpNamesList = [rp.name for rp in rps]
     create_rp_data_conf_pages(conf,rpNamesList)
     create_rp_softwares_conf_pages(conf,rpNamesList)
+    create_total_rp_softwares_conf_pages(conf,rpNamesList)
 
