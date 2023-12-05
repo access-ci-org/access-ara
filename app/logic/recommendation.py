@@ -154,8 +154,6 @@ def classify_rp_storage(storageType):
 
     return classifiedRps
 
-
-
 def get_recommendations(formData):
     scoreBoard = {}
     yes = '1'
