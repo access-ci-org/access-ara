@@ -1,6 +1,7 @@
 from . import *
 from .rps import RPS
 
+# Creates the model for RpMemory
 class RpMemory(BaseModel):
     id = PrimaryKeyField()
     rp = ForeignKeyField(RPS)

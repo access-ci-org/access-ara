@@ -346,7 +346,8 @@ def add_softwares():
             transaction.rollback()
             print(e)
     db.close()
-
+    
+#Adds "info" to the database. This incudes a blurb about them, a link to the ACCESS resources website, and the individual documentation link
 def add_info():
     db.connect(reuse_if_open=True)
     with db.atomic() as transaction:

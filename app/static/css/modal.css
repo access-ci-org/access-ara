@@ -1,12 +1,14 @@
+/* Main modal container*/
 .container {
     display: flex;  
     justify-content: flex-end;
   }
-  
+  /* Recommendation boxes inside modal*/
   .box {
     position: relative;
     width:  100%;
     max-height: 40px;
+    /* ACCESS Color*/
     background-color: #1a5b6e;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -15,12 +17,14 @@
     display:  flex;
     flex-direction: row;
     justify-content: flex-start;
+    /* Transitions for expanding the boxes*/
     transition:  height 0.3s ease-in-out;
     transition:  max-height 0.3s ease-in-out;
+    /* ACCESS Color*/
     border: 4px solid #48c0b9;
     color: #ffffff;
   }
-  
+  /* Caret on recommendation boxes to indicate expanded or not */
   .caret {
     position: absolute;
     top: 0px;
@@ -31,7 +35,7 @@
     font-size:  24 px;
     color:  #000;
   }
-  
+  /* Content of recommendation boxes*/
   .box-content {
     position: relative;
     height: 100%;
@@ -41,7 +45,7 @@
     justify-content: flex-start;
     padding-left:  5px;
   }
-  
+  /* Title of recommendation boxes*/
   .box-title {
     margin: 0;
     color: #ffffff;
@@ -49,22 +53,23 @@
     margin-bottom: 10px;
   }
   
-
-  
-  
+  /* Rotates the caret upon the recommendation box being expanded*/
   .box.expand .caret {
     transform: rotate(180deg);
   }
   
+  /* Reason tags inside of recommendation boxes (expanded)*/
   .tag {
     display: inline-block;
     padding: 5px 10px;
+    /* ACCESS color*/
     background-color: #f07537;
     color: #000000; /* Set text color to white for better visibility */
     border-radius: 10px;
     margin-right: 5px;
   }
-  
+
+  /* Container of all the reason tags*/
   .tags-container {
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +78,7 @@
     margin-top: 10px;
   }
 
+  /* Container of all the text and tags inside recommendation boxes*/
   .body-container {
     display: flex;
     flex-direction: column;

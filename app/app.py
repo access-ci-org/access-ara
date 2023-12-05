@@ -48,6 +48,7 @@ def get_score():
     recommendations = get_recommendations(data)
     return json.dumps(recommendations, sort_keys=True)
     
+# get_info function pulls from the rpInfo database to get blurbs, links, and documentation links
 @app.route("/get_info", methods=['POST'])
 def get_info():
     info = RpInfo.select()

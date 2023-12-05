@@ -35,9 +35,11 @@ $(document).ready(function(){
             calculate_score(formData).then(function(recommendation){
                 if (!(recommendation === "{}")){
                     display_score(recommendation);
-                    find_top_three(recommendation, 3);
+                    // Creates the boxes for the top 3 recommendations in the modal
+                    visualize_recommendations(recommendation, 3);
                     openModal(recommendation);
                     $("#see_less").hide()
+                    // Saves the form data so that it can be used in the "See More" button below.
                     formDataObject = formData
                 }else{
                     let alertMsg = "Not enough information to make recommendation. Please provide a more detailed response"
@@ -55,20 +57,22 @@ $(document).ready(function(){
         return false
     })
 
-    //add more calculated scores when see more button is clicked
+    //add three more calculated scores when see more button is clicked
     $('#see_more').on('click', function(){
+        // load the form data from the original submition
         let formData = formDataObject
+        // Reads the number of boxes/recommendations in the modal to only load the subsequent three
         var numberOfBoxes = $("#modal-body .box").length;
         calculate_score(formData).then(function(recommendation){
                 
             if (!(recommendation === "{}")){
-                   
-                find_top_three(recommendation, numberOfBoxes+3)
+                // Makes the next three boxes/recommendations and adds to the modal  
+                visualize_recommendations(recommendation, numberOfBoxes+3)
                 .then(() => {
                 })
                 .catch((error) => {
                     console.error("Error occurred: " + error);
-                    // Hide the button or perform other error handling tasks
+                    // Hide the "See More" button and show the "See Less" when all recommendations have been displayed
                     $("#see_more").hide()
                     $("#see_less").show()   
                 });       
@@ -78,13 +82,16 @@ $(document).ready(function(){
             })
         })    
         
-
+    // Reduce the recommendations back down to the top three
     $('#see_less').on('click', function(){
+        // load the form data from the original submition
         let formData = formDataObject
+        // Clears the modal
         document.querySelector('.modal-body').innerHTML = '';
+        //Calculates the top three and displays them in the modal
         calculate_score(formData).then(function(recommendation){
             if (!(recommendation === "{}")){
-                find_top_three(recommendation, 3);
+                visualize_recommendations(recommendation, 3);
                 $("#see_more").show()
                 $("#see_less").hide()
                 }
@@ -255,22 +262,24 @@ function calculate_score(formData){
        
 }
 
-//function to parse JSON data a create a list of top three recommendations
-async function find_top_three(scores, recNum){
+//function to parse JSON data a create a boxes in the modal to display them
+async function visualize_recommendations(scores, recNum){
+    // parses JSON data from calculate scores function
     var parsedScores = JSON.parse(scores);
-    var topThree=[];
+    var recommendations=[];
+    //Creates a variable recommendations that houses the parsed JSON data
     for (var rp in parsedScores) {
         if (parsedScores.hasOwnProperty(rp)) {
             var score = parsedScores[rp]['score'];
             var reasons = parsedScores[rp]['reasons'];
-            topThree.push({ name: rp, score: score, reasons: reasons });
+            recommendations.push({ name: rp, score: score, reasons: reasons });
         }
     }
-
-    topThree.sort(function(a, b) {
+    // sorts the recommendations from high to low scores
+    recommendations.sort(function(a, b) {
         return b.score - a.score;
     });
-
+    // takes recNum argument to make params that only display a certain section of recommendations. Used for "See More" button
     var low = recNum-3
     var high = recNum
     for (let i=low; i<(high); i++){
@@ -280,7 +289,7 @@ async function find_top_three(scores, recNum){
         box.id = `box${i}`;
         box.innerHTML = box.innerHTML +`
             <div class="box-content" id='box${i}-content'>
-            <h3 class="box-title" id="box${i}-name">${topThree[i].name}</h3>
+            <h3 class="box-title" id="box${i}-name">${recommendations[i].name}</h3>
             <div class="tags-container" id="box${i}-suitability">
             <h4 class="tags-title"></h4>
             </div>
@@ -289,13 +298,14 @@ async function find_top_three(scores, recNum){
             <span class="caret"><i class="fas fa-caret-down"></i></span>
             `;
         var body = document.querySelector('.modal-body')
+        // Add the recommendation box to the modal body
         body.appendChild(box);
 
-        //Generate tags for inside the boxes. These tags are the reasons for the recommendation
+        //Generate "reason" tags for inside the boxes. These tags are the reasons for the recommendation
         var tagsContainer = document.getElementById(`box${i}-suitability`);
         if (tagsContainer) {
-            //tagsContainer.innerHTML = ''; // Clear existing tags
-            var tags = topThree[i].reasons;
+            var tags = recommendations[i].reasons;
+            // creates the individual reason rtags
             if (tags) {
                 tags.forEach(function(tag) {
                 var tagElement = document.createElement('div');
@@ -306,10 +316,10 @@ async function find_top_three(scores, recNum){
             }
         }
         
-        //Generates blurbs and links for each RP
+        //Generates blurbs and links for each RP by pulling from database
         try {
-            // Make the AJAX request using fetch API and await the response
-            const jsonData = { rp: topThree[i].name }; // Modify this based on your data structure
+            // Make the AJAX request to info/blurb database using fetch API and await the response
+            const jsonData = { rp: recommendations[i].name }; 
             const response = await $.ajax({    
                 type: "POST",
                 url: '/get_info',
@@ -319,14 +329,14 @@ async function find_top_three(scores, recNum){
                     reject(error)
                 }
             });
+            // takes the JSON response and uses it to add the blurbs and links into the recommendations boxes
             const info = await response;
-            console.log(info);
             const bodyContainer = document.getElementById(`box${i}-body`);
             if (bodyContainer) {
                 const blurbArray = info.blurb;
                 const hyperlinkArray = info.hyperlink;
                 const documentationArray = info.documentation;
-                const index = info.rp.indexOf(topThree[i].name);
+                const index = info.rp.indexOf(recommendations[i].name);
                 bodyContainer.innerHTML = bodyContainer.innerHTML + `
                     <p class="box-text">${blurbArray[index]}</p>
                     <a class="box-link" href="${hyperlinkArray[index]}" target="_blank">More info</a>
@@ -343,17 +353,19 @@ async function find_top_three(scores, recNum){
 function openModal() {
     $("#submitModal").modal("show");
 }
-
+// Waits for the user to click on a modal box and expands/shrinks upon click. Height is relative to the length of the info inside the body
 document.querySelector('.modal-body').addEventListener('click', function(event) {
     var target = event.target;
     var box = target.closest('.box');
     if (box) {
         var content = box.querySelector('.body-container');
         var tags = box.querySelector('.tags-container');
+        // If the box is already open
         if (box.style.maxHeight){
             box.style.maxHeight = null;
             box.classList.toggle('expand');
         }
+        // If the box is not already open
         else{
             var textHeight = content.clientHeight;
             var tagHeight = tags.clientHeight;
