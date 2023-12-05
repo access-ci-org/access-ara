@@ -47,7 +47,6 @@ def get_score():
     log_form_data(data)
     recommendations = get_recommendations(data)
     return json.dumps(recommendations, sort_keys=True)
-    # return redirect(url_for('recommender_page',recommendations=recommendations))
     
 @app.route("/get_info", methods=['POST'])
 def get_info():

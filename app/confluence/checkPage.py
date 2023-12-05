@@ -2,6 +2,13 @@ from .APIValidation import *
 from .confluenceAPI import get_conf, get_tabulated_page_data
 
 def check_page(pageId):
+
+    """
+    Checks a given confluence page for errors.
+    This is meant to be used by RPs when making changes to their page to ensure that the page is valid.
+    If new tables are added to the page, this function will need to be updated to check those tables as well.
+    Similarly if existing tables are changed or removed, this function will need to be updated.
+    """
     conf = get_conf()
     tables, pageName = get_tabulated_page_data(conf, pageId)
 
