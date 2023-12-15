@@ -63,7 +63,7 @@ def calculate_score_rf(researchFieldList,scoreBoard):
             scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
             scoreBoard[rp]['reasons'].append(row.research_field.field_name)
         else:
-            scoreBoard[rp] = {'score': 1, 'reasons': [row.research_field.field_name]}
+            scoreBoard[rp] = {'score': max(1,suitability), 'reasons': [row.research_field.field_name]}
     return scoreBoard
 
 def calculate_score_jc(jobClassList,scoreBoard):
@@ -92,7 +92,7 @@ def calculate_score_jc(jobClassList,scoreBoard):
             scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
             scoreBoard[rp]['reasons'].append(row.job_class.class_name)
         else:
-            scoreBoard[rp] = {'score': 1, 'reasons': [row.job_class.class_name]}
+            scoreBoard[rp] = {'score': max(1,suitability), 'reasons': [row.job_class.class_name]}
     
     return(scoreBoard)
 
@@ -117,12 +117,12 @@ def calculate_score_software(softwareList,scoreBoard):
     query_logger.info("SQLite Query - Softwares:\n%s", rpWithSoftware)
     for row in rpWithSoftware:
         rp = row.rp.name
-        suitability = 5         # Prioritize softwares more than hardwares or GUIs
+        suitability = 10         # Prioritize softwares more than hardwares or GUIs
         if rp in scoreBoard:
             scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
             scoreBoard[rp]['reasons'].append(row.software.software_name)
         else:
-            scoreBoard[rp] = {'score': 1, 'reasons': [row.software.software_name]}
+            scoreBoard[rp] = {'score': max(1,suitability), 'reasons': [row.software.software_name]}
 
     return(scoreBoard)
 
