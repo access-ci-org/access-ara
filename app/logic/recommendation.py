@@ -117,7 +117,7 @@ def calculate_score_software(softwareList,scoreBoard):
     query_logger.info("SQLite Query - Softwares:\n%s", rpWithSoftware)
     for row in rpWithSoftware:
         rp = row.rp.name
-        suitability = row.suitability
+        suitability = 5         # Prioritize softwares more than hardwares or GUIs
         if rp in scoreBoard:
             scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
             scoreBoard[rp]['reasons'].append(row.software.software_name)

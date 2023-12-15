@@ -339,9 +339,9 @@ def add_softwares():
             rpSoftware = []
             for item in rpSftw.items():
                 rp = RPS.get(RPS.name == item[0])
-                rpSoftware.extend([(rp,Software.get(Software.software_name==software),1) for software in item[1]])
+                rpSoftware.extend([(rp,Software.get(Software.software_name==software)) for software in item[1]])
             print("Adding data to RpSoftware")
-            RpSoftware.insert_many(rpSoftware,fields=[RpSoftware.rp,RpSoftware.software,RpSoftware.suitability]).on_conflict_replace().execute()
+            RpSoftware.insert_many(rpSoftware,fields=[RpSoftware.rp,RpSoftware.software]).on_conflict_replace().execute()
         except Exception as e:
             transaction.rollback()
             print(e)

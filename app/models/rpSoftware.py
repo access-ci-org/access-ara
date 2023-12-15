@@ -6,4 +6,3 @@ class RpSoftware(BaseModel):
     id = PrimaryKeyField()
     rp = ForeignKeyField(RPS)
     software = ForeignKeyField(Software, backref="rp_with_Software")
-    suitability = IntegerField(default=0)
