@@ -164,7 +164,6 @@ def update_rp_table_form_conf(tables,pageName):
         print(msg+("Memory data was not updated."))
     
     # get the data for the guiTable tables, validate it, delete the current table, and create a new one with the new data
-    # TODO: add suitability to the database
     guiTable = tables[3]
     guiTableIsValid = validate_suitability(guiTable)
     if guiTableIsValid:
@@ -175,8 +174,7 @@ def update_rp_table_form_conf(tables,pageName):
                 RpGUI.delete().where(RpGUI.rp == rp).execute()
                 for item in guiTuple:
                     gui, guiCreated = GUI.get_or_create(gui_name = item[0])
-                    #TODO: suitability not added
-                    rpGuiData =  {'rp':rp,'gui':gui}
+                    rpGuiData =  {'rp':rp,'gui':gui,'suitability':item[1]}
                     rpGui = RpGUI.create(**rpGuiData)
             except Exception as e:
                 msg = f"Error while trying to update {rpName} GUI"

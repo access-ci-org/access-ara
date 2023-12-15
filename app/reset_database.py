@@ -306,7 +306,8 @@ def reset_with_test_data():
             for gui in list(rpGUI_together.keys()):
                 for rp in rpGUI_together[gui]:
                     rpGui.append({"rp": RPS.get(RPS.name == rp),
-                    "gui": GUI.get(GUI.gui_name == gui)})
+                    "gui": GUI.get(GUI.gui_name == gui),
+                    "suitability":1})
 
             print("Adding the GUI to the RP list")
             RpGUI.insert_many(rpGui).on_conflict_replace().execute()

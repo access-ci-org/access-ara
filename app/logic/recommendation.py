@@ -176,11 +176,12 @@ def get_recommendations(formData):
         if formData.get('used-gui'):
             for rp in rpsWithGui:
                 if rp.gui.gui_name in formData.get('used-gui'):
+                    suitability = rp.suitability
                     if rp.rp.name in scoreBoard:
-                        scoreBoard[rp.rp.name]['score'] += 1
+                        scoreBoard[rp.rp.name]['score'] += calculate_points(scoreBoard[rp.rp.name]['score'],suitability)
                         scoreBoard[rp.rp.name]['reasons'].append(rp.gui.gui_name)
                     else:
-                        scoreBoard[rp.rp.name] = {'score': 1, 'reasons': [rp.gui.gui_name]}
+                        scoreBoard[rp.rp.name] = {'score': max(1,suitability), 'reasons': [rp.gui.gui_name]}
                         
         #If user does not select any specific GUIs give points to every RP with a GUI
         else:
@@ -188,11 +189,12 @@ def get_recommendations(formData):
             rpNames = list({rp.rp.name for rp in rpsWithGui})
             # increase score for all rps with a GUI
             for rp in rpNames:
+                suitability = rp.suitability
                 if rp in scoreBoard:
-                    scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'])
+                    scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
                     scoreBoard[rp]['reasons'].append("GUI")
                 else:
-                    scoreBoard[rp] = {'score': 1, 'reasons': ["GUI"]}
+                    scoreBoard[rp] = {'score': max(1,suitability), 'reasons': ["GUI"]}
             
     
     # Research Field
@@ -295,7 +297,7 @@ def get_recommendations(formData):
                 scoreBoard[rp.name]['score['] = calculate_points(scoreBoard[rp.name]['score'], suitability)
                 scoreBoard[rp.name]['reasons'].append("Graphics")
             else:
-                scoreBoard[rp.name] = {'score': 1 * suitability, 'reasons': ["Graphics"]}
+                scoreBoard[rp.name] = {'score': max(suitability,1), 'reasons': ["Graphics"]}
 
     # CPU and GPU in parallel
     CpuGpuParallelNeeded = formData.get("cpu-gpu-parallel")
@@ -321,7 +323,7 @@ def get_recommendations(formData):
                 scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'],suitability)
                 scoreBoard[rp.name]['reasons'].append("Always Running")
             else:
-                scoreBoard[rp.name] = {'score': 1*suitability, 'reasons': ["Always Running"]}
+                scoreBoard[rp.name] = {'score': max(suitability,1), 'reasons': ["Always Running"]}
 
     # Virtual machine
     VmNeeded = formData.get("vm")
@@ -333,7 +335,7 @@ def get_recommendations(formData):
                 scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'],suitability)
                 scoreBoard[rp.name]['reasons'].append("Virtual Machine")
             else:
-                scoreBoard[rp.name] = {'score': 1*suitability, 'reasons': ["Virtual Machine"]}
+                scoreBoard[rp.name] = {'score': max(suitability,1), 'reasons': ["Virtual Machine"]}
     query_logger.addHandler(rec_handler)
     query_logger.info('Recommendation Scoreboard:\n%s', scoreBoard)
     query_logger.removeHandler(rec_handler)
