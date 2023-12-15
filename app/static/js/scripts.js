@@ -339,8 +339,8 @@ async function visualize_recommendations(scores, recNum){
                 const index = info.rp.indexOf(recommendations[i].name);
                 bodyContainer.innerHTML = bodyContainer.innerHTML + `
                     <p class="box-text">${blurbArray[index]}</p>
-                    <a class="box-link" href="${hyperlinkArray[index]}" target="_blank">More info</a>
-                    <a class="box-link" href="${documentationArray[index]}" target="_blank">Documentation</a>
+                    <a class="box-link" href="${hyperlinkArray[index]}" target="_blank">Brief Summary</a>
+                    <a class="box-link" href="${documentationArray[index]}" target="_blank">Detailed Information</a>
                 `;
             }
           } catch (error) {
