@@ -20,7 +20,3 @@ def test_get_softwares_type():
     assert isinstance(get_softwares("ACES"), peewee.ModelSelect)
     for software in get_softwares("ACES"):
         assert isinstance(software, RpSoftware)
-"""
-def test_get_softwares_type_not():
-    assert not isinstance(get_softwares("ACES"), str)
-"""

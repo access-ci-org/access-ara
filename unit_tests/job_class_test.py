@@ -19,7 +19,3 @@ def test_get_job_classes_type():
     assert isinstance(get_job_classes("Bridges-2"), peewee.ModelSelect)
     for job in get_job_classes("Bridges-2"):
         assert isinstance(job, RpJobClass)
-"""
-def test_get_job_classes_type_not():
-    assert not isinstance(get_job_classes("Bridges-2"), str)
-"""

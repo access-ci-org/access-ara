@@ -45,6 +45,7 @@ def get_software():
 def get_score():
     data = request.get_json()
     log_form_data(data)
+    print(data, "\n")
     recommendations = get_recommendations(data)
     return json.dumps(recommendations, sort_keys=True)
     # return redirect(url_for('recommender_page',recommendations=recommendations))

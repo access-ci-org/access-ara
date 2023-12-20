@@ -19,7 +19,3 @@ def test_get_research_fields_type():
     assert isinstance(get_research_fields("KyRIC"), peewee.ModelSelect)
     for field in get_research_fields("Expanse"):
         assert isinstance(field, RpResearchField)
-"""
-def test_get_research_fields_type_not():
-    assert not isinstance(get_research_fields("KyRIC"), str)
-"""

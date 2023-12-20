@@ -294,7 +294,7 @@ def get_recommendations(formData):
         for rp in graphicalRps:
             suitability = rp.graphical
             if rp.name in scoreBoard:
-                scoreBoard[rp.name]['score['] = calculate_points(scoreBoard[rp.name]['score'], suitability)
+                scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'], suitability)
                 scoreBoard[rp.name]['reasons'].append("Graphics")
             else:
                 scoreBoard[rp.name] = {'score': 1 * suitability, 'reasons': ["Graphics"]}
