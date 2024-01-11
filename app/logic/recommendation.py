@@ -106,6 +106,7 @@ def calculate_score_software(softwareList,scoreBoard):
     """
     # Set the parameters used to filter the table
     filter = []
+    softwareList = Software.select(Software.software_name)
     for software in softwareList:
         filter.append((Software.software_name == f"{software}"))
     

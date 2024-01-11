@@ -1,24 +1,27 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
 import json
 from .models.rps import RPS
 from .models.gui import GUI
 from .models.researchField import ResearchFields
+from .models.rpSoftware import RpSoftware
 from .models.jobClass import JobClass
 from .models.software import Software
 from .models.rpInfo import RpInfo
 from .logic.form_logging import log_form_data
 from .logic.recommendation import get_recommendations
 from .confluence.checkPage import check_page
+import pandas as pd
+import numpy as np
 
 app = Flask(__name__)
 
 @app.route("/")
 def recommender_page():
-
     rps = RPS.select()
     research_fields = ResearchFields.select().order_by(ResearchFields.field_name)
     guis = GUI.select()
+
     return render_template("questions.html", 
                            rps = rps, 
                            research_fields = research_fields,
@@ -67,6 +70,15 @@ def check_conf_page(pageId):
     return render_template("check_page.html",
                            messages=messages,
                            pageName=pageName)
+
+@app.route("/software_search")
+def software_search():
+    df = pd.read_csv('./softwareInfo.csv',na_filter=False)
+    print(type(df))
+    table = df.to_html(classes='table-striped" id = "softwareTable',index=False,border=1)
+
+    return render_template("software_search.html",table=table)
+    
 
 if __name__ == '__main__':
     load_dotenv()

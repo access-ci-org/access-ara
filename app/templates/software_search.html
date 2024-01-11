@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block scripts %}
+    {{super()}}
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="module" src="../static/js/table.js"></script>
+
+{% endblock %}
+<div>
+{%block page_title %}
+<div style="text-align: center;">
+<h4 style="text-align:center;">ACCESS Software Search</h4>
+</div>
+{% endblock %}
+
+{% block app_content %}
+<div class="table-responsive">
+    <div class="table-responsive" id="softwareTableDiv" style="width: 80vw;">
+        {{table|safe}}
+    </div>
+</div>
+    
+    
+
+{%endblock%}

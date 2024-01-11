@@ -14,6 +14,10 @@
         <link rel="stylesheet" type="text/css" href="../static/css/modal.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- Data Table for Software Search -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css">
+
     {% endblock %}
     <title>
         {% block title %}
@@ -32,6 +36,14 @@
             <br>
             <div class="container justify-content-center">
                 <div class="row justify-content-center" style="height: auto;">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="/">Resource Advisor</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/software_search">Software Search</a>
+                        </li>
+                      </ul>
                     <div class="col">
                         <div id="alert-div"></div>
                     </div>
@@ -42,7 +54,7 @@
                         {% endblock%}
                     </div>
                     <div class="w-100"></div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="app_content">
                         {%block app_content%}
                             {#application content is added here#}
                         {%endblock%}
