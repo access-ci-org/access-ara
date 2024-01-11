@@ -10,17 +10,15 @@ $(document).ready(function(){
     $('html,body').animate({scrollTop:0},'fast')
 
     //event listeners for tagify fields
-    fieldTagify.on("invalid", showAddField);
-    addFieldTagify.on("remove", hideAddField)
-    .on("invalid", fieldInWhitelist);
+    //fieldTagify.on("invalid", showAddField);
+    //addFieldTagify.on("remove", hideAddField)
+    addFieldTagify.on("invalid", fieldInWhitelist)
 
-    jobTagify.on("invalid", showAddJob);
-    addJobTagify.on("remove", hideAddJob)
-    .on("invalid", jobInWhitelist);
+    //jobTagify.on("invalid", showAddJob);
+    addJobTagify.on("invalid", jobInWhitelist);
 
-    softwareTagify.on("invalid", showAddSoftware);
-    addSoftwareTagify.on("remove", hideAddSoftware)
-    .on("invalid", softwareInWhitelist);
+    //softwareTagify.on("invalid", showAddSoftware);
+    addSoftwareTagify.on("invalid", softwareInWhitelist);
 
     //initialize tooltips
     $('[data-toggle="tooltip"]').tooltip()
