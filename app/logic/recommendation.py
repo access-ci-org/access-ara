@@ -2,8 +2,6 @@ from ..models.rpGUI import RpGUI
 from ..models.gui import GUI
 from ..models.researchField import ResearchFields
 from ..models.rpResearchField import RpResearchField
-from ..models.jobClass import JobClass
-from ..models.rpJobClass import RpJobClass
 from ..models.rps import RPS
 from ..models.software import Software
 from ..models.rpSoftware import RpSoftware
@@ -65,36 +63,6 @@ def calculate_score_rf(researchFieldList,scoreBoard):
         else:
             scoreBoard[rp] = {'score': max(1,suitability), 'reasons': [row.research_field.field_name]}
     return scoreBoard
-
-def calculate_score_jc(jobClassList,scoreBoard):
-    """
-    Calculates and gives points to rps based on the items in the jobClassList
-    jobClassList: list of job classes the user selected
-    scoreBoard: dict with RPs as keys and their scores as values
-                if RP has not been assigned a value yet then it will not be in the dict
-    return: returns the updated scoreboard
-    """
-    # Set the parameters used to filter the table
-    filter = []
-    for jobClass in jobClassList:
-        filter.append((JobClass.class_name == f"{jobClass}"))
-    
-    # Combine the RpJobClass and JobClass tables, and 
-    # Only select the ones that match the filter
-    rpWithJobClass = (RpJobClass.select()
-                                .join(JobClass, on=(RpJobClass.job_class==JobClass.id))
-                                .where(reduce(operator.or_,filter))).select()
-    query_logger.info("SQLite Query - Job Classes:\n%s", rpWithJobClass)
-    for row in rpWithJobClass:
-        rp = row.rp.name
-        suitability = row.suitability
-        if rp in scoreBoard:
-            scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
-            scoreBoard[rp]['reasons'].append(row.job_class.class_name)
-        else:
-            scoreBoard[rp] = {'score': max(1,suitability), 'reasons': [row.job_class.class_name]}
-    
-    return(scoreBoard)
 
 def calculate_score_software(softwareList,scoreBoard):
     """
@@ -203,12 +171,6 @@ def get_recommendations(formData):
 
     if researchFieldList:
         scoreBoard = calculate_score_rf(researchFieldList,scoreBoard)
-    
-    # Job Class
-    jobClasses = formData.get("job-class")
-    jobClassList = jobClasses.split(",")
-    if jobClasses:
-        scoreBoard = calculate_score_jc(jobClassList, scoreBoard)
 
     # Storage
     storageNeeded = formData.get("storage")
