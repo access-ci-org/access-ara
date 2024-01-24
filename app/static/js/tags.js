@@ -17,7 +17,7 @@ fieldTagify = new Tagify (fieldInput, {
     editTags: false,
     dropdown:{
         enabled: 0,
-        maxItems: 10,
+        maxItems: 10000,
         highlightFirst: true
         }
 });
@@ -37,7 +37,7 @@ softwareTagify = new Tagify (softwareInput, {
     editTags: false,
     dropdown: {
         enabled: 0,
-        maxItems: 10,
+        maxItems: 10000,
         highlightFirst: true
     }
 });
