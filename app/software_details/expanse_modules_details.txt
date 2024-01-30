@@ -1,0 +1,449 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/anaconda3/2021.05/q4munrg.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : anaconda3")
+whatis("Version : 2021.05")
+whatis("Target : zen")
+whatis("Short description :  Anaconda is a free and open-source distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment. Package versions are managed by the package management system conda. ")
+help([[ Anaconda is a free and open-source distribution of the Python and R
+programming languages for scientific computing, that aims to simplify
+package management and deployment. Package versions are managed by the
+package management system conda.]])
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/lib")
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/man")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/share/man")
+prepend_path("ACLOCAL_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/share/aclocal")
+prepend_path("PKG_CONFIG_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/")
+setenv("ANACONDA3HOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/aria2/1.35.0/q32jtg2.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : aria2")
+whatis("Version : 1.35.0")
+whatis("Target : zen")
+whatis("Short description : An ultra fast download utility")
+help([[An ultra fast download utility]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/aria2-1.35.0-q32jtg2274yzehcsxnx2ogwiahr4tk4n/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/aria2-1.35.0-q32jtg2274yzehcsxnx2ogwiahr4tk4n/share/man")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/aria2-1.35.0-q32jtg2274yzehcsxnx2ogwiahr4tk4n/")
+setenv("ARIA2HOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/aria2-1.35.0-q32jtg2274yzehcsxnx2ogwiahr4tk4n")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/gcc/10.2.0/npcyll4.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : gcc")
+whatis("Version : 10.2.0")
+whatis("Target : zen")
+whatis("Short description : The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, and Go, as well as libraries for these languages.")
+whatis("Configure options : --with-pkgversion=Spack GCC --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-system-zlib --with-zstd-include=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/zstd-1.5.0-ixhjq2kjkwwiubjqtzompy3ovx3xskjy/include --with-zstd-lib=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/zstd-1.5.0-ixhjq2kjkwwiubjqtzompy3ovx3xskjy/lib --disable-bootstrap --with-mpfr-include=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpfr-4.1.0-2gn43ksz5mn4l2ydhukvmf2hc5n6lsu2/include --with-mpfr-lib=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpfr-4.1.0-2gn43ksz5mn4l2ydhukvmf2hc5n6lsu2/lib --with-gmp-include=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gmp-6.2.1-6d5recuzoijnpzdmyuyatwr32y6e756r/include --with-gmp-lib=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gmp-6.2.1-6d5recuzoijnpzdmyuyatwr32y6e756r/lib --with-mpc-include=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpc-1.1.0-7brtlqfdvz2iwdzeyd23igqlwz3fq4d5/include --with-mpc-lib=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpc-1.1.0-7brtlqfdvz2iwdzeyd23igqlwz3fq4d5/lib --without-isl --with-stage1-ldflags=-Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/lib64 -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gmp-6.2.1-6d5recuzoijnpzdmyuyatwr32y6e756r/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpc-1.1.0-7brtlqfdvz2iwdzeyd23igqlwz3fq4d5/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpfr-4.1.0-2gn43ksz5mn4l2ydhukvmf2hc5n6lsu2/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/zlib-1.2.11-bmchsimapzrndjqxvin7wptdiiwoxdqq/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/zstd-1.5.0-ixhjq2kjkwwiubjqtzompy3ovx3xskjy/lib --with-boot-ldflags=-Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/lib64 -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gmp-6.2.1-6d5recuzoijnpzdmyuyatwr32y6e756r/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpc-1.1.0-7brtlqfdvz2iwdzeyd23igqlwz3fq4d5/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mpfr-4.1.0-2gn43ksz5mn4l2ydhukvmf2hc5n6lsu2/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/zlib-1.2.11-bmchsimapzrndjqxvin7wptdiiwoxdqq/lib -Wl,-rpath,/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/zstd-1.5.0-ixhjq2kjkwwiubjqtzompy3ovx3xskjy/lib -static-libstdc++ -static-libgcc")
+help([[The GNU Compiler Collection includes front ends for C, C++, Objective-C,
+Fortran, Ada, and Go, as well as libraries for these languages.]])
+family("compiler")
+prepend_path("MODULEPATH","/cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/gcc/10.2.0")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/lib")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/lib64")
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/share/man")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/")
+setenv("CC","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/bin/gcc")
+setenv("CXX","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/bin/g++")
+setenv("FC","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/bin/gfortran")
+setenv("F77","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd/bin/gfortran")
+setenv("GCCHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gcc-10.2.0-npcyll4gxjhf4tejksmdzlsl3d3usqpd")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/git-lfs/2.11.0/kmruniy.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : git-lfs")
+whatis("Version : 2.11.0")
+whatis("Target : zen")
+whatis("Short description : Git LFS is a system for managing and versioning large files in association with a Git repository. Instead of storing the large files within the Git repository as blobs, Git LFS stores special 'pointer files' in the repository, while storing the actual file contents on a Git LFS server.")
+help([[Git LFS is a system for managing and versioning large files in
+association with a Git repository. Instead of storing the large files
+within the Git repository as blobs, Git LFS stores special "pointer
+files" in the repository, while storing the actual file contents on a
+Git LFS server.]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/git-lfs-2.11.0-kmruniycjms2wanaoci7dqxlsmdymlpk/bin")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/git-lfs-2.11.0-kmruniycjms2wanaoci7dqxlsmdymlpk/")
+setenv("GIT_LFSHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/git-lfs-2.11.0-kmruniycjms2wanaoci7dqxlsmdymlpk")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/intel/19.1.3.304/6pv46so.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : intel")
+whatis("Version : 19.1.3.304")
+whatis("Target : zen")
+whatis("Short description : Intel Compilers.")
+help([[Intel Compilers.]])
+family("compiler")
+prepend_path("MODULEPATH","/cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/intel/19.1.3.304")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/lib")
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/man")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/")
+prepend_path("CLASSPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi/intel64/lib/mpi.jar")
+prepend_path("FI_PROVIDER_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov:/usr/lib64/libfabric")
+prepend_path("INTEL_LICENSE_FILE","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/licenses:/opt/intel/licenses:/home/spack_cpu/intel/licenses")
+setenv("I_MPI_ROOT","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi")
+prepend_path("NLSPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64/locale/%l_%t/%N")
+setenv("PSTLROOT","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/pstl")
+setenv("TBBROOT","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/tbb")
+prepend_path("CPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/tbb/include")
+prepend_path("CPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/tbb/include")
+prepend_path("CPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/pstl/stdlib")
+prepend_path("CPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/pstl/include")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/tbb/lib/intel64/gcc4.8")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi/intel64/lib")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi/intel64/lib/release")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin")
+prepend_path("LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/tbb/lib/intel64/gcc4.8")
+prepend_path("LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/tbb/lib/intel64/gcc4.8")
+prepend_path("LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib")
+append_path("MANPATH","/cm/local/apps/environment-modules/current/share/man")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi/man")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/man/common")
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/bin/intel64:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/bin:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/bin:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/compilers_and_libraries_2020.4.304/linux/mpi/intel64/bin:/cm/shared/apps/spack/0.17.3/cpu/b/bin:/home/spack_cpu/.local/bin:/home/spack_cpu/bin:/cm/shared/apps/sdsc/1.0/bin:/cm/shared/apps/sdsc/1.0/sbin:/cm/shared/apps/slurm/current/sbin:/cm/shared/apps/slurm/current/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin")
+setenv("CC","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/bin/icc")
+setenv("CXX","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/bin/icpc")
+setenv("FC","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/bin/ifort")
+setenv("F77","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/bin/ifort")
+setenv("F90","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn/bin/ifort")
+setenv("INTELHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/intel-19.1.3.304-6pv46sozip5o35ezrswc4p77gsiawktn")
+setenv("INTEL_LICENSE_FILE","40000@elprado.sdsc.edu:40200@elprado.sdsc.edu")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/mercurial/5.8/qmgrjvl.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : mercurial")
+whatis("Version : 5.8")
+whatis("Target : zen")
+whatis("Short description : Mercurial is a free, distributed source control management tool.")
+help([[Mercurial is a free, distributed source control management tool.]])
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mercurial-5.8-qmgrjvleugdkhc5ijwpmsinywwm4oqd7/lib")
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mercurial-5.8-qmgrjvleugdkhc5ijwpmsinywwm4oqd7/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mercurial-5.8-qmgrjvleugdkhc5ijwpmsinywwm4oqd7/man")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mercurial-5.8-qmgrjvleugdkhc5ijwpmsinywwm4oqd7/")
+prepend_path("PYTHONPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mercurial-5.8-qmgrjvleugdkhc5ijwpmsinywwm4oqd7/lib/python3.8/site-packages")
+prepend_path("PYTHONPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/py-certifi-2021.10.8-ixa6wtjmteszugbovjfxaew7mi3txuv2/lib/python3.8/site-packages")
+prepend_path("PYTHONPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/py-pygments-2.10.0-xkuh7tbh4yxnu3sd6meujjwoeol2dsrs/lib/python3.8/site-packages")
+prepend_path("PYTHONPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/py-setuptools-58.2.0-f2kuovwhtc2jlhcy3xw6jsuzx5duafuz/lib/python3.8/site-packages")
+setenv("MERCURIALHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/mercurial-5.8-qmgrjvleugdkhc5ijwpmsinywwm4oqd7")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/pigz/2.6/bgymyil.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : pigz")
+whatis("Version : 2.6")
+whatis("Target : zen")
+whatis("Short description : A parallel implementation of gzip for modern multi-processor, multi-core machines.")
+help([[A parallel implementation of gzip for modern multi-processor, multi-core
+machines.]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/pigz-2.6-bgymyil7yhcxiww2mttx4f73tbu4rclv/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/pigz-2.6-bgymyil7yhcxiww2mttx4f73tbu4rclv/man")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/pigz-2.6-bgymyil7yhcxiww2mttx4f73tbu4rclv/")
+setenv("PIGZHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/pigz-2.6-bgymyil7yhcxiww2mttx4f73tbu4rclv")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/sratoolkit/2.10.9/rn4humf.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : sratoolkit")
+whatis("Version : 2.10.9")
+whatis("Target : zen")
+whatis("Short description : The NCBI SRA Toolkit enables reading ('dumping') of sequencing files from the SRA database and writing ('loading') files into the .sra format.")
+help([[The NCBI SRA Toolkit enables reading ("dumping") of sequencing files
+from the SRA database and writing ("loading") files into the .sra
+format.]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/sratoolkit-2.10.9-rn4humfynpkxe3qenp6ockaanopzyp7c/bin")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/sratoolkit-2.10.9-rn4humfynpkxe3qenp6ockaanopzyp7c/")
+setenv("SRATOOLKITHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/sratoolkit-2.10.9-rn4humfynpkxe3qenp6ockaanopzyp7c")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/ucx/1.10.1/wla3unl.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : ucx")
+whatis("Version : 1.10.1")
+whatis("Target : zen")
+whatis("Short description : a communication library implementing high-performance messaging for MPI/PGAS frameworks")
+whatis("Configure options : --enable-mt --enable-cma --disable-params-check --with-avx --enable-optimizations --disable-assertions --disable-logging --with-pic --with-rc --with-ud --with-dc --with-mlx5-dv --with-ib-hw-tm --with-dm --without-cm --without-rocm --without-java --without-cuda --without-gdrcopy --without-knem --without-xpmem")
+help([[a communication library implementing high-performance messaging for
+MPI/PGAS frameworks]])
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/ucx-1.10.1-wla3unlkfcl3ans33xvsb7pik3fprj65/lib")
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/ucx-1.10.1-wla3unlkfcl3ans33xvsb7pik3fprj65/bin")
+prepend_path("PKG_CONFIG_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/ucx-1.10.1-wla3unlkfcl3ans33xvsb7pik3fprj65/lib/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/ucx-1.10.1-wla3unlkfcl3ans33xvsb7pik3fprj65/")
+setenv("UCXHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/ucx-1.10.1-wla3unlkfcl3ans33xvsb7pik3fprj65")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/aocc/3.2.0/io3s466.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : aocc")
+whatis("Version : 3.2.0")
+whatis("Target : zen")
+whatis("Short description :  The AOCC compiler system is a high performance, production quality code generation tool. The AOCC environment provides various options to developers when building and optimizing C, C++, and Fortran applications targeting 32-bit and 64-bit Linux platforms. The AOCC compiler system offers a high level of advanced optimizations, multi-threading and processor support that includes global optimization, vectorization, inter-procedural analyses, loop transformations, and code generation. AMD also provides highly optimized libraries, which extract the optimal performance from each x86 processor core when utilized. The AOCC Compiler Suite simplifies and accelerates development and tuning for x86 applications. Please install only if you agree to terms and conditions depicted under : https://developer.amd.com/wordpress/media/files/AOCC_EULA.pdf Example for installation: 'spack install aocc +license-agreed' ")
+help([[ The AOCC compiler system is a high performance, production quality code
+generation tool. The AOCC environment provides various options to
+developers when building and optimizing C, C++, and Fortran applications
+targeting 32-bit and 64-bit Linux platforms. The AOCC compiler system
+offers a high level of advanced optimizations, multi-threading and
+processor support that includes global optimization, vectorization,
+inter-procedural analyses, loop transformations, and code generation.
+AMD also provides highly optimized libraries, which extract the optimal
+performance from each x86 processor core when utilized. The AOCC
+Compiler Suite simplifies and accelerates development and tuning for x86
+applications. Please install only if you agree to terms and conditions
+depicted under :
+https://developer.amd.com/wordpress/media/files/AOCC_EULA.pdf Example
+for installation: 'spack install aocc +license-agreed']])
+family("compiler")
+prepend_path("MODULEPATH","/cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/aocc/3.2.0")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/aocc-3.2.0-io3s466wsnnichqc2o2rikbuloev5bmq/lib")
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/aocc-3.2.0-io3s466wsnnichqc2o2rikbuloev5bmq/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/aocc-3.2.0-io3s466wsnnichqc2o2rikbuloev5bmq/share/man")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/aocc-3.2.0-io3s466wsnnichqc2o2rikbuloev5bmq/")
+setenv("AOCCHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/aocc-3.2.0-io3s466wsnnichqc2o2rikbuloev5bmq")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/entrezdirect/10.7.20190114/6pkkpx2.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : entrezdirect")
+whatis("Version : 10.7.20190114")
+whatis("Target : zen")
+whatis("Short description : Entrez Direct (EDirect) provides access to the NCBI's suite of interconnected databases (publication, sequence, structure, gene, variation, expression, etc.) from a UNIX terminal window.")
+help([[Entrez Direct (EDirect) provides access to the NCBI's suite of
+interconnected databases (publication, sequence, structure, gene,
+variation, expression, etc.) from a UNIX terminal window.]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/entrezdirect-10.7.20190114-6pkkpx2ql4s4gvzf3frwa7u5rnczkojb/bin")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/entrezdirect-10.7.20190114-6pkkpx2ql4s4gvzf3frwa7u5rnczkojb/")
+prepend_path("PERL5LIB","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-html-parser-3.72-lstykdjwftjbujkrm4wo4cchb264bmwn/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-html-tagset-3.20-22tb53n2zicqae3nhl3o5vqibtsild4b/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-http-message-6.13-a5fvgf6kz6j7v7bk2qodg34yec4t7r7g/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-encode-locale-1.05-lnmhq2laca4tumjkg7k6ihljp2o2imog/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-http-date-6.02-bj7ujwezvlblnnp42mo2n4lgndldbt2c/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-io-html-1.001-5b7jltdwhvqfergjc7vysypjjobishk6/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-lwp-mediatypes-6.02-n7n3bf2yu6b6ate2je3ttw4wqzobobmx/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-try-tiny-0.28-ocilsxepfe2t6ql2zrehyszhxzoghqap/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-uri-1.72-lqq3ctebdb6ccjiwexrqgd3nki5uiffb/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-libwww-perl-6.33-7awxaxxwlpfifbldppl3n4bb7nb7znwg/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-file-listing-6.04-uv7qvpgw5opwmxk5zvguqemrpnqc3jcd/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-http-cookies-6.04-pxpp2cuz7zqmxnfkrrtipzpgxh2d5iqw/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-http-daemon-6.01-hkvjvelylrxs3ivkcwtsk6f3pnbjjjvg/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-http-negotiate-6.01-6le3wlhn5xzl4jnumzahedy4kdo5otdg/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-net-http-6.17-h5iqhsgue4ztwhtva427xdtqwtyvuwga/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-www-robotrules-6.02-qsy5ctat2pewdvb2rmogjixmzotyrnes/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-lwp-protocol-https-6.04-ng3ihiwmgjha3bmftp4fhp2mxqbh26jl/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-io-socket-ssl-2.052-qj25lb7ervhrsel3g4ophs5zicyppk5a/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-net-ssleay-1.85-ldohwcv5yx7nsncb6kbqxgcl7n4jodl5/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-mozilla-ca-20160104-u2jxdlurjcv4sdcbzap6hxt6vdl5qfpn/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-test-requiresinternet-0.05-dafpj6gviwzvhydo3uow27uofolliy7v/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-xml-simple-2.24-phctdn27qrpj2crglleuamno4aupvjmp/lib/perl5:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-xml-parser-2.44-mrri3cd3unqpsytcfp4u35mru36lzjhn/lib/perl5")
+setenv("ENTREZDIRECTHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/entrezdirect-10.7.20190114-6pkkpx2ql4s4gvzf3frwa7u5rnczkojb")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/gh/2.0.0/mkz3uxl.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : gh")
+whatis("Version : 2.0.0")
+whatis("Target : zen")
+whatis("Short description : GitHub's official command line tool.")
+help([[GitHub's official command line tool.]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gh-2.0.0-mkz3uxlgroosa5ssntwo2eekfpiinpac/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gh-2.0.0-mkz3uxlgroosa5ssntwo2eekfpiinpac/share/man")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gh-2.0.0-mkz3uxlgroosa5ssntwo2eekfpiinpac/")
+setenv("GHHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/gh-2.0.0-mkz3uxlgroosa5ssntwo2eekfpiinpac")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/git/2.31.1/ldetm5y.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : git")
+whatis("Version : 2.31.1")
+whatis("Target : zen")
+whatis("Short description : Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. ")
+whatis("Configure options : --with-curl=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/curl-7.79.0-rosx7ltfo2csxkkdr5nbqagijnxcncl7 --with-expat=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/expat-2.4.1-6qidguin5s7lkgveikpkcusvc5qinvfd --with-iconv=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/libiconv-1.16-yderrdc4lsgjejs532627rl5nwrwzmde --with-openssl=/usr --with-zlib=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/zlib-1.2.11-bmchsimapzrndjqxvin7wptdiiwoxdqq --with-perl=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/perl-5.32.0-onqgauyhbnajd2pqsqxvgbmthpp7mghp/bin/perl --with-libpcre2=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/pcre2-10.36-pkkj7n2tdbgho4suygjp6hxw3ggete6r --without-tcltk")
+help([[Git is a free and open source distributed version control system
+designed to handle everything from small to very large projects with
+speed and efficiency.]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/git-2.31.1-ldetm5yfzgqxstk7ymvkkhppm6oylc5f/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/git-2.31.1-ldetm5yfzgqxstk7ymvkkhppm6oylc5f/share/man")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/git-2.31.1-ldetm5yfzgqxstk7ymvkkhppm6oylc5f/")
+setenv("GITHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/git-2.31.1-ldetm5yfzgqxstk7ymvkkhppm6oylc5f")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/matlab/2022b/lefe4oq.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : matlab")
+whatis("Version : 2022b")
+whatis("Target : zen")
+whatis("Short description : MATLAB (MATrix LABoratory) is a multi-paradigm numerical computing environment and fourth-generation programming language. A proprietary programming language developed by MathWorks, MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages, including C, C++, C#, Java, Fortran and Python.")
+help([[MATLAB (MATrix LABoratory) is a multi-paradigm numerical computing
+environment and fourth-generation programming language. A proprietary
+programming language developed by MathWorks, MATLAB allows matrix
+manipulations, plotting of functions and data, implementation of
+algorithms, creation of user interfaces, and interfacing with programs
+written in other languages, including C, C++, C#, Java, Fortran and
+Python. Note: MATLAB is licensed software. You will need to create an
+account on the MathWorks homepage and download MATLAB yourself. Spack
+will search your current directory for the download file. Alternatively,
+add this file to a mirror so that Spack can find it. For instructions on
+how to set up a mirror, see
+http://spack.readthedocs.io/en/latest/mirrors.html]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/matlab-2022b-lefe4oq6ja6l3blhcrs5thezd6h5k5wy/bin")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/matlab-2022b-lefe4oq6ja6l3blhcrs5thezd6h5k5wy/")
+setenv("MATLABHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/matlab-2022b-lefe4oq6ja6l3blhcrs5thezd6h5k5wy")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/parallel/20210922/sqru6rr.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : parallel")
+whatis("Version : 20210922")
+whatis("Target : zen")
+whatis("Short description : GNU parallel is a shell tool for executing jobs in parallel using one or more computers. A job can be a single command or a small script that has to be run for each of the lines in the input. ")
+help([[GNU parallel is a shell tool for executing jobs in parallel using one or
+more computers. A job can be a single command or a small script that has
+to be run for each of the lines in the input.]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/parallel-20210922-sqru6rrn4lrsizqb6s4khghkom4qranh/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/parallel-20210922-sqru6rrn4lrsizqb6s4khghkom4qranh/share/man")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/parallel-20210922-sqru6rrn4lrsizqb6s4khghkom4qranh/")
+setenv("PARALLELHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/parallel-20210922-sqru6rrn4lrsizqb6s4khghkom4qranh")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/rclone/1.56.2/mldjorr.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : rclone")
+whatis("Version : 1.56.2")
+whatis("Target : zen")
+whatis("Short description : Rclone is a command line program to sync files and directories to and from various cloud storage providers")
+help([[Rclone is a command line program to sync files and directories to and
+from various cloud storage providers]])
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/rclone-1.56.2-mldjorrje7xri3jiivear6axyhxclksh/bin")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/rclone-1.56.2-mldjorrje7xri3jiivear6axyhxclksh/")
+setenv("RCLONEHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/rclone-1.56.2-mldjorrje7xri3jiivear6axyhxclksh")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/spack/0.17.3/cpu/b/share/spack/lmod/linux-rocky8-x86_64/Core/subversion/1.14.0/qpzq6zs.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : subversion")
+whatis("Version : 1.14.0")
+whatis("Target : zen")
+whatis("Short description : Apache Subversion - an open source version control system.")
+whatis("Configure options : --with-apr=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/apr-1.7.0-44atvr5divb5vyjb33cucjfo44dr7x7l --with-apr-util=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/apr-util-1.6.1-h4udtdbnsms3xbtbedcgq35njxk32rac --with-sqlite=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/sqlite-3.36.0-sgph7zcqrzvrj7jmswpppkfxwjuwksg5 --with-expat=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/expat-2.4.1-6qidguin5s7lkgveikpkcusvc5qinvfd/include:/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/expat-2.4.1-6qidguin5s7lkgveikpkcusvc5qinvfd/lib:expat --with-zlib=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/zlib-1.2.11-bmchsimapzrndjqxvin7wptdiiwoxdqq --without-apxs --without-trang --without-doxygen --without-berkeley-db --without-sasl --without-libmagic --without-kwallet --without-jdk --without-boost --with-lz4=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/lz4-1.9.3-wc4iiz4gf7cdjizezkih2s6lnk6lo73q --with-utf8proc=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/utf8proc-2.4.0-cbzypzwb7aaujfic5c5fyt6bma6ijgzi --with-serf=/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/serf-1.3.9-ozfrfsp62mtg7wrujlet7tnzsg3wbvjy --without-swig")
+help([[Apache Subversion - an open source version control system.]])
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/subversion-1.14.0-qpzq6zs23mjmzgctlvkr2sjjzbhh44om/lib")
+prepend_path("PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/subversion-1.14.0-qpzq6zs23mjmzgctlvkr2sjjzbhh44om/bin")
+prepend_path("MANPATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/subversion-1.14.0-qpzq6zs23mjmzgctlvkr2sjjzbhh44om/share/man")
+prepend_path("PKG_CONFIG_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/subversion-1.14.0-qpzq6zs23mjmzgctlvkr2sjjzbhh44om/share/pkgconfig")
+prepend_path("CMAKE_PREFIX_PATH","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/subversion-1.14.0-qpzq6zs23mjmzgctlvkr2sjjzbhh44om/")
+setenv("SUBVERSIONHOME","/cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/subversion-1.14.0-qpzq6zs23mjmzgctlvkr2sjjzbhh44om")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/local/modulefiles/cmjob:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Adds the cmdaemon-cmjob binaries to your path. ")
+prepend_path("PATH","/cm/local/apps/cmd/bin")
+prepend_path("MANPATH","/cm/local/apps/cmd/man")
+prepend_path("PYTHONPATH","/cm/local/apps/cmd/scripts")
+help([[	Adds the cmdaemon-cmjob binaries to your path.
+]])
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/local/modulefiles/cuda-dcgm/3.1.3.1:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("adds NVIDIA CUDA DCGM ")
+prepend_path("PATH","/cm/local/apps/cuda-dcgm/3.1.3.1/bin")
+prepend_path("LIBRARY_PATH","/cm/local/apps/cuda-dcgm/3.1.3.1/lib64")
+prepend_path("LD_RUN_PATH","/cm/local/apps/cuda-dcgm/3.1.3.1/lib64")
+prepend_path("LD_LIBRARY_PATH","/cm/local/apps/cuda-dcgm/3.1.3.1/lib64")
+prepend_path("MANPATH","/cm/local/apps/cuda-dcgm/3.1.3.1/share/man")
+prepend_path("INCLUDEPATH","/cm/local/apps/cuda-dcgm/3.1.3.1/include")
+prepend_path("PYTHONPATH","/cm/local/apps/cuda-dcgm/3.1.3.1/src/dcgm/bindings")
+setenv("NVVS_BIN_PATH","/cm/local/apps/cuda-dcgm/3.1.3.1/share/nvidia-validation-suite")
+help([[	Adds NVIDIA DCGM to your environment variables,
+]])
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/local/modulefiles/docker/20.10.21:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Adds docker to your environment ")
+prepend_path("PATH","/cm/local/apps/docker/current/bin")
+prepend_path("PATH","/cm/local/apps/docker/current/libexec")
+prepend_path("MANPATH","/cm/local/apps/docker/current/man")
+help([[	Adds docker to your environment
+]])
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/local/modulefiles/lua/5.4.4:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("adds LUA to your environment variables ")
+prepend_path("PATH","/cm/local/apps/lua/5.3.5/bin")
+prepend_path("LD_LIBRARY_PATH","/cm/local/apps/lua/5.3.5/lib64")
+help([[	Adds LUA to your environment variables,
+]])
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/local/modulefiles/openmpi/mlnx/gcc/64/4.1.5a1:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("adds OpenMPI to your environment variables ")
+prepend_path("PATH","/usr/mpi/gcc/openmpi-4.1.5a1/bin")
+prepend_path("MANPATH","/usr/mpi/gcc/openmpi-4.1.5a1/share/man")
+setenv("MPI_HOME","/usr/mpi/gcc/openmpi-4.1.5a1")
+setenv("MPI_RUN","/usr/mpi/gcc/openmpi-4.1.5a1/bin/mpirun")
+prepend_path("LD_RUN_PATH","/usr/mpi/gcc/openmpi-4.1.5a1/lib64")
+prepend_path("LD_LIBRARY_PATH","/usr/mpi/gcc/openmpi-4.1.5a1/lib64")
+help([[	Adds OpenMPI to your environment variables,
+]])
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/local/modulefiles/singularitypro/3.9:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("SingularityPRO is a long-term supported version of the SingularityCE container runtime. ")
+prepend_path("PATH","/cm/local/apps/singularitypro/3.9/bin")
+prepend_path("MANPATH","/cm/local/apps/singularitypro/3.9/share/man")
+help([[	Adds Sylabs SingularityPRO to your environment. Use the `singularity` command to run and build containers.
+]])
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/access/modulefiles/accessusage/0.5-1.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name              : accessusage")
+whatis("Version           : 0.5-1")
+whatis("Short Description : Adds ACCESS accessusage tool to paths in the login shell environment.")
+help([[Adds ACCESS accessusage tool to paths in the login shell environment.
+]])
+prepend_path("PATH","/cm/shared/apps/access/accessusage/accessusage-0.5-1/bin")
+prepend_path("MANPATH","/cm/shared/apps/access/accessusage/accessusage-0.5-1/man")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/apps/access/modulefiles/cue-login-env.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name              : cue-login-env")
+whatis("Version           : 1.0")
+whatis("Short Description : Loads Common User Environment (CUE) login-env environment.")
+help([[Loads Common User Environment (CUE) login-env environment.
+]])
+setenv("CUE_HOSTNAME","login01.expanse.sdsc.edu")
+setenv("CUE_PROMPT_HOST","login01")
+setenv("CUE_RESOURCE_ID","expanse.sdsc.xsede.org")
+setenv("CUE_DOCS","https://portal.xsede.org/sdsc-expanse")
+setenv("CUE_HOME","/home/hbrogna")
+setenv("CUE_HOME_TYPE","nfs")
+setenv("CUE_CLUSTER_HOME","/home/hbrogna")
+setenv("CUE_NODE_SCRATCH","/scratch")
+setenv("CUE_NODE_SCRATCH_TYPE","ext2/ext3")
+setenv("CUE_SCRATCH","/expanse/lustre/scratch/hbrogna/temp_project")
+setenv("CUE_SCRATCH_TYPE","lustre-2.12.5")
+setenv("CUE_CLUSTER_SCRATCH","/expanse/lustre/scratch/hbrogna/temp_project")
+setenv("CUE_WORK","/expanse/lustre/projects/ukl102/hbrogna")
+setenv("CUE_WORK_TYPE","lustre-2.12.5")
+setenv("CUE_CLUSTER_WORK","/expanse/lustre/projects/ukl102/hbrogna")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/modulefiles/AMDuProf/3.4.475.lua:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Name : AMduProf")
+whatis("Version : 3.4.475")
+whatis("Target : zen2")
+whatis("Short description :The AMD uProf offers Command Line Interface to perform CPU and Power profiling functionalities on AMD's CPUs, APUs and discrete GPUs. On Intel processors, limited CPU Profiling capabilities are supported. ")
+help([[]])
+prepend_path("PATH","/cm/shared/apps/AMDuProf_3.4.475/bin/")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/modulefiles/cm-pmix3/3.1.7:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("Sets up PMIx v3.1.7 in your enviornment ")
+prepend_path("PATH","/cm/shared/apps/cm-pmix3/3.1.7/bin/")
+prepend_path("LD_LIBRARY_PATH","/cm/shared/apps/cm-pmix3/3.1.7/lib")
+prepend_path("MANPATH","/cm/shared/apps/cm-pmix3/3.1.7/man")
+setenv("CM_PMIX_VERSION","3.1.7")
+help([[This module adds PMIx v3.1.7 to various paths
+]])
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   /cm/shared/modulefiles/default-environment:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+whatis("adds default environment modules ")
+load("dot")
+help([[	Loads default environment modules for this cluster
+]])
+
