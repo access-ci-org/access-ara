@@ -301,10 +301,9 @@ def get_recommendations(formData):
 
     # GPU
     GPUNeeded = formData.get("gpu")
-    if (GPUNeeded and int(GPUNeeded) == yes):
+    if (GPUNeeded and GPUNeeded == yes):
         gpuRPs = RPS.select().where(RPS.gpu > 0)
         gpuRPNames = [rp.name for rp in gpuRPs]
-        
         for rp in gpuRPNames:
             if rp in scoreBoard:
                 scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'])
