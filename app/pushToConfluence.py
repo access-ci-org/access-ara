@@ -58,11 +58,11 @@ def get_rp_data_tables(rpNamesList):
         # functionality information
         rpSupports = {
                         'Functionality':['Supports jobs that have a graphical component',
-                                                'CPU and GPU run in Parallel',
+                                                'GPU',
                                                 'Job is always active',
                                                 'Has a virtual machine or supports virtualization'],
                         'Suitability':[rp.graphical,
-                                       rp.parallel,
+                                       rp.gpu,
                                        rp.always_running,
                                        rp.virtual_machine]
                     }
