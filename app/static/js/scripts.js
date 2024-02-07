@@ -1,26 +1,16 @@
 //Import tagify objects for event listeners     
-import { fieldTagify, jobTagify, softwareTagify,
-        addFieldTagify, addJobTagify, addSoftwareTagify,
-        hideAddField, showAddField,
-        hideAddJob, showAddJob,
-        hideAddSoftware, showAddSoftware,
-        fieldInWhitelist, jobInWhitelist, softwareInWhitelist } from "./tags.js";
+import { fieldTagify, softwareTagify,
+        addFieldTagify, addSoftwareTagify,
+        fieldInWhitelist, softwareInWhitelist } from "./tags.js";
 
 $(document).ready(function(){ 
     $('html,body').animate({scrollTop:0},'fast')
 
     //event listeners for tagify fields
-    fieldTagify.on("invalid", showAddField);
-    addFieldTagify.on("remove", hideAddField)
-    .on("invalid", fieldInWhitelist);
+    addFieldTagify.on("invalid", fieldInWhitelist)
 
-    jobTagify.on("invalid", showAddJob);
-    addJobTagify.on("remove", hideAddJob)
-    .on("invalid", jobInWhitelist);
-
-    softwareTagify.on("invalid", showAddSoftware);
-    addSoftwareTagify.on("remove", hideAddSoftware)
-    .on("invalid", softwareInWhitelist);
+    //softwareTagify.on("invalid", showAddSoftware);
+    addSoftwareTagify.on("invalid", softwareInWhitelist);
 
     //initialize tooltips
     $('[data-toggle="tooltip"]').tooltip()
@@ -218,12 +208,6 @@ function get_form_data(form){
     formData.set('software', softwareTagValues)
     let softwareAddTags = addSoftwareTagify.value.map(tag => tag.value)
     formData.set('add-software-tags', softwareAddTags)
-
-    //Set job class tags and added tags
-    let jobTagValues = jobTagify.value.map(tag=>tag.value)
-    formData.set('job-class',jobTagValues)
-    let jobAddTags = addJobTagify.value.map(tag => tag.value)
-    formData.set('add-job-tags', jobAddTags)
 
     return formData
 }
