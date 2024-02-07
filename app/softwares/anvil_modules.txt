@@ -10,7 +10,8 @@ hdf
 intel-mkl
 intel-oneapi-mkl
 intel-oneapi-tbb
-libfabric, libflame
+libfabric  
+libflame
 libiconv
 libmesh
 libszip

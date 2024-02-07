@@ -11,7 +11,15 @@ from confluence.confluenceAPI import get_conf, get_page_children_ids, get_tabula
 from confluence.APIValidation import validate_storage_table, validate_suitability, validate_memory_table
 
 def get_rp_storage_data(storageTable):
-    # TODO: validate storageTable
+    """
+    sourceTable: pandas data table containing the storage information for the rp
+    returns: dictionary of storage information
+
+    This function assumes that the storageTable is valid (validate using validate_storage_table before calling this)
+    This function is used to get the storage information from the storage table and 
+    return it in a dictionary format that can be used to update the database
+    The index of the storageTable is directly related to the columns as seen on the confluence page
+    """
     scratch_tb = storageTable.iloc[0,0]
     longterm_tb = storageTable.iloc[0,1]
     storageData = {'scratch_tb': scratch_tb,
@@ -19,48 +27,68 @@ def get_rp_storage_data(storageTable):
     return storageData
 
 def get_rp_memory_data(memoryTable, rp):
-    # TODO: validate memoryTable
-    memoryTableIsValid = True
-    if memoryTableIsValid:
-        node_type = memoryTable.columns[0]
-        per_node_memory_gb = memoryTable.columns[1]
-        memoryData = []
-        for i in range(0, len(memoryTable.index)):
-            row = memoryTable.iloc[[i]]
-            memoryData.append({'rp':rp,
-                            'node_type': row[node_type].to_string(index=False),
-                            'per_node_memory_gb':row[per_node_memory_gb].to_string(index=False)})
-        return(memoryData)
-    return False
+    """
+    memoryTable: pandas data table containing the memory information for the rp
+    rp: rps object
+
+    returns: list of dictionaries containing the memory information
+
+    This function assumes that the memoryTable is valid (validate using validate_memory_table before calling this)
+    This function is used to get the memory information from the memory table and
+    return it in a dictionary format that can be used to update the database
+    The index of the storageTable is directly related to the columns as seen on the confluence page
+    """
+    node_type = memoryTable.columns[0]
+    per_node_memory_gb = memoryTable.columns[1]
+    memoryData = []
+    for i in range(0, len(memoryTable.index)):
+        row = memoryTable.iloc[[i]]
+        memoryData.append({'rp':rp,
+                        'node_type': row[node_type].to_string(index=False),
+                        'per_node_memory_gb':row[per_node_memory_gb].to_string(index=False)})
+    return(memoryData)
 
 def get_rp_functionality_data(funcTable):
-    # TODO: validate functionalityTable
-    functionalityTableIsValid = True
-    if functionalityTableIsValid:
-        graphical = funcTable.iloc[0,1]
-        parallel = funcTable.iloc[1,1]
-        always_running = funcTable.iloc[2,1]
-        virtual_machine = funcTable.iloc[3,1]
-        funcData = {'graphical':graphical,
-                    'parallel':parallel,
-                    'always_running':always_running,
-                    'virtual_machine':virtual_machine}
-        return funcData
-    return False
+    """
+    funcTable: pandas data table containing the functionality information for the rp
+    returns: dictionary of functionality information
 
-def get_rp_gui_data(guiTable):
-    pass
+    This function assumes that the funcTable is valid (validate using validate_suitability before calling this)
+    This function is used to get the functionality information from the functionality table and
+    return it in a dictionary format that can be used to update the database
+    The index of the funcTable is directly related to the columns as seen on the confluence page
+    """
+    graphical = funcTable.iloc[0,1]
+    parallel = funcTable.iloc[1,1]
+    always_running = funcTable.iloc[2,1]
+    virtual_machine = funcTable.iloc[3,1]
+    funcData = {'graphical':graphical,
+                'parallel':parallel,
+                'always_running':always_running,
+                'virtual_machine':virtual_machine}
+    return funcData
 
 def update_rp_table_form_conf(tables,pageName):
+    """
+    tables: list of pandas data tables in the page
+    pageName: name of the page the data came from
+    
+    This function is used to update the database from the confluence pages
+
+    Each index in the tables list corresponds to the order in which the data is being displayed on the confluence page
+
+    """
 
     messages = []
-    rpName = pageName[:pageName.rfind(" ")]
-    if RPS.select().count() == 0:
+    rpName = pageName[:pageName.rfind(" ")] # get the rp name from the page name (page names are '<RP Name> Data')
+    if RPS.select().count() == 0:   # check if the rp exists in the database
         rp = None
     else:
-        rp = RPS.get_or_none(RPS.name == rpName)
+        rp = RPS.get_or_none(RPS.name == rpName)    # get the rp object from the database
         print(f"\nGetting data for {rpName}")
 
+    # get the data for the rps tables
+    # validate the data and get the data in the correct format
     storageTable = tables[0]
     storageTableIsValid, msg = validate_storage_table(storageTable)
     if storageTableIsValid:
@@ -77,7 +105,7 @@ def update_rp_table_form_conf(tables,pageName):
         messages.append(msg+(". Functionality data was not updated."))
         print(msg+(". Functionality data was not updated."))
 
-    if not rp:
+    if not rp:  # if the rp table does not exist, create it and add the data
         print(f"RP '{rpName}' not found")
         if not (funcTableIsValid and storageTableIsValid):
             print(f'Unable to create new RP {rpName}.')
@@ -96,7 +124,7 @@ def update_rp_table_form_conf(tables,pageName):
                 print(f"{msg} : \n", e)
                 messages.append(msg)
                 transaction.rollback()
-    else:
+    else:   # if the rp table exists, update it with the new data
         with db.atomic() as transaction:
             try:
                 rpTableData = {}
@@ -112,6 +140,7 @@ def update_rp_table_form_conf(tables,pageName):
                 messages.append(msg)
                 transaction.rollback()
     
+    # get the data for rpMemory table, validate it, delete the current table, and create a new one with the new data
     memoryTable = tables[1]
     memoryDataIsValid, msg = validate_memory_table(memoryTable)
 
@@ -134,8 +163,8 @@ def update_rp_table_form_conf(tables,pageName):
         messages.append(msg+("Memory data was not updated."))
         print(msg+("Memory data was not updated."))
     
+    # get the data for the guiTable tables, validate it, delete the current table, and create a new one with the new data
     guiTable = tables[3]
-    # TODO: Validate guiTable
     guiTableIsValid = validate_suitability(guiTable)
     if guiTableIsValid:
         guiTable.fillna(1, inplace=True) #replace na with 1
@@ -145,8 +174,7 @@ def update_rp_table_form_conf(tables,pageName):
                 RpGUI.delete().where(RpGUI.rp == rp).execute()
                 for item in guiTuple:
                     gui, guiCreated = GUI.get_or_create(gui_name = item[0])
-                    #TODO: suitability not added
-                    rpGuiData =  {'rp':rp,'gui':gui}
+                    rpGuiData =  {'rp':rp,'gui':gui,'suitability':item[1]}
                     rpGui = RpGUI.create(**rpGuiData)
             except Exception as e:
                 msg = f"Error while trying to update {rpName} GUI"
@@ -154,8 +182,8 @@ def update_rp_table_form_conf(tables,pageName):
                 messages.append(msg)
                 transaction.rollback()
 
+    # get the data for the researchFields tables, validate it, delete the current table, and create a new one with the new data
     fieldsTable = tables[4]
-    #TODO: validate fieldsTable
     fieldsTableIsValid,msg = validate_suitability(fieldsTable)
     if fieldsTableIsValid:
         fieldsTuple = fieldsTable.itertuples(index=False)
@@ -175,8 +203,8 @@ def update_rp_table_form_conf(tables,pageName):
         messages.append(msg+(". Fields data was not updated."))
         print(msg+(". Fields data was not updated."))
 
+    # get the data for the jobClass tables, validate it, delete the current table, and create a new one with the new data
     jobClassTable = tables[5]
-    #TODO: validate fieldsTable
     jobClassIsValid,msg = validate_suitability(jobClassTable)
     if jobClassIsValid:
         jobClassTuple = jobClassTable.itertuples(index=False)
@@ -199,11 +227,17 @@ def update_rp_table_form_conf(tables,pageName):
     print("Errors: ", messages)
 
 def update_db_from_conf():
+    """
+    This function is used to update the database from the confluence pages
+    """
     conf = get_conf()
+
+    # get all the pages under the 'Data for RP Recommendations' page (parent_id = 245202949)
     pageIds = get_page_children_ids(conf,'245202949')
     for id in pageIds:
+        # get the page name and the tables in the page
         tables, pageName = get_tabulated_page_data(conf,pageID=id)
-        if ('Data' in pageName):
+        if ('Data' in pageName):    # if the page name contains 'Data', then it is a data page
             update_rp_table_form_conf(tables,pageName)
 
 if __name__ == '__main__':

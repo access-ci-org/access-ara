@@ -19,7 +19,7 @@ query_logger = logging.getLogger(__name__)
 query_logger.setLevel('INFO')
 
 #Handler/Formatter for query logs. Send to query.logs
-query_handler = logging.FileHandler("queryInfo.log", mode='w')
+query_handler = logging.FileHandler("queryInfo.log", mode='a')
 rec_handler = logging.FileHandler("formInfo.log", mode='a')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 query_handler.setFormatter(formatter)
@@ -63,7 +63,7 @@ def calculate_score_rf(researchFieldList,scoreBoard):
             scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
             scoreBoard[rp]['reasons'].append(row.research_field.field_name)
         else:
-            scoreBoard[rp] = {'score': 1, 'reasons': [row.research_field.field_name]}
+            scoreBoard[rp] = {'score': max(1,suitability), 'reasons': [row.research_field.field_name]}
     return scoreBoard
 
 def calculate_score_jc(jobClassList,scoreBoard):
@@ -92,7 +92,7 @@ def calculate_score_jc(jobClassList,scoreBoard):
             scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
             scoreBoard[rp]['reasons'].append(row.job_class.class_name)
         else:
-            scoreBoard[rp] = {'score': 1, 'reasons': [row.job_class.class_name]}
+            scoreBoard[rp] = {'score': max(1,suitability), 'reasons': [row.job_class.class_name]}
     
     return(scoreBoard)
 
@@ -117,12 +117,12 @@ def calculate_score_software(softwareList,scoreBoard):
     query_logger.info("SQLite Query - Softwares:\n%s", rpWithSoftware)
     for row in rpWithSoftware:
         rp = row.rp.name
-        suitability = row.suitability
+        suitability = 10         # Prioritize softwares more than hardwares or GUIs
         if rp in scoreBoard:
             scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
             scoreBoard[rp]['reasons'].append(row.software.software_name)
         else:
-            scoreBoard[rp] = {'score': 1, 'reasons': [row.software.software_name]}
+            scoreBoard[rp] = {'score': max(1,suitability), 'reasons': [row.software.software_name]}
 
     return(scoreBoard)
 
@@ -154,8 +154,6 @@ def classify_rp_storage(storageType):
 
     return classifiedRps
 
-
-
 def get_recommendations(formData):
     scoreBoard = {}
     yes = '1'
@@ -178,11 +176,12 @@ def get_recommendations(formData):
         if formData.get('used-gui'):
             for rp in rpsWithGui:
                 if rp.gui.gui_name in formData.get('used-gui'):
+                    suitability = rp.suitability
                     if rp.rp.name in scoreBoard:
-                        scoreBoard[rp.rp.name]['score'] += 1
+                        scoreBoard[rp.rp.name]['score'] += calculate_points(scoreBoard[rp.rp.name]['score'],suitability)
                         scoreBoard[rp.rp.name]['reasons'].append(rp.gui.gui_name)
                     else:
-                        scoreBoard[rp.rp.name] = {'score': 1, 'reasons': [rp.gui.gui_name]}
+                        scoreBoard[rp.rp.name] = {'score': max(1,suitability), 'reasons': [rp.gui.gui_name]}
                         
         #If user does not select any specific GUIs give points to every RP with a GUI
         else:
@@ -190,11 +189,12 @@ def get_recommendations(formData):
             rpNames = list({rp.rp.name for rp in rpsWithGui})
             # increase score for all rps with a GUI
             for rp in rpNames:
+                suitability = rp.suitability
                 if rp in scoreBoard:
-                    scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'])
+                    scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
                     scoreBoard[rp]['reasons'].append("GUI")
                 else:
-                    scoreBoard[rp] = {'score': 1, 'reasons': ["GUI"]}
+                    scoreBoard[rp] = {'score': max(1,suitability), 'reasons': ["GUI"]}
             
     
     # Research Field
@@ -297,7 +297,7 @@ def get_recommendations(formData):
                 scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'], suitability)
                 scoreBoard[rp.name]['reasons'].append("Graphics")
             else:
-                scoreBoard[rp.name] = {'score': 1 * suitability, 'reasons': ["Graphics"]}
+                scoreBoard[rp.name] = {'score': max(suitability,1), 'reasons': ["Graphics"]}
 
     # CPU and GPU in parallel
     CpuGpuParallelNeeded = formData.get("cpu-gpu-parallel")
@@ -323,7 +323,7 @@ def get_recommendations(formData):
                 scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'],suitability)
                 scoreBoard[rp.name]['reasons'].append("Always Running")
             else:
-                scoreBoard[rp.name] = {'score': 1*suitability, 'reasons': ["Always Running"]}
+                scoreBoard[rp.name] = {'score': max(suitability,1), 'reasons': ["Always Running"]}
 
     # Virtual machine
     VmNeeded = formData.get("vm")
@@ -335,7 +335,7 @@ def get_recommendations(formData):
                 scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'],suitability)
                 scoreBoard[rp.name]['reasons'].append("Virtual Machine")
             else:
-                scoreBoard[rp.name] = {'score': 1*suitability, 'reasons': ["Virtual Machine"]}
+                scoreBoard[rp.name] = {'score': max(suitability,1), 'reasons': ["Virtual Machine"]}
     query_logger.addHandler(rec_handler)
     query_logger.info('Recommendation Scoreboard:\n%s', scoreBoard)
     query_logger.removeHandler(rec_handler)
