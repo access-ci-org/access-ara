@@ -4,7 +4,6 @@ import json
 from .models.rps import RPS
 from .models.gui import GUI
 from .models.researchField import ResearchFields
-from .models.jobClass import JobClass
 from .models.software import Software
 from .models.rpInfo import RpInfo
 from .logic.form_logging import log_form_data
@@ -28,11 +27,6 @@ def recommender_page():
 def get_research_fields():
     research_fields = ResearchFields.select().order_by(ResearchFields.field_name)
     return([field.field_name for field in research_fields])
-
-@app.route("/get_job_classes")
-def get_job_classes():
-    job_classes = JobClass.select().order_by(JobClass.class_name)
-    return([job.class_name for job in job_classes])
     
 @app.route("/get_software")
 def get_software():
