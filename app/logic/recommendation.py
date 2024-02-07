@@ -108,13 +108,13 @@ def classify_rp_storage(storageType):
     
     if storageType == "long-term":
         ltOneTb = RPS.select().where(RPS.longterm_tb < 1.0)
-        oneToTenTb = RPS.select().where((RPS.longterm_tb >= 1.0) & (RPS.longterm_tb< 10.0))
-        mtTenTb = RPS.select().where(RPS.longterm_tb >= 10.0)
+        oneToTenTb = RPS.select().where((RPS.longterm_tb >= 1.0) & (RPS.longterm_tb<= 10.0))
+        mtTenTb = RPS.select().where(RPS.longterm_tb > 10.0)
 
     elif storageType == "scratch":
         ltOneTb = RPS.select().where(RPS.scratch_tb < 1.0)
-        oneToTenTb = RPS.select().where((RPS.scratch_tb >= 1.0) & (RPS.scratch_tb< 10.0))
-        mtTenTb = RPS.select().where(RPS.scratch_tb >= 10.0)
+        oneToTenTb = RPS.select().where((RPS.scratch_tb >= 1.0) & (RPS.scratch_tb<= 10.0))
+        mtTenTb = RPS.select().where(RPS.scratch_tb > 10.0)
 
     classifiedRps["less-than-1"] = [rp.name for rp in ltOneTb]
     classifiedRps["1-10"] = [rp.name for rp in oneToTenTb]
@@ -256,7 +256,7 @@ def get_recommendations(formData):
         for rp in graphicalRps:
             suitability = rp.graphical
             if rp.name in scoreBoard:
-                scoreBoard[rp.name]['score['] = calculate_points(scoreBoard[rp.name]['score'], suitability)
+                scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'], suitability)
                 scoreBoard[rp.name]['reasons'].append("Graphics")
             else:
                 scoreBoard[rp.name] = {'score': max(suitability,1), 'reasons': ["Graphics"]}

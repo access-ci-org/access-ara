@@ -46,7 +46,7 @@ def reset_with_test_data():
     """
     db.connect(reuse_if_open=True)
     rps = [
-    {"name":"ACES", "scratch_tb":1, "longterm_tb":100, "gpu":2, "graphical":2},
+    {"name":"ACES", "scratch_tb":1, "longterm_tb":5, "gpu":2, "graphical":2},
     {"name":"Anvil", "scratch_tb":100, "longterm_tb":50, "gpu":2},
     {"name":"Bridges-2", "scratch_tb":0, "longterm_tb":0, "gpu": 2, "graphical":2},
     {"name":"DARWIN", "scratch_tb":2, "longterm_tb":10, "gpu": 2, "graphical":2},
@@ -440,11 +440,12 @@ if __name__ == "__main__":
 
         else:
             print("Invalid argument for reset_database.\nPass in 'test' to use the test data or 'conf' to use the data from confluence")
-        
         add_softwares()
         add_info()
         print("Database reset")
 
+
     except Exception as e:
         print(sys.exc_info()[2])
         print(e)
+        

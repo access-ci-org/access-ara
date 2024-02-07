@@ -1,6 +1,5 @@
 from ..models.rps import RPS
 from ..models.rpGUI import RpGUI
-
 def get_guis(rpName):
     """
     get the GUIs associated with the rpName
