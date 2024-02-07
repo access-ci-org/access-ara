@@ -280,7 +280,7 @@ def get_recommendations(formData):
     if alwaysRunningNeeded == yes:
         arRps = RPS.select().where(RPS.always_running > 0)
         for rp in arRps:
-            suitability = rp.always_running * 10
+            suitability = 10
             if rp.name in scoreBoard:
                 scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'],suitability)
                 scoreBoard[rp.name]['reasons'].append("Always Running")
@@ -292,7 +292,7 @@ def get_recommendations(formData):
     if VmNeeded == yes:
         vmRps = RPS.select().where(RPS.virtual_machine > 0)
         for rp in vmRps:
-            suitability = rp.virtual_machine * 10
+            suitability = 10
             if rp.name in scoreBoard:
                 scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'],suitability)
                 scoreBoard[rp.name]['reasons'].append("Virtual Machine")
