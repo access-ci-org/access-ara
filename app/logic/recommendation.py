@@ -85,7 +85,7 @@ def calculate_score_software(softwareList,scoreBoard):
     query_logger.info("SQLite Query - Softwares:\n%s", rpWithSoftware)
     for row in rpWithSoftware:
         rp = row.rp.name
-        suitability = 5         # Prioritize softwares more than hardwares or GUIs
+        suitability = 10         # Prioritize softwares more than hardwares or GUIs
         if rp in scoreBoard:
             scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
             scoreBoard[rp]['reasons'].append(row.software.software_name)
@@ -157,7 +157,7 @@ def get_recommendations(formData):
             rpNames = list({rp.rp.name for rp in rpsWithGui})
             # increase score for all rps with a GUI
             for rp in rpNames:
-                suitability = rp.suitability
+                suitability = 1
                 if rp in scoreBoard:
                     scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'],suitability)
                     scoreBoard[rp]['reasons'].append("GUI")
@@ -280,7 +280,7 @@ def get_recommendations(formData):
     if alwaysRunningNeeded == yes:
         arRps = RPS.select().where(RPS.always_running > 0)
         for rp in arRps:
-            suitability = rp.always_running * 1.5
+            suitability = rp.always_running * 10
             if rp.name in scoreBoard:
                 scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'],suitability)
                 scoreBoard[rp.name]['reasons'].append("Always Running")
@@ -292,7 +292,7 @@ def get_recommendations(formData):
     if VmNeeded == yes:
         vmRps = RPS.select().where(RPS.virtual_machine > 0)
         for rp in vmRps:
-            suitability = rp.virtual_machine * 4
+            suitability = rp.virtual_machine * 10
             if rp.name in scoreBoard:
                 scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'],suitability)
                 scoreBoard[rp.name]['reasons'].append("Virtual Machine")
