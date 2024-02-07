@@ -96,10 +96,10 @@ def log_form_data(formData):
     response = swap_val_to_text(graphicsNeeded)
     input_logger.info("User Input - Graphical Component - %s", response)
 
-    #Question 19 (CPU/GPU Parallel)
-    cpuGpuParallelNeeded = formData.get("cpu-gpu-parallel")
-    response = swap_val_to_text(cpuGpuParallelNeeded)
-    input_logger.info("User Input - CPU/GPU Parallel - %s", response)
+    #Question 19 (GPU)
+    GPUNeeded = formData.get("gpu")
+    response = swap_val_to_text(GPUNeeded)
+    input_logger.info("User Input - GPU - %s", response)
 
     #Question 20 (Always On)
     alwaysRunningNeeded = formData.get("job-run")
