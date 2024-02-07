@@ -59,11 +59,11 @@ def get_rp_functionality_data(funcTable):
     The index of the funcTable is directly related to the columns as seen on the confluence page
     """
     graphical = funcTable.iloc[0,1]
-    parallel = funcTable.iloc[1,1]
+    gpu = funcTable.iloc[1,1]
     always_running = funcTable.iloc[2,1]
     virtual_machine = funcTable.iloc[3,1]
     funcData = {'graphical':graphical,
-                'parallel':parallel,
+                'gpu':gpu,
                 'always_running':always_running,
                 'virtual_machine':virtual_machine}
     return funcData

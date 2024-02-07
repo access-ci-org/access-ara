@@ -5,7 +5,7 @@ class RPS(BaseModel):
     name = CharField(unique=True, constraints=[SQL('COLLATE NOCASE')])
     scratch_tb = FloatField()
     longterm_tb = FloatField()
-    parallel = IntegerField(default=0)
+    gpu = IntegerField(default=0)
     graphical = IntegerField(default=0)
     virtual_machine = IntegerField(default=0)
     always_running = IntegerField(default=0)

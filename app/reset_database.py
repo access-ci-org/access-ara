@@ -46,6 +46,7 @@ def reset_with_test_data():
     """
     db.connect(reuse_if_open=True)
     rps = [
+<<<<<<< HEAD
     {"name":"ACES", "scratch_tb":1, "longterm_tb":5, "graphical":2},
     {"name":"Anvil", "scratch_tb":100, "longterm_tb":50},
     {"name":"Bridges-2", "scratch_tb":0, "longterm_tb":0, "parallel": 1, "graphical":2},
@@ -55,11 +56,22 @@ def reset_with_test_data():
     {"name":"FASTER", "scratch_tb":1, "longterm_tb":50, "graphical":2},
     {"name":"Jetstream2", "scratch_tb":0, "longterm_tb":0, "virtual_machine":2, "always_running":2},
     {"name":"OOKAMI", "scratch_tb":30, "longterm_tb":80},
+=======
+    {"name":"ACES", "scratch_tb":1, "longterm_tb":100, "gpu":2, "graphical":2},
+    {"name":"Anvil", "scratch_tb":100, "longterm_tb":50, "gpu":2},
+    {"name":"Bridges-2", "scratch_tb":0, "longterm_tb":0, "gpu": 2, "graphical":2},
+    {"name":"DARWIN", "scratch_tb":2, "longterm_tb":10, "gpu": 2, "graphical":2},
+    {"name":"Delta", "scratch_tb":1.5, "longterm_tb":0.5, "gpu": 2, "graphical":2},
+    {"name":"Expanse", "scratch_tb":7000, "longterm_tb":12000, "gpu": 2, "graphical":2},
+    {"name":"FASTER", "scratch_tb":1, "longterm_tb":50, "gpu":2, "graphical":2},
+    {"name":"Jetstream2", "scratch_tb":0, "longterm_tb":0, "gpu":2, "virtual_machine":2, "always_running":2},
+    {"name":"OOKAMI", "scratch_tb":30, "longterm_tb":80, "gpu":2},
+>>>>>>> 61bc7a5b13a36cff419c817521aaa279a53295e6
     {"name":"KyRIC", "scratch_tb":10, "longterm_tb":0.5, "graphical":2},
-    {"name":"Rockfish", "scratch_tb":10, "longterm_tb":100},
-    {"name":"Stampede-2", "scratch_tb":0, "longterm_tb":1, "parallel": 1, "graphical":2},
+    {"name":"Rockfish", "scratch_tb":10, "longterm_tb":100, "gpu":2},
+    {"name":"Stampede-2", "scratch_tb":0, "longterm_tb":1, "graphical":2},
     {"name":"RANCH", "scratch_tb":0, "longterm_tb":20},
-    {"name":"Open Science Grid", "scratch_tb":0, "longterm_tb":0.5},
+    {"name":"Open Science Grid", "scratch_tb":0, "longterm_tb":0.5, "gpu":2},
     {"name":"Open Storage Network", "scratch_tb":0, "longterm_tb":0},
     ]
     fields = [
