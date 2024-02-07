@@ -53,7 +53,7 @@
     </div>
         <!-- Previously used ACCESS HPCs -->
     <div class="form-group hide-hpc d-none" id="access-rps">
-        <label >Select the Supercomputers you have experience with:</label>
+        <label >Select any supercomputers you have experience with:</label>
         {% for rp in rps %}
         <div class="form-check">
             <input class="form-check-input used-rps" name="used-hpc" type="checkbox" id="{{rp.name}}-option-rp" value="{{rp.name}}">
@@ -109,21 +109,12 @@
     </div>
         <!-- Field of Research -->
     <div class="form-group">
-        <label for="">What is your field of research?</label>
+        <label for="">What is the general field(s) of research your computational work pertains to?</label>
         <input class="" type="text" id="field-text-input">
     </div>
-    <div class="form-group hide-add-field d-none">
-        <label for="field-add-tag">Add other research fields: </label>
-        <input class="" id="field-add-tag" type="text">
-    </div>
-        <!-- Class of job -->
     <div class="form-group">
-        <label for="">What class of job are you looking to perform on the supercomputer?</label>
-        <input class="" type="text" id="job-type-text-input">
-    </div>
-    <div class="form-group hide-add-job d-none">
-        <label for="">Add other job classes: </label>
-        <input class="" id="job-type-add-tag" type="text">
+        <label for="field-add-tag">Add other research fields if necessary: </label>
+        <input class="" id="field-add-tag" type="text">
     </div>
         <!-- Data Storage -->
     <div class="form-group">
@@ -226,11 +217,11 @@
     </div>
         <!-- Software and Libraries -->
     <div class="form-group">
-        <label for="software-text-input">Which scientific libraries or software packages do you need for your job?</label>
+        <label for="software-text-input">Which scientific libraries and software packages do you need for your job?</label>
         <input class="" type="text" id="software-text-input" name="software">
     </div>
-    <div class="form-group hide-add-software d-none">
-        <label for="software-libraries-add-tag">Add other libaries and software tags:</label>
+    <div class="form-group">
+        <label for="software-libraries-add-tag">Add other libaries and software tags if necessary:</label>
         <input id="software-libraries-add-tag" class="" type="text">
     </div>
         <!-- Graphical -->
@@ -257,21 +248,21 @@
             <label class="form-check-label" for="unsure-graphical">I don't know</label>
         </div>
     </div>
-        <!-- CPU GPU parallel -->
+        <!-- GPU -->
     <div class="form-group">
-        <label >Do you need CPU and GPU nodes running in parallel?</label>
+        <label >Does your application need to use GPUs?</label>
         <br>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="cpu-gpu-parallel" id="cpu-gpu-parallel-needed" value="1">
-            <label class="form-check-label" for="cpu-gpu-parallel-needed">Yes</label>
+            <input class="form-check-input" type="radio" name="gpu" id="gpu-needed" value="1">
+            <label class="form-check-label" for="gpu-needed">Yes</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="cpu-gpu-parallel" id="cpu-gpu-parallel-not-needed" value="0">
-            <label class="form-check-label" for="cpu-gpu-parallel-not-needed">No</label>
+            <input class="form-check-input" type="radio" name="gpu" id="gpu-not-needed" value="0">
+            <label class="form-check-label" for="gpu-not-needed">No</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="cpu-gpu-parallel" id="cpu-gpu-parallel-unsure" value="2">
-            <label class="form-check-label" for="cpu-gpu-parallel-unsure">I don't know</label>
+            <input class="form-check-input" type="radio" name="gpu" id="gpu-unsure" value="2">
+            <label class="form-check-label" for="gpu-unsure">I don't know</label>
         </div>
     </div>
         <!-- Always Running -->

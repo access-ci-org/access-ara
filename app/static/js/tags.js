@@ -1,5 +1,5 @@
 //Declare tagify variables
-export var fieldTagify, addFieldTagify, jobTagify,  addJobTagify, softwareTagify, addSoftwareTagify;
+export var fieldTagify, addFieldTagify, softwareTagify, addSoftwareTagify;
 
 /* #################################
 !!! DO NOT USE JQUERY WITH TAGIFY !!! 
@@ -7,7 +7,6 @@ export var fieldTagify, addFieldTagify, jobTagify,  addJobTagify, softwareTagify
 
 //Collect whitelist from ajax call
 var fieldWhitelist = await getFieldWhitelist();
-var jobWhitelist = await getJobWhitelist();
 var softwareWhitelist = await getSoftwareWhitelist();
 
 //Find user input in research field question
@@ -18,7 +17,7 @@ fieldTagify = new Tagify (fieldInput, {
     editTags: false,
     dropdown:{
         enabled: 0,
-        maxItems: 10,
+        maxItems: 10000,
         highlightFirst: true
         }
 });
@@ -30,26 +29,6 @@ addFieldTagify = new Tagify(addFieldInput, {
     editTags: false
 });
 
-//Find user input in job class question
-var jobInput = document.querySelector("input[id=job-type-text-input]");
-jobTagify = new Tagify (jobInput, {
-    enforceWhitelist: true,
-    whitelist: jobWhitelist,
-    editTags: false,
-    dropdown:{
-        enabled: 0,
-        maxItems: 10,
-        highlightFirst: true
-        }
-});
-
-//Create tagify input for "add job classes" question
-var addJobInput = document.querySelector("input[id=job-type-add-tag]");
-addJobTagify = new Tagify(addJobInput, {
-    blacklist: jobWhitelist,
-    editTags: false
-});
-
 //Find user input in software question
 var softwareInput = document.querySelector("input[id=software-text-input]");
 softwareTagify = new Tagify (softwareInput, {
@@ -58,7 +37,7 @@ softwareTagify = new Tagify (softwareInput, {
     editTags: false,
     dropdown: {
         enabled: 0,
-        maxItems: 10,
+        maxItems: 10000,
         highlightFirst: true
     }
 });
@@ -75,14 +54,6 @@ async function getFieldWhitelist(){
     return await $.ajax({
         type: "GET",
         url: "/get_research_fields"
-    });
-}
-
-// grab whitelist for job class tags via AJAX
-async function getJobWhitelist(){
-    return await $.ajax({
-        type: "GET",
-        url: "/get_job_classes",
     });
 }
 
@@ -103,17 +74,6 @@ export function hideAddField(){
 export function showAddField(e){
     addFieldTagify.addTags(e.detail.data.value);
     $(".hide-add-field").removeClass('d-none').show();
-}
-
-export function hideAddJob(){
-    if (addJobTagify.getTagElms().length == 0){
-        $(".hide-add-job").addClass('d-none').hide();
-    }
-}
-
-export function showAddJob(e){
-    addJobTagify.addTags(e.detail.data.value);
-    $(".hide-add-job").removeClass('d-none').show()
 }
 
 export function hideAddSoftware(){
@@ -139,21 +99,6 @@ export function fieldInWhitelist(e){
 
     if (!duplicate){
         fieldTagify.addTags(e.detail.data.value);
-    }
-}
-
-export function jobInWhitelist(e){
-    let tagValues = jobTagify.value;
-    let duplicate = false;
-
-    for(let i=0; i < tagValues.length; i++){
-        if (e.detail.data.value.toLowerCase() === tagValues[i].value.toLowerCase()){
-            duplicate = true;
-        }
-    }
-
-    if (!duplicate){
-        jobTagify.addTags(e.detail.data.value);
     }
 }
 
