@@ -299,19 +299,18 @@ def get_recommendations(formData):
             else:
                 scoreBoard[rp.name] = {'score': max(suitability,1), 'reasons': ["Graphics"]}
 
-    # CPU and GPU in parallel
-    CpuGpuParallelNeeded = formData.get("cpu-gpu-parallel")
-    if (CpuGpuParallelNeeded and int(CpuGpuParallelNeeded) == yes):
-        parallelRPs = RPS.select().where(RPS.parallel > 0)
-        parallelRpNames = [rp.name for rp in parallelRPs]
+    # GPU
+    GPUNeeded = formData.get("gpu")
+    if (GPUNeeded and int(GPUNeeded) == yes):
+        gpuRPs = RPS.select().where(RPS.gpu > 0)
+        gpuRPNames = [rp.name for rp in gpuRPs]
         
-        for rp in parallelRpNames:
+        for rp in gpuRPNames:
             if rp in scoreBoard:
                 scoreBoard[rp]['score'] = calculate_points(scoreBoard[rp]['score'])
-                scoreBoard[rp]['reasons'].append("CPU/GPU Parallel Processing")
+                scoreBoard[rp]['reasons'].append("GPU")
             else:
-                scoreBoard[rp] = {'score': 1, 'reasons': ["CPU/GPU Parallel Processing"]} 
-
+                scoreBoard[rp] = {'score': 1, 'reasons': ["GPU"]} 
 
     # Job needs to be running always
     alwaysRunningNeeded = formData.get("job-run")

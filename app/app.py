@@ -46,6 +46,7 @@ def get_score():
     data = request.get_json()
     log_form_data(data)
     recommendations = get_recommendations(data)
+    print(data)
     return json.dumps(recommendations, sort_keys=True)
     
 # get_info function pulls from the rpInfo database to get blurbs, links, and documentation links
