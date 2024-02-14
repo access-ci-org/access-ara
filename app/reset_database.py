@@ -53,7 +53,7 @@ def reset_with_test_data():
     {"name":"Delta", "scratch_tb":1.5, "longterm_tb":0.5, "gpu": 2, "graphical":2},
     {"name":"Expanse", "scratch_tb":7000, "longterm_tb":12000, "gpu": 2, "graphical":2},
     {"name":"FASTER", "scratch_tb":1, "longterm_tb":50, "gpu":2, "graphical":2},
-    {"name":"Jetstream2", "scratch_tb":0, "longterm_tb":0, "gpu":2, "virtual_machine":2, "always_running":2},
+    {"name":"Jetstream2", "scratch_tb":0, "longterm_tb":0, "gpu":2, "virtual_machine":2,},
     {"name":"OOKAMI", "scratch_tb":30, "longterm_tb":80, "gpu":2},
     {"name":"KyRIC", "scratch_tb":10, "longterm_tb":0.5, "graphical":2},
     {"name":"Rockfish", "scratch_tb":10, "longterm_tb":100, "gpu":2},

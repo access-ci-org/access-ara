@@ -60,11 +60,9 @@ def get_rp_functionality_data(funcTable):
     """
     graphical = funcTable.iloc[0,1]
     gpu = funcTable.iloc[1,1]
-    always_running = funcTable.iloc[2,1]
-    virtual_machine = funcTable.iloc[3,1]
+    virtual_machine = funcTable.iloc[2,1]
     funcData = {'graphical':graphical,
                 'gpu':gpu,
-                'always_running':always_running,
                 'virtual_machine':virtual_machine}
     return funcData
 

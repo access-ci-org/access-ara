@@ -8,4 +8,3 @@ class RPS(BaseModel):
     gpu = IntegerField(default=0)
     graphical = IntegerField(default=0)
     virtual_machine = IntegerField(default=0)
-    always_running = IntegerField(default=0)
