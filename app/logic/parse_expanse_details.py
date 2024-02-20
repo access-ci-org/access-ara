@@ -45,6 +45,7 @@ def get_module_details(file):
     for software in list_of_software:
          lines = software.split('\n')
          parsed_details = {}
+         paths = []
          for line in lines:
             if line.startswith("whatis"):
                 result = parse_whatis_line(line)
@@ -55,16 +56,23 @@ def get_module_details(file):
                 result = parse_path_line(line)
                 if result:
                     key, value = result
-                    parsed_details[key] = value
+                    if key in parsed_details:
+                        if isinstance(parsed_details[key], list): #if certain key has multiple paths, store them in a list. otherwise, key->str
+                            parsed_details[key].append(value)
+                        else:
+                            parsed_details[key] = [parsed_details[key], value]
+                    else:
+                        parsed_details[key] = value
             elif line.startswith("setenv"):
                 result = parse_setenv_line(line)
                 if result:
                     key, value = result
                     parsed_details[key] = value
-         details.append(parsed_details)
+         if(parsed_details != {}): #don't include empty information
+            details.append(parsed_details)
          
     # Convert the parsed data to a JSON-formatted string
-    json_string = json.dumps(parsed_details, indent=2)
+    json_string = json.dumps(parsed_details)
 
     # Print the JSON string
     for element in details:
