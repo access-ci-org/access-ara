@@ -53,11 +53,5 @@ echo "Resetting Database"
 DATASOURCE=$1
 echo $DATASOURCE
 
-if [ "${DATASOURCE}" = 'test' ] || [ "${DATASOURCE}" = 'conf' ];
-then
-  $PYTHON ./app/reset_database.py $DATASOURCE
-else
-  echo -e "\e[31mUnable to reset database (Invalid argument).\nPass in 'test' to use the test data or 'conf' to use the data from confluence\e[0m"
-fi
 
 
