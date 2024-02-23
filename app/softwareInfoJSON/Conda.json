@@ -1,0 +1,24 @@
+{
+    "software_name": "Conda",
+    "overview": "Conda is an open-source package management system used for installing and managing software packages and dependencies across different platforms. It is popular in the Python community for creating virtual environments, managing libraries, and simplifying package distribution.",
+    "core_features": [
+        "Package management",
+        "Dependency resolution",
+        "Virtual environment creation"
+    ],
+    "general_tags": [
+        "Package manager",
+        "Dependency management",
+        "Python ecosystem"
+    ],
+    "research_discipline": [
+        "Computer science",
+        "Data science"
+    ],
+    "research_area": [
+        "Software development",
+        "Scientific computing"
+    ],
+    "software_class": "Package manager",
+    "software_type": "Dependency management tool"
+}

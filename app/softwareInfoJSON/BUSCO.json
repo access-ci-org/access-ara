@@ -1,0 +1,24 @@
+{
+    "software_name": "BUSCO",
+    "overview": "BUSCO (Benchmarking Universal Single-Copy Orthologs) is a bioinformatics tool for assessing the completeness of genome or transcriptome assemblies by searching for a set of single-copy orthologous genes. It is widely used to evaluate genome assembly quality.",
+    "core_features": [
+        "Benchmarking tool",
+        "Genome completeness assessment",
+        "Single-copy ortholog search"
+    ],
+    "general_tags": [
+        "Genome assembly",
+        "Quality assessment",
+        "Ortholog identification"
+    ],
+    "research_discipline": [
+        "Genomics",
+        "Bioinformatics"
+    ],
+    "research_area": [
+        "Genome assembly evaluation",
+        "Ortholog analysis"
+    ],
+    "software_class": "Bioinformatics tool",
+    "software_type": "Benchmarking tool"
+}

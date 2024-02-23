@@ -1,0 +1,18 @@
+{
+    "software_name": "Aspera",
+    "overview": "Aspera is a high-speed data transfer software that enables secure and reliable transfer of large datasets over wide-area networks. It uses the FASP protocol to accelerate data transfers for research, collaboration, and distribution.",
+    "core_features": [
+        "High-speed data transfer",
+        "Secure data transfer",
+        "FASP protocol"
+    ],
+    "general_tags": [
+        "Data transfer",
+        "Wide-area networks",
+        "Secure transmission"
+    ],
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Data transfer tool",
+    "software_type": "High-speed transfer software"
+}

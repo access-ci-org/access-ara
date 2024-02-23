@@ -1,0 +1,18 @@
+{
+  "software_name": "ANTLR",
+  "overview": "ANTLR (ANother Tool for Language Recognition) is a powerful parser generator that allows users to build language grammars for parsing and generating structured data. It supports multiple languages and platforms.",
+  "core_features": [
+    "Parser generator",
+    "Language recognition",
+    "Support for multiple languages and platforms"
+  ],
+  "general_tags": [
+    "Parser generator",
+    "Language recognition",
+    "Code generation"
+  ],
+  "research_discipline": [],
+  "research_area": [],
+  "software_class": "Development tool",
+  "software_type": "Parser generator"
+}

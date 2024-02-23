@@ -1,0 +1,23 @@
+{
+    "software_name": "GeneMark",
+    "overview": "GeneMark is a computational tool for gene prediction in microbial genomes using bioinformatics algorithms. It utilizes statistical models and algorithms to identify protein-coding genes, transcription start sites, and genomic features in DNA sequences, aiding in genome annotation and analysis.",
+    "core_features": [
+        "Gene prediction",
+        "Microbial genomes",
+        "Transcription start site identification"
+    ],
+    "general_tags": [
+        "Bioinformatics",
+        "Gene finding",
+        "Microbial genomics"
+    ],
+    "research_discipline": [
+        "Genomics",
+        "Bioinformatics"
+    ],
+    "research_area": [
+        "Gene prediction",
+        "Genome annotation"
+    ],
+    "software_class": "Bioinformatics tool",
+    "software_type": "Gene prediction software"

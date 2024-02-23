@@ -1,0 +1,24 @@
+{
+    "software_name": "GTK3",
+    "overview": "GTK3 (GIMP Toolkit) is an open-source and cross-platform toolkit for creating graphical user interfaces (GUIs) in software applications. It offers a modern and flexible framework for building user interfaces with widgets, styling options, and support for various programming languages and operating systems.",
+    "core_features": [
+        "Cross-platform GUI toolkit",
+        "Modern user interface design",
+        "Widget support"
+    ],
+    "general_tags": [
+        "User interface development",
+        "GUI toolkit",
+        "Cross-platform support"
+    ],
+    "research_discipline": [
+        "Computer science",
+        "Software development"
+    ],
+    "research_area": [
+        "Graphic user interfaces",
+        "Application design"
+    ],
+    "software_class": "GUI toolkit",
+    "software_type": "User interface development tool"
+}

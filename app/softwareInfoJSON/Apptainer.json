@@ -1,0 +1,18 @@
+{
+  "software_name": "Apptainer",
+  "overview": "Apptainer is a container orchestration platform designed to simplify container management and deployment processes. It provides tools for building, deploying, and scaling containerized applications.",
+  "core_features": [
+    "Container orchestration",
+    "Application deployment",
+    "Scalability"
+  ],
+  "general_tags": [
+    "Container management",
+    "Deployment",
+    "Orchestration"
+  ],
+  "research_discipline": [],
+  "research_area": [],
+  "software_class": "Container tool",
+  "software_type": "Orchestration platform"
+}

@@ -1,0 +1,24 @@
+{
+    "software_name": "Gaussian",
+    "overview": "Gaussian is a widely-used computational chemistry software package for performing ab initio electronic structure calculations. It provides a range of quantum chemical methods for studying molecular systems, reactions, and properties, aiding in various research areas such as theoretical chemistry, materials science, and molecular modeling.",
+    "core_features": [
+        "Ab initio calculations",
+        "Quantum chemistry methods",
+        "Molecular system simulations"
+    ],
+    "general_tags": [
+        "Computational chemistry",
+        "Quantum chemical calculations",
+        "Molecular modeling"
+    ],
+    "research_discipline": [
+        "Chemistry",
+        "Theoretical chemistry"
+    ],
+    "research_area": [
+        "Molecular simulations",
+        "Reaction mechanisms"
+    ],
+    "software_class": "Chemistry software",
+    "software_type": "Electronic structure calculation tool"
+}

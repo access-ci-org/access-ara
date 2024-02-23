@@ -1,0 +1,24 @@
+{
+    "software_name": "CP2K",
+    "overview": "CP2K is a state-of-the-art quantum chemistry and solid-state physics software package designed for molecular simulations. It employs a combination of electronic structure theory, molecular dynamics, and other methods to study a wide range of chemical systems.",
+    "core_features": [
+        "Quantum chemistry simulations",
+        "Solid-state physics modeling",
+        "Electronic structure theory"
+    ],
+    "general_tags": [
+        "Quantum chemistry",
+        "Molecular simulations",
+        "Solid-state physics"
+    ],
+    "research_discipline": [
+        "Chemistry",
+        "Physics"
+    ],
+    "research_area": [
+        "Quantum chemistry",
+        "Solid-state physics"
+    ],
+    "software_class": "Simulation software",
+    "software_type": "Quantum chemistry tool"
+}

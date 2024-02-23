@@ -1,0 +1,24 @@
+{
+    "software_name": "FastQC",
+    "overview": "FastQC is a quality control tool used for analyzing the quality of high-throughput sequencing data such as FASTQ files. It generates visual and statistical reports on various quality metrics, helping researchers and bioinformaticians assess the quality of sequencing data before downstream analysis.",
+    "core_features": [
+        "Quality control analysis",
+        "Sequencing data assessment",
+        "Visual and statistical reports"
+    ],
+    "general_tags": [
+        "Bioinformatics",
+        "Sequencing quality control",
+        "Data analysis"
+    ],
+    "research_discipline": [
+        "Genomics",
+        "Bioinformatics"
+    ],
+    "research_area": [
+        "Sequencing data quality",
+        "Bioinformatics analysis"
+    ],
+    "software_class": "Quality control tool",
+    "software_type": "Sequencing data analysis software"
+}

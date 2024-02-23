@@ -1,0 +1,18 @@
+{
+  "software_name": "Abseil",
+  "overview": "Abseil is an open-source collection of C++ library code developed by Google to facilitate writing robust, efficient, and maintainable code. It includes utility libraries and advanced data structures.",
+  "core_features": [
+    "C++ library code",
+    "Robust code development",
+    "Advanced data structures"
+  ],
+  "general_tags": [
+    "C++ library",
+    "Open-source",
+    "Utilities"
+  ],
+  "research_discipline": [],
+  "research_area": [],
+  "software_class": "Library",
+  "software_type": "C++ utility library"
+}

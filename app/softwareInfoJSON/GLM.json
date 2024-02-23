@@ -1,0 +1,24 @@
+{
+    "software_name": "GLM",
+    "overview": "GLM (OpenGL Mathematics) is a header-only C++ mathematics library for graphics programming. It provides various mathematical functions and data structures commonly used in computer graphics, including vectors, matrices, and geometric algorithms, tailored for OpenGL applications.",
+    "core_features": [
+        "Mathematical functions",
+        "Vectors and matrices",
+        "Geometric algorithms"
+    ],
+    "general_tags": [
+        "Computer graphics",
+        "Math library",
+        "OpenGL development"
+    ],
+    "research_discipline": [
+        "Computer graphics",
+        "Computer science"
+    ],
+    "research_area": [
+        "Mathematics in graphics",
+        "Geometric computations"
+    ],
+    "software_class": "Math library",
+    "software_type": "Graphics programming tool"
+}

@@ -1,0 +1,24 @@
+{
+    "software_name": "Aspherix",
+    "overview": "Aspherix is a simulation software tool for modeling optical systems with aspherical lenses. It enables engineers and researchers to design and analyze complex optical systems with non-spherical optical components.",
+    "core_features": [
+        "Optical system simulation",
+        "Aspherical lens modeling",
+        "Optical system design"
+    ],
+    "general_tags": [
+        "Optical design",
+        "Lens modeling",
+        "Simulation software"
+    ],
+    "research_discipline": [
+        "Optics",
+        "Physics"
+    ],
+    "research_area": [
+        "Optical engineering",
+        "Lens design"
+    ],
+    "software_class": "Simulation software",
+    "software_type": "Optical system tool"
+}

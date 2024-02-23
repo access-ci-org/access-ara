@@ -1,0 +1,18 @@
+{
+    "software_name": "Autoconf",
+    "overview": "Autoconf is a tool for automatically configuring source code packages to adapt to different Unix-like systems. It generates shell scripts that automatically configure software source code for building on various platforms.",
+    "core_features": [
+        "Configuration management",
+        "Cross-platform compatibility",
+        "Automated script generation"
+    ],
+    "general_tags": [
+        "Configuration tool",
+        "Build automation",
+        "Cross-platform"
+    ],
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Configuration tool",
+    "software_type": "Automated configuration generator"
+}

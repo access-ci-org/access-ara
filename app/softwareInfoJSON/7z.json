@@ -1,0 +1,18 @@
+{
+  "software_name": "7z",
+  "overview": "7z is an open-source file archiver with a high compression ratio. It supports a wide variety of compression and archive formats.",
+  "core_features": [
+    "High compression ratio",
+    "Open-source",
+    "Support for various compression and archive formats"
+  ],
+  "general_tags": [
+    "File archiver",
+    "Compression tool",
+    "Open-source"
+  ],
+  "research_discipline": [],
+  "research_area": [],
+  "software_class": "Utility",
+  "software_type": "Archiver"
+}

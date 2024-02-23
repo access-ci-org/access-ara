@@ -1,0 +1,25 @@
+{
+    "software_name": "CGAL",
+    "overview": "CGAL (Computational Geometry Algorithms Library) is a software library that provides computational geometry algorithms for solving geometric problems, such as triangulations, convex hulls, intersections, and mesh generation. It is designed for efficient geometric computations in various domains.",
+    "core_features": [
+        "Computational geometry algorithms",
+        "Geometric problem solving",
+        "Mesh generation",
+        "Convex hulls"
+    ],
+    "general_tags": [
+        "Computational geometry",
+        "Geometric algorithms",
+        "Library"
+    ],
+    "research_discipline": [
+        "Computer science",
+        "Mathematics"
+    ],
+    "research_area": [
+        "Computational geometry",
+        "Geometric modeling"
+    ],
+    "software_class": "Library",
+    "software_type": "Computational geometry tool"
+}

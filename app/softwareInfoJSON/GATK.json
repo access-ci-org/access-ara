@@ -1,0 +1,24 @@
+{
+    "software_name": "GATK",
+    "overview": "GATK (Genome Analysis Toolkit) is a widely used software package for analyzing high-throughput sequencing data in genomics and genetics research. It provides a broad suite of tools for variant discovery, genotyping, and other genomic analyses, with a focus on accuracy and reproducibility.",
+    "core_features": [
+        "High-throughput sequencing analysis",
+        "Variant discovery",
+        "Genomic data processing"
+    ],
+    "general_tags": [
+        "Genomics",
+        "Variant calling",
+        "Bioinformatics"
+    ],
+    "research_discipline": [
+        "Genomics",
+        "Bioinformatics"
+    ],
+    "research_area": [
+        "Variant analysis",
+        "Sequencing data"
+    ],
+    "software_class": "Genomics tool",
+    "software_type": "High-throughput sequencing analysis software"
+}

@@ -1,0 +1,18 @@
+{
+    "software_name": "CMake",
+    "overview": "CMake is an open-source build system that manages the build process of software projects by generating native build configurations, such as Makefiles or project files for various environments. It simplifies the building, testing, and packaging of software across different platforms.",
+    "core_features": [
+        "Build system management",
+        "Cross-platform build configurations",
+        "Automated project generation"
+    ],
+    "general_tags": [
+        "Build system",
+        "Project management",
+        "Cross-platform support"
+    ],
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Build tool",
+    "software_type": "Build system generator"
+}

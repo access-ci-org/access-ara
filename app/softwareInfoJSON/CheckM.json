@@ -1,0 +1,24 @@
+{
+    "software_name": "CheckM",
+    "overview": "CheckM is a software tool for assessing the quality and completeness of microbial genomes and metagenome-assembled genomes (MAGs). It performs genome identification, taxonomy assignment, and completeness estimation to evaluate microbial genomic data.",
+    "core_features": [
+        "Microbial genomics evaluation",
+        "Genome completeness assessment",
+        "Taxonomy assignment"
+    ],
+    "general_tags": [
+        "Microbiome analysis",
+        "Genome quality assessment",
+        "Taxonomic classification"
+    ],
+    "research_discipline": [
+        "Microbiology",
+        "Bioinformatics"
+    ],
+    "research_area": [
+        "Microbial genomics",
+        "Metagenomics"
+    ],
+    "software_class": "Genomics tool",
+    "software_type": "Genomic quality assessment tool"
+}

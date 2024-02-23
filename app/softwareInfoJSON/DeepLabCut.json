@@ -1,0 +1,24 @@
+{
+    "software_name": "DeepLabCut",
+    "overview": "DeepLabCut is a deep-learning-based software tool for markerless pose estimation in behavioral experiments. It enables the tracking and analysis of movement data in animals, including rodents, primates, and other species, allowing researchers to study behavior patterns and kinematics.",
+    "core_features": [
+        "Markerless pose estimation",
+        "Behavioral tracking",
+        "Animal movement analysis"
+    ],
+    "general_tags": [
+        "Deep learning",
+        "Behavioral research",
+        "Pose estimation"
+    ],
+    "research_discipline": [
+        "Behavioral science",
+        "Neuroscience"
+    ],
+    "research_area": [
+        "Animal behavior analysis",
+        "Motion tracking"
+    ],
+    "software_class": "Deep learning tool",
+    "software_type": "Pose estimation software"
+}

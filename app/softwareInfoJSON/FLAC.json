@@ -1,0 +1,24 @@
+{
+    "software_name": "FLAC",
+    "overview": "FLAC (Free Lossless Audio Codec) is an open-source audio coding format that compresses audio data without any loss in quality. It provides high-quality audio compression for music and other audio content while preserving the original sound fidelity.",
+    "core_features": [
+        "Lossless audio compression",
+        "High-quality audio",
+        "Open-source audio codec"
+    ],
+    "general_tags": [
+        "Audio compression",
+        "Open-source codec",
+        "Audio quality preservation"
+    ],
+    "research_discipline": [
+        "Audio engineering",
+        "Computer science"
+    ],
+    "research_area": [
+        "Audio compression",
+        "Audio file formats"
+    ],
+    "software_class": "Audio codec",
+    "software_type": "Lossless compression tool"
+}

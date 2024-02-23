@@ -1,0 +1,22 @@
+{
+  "software_name": "ABySS",
+  "overview": "ABySS (Assembly By Short Sequences) is a de novo assembly software designed for large genomes. It is capable of assembling genomes from short sequence reads produced by next-generation sequencing technologies.",
+  "core_features": [
+    "De novo assembly",
+    "Optimized for large genomes",
+    "Support for short sequence reads"
+  ],
+  "general_tags": [
+    "De novo assembly",
+    "Genome assembly",
+    "Next-generation sequencing"
+  ],
+  "research_discipline": [
+    "Bioinformatics"
+  ],
+  "research_area": [
+    "Genomics"
+  ],
+  "software_class": "Bioinformatics tool",
+  "software_type": "Assembly software"
+}

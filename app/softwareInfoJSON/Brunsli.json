@@ -1,0 +1,18 @@
+{
+    "software_name": "Brunsli",
+    "overview": "Brunsli is a lossless and low-delay image compressor developed by Google that aims to provide high compression efficiency for web images. It is designed to optimize image compression for web applications, focusing on reducing file sizes without compromising quality.",
+    "core_features": [
+        "Lossless image compression",
+        "Low-delay compression",
+        "Optimized for web images"
+    ],
+    "general_tags": [
+        "Image compression",
+        "Web optimization",
+        "Google"
+    ],
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Image compressor",
+    "software_type": "Lossless compression tool"
+}

@@ -1,0 +1,24 @@
+{
+    "software_name": "GStreamer",
+    "overview": "GStreamer is an open-source multimedia framework designed for constructing graphs of media-handling components. It enables the creation, streaming, and manipulation of multimedia content such as audio and video in a flexible and modular manner, making it a valuable tool for media applications.",
+    "core_features": [
+        "Multimedia framework",
+        "Media content streaming",
+        "Modular component architecture"
+    ],
+    "general_tags": [
+        "Media handling",
+        "Audio-visual processing",
+        "Open-source framework"
+    ],
+    "research_discipline": [
+        "Multimedia technology",
+        "Software development"
+    ],
+    "research_area": [
+        "Media streaming",
+        "Audio-visual processing"
+    ],
+    "software_class": "Multimedia framework",
+    "software_type": "Media processing tool"
+}

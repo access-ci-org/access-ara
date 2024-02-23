@@ -1,0 +1,24 @@
+{
+    "software_name": "Circos",
+    "overview": "Circos is a software tool for visualizing and analyzing genomic data in a circular layout. It is commonly used for displaying complex relationships and patterns in genomics data, such as chromosomal rearrangements, gene expressions, and genome variations.",
+    "core_features": [
+        "Genomic data visualization",
+        "Circular layout",
+        "Chromosomal analysis"
+    ],
+    "general_tags": [
+        "Genomics",
+        "Data visualization",
+        "Circular plots"
+    ],
+    "research_discipline": [
+        "Genomics",
+        "Bioinformatics"
+    ],
+    "research_area": [
+        "Genomic data analysis",
+        "Chromosomal rearrangements"
+    ],
+    "software_class": "Genomics tool",
+    "software_type": "Genomic visualization software"
+}

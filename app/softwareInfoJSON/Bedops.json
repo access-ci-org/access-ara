@@ -1,0 +1,24 @@
+{
+    "software_name": "Bedops",
+    "overview": "Bedops is a set of command-line tools for genomic data analysis, particularly focused on the manipulation and analysis of BED (Browser Extensible Data) files. It provides various operations and tools for set operations, genome comparisons, and data extraction.",
+    "core_features": [
+        "Genomic data analysis",
+        "BED file manipulation",
+        "Set operations"
+    ],
+    "general_tags": [
+        "Genomics",
+        "BED files",
+        "Data analysis"
+    ],
+    "research_discipline": [
+        "Genomics",
+        "Bioinformatics"
+    ],
+    "research_area": [
+        "Genomic data analysis",
+        "High-throughput sequencing"
+    ],
+    "software_class": "Genomic tool",
+    "software_type": "Command-line toolkit"
+}

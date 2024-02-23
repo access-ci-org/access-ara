@@ -1,0 +1,25 @@
+{
+    "software_name": "Blender",
+    "overview": "Blender is a free and open-source 3D creation software suite that offers tools for modeling, animation, simulation, rendering, and more. It is widely used for creating 3D visualizations, animations, and even video game assets.",
+    "core_features": [
+        "3D modeling",
+        "Animation",
+        "Rendering",
+        "Simulation"
+    ],
+    "general_tags": [
+        "3D creation",
+        "Animation",
+        "Rendering"
+    ],
+    "research_discipline": [
+        "Computer graphics",
+        "Animation"
+    ],
+    "research_area": [
+        "3D modeling",
+        "Visual simulations"
+    ],
+    "software_class": "3D modeling tool",
+    "software_type": "Graphics software"
+}

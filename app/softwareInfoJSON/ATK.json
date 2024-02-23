@@ -1,0 +1,18 @@
+{
+  "software_name": "ATK",
+  "overview": "ATK (Accurate Tool Kit) is a software package for electronic transport calculations in nanostructures. It provides a toolkit for modeling electron transport phenomena in devices at the nanoscale.",
+  "core_features": [
+    "Electronic transport calculations",
+    "Nanostructure modeling",
+    "Device-level simulations"
+  ],
+  "general_tags": [
+    "Electronic transport",
+    "Nanostructures",
+    "Device simulations"
+  ],
+  "research_discipline": [],
+  "research_area": [],
+  "software_class": "Modeling tool",
+  "software_type": "Electronic transport toolkit"
+}

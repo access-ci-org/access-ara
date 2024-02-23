@@ -1,0 +1,24 @@
+{
+    "software_name": "EasyBuild",
+    "overview": "EasyBuild is a software build and installation framework designed for managing and automating the building of software applications and libraries on high-performance computing (HPC) systems. It simplifies the process of installing scientific software and complex dependencies in a modular and flexible way.",
+    "core_features": [
+        "Software build automation",
+        "High-performance computing support",
+        "Dependency management"
+    ],
+    "general_tags": [
+        "Build automation",
+        "HPC systems",
+        "Software installation"
+    ],
+    "research_discipline": [
+        "Computational science",
+        "High-performance computing"
+    ],
+    "research_area": [
+        "Software management",
+        "HPC applications"
+    ],
+    "software_class": "Build tool",
+    "software_type": "Software installation framework"
+}

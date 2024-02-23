@@ -1,0 +1,24 @@
+{
+    "software_name": "GTK4",
+    "overview": "GTK4, the GIMP Toolkit's latest version, is an open-source graphical toolkit primarily used for creating user interfaces in applications. It offers modern features, improved performance, and enhanced capabilities for designing responsive and visually appealing GUIs across various platforms.",
+    "core_features": [
+        "Enhanced GUI toolkit",
+        "Modern user interface design",
+        "Improved performance"
+    ],
+    "general_tags": [
+        "User interface development",
+        "Cross-platform GUI toolkit",
+        "Open-source library"
+    ],
+    "research_discipline": [
+        "Computer science",
+        "Software development"
+    ],
+    "research_area": [
+        "Graphical user interfaces",
+        "Cross-platform application UI"
+    ],
+    "software_class": "GUI toolkit",
+    "software_type": "User interface design tool"
+}

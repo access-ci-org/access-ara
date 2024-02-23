@@ -1,0 +1,24 @@
+{
+    "software_name": "GTK2",
+    "overview": "GTK2 (GIMP Toolkit) is an open-source multi-platform toolkit for creating graphical user interfaces (GUIs). It provides a set of tools and libraries for developing applications with a consistent and user-friendly interface, supporting multiple programming languages and platform support.",
+    "core_features": [
+        "Graphical user interface toolkit",
+        "Cross-platform development",
+        "Programming language support"
+    ],
+    "general_tags": [
+        "GUI development",
+        "User interface toolkit",
+        "Open-source library"
+    ],
+    "research_discipline": [
+        "Computer science",
+        "Software development"
+    ],
+    "research_area": [
+        "GUI development",
+        "Cross-platform applications"
+    ],
+    "software_class": "GUI toolkit",
+    "software_type": "User interface library"
+}

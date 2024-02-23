@@ -1,0 +1,24 @@
+{
+    "software_name": "BLAT",
+    "overview": "BLAT (BLAST-Like Alignment Tool) is a sequence alignment software that performs rapid and accurate alignments of nucleotide or protein sequences against reference sequences. It is commonly used for genome analysis and comparative genomics.",
+    "core_features": [
+        "Sequence alignment",
+        "Rapid alignments",
+        "Genome analysis"
+    ],
+    "general_tags": [
+        "Sequence alignment",
+        "Genomic analysis",
+        "Comparative genomics"
+    ],
+    "research_discipline": [
+        "Genomics",
+        "Bioinformatics"
+    ],
+    "research_area": [
+        "Genome analysis",
+        "Sequence alignment"
+    ],
+    "software_class": "Bioinformatics tool",
+    "software_type": "Alignment software"
+}

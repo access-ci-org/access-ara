@@ -1,0 +1,24 @@
+I'll provide you with the JSON output for DBus:
+
+```json
+{
+    "software_name": "DBus",
+    "overview": "DBus is a message bus system for inter-process communication, allowing communication between applications running on the same machine or on different systems. It provides a high-level API for message passing and communication over a system and session bus.",
+    "core_features": [
+        "Inter-process communication",
+        "Message bus system",
+        "High-level API for messaging"
+    ],
+    "general_tags": [
+        "IPC",
+        "Message passing",
+        "Communication system"
+    ],
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Inter-process communication tool",
+    "software_type": "Message bus system"
+}
+```
+
+If you need further details or have any specific requirements, feel free to let me know!

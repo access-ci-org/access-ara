@@ -1,0 +1,24 @@
+{
+  "software_name": "Arriba",
+  "overview": "Arriba is a computational tool for analyzing gene fusions in cancer transcriptomes. It identifies and characterizes fusion events from RNA sequencing data to better understand the molecular mechanisms of cancer.",
+  "core_features": [
+    "Gene fusion analysis",
+    "Transcriptome analysis",
+    "Cancer research"
+  ],
+  "general_tags": [
+    "Gene fusions",
+    "Transcriptome analysis",
+    "Cancer research"
+  ],
+  "research_discipline": [
+    "Cancer biology",
+    "Bioinformatics"
+  ],
+  "research_area": [
+    "Cancer transcriptomics",
+    "Gene fusions"
+  ],
+  "software_class": "Analysis tool",
+  "software_type": "Gene fusion analyzer"
+}

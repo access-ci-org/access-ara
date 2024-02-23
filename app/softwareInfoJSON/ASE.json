@@ -1,0 +1,18 @@
+{
+  "software_name": "ASE",
+  "overview": "ASE (Atomic Simulation Environment) is a set of tools and Python modules for simulating atomistic systems. It provides a flexible framework for molecular and materials simulations.",
+  "core_features": [
+    "Atomistic simulation",
+    "Python modules",
+    "Molecular and materials simulations"
+  ],
+  "general_tags": [
+    "Atomistic simulation",
+    "Molecular dynamics",
+    "Materials simulations"
+  ],
+  "research_discipline": [],
+  "research_area": [],
+  "software_class": "Simulation tool",
+  "software_type": "Atomistic simulation environment"
+}

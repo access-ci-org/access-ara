@@ -1,0 +1,18 @@
+{
+  "software_name": "AOCL",
+  "overview": "AOCL (AMD OpenCL Compiler) is a compiler toolset for OpenCL applications, providing optimizations and support for AMD GPUs. It enables developers to compile and optimize OpenCL code for AMD hardware.",
+  "core_features": [
+    "OpenCL compiler",
+    "Optimizations for AMD GPUs",
+    "Support for OpenCL applications"
+  ],
+  "general_tags": [
+    "OpenCL compiler",
+    "GPU optimization",
+    "AMD GPUs"
+  ],
+  "research_discipline": [],
+  "research_area": [],
+  "software_class": "Compiler",
+  "software_type": "OpenCL toolset"
+}

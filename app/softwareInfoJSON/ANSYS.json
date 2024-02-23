@@ -1,0 +1,26 @@
+{
+  "software_name": "ANSYS",
+  "overview": "ANSYS is a simulation software suite that enables engineers to design and analyze complex systems in various engineering disciplines. It offers capabilities for structural analysis, fluid dynamics, electromagnetics, and more.",
+  "core_features": [
+    "Simulation software suite",
+    "Structural analysis",
+    "Fluid dynamics analysis",
+    "Electromagnetic analysis"
+  ],
+  "general_tags": [
+    "Simulation software",
+    "Engineering analysis",
+    "Multiphysics simulations"
+  ],
+  "research_discipline": [
+    "Engineering",
+    "Physics"
+  ],
+  "research_area": [
+    "Mechanical engineering",
+    "Civil engineering",
+    "Aerospace engineering"
+  ],
+  "software_class": "Simulation software",
+  "software_type": "Engineering tool"
+}

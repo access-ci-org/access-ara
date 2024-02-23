@@ -1,0 +1,30 @@
+I'll provide you with a JSON string for ESMF:
+
+```json
+{
+    "software_name": "ESMF",
+    "overview": "ESMF (Earth System Modeling Framework) is a software library that provides tools and APIs to streamline the development, testing, and execution of coupled Earth system models. It offers infrastructure for building complex modeling systems for global climate and weather modeling applications.",
+    "core_features": [
+        "Earth system modeling",
+        "Modeling framework development",
+        "Coupled model support"
+    ],
+    "general_tags": [
+        "Climate modeling",
+        "Modeling framework",
+        "Earth system models"
+    ],
+    "research_discipline": [
+        "Climate science",
+        "Meteorology"
+    ],
+    "research_area": [
+        "Climate modeling",
+        "Earth system simulations"
+    ],
+    "software_class": "Modeling framework",
+    "software_type": "Earth system modeling library"
+}
+``` 
+
+Let me know if you need more details or have any specific requirements!

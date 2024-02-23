@@ -1,0 +1,18 @@
+{
+    "software_name": "Automake",
+    "overview": "Automake is a build automation tool that generates Makefile.in files from Makefile.am template files. It simplifies the process of building software by automating the generation of makefiles based on the software's structure.",
+    "core_features": [
+        "Build automation",
+        "Makefile generation",
+        "Simplifies software building"
+    ],
+    "general_tags": [
+        "Build automation",
+        "Makefiles",
+        "Software development"
+    ],
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Build tool",
+    "software_type": "Makefile generator"
+}

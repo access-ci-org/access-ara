@@ -1,0 +1,18 @@
+{
+  "software_name": "ACTC",
+  "overview": "ACTC (Advanced Compiler Technology Compiler) is a high-performance compiler designed for parallel computing and optimizing code execution on High-Performance Computing (HPC) systems.",
+  "core_features": [
+    "Optimized for parallel computing",
+    "High-performance compilation",
+    "Code optimization for HPC systems"
+  ],
+  "general_tags": [
+    "Compiler",
+    "High-Performance Computing",
+    "Parallel computing"
+  ],
+  "research_discipline": [],
+  "research_area": [],
+  "software_class": "Compiler",
+  "software_type": "HPC tool"
+}

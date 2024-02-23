@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     var table = $('#softwareTable').DataTable({
         "sScrollX":"100%",
-        "autoWidth":false
+        "autoWidth":true
     })
    
     

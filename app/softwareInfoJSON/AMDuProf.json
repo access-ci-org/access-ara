@@ -1,0 +1,18 @@
+{
+  "software_name": "AMDuProf",
+  "overview": "AMDuProf is a performance analysis tool for AMD GPUs that allows developers to profile and optimize their GPU-accelerated applications. It provides insights into kernel performance and memory usage on AMD GPUs.",
+  "core_features": [
+    "Performance analysis",
+    "Profiling for AMD GPUs",
+    "Memory usage insights"
+  ],
+  "general_tags": [
+    "Performance analysis",
+    "GPU profiling",
+    "AMD GPUs"
+  ],
+  "research_discipline": [],
+  "research_area": [],
+  "software_class": "Performance analysis tool",
+  "software_type": "GPU Profiler"
+}

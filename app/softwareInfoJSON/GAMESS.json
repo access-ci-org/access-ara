@@ -1,0 +1,24 @@
+{
+    "software_name": "GAMESS",
+    "overview": "GAMESS (General Atomic and Molecular Electronic Structure System) is a quantum chemistry software suite for ab initio calculations of atomic and molecular electronic structures. It provides a range of methods for molecular modeling, electronic structure calculations, and quantum chemistry simulations.",
+    "core_features": [
+        "Ab initio calculations",
+        "Atomic and molecular modeling",
+        "Electronic structure calculations"
+    ],
+    "general_tags": [
+        "Quantum chemistry",
+        "Ab initio methods",
+        "Electronic structure"
+    ],
+    "research_discipline": [
+        "Chemistry",
+        "Quantum chemistry"
+    ],
+    "research_area": [
+        "Molecular modeling",
+        "Electronic structure theory"
+    ],
+    "software_class": "Quantum chemistry tool",
+    "software_type": "Electronic structure software"
+}

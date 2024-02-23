@@ -1,0 +1,24 @@
+{
+    "software_name": "Bismark",
+    "overview": "Bismark is a bioinformatics tool for the identification and analysis of DNA methylation from bisulfite sequencing data. It aligns bisulfite-treated sequences and generates methylation calls to study DNA methylation patterns in various genomes.",
+    "core_features": [
+        "DNA methylation analysis",
+        "Bisulfite sequencing data processing",
+        "Alignment of bisulfite-treated sequences"
+    ],
+    "general_tags": [
+        "DNA methylation",
+        "Bisulfite sequencing",
+        "Bioinformatics"
+    ],
+    "research_discipline": [
+        "Epigenetics",
+        "Bioinformatics"
+    ],
+    "research_area": [
+        "DNA methylation analysis",
+        "Epigenomic research"
+    ],
+    "software_class": "Bioinformatics tool",
+    "software_type": "DNA methylation analyzer"
+}

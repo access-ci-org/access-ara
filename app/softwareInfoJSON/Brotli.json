@@ -1,0 +1,18 @@
+{
+    "software_name": "Brotli",
+    "overview": "Brotli is a compression algorithm developed by Google that offers higher compression ratios and faster compression and decompression speeds compared to traditional algorithms. It is used for compressing various types of data, including web content.",
+    "core_features": [
+        "High compression ratio",
+        "Fast compression and decompression",
+        "Data compression for web content"
+    ],
+    "general_tags": [
+        "Compression algorithm",
+        "Data compression",
+        "Google"
+    ],
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Compression tool",
+    "software_type": "Compression algorithm"
+}

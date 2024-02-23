@@ -1,0 +1,24 @@
+{
+    "software_name": "Cython",
+    "overview": "Cython is a programming language that combines Python's simplicity with C's performance, allowing Python code to be converted into C extensions for improved speed and optimized performance. It provides a way to write fast C extensions for Python and easily interact with C libraries.",
+    "core_features": [
+        "Python to C conversion",
+        "C extensions for Python",
+        "Performance optimization"
+    ],
+    "general_tags": [
+        "Python extensions",
+        "Performance enhancement",
+        "C programming"
+    ],
+    "research_discipline": [
+        "Computer science",
+        "Software development"
+    ],
+    "research_area": [
+        "Performance optimization",
+        "language interoperability"
+    ],
+    "software_class": "Language",
+    "software_type": "Python to C converter"
+}

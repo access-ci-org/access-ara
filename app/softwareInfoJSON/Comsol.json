@@ -1,0 +1,25 @@
+{
+    "software_name": "Comsol",
+    "overview": "Comsol Multiphysics is a finite element analysis and multiphysics simulation software used for modeling and simulating physics-based systems and optimizing designs. It enables engineers and scientists to analyze coupled phenomena across multiple domains including structural mechanics, fluid dynamics, heat transfer, and electromagnetics.",
+    "core_features": [
+        "Finite element analysis",
+        "Multiphysics simulations",
+        "Structural mechanics",
+        "Fluid dynamics"
+    ],
+    "general_tags": [
+        "Multiphysics software",
+        "Simulation tool",
+        "Engineering analysis"
+    ],
+    "research_discipline": [
+        "Engineering",
+        "Physics"
+    ],
+    "research_area": [
+        "Multiphysics simulations",
+        "Design optimization"
+    ],
+    "software_class": "Simulation software",
+    "software_type": "Multiphysics tool"
+}
