@@ -49,9 +49,5 @@ pip install --upgrade pip
 pip install -r requirements.txt
 # To generate a new requirements.txt file, run "pip freeze > requirements.txt"
 
-echo "Resetting Database"
-DATASOURCE=$1
-echo $DATASOURCE
-
 
 
