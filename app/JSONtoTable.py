@@ -3,8 +3,6 @@ import json
 import os
 
 
-directory_path = "./softwareInfoJSON"
-
 def read_and_transform_json(file_path):
     try:
         with open(file_path, 'r') as file:
@@ -19,9 +17,20 @@ def read_and_transform_json(file_path):
         print(f"Skipping file due to JSONDecodeError: {file_path}")
         return None
 
-data_dicts = [read_and_transform_json(os.path.join(directory_path,f)) 
-              for f in os.listdir(directory_path) if f.endswith('.json')]
+directory_path = "./softwareInfoJSON"
+data_dicts=[]
+
+for filename in os.listdir(directory_path):
+    if filename.endswith('.json'):
+        file_path = os.path.join(directory_path, filename)
+        data = read_and_transform_json(file_path)
+        if data is not None:
+            data_dicts.append(data)
 
 df = pd.DataFrame(data_dicts)
+df.fillna('',inplace=True)
+
+output_file_path = './combined_data.csv'
+df.to_csv(output_file_path,index=False)
 
 print(df)

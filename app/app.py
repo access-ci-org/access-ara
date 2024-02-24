@@ -14,6 +14,12 @@ def software_search():
 
     return render_template("software_search.html",table=table)
 
+@app.route("/dynamic")
+def software_search_dynamic():
+    df = pd.read_csv('./combined_data.csv')
+    df.fillna('',inplace=True)
+    table = df.to_html(classes='table-striped" id = "softwareTableDynamic',index=False,border=1)
+    return render_template("software_search.html", table=table)
 
 if __name__ == '__main__':
     load_dotenv()

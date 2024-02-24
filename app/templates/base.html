@@ -17,6 +17,8 @@
 
         <!-- Data Table for Software Search -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/searchbuilder/1.0.0/css/searchBuilder.dataTables.min.css">
 
     {% endblock %}
     <title>
@@ -36,6 +38,14 @@
             <br>
             <div class="container justify-content-center">
                 <div class="row justify-content-center" style="height: auto;">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="/">SDS Static</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/dynamic">SDS Dynamic</a>
+                        </li>
+                      </ul>
                     <div class="col">
                         <div id="alert-div"></div>
                     </div>
