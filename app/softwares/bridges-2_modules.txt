@@ -63,7 +63,8 @@ HTSlib
 iCommands
 Infernal
 ICC (Intel)
-Java, Julia
+Java
+Julia
 Jupyter
 Keras
 Kracken2
