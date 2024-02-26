@@ -23,6 +23,22 @@ $(document).ready(function(){
         dom:'Qlfrtip',
         "sScrollX": "100%",
         "autoWidth": true,
+        searchBuilder: {
+            conditions: {
+                string: {
+                    '=': null, // This removes the 'Equals' condition for numeric columns
+                    'null':null,
+                    '!null':null,
+                    '!=':null
+                },
+                num: {
+                    '=': null, // This removes the 'Equals' condition for numeric columns
+                    'null':null,
+                    '!null':null,
+                    '!=':null
+                },
+            }
+        },
         columnDefs: [{
                 targets: [5, 6,7,8,9], // Direct URL columns
                 render: function(data, type, row) {
@@ -38,6 +54,22 @@ $(document).ready(function(){
         dom:'Qlfrtip',
         "sScrollX": "100%",
         "autoWidth": true,
+        searchBuilder: {
+            conditions: {
+                string: {
+                    '=': null, // This removes the 'Equals' condition for numeric columns
+                    'null':null,
+                    '!null':null,
+                    '!=':null
+                },
+                num: {
+                    '=': null, // This removes the 'Equals' condition for numeric columns
+                    'null':null,
+                    '!null':null,
+                    '!=':null
+                },
+            }
+        },
         columnDefs:[
             {
                 targets:9,
@@ -57,6 +89,8 @@ $(document).ready(function(){
             }
         ]
     });
+
+    console.log($.fn.dataTable.SearchBuilder.conditions);
 
 
     // Initialize a Showdown converter with the Highlight.js extension
@@ -90,8 +124,6 @@ $(document).ready(function(){
         })
     })
 
-    var columnIndex = dynamicTable.column(':contains("Example Use")').index();
-    console.log(columnIndex)
 });
 
 // Define the Highlight.js extension for Showdown
