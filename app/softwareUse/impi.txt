@@ -1,0 +1,35 @@
+Use Case: Intel MPI (impi)
+
+Code details and examples:
+Intel MPI is widely used for parallel computing on Intel architectures. Here is an example of running a simple MPI program using Intel MPI:
+
+Sample Input file (hello_mpi.c):
+```c
+#include <stdio.h>
+#include "mpi.h"
+
+int main(int argc, char *argv[])
+{
+    int rank, size;
+
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    printf("Hello from rank %d of %d\n", rank, size);
+
+    MPI_Finalize();
+
+    return 0;
+}
+```
+
+Compile the code with Intel MPI:
+```
+mpiicc -o hello_mpi hello_mpi.c
+```
+
+Run the MPI program:
+```
+mpirun -np 4 ./hello_mpi
+```

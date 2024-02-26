@@ -1,0 +1,15 @@
+Use Case: Likwid provides a set of command line tools and a library for performance oriented programmers. It can be used to measure hardware performance counters on modern processors.
+  
+Code details and examples:
+```bash
+# Install likwid using package manager
+sudo apt-get install likwid
+
+# Example command to measure cache misses using likwid-perfctr
+likwid-perfctr -c L2CACHE ./my_application
+
+# Example command to measure energy consumption using likwid-powermeter
+likwid-powermeter -g PACKAGE_ENERGY ./my_application
+```
+
+Please refer to the Likwid documentation for more advanced usage and options: https://github.com/RRZE-HPC/likwid

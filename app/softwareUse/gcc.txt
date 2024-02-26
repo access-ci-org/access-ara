@@ -1,0 +1,22 @@
+Use Case: Compilation of C code
+
+Code details and examples:
+```c
+// sample.c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+To compile the `sample.c` file using `gcc`, use the following command:
+```bash
+gcc sample.c -o sample
+```
+
+To run the compiled executable:
+```bash
+./sample
+```

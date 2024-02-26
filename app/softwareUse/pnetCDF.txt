@@ -1,0 +1,71 @@
+Use Case: pnetCDF is a parallel I/O library for accessing NetCDF files in parallel. It allows multiple processes to read and write NetCDF files concurrently.
+
+Code details and examples:
+1. Creating a new NetCDF file using pnetCDF:
+```c
+#include <stdio.h>
+#include <pnetcdf.h>
+
+#define FILE_NAME "output.nc"
+
+int main() {
+    int ncid, varid;
+    int dimid, dim[1] = {4};
+    int data[4] = {1, 2, 3, 4};
+
+    MPI_Init(NULL, NULL);
+
+    ncmpi_create(MPI_COMM_WORLD, FILE_NAME, NC_CLOBBER, MPI_INFO_NULL, &ncid);
+    ncmpi_def_dim(ncid, "dim", dim[0], &dimid);
+    ncmpi_def_var(ncid, "var", NC_INT, 1, &dimid, &varid);
+
+    ncmpi_enddef(ncid);
+
+    ncmpi_put_var_int(ncid, varid, data);
+    
+    ncmpi_close(ncid);
+    
+    MPI_Finalize();
+
+    return 0;
+}
+```
+
+2. Reading from an existing NetCDF file using pnetCDF:
+```c
+#include <stdio.h>
+#include <pnetcdf.h>
+
+#define FILE_NAME "output.nc"
+
+int main() {
+    int ncid, varid;
+    int data[4];
+
+    MPI_Init(NULL, NULL);
+
+    ncmpi_open(MPI_COMM_WORLD, FILE_NAME, NC_NOWRITE, MPI_INFO_NULL, &ncid);
+    ncmpi_inq_varid(ncid, "var", &varid);
+
+    ncmpi_get_var_int(ncid, varid, data);
+    
+    ncmpi_close(ncid);
+    
+    MPI_Finalize();
+
+    for (int i = 0; i < 4; i++) {
+        printf("%d\n", data[i]);
+    }
+
+    return 0;
+}
+```
+
+To compile and run the above examples with pnetCDF, you can use the following commands:
+```bash
+mpicc create_nc.c -o create_nc -lpnetcdf
+mpirun -n <num_procs> ./create_nc
+
+mpicc read_nc.c -o read_nc -lpnetcdf
+mpirun -n <num_procs> ./read_nc
+```

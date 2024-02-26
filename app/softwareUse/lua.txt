@@ -1,0 +1,13 @@
+It seems you are referring to the Lua programming language. 
+
+Use Case: Lua script execution
+Code details and examples:
+Input file (sample.lua):
+```lua
+print("Hello, world!")
+```
+
+Code to execute Lua script:
+```
+lua sample.lua
+```

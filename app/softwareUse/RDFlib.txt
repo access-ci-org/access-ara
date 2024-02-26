@@ -1,0 +1,28 @@
+Use Case: RDFlib is a Python library for working with RDF data. 
+
+Code details and examples:
+
+Sample input file (example.ttl):
+```
+@prefix ex: <http://example.org/> .
+ex:John ex:hasAge "30" .
+```
+
+Code snippet to parse an RDF file and print triples:
+```python
+from rdflib import Graph
+
+g = Graph()
+
+# Load the RDF data
+g.parse("example.ttl", format="turtle")
+
+# Print triples
+for subj, pred, obj in g:
+    print(subj, pred, obj)
+```
+
+Command to run:
+```
+python script.py
+```

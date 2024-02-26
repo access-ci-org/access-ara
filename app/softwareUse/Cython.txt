@@ -1,0 +1,31 @@
+Use Case: Cython is a programming language that makes it easy to write C extensions for Python.
+
+Code details and examples:
+
+```python
+# example.pyx
+def add_numbers(int a, int b):
+    return a + b
+```
+
+To compile the Cython code:
+
+```bash
+cythonize -i example.pyx
+```
+
+To use the compiled Cython code in Python:
+
+```python
+# main.py
+from example import add_numbers
+
+result = add_numbers(10, 20)
+print(result)
+```
+
+To compile and run the Python code:
+
+```bash
+python main.py
+``` 

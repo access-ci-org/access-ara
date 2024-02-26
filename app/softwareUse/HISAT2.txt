@@ -1,0 +1,18 @@
+Use Case: HISAT2 is a fast and sensitive alignment tool for aligning RNA-seq reads to a reference genome.
+
+Code details and examples:
+1. Download the HISAT2 software from the official website and make sure it is in your PATH.
+2. Prepare the index files for the reference genome using HISAT2-build:
+```bash
+hisat2-build reference_genome.fasta reference_index
+```
+3. Run the alignment using HISAT2:
+```bash
+hisat2 -x reference_index -1 forward_reads.fastq -2 reverse_reads.fastq -S output.sam
+```
+In the above command:
+- `-x` specifies the path to the reference genome index generated using HISAT2-build.
+- `-1` and `-2` specify the input files for paired-end forward and reverse reads.
+- `-S` specifies the output SAM file.
+
+Note: HISAT2 also provides options for single-end reads and other parameters to customize the alignment process.

@@ -1,0 +1,21 @@
+Use Case: SPAdes (St. Petersburg genome assembler) is a genome assembly tool designed for single-cell and multi-cell bacterial genome projects.
+
+Code details and examples:
+- Example command to run SPAdes with paired-end Illumina reads:
+```
+spades.py -1 path/to/reads_R1.fastq -2 path/to/reads_R2.fastq -o output_directory
+```
+
+- Example command to run SPAdes with single-end Illumina reads:
+```
+spades.py --s1 path/to/reads.fastq -o output_directory
+```
+
+- Sample input files for running SPAdes: 
+  - `reads_R1.fastq`: File containing forward paired-end Illumina reads
+  - `reads_R2.fastq`: File containing reverse paired-end Illumina reads
+  - `reads.fastq`: File containing single-end Illumina reads
+
+- Output will be the assembled contigs in the specified output directory.
+
+For more details and options, you can refer to the SPAdes documentation.

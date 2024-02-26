@@ -1,0 +1,22 @@
+Use Case: FreeIPMI provides a collection of Intelligent Platform Management Interface (IPMI) utilities for remote management and monitoring of servers. It includes tools such as ipmitool for querying and configuring IPMI-enabled devices.
+
+Code details and examples:
+- Sample input file format for ipmitool command:
+  - IP address: 192.168.1.100
+  - Remote username: admin
+  - Remote password: password123
+
+- Code snippet to query system information using ipmitool:
+  ```bash
+  ipmitool -H 192.168.1.100 -U admin -P password123 fru print
+  ```
+
+- Command to run the ipmitool tool to get sensor readings:
+  ```bash
+  ipmitool -H 192.168.1.100 -U admin -P password123 sdr list
+  ```
+
+- Command to run the ipmitool tool to power off a remote server:
+  ```bash
+  ipmitool -H 192.168.1.100 -U admin -P password123 power off
+  ```

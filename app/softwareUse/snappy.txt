@@ -1,0 +1,10 @@
+Use Case: Computational fluid dynamics solver for compressible flows
+
+Code details and examples:
+Input file format (sample input file "input.snappy"):
+- Contains parameters for the simulation, such as mesh file, boundary conditions, solver settings, etc.
+
+Command to run:
+snappy -i input.snappy
+
+Note: The above command is a placeholder and may vary depending on the actual usage of the software.

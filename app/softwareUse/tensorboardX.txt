@@ -1,0 +1,34 @@
+Use Case: Visualizing training results in PyTorch using TensorboardX
+
+Code details and examples:
+```python
+import torch
+import torchvision
+from torch.utils.tensorboard import SummaryWriter
+from tensorboardX import SummaryWriter
+
+# Create a SummaryWriter for logging
+writer = SummaryWriter()
+
+# Add scalar data to Tensorboard
+for i in range(10):
+    writer.add_scalar('data/scalar', i*0.1, i)
+
+# Add image data to Tensorboard
+dummy_img = torch.rand(3, 64, 64)
+writer.add_image('Image', dummy_img, 1)
+
+# Add model graph to Tensorboard
+model = torchvision.models.resnet18()
+data = torch.rand(1, 3, 224, 224)
+writer.add_graph(model, data)
+
+# Close the writer
+writer.close()
+```
+
+To run the code snippet above, you can save it in a Python file (e.g., `tensorboard_example.py`) and execute it in your terminal:
+
+```
+python tensorboard_example.py
+```

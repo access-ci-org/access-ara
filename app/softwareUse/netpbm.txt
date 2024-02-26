@@ -1,0 +1,23 @@
+Use Case: Image manipulation
+Code details and examples:
+Netpbm is a collection of image processing tools that can manipulate images in various formats such as PBM (Portable Bitmap), PGM (Portable Graymap), and PPM (Portable Pixmap).
+
+Example of converting an image from one format to another:
+1. Convert a PPM image to PGM:
+```bash
+ppmtopgm input.ppm > output.pgm
+```
+
+2. Convert a PGM image to PBM:
+```bash
+pgmtopbm input.pgm > output.pbm
+```
+
+3. Convert a PBM image to PPM:
+```bash
+pbmtojbg input.pbm > output.ppm
+```
+
+The input files should be in the specified format (PBM, PGM, PPM) and the output will be saved in the desired format.
+
+To view more options and details, you can refer to the Netpbm documentation or use the `man` command for specific tool options.

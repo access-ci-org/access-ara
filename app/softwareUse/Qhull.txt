@@ -1,0 +1,18 @@
+Use Case: Convex hull computation
+Code details and examples:
+Qhull is a software library for computing the convex hull of a set of points in N-dimensional space. It can be used for a variety of applications, including computational geometry, graphics, and machine learning.
+
+Sample input file (points.txt):
+```
+3
+1 1 1
+2 2 2
+3 3 3
+```
+
+Code snippet to run Qhull (assuming points.txt contains the input points):
+```
+$ qhull < points.txt
+```
+
+This will output the convex hull of the given points.

@@ -1,0 +1,32 @@
+Use Case: Build and test software of any size correctly and quickly.
+
+Code details and examples: 
+1. Sample input files:
+   - WORKSPACE file:
+   ```
+   workspace(name = "my_workspace")
+   load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+   http_archive(
+       name = "rules_python",
+       urls = ["https://github.com/bazelbuild/rules_python/archive/3.0.0.tar.gz"],
+       sha256 = "5179c44bb1951e6d33413e3749b5b180f4fd3f2569b76986546f9aca2edff4ec",
+   )
+
+   load("@rules_python//python:repositories.bzl", "rules_python_dependencies", "ules_p")
+   rules_python_dependencies()
+   ```
+
+2. Code snippet to build and test:
+   To build an application:
+   ```
+   bazel build //path/to:target
+   ```
+
+   To run tests:
+   ```
+   bazel test //path/to:target_test
+   ```
+
+3. Execute the code:
+   Replace `//path/to:target` and `//path/to:target_test` with your actual targets and run the respective commands in the terminal.

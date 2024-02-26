@@ -1,0 +1,36 @@
+Use Case: Linear algebra library for high-performance computing.
+
+Code details and examples: 
+MKL (Math Kernel Library) is a mathematical library that provides optimized routines for linear algebra, fast Fourier transforms, vector math, and more. It is commonly used in high-performance computing applications to accelerate mathematical computations.
+
+Example of using MKL to perform matrix multiplication in C:
+
+```c
+#include <stdio.h>
+#include <mkl.h>
+
+int main() {
+    double A[2][2] = {{1.0, 2.0}, {3.0, 4.0}};
+    double B[2][2] = {{4.0, 3.0}, {2.0, 1.0}};
+    double C[2][2];
+
+    cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, 2, 2, 2, 1.0, *A, 2, *B, 2, 0.0, *C, 2);
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%f ", C[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+To compile the code using MKL in C, use the following command:
+
+```
+icc -o matmul matmul.c -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl
+```
+
+This command assumes you have Intel's C compiler (icc) and MKL installed on your system.

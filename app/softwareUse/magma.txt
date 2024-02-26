@@ -1,0 +1,42 @@
+Use Case: Magma is a dense linear algebra library that provides highly efficient routines for computations on hybrid GPU-based systems.
+
+Code details and examples: 
+Magma requires input files in specific formats depending on the operation being performed. Below is an example of how you can use Magma to perform LU factorization on a matrix.
+
+```c
+#include <magma_v2.h>
+#include <stdio.h>
+
+int main() {
+    magma_init();
+
+    magma_int_t n = 3;
+    magma_int_t lda = n;
+    magma_int_t info;
+
+    double *a = (double*)malloc(n*n*sizeof(double));
+    // Fill in the matrix a with your input
+
+    magma_dgetrf(n, n, a, lda, NULL, &info);
+
+    if (info == 0) {
+        printf("LU factorization successful.\n");
+    } else {
+        printf("LU factorization failed.\n");
+    }
+
+    magma_finalize();
+
+    return 0;
+}
+```
+
+To compile the code, assuming the file is named `lu_magma.c`, you can use the following command:
+```bash
+gcc lu_magma.c -o lu_magma -I /path_to_magma/include -L /path_to_magma/lib -lmagma -lcula -lcublas -lcudart
+```
+
+To run the executable:
+```bash
+./lu_magma
+```

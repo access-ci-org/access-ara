@@ -1,0 +1,42 @@
+Use Case: Performance analysis of HPC applications with TAU (Tuning and Analysis Utilities)
+
+Code Details and Examples:
+TAU (Tuning and Analysis Utilities) is a widely used performance analysis tool for parallel and high-performance computing applications. TAU supports various profiling methods, performance instrumentation, and performance visualization.
+
+1. Example of instrumenting and profiling a simple C application using TAU:
+Sample C code (sample.c):
+```c
+#include <stdio.h>
+
+int main() {
+    int sum = 0;
+    for (int i = 1; i <= 100; i++) {
+        sum += i;
+    }
+    printf("Sum: %d\n", sum);
+    return 0;
+}
+```
+
+Compile the code with TAU compiler wrapper (tau_cc):
+```
+tau_cc sample.c -o sample_tau
+```
+
+Run the instrumented binary with TAU's profiling options:
+```
+mpiexec -n 4 ./sample_tau
+```
+
+2. Example of generating a TAU profile and viewing it with TAU's command-line utilities:
+Generate a TAU profile:
+```
+pprof
+```
+
+View the TAU profile:
+```
+paraprof
+```
+
+These are just basic examples to demonstrate the usage of TAU for performance analysis of HPC applications. TAU provides a wide range of features and options for in-depth performance evaluation of parallel programs.

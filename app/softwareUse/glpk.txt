@@ -1,0 +1,42 @@
+Use Case: Linear programming with the GNU Linear Programming Kit (GLPK)
+
+Code details and examples:
+GLPK is an open-source software package written in C that is useful for solving large-scale linear programming (LP), mixed integer programming (MIP), and other related problems. GLPK supports the input format of both MPS (Mathematical Programming System) and LP (Linear Programming) files.
+
+Sample MPS input file (example.mps):
+```
+NAME          Example
+ROWS
+ N  cost
+ L  limit
+COLUMNS
+    cost  x1        cost  x2        limit  lim
+    1     x1        2     x2        lim    x1    1
+RHS
+    rhs
+    5
+BOUNDS
+ UP BOUND
+    x1
+    3
+ENDATA
+```
+
+Sample LP input file (example.lp):
+```
+maximize
+ obj: x1 + 2 x2
+subject to
+ con: x1 <= 1
+ con: x1 + x2 >= 3
+bounds
+ x1 <= 3
+end
+```
+
+To solve an LP/MIP problem using GLPK, you can use the following command:
+```
+glpsol --lp example.lp
+```
+
+This command will solve the LP/MIP problem defined in the "example.lp" file. You can replace "example.lp" with the path to your own LP/MIP input file.

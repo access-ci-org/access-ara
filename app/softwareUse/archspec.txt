@@ -1,0 +1,46 @@
+Use Case: archspec is a Python library for detecting and describing hardware configurations on HPC systems.
+
+Code details and examples:
+
+Input file format (example input.yaml):
+```
+system:
+  name: my_system
+  vendor: vendor_name
+  processor:
+    name: processor_name
+    codename: processor_codename
+  memory:
+    size: memory_size
+    type: memory_type
+```
+
+Code snippet (example usage):
+```python
+import archspec
+
+data = {
+    "system": {
+        "name": "my_system",
+        "vendor": "vendor_name",
+        "processor": {
+            "name": "processor_name",
+            "codename": "processor_codename"
+        },
+        "memory": {
+            "size": "memory_size",
+            "type": "memory_type"
+        }
+    }
+}
+
+hw_config = archspec.ArchSpec(data)
+print(hw_config.system)
+print(hw_config.processor)
+print(hw_config.memory)
+```
+
+Command to run the code (if available):
+```
+python script.py
+```

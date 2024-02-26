@@ -1,0 +1,29 @@
+Use Case: Optimization tool   
+Code details and examples:   
+Symphony is an open-source solver for Mixed Integer Linear Programming (MILP) problems. It is often used for various optimization tasks.   
+
+Sample input file (in .mps format):   
+```
+NAME          EXAMPLE
+ROWS
+ N  OBJ
+ L  ROW1
+ L  ROW2
+COLUMNS
+         MARK0001  'MARKET'  ROW1                   1.0
+         MARK0001  'MARKET'  ROW2                   1.0
+         MARK0002  'MARKET'  ROW1                   1.0
+         MARK0002  'MARKET'  ROW2                   1.0
+RHS
+     RHS1  'ROW1'                      2.0
+     RHS1  'ROW2'                      2.0
+BOUNDS
+ UP BND1       'MARKET'                  1.0
+ UP BND2       'MARKET'                  1.0
+ENDATA
+```
+
+Command to run Symphony (assuming Symphony is installed and in the system path):   
+```
+symphony -F example.mps
+```

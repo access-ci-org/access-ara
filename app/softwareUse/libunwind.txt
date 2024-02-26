@@ -1,0 +1,44 @@
+I am familiar with the libunwind library. Here is an example of how it can be used:
+
+Use Case: Extracting stack trace using libunwind
+Code details and examples:
+- Sample input file (sample.cpp):
+```cpp
+#include <stdio.h>
+#include <libunwind.h>
+
+void print_backtrace() {
+    unw_cursor_t cursor;
+    unw_context_t context;
+
+    unw_getcontext(&context);
+    unw_init_local(&cursor, &context);
+
+    while (unw_step(&cursor) > 0) {
+        unw_word_t offset, pc;
+        unw_get_reg(&cursor, UNW_REG_IP, &pc);
+        unw_get_proc_name(&cursor, NULL, 0, &offset);
+
+        char sym[256];
+        unw_get_proc_name(&cursor, sym, sizeof(sym), &offset);
+        printf("    %s\n", sym);
+    }
+}
+
+int main() {
+    print_backtrace();
+    return 0;
+}
+```
+
+- Compilation command:
+```
+gcc -o sample sample.cpp -lunwind
+```
+
+- Command to run compiled program:
+```
+./sample
+```
+
+This code snippet demonstrates how to use the libunwind library to extract a stack trace in a C++ program.

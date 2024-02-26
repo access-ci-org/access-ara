@@ -1,0 +1,47 @@
+Use Case: Parallel computing with MPICH
+
+Code details and examples:
+MPICH is a high-performance and widely portable implementation of the Message Passing Interface (MPI) standard. MPI is a communication protocol used in parallel computing to enable processes to communicate with each other.
+
+To run a simple MPI program using MPICH, you first need to write a MPI program in C or Fortran and then compile and run it using MPICH.
+
+Here is an example of a simple MPI program in C that calculates the sum of numbers from 1 to N using MPI_Reduce:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <mpi.h>
+
+int main(int argc, char *argv[]) {
+    int rank, size, N = 10;
+    int sum = 0;
+
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    for (int i = rank + 1; i <= N; i += size) {
+        sum += i;
+    }
+
+    int totalSum;
+    MPI_Reduce(&sum, &totalSum, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+
+    if (rank == 0) {
+        printf("The total sum is: %d\n", totalSum);
+    }
+
+    MPI_Finalize();
+
+    return 0;
+}
+```
+
+To compile and run this MPI program with MPICH, you can use the following commands:
+
+```bash
+mpicc mpi_sum.c -o mpi_sum -lmpich
+mpirun -np 4 ./mpi_sum
+```
+
+In this example, `mpicc` is used to compile the MPI program, and `mpirun` is used to run the MPI program with 4 processes.

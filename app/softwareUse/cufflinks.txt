@@ -1,0 +1,16 @@
+Use Case: RNA-Seq transcript assembly software
+Code details and examples: 
+Sample input file (in FASTQ format) for Cufflinks:
+```
+@SEQ_ID
+GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCA
++
+!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF)))**
+```
+
+Command to run Cufflinks for RNA-Seq transcript assembly:
+```
+cufflinks -p 8 -o output_folder input_alignment.bam
+```
+
+In this example, Cufflinks is used to assemble transcripts from RNA-Seq data stored in the `input_alignment.bam` file using 8 threads and the output will be stored in the `output_folder`.

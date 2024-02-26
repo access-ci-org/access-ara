@@ -1,0 +1,34 @@
+Use Case: Mathematical Kernel Library for 32-bit (MKL32)
+
+Code details and examples:
+MKL32 is a highly optimized math library for 32-bit applications. It provides a set of routines for linear algebra, Fourier transforms, vector math, and more.
+
+Example of a simple C code using MKL32 to perform matrix-vector multiplication:
+```c
+#include <stdio.h>
+#include <mkl.h>
+
+int main() {
+    double A[4] = {1.0, 2.0, 3.0, 4.0};
+    double x[2] = {1.0, 2.0};
+    double y[2];
+
+    cblas_dgemv(CblasRowMajor, CblasNoTrans, 2, 2, 1.0, A, 2, x, 1, 0.0, y, 1);
+
+    for(int i=0; i<2; i++) {
+        printf("%f\n", y[i]);
+    }
+
+    return 0;
+}
+```
+
+Compilation command (assuming MKL32 libraries are properly linked):
+```bash
+gcc -o matrix_vector_multiply matrix_vector_multiply.c -lmkl_rt
+```
+
+Run the compiled executable:
+```bash
+./matrix_vector_multiply
+```

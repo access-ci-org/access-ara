@@ -1,0 +1,19 @@
+Use Case: Debugging parallel programs
+Code Details and Examples: 
+TotalView is a debugger tool used for debugging parallel programs running on clusters or distributed systems. TotalView allows users to inspect variables, set breakpoints, and analyze the behavior of parallel applications.
+
+To use TotalView for debugging, you typically need to compile your program with debugging symbols enabled. Here is an example of compiling a C program using mpicc with debugging symbols:
+
+```bash
+mpicc -g -o my_program my_program.c
+```
+
+To start debugging a parallel program using TotalView, you can use the following command:
+
+```bash
+totalview mpirun -np <num_processes> ./my_program
+```
+
+This command will launch the TotalView debugger and attach to the parallel program specified.
+
+Please note that the exact command syntax may vary based on your specific setup and the version of TotalView you are using.

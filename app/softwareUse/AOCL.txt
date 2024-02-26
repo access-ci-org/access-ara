@@ -1,0 +1,24 @@
+Use Case: High-performance Computing Software
+
+Code details and examples:
+AOCL (Altera OpenCL SDK) is a software development kit for developing applications on Intel FPGAs using OpenCL. It is used for high-performance computing and acceleration of various workloads leveraging FPGA hardware.
+
+Example of using AOCL:
+
+Input file: kernel.cl
+```c
+__kernel void vector_add(__global const float *a, __global const float *b, __global float *c, const unsigned int n) {
+    int i = get_global_id(0);
+    
+    if (i < n) {
+        c[i] = a[i] + b[i];
+    }
+}
+```
+
+Code snippet:
+```bash
+aoc kernel.cl -o kernel.aocx
+```
+
+This code snippet compiles the OpenCL kernel code in kernel.cl using the AOCL compiler (aoc) and generates an FPGA binary file (kernel.aocx) that can be executed on an Intel FPGA.

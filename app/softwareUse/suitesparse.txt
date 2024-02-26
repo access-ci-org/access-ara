@@ -1,0 +1,91 @@
+Use Case: SuiteSparse is a suite of sparse matrix algorithms in the form of libraries and tools.
+ 
+Code details and examples:
+
+1. **Sparse Matrix Multiplication**: To perform sparse matrix multiplication using SuiteSparse's `cs_multiply` function.
+   
+   **Sample Input Files**: 
+   
+   Matrix A (in Matrix Market format):
+   ```
+   %%MatrixMarket matrix coordinate real general
+   % Rows Columns NonZeros
+   3 3 4
+   1 1 1.0
+   2 2 2.0
+   3 2 3.0
+   3 3 4.0
+   ```
+   
+   Matrix B (in Matrix Market format):
+   ```
+   %%MatrixMarket matrix coordinate real general
+   % Rows Columns NonZeros
+   3 2 3
+   1 2 1.0
+   3 2 2.0
+   3 1 3.0
+   ```
+
+   **Code**:
+   ```c
+   #include "suite_sparse/Include/cs.h"
+   
+   int main(){
+       cs A = cs_load("matrix_A.mtx");
+       cs B = cs_load("matrix_B.mtx");
+       cs C = cs_multiply(A, B);
+       // Further processing or output of C
+       cs_free(A);
+       cs_free(B);
+       cs_free(C);
+       return 0;
+   }
+   ```
+
+   **Command** (Compile and run):
+   ```bash
+   gcc my_program.c -o my_program -lsuitesparse
+   ./my_program
+   ```
+
+2. **Sparse Cholesky Decomposition**: Using SuiteSparse's `cholmod_analyze` and `cholmod_factorize` functions for Cholesky decomposition of a sparse matrix.
+
+   **Sample Input Files**:
+   
+   Matrix A (in Matrix Market format):
+   ```
+   %%MatrixMarket matrix coordinate real general
+   % Rows Columns NonZeros
+   3 3 3
+   1 1 4.0
+   2 2 5.0
+   3 3 6.0
+   ```
+
+   **Code**:
+   ```c
+   #include "suite_sparse/Include/cholmod.h"
+   
+   int main(){
+       cholmod_common Common, *cm;
+       cm = &Common;
+       cholmod_start(cm);
+       cholmod_sparse *A;
+       A = cholmod_read_sparse("matrix_A.mtx", 1, 1, cm);
+       cholmod_factor *L;
+       L = cholmod_analyze(A, cm);
+       cholmod_factorize(A, L, cm);
+       // Further processing or use of L
+       cholmod_free_factor(&L, cm);
+       cholmod_free_sparse(&A, cm);
+       cholmod_finish(cm);
+       return 0;
+   }
+   ```
+
+   **Command** (Compile and run):
+   ```bash
+   gcc my_program.c -o my_program -lsuitesparse
+   ./my_program
+   ```

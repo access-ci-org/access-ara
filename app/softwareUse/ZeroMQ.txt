@@ -1,0 +1,43 @@
+Use Case: ZeroMQ is a high-performance messaging library for distributed or concurrent systems.
+
+Code details and examples:
+ZeroMQ does not require input files for basic messaging scenarios. Below is an example of a simple ZeroMQ publisher and subscriber in Python:
+
+Publisher:
+```python
+import zmq
+
+context = zmq.Context()
+socket = context.socket(zmq.PUB)
+socket.bind("tcp://*:5555")
+
+while True:
+    msg = input("Enter message to publish: ")
+    socket.send(msg.encode())
+```
+
+Subscriber:
+```python
+import zmq
+
+context = zmq.Context()
+socket = context.socket(zmq.SUB)
+socket.connect("tcp://localhost:5555")
+socket.setsockopt_string(zmq.SUBSCRIBE, "")
+
+while True:
+    msg = socket.recv()
+    print(f"Received: {msg.decode()}")
+```
+
+To run the above scripts, you can launch the publisher and subscriber in separate terminals.
+
+Publisher command:
+```
+python publisher.py
+```
+
+Subscriber command:
+```
+python subscriber.py
+```

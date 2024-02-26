@@ -1,0 +1,48 @@
+Use Case: libffi is a library that provides a portable, high-level programming interface to various calling conventions. It allows a programmer to call any function specified by a call interface description at run-time.
+
+Code details and examples:
+```C
+#include <stdio.h>
+#include <ffi.h>
+
+/* Prototype for the function we want to call */
+int add_numbers(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    ffi_cif cif;
+    ffi_type *args[2];
+    void *values[2];
+    ffi_arg result;
+
+    // Initialize the argument types
+    args[0] = &ffi_type_sint;
+    args[1] = &ffi_type_sint;
+
+    // Initialize the cif object
+    ffi_status status = ffi_prep_cif(&cif, FFI_DEFAULT_ABI, 2,
+                                     &ffi_type_sint, args);
+    if (status != FFI_OK) {
+        fprintf(stderr, "ffi_prep_cif failed\n");
+        return 1;
+    }
+
+    // Assign values to the arguments
+    int arg1 = 10, arg2 = 20;
+    values[0] = &arg1;
+    values[1] = &arg2;
+
+    // Call the function
+    ffi_call(&cif, FFI_FN(add_numbers), &result, values);
+
+    printf("Result: %d\n", (int)result);
+
+    return 0;
+}
+```
+
+To compile the above code using libffi, you can use the following commands:
+```bash
+gcc -o example example.c -lffi
+```

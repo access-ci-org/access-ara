@@ -1,0 +1,38 @@
+Use Case: libevent is a library that provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout. It is commonly used in network programming for creating event-driven programs.
+
+Code details and examples:
+```c
+#include <event2/event.h>
+
+void event_callback(evutil_socket_t fd, short events, void *arg) {
+    // Callback function to handle events
+    // You can write your custom logic here
+}
+
+int main() {
+    struct event_base *base = event_base_new();
+    
+    struct event *ev = event_new(base, /* file descriptor */, EV_READ | EV_PERSIST, event_callback, NULL);
+    // Add the event to the event base
+    event_add(ev, NULL);
+
+    // Start the event loop
+    event_base_dispatch(base);
+
+    // Cleanup
+    event_free(ev);
+    event_base_free(base);
+
+    return 0;
+}
+```
+
+To compile the code:
+```bash
+gcc -o my_program my_program.c -levent
+```
+
+To run the compiled program:
+```bash
+./my_program
+```

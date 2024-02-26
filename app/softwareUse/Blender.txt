@@ -1,0 +1,25 @@
+Blender is a 3D creation suite that supports the entire 3D pipeline - modeling, rigging, animation, simulation, rendering, compositing, and motion tracking. It is often used for creating animations, visual effects, video games, and more.
+
+Use Case: Create a basic 3D model using Blender
+Code details and examples:
+```python
+import bpy
+
+# Clear existing objects
+bpy.ops.object.select_all(action='DESELECT')
+bpy.ops.object.select_by_type(type='MESH')
+bpy.ops.object.delete()
+
+# Create a cube
+bpy.ops.mesh.primitive_cube_add(size=2, enter_editmode=False, align='WORLD', location=(0, 0, 0))
+
+# Save the scene
+bpy.ops.wm.save_as_mainfile(filepath="basic_cube.blend")
+```
+
+To run the script above, you can save it as a Python file (e.g., `create_cube.py`) and then run it in Blender by opening Blender from the command line and passing the script file as an argument:
+```
+blender -b -P create_cube.py
+```
+
+This will create a basic 3D model of a cube and save it as `basic_cube.blend`.

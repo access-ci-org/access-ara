@@ -1,0 +1,24 @@
+Use Case: texinfo is a documentation system that uses a single source file to produce both online information and printed output. It is primarily used in software documentation to create manuals.
+
+Code details and examples:
+- Create a texinfo file (e.g., sample.texinfo):
+```
+\input texinfo
+@c %**start of header
+@setfilename sample.info
+@settitle Sample Manual
+@c %**end of header
+@chapter Introduction
+This is a sample Texinfo file.
+@end chapter
+```
+
+- Convert the texinfo file to an Info file:
+```
+makeinfo sample.texinfo
+```
+
+- View the generated Info file:
+```
+info sample.info
+```

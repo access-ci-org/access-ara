@@ -1,0 +1,23 @@
+Use Case: cuDF is a GPU DataFrame library for loading, joining, aggregating, filtering, and manipulating data using a pandas-like API. 
+
+Code details and examples:
+Sample input file format (CSV):
+```
+id,name,age
+1,Alice,25
+2,Bob,30
+3,Charlie,35
+```
+
+Sample code to read a CSV file using cuDF:
+```python
+import cudf
+
+# Read CSV file
+df = cudf.read_csv('input.csv')
+
+# Display the DataFrame
+print(df)
+```
+
+To run the code, make sure you have a compatible NVIDIA GPU and cuDF installed on your system.

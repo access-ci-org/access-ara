@@ -1,0 +1,16 @@
+Use Case: ABySS is a de novo sequence assembler intended for short paired-end reads. It is designed for extremely large genomes.
+
+Code details and examples:
+- Input files: ABySS takes input in FASTA or FASTQ format for short reads, and it requires a configuration file in INI format to specify parameters for the assembly.
+- Code snippet to run ABySS:
+```bash
+abyss-pe k=64 name=assembly in='reads1.fq reads2.fq' np=4
+```
+- Command breakdown:
+  - `abyss-pe`: Command to run ABySS for paired-end reads
+  - `k=64`: Specifies the k-mer size to use for assembly
+  - `name=assembly`: Specifies the name of the assembly output
+  - `in='reads1.fq reads2.fq'`: Input files containing paired-end reads
+  - `np=4`: Number of CPU cores to use for the assembly
+
+Please note that the above command is a basic example and the parameters may vary depending on the specific requirements of your assembly.

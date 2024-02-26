@@ -1,0 +1,37 @@
+Use Case: deal.II is a C++ library designed to provide an infrastructure for finite element method codes.
+
+Code details and examples:
+```cpp
+// Sample input file (example.prm)
+# Default parameters file for deal.II
+set Output Directory = output/
+set Mesh File = mesh.msh
+set Polynomial Degree = 2
+
+// Sample code snippet for using deal.II
+#include <deal.II/base/utilities.h>
+#include <deal.II/grid/tria.h>
+#include <deal.II/grid/grid_generator.h>
+#include <deal.II/fe/fe_q.h>
+#include <deal.II/dofs/dof_handler.h>
+#include <deal.II/base/function.h>
+
+using namespace dealii;
+
+int main()
+{
+    Triangulation<2> triangulation;
+    GridGenerator::hyper_cube(triangulation);
+    triangulation.refine_global(4);
+
+    FE_Q<2> fe(2);
+    DoFHandler<2> dof_handler(triangulation);
+    dof_handler.distribute_dofs(fe);
+
+    // Your code using deal.II goes here
+
+    return 0;
+}
+```
+
+Please refer to deal.II documentation for more details and advanced usage.

@@ -1,0 +1,16 @@
+Use Case: Scripting language for automation, testing, and rapid prototyping.
+
+Code details and examples:
+Tcl (Tool Command Language) is a powerful scripting language that can be used for various purposes such as automation, testing, and rapid prototyping.
+
+Sample Input files:
+1. script.tcl
+```
+# Hello World program in Tcl
+puts "Hello, World!"
+```
+
+Command to run:
+```
+tclsh script.tcl
+```

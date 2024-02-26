@@ -1,0 +1,39 @@
+Use Case: FEniCS is an automated system for the finite element method. It provides a collection of tools for automated solution of differential equations.
+
+Code details and examples:
+Sample input file (poisson.py):
+```python
+from fenics import *
+
+# Create mesh and define function space
+mesh = UnitSquareMesh(8, 8)
+V = FunctionSpace(mesh, 'P', 1)
+
+# Define boundary condition
+u_D = Expression('1 + x[0]*x[0] + 2*x[1]*x[1]', degree=2)
+
+def boundary(x, on_boundary):
+    return on_boundary
+
+bc = DirichletBC(V, u_D, boundary)
+
+# Define variational problem
+u = TrialFunction(V)
+v = TestFunction(V)
+f = Constant(-6.0)
+a = dot(grad(u), grad(v)) * dx
+L = f * v * dx
+
+# Compute solution
+u = Function(V)
+solve(a == L, u, bc)
+
+# Save solution to file
+file = File('poisson.pvd')
+file << u
+```
+
+To run the code:
+```bash
+python poisson.py
+```

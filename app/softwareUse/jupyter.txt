@@ -1,0 +1,13 @@
+Use Case: Jupyter Notebook is a web-based interactive computing platform. It allows you to create and share documents that contain live code, equations, visualizations, and narrative text.
+
+Code details and examples:
+Sample input file: There is no specific input file required for Jupyter Notebook. You can start it by simply running the command below.
+
+Command to run Jupyter Notebook:
+```bash
+jupyter notebook
+```
+
+Once you run the above command, it will open a new tab in your web browser where you can create a new notebook or open an existing one. Jupyter Notebook supports various programming languages such as Python, R, and Julia.
+
+Note: Jupyter Notebook needs to be installed on your system before running the above command.

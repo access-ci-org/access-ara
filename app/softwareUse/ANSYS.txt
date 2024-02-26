@@ -1,0 +1,48 @@
+Use Case: ANSYS is a finite element analysis software suite used in engineering simulations for various fields such as structural, thermal, fluid dynamics, and electromagnetics.
+
+Code details and examples:
+```ansys
+! Sample input file: input.inp
+
+/PREP7
+! Define nodes
+n,1,0,0,0
+n,2,1,0,0
+n,3,1,1,0
+n,4,0,1,0
+
+! Define elements
+et,1,186
+type,1
+mat,1
+real,1
+secnum,1
+mp,ex,1e7
+mp,prxy,0.3
+
+! Define element connectivity
+r,1,2
+line,1,2
+r,2,3
+line,2,3
+r,3,4
+line,3,4
+r,4,1
+line,4,1
+
+! Apply boundary conditions and loads
+d,1,all,0
+d,2,all,0
+d,3,all,0
+f,4,fy,1000
+
+! Solve
+/solu
+
+FINISH
+```
+
+Run command:
+```bash
+ansys input.inp
+```

@@ -1,0 +1,33 @@
+Use Case: Crystal symmetry operations determination using spglib
+
+Code details and examples:
+
+Input files format:
+- Crystal structure file in Crystallographic Information File (CIF) format
+- Space group symbol
+
+Code to determine symmetry operations:
+```python
+import spglib
+import numpy as np
+
+# Load crystal structure from CIF file
+lattice, positions, atomic_numbers = spglib.read_cif("example.cif")
+
+# Define space group symbol
+space_group_symbol = "Pnma"
+
+# Get symmetry operations
+symmetry = spglib.get_symmetry(lattice, positions, atomic_numbers, spacegroup_type=space_group_symbol)
+
+print("Space group number:", symmetry["number"])
+print("Rotation matrices:")
+for rotation in symmetry["rotations"]:
+    print(rotation)
+print("Translations:")
+for translation in symmetry["translations"]:
+    print(translation)
+```
+
+Command to run:
+This code can be run using a Python interpreter with spglib installed.

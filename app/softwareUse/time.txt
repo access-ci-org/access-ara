@@ -1,0 +1,18 @@
+Use Case: time command in Unix/Linux systems
+Code details and examples:
+The `time` command is used to determine the amount of time taken by a command to run. It is helpful in measuring the performance of different commands and programs.
+
+Example:
+```
+time ls
+```
+
+Output:
+```
+file1  file2  file3
+real    0m0.006s
+user    0m0.000s
+sys     0m0.000s
+```
+
+In the above example, the `time` command was used to measure the time taken by the `ls` command to list files in the directory. The output shows three different time measurements: real (actual clock time), user (CPU time spent in user mode), and sys (CPU time spent in kernel mode).

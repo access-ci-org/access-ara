@@ -1,0 +1,31 @@
+Use Case: Version control system for tracking changes in code  
+Code details and examples:  
+To initialize a git repository in a folder:
+```
+git init
+```
+
+To add files to the staging area:
+```
+git add <file_name>
+```
+
+To commit changes to the repository:
+```
+git commit -m "Commit message"
+```
+
+To push changes to a remote repository:
+```
+git push <remote_name> <branch_name>
+```
+
+To pull changes from a remote repository:
+```
+git pull <remote_name> <branch_name>
+```
+
+To clone a repository from a remote:
+```
+git clone <repository_url>
+```

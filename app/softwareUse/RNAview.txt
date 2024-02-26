@@ -1,0 +1,15 @@
+Use Case: Visualize RNA secondary structure
+
+Code details and examples:
+RNAview is a software tool for visualizing RNA secondary structures. It takes RNA secondary structure in dot-bracket notation as input and generates a graphical representation of the structure.
+
+Example input file (input.dot):
+```
+((((....)))).(((...)))
+```
+
+To visualize the RNA secondary structure using RNAview, you can run the following command:
+
+```
+RNAview input.dot
+```

@@ -1,0 +1,16 @@
+Use Case: Kraken2 is a taxonomic sequence classification system that uses exact k-mer matches to rapidly and accurately classify sequences.
+
+Code details and examples:
+
+Kraken2 requires a database to perform sequence classification. The database can be downloaded from the Kraken2 website.
+
+To classify sequences using Kraken2, you can use the following command:
+```
+kraken2 --db <database_directory> --report <output_report_file> <input_fasta_file>
+```
+For example, if you have a fasta file named "sequences.fasta" and you want to classify it using the Kraken2 database located at "/path/to/kraken2_db", you would run:
+```
+kraken2 --db /path/to/kraken2_db --report kraken2_report.txt sequences.fasta
+```
+
+Kraken2 also provides options to change the output format, filter results, etc. You can explore these options using the `kraken2 --help` command.

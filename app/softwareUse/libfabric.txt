@@ -1,0 +1,48 @@
+Use Case: libfabric is a high-performance networking API that is used to build efficient, portable, and scalable high-performance applications. 
+
+Code details and examples:
+Sample input files:
+- input.txt: A simple text file with some sample content.
+
+Code:
+1. Writing a simple program using libfabric to read a file:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <rdma/fabric.h>
+
+#define FILENAME "input.txt"
+
+int main() {
+    struct fi_info *hints, *info;
+    fi_info(FT_UNSPEC, "psm2", hints, &info);
+    
+    FILE* file = fopen(FILENAME, "r");
+    
+    if (file == NULL) {
+        printf("Error opening file.\n");
+        return 1;
+    }
+    
+    char buffer[256];
+    while (fgets(buffer, sizeof(buffer), file) != NULL) {
+        printf("%s", buffer);
+    }
+    
+    fclose(file);
+    
+    fi_freeinfo(info);
+    
+    return 0;
+}
+```
+
+2. Compiling and running the program:
+
+```bash
+gcc -o read_file read_file.c -lpsm2 -lfi
+./read_file
+```
+
+This is a simple example of how libfabric can be used in a program to read a file. The program opens a file called "input.txt" and prints its contents to the console.

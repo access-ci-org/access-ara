@@ -1,0 +1,56 @@
+Dakota is a software package for optimization, uncertainty quantification, parameter estimation, and sensitivity analysis. 
+
+Use Case: Dakota for sensitivity analysis
+Code details and examples:
+1. Create a input file for Dakota (input.in):
+```
+environment
+  tabular_data
+    tabular_data_file = 'sens_data.dat'
+    tabular_data_file_format = 'ascii'
+    separable_concatenate = 'both'
+  method_pointer
+    analysis_driver = './sens_analysis_driver'
+  input_file
+    input_file_name = 'sens.in'
+```
+
+2. Create a sample input file for the analysis driver (sens.in):
+```
+sensitivity_method
+  global
+  {
+    output_ranked = 5
+  }
+```
+
+3. Create a data file (sens_data.dat) with sample data:
+```
+5 4
+0 0 0 0
+1 2 3 4
+2 4 6 8
+3 6 9 12
+4 8 12 16
+5 10 15 20
+```
+
+4. Create an analysis driver code (sens_analysis_driver) in C++ for sensitivity analysis:
+```cpp
+#include <iostream>
+#include "dakota_global_defs.hpp"
+#include "dakota_sensitivity.hpp"
+
+int main()
+{
+  Dakota::Sensitivity sens_analysis;
+  sens_analysis.readInputDeck(std::cin);
+  sens_analysis.writeOutputDeck(std::cout);
+  return 0;
+}
+```
+
+5. Run Dakota with the input file:
+```
+dakota -i input.in -o output.out
+```

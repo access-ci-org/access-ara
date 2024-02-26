@@ -1,0 +1,11 @@
+Use Case: Data compression library for scientific data.
+
+Code details and examples:
+```
+Sample input file:
+- File to be compressed: data.txt
+
+Code:
+$ aec -c data.txt data.aec     # compress data.txt
+$ aec -d data.aec data_decompressed.txt     # decompress data.aec
+```

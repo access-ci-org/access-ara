@@ -1,0 +1,38 @@
+Use Case: Electronic structure calculations with GULP
+
+Code details and examples:
+GULP (General Utility Lattice Program) is a software package for performing a variety of types of atomistic simulation. It is commonly used for calculating the electronic structure of materials. GULP can be used for a range of simulations including geometry optimization, molecular dynamics, and calculation of electronic properties.
+
+Sample input file (input.gin):
+```
+# GULP input file for electronic structure calculation
+
+# Title
+Title
+Optimize
+cell
+conp
+
+# Specify the atom types and positions
+cell
+4.2 0.0 0.0
+0.0 4.2 0.0
+0.0 0.0 4.2
+fractional
+Mg core 0.0 0.0 0.0
+O core 0.5 0.5 0.5
+O shell 0.7 0.3 0.3
+
+# Specify the forcefield
+eam/alloy
+./ffield.eam.alloy
+
+# Specify the optimization criteria
+convergence energy 1.0e-6
+convergence energy 1.0e-4
+```
+
+Command to run GULP:
+```
+gulp < input.gin > output.gout
+```

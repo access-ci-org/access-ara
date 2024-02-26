@@ -1,0 +1,5 @@
+Use Case: Virtual display server for X server  
+Code details and examples:  
+Xvfb :1 -screen 0 1024x768x16  
+
+This command starts Xvfb on display ":1" with screen resolution 1024x768 and 16-bit color depth.

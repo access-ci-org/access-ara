@@ -1,0 +1,52 @@
+I'm assuming you are referring to DALTON, a molecular electronic structure program. Below are some examples and details for DALTON:
+
+Use Case: Molecular Geometry Optimization
+Code details and examples:
+```bash
+**DALTON INPUT
+.RUN PROPERTIES
+
+**WAVE FUNCTIONS
+.DFT
+B3LYP
+
+**BASIS
+MOLOPT
+cc-pVDZ
+
+**MOLECULE
+0 1
+C
+H 1 R
+
+**OPTIMIZATION
+.OPTIMIZE
+.RFO
+
+**END OF DALTON INPUT
+```
+
+Use Case: Energy Calculation
+Code details and examples:
+```bash
+**DALTON INPUT
+.RUN ENERGY
+
+**WAVE FUNCTIONS
+.HF
+
+**BASIS
+STO-3G
+
+**MOLECULE
+0 1
+O
+H 1 R
+
+**END OF DALTON INPUT
+```
+
+To run DALTON, you would typically save the input file with a .dal extension (e.g., input.dal) and then run the program with the input file as follows:
+```bash
+dalton < input.dal > output.dal.out
+```

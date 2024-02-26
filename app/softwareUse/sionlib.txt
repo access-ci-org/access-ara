@@ -1,0 +1,33 @@
+Use Case: System Libraries
+
+---
+
+Code details and examples:
+
+System libraries are essential libraries that provide fundamental functionalities for the operating system and are often required by many other software packages. Some common system libraries include `libc`, `libm`, `libpthread`, and `librt`. These libraries are typically linked to during the compilation of programs to provide basic functions.
+
+A simple C program that uses `libc` to perform a basic mathematical operation:
+
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 5;
+    int b = 3;
+    int result = a + b;
+
+    printf("Result: %d\n", result);
+
+    return 0;
+}
+```
+
+To compile this program using `libc`, you can use the following command:
+
+```bash
+gcc -o my_program my_program.c -lc
+```
+
+In this command, the `-lc` flag tells the compiler to link the program with the `libc` library.
+
+Similarly, other system libraries can be linked in a similar way based on the requirements of the program being compiled.

@@ -1,0 +1,25 @@
+Use Case: Particle simulation using HOOMD-blue
+
+Code details and examples:
+HOOMD-blue is a general-purpose particle simulation toolkit. Below is an example of a simple Python script that creates a 2D square lattice of particles and runs a simulation using HOOMD-blue.
+
+```python
+import hoomd
+import hoomd.md
+
+hoomd.context.initialize("")
+
+system = hoomd.init.create_lattice(unitcell=hoomd.lattice.square(a=2.0), n=[10, 10])
+
+hoomd.md.integrate.mode_standard(dt=0.005)
+hoomd.md.integrate.brownian(group=hoomd.group.all(), kT=1.0, seed=4)
+
+hoomd.run(1e4)
+```
+
+To run the script, save it as `simulate.py` and execute it using the following command:
+```
+hoomd.python simulate.py
+```
+
+This script initializes a 2D square lattice of size 10x10 with a lattice spacing of 2.0 units, integrates the particles using Brownian dynamics at a temperature of 1.0 and runs the simulation for 1e4 time steps.

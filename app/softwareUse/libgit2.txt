@@ -1,0 +1,18 @@
+Use Case: Version control system for software development
+Code details and examples:
+1. Initialize a new repository:
+```bash
+git init
+```
+2. Add a file to the staging area:
+```bash
+git add <file>
+```
+3. Commit changes to the repository:
+```bash
+git commit -m "Commit message"
+```
+4. Push changes to a remote repository:
+```bash
+git push origin master
+```

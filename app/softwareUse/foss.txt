@@ -1,0 +1,9 @@
+Use Case: FOSS stands for Free and Open Source Software. Below are some examples of FOSS software/tools commonly used in the scientific computing and bioinformatics fields along with sample input files and code snippets.
+
+1. OpenMPI
+2. BLAST
+3. GROMACS
+4. Samtools
+5. Jupyter Notebooks
+
+For specific examples, please let me know which software/tool you would like to see in more detail.

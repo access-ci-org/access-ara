@@ -1,0 +1,32 @@
+Use Case: Building and running containers with Charliecloud
+
+Code details and examples:
+1. Creating a container with Charliecloud:
+You can create a container with Charliecloud using a Docker image. For example, you have a Docker image file called "myimage.docker" which you want to convert into a Charliecloud container.
+
+```bash
+ch-docker2tar myimage.docker myimage.tar
+ch-tar2dir myimage.tar myimage/
+ch-build myimage/ mycontainer/
+```
+
+2. Running the container:
+After building the container, you can run it using the `ch-run` command, providing the path to the container directory and the command to run inside the container.
+
+```bash
+ch-run mycontainer/ /bin/bash
+```
+
+3. Mounting host directories:
+You can also mount host directories into the Charliecloud container using the `--bind` option. For example, to mount the host directory "/path/to/hostdir" into the container directory "/containerdir":
+
+```bash
+ch-run --bind /path/to/hostdir:/containerdir mycontainer/ /bin/bash
+```
+
+4. Passing environment variables:
+You can pass environment variables to the container using the `-e` option. For example, to set the environment variable "MYVAR" to "myvalue":
+
+```bash
+ch-run mycontainer/ /bin/bash -e MYVAR=myvalue
+```

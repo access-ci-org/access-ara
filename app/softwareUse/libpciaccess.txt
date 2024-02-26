@@ -1,0 +1,5 @@
+Use Case: Check PCI devices connected to the system.
+Code details and examples:
+```bash
+lspci
+```

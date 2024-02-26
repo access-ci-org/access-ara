@@ -1,0 +1,29 @@
+Eckit is a scientific library that provides utility functions for scientific data processing. 
+
+Use Case: Check the version of eckit
+Code details and examples:
+```bash
+eckit-version
+```
+
+Use Case: Generate a random 2D array using eckit
+Code details and examples: 
+```python
+from eckit import random
+
+array = random.random([3, 3])
+print(array)
+```
+
+Use Case: Write the array to a netCDF file using eckit
+Code details and examples: 
+```python
+from eckit import eckit
+
+array = random.random([3, 3])
+
+with eckit.open('output.nc', 'w') as file:
+    file.write(array)
+```
+
+Please note that the above examples are just hypothetical and not actual commands or methods for the eckit library.

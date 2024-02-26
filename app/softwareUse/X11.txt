@@ -1,0 +1,32 @@
+I see that you are looking for information related to the X Window System (X11), a windowing system for bitmap displays used in Unix-like operating systems.
+
+Use Case: Display GUI applications remotely
+Code details and examples:
+1. Use SSH with X11 forwarding to display GUI applications from a remote server to your local machine.
+
+Sample Input: N/A
+
+Code:
+```bash
+ssh -X username@remote_server
+```
+
+2. Use Xserver software like Xming or XQuartz to display GUI applications from a remote server on your local machine.
+
+Sample Input: N/A
+
+Code: 
+- For Xming on Windows:
+After installing and running Xming, you can simply SSH into the remote server, and the GUI applications will display on your local machine.
+
+- For XQuartz on macOS:
+After installing and running XQuartz, you need to enable X11 forwarding in your SSH client before connecting to the remote server.
+
+3. Use a desktop environment like XFCE that is optimized for remote connections using X11.
+
+Sample Input: N/A
+
+Code:
+- Install XFCE on the remote server and then connect using SSH with X11 forwarding to display the XFCE desktop environment on your local machine.
+
+Remember that for X11 forwarding to work, you need to have X11 clients installed on your local machine and have X11 forwarding enabled in your SSH client.

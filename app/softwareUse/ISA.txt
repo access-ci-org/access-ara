@@ -1,0 +1,40 @@
+Use Case: ISA is a metadata tracking framework that facilitates adherence to standards, improves data management, and supports reproducibility in scientific research.
+
+Code details and examples:
+1. ISAcreator: A desktop application to create and edit ISA metadata files.
+Sample input files: ISA metadata templates (*.isatab files)
+Code snippet:
+```
+java -jar ISAcreator.jar
+```
+
+2. ISA API: Python library for working with ISA metadata.
+Sample input files: ISA metadata files (*.json, *.tab)
+Code snippet:
+```python
+from isatools import isatab
+
+# Load ISA metadata from a file
+isa_data = isatab.load(open('BII-S-3', 'r'))
+
+# Print investigation metadata
+print(isa_data.metadata['investigation'])
+
+# Access study metadata
+for study in isa_data.studies:
+    print(study.metadata)
+```
+
+3. ISA tab2json: Command-line tool to convert ISA tab files to JSON format.
+Sample input files: ISA metadata in tab format
+Code snippet:
+```
+isatools convert2json your_studies.isatab
+```
+
+4. ISAvalidator: Tool to validate ISA metadata files against the ISA-Tab format.
+Sample input files: ISA metadata files (*.isatab)
+Code snippet:
+```
+isavalidator your_metadata.isatab
+```

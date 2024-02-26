@@ -1,0 +1,47 @@
+Use Case: QIIME 2 is a bioinformatics software for microbiome analysis.
+
+Code details and examples:
+1. Importing data into QIIME 2:
+```bash
+qiime tools import \
+  --type 'SampleData[PairedEndSequencesWithQuality]' \
+  --input-path paired-end-demux.qza \
+  --output-path paired-end-demux.qza \
+  --input-format CasavaOneEightSingleLanePerSampleDirFmt
+```
+
+2. Performing quality control and denoising using DADA2:
+```bash
+qiime dada2 denoise-paired \
+  --i-demultiplexed-seqs paired-end-demux.qza \
+  --p-trunc-len-f 0 \
+  --p-trunc-len-r 0 \
+  --o-representative-sequences rep-seqs-dada2.qza \
+  --o-table table-dada2.qza \
+  --o-denoising-stats stats-dada2.qza
+```
+
+3. Generating a feature table summary:
+```bash
+qiime feature-table summarize \
+  --i-table table-dada2.qza \
+  --o-visualization table-dada2.qzv \
+  --m-sample-metadata-file sample-metadata.tsv
+```
+
+4. Performing taxonomic classification using a pre-trained classifier:
+```bash
+qiime feature-classifier classify-sklearn \
+  --i-classifier classifier.qza \
+  --i-reads rep-seqs-dada2.qza \
+  --o-classification taxonomy.qza
+```
+
+5. Visualizing taxonomic composition:
+```bash
+qiime taxa barplot \
+  --i-table table-dada2.qza \
+  --i-taxonomy taxonomy.qza \
+  --m-metadata-file sample-metadata.tsv \
+  --o-visualization taxa-bar-plot.qzv
+```

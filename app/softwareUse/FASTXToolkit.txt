@@ -1,0 +1,41 @@
+Use Case: FASTXToolkit is a collection of command-line tools for Short-Reads FASTA/FASTQ file preprocessing. It includes tools for filtering, trimming, modifying sequences, and quality control of FASTA/FASTQ data.
+
+Code details and examples:
+1. **Example Input files**: 
+   - Input FASTQ file (input.fastq):
+     ```
+     @SEQ_ID
+     GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+     +
+     IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+     ```
+   
+2. **Quality filtering with fastq_quality_filter**:
+   - **Command**: 
+     ```
+     fastq_quality_filter -Q33 -q 30 -p 90 -i input.fastq -o output.fastq
+     ```
+   - **Description**: This command filters out sequences with average quality score below 30 (Phred+33) and keeps at least 90% bases with quality score of 30 or higher.
+
+3. **Trimming with fastx_trimmer**:
+   - **Command**: 
+     ```
+     fastx_trimmer -f 3 -l 15 -i input.fastq -o output.fastq
+     ```
+   - **Description**: This command trims the input sequences from the 3rd base to the 15th base.
+
+4. **Tool for quality control, fastq_quality_stats**:
+   - **Command**: 
+     ```
+     fastq_quality_stats -Q33 -i input.fastq -o stats.txt
+     ```
+   - **Description**: This command generates basic statistics on the quality of sequences in the input file.
+
+5. **Tool for converting FASTQ to FASTA, fastq_to_fasta**:
+   - **Command**: 
+     ```
+     fastq_to_fasta -Q33 -i input.fastq -o output.fasta
+     ```
+   - **Description**: This command converts a FASTQ file to a FASTA file.
+
+Note: Make sure the tools are installed and in the system's PATH to run these commands.

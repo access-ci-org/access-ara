@@ -1,0 +1,9 @@
+Use Case: Download sequencing data from the Sequence Read Archive (SRA)  
+Code details and examples:  
+```
+# Install SRA Toolkit if not already installed
+
+# Download sequencing data from SRA
+fastq-dump SRR390728
+```
+(Note: Replace "SRR390728" with the actual SRA accession number you want to download)

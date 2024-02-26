@@ -1,0 +1,19 @@
+HPCC (High-Performance Computing Cluster) is an open-source, big data computing platform. It provides a distributed file system (Thor) and a parallel processing computing environment (Roxie).
+
+Use Case: Submitting a job to HPCC cluster
+Code details and examples:
+1. Sample input file for a job submission (myjob.ecl):
+```
+// myjob.ecl
+IMPORT STD;
+IMPORT MYMODULE;
+
+OUTPUT('Hello, World!');
+```
+
+2. Submit the job to HPCC cluster:
+```bash
+ecl run myjob.ecl
+```
+
+(Note: The actual commands may vary depending on the specific HPCC cluster configuration and setup.)

@@ -1,0 +1,36 @@
+Use Case: Chemprop is a library for molecular property prediction using deep learning models.
+
+Code details and examples:
+
+```python
+from chemprop.data import get_data, get_data_from_smiles
+from chemprop.features import get_available_features_generators, get_features_generator
+from chemprop.train import cross_validate, train, predict
+from chemprop.train.run_training import run_training
+
+# Get data from a CSV file
+data = get_data(path='data.csv')
+
+# Get data from SMILES strings
+data_from_smiles = get_data_from_smiles(smiles=['CCO', 'COC'])
+
+# Get available feature generators
+available_generators = get_available_features_generators()
+
+# Get a specific feature generator
+features_generator = get_features_generator(generator='rdkit_2d')
+
+# Train a model using cross-validation
+results = cross_validate(data=data, config_path='config.json')
+
+# Train a model
+train(model_type='MPNN', data=data, config_path='config.json', dataset_type='multiclass')
+
+# Predict using a trained model
+predict(data=data, checkpoint_dir='checkpoints/model_checkpoints', features_path='features.npy')
+
+# Run training directly from the command line
+!chemprop_train --data_path data.csv --config_path config.json
+```
+
+Note: The command `chemprop_train` can be run from the command line to train a model using data and configuration specified in the arguments.

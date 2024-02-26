@@ -1,0 +1,12 @@
+Use Case: Error function, Faddeeva function
+Input files format: Accepts real or complex numbers
+Command to run: Not available
+
+Code details and examples:
+```python
+from scipy.special import wofz
+
+z = 1.0 + 1.0j
+result = wofz(z)
+print(result)
+```

@@ -1,0 +1,16 @@
+Use Case: Image compression and optimization
+
+Code details and examples:
+
+libwebp is a library for handling the WebP image format. Below is an example of how you can use libwebp to compress an image using the command line.
+
+```bash
+# Compress an image using libwebp
+cwebp input_image.png -o output_image.webp
+```
+
+In the above example:
+- `input_image.png` is the input image file you want to compress.
+- `output_image.webp` is the output WebP image file.
+
+You can also specify additional options such as quality settings and compression levels. More information about additional options can be found in the libwebp documentation.

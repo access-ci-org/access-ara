@@ -1,0 +1,33 @@
+It seems like you are referring to the CARP (Cardiac Arrhythmia Research Package) software used for simulating cardiac electrophysiology. Here is an example:
+
+Use Case: Simulation of cardiac electrophysiology with CARP
+
+Input file format:
+- CARP uses configuration files in XML format to specify simulation parameters, mesh, and tissue properties.
+
+Code details and examples:
+```xml
+<Simulation>
+  <TimeStep>0.01</TimeStep>
+  <EndTime>100</EndTime>
+</Simulation>
+
+<Mesh>
+  <File>heart_mesh.msh</File>
+</Mesh>
+
+<Tissue>
+  <Conductivity>0.2</Conductivity>
+  <Anisotropy>
+    <Lambda>1</Lambda>
+    <Sheets>
+      <File>sheets.txt</File>
+    </Sheets>
+  </Anisotropy>
+</Tissue>
+```
+
+Command to run:
+```
+carp <input_file.xml>
+```

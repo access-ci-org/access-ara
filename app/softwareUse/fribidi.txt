@@ -1,0 +1,17 @@
+Use Case: fribidi (FRI BiDi) is a library that implements the Unicode Bidirectional Algorithm. It is useful for displaying text and is commonly used in software applications with user interfaces that support multiple languages and complex text layouts.
+
+Code details and examples:
+Sample input file (input.txt):
+```
+Hello, שלום, مرحبا
+```
+
+Code snippet:
+```
+fribidi -d input.txt
+```
+
+Command to run:
+```
+fribidi -d input.txt
+```

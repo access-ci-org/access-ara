@@ -1,0 +1,30 @@
+Use Case: Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano. It allows for easy and fast prototyping.
+
+Code details and examples:
+```python
+# Sample code for building a simple neural network using Keras
+
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+
+# Define the model
+model = Sequential()
+model.add(Dense(64, activation='relu', input_dim=100))
+model.add(Dense(10, activation='softmax'))
+
+# Compile the model
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+# Sample input data (random data)
+import numpy as np
+data = np.random.random((1000, 100))
+labels = np.random.randint(10, size=(1000, 1))
+
+# Train the model
+model.fit(data, keras.utils.to_categorical(labels, num_classes=10), epochs=10, batch_size=32)
+```
+
+This is a simple example of building and training a neural network using Keras. This code snippet creates a model with two dense layers, compiles it with Adam optimizer and categorical crossentropy loss, and then trains the model on random input data and labels.
+
+To run this code, you can save it in a Python script (e.g., `keras_example.py`) and run it using a Python interpreter.

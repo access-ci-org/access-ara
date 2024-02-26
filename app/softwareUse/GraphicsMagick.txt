@@ -1,0 +1,23 @@
+Use Case: Image manipulation and processing 
+Code details and examples:
+```
+# Sample input file: image.jpg
+# Command to resize an image
+gm convert image.jpg -resize 50% resized_image.jpg
+```
+
+Use Case: Image conversion 
+Code details and examples:
+```
+# Sample input file: image.png
+# Command to convert image format
+gm convert image.png converted_image.jpg
+```
+
+Use Case: Drawing on images
+Code details and examples:
+```
+# Sample input file: original_image.jpg
+# Command to draw a red rectangle on an image
+gm convert original_image.jpg -fill none -stroke red -strokewidth 2 -draw "rectangle 10,10 100,100" image_with_rectangle.jpg
+```

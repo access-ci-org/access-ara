@@ -1,0 +1,26 @@
+Use Case: A commonly used file format in bioinformatics for storing sequences and their corresponding quality scores.
+
+Code details and examples:
+FASTQ format example:
+```
+@SEQ_ID
+GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
++
+!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
+```
+
+Commands to manipulate FASTQ files:
+1. View the first few records in a FASTQ file:
+```bash
+head -n 8 input.fastq
+```
+
+2. Count the number of records in a FASTQ file:
+```bash
+grep -c "^@" input.fastq
+```
+
+3. Convert a FASTQ file to a FASTA file:
+```bash
+awk '(NR%4==1){printf ">%s\n",substr($0,2)} (NR%4==2){print}' input.fastq > output.fasta
+```

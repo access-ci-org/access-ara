@@ -1,0 +1,26 @@
+Use Case: abinit is an open-source software for electronic structure calculations based on density functional theory.
+
+Code details and examples:
+ABINIT requires an input file in its own format called "input file". Below is an example of an input file for a simple calculation:
+
+```plaintext
+# Example input file for ABINIT
+ndtset 1          ! Number of datasets
+ecut 10           ! Plane-wave cutoff energy in Hartree
+ntypat 1          ! Number of types of atoms
+znucl 6           ! Nuclear charge of atom type 1 (Carbon)
+natom 1           ! Number of atoms in the unit cell
+typat 1           ! Atom type for each atom
+xred              ! Fractional coordinates of atoms
+0.0 0.0 0.0
+```
+
+To run ABINIT with the input file, you can use the following command in the terminal:
+```bash
+abinit < input_file > output_file
+```
+
+This command runs ABINIT using the provided input file and directs the output to "output_file".
+Remember to replace "input_file" with the actual name of your input file.
+
+Note: This is a basic example, and ABINIT supports a wide range of input options for more advanced calculations. Refer to the ABINIT documentation for detailed information on input file format and available options.

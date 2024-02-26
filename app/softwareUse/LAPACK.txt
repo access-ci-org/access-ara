@@ -1,0 +1,50 @@
+Use Case: Linear Algebra  
+
+Code details and examples:  
+LAPACK (Linear Algebra PACKage) provides routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems. LAPACK routines are typically called from a high-level interface like BLAS (Basic Linear Algebra Subprograms).
+
+Here is an example of how you can use LAPACK to solve a system of linear equations Ax = b:
+
+Sample input files:
+
+Matrix A:
+```
+1.0 2.0 3.0
+4.0 5.0 6.0
+7.0 8.0 10.0
+```
+
+Vector b:
+```
+10.0
+20.0
+30.0
+```
+
+Code snippet in Fortran using LAPACK:
+```fortran
+program solve_linear_system
+    implicit none
+    integer, parameter :: n = 3
+    real(kind=8) :: A(n,n), b(n)
+    integer :: ipiv(n), info
+    
+    A = reshape([1.0d0, 4.0d0, 7.0d0, 2.0d0, 5.0d0, 8.0d0, 3.0d0, 6.0d0, 10.0d0], [n,n])
+    b = [10.0d0, 20.0d0, 30.0d0]
+    
+    call DGESV(n, 1, A, n, ipiv, b, n, info)
+    
+    if (info == 0) then
+        print *, "Solution x:"
+        print *, b
+    else
+        print *, "Failed to solve the system."
+    end if
+end program solve_linear_system
+```
+
+Command to compile and run (assuming LAPACK is linked):
+```bash
+gfortran -o solve_linear_system solve_linear_system.f -llapack -lblas
+./solve_linear_system
+```

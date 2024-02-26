@@ -1,0 +1,29 @@
+Use Case: Differential equation solver
+
+Code details and examples:
+SUNDIALS (SUite of Nonlinear and DIfferential/ALgebraic equation Solvers) is a suite of advanced numerical solvers for Differential Algebraic Equations (DAE) and Ordinary Differential Equations (ODE) provided by Lawrence Livermore National Laboratory.
+
+One of the components of SUNDIALS is CVODE, which can be used to solve stiff and nonstiff ODEs. Here is an example of how to use CVODE with a simple ODE and Python:
+```python
+from sundials import cvode
+
+def ode_func(t, y, ydot, user_data):
+    ydot[0] = -0.5 * y[0]
+
+y0 = [1.0]  # Initial condition
+t0 = 0.0    # Initial time
+tend = 10.0 # Final time
+
+solver = cvode.CVode()
+solver.init(ode_func, t0, y0)
+solver.solve(tend)
+
+solution = solver.get_solution()
+
+print(solution)
+```
+In this example, we define a simple ODE dy/dt = -0.5*y and solve it using CVODE.
+
+Input file format: No specific input file format is required for this example.
+
+To run the code, you need to have the SUNDIALS library installed and properly linked with Python. The specific command to run the code will depend on your setup and how SUNDIALS is integrated with Python.

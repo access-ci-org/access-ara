@@ -1,0 +1,11 @@
+I'm guessing you are referring to trimming tools used in bioinformatics for removing low-quality bases or adapter sequences from sequencing data. Here is an example:
+
+Use Case: Trim raw sequencing reads using Trimmomatic
+Code details and examples:
+```
+java -jar trimmomatic.jar PE -phred33 input_forward.fastq.gz input_reverse.fastq.gz output_forward_paired.fastq.gz output_forward_unpaired.fastq.gz output_reverse_paired.fastq.gz output_reverse_unpaired.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+```
+
+In this example, Trimmomatic is used to trim paired-end fastq files (`input_forward.fastq.gz` and `input_reverse.fastq.gz`). The trimmed output files are `output_forward_paired.fastq.gz` and `output_reverse_paired.fastq.gz` for the paired reads after trimming, and `output_forward_unpaired.fastq.gz` and `output_reverse_unpaired.fastq.gz` for any unpaired reads. The command specifies various trimming options like adapter clipping, quality trimming, and length filtering.
+
+Note: The actual command may vary based on the version of Trimmomatic and the specific needs of your data.

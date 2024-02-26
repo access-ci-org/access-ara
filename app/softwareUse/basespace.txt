@@ -1,0 +1,16 @@
+Use Case: Basespace  
+
+Code details and examples:  
+Basespace is a cloud-based platform for analyzing and managing Next Generation Sequencing (NGS) data. Users can upload their NGS data to Basespace and perform various analyses using pre-built applications or custom workflows.
+
+An example of using Basespace is to upload FASTQ files for analysis. The input files should be in FASTQ format, containing sequencing data and quality scores.
+
+To upload FASTQ files to Basespace, users can use the Basespace Web interface or the Basespace CLI (Command Line Interface). Below is a code snippet for using the Basespace CLI to upload FASTQ files:
+
+```
+bs upload <project_ID> /path/to/file.fastq
+```
+
+In the code snippet above, `<project_ID>` should be replaced with the ID of the Basespace project where the files will be uploaded, and `/path/to/file.fastq` should be replaced with the path to the FASTQ file on the local system.
+
+After uploading the files, users can then use various Basespace applications or workflows to analyze the data further.

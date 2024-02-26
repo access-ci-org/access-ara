@@ -1,0 +1,17 @@
+Use Case: xtb is a quantum chemistry software for computation of molecular properties.
+Code details and examples:
+Input file (input.xyz):
+```
+3
+Water geometry optimized using xtb
+O 0.000000 0.000000 0.117366
+H 0.000000 0.756277 -0.469464
+H 0.000000 -0.756277 -0.469464
+```
+
+Code:
+```
+xtb input.xyz
+```
+
+The command will run xtb on the input.xyz file and compute the molecular properties.

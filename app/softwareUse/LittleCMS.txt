@@ -1,0 +1,17 @@
+Use Case: Color management and image processing library
+
+Code details and examples:
+
+LittleCMS (LCMS) is an open-source color management engine providing accurate color management across various devices and platforms. Below is an example of how you can use LittleCMS to transform a color profile of an image using sample input files.
+
+Input:
+- Original image with Adobe RGB color profile: original_image.jpg
+- Destination color profile to convert to: sRGB_color_profile.icc
+
+Code:
+```bash
+# Transforming the color profile of an image using LittleCMS
+convert original_image.jpg -profile sRGB_color_profile.icc converted_image.jpg
+```
+
+In the above code, the "convert" command is used with the "-profile" option to apply the destination color profile to the original image using LittleCMS.

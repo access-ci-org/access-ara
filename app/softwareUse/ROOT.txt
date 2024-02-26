@@ -1,0 +1,32 @@
+Use Case: ROOT is a data analysis framework widely used in the field of high-energy physics.
+
+Code details and examples:
+```cpp
+#include <iostream>
+#include "TFile.h"
+#include "TH1F.h"
+
+void createROOTHistogram() {
+    TFile *file = new TFile("output.root", "RECREATE");
+    TH1F *histogram = new TH1F("histogram", "Example ROOT histogram", 100, 0, 10);
+
+    for (int i = 0; i < 1000; i++) {
+        double randNum = gRandom->Uniform(0, 10);
+        histogram->Fill(randNum);
+    }
+
+    histogram->Write();
+    file->Close();
+}
+
+int main() {
+    createROOTHistogram();
+    return 0;
+}
+```
+
+To compile and run the code:
+```bash
+g++ -o createROOTHistogram createROOTHistogram.cpp $(root-config --cflags --libs)
+./createROOTHistogram
+```

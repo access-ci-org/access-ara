@@ -1,0 +1,30 @@
+Methylpy is a Python package used for analyzing whole-genome bisulfite sequencing (WGBS) and RRBS data. It provides tools for preprocessing raw sequencing data, performing differential methylation analysis, and visualizing methylation patterns. 
+
+Use Case: Analysing whole-genome bisulfite sequencing data with Methylpy
+Code details and examples:
+```python
+import methylpy
+
+# Read in the raw sequencing data in BAM format
+bam_file = "sample.bam"
+bam_reader = methylpy.IO.BamReader(bam_file)
+
+# Define the reference genome in FASTA format
+fasta_file = "reference_genome.fa"
+
+# Create a methylpy object for the samples
+samples = methylpy.Samples(name="SampleName", read_lengths=[100], lib_type="fr-unstranded", bam_handle=bam_reader)
+
+# Create a methylpy object for the reference genome
+reference = methylpy.Reference(fasta_file)
+
+# Perform methylation calling for the samples
+meth_caller = methylpy.CallMethylation(reference=reference, samples=samples)
+meth_caller.call(output= "methylation_output", num_procs=4)
+
+# Perform differential methylation analysis
+diff_meth = methylpy.DifferentialMethylation(samples, "control_group", "treatment_group")
+diff_meth.run(output="diff_meth_output", num_procs=4)
+```
+
+Please note that the sample input files required for Methylpy include BAM files containing aligned bisulfite sequencing reads and a reference genome in FASTA format. Additionally, some functions in Methylpy require specifying parameters such as read lengths, library types, and sample groups for analysis.

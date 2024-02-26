@@ -1,0 +1,19 @@
+LSMS (Locally Self-consistent Multiple Scattering) is an electronic structure software package that uses the Korringa-Kohn-Rostoker (KKR) multiple scattering theory to calculate the electronic structure of materials. It is commonly used in the field of computational materials science.
+
+Use Case: Electronic structure calculation with LSMS
+Code details and examples:
+Sample input file (input.in):
+```
+LSMS Calculation
+30 30 30   ! Grid dimensions
+1 1 1      ! Lattice constant
+Fe          ! Element
+1           ! Atom type
+0.0001      ! Energy convergence criterion
+```
+
+Sample code snippet to run LSMS (assuming LSMS executable is lsms.x):
+```
+lsms.x < input.in > output.out
+```
+In this case, the LSMS calculation is performed using the input file "input.in" and the output is redirected to "output.out".LSMS does not use a standard input file format, and the parameters in the input file may vary depending on the specific calculation being performed.

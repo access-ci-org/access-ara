@@ -1,0 +1,18 @@
+Use Case: Funannotate is a software tool for functional annotation of fungal genomes.
+
+Code details and examples:
+- Sample input files:
+  - Fasta file of the genome to be annotated
+  - Optional transcriptome data in fasta format
+  - Protein sequences in fasta format
+- Format required:
+  - Fasta format for genome, transcriptome, and protein sequences
+- Command to run:
+  ```
+  funannotate predict -i genome.fasta --protein protein.fasta
+  ```
+- Additional specifications:
+  - Funannotate provides various modules for different steps in the annotation process, such as prediction, training, and annotation.
+  - It supports various annotation sources, including InterProScan, BUSCO, and more.
+
+For more information and detailed usage instructions, you can refer to the Funannotate documentation: https://funannotate.readthedocs.io.

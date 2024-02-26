@@ -1,0 +1,21 @@
+Use Case: Clang is a C, C++, and Objective-C compiler tool.
+
+Code details and examples:
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+To compile the above C code using Clang:
+```
+clang -o hello hello.c
+```
+
+To run the compiled executable:
+```
+./hello
+```

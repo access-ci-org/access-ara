@@ -1,0 +1,19 @@
+It seems like you might have meant Intel oneAPI. Here is an example:
+
+Use Case: Compiling a C program with Intel oneAPI
+Code details and examples:
+```bash
+# Sample C code (hello.c)
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+
+# Compile the code with Intel oneAPI
+icc -o hello hello.c
+
+# Run the compiled program
+./hello
+```

@@ -1,0 +1,27 @@
+Use Case: Meep is a free finite-difference time-domain (FDTD) simulation software for electromagnetic systems. It is particularly useful for photonic crystal and waveguide simulations.
+
+Code details and examples:
+```python
+# Sample input file for Meep (input file should have .ctl extension)
+# Example input file for Meep simulation of a simple waveguide
+'''
+; Meep input file for waveguide simulation
+(in define-units SI)
+
+(define-param w 1.0) ; width of waveguide
+(define-param h 0.5) ; height of waveguide
+(define-param t 0.1) ; thickness of waveguide
+(define-param resolution 10)
+
+(set! geometry-lattice (make lattice (size 10 10 no-size)))
+(set! geometry (list (make block (center 0 0 0) (size infinity infinity infinity) (material (make dielectric (epsilon 12))))))
+
+(set! sources (list (make source (src (make continuous-src (frequency 0.15)) (component Ez) (center 0 0 0))))
+
+(run-until 100
+'''
+# To run the simulation with the input file above using Meep, you can use the following command in the terminal
+# meep input_file.ctl
+```
+
+Please note that the above code snippet is a simple example, and actual Meep simulations can be much more complex depending on the system being simulated.

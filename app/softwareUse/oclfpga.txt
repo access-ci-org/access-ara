@@ -1,0 +1,47 @@
+It seems like "oclfpga" refers to Intel's OpenCL for FPGA (Field-Programmable Gate Array) technology, which allows for the development of FPGA applications using OpenCL programming language.
+
+Use Case: Compilation and execution of an OpenCL FPGA program
+Code details and examples:
+```c
+// Sample OpenCL FPGA program (vector addition)
+__kernel void vector_add(__global const int *a, __global const int *b, __global int *c) {
+    int idx = get_global_id(0);
+    c[idx] = a[idx] + b[idx];
+}
+
+// Sample input files
+// input_a.txt
+1
+2
+3
+4
+5
+// input_b.txt
+6
+7
+8
+9
+10
+
+// Command to compile the OpenCL program for FPGA
+aoc -v vector_add.cl -o vector_add.aocx
+
+// Command to run the compiled program on FPGA
+aocl program acl0 vector_add.aocx
+aocl reprogram acl0 vector_add.aocx
+
+// Input files for the FPGA program can be passed as buffers to the FPGA kernel
+// Code snippet to load and pass input files to the FPGA kernel
+int input_a[] = {1, 2, 3, 4, 5};
+int input_b[] = {6, 7, 8, 9, 10};
+cl_mem buffer_a = clCreateBuffer(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR, sizeof(input_a), &input_a, NULL);
+cl_mem buffer_b = clCreateBuffer(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR, sizeof(input_b), &input_b, NULL);
+clSetKernelArg(kernel, 0, sizeof(cl_mem), &buffer_a);
+clSetKernelArg(kernel, 1, sizeof(cl_mem), &buffer_b);
+clSetKernelArg(kernel, 2, sizeof(cl_mem), &buffer_c);
+
+// Command to enqueue the kernel for execution on FPGA
+clEnqueueNDRangeKernel(queue, kernel, 1, NULL, &global_size, NULL, 0, NULL, NULL);
+```
+
+Please note that the exact commands and code snippets may vary depending on the specific FPGA development environment (e.g., Intel Quartus Prime for Intel FPGAs) and the OpenCL implementation for FPGAs being used.

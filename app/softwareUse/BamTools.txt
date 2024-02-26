@@ -1,0 +1,17 @@
+Use Case: View BAM file statistics
+Code details and examples:
+```bash
+bamtools stats -in input.bam
+```
+
+Use Case: Extract sequences from a BAM file
+Code details and examples:
+```bash
+bamtools convert -format fasta -in input.bam -out output.fasta
+```
+
+Use Case: Filter reads based on mapping quality
+Code details and examples:
+```bash
+bamtools filter -in input.bam -mapQuality ">30" -out filtered.bam
+```

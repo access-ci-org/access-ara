@@ -1,0 +1,27 @@
+Use Case: Protein structure prediction and design in Rosetta using Python interface pyRosetta
+
+Code details and examples:
+```python
+# Sample code to perform protein structure prediction with pyRosetta
+from pyrosetta import *
+pyrosetta.init()
+
+# Create a pose from a sequence
+pose = pose_from_sequence("AAAAA")
+
+# Setup a score function
+scorefxn = get_fa_scorefxn()
+
+# Perform energy minimization
+print("Before minimization:", scorefxn(pose))
+mm = MinMover()
+mm.score_function(scorefxn)
+mm.apply(pose)
+print("After minimization:", scorefxn(pose))
+
+# Output the minimized structure to a PDB file
+pose.dump_pdb("minimized_structure.pdb")
+```
+
+Command to run the script (if applicable):
+No direct command line usage, must be run within a Python environment with pyRosetta installed.

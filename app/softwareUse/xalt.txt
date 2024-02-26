@@ -1,0 +1,19 @@
+Use Case: Profiling HPC jobs with XALT
+
+Code details and examples:
+XALT (XALT Accounting and Logging Tool) is a program that tracks program executions on HPC systems to provide job profiling and usage statistics. To use XALT, first, load the XALT module on the HPC system.
+
+Sample code to load XALT module:
+```bash
+module load xalt
+```
+
+Once the XALT module is loaded, you can submit your job scripts as usual. XALT will automatically track the execution of your job and generate profiling information.
+
+To view the job profiling information collected by XALT, you can use the `xalt` command with appropriate options. For example, to view a summary of user job statistics, you can use the following command:
+
+```bash
+xalt --user-summary
+```
+
+Additionally, you can use various options with the `xalt` command to get detailed information about job executions, module loads, and more. Refer to the XALT documentation for a full list of available options and commands.

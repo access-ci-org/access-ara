@@ -1,0 +1,17 @@
+souporcell is a tool for single-cell RNA sequencing data analysis. Here is an example of how you can use souporcell:
+
+Use Case: Assign cell genotypes using souporcell
+Code details and examples:
+1. Prepare your input data:
+- Generate a counts matrix (e.g., in CSV format) from your single-cell RNA sequencing data.
+- Prepare a whitelist file containing a list of known cell barcodes.
+
+2. Run souporcell to assign cell genotypes:
+```bash
+souporcell -i counts_matrix.csv -w whitelist.txt -o output_directory
+```
+
+3. Interpret the results:
+- The output will contain assigned cell genotypes based on the input data.
+
+Note: Make sure to check the souporcell documentation for additional parameters and details on the input file formats.

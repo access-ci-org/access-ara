@@ -1,0 +1,46 @@
+Use Case: Details about libXinerama library.
+
+Code details and examples:
+libXinerama is an X Window System extension library that provides functionality for querying information about Xinerama (X11R6) extension. It is typically used in X Window System related programs to obtain information about the available screens.
+
+Example code snippet for querying Xinerama information in C:
+
+```c
+#include <X11/extensions/Xinerama.h>
+#include <stdio.h>
+
+int main() {
+    int num_screens;
+    XineramaScreenInfo *screens;
+
+    Display *dpy = XOpenDisplay(NULL);
+    if (dpy == NULL) {
+        fprintf(stderr, "Error: could not open display\n");
+        return 1;
+    }
+
+    if (XineramaQueryExtension(dpy, &num_screens) && 
+        (screens = XineramaQueryScreens(dpy, &num_screens)) != NULL) {
+        for (int i = 0; i < num_screens; i++) {
+            printf("Screen %d: %dx%d+%d+%d\n", i+1, screens[i].width, screens[i].height, 
+                   screens[i].x_org, screens[i].y_org);
+        }
+        XFree(screens);
+    } else {
+        fprintf(stderr, "Error: Xinerama extension not available\n");
+    }
+
+    XCloseDisplay(dpy);
+    return 0;
+}
+```
+
+To compile the above code using gcc:
+```bash
+gcc -o xinerama_example xinerama_example.c -lXinerama -lX11
+```
+
+To run the compiled code:
+```bash
+./xinerama_example
+```

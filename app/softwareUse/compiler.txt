@@ -1,0 +1,24 @@
+Use Case: Compiler
+Details: A compiler is a software program that translates source code written in a high-level programming language into machine code that can be executed by a computer. Here, I will provide an example of using the GCC compiler to compile a simple C program.
+Code:
+```c
+// hello.c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+To compile the above C program using GCC:
+
+Command:
+```
+gcc -o hello hello.c
+```
+
+This will create an executable file named "hello" which can be run using:
+```
+./hello
+```

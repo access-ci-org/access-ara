@@ -1,0 +1,24 @@
+Use Case: KaHIP is a parallel graph partitioning software that is used to efficiently partition large-scale graphs. 
+
+Code details and examples: 
+KaHIP requires a METIS graph format (.graph) as input. Below is an example of a sample input file in METIS format:
+
+```
+10 15
+2 4 1
+1 3
+2 4 6
+1 3 5
+4 2 6
+5
+```
+
+To run KaHIP on the input file, you can use the following command: 
+
+```
+./kaffpa input_file.graph --k 2
+```
+
+This command partitions the graph in the input_file.graph into 2 parts.
+
+Please note that the above command is an illustrative example, and the actual command may vary based on the specific options and parameters you want to use with KaHIP.

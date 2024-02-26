@@ -1,0 +1,8 @@
+Use Case: Converting Illumina BCL files to FASTQ format for downstream analysis.
+
+Code details and examples:
+```
+bcl2fastq --runfolder-dir /path/to/runfolder --output-dir /path/to/output
+```
+
+In this example, replace `/path/to/runfolder` with the path to the directory containing the Illumina sequencing run data (BCL files) and specify the output directory where the FASTQ files will be generated. The `bcl2fastq` command is typically used to demultiplex and convert raw sequencing data from Illumina sequencers into FASTQ format for further analysis.

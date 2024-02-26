@@ -1,0 +1,29 @@
+Use Case: HDF5 (Hierarchical Data Format)
+
+Code details and examples:
+Sample input file (example.h5):
+```
+# Create an HDF5 file with a dataset
+import h5py
+
+data = [1, 2, 3, 4, 5]
+with h5py.File('example.h5', 'w') as f:
+    dataset = f.create_dataset('data', data=data)
+```
+
+Sample code to read the dataset from the HDF5 file:
+```
+# Read dataset from HDF5 file
+import h5py
+
+with h5py.File('example.h5', 'r') as f:
+    data = f['data'][:]
+    print(data)
+```
+
+Command to run the code:
+```
+python your_script.py
+```
+
+Please note that you need to have the h5py package installed for the above code snippets to work.

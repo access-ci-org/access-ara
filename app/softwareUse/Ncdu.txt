@@ -1,0 +1,27 @@
+Use Case: Ncdu (NCurses Disk Usage) allows users to analyze disk usage on the command line in a more interactive way.
+
+Code details and examples:
+1. To analyze disk usage of a specific directory:
+   ```
+   ncdu /path/to/directory
+   ```
+
+2. To scan a remote directory using SSH:
+   ```
+   ncdu ssh://username@remotehost//path/to/directory
+   ```
+
+3. To exclude specific directories from the scan:
+   ```
+   ncdu --exclude /path/to/exclude /path/to/directory
+   ```
+
+4. To save the scan data to a file for later analysis:
+   ```
+   ncdu -o output_file /path/to/directory
+   ```
+
+5. To analyze disk usage of the current directory:
+   ```
+   ncdu
+   ```

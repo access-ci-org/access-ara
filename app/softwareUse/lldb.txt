@@ -1,0 +1,38 @@
+lldb (Low Level Debugger) is a debugger similar to gdb, specifically built for debugging programs written in C, C++, and Objective-C languages.
+
+Use Case: Debugging a C program
+Code details and examples:
+Sample C program (example.c):
+```c
+#include <stdio.h>
+
+int main() {
+    int num1 = 10;
+    int num2 = 20;
+    int sum = num1 + num2;
+    
+    printf("Sum: %d\n", sum);
+    
+    return 0;
+}
+```
+
+Compile the program with debugging information:
+```bash
+clang -g example.c -o example
+```
+
+Run lldb debugger on the compiled program:
+```bash
+lldb example
+```
+
+Within lldb prompt, you can set breakpoints, examine variables, and control program execution. For example, setting a breakpoint at a certain line:
+```
+(lldb) breakpoint set --file example.c --line 7
+```
+
+Run the program with additional arguments:
+```
+(lldb) run arg1 arg2
+```

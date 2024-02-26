@@ -1,0 +1,16 @@
+Use Case: Unit testing with pytest
+Code details and examples:
+Sample input files: 
+- test_sample.py
+```python
+def test_addition():
+    assert 1 + 1 == 2
+
+def test_subtraction():
+    assert 5 - 3 == 2
+```
+
+Command to run:
+```
+pytest test_sample.py
+```

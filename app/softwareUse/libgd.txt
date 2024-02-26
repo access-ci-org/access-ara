@@ -1,0 +1,26 @@
+Use Case: libgd is a graphics library. It is used to create and manipulate images.
+
+Code details and examples:
+```c
+#include <gd.h>
+int main() {
+    gdImagePtr im = gdImageCreate(100, 100);
+    FILE *pngout;
+    if (!im) {
+        return 1;
+    }
+    pngout = fopen("output.png", "wb");
+    gdImagePng(im, pngout);
+    gdImageDestroy(im);
+    fclose(pngout);
+    return 0;
+}
+```
+To compile the code:
+```
+gcc example.c -o example -lgd
+```
+To run the compiled code:
+```
+./example
+```

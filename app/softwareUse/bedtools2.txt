@@ -1,0 +1,46 @@
+Use Case: bedtools2 is a powerful toolset for genomic arithmetic on BED, GFF, and VCF files.
+
+Code details and examples: 
+Input files can be in BED, GFF, or VCF formats. Below are some examples of input files and the command to run bedtools2:
+
+1. Example with BED input files:
+- Input file 1 (file1.bed):
+```
+chr1    100     200     peak1
+chr1    300     400     peak2
+chr2    500     600     peak3
+```
+- Input file 2 (file2.bed):
+```
+chr1    150     250     feature1
+chr2    550     650     feature2
+```
+- Command to intersect the two BED files and find overlapping regions:
+```
+bedtools intersect -a file1.bed -b file2.bed
+```
+
+2. Example with VCF input files:
+- Input file 1 (file1.vcf):
+```
+##fileformat=VCFv4.3
+##contig=<ID=chr1>
+#CHROM  POS     ID      REF     ALT
+chr1    100     .       A       T
+chr1    300     .       C       G
+chr2    500     .       G       T
+```
+- Input file 2 (file2.vcf):
+```
+##fileformat=VCFv4.3
+##contig=<ID=chr2>
+#CHROM  POS     ID      REF     ALT
+chr1    150     .       A       T
+chr2    550     .       G       C
+```
+- Command to merge the two VCF files:
+```
+bedtools merge -i file1.vcf file2.vcf
+```
+
+These are just examples of how you can use bedtools2 with different types of input files. The actual commands and options may vary based on the specific operation you want to perform.

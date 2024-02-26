@@ -1,0 +1,14 @@
+Use Case: Structural variant analysis
+Code details and examples:
+MELT is a software package used for detecting structural variants (SVs) from next-generation sequencing data. It can identify insertions, deletions, inversions, and translocations.
+
+Sample input files:
+- Input BAM file(s) containing aligned sequencing reads
+- Reference genome FASTA file
+
+Format required: BAM, FASTA
+
+Code:
+melt -B input.bam -R ref_genome.fasta -o output_folder
+
+Note: This is a simplified example. Please refer to the MELT documentation for more detailed command options and input file specifications.

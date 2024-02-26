@@ -1,0 +1,37 @@
+Use Case: tmux is a terminal multiplexer that allows multiple terminal sessions to be created, accessed, and controlled from a single screen.
+
+Code details and examples:
+1. Create a new tmux session:
+   ```bash
+   tmux new-session -s mysession
+   ```
+   
+2. Detach from a tmux session:
+   Press `Ctrl+b` then `d`
+
+3. Reattach to a tmux session:
+   ```bash
+   tmux attach-session -t mysession
+   ```
+   
+4. Split the tmux window horizontally:
+   Press `Ctrl+b` then `%`
+   
+5. Split the tmux window vertically:
+   Press `Ctrl+b` then `"`
+   
+6. Navigate between tmux panes:
+   Press `Ctrl+b` then arrow keys
+
+7. Close a tmux pane:
+   Press `Ctrl+d`
+
+8. List existing tmux sessions:
+   ```bash
+   tmux ls
+   ```
+
+9. Kill a tmux session:
+   ```bash
+   tmux kill-session -t mysession
+   ```

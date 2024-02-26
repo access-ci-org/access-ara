@@ -1,0 +1,33 @@
+Use Case: PyYAML is a Python library for parsing and emitting YAML files.
+
+Code details and examples:
+```python
+import yaml
+
+# Sample YAML input file
+yaml_input = """
+name: John Doe
+age: 30
+job: Developer
+skills:
+  - Python
+  - Java
+  - C++
+"""
+
+# Parsing YAML
+data = yaml.safe_load(yaml_input)
+print(data)
+
+# Sample YAML output file
+data['age'] = 31
+yaml_output = yaml.dump(data)
+
+print(yaml_output)
+```
+
+To run the above code, you can save it in a Python file (e.g., `parse_yaml.py`) and execute it using a Python interpreter:
+
+```
+python parse_yaml.py
+```

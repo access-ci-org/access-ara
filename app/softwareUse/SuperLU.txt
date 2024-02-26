@@ -1,0 +1,61 @@
+Use Case: Solve a sparse linear system of equations using SuperLU  
+Code details and examples:  
+SuperLU is a library for solving large, sparse, nonsymmetric systems of linear equations. Below is an example code snippet in C that demonstrates how to use SuperLU to solve a sparse linear system of equations.
+
+Sample input files:
+1. Matrix A: A sparse matrix in matrix market format (e.g., example.mtx)
+2. Right-hand side vector b: A vector representing the right-hand side of the linear system (e.g., example_rhs.txt)
+
+```c
+#include <stdio.h>
+#include "slu_ddefs.h"
+
+int main(int argc, char *argv[]) {
+    SuperMatrix A, L, U;
+    NCformat *Astore;
+    double   *a;
+    int      *asub, *xa;
+    SuperMatrix B;
+    NRformat *Bstore;
+    double   *b;
+    int      *bsub, *bptr;
+    int      *perm_c, *perm_r;
+    int      *etree;
+    void   *work;
+    int      info, lwork, nrhs;
+    superlu_options_t options;
+    SuperLUStat_t stat;
+
+    /* Load matrix A */
+    dCreate_CompCol_Matrix(&A, m, n, nnz, a, asub, xa, SLU_NC, SLU_D, SLU_GE);
+    
+    /* Load right-hand side vector b */
+    dCreate_Dense_Matrix(&B, m, nrhs, b, m, SLU_DN, SLU_D, SLU_GE);
+
+    /* Set up the options */
+    set_default_options(&options);
+
+    /* Initialize the statistics variable */
+    StatInit(&stat);
+
+    /* Solve the linear system */
+    dgssv(&options, &A, perm_c, perm_r, &L, &U, &B, &stat, &info);
+
+    /* Perform some operations with the solution */
+
+    /* Free memory */
+    Destroy_CompCol_Matrix(&A);
+    Destroy_SuperNode_Matrix(&L);
+    Destroy_CompCol_Matrix(&U);
+    Destroy_SuperMatrix_Store(&B);
+    StatFree(&stat);
+
+    return 0;
+}
+```
+
+To compile and run the code:
+```bash
+gcc -o example example.c -L<path_to_SuperLU_library> -lsuperlu
+./example
+```

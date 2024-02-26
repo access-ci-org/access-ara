@@ -1,0 +1,35 @@
+Use Case: PyCairo is a Python binding for the Cairo graphics library, which can be used for creating high-quality 2D vector graphics and animations.
+
+Code details and examples:
+Sample Input Files:
+- None required.
+
+Code snippet:
+
+```python
+import cairo
+
+WIDTH, HEIGHT = 256, 256
+
+surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, WIDTH, HEIGHT)
+context = cairo.Context(surface)
+
+context.set_source_rgb(0, 0, 0)
+context.paint()
+
+context.set_source_rgb(1, 1, 1)
+context.select_font_face("Arial", cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_NORMAL)
+context.set_font_size(20)
+context.move_to(50, 50)
+context.show_text("Hello, PyCairo!")
+
+surface.write_to_png("output.png")
+```
+
+To run the above code, you can save it in a Python file (e.g., `pycairo_example.py`) and then execute it using the Python interpreter:
+
+```bash
+python pycairo_example.py
+```
+
+This will generate an `output.png` file with the text "Hello, PyCairo!" displayed on a black background.

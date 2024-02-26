@@ -1,0 +1,26 @@
+Use Case: Octave is a high-level interpreted language, primarily intended for numerical computations.
+
+Code details and examples:
+1. Sample input file (data.txt):
+```
+1 2
+3 4
+5 6
+```
+
+2. In Octave, you can read this data file and perform operations like matrix multiplication as follows:
+```octave
+% Load data from file
+data = load('data.txt');
+
+% Perform matrix multiplication
+result = data * data;
+
+% Display the result
+disp(result);
+```
+
+3. Command to run the script (assuming the code is saved in a file named "matrix_mul.m"):
+```
+octave matrix_mul.m
+```

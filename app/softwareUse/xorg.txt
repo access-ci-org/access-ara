@@ -1,0 +1,11 @@
+Use Case: Xorg
+
+Code details and examples:
+Xorg is an open-source implementation of the X Window System. It is commonly used as the display server for Unix-like operating systems.
+
+To start Xorg:
+
+Code:
+```bash
+startx
+```

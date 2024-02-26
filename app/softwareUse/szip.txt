@@ -1,0 +1,17 @@
+Use Case: Data compression with szip  
+Code details and examples:  
+szip is a compression program used for compressing and decompressing data. It is typically used in conjunction with HDF files to reduce the storage space required for large datasets.
+
+To compress a file using szip, you can use the following command:
+
+```bash
+szip input_file.txt
+```
+
+To decompress a file using szip, you can use the following command:
+
+```bash
+szip -d input_file.txt.sz
+```
+
+Please note that szip works with HDF files by default and may require the HDF library to be installed for full functionality.

@@ -1,0 +1,39 @@
+Use Case: Quantum ESPRESSO (QE) is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is widely used in the field of computational materials science.
+
+Code details and examples:
+- Example input file for performing a simple ground-state calculation of Silicon using QE:
+```bash
+cat > si.in << EOF
+&control
+    calculation = 'scf',
+    prefix = 'si',
+    pseudo_dir = '/path/to/pseudo/',
+    outdir = './'
+/
+&system
+    ibrav = 2,
+    celldm(1) = 10.2625,
+    nat = 2,
+    ntyp = 1,
+    ecutwfc = 40.0
+/
+&electrons
+/
+ATOMIC_SPECIES
+   Si  28.086  Si.pbe-mt_fhi.UPF
+ATOMIC_POSITIONS crystal
+   Si 0.00 0.00 0.00
+   Si 0.25 0.25 0.25
+K_POINTS automatic
+  4 4 4 0 0 0
+EOF
+```
+
+- To run the calculation using QE, you can use the following command:
+```bash
+pw.x -in si.in > si.out
+```
+
+This will perform a self-consistent field (SCF) calculation for the given Silicon input file.
+
+Note: You need to have QE installed on your system and have the correct pseudopotentials in the specified directory to run this example.

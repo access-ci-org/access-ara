@@ -1,0 +1,45 @@
+Use Case: Python
+Code details and examples: 
+Python is a widely used programming language in various scientific and computational applications. Here are some examples of Python libraries commonly used in HPC and scientific computing:
+
+1. NumPy:
+NumPy is a fundamental package for scientific computing with Python. It provides support for arrays, mathematical functions, linear algebra, and random number capabilities.
+
+Sample input file (numpy_example.py):
+```python
+import numpy as np
+
+# Create a 1D array
+a = np.array([1, 2, 3, 4, 5])
+print(a)
+
+# Perform element-wise operations
+b = a * 2
+print(b)
+```
+
+2. SciPy:
+SciPy is built on top of NumPy and provides additional functionality for optimization, integration, interpolation, and linear algebra.
+
+Sample input file (scipy_example.py):
+```python
+import numpy as np
+from scipy.optimize import minimize
+
+# Define a function to minimize
+def rosen(x):
+    return sum(100.0*(x[1:]-x[:-1]**2.0)**2.0 + (1-x[:-1])**2.0)
+
+# Minimize the function
+x0 = np.array([1.3, 0.7, 0.8, 1.9, 1.2])
+res = minimize(rosen, x0, method='nelder-mead', options={'xatol': 1e-8, 'disp': True})
+print(res.x)
+```
+
+To run the code snippets above, you can execute them using the Python interpreter:
+```bash
+python numpy_example.py
+python scipy_example.py
+```
+
+These are just a few examples, and Python has a vast ecosystem of libraries and tools for scientific computing and HPC applications.

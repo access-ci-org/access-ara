@@ -1,0 +1,12 @@
+Use Case: Inter-process communication
+Code details and examples:
+- D-Bus is a message bus system, which provides a way for different processes to communicate with each other. It is commonly used in desktop environments for communication between applications.
+
+Sample input files:
+- D-Bus does not require specific input files. Communication between processes is done using method calls, signals, and properties.
+
+Code: 
+- D-Bus can be used via its command-line tools or programming libraries in various languages such as Python, C, and Java. Below is an example of using the `dbus-send` command-line tool to send a message on the session bus:
+```bash
+dbus-send --session --dest=org.freedesktop.DBus --type=method_call --print-reply /org/freedesktop/DBus org.freedesktop.DBus.ListNames
+```

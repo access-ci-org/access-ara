@@ -1,0 +1,38 @@
+GaussView is a graphical interface used with the Gaussian computational chemistry software suite. It is primarily used for visualizing and analyzing the results of Gaussian calculations such as molecular orbitals, electronic densities, and molecular structures.
+
+Use Case: Visualizing molecular structures and properties in Gaussian calculations
+Code details and examples:
+1. Open a molecular structure file in GaussView:
+   - Input file format: Gaussian input file (.com or .gjf)
+   - Example input file (sample.com):
+     ```plaintext
+     %chk=test.chk
+     %nproc=4
+     %mem=1000MB
+     #P B3LYP/6-31G(d) Opt
+
+     Title
+
+     0 1
+     C
+     H 1 1.08
+     H 1 1.08 2 120.0
+     H 1 1.08 2 120.0 3 -120.0
+     ```
+
+   - Command to open the file in GaussView (after setting it up with Gaussian software):
+     ```bash
+     gaussview sample.com
+     ```
+
+2. Visualizing molecular orbitals in GaussView:
+   - Input file format: Gaussian checkpoint file (.chk)
+   - Example input file (sample.chk from a Gaussian calculation):
+     - In Gaussian Gaussian calculations, specify the output file to generate the .chk file.
+
+   - Command to open the checkpoint file in GaussView:
+     ```bash
+     gaussview sample.chk
+     ```
+
+Note: GaussView should be used in conjunction with Gaussian software for visualization and analysis of computational chemistry results.

@@ -1,0 +1,35 @@
+Use Case: PyCUDA is a Python library that allows you to access Nvidia's CUDA parallel computation API from Python.
+
+Code details and examples:
+```python
+import pycuda.autoinit
+import pycuda.driver as drv
+import numpy as np
+
+from pycuda.compiler import SourceModule
+
+# Example kernel function to add two arrays
+mod = SourceModule("""
+    __global__ void add(int *a, int *b, int *c) {
+        int idx = threadIdx.x;
+        c[idx] = a[idx] + b[idx];
+    }
+""")
+
+add = mod.get_function("add")
+
+a = np.array([1, 2, 3, 4]).astype(np.int32)
+b = np.array([10, 20, 30, 40]).astype(np.int32)
+c = np.zeros_like(a)
+
+block_size = 4
+grid_size = 1
+
+add(drv.In(a), drv.In(b), drv.Out(c), block=(block_size, 1, 1), grid=(grid_size, 1))
+
+print("Result:", c)
+```
+
+Note: The above code snippet demonstrates how to add two arrays using a simple CUDA kernel function.
+
+To run the code, you need to have an Nvidia GPU with CUDA installed. You can execute the code in a Python environment where PyCUDA is installed.

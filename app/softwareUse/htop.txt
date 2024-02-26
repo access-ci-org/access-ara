@@ -1,0 +1,20 @@
+I see you mentioned htop, which is a popular interactive system-monitor process viewer. While it isn't as much an HPC software, I can provide information on how to run and use it.
+
+Use Case: Monitoring system processes using htop utility
+Code details and examples:
+1. To install htop, please use the package manager specific to your operating system. For example, on Ubuntu, you can use:
+```bash
+sudo apt-get install htop
+```
+
+2. Once installed, you can simply run htop by typing:
+```bash
+htop
+```
+
+3. You can navigate using the arrow keys and some important shortcuts include:
+- F5: Sort processes
+- F9: Kill a process
+- F10: Quit htop
+
+Please let me know if you need more information on running or using htop.

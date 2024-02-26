@@ -1,0 +1,20 @@
+Use Case: Ensembl Variant Effect Predictor (VEP) is a tool for annotating and predicting the effects of genetic variants.
+
+Code details and examples:
+```
+# Example input file for VEP in VCF format
+# sample.vcf
+#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO
+1       1001    .       C       T       30      PASS    .
+1       2001    .       G       A       40      PASS    .
+
+# Command to run VEP on the input VCF file
+vep -i sample.vcf --cache --dir_cache /path/to/vep_cache --assembly GRCh38 --output_file output.vcf
+```
+
+In this code snippet:
+- Replace `/path/to/vep_cache` with the path to the VEP cache directory.
+- `--assembly` flag specifies the genome assembly version (GRCh38 in this example).
+- The output will be saved to `output.vcf` file with annotated variant information.
+
+Note: The actual VEP command may vary based on the VEP version and specific requirements.

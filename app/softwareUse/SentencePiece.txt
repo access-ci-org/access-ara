@@ -1,0 +1,22 @@
+Use Case: Text tokenization and subword modeling with SentencePiece.
+Code details and examples: 
+Sample input file (input.txt):
+```
+SentencePiece is a simple and efficient text tokenization tool.
+```
+
+Code:
+1. Training a SentencePiece model:
+```bash
+spm_train --input=input.txt --model_prefix=m --vocab_size=1000
+```
+
+2. Tokenizing the input text using the trained model:
+```bash
+spm_encode --model=m.model --output_format=piece < input.txt
+```
+
+3. Detokenizing the tokenized text:
+```bash
+spm_decode --model=m.model < input.txt
+```

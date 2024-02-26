@@ -1,0 +1,25 @@
+Use Case: GMT (Generic Mapping Tools) is a collection of command-line tools for manipulating geographic and Cartesian data sets, creating high-quality maps and plots.
+
+Code details and examples:
+1. Sample input file (data.txt):
+```
+1 2
+3 4
+5 6
+```
+
+2. Sample script to plot data points using GMT:
+```bash
+gmt psxy data.txt -R0/10/0/10 -JX10c -Sc0.3 -P -Ba -K > output.ps
+gmt psbasemap -R -J -B -O >> output.ps
+gmt psconvert output.ps -Tg -A
+```
+
+3. Command to run the script:
+```bash
+bash script.sh
+```
+
+Above commands will plot the data points from data.txt file using GMT, create a plot in output.ps, and convert it to output.png.
+
+Please note that GMT provides a wide range of functionalities beyond this simple example.

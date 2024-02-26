@@ -1,0 +1,21 @@
+Use Case: CuPy is a GPU array library that can accelerate NumPy-compatible libraries with CUDA. 
+
+Code details and examples:
+CuPy can be used similar to NumPy but running on GPU. Here is an example of using CuPy to perform matrix multiplication:
+
+```python
+import cupy as cp
+
+# Create random matrices
+A = cp.random.randn(3, 3)
+B = cp.random.randn(3, 3)
+
+# Perform matrix multiplication
+C = cp.dot(A, B)
+
+print(C)
+```
+
+To run the code, make sure you have CuPy and CUDA installed and configured properly, then you can simply run the script using Python.
+
+Command to run: ```python my_script.py```

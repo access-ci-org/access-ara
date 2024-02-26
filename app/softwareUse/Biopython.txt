@@ -1,0 +1,30 @@
+Use Case: Biopython
+Code details and examples:
+Biopython is a set of freely available tools for biological computation written in Python. It provides functionalities for DNA and protein sequence analysis, biological database handling, and various bioinformatics tasks.
+
+Example Code:
+```python
+from Bio.Seq import Seq
+
+# Creating a DNA sequence
+my_dna = Seq("AGTACACTGGT")
+
+# Transcribing DNA to RNA
+my_rna = my_dna.transcribe()
+print(my_rna)
+
+# Translating RNA to protein
+my_protein = my_rna.translate()
+print(my_protein)
+```
+
+Example input file (input.txt):
+```
+>sequence1
+AGTACACTGGT
+```
+
+Command to run:
+```
+python my_script.py < input.txt
+```

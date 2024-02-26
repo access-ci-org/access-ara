@@ -1,0 +1,21 @@
+Use Case: High Energy Astrophysics Software (HEASoft)
+Code details and examples:
+HEASoft is a software package commonly used in high energy astrophysics for the analysis of data from various telescopes such as Chandra, XMM-Newton, and Suzaku. Below is an example of running the tool `xspec` to fit a spectral model to a sample X-ray spectrum file.
+
+Sample input file (`sample_spectrum.pha`):
+```
+XSPEC 12.11.0
+statistic chi
+data 1:1 sample_spectrum.pha
+response 1 arf.rmf
+background 1 sample_spectrum_bkg.pha
+ignore 1: **-0.5 7.0-**
+model powerlaw
+```
+
+Code:
+```
+xspec - sample_spectrum.pha
+```
+
+This command will open the `xspec` tool and load the sample spectrum file `sample_spectrum.pha` for spectral fitting using a power-law model.

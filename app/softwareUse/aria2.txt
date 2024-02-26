@@ -1,0 +1,13 @@
+Use Case: Downloading files from the internet concurrently.
+
+Code details and examples:
+Sample input file (urls.txt):
+```
+https://example.com/file1.zip
+https://example.com/file2.gz
+```
+
+Command to download files:
+```
+aria2c -i urls.txt
+```

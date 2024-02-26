@@ -1,0 +1,14 @@
+Use Case: Homer is a suite of tools for motif discovery and next-gen sequencing analysis. 
+Code details and examples:
+1. Find motifs in a given input sequence file:
+```bash
+findMotifs.pl input_sequence.fa fasta output_directory -len 8 -rna
+```
+2. Merge peaks from multiple peak files:
+```bash
+mergePeaks file1.txt file2.txt > merged_peaks.txt
+```
+3. Annotate peaks with gene annotations:
+```bash
+annotatePeaks.pl merged_peaks.txt genome_version > annotated_peaks.txt
+```

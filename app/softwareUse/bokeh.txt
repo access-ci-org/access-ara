@@ -1,0 +1,40 @@
+Use Case: Data visualization tool  
+Code details and examples:  
+Bokeh is a Python library used for interactive data visualization. Below is an example of creating a simple scatter plot using Bokeh.
+
+Sample input file (sample_data.csv):
+```
+x,y
+1,5
+2,3
+3,8
+4,6
+5,7
+```
+
+Code:
+```python
+from bokeh.plotting import figure, show
+from bokeh.io import output_file
+import pandas as pd
+
+# Read data from input file
+data = pd.read_csv('sample_data.csv')
+
+# Create a new plot with a title and axis labels
+p = figure(title="Simple scatter plot", x_axis_label='x', y_axis_label='y')
+
+# Add a circle renderer with a size, color, and alpha
+p.circle(data['x'], data['y'], size=10, color='navy', alpha=0.5)
+
+# Save the plot as an HTML file
+output_file("scatter_plot.html")
+
+# Show the plot
+show(p)
+```
+
+To run the code:
+```
+python your_script.py
+```

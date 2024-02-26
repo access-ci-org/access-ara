@@ -1,0 +1,55 @@
+Use Case: GPU programming with CUDA
+
+Code details and examples:
+CUDA is a parallel computing platform and application programming interface model created by Nvidia. Here is a simple CUDA code example for adding two arrays:
+
+Sample input files:
+Array size: 10
+Array A: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Array B: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+CUDA code:
+```cuda
+#include <stdio.h>
+
+__global__ void add(int *a, int *b, int *c) {
+    int index = threadIdx.x;
+    c[index] = a[index] + b[index];
+}
+
+int main() {
+    int a[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int b[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+    int c[10];
+
+    int *d_a, *d_b, *d_c;
+
+    cudaMalloc(&d_a, 10 * sizeof(int));
+    cudaMalloc(&d_b, 10 * sizeof(int));
+    cudaMalloc(&d_c, 10 * sizeof(int));
+
+    cudaMemcpy(d_a, a, 10 * sizeof(int), cudaMemcpyHostToDevice);
+    cudaMemcpy(d_b, b, 10 * sizeof(int), cudaMemcpyHostToDevice);
+
+    add<<<1, 10>>>(d_a, d_b, d_c);
+
+    cudaMemcpy(c, d_c, 10 * sizeof(int), cudaMemcpyDeviceToHost);
+
+    for (int i = 0; i < 10; i++) {
+        printf("%d + %d = %d\n", a[i], b[i], c[i]);
+    }
+
+    cudaFree(d_a);
+    cudaFree(d_b);
+    cudaFree(d_c);
+
+    return 0;
+}
+```
+
+To compile and run the CUDA code, you typically use nvcc (Nvidia's CUDA Compiler). Assuming the code is saved in a file named "add_arrays.cu", you can compile and run it using:
+
+```bash
+nvcc -o add_arrays add_arrays.cu
+./add_arrays
+```

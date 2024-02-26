@@ -1,0 +1,11 @@
+Use Case: HPC software
+
+Code details and examples:
+- Sample input files: Protein structure files in PDB format
+- Format required: PDB format
+- Input file specifications: Protein structure details
+- Code snippet: 
+```
+pwanalyzer input.pdb
+```
+- Command to run: Not available

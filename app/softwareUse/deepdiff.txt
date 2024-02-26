@@ -1,0 +1,40 @@
+DeepDiff is a Python library for calculating the difference between two objects. It can be used in various scenarios such as data analysis, testing, debugging, etc.
+
+Use Case: Finding the difference between two dictionaries using DeepDiff
+Code details and examples:
+
+```python
+from deepdiff import DeepDiff
+
+# Sample input dictionaries
+dict1 = {"a": 1, "b": 2, "c": 3}
+dict2 = {"a": 1, "b": 3, "d": 4}
+
+# Finding the difference between two dictionaries
+diff = DeepDiff(dict1, dict2)
+
+# Printing the result
+print(diff)
+```
+
+Output:
+```
+{
+    'values_changed': {
+        "root['b']": {
+            'new_value': 3,
+            'old_value': 2
+        },
+        "root['c']": 3,
+        "root['d']": 4
+    },
+    'dictionary_item_added': {
+        "root['d']": 4
+    },
+    'dictionary_item_removed': {
+        "root['c']": 3
+    }
+}
+```
+
+Command to run the code: `python script.py`

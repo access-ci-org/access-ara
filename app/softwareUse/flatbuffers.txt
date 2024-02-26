@@ -1,0 +1,36 @@
+Use Case: Serialization and deserialization of data with FlatBuffers
+Code details and examples:
+Input file format (example schema file):
+```flatbuffers
+table Monster {
+  name: string;
+  hp: int;
+}
+
+root_type Monster;
+```
+Code snippet to compile the schema file to generate code:
+```bash
+flatc --python monster.fbs
+```
+Input data format (example Python script to create and serialize data):
+```python
+import flatbuffers
+from MyGame.Example import Monster
+
+builder = flatbuffers.Builder(0)
+name = builder.CreateString("Orc")
+Monster.MonsterStart(builder)
+Monster.MonsterAddName(builder, name)
+Monster.MonsterAddHp(builder, 100)
+orc = Monster.MonsterEnd(builder)
+
+builder.Finish(orc)
+buf = builder.Output()
+```
+Code snippet to deserialize data:
+```python
+monster = Monster.Monster.GetRootAsMonster(buf, 0)
+print(monster.Name())  # Output: Orc
+print(monster.Hp())  # Output: 100
+```

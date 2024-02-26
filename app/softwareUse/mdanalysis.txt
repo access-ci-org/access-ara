@@ -1,0 +1,26 @@
+Use Case: MDAnalysis is a Python library to analyze molecular dynamics trajectories.
+
+Code details and examples: 
+MDAnalysis supports various input file formats for molecular dynamics trajectories such as DCD, XTC, TRR, etc. These trajectories can be loaded using the `MDAnalysis.Universe` class. Here is an example of loading a DCD trajectory file:
+
+```python
+import MDAnalysis as mda
+
+# Load a DCD trajectory file
+u = mda.Universe("topology.psf", "trajectory.dcd")
+```
+
+You can then access and analyze various properties of the system such as atoms, residues, coordinates, etc. For example, to calculate the center of mass of a group of atoms:
+
+```python
+# Calculate the center of mass of a group of atoms
+protein = u.select_atoms("protein")
+com = protein.center_of_mass()
+print(com)
+```
+
+To run a script using MDAnalysis, you can simply execute it using Python. The above code snippets can be saved in a Python script (e.g., analyze_traj.py) and run using:
+
+```
+python analyze_traj.py
+```

@@ -1,0 +1,37 @@
+I'm assuming you meant to ask about the Imlib2 library for image manipulation. 
+
+Use Case: Image loading and manipulation with Imlib2
+Code details and examples:
+
+Imlib2 is a library for loading, saving, and manipulating images in various formats. Here is an example of using Imlib2 to load and save an image in C:
+
+```c
+#include <Imlib2.h>
+
+int main() {
+    // Load an image
+    Imlib_Image image = imlib_load_image("input.jpg");
+    
+    // Modify the image here if needed
+    
+    // Save the modified image
+    imlib_save_image_with_error_return(image, "output.jpg", NULL);
+    
+    // Free the image
+    imlib_free_image();
+    
+    return 0;
+}
+```
+
+For input files, you would need an image file in a supported format such as jpg, png, bmp, etc.
+
+To compile the C code, you can use the following command:
+```
+gcc -o image_manipulation image_manipulation.c -lImlib2
+```
+
+To run the program (assuming the executable file is named 'image_manipulation'):
+```
+./image_manipulation
+```

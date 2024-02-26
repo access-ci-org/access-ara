@@ -1,0 +1,39 @@
+Use Case: Molecular dynamics simulations using LAMMPS
+
+Code details and examples:
+LAMMPS input script example for a simple Lennard-Jones system:
+
+```
+# Initialize simulation
+units lj
+dimension 3
+boundary p p p
+atom_style atomic
+
+# Create atoms
+lattice fcc 0.8442
+region box block 0 10 0 10 0 10
+create_box 1 box
+create_atoms 1 box
+mass 1 1.0
+
+# Define interactions
+pair_style lj/cut 2.5
+pair_coeff 1 1 1.0 1.0 2.5
+
+# Set up minimization
+reset_timestep 0
+fix 1 all nve
+thermo 100
+thermo_style custom step pe ke etotal press temp
+minimize 1.0e-6 1.0e-8 1000 10000
+
+# Run simulation
+run 1000
+```
+
+To run the above LAMMPS input script, save the script in a file (e.g., `in.lj`) and then run the LAMMPS executable with the input script using the following command:
+
+```
+lmp_serial -in in.lj
+```

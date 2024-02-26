@@ -1,0 +1,16 @@
+Use Case: scientific computing  
+Code details and examples:  
+```fortran
+program main
+    implicit none
+    integer :: i
+    do i = 1, 10
+        write(*,*) i
+    end do
+end program main
+```
+To compile and run the Fortran code:
+```
+gfortran program.f90 -o program
+./program
+```

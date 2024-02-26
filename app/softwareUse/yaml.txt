@@ -1,0 +1,34 @@
+Use Case: YAML
+Code details and examples:
+YAML (YAML Ain't Markup Language) is a human-readable data serialization format that is often used with configuration files.
+
+Sample input file (example.yaml):
+```yaml
+# Sample YAML file
+name: John Doe
+age: 30
+city: New York
+interests:
+  - hiking
+  - photography
+  - cooking
+```
+
+Code snippet to read and parse YAML file in Python:
+```python
+import yaml
+
+# Load YAML file
+with open('example.yaml', 'r') as file:
+    data = yaml.safe_load(file)
+
+# Access data
+print(data['name'])
+print(data['age'])
+print(data['interests'])
+```
+
+Command to run the Python script:
+```
+python example.py
+```

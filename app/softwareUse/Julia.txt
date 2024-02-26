@@ -1,0 +1,23 @@
+Use Case: Julia 
+
+Code details and examples: 
+Julia is a high-level, high-performance dynamic programming language for technical computing. Below is an example of a simple Julia code that calculates the sum of numbers from 1 to 10.
+
+```julia
+# Define a function to calculate the sum of numbers from 1 to n
+function sum_numbers(n)
+    return sum(1:n)
+end
+
+# Call the function with n=10
+result = sum_numbers(10)
+println("The sum of numbers from 1 to 10 is: ", result)
+```
+
+To run this Julia code, you can save it in a file with a ".jl" extension, for example, "sum.jl". Then you can run it from the command line using the `julia` command:
+
+```
+julia sum.jl
+```
+
+This will execute the code and output the sum of numbers from 1 to 10.

@@ -1,0 +1,22 @@
+Use Case: ffmpeg is a powerful tool for manipulating multimedia files.
+
+Code details and examples:
+1. Convert video from one format to another:
+```bash
+ffmpeg -i input.mp4 output.avi
+```
+
+2. Cut a specific segment from a video:
+```bash
+ffmpeg -i input.mp4 -ss 00:01:00 -to 00:02:00 -c copy output.mp4
+```
+
+3. Extract audio from a video:
+```bash
+ffmpeg -i input.mp4 -vn -acodec copy output.aac
+```
+
+4. Convert a video to a specific resolution:
+```bash
+ffmpeg -i input.mp4 -vf scale=1280:720 output.mp4
+```

@@ -1,0 +1,38 @@
+Use Case: Web scraping  
+Code details and examples:
+```python
+from bs4 import BeautifulSoup
+
+# Sample HTML content
+html_content = '''
+<html>
+<head>
+<title>Sample HTML Page</title>
+</head>
+<body>
+<h1>Hello, World!</h1>
+<p>This is a sample paragraph.</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+</body>
+</html>
+'''
+
+# Create a BeautifulSoup object
+soup = BeautifulSoup(html_content, 'html.parser')
+
+# Extract specific elements
+title = soup.title.text
+h1_text = soup.h1.text
+paragraph = soup.p.text
+items = [item.text for item in soup.find_all('li')]
+
+print(title)
+print(h1_text)
+print(paragraph)
+print(items)
+```
+Note: BeautifulSoup is a Python library for parsing HTML and XML documents. The example code above demonstrates how to use BeautifulSoup to extract specific elements from HTML content.

@@ -1,0 +1,8 @@
+Use Case: Basecalling with Guppy
+Code details and examples:
+**Input format:** Guppy accepts fast5 files as input.
+**Command:** 
+```
+guppy_basecaller --input_path /path/to/fast5_directory --save_path /path/to/output_directory
+```
+This command will basecall the fast5 files in the specified input directory and save the output files in the specified output directory.

@@ -1,0 +1,10 @@
+Use Case: gperf is a perfect hash function generator. It transforms key values into perfect hash functions by generating C code for a hash table. 
+
+Code details and examples:
+```bash
+$ gperf input_file.txt > output_file.c
+```
+
+In this command:
+- `input_file.txt` is a text file containing a list of keys.
+- `output_file.c` will contain the generated C code for the hash table.

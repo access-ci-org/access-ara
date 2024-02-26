@@ -1,0 +1,17 @@
+Use Case: Python 3.7 
+
+Code details and examples:
+- Sample input files: N/A
+- Format required: N/A
+- Specifications: N/A
+
+- Code snippet:
+```python
+# Python 3.7 code here
+print("Hello, Python 3.7!")
+```
+
+- Command to run:
+```bash
+python3.7 your_script.py
+```

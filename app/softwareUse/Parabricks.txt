@@ -1,0 +1,16 @@
+Parabricks is a GPU-accelerated bioinformatics software suite for primary and secondary next-generation sequencing (NGS) data analysis.
+
+Use Case: Variant Calling
+Code Details and Examples:
+- Input Files: Parabricks accepts standard input formats for NGS data such as FASTQ files for raw sequencing data and BAM files for aligned reads.
+- Sample Input Command:
+```
+pb_variant_calling --ref reference.fasta --in aligned_reads.bam --out variants.vcf
+```
+In this example, `reference.fasta` is the reference genome, `aligned_reads.bam` is the aligned reads file, and `variants.vcf` is the output variant call format file.
+
+- Specifications: Depending on the specific analysis being performed, additional parameters such as variant calling settings, quality filters, and output formats may need to be specified in the command.
+
+- Command to Run: The command to run Parabricks varies based on the specific analysis being performed. In general, the command structure follows `pb_<analysis_type>`, where `<analysis_type>` is the specific analysis being run (e.g., variant calling, genome assembly, etc.)
+
+For more detailed information on specific analyses and commands, please refer to the official Parabricks documentation.

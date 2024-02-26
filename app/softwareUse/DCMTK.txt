@@ -1,0 +1,29 @@
+Use Case: DCMTK (DICOM Toolkit) is a collection of libraries and applications for medical imaging. It supports the DICOM standard and provides various tools for working with DICOM files.
+
+Code details and examples:
+1. List DICOM tags in a file:
+```bash
+dcmdump input.dcm
+```
+
+2. Convert a DICOM file to a different transfer syntax:
+```bash
+dcmtrans -i input.dcm -o output.dcm +te
+```
+
+3. Anonymize DICOM files by removing patient information:
+```bash
+dcmodify -nb -de -ie input.dcm -of output.dcm
+```
+
+4. Query a DICOM server for information:
+```bash
+echoscu +r -aec MY_AE_TITLE SERVER_IP SERVER_PORT
+```
+
+5. Send DICOM files to a remote server:
+```bash
+storescu +r -aec MY_AE_TITLE SERVER_IP SERVER_PORT input1.dcm input2.dcm
+```
+
+Note: Replace input.dcm with the path to the DICOM file you want to work with. Adjust the options as needed for your specific use case.

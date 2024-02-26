@@ -1,0 +1,19 @@
+M4 is a powerful text processor typically used as a macro preprocessor in programming and generating files automatically. It is commonly used in Unix-like systems.
+
+Use Case: Text processing and macro preprocessing.
+Code details and examples:
+1. Sample input file (input.m4):
+```m4
+define(`HELLO', `Hello, World!')
+HELLO
+```
+
+2. Running the m4 command to process the input file:
+```bash
+m4 input.m4
+```
+
+Output:
+```
+Hello, World!
+```

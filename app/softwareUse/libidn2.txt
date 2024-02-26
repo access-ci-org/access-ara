@@ -1,0 +1,22 @@
+Use Case: Internationalized Domain Names support library
+
+Code details and examples:
+libidn2 is a library that provides support for Internationalized Domain Names (IDN) according to the IDNA2008 specification. The library allows for the encoding and decoding of domain names containing non-ASCII characters.
+
+Here is an example of encoding a domain name using the idn command line tool provided by libidn2:
+
+```bash
+echo "example.臺灣" | idn2
+```
+
+This will output the Punycode encoded version of the domain name "example.臺灣".
+
+To decode a Punycode encoded domain name, you can use the following command:
+
+```bash
+echo "example.xn--kprw13d" | idn2
+```
+
+This will output the UTF-8 representation of the domain name "example.xn--kprw13d".
+
+The libidn2 library also provides APIs for developers to integrate IDN support into their applications.

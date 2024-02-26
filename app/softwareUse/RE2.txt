@@ -1,0 +1,24 @@
+Use Case: Regular expression library for C++
+Code details and examples: 
+```cpp
+#include <re2/re2.h>
+#include <iostream>
+
+int main() {
+    RE2 re("(a|b)(c|d)");
+    std::string input = "ac";
+    
+    if (RE2::FullMatch(input, re)) {
+        std::cout << "Input matches the regular expression";
+    } else {
+        std::cout << "Input does not match the regular expression";
+    }
+
+    return 0;
+}
+```
+To compile and run the code using RE2 library:
+```
+g++ my_program.cpp -o my_program -lre2
+./my_program
+```

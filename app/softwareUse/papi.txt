@@ -1,0 +1,45 @@
+Use Case: Performance Counters for HPC applications monitoring
+
+Code details and examples:
+PAPI (Performance Application Programming Interface) is a widely used library for accessing hardware performance counters on modern processors. Here is an example of using PAPI to measure the cycles and instructions executed by a simple C program.
+
+Sample C code (example.c):
+```c
+#include <stdio.h>
+#include <papi.h>
+
+#define NUM_EVENTS 2
+
+int main() {
+    int EventSet = PAPI_NULL;
+    long_long values[NUM_EVENTS];
+    int Events[NUM_EVENTS] = {PAPI_TOT_CYC, PAPI_TOT_INS};
+
+    PAPI_library_init(PAPI_VER_CURRENT);
+    PAPI_create_eventset(&EventSet);
+    PAPI_add_events(EventSet, Events, NUM_EVENTS);
+
+    PAPI_start(EventSet);
+    // Code to measure goes here
+    PAPI_stop(EventSet, values);
+
+    printf("Cycles: %lld\n", values[0]);
+    printf("Instructions: %lld\n", values[1]);
+
+    PAPI_shutdown();
+
+    return 0;
+}
+```
+
+Compile the program (assuming "example.c" is the filename):
+```bash
+gcc example.c -o example -lpapi
+```
+
+Run the program:
+```bash
+./example
+```
+
+Note: Make sure to have PAPI installed and linked properly when compiling the program.

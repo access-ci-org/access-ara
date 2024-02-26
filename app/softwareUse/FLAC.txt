@@ -1,0 +1,28 @@
+I'm assuming you mean the Free Lossless Audio Codec. Below are some examples with sample input files, formats required, specifications, and details for FLAC.
+
+Use Case: Encode WAV file to FLAC format
+Code details and examples:
+```bash
+# Convert WAV file to FLAC
+flac input.wav -o output.flac
+```
+
+Use Case: Decode FLAC file to WAV format
+Code details and examples:
+```bash
+# Convert FLAC file to WAV
+flac -d input.flac -o output.wav
+```
+
+Format for input files: 
+- Input files should be in WAV format to encode to FLAC or in FLAC format to decode to WAV.
+
+Specifications for input files:
+- For encoding to FLAC, the sample input file should be a WAV audio file.
+- For decoding to WAV, the sample input file should be a FLAC audio file.
+
+Additional details:
+- FLAC supports encoding and decoding of audio files with lossless compression.
+- It is a popular choice for preserving original audio quality while reducing file size.
+
+Please ensure you have the FLAC software installed on your system before running the commands.

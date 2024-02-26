@@ -1,0 +1,24 @@
+Use Case: Tool for working with HTSlib (C library for high-throughput sequencing data formats).
+
+Code details and examples:
+RHTSlib provides a Python interface to HTSlib, allowing users to work with BAM, CRAM, and VCF files. Here is an example code snippet using rhtslib to retrieve reads from a BAM file:
+
+```python
+from rhtslib import BamReader
+
+bam_file = "example.bam"
+reader = BamReader(bam_file)
+
+for read in reader.fetch("chr1", 0, 100):
+    print(read)
+```
+
+In this example, we are using rhtslib to open a BAM file "example.bam" and fetch reads from chromosome "chr1" between positions 0 and 100. The "read" object contains information about each read, such as sequence, quality scores, alignment information, etc.
+
+To install rhtslib, you can use pip:
+
+```bash
+pip install rhtslib
+```
+
+Please note that you need to have HTSlib installed on your system for rhtslib to work properly.

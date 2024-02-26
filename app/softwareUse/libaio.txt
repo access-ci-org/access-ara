@@ -1,0 +1,64 @@
+Use Case: Asynchronous I/O library (libaio) for Linux
+
+Code details and examples:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <aio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+
+#define FILE_NAME "sample.txt"
+
+int main() {
+    int fd, ret;
+    struct aiocb aio;
+    char buffer[1024];
+
+    memset(&aio, 0, sizeof(struct aiocb));
+    
+    fd = open(FILE_NAME, O_RDONLY);
+    if (fd == -1) {
+        perror("Error opening file");
+        return 1;
+    }
+    
+    aio.aio_fildes = fd;
+    aio.aio_buf = buffer;
+    aio.aio_nbytes = sizeof(buffer);
+    aio.aio_offset = 0;
+    
+    ret = aio_read(&aio);
+    if (ret == -1) {
+        perror("Error with aio_read");
+        return 1;
+    }
+    
+    while (aio_error(&aio) == EINPROGRESS) {
+        // Do something while waiting for I/O completion
+    }
+    
+    ret = aio_return(&aio);
+    if (ret == -1) {
+        perror("Error with aio_return");
+        return 1;
+    }
+    
+    printf("Read %d bytes: %s\n", ret, buffer);
+    
+    close(fd);
+    
+    return 0;
+}
+```
+
+To compile the code:
+```bash
+gcc -o aio_example aio_example.c -laio
+```
+
+To run the compiled program:
+```bash
+./aio_example
+```

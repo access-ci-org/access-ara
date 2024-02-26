@@ -1,0 +1,17 @@
+Use Case: Molecular dynamics simulations for biomolecular systems.
+Code details and examples:
+```bash
+gmx pdb2gmx -f input.pdb -o output.gro -p output.top
+gmx editconf -f input.gro -o output.gro -box 3 3 3
+gmx solvate -cp input.gro -cs spc216.gro -o output.gro -p output.top
+gmx grompp -f em.mdp -c input.gro -p output.top -o em.tpr
+gmx mdrun -deffnm em
+```
+In the above commands:
+- `pdb2gmx` is used to generate a topology for the molecule from a PDB file.
+- `editconf` is used to create a box around the solvated molecule.
+- `solvate` is used to solvate the system with water molecules.
+- `grompp` prepares the input for the molecular dynamics simulation.
+- `mdrun` performs the simulation.
+
+Please note that the actual input files and parameters may vary depending on the specific system and simulation protocol being used.

@@ -1,0 +1,11 @@
+Use Case: Module enables users to load software environments, tools, libraries, or compilers on HPC systems. 
+
+Code details and examples:
+```
+module avail  # List all available software modules
+module load <module_name>  # Load a specific module
+module list  # List currently loaded modules
+module unload <module_name>  # Unload a specific module
+```
+
+When using module command, you can specify the name of the module you want to load. Each module may have specific software, tools, libraries, or compilers that it provides. To list available modules, you can use `module avail`. To see the currently loaded modules, you can use `module list`.

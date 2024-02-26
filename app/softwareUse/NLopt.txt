@@ -1,0 +1,47 @@
+Use Case: NLopt is a library for nonlinear optimization. It provides many algorithms, such as gradient-based (e.g., Newton's method) and gradient-free (e.g., genetic algorithms) methods, for optimizing nonlinear functions.
+
+Code details and examples:
+1. Sample input file (`example_nlopt_input.txt`):
+```
+# Objective function: Rosenbrock function
+Maximize
+Obj: 100 * (x[1]^2 - x[2])^2 + (x[1] - 1)^2
+
+# Constraints
+Subject to
+Constraint1: x[1] + x[2] >= 0
+Constraint2: x[1] - x[2] <= 2
+
+Bounds
+-1 <= x[1] <= 1
+-1 <= x[2] <= 1
+```
+
+2. Python code to perform the optimization using NLopt:
+```python
+import numpy as np
+import nlopt
+
+def rosenbrock(x, grad):
+    if grad.size > 0:
+        grad[0] = -400 * x[0] * (x[1] - x[0]**2) - 2 * (1 - x[0])
+        grad[1] = 200 * (x[1] - x[0]**2)
+    return 100 * (x[0]**2 - x[1])**2 + (x[0] - 1)**2
+
+opt = nlopt.opt(nlopt.LD_MMA, 2)
+opt.set_lower_bounds([-1, -1])
+opt.set_upper_bounds([1, 1])
+opt.set_min_objective(rosenbrock)
+opt.add_inequality_constraint(lambda x, grad: x[0] + x[1], 0)
+opt.add_inequality_constraint(lambda x, grad: x[0] - x[1] - 2, 0)
+opt.set_maxeval(1000)
+
+x = opt.optimize([0.5, 0.5])
+print("Optimized parameters:", x)
+print("Optimum value:", opt.last_optimum_value())
+```
+
+3. Command to run the Python script:
+```
+python your_script.py
+```

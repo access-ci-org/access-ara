@@ -1,0 +1,17 @@
+Use Case: Encryption and decryption of files using libgpg.
+
+Code details and examples:
+Sample input file (plaintext.txt):
+```
+Hello, this is a sample input file for encryption.
+```
+
+Sample code for encryption using libgpg:
+```bash
+gpg --output encrypted.txt --symmetric plaintext.txt
+```
+
+Sample code for decryption using libgpg:
+```bash
+gpg --output decrypted.txt --decrypt encrypted.txt
+```

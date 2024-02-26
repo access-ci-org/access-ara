@@ -1,0 +1,17 @@
+Use Case: Parsing Maestro files using maeparser
+
+Code details and examples:
+```python
+from maeparser import parse
+
+# Load a Maestro file
+mae_file = "input.mae"
+with open(mae_file, "r") as f:
+    mae_data = list(parse(f))
+
+# Accessing data from the Maestro file
+for record in mae_data:
+    print(record)
+```
+
+Make sure to have the `maeparser` Python package installed before running the code.

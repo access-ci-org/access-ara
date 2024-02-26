@@ -1,0 +1,28 @@
+Use Case: MONAI is a PyTorch-based, open-source framework for deep learning in healthcare imaging. It provides domain-optimized neural networks, pre-processing transforms, evaluation metrics, and other utilities for medical image analysis tasks.
+
+Code details and examples:
+
+Sample input files: Medical images in DICOM format
+Format required: DICOM or NIfTI files
+Specifications: Input images should be in the appropriate medical imaging format supported by MONAI.
+
+```python
+import torch
+from monai.data import Dataset
+from monai.transforms import Compose, LoadImaged, AddChanneld, Resized
+
+# Define a Dataset with transforms
+data = [{"image": "path_to_image1.nii.gz"}, {"image": "path_to_image2.nii.gz"}]
+transforms = Compose([LoadImaged(image_only=True), AddChanneld(), Resized(keys="image", spatial_size=(128, 128))])
+dataset = Dataset(data, transform=transforms)
+
+# Access and preprocess image data
+for idx in range(len(dataset)):
+    data_dict = dataset[idx]
+    image = data_dict["image"]
+    print(image.shape)
+```
+
+To run the above example, save it in a Python script and execute it using a Python interpreter.
+
+Command to run: `python your_script.py`

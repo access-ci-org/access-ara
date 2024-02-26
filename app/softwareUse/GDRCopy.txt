@@ -1,0 +1,39 @@
+Use Case: HPC software
+
+Code details and examples:
+GDRCopy is a tool for copying data between two GPU buffers. It is useful for performing fast data transfers within GPU memory. Below is a code snippet using GDRCopy:
+
+Sample input files:
+- Source buffer
+- Destination buffer
+- Size of data to copy
+
+```C
+#include <stdio.h>
+#include <gdrapi.h>
+
+int main() {
+    gdr_t g = gdr_open();
+    unsigned int size = 1024; // Size of data to copy
+    void *src_buf; // Source buffer
+    void *dst_buf; // Destination buffer
+    
+    // Allocate and initialize source and destination buffers
+
+    // Copy data from source buffer to destination buffer using GDRCopy
+    gdr_copy(g, dst_buf, src_buf, size);
+
+    gdr_close(g);
+    return 0;
+}
+```
+
+To compile the code using CUDA compiler:
+```
+nvcc -o gdrcopy_example gdrcopy_example.c -lgdrapi
+```
+
+To run the compiled executable:
+```
+./gdrcopy_example
+```

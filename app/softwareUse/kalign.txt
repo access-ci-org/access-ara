@@ -1,0 +1,23 @@
+Use Case: Multiple sequence alignment with kalign
+
+Code details and examples:
+Kalign is a multiple sequence alignment tool that can be used to align protein or nucleotide sequences.
+
+Input file format (fasta format):
+```
+>seq1
+MTEITAAMVKELRESTGAGMMDCKNALSETNGDFDKAVQLLREKGLGKAAKKADRLAAEG
+LVSVKVSDDFTIAAMRPSYLSYEDLDMTFVENEYKALVAELEKENEERRRLKDPNKPEHK
+IPQFASRKQLSDAILKEAEEKIKEELKAQGKPEKIWDNIIPGKMNSFIADNSQLDSKL
+>seq2
+MVKEITAAMVKELRESTGSGMMDCKNALSETNGDGDKAVQLLREKGLGKAAEKRADRLAAEG
+LVSVKVSDDFTIAAMRPSYLSYEDLDMTFVENEYKALVAELEKENEERRRLKDPNKPEHK
+IPQFASRKQLSDAILKEAEEKIKEELKAQGKPEKIWDNIIPGKMNSFIADNSQLDSKL
+```
+
+Code to run kalign:
+```
+kalign input.fasta > output.aln
+```
+
+In the above code snippet, replace 'input.fasta' with the name of your input file containing sequences in fasta format. The output will be written to 'output.aln'.

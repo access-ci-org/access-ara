@@ -1,0 +1,21 @@
+Use Case: Version control system for tracking changes in source code during software development
+
+Code details and examples:
+- Sample input files: code files to be tracked
+- Format required: text files
+- Command to initialize a repository:
+```
+hg init
+```
+- Command to add files to the repository:
+```
+hg add <filename>
+```
+- Command to commit changes:
+```
+hg commit -m "Commit message"
+```
+- Command to push changes to a remote repository:
+```
+hg push
+```

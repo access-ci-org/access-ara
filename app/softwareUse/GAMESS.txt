@@ -1,0 +1,43 @@
+Use Case: Quantum chemistry calculations
+Code details and examples:
+1. Perform a Hartree-Fock calculation with GAMESS using a sample input file named "input.inp":
+
+```input.inp```:
+```
+ $CONTRL RUNTYP=energy SCFTYP=RHF $END
+ $SYSTEM TIMLIM=1 MEMORY=100000000 $END
+ $BASIS GBASIS=STO NGAUSS=3 NDFUNC=1 NPFUNC=1 $END
+ $DATA
+Water
+C1
+O
+H 1 1.0
+H 1 1.0 2 104.5
+ $END
+```
+
+Run the calculation using the following command:
+```
+rungms input.inp > output.log
+```
+
+2. Perform a geometry optimization calculation with GAMESS using a sample input file named "input.inp":
+
+```input.inp```:
+```
+ $CONTRL SCFTYP=RHF RUNTYP=optimize COORD=unique $END
+ $BASIS GBASIS=STO NGAUSS=3 NDFUNC=1 NPFUNC=1 $END
+ $SYSTEM TIMLIM=1 MEMORY=100000000 $END
+ $DATA
+Water optimization
+C1
+O
+H 1 1.0
+H 1 1.0 2 104.5
+ $END
+```
+
+Run the optimization using the following command:
+```
+rungms input.inp > output.log
+```

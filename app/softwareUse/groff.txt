@@ -1,0 +1,33 @@
+Use Case: Document Formatting with Groff
+
+Code details and examples:
+Groff is a typesetting system that is used for formatting documents. It uses a special language to define the layout and appearance of the document.
+
+Sample input file ("example.ms"):
+```
+.\" Sample Groff document
+.de Title
+.ft B
+.sp
+\\$1
+.sp
+..
+.de Section
+.ft B
+.sp
+\\$1
+.sp
+..
+Title("Sample Document")
+Section("Section 1")
+This is some text in section 1.
+Section("Section 2")
+This is some text in section 2.
+```
+
+To process the input file using Groff, you can use the following command:
+```
+groff -ms -Tpdf example.ms > example.pdf
+```
+
+This command will format the document according to the instructions in the input file "example.ms" using the Groff macro package (-ms) and generate a PDF output file named "example.pdf".

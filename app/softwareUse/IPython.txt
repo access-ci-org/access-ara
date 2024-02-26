@@ -1,0 +1,15 @@
+Use Case: IPython is an interactive shell for Python programming language.
+
+Code details and examples:
+Sample input for IPython is Python code to be executed.
+
+Code snippet:
+```python
+# This is a sample Python code to be executed in IPython
+def greet(name):
+    return "Hello, " + name + "!"
+
+print(greet("Alice"))
+```
+
+To run the code in IPython, you can simply copy and paste the code in the IPython interactive shell and press Enter to execute it.

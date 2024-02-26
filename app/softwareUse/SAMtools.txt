@@ -1,0 +1,25 @@
+Use Case: SAMtools is a suite of programs for interacting with high-throughput sequencing data in SAM/BAM format.
+
+Code details and examples:
+1. View the content of a BAM file: 
+```bash
+samtools view input.bam
+```
+2. Sort a BAM file by coordinates: 
+```bash
+samtools sort input.bam -o sorted.bam
+```
+3. Index a sorted BAM file: 
+```bash
+samtools index sorted.bam
+```
+4. Call variants from a sorted and indexed BAM file:
+```bash
+samtools mpileup -uf reference.fa sorted.bam | bcftools call -cv - > variants.vcf
+```
+
+Input files:
+- BAM file: Binary Alignment/Map format file containing aligned sequencing reads.
+- Reference.fa: Reference genome file in FASTA format.
+
+Make sure to replace `input.bam` and `reference.fa` with the actual file paths in the above commands.

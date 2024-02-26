@@ -1,0 +1,14 @@
+Use Case: Video encoding with x265
+
+Code details and examples:
+x265 is a software library for encoding video streams into the H.265/High Efficiency Video Coding (HEVC) format. Here is an example of how you can use x265 to encode a video file:
+
+1. Install x265 on your system.
+2. Create a sample input video file "input.mp4" that you want to encode.
+3. Use the following command to encode the video using x265:
+
+```bash
+x265 input.mp4 -o output.mp4
+```
+
+This command will encode the "input.mp4" file using x265 and save the output to "output.mp4". You can customize the encoding settings by specifying various parameters and options according to your requirements.

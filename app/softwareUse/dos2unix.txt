@@ -1,0 +1,18 @@
+Use Case: Convert a text file from DOS format to UNIX format.
+Code details and examples: 
+Input file (dos_file.txt)
+```
+Hello world\r\n
+This is a test\r\n
+```
+
+Command to convert DOS to UNIX:
+```
+dos2unix dos_file.txt unix_file.txt
+```
+
+Output file (unix_file.txt)
+```
+Hello world\n
+This is a test\n
+```

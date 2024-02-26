@@ -1,0 +1,6 @@
+Use Case: xprop allows users to retrieve and display window properties in X server.
+
+Code details and examples:
+xprop
+
+This command will prompt the user to click on the window they want to retrieve properties for. Once the window is selected, xprop will output a list of properties for that window.

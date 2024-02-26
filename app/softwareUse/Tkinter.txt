@@ -1,0 +1,18 @@
+Use Case: Tkinter is a popular GUI toolkit for Python.
+
+Code details and examples:
+```python
+import tkinter as tk
+
+# Create a basic Tkinter window
+root = tk.Tk()
+root.title("Sample Tkinter Window")
+label = tk.Label(root, text="Hello, Tkinter!")
+label.pack()
+root.mainloop()
+```
+
+To run the code:
+```
+python your_script.py
+```

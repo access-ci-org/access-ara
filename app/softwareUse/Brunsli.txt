@@ -1,0 +1,15 @@
+Use Case: Image Compression  
+Code details and examples:  
+Brunsli is a lossy image compression tool developed by Google. It aims to achieve better compression ratios than other formats without compromising on visual quality. Brunsli operates on JPEG input images and produces compressed Brunsli files as output.   
+
+Sample Input file: input.jpg (JPEG image)  
+
+Command to compress:  
+```
+brunsli -file_in=input.jpg -file_out=output.brunsli
+```  
+
+To decompress a Brunsli file, use the following command:  
+```
+brunsli -file_in=output.brunsli -file_out=decompressed.jpg
+```  

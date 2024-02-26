@@ -1,0 +1,49 @@
+Use Case: Computational Geometry Algorithms Library (CGAL)
+
+CGAL is a C++ library providing a collection of efficient and reliable geometric algorithms. Below is an example of how CGAL can be used to calculate the intersection points of two line segments.
+
+Code details and examples:
+```cpp
+#include <CGAL/Exact_predicates_exact_constructions_kernel.h>
+#include <CGAL/Intersect_2/Segment_2_Segment_2.h>
+#include <iostream>
+
+typedef CGAL::Exact_predicates_exact_constructions_kernel K;
+typedef K::Point_2 Point;
+typedef K::Segment_2 Segment;
+
+int main()
+{
+    // Define two line segments
+    Segment s1(Point(0,0), Point(1,1));
+    Segment s2(Point(0,1), Point(1,0));
+
+    // Calculate intersection points
+    auto result = CGAL::intersection(s1, s2);
+    
+    if(result)
+    {
+        if(const Point* p = boost::get<Point>(&*result))
+        {
+            std::cout << "Intersection point: " << *p << std::endl;
+        }
+        else
+        {
+            std::cout << "Line segments are parallel." << std::endl;
+        }
+    }
+    else
+    {
+        std::cout << "Line segments do not intersect." << std::endl;
+    }
+
+    return 0;
+}
+```
+
+To compile the code using CGAL, you can use the following command:
+```
+g++ -o intersection intersection.cpp -lCGAL
+```
+
+Run the compiled executable to see the output.

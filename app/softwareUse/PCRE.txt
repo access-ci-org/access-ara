@@ -1,0 +1,58 @@
+Use Case: PCRE (Perl Compatible Regular Expressions)
+
+Code details and examples:
+PCRE is a library that implements Perl-compatible regular expressions. It provides a way for pattern matching with regular expressions similar to those used in Perl programming language.
+
+For example, let's say you have a file named "example.txt" with the following content:
+```
+Hello, World!
+This is a test file.
+```
+
+Here is a sample code snippet in C using PCRE to search for a specific pattern in the file:
+
+```c
+#include <pcre.h>
+#include <stdio.h>
+
+int main() {
+    pcre *re;
+    const char *pattern = "test";
+    const char *error;
+    int erroffset;
+    int ovector[30];
+    int rc;
+
+    re = pcre_compile(pattern, 0, &error, &erroffset, NULL);
+    if (re == NULL) {
+        printf("PCRE compilation failed at offset %d: %s\n", erroffset, error);
+        return 1;
+    }
+
+    FILE *file = fopen("example.txt", "r");
+    char line[256];
+    while (fgets(line, sizeof(line), file)) {
+        rc = pcre_exec(re, NULL, line, strlen(line), 0, 0, ovector, 30);
+        if (rc >= 0) {
+            printf("Pattern found in: %s", line);
+        }
+    }
+
+    pcre_free(re);
+    fclose(file);
+
+    return 0;
+}
+```
+
+To compile the code using PCRE library (assuming the file is named "example.c"):
+```
+gcc example.c -lpcre -o example
+```
+
+To run the compiled executable:
+```
+./example
+```
+
+This will search for the pattern "test" in the file "example.txt" and print the lines where the pattern is found.

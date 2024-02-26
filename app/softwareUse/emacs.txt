@@ -1,0 +1,16 @@
+Use Case: Text editing, code development 
+Code details and examples: 
+```elisp
+; Sample input file (sample.txt)
+Hello, this is a sample file for Emacs.
+
+; Opening a file in Emacs
+emacs sample.txt
+
+; Saving and closing a file in Emacs
+Ctrl + x, Ctrl + s (save) 
+Ctrl + x, Ctrl + c (close)
+
+; Running a script in Emacs
+M-x (Alt + x)
+```

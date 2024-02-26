@@ -1,0 +1,47 @@
+Use Case: Lmod is a tool for dynamically managing the user environment in a modular fashion on HPC systems.
+
+Code details and examples:
+1. Listing available modules:
+```bash
+module avail
+```
+
+2. Loading a specific module:
+```bash
+module load <module_name>
+```
+
+3. Unloading a module:
+```bash
+module unload <module_name>
+```
+
+4. Searching for a module:
+```bash
+module spider <search_keyword>
+```
+
+5. Display loaded modules:
+```bash
+module list
+```
+
+6. Getting help on module command:
+```bash
+module help
+```
+
+7. Saving current environment as a collection to easily reload later:
+```bash
+module save <collection_name>
+```
+
+8. Restoring a saved collection:
+```bash
+module restore <collection_name>
+```
+
+9. Purging all loaded modules:
+```bash
+module purge
+```

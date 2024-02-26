@@ -1,0 +1,30 @@
+Use Case: Cheminformatics and computational chemistry
+Code details and examples: 
+
+RDKit is a collection of cheminformatics and machine learning tools written in C++ and Python. It provides functionalities for working with chemical structures, fingerprints, and molecular properties. Here is an example of using RDKit to generate 2D coordinates for a molecule:
+
+Sample Python code:
+
+```python
+from rdkit import Chem
+from rdkit.Chem import AllChem
+
+# Create a molecule from SMILES
+mol = Chem.MolFromSmiles('CCO')
+mol = Chem.AddHs(mol)  # Add hydrogens
+AllChem.EmbedMolecule(mol)  # Generate 2D coordinates
+
+# Access the coordinates of atoms
+for atom in mol.GetAtoms():
+    print(atom.GetIdx(), mol.GetConformer().GetAtomPosition(atom.GetIdx()))
+
+```
+
+In this code snippet, we first create a molecule from a SMILES string ('CCO'), add hydrogens, and then generate 2D coordinates for the molecule. Finally, we print the atom indices and their corresponding 2D coordinates.
+
+You can run the above code by saving it to a Python file (e.g., `generate_coordinates.py`) and executing it using a Python interpreter.
+
+Command to run the code:
+```
+python generate_coordinates.py
+```

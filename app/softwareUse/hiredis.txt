@@ -1,0 +1,41 @@
+Use Case: Hiredis is a minimalistic C client library for Redis. 
+Code details and examples:
+Sample code to connect to a Redis server, set a key, and get its value using hiredis:
+
+```c
+#include <stdio.h>
+#include <hiredis/hiredis.h>
+
+int main() {
+    redisContext *c = redisConnect("127.0.0.1", 6379);
+    if (c == NULL || c->err) {
+        if (c) {
+            printf("Error: %s\n", c->errstr);
+            redisFree(c);
+        } else {
+            printf("Can't allocate redis context\n");
+        }
+        return 1;
+    }
+
+    redisReply *reply = redisCommand(c, "SET mykey hello");
+    freeReplyObject(reply);
+
+    reply = redisCommand(c, "GET mykey");
+    printf("GET mykey: %s\n", reply->str);
+    freeReplyObject(reply);
+
+    redisFree(c);
+    return 0;
+}
+```
+
+To compile the above code with hiredis library, you can use:
+```bash
+gcc your_file_name.c -lhiredis -o your_output_name
+```
+
+Command to run the compiled code:
+```bash
+./your_output_name
+```

@@ -1,0 +1,73 @@
+Use Case: Data compression and decompression using Libszip
+
+Code details and examples:
+Libszip is a library for reading, writing, and manipulating data in Zip files. Below is an example of compressing and decompressing a file using libszip:
+
+Input file (sample.txt):
+```
+Hello, this is a sample text file for compression.
+```
+
+Compression code snippet:
+```C
+#include <stdio.h>
+#include <libz/libz.h>
+
+int main() {
+    gzFile file = gzopen("sample.gz", "wb");
+    FILE *input = fopen("sample.txt", "rb");
+
+    char buffer[1024];
+    int num_read;
+
+    while ((num_read = fread(buffer, 1, sizeof(buffer), input)) > 0) {
+        gzwrite(file, buffer, num_read);
+    }
+
+    gzclose(file);
+    fclose(input);
+
+    return 0;
+}
+```
+
+Decompression code snippet:
+```C
+#include <stdio.h>
+#include <libz/libz.h>
+
+int main() {
+    gzFile file = gzopen("sample.gz", "rb");
+    FILE *output = fopen("sample_decompressed.txt", "wb");
+
+    char buffer[1024];
+    int num_read;
+
+    while ((num_read = gzread(file, buffer, sizeof(buffer))) > 0) {
+        fwrite(buffer, 1, num_read, output);
+    }
+
+    gzclose(file);
+    fclose(output);
+
+    return 0;
+}
+```
+
+To compile the above code using libszip, you can use a command like:
+```
+gcc compress.c -o compress -lz
+```
+
+```
+gcc decompress.c -o decompress -lz
+```
+
+And to run the compiled executables:
+```
+./compress
+```
+
+```
+./decompress
+```

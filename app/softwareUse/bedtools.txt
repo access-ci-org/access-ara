@@ -1,0 +1,30 @@
+Use Case: Bedtools is a powerful open-source software for working with genomic intervals.
+
+Code details and examples:
+
+Bedtools intersect - finding overlapping intervals between two BED files
+
+Input file 1 (file1.bed):
+```
+chr1 100 200
+chr1 300 400
+```
+
+Input file 2 (file2.bed):
+```
+chr1 150 250
+chr1 350 450
+```
+
+Command:
+```
+bedtools intersect -a file1.bed -b file2.bed
+```
+
+Output:
+```
+chr1 150 200
+chr1 350 400
+```
+
+There are various other subcommands in bedtools like merging intervals, finding coverage, comparing files, etc.

@@ -1,0 +1,17 @@
+Use Case: libxc is a library of exchange-correlation functionals for density-functional theory.
+Code details and examples:
+Input file (input.in):
+```
+5 1
+-1.0 2.0
+```
+
+Code:
+```bash
+xc_example < input.in
+```
+
+Command to run:
+```bash
+xc_example < input.in
+```

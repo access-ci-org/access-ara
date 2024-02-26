@@ -1,0 +1,27 @@
+NVSHMEM (NVIDIA Scalable Hierarchical Memory Management) is a communication library that provides efficient data movement and synchronization mechanisms for NVIDIA GPUs in parallel computing applications.
+
+Use Case: Communication library for NVIDIA GPUs.
+Code details and examples:
+NVSHMEM is typically used in conjunction with CUDA programs to improve data communication and synchronization among GPUs. Here is an example of how you can use NVSHMEM in a CUDA program:
+
+**Sample Input Files:** N/A
+
+**Format Required:** N/A
+
+**Code Snippet:**
+```cpp
+#include <cuda.h>
+#include <nvshmem.h>
+
+int main() {
+    cuInit(0);  // initialize the CUDA runtime API
+    nvshmem_init();  // initialize NVSHMEM
+
+    // NVSHMEM code here
+
+    nvshmem_finalize();  // finalize NVSHMEM
+    return 0;
+}
+```
+
+**Command to Run:** N/A

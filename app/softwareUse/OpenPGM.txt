@@ -1,0 +1,41 @@
+Use Case: Reliable multicast protocol library 
+Code details and examples: 
+OpenPGM is a reliable multicast protocol library. Below is a sample code snippet to use OpenPGM in C++.
+
+```cpp
+#include <pgm/pgm.h>
+
+int main() {
+    pgm_init();
+    
+    // Create PGM socket
+    int socket = pgm_socket(PGM_IP_UDP);
+    
+    // Set socket options
+    pgm_setopt(socket, PGM_RECV_SOCKBUFF, 1024);
+    
+    // Join a PGM group
+    pgm_join(socket, "239.192.16.16");
+    
+    // Receive PGM messages
+    char buffer[1024];
+    pgm_recv(socket, buffer, sizeof(buffer), 0);
+    
+    // Process the received message
+    
+    // Close the socket
+    pgm_close(socket);
+    
+    return 0;
+}
+```
+
+To compile the code:
+```
+$ g++ -o my_program my_program.cpp -lpgm
+```
+
+To run the compiled program:
+```
+$ ./my_program
+```

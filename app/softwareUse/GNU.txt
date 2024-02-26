@@ -1,0 +1,67 @@
+Use Case: GNU Compiler Collection (GCC)
+Code details and examples:
+```bash
+# Compiling a C program with GCC
+gcc -o output_program input_program.c
+
+# Running the compiled program
+./output_program
+```
+
+Use Case: GNU Debugger (GDB)
+Code details and examples:
+```bash
+# Debugging a program with GDB
+gdb executable_name
+
+# Setting breakpoints and stepping through the program
+break main
+run
+next
+```
+
+Use Case: GNU Make
+Code details and examples:
+```make
+# Sample Makefile
+all: program
+
+program: main.o functions.o
+        gcc -o program main.o functions.o
+
+main.o: main.c
+        gcc -c main.c
+
+functions.o: functions.c
+        gcc -c functions.c
+
+clean:
+        rm -rf *.o program
+```
+To build the program using the Makefile:
+```bash
+make
+```
+
+Use Case: GNU Scientific Library (GSL)
+Code details and examples:
+```c
+#include <stdio.h>
+#include <gsl/gsl_sf_bessel.h>
+
+int main()
+{
+    double x = 5.0;
+    double result = gsl_sf_bessel_J0(x);
+    printf("J0(%f) = %f\n", x, result);
+    return 0;
+}
+```
+Compile with:
+```bash
+gcc -o bessel_example bessel_example.c -lgsl -lgslcblas -lm
+```
+Run the compiled program:
+```bash
+./bessel_example
+```

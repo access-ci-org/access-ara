@@ -1,0 +1,78 @@
+Use Case: PETSc (Portable, Extensible Toolkit for Scientific Computation)
+
+Code details and examples:
+
+PETSc is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations. It supports MPI, so it can run efficiently on parallel architectures. Here is an example of using PETSc to solve a linear system of equations:
+
+Sample input file: matrix.in
+
+```
+4
+1.0 0.0 -1.0 0.0
+0.0 1.0 0.0 -1.0
+-1.0 0.0 2.0 -1.0
+0.0 -1.0 -1.0 3.0
+```
+
+Sample input file: rhs.in
+
+```
+1.0
+2.0
+3.0
+4.0
+```
+
+Code snippet in C using PETSc:
+
+```c
+#include <petscksp.h>
+
+int main(int argc, char **args) {
+    PetscInitialize(&argc, &args, NULL, NULL);
+
+    Mat A; Vec x, b;
+    KSP ksp;
+    PetscInt n = 4;
+
+    MatCreate(PETSC_COMM_WORLD, &A);
+    MatSetSizes(A, PETSC_DECIDE, PETSC_DECIDE, n, n);
+    MatSetFromOptions(A);
+    MatSetUp(A);
+
+    VecCreate(PETSC_COMM_WORLD, &x);
+    VecSetSizes(x, PETSC_DECIDE, n);
+    VecSetFromOptions(x);
+
+    VecCreate(PETSC_COMM_WORLD, &b);
+    VecSetSizes(b, PETSC_DECIDE, n);
+    VecSetFromOptions(b);
+
+    // Load matrices and vectors from input files
+    MatLoad(A, PETSC_VIEWER_BINARY, "matrix.in");
+    VecLoad(b, PETSC_VIEWER_BINARY, "rhs.in");
+
+    KSPCreate(PETSC_COMM_WORLD, &ksp);
+    KSPSetOperators(ksp, A, A);
+    KSPSetFromOptions(ksp);
+    KSPSolve(ksp, b, x);
+
+    // Output the solution vector
+    VecView(x, PETSC_VIEWER_STDOUT_WORLD);
+
+    KSPDestroy(&ksp);
+    VecDestroy(&x);
+    VecDestroy(&b);
+    MatDestroy(&A);
+
+    PetscFinalize();
+    return 0;
+}
+```
+
+Command to compile and run the code:
+
+```bash
+mpicc -o petsc_example petsc_example.c -lpetsc -lm
+mpirun -np 4 ./petsc_example
+```

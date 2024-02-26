@@ -1,0 +1,39 @@
+Use Case: LLVM is a compiler infrastructure project that is widely used in high-performance computing for optimizing code generation. 
+
+Code details and examples:
+LLVM supports various programming languages like C, C++, and Swift. Here is an example of using LLVM to generate an optimized assembly code from a simple C program.
+
+```c
+// sample.c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, LLVM!\n");
+    return 0;
+}
+```
+
+To compile the C program using LLVM's clang compiler and generate LLVM IR code:
+```bash
+clang -S -emit-llvm sample.c -o sample.ll
+```
+
+To generate optimized assembly code using LLVM:
+```bash
+llc sample.ll -o sample.s
+```
+
+To compile the optimized assembly code:
+```bash
+gcc sample.s -o sample
+```
+
+To run the compiled executable:
+```bash
+./sample
+```
+
+This will output:
+```
+Hello, LLVM!
+```

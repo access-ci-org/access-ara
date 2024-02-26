@@ -1,0 +1,15 @@
+Use Case: Protein structure prediction
+
+Code details and examples: 
+Input file format: Protein sequence in FASTA format
+```
+>protein_sequence
+MADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELRDICLARFADKILKRLG
+DYKDDDDMKKKKDKVVKDSGVRFKVIGNGFGLFEVGEAEFKKEHEQLLSAVDYVNTMKTPEDVQAH
+DYKKEMPSSGAEAKPPQ
+```
+
+Command to run AlphaFold:
+```
+python3 run_alphafold.py --fasta protein.fasta --output_dir output
+```

@@ -1,0 +1,24 @@
+Use Case: xarray is a Python package that brings the labeled data power of pandas to the physical sciences, by providing N-dimensional variants of the core pandas data structures.
+
+Code details and examples:
+```
+# Sample Input File - temperature_data.nc
+# A NetCDF file containing temperature data
+# Dimensions: time (365), latitude (180), longitude (360)
+# Variables: temperature (time, latitude, longitude)
+
+# Load the temperature data from the NetCDF file
+import xarray as xr
+
+data = xr.open_dataset('temperature_data.nc')
+
+# Calculate the mean temperature along the time dimension
+mean_temperature = data['temperature'].mean(dim='time')
+
+print(mean_temperature)
+```
+
+To run the code:
+```bash
+python script.py
+```

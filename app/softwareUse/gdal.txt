@@ -1,0 +1,18 @@
+Use Case: Geospatial data conversion and manipulation
+
+Code details and examples:
+GDAL (Geospatial Data Abstraction Library) is a popular open-source library for reading and writing raster and vector geospatial data formats.
+
+Example of converting a GeoTIFF file to a PNG file using GDAL:
+
+```bash
+gdal_translate input.tif output.png
+```
+
+Example of clipping a raster file using a bounding box:
+
+```bash
+gdalwarp -te xmin ymin xmax ymax input.tif clipped_output.tif
+```
+
+GDAL is a powerful tool for geospatial analysis and manipulation with a wide range of functionalities.

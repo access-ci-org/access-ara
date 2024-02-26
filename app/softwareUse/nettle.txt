@@ -1,0 +1,36 @@
+Use Case: Cryptography library for modern C programs.
+
+Code details and examples:
+Sample input file (input.txt):
+```
+hello world
+```
+
+Code:
+```c
+#include <stdio.h>
+#include <nettle/sha2.h>
+
+int main() {
+    struct sha256_ctx ctx;
+    uint8_t digest[SHA256_DIGEST_SIZE];
+    char input[] = "hello world";
+
+    sha256_init(&ctx);
+    sha256_update(&ctx, strlen(input), input);
+    sha256_digest(&ctx, SHA256_DIGEST_SIZE, digest);
+
+    for (int i = 0; i < SHA256_DIGEST_SIZE; i++) {
+        printf("%02x", digest[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+Compile and execute:
+```
+gcc example.c -lnettle -o example
+./example
+```

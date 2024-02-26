@@ -1,0 +1,25 @@
+Use Case: PYTHIA is a powerful event generator widely used in high-energy physics for the simulation of particle collisions.
+
+Code details and examples:
+Input file format for a basic PYTHIA simulation (e.g., sim.hep):
+```
+! sim.hep input file for PYTHIA
+! Parameters for the generation of hard QCD processes
+Main:numberOfEvents = 100
+Main:timesAllowErrors = 3
+
+! Set the center-of-mass energy
+Beams:eCM = 13000.
+
+! Process selection
+HardQCD:all = on
+
+! Output file
+Output:file = sim.lhe
+Output:file = sim.hepmc
+```
+
+Command to run PYTHIA with the input file:
+```
+pythia8 -c sim.hep
+```

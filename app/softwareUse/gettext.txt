@@ -1,0 +1,38 @@
+Use Case: Localization of software strings
+Code details and examples:
+```python
+# Sample input file 'example.po' with translated strings
+msgid "Hello"
+msgstr "Bonjour"
+
+msgid "Welcome"
+msgstr "Bienvenue"
+
+# Python code to extract translated strings from .po file
+import polib
+
+po = polib.pofile('example.po')
+for entry in po:
+    print(f'{entry.msgid}: {entry.msgstr}')
+```
+
+Use Case: Generating .mo file from .po file
+Code details and examples:
+```bash
+# Command to generate .mo file from .po file using msgfmt tool
+msgfmt example.po -o example.mo
+```
+
+Use Case: Localization of software using gettext in Python
+Code details and examples:
+```python
+import gettext
+
+# Load translations from 'example.mo' file for French locale
+fr = gettext.translation('example', localedir='locale', languages=['fr'])
+fr.install()
+
+# Sample code using translated strings
+print(_('Hello'))  # Output: Bonjour
+print(_('Welcome'))  # Output: Bienvenue
+```

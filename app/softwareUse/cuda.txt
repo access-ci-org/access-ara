@@ -1,0 +1,46 @@
+Use Case: CUDA (NVIDIA's parallel computing platform and programming model)
+
+Code details and examples:
+```cuda
+// Sample CUDA code to add two vectors
+#include <stdio.h>
+
+__global__ void add(int *a, int *b, int *c) {
+    int tid = blockIdx.x;
+    if (tid < N) {
+        c[tid] = a[tid] + b[tid];
+    }
+}
+
+int main() {
+    int N = 10;
+    int a[N], b[N], c[N]; // host copies of a, b, c
+    int *d_a, *d_b, *d_c; // device copies of a, b, c
+
+    // Allocate space for device copies of a, b, c
+    cudaMalloc(&d_a, N * sizeof(int));
+    cudaMalloc(&d_b, N * sizeof(int));
+    cudaMalloc(&d_c, N * sizeof(int));
+
+    // Copy inputs to device
+    cudaMemcpy(d_a, a, N * sizeof(int), cudaMemcpyHostToDevice);
+    cudaMemcpy(d_b, b, N * sizeof(int), cudaMemcpyHostToDevice);
+
+    // Launch add() kernel on GPU
+    add<<<N, 1>>>(d_a, d_b, d_c);
+
+    // Copy result back to host
+    cudaMemcpy(c, d_c, N * sizeof(int), cudaMemcpyDeviceToHost);
+
+    // Cleanup
+    cudaFree(d_a); cudaFree(d_b); cudaFree(d_c);
+
+    return 0;
+}
+```
+
+To compile and run a CUDA program:
+```bash
+nvcc cuda_program.cu -o cuda_program
+./cuda_program
+```

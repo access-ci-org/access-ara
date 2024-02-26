@@ -1,0 +1,35 @@
+Use Case: Einops is a Python library for tensor operations and reshaping.
+
+Code details and examples:
+1. Reshape a 2D array into a 3D array:
+```python
+import einops
+
+input_array = [[1, 2, 3],
+               [4, 5, 6]]
+output_array = einops.rearrange(input_array, 'h w -> h w 1')
+print(output_array)
+```
+
+2. Permute dimensions of a 3D array:
+```python
+import einops
+
+input_array = [[[1], [2]],
+               [[3], [4]],
+               [[5], [6]]]
+output_array = einops.rearrange(input_array, 'h w c -> w c h')
+print(output_array)
+```
+
+3. Merge two dimensions in a tensor:
+```python
+import einops
+import torch
+
+input_tensor = torch.randn(2, 3, 4)
+output_tensor = einops.rearrange(input_tensor, 'b c h w -> b (c h w)')
+print(output_tensor)
+```
+
+For more information and detailed examples, you can refer to the official documentation: https://einops.rocks/

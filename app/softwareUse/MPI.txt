@@ -1,0 +1,47 @@
+Use Case: MPI (Message Passing Interface) 
+
+Code details and examples: 
+
+MPI (Message Passing Interface) is a standard for parallel and distributed computing using a message-passing model. It is commonly used in HPC (High-Performance Computing) applications to write parallel programs.
+
+Here is an example of a simple MPI program in C that calculates the sum of elements in an array:
+
+```c
+#include <stdio.h>
+#include <mpi.h>
+
+int main(int argc, char *argv[]) {
+    int rank, size;
+    int data[5] = {1, 2, 3, 4, 5};
+    int sum = 0;
+
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    MPI_Scatter(data, 1, MPI_INT, &sum, 1, MPI_INT, 0, MPI_COMM_WORLD);
+
+    printf("Process %d received data: %d\n", rank, sum);
+
+    MPI_Reduce(&sum, &sum, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
+
+    if (rank == 0) {
+        printf("Sum of elements: %d\n", sum);
+    }
+
+    MPI_Finalize();
+
+    return 0;
+}
+```
+
+To compile and run the MPI program using mpicc (MPI C compiler) and mpirun:
+
+```bash
+mpicc mpi_example.c -o mpi_example
+mpirun -np 4 ./mpi_example
+```
+
+This example scatters the elements of the array `data` to different processes, calculates the sum of the elements in parallel, and then reduces the sum to process 0 for final output.
+
+You can customize the input array `data` to test with different values and sizes.

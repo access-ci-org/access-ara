@@ -1,0 +1,24 @@
+OpenJDK is an open-source implementation of the Java Platform, Standard Edition. Below are some examples and details for using OpenJDK:
+
+Use Case: Compile and run a Java program using OpenJDK
+Code details and examples:
+- Sample Java program (HelloWorld.java):
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+- Compilation command:
+```bash
+javac HelloWorld.java
+```
+
+- Run command:
+```bash
+java HelloWorld
+```
+
+- Note: Make sure you have OpenJDK installed on your machine before running the commands.

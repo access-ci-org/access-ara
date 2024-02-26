@@ -1,0 +1,25 @@
+I am assuming you are referring to the GNU Screen utility, which is a terminal multiplexer that allows multiple sessions to be created, managed, and easily switched between.
+
+Use Case: Create a new screen session
+Code details and examples:
+Code:
+```bash
+screen
+```
+This command will start a new screen session.
+
+Use Case: List all screen sessions
+Code details and examples:
+Code:
+```bash
+screen -ls
+```
+This command will list all screen sessions currently running.
+
+Use Case: Attach to a specific screen session
+Code details and examples:
+Code:
+```bash
+screen -r <session_id>
+```
+Replace `<session_id>` with the ID of the session you want to attach to.

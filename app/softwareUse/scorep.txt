@@ -1,0 +1,30 @@
+Use Case: Profiling parallel applications using Score-P
+
+Code details and examples:
+Score-P is a performance measurement infrastructure for parallel programs. It provides support for instrumentation, measurement, and analysis of HPC applications. Below is an example of how to use Score-P to profile a parallel application.
+
+Sample input file (hello_world.c):
+```c
+#include <stdio.h>
+#include "omp.h"
+
+int main() {
+    #pragma omp parallel
+    {
+        printf("Hello World from thread %d\n", omp_get_thread_num());
+    }
+    return 0;
+}
+```
+
+Compilation:
+```
+scorep --mpp=mpi --compiler mpicc mpicc -fopenmp -o hello_world hello_world.c
+```
+
+Execution:
+```
+scorep --mpp=mpi mpirun -np 4 ./hello_world
+```
+
+This will generate measurement data that can be analyzed using tools provided by Score-P.

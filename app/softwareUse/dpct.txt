@@ -1,0 +1,35 @@
+It seems like "dpct" might refer to the Intel DPC++ Compatibility Tool, which is used for translating CUDA code to DPC++ code. 
+
+Use Case: Conversion of CUDA code to DPC++ code
+Code Details and Examples:
+1. Sample CUDA code (`kernel.cu`):
+```cuda
+#include <stdio.h>
+
+__global__ void add(int a, int b, int *c) {
+    *c = a + b;
+}
+
+int main() {
+    int c;
+    int *d_c;
+    cudaMalloc(&d_c, sizeof(int));
+
+    add<<<1,1>>>(2, 7, d_c);
+
+    cudaMemcpy(&c, d_c, sizeof(int), cudaMemcpyDeviceToHost);
+    
+    printf("2 + 7 = %d\n", c);
+
+    cudaFree(d_c);
+
+    return 0;
+}
+```
+
+2. Convert the CUDA code to DPC++ using `dpct`:
+```bash
+dpct kernel.cu
+```
+
+This command will use the Intel DPC++ Compatibility Tool to convert the CUDA code in `kernel.cu` to DPC++ code. Make sure to have all necessary dependencies and setup for using Intel DPC++.

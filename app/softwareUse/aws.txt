@@ -1,0 +1,15 @@
+Use Case: AWS provides a wide range of services including cloud computing, storage, and machine learning tools.
+
+Code details and examples:
+- AWS CLI (Command Line Interface)
+   - Sample Input: Not applicable
+   - Input Format: Not applicable
+   - Code: `aws <command>`
+- Amazon S3 (Simple Storage Service)
+   - Sample Input: Not applicable
+   - Input Format: Not applicable
+   - Code: `aws s3 <subcommand>`
+- Amazon EC2 (Elastic Compute Cloud)
+   - Sample Input: Not applicable
+   - Input Format: Not applicable
+   - Code: `aws ec2 <subcommand>`

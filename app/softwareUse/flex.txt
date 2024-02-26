@@ -1,0 +1,37 @@
+Use Case: Flex (Fast lexical analyzer generator)
+
+Code details and examples:
+Flex is a tool for generating scanners, programs which recognized lexical patterns in text. It is often used in combination with a parser generator such as Bison.
+
+Sample input file (lex file - example.l):
+```
+%{
+#include <stdio.h>
+%}
+
+%%
+[a-z]    { printf("Lowercase letter found\n"); }
+[0-9]    { printf("Digit found\n"); }
+.        { printf("Special character found\n"); }
+%%
+
+int main() {
+    yylex();
+    return 0;
+}
+```
+
+To generate C code from the lex file, run the following command:
+```
+flex example.l
+```
+
+This will generate a file named `lex.yy.c`. You can then compile and run the generated C code with a C compiler like gcc:
+```
+gcc lex.yy.c -o lexer
+./lexer
+```
+
+You can provide input text to the program and see how it recognizes lexical patterns based on the rules defined in the input file.
+
+Note: This is just a simple example to demonstrate the usage of Flex. More complex patterns and rules can be defined in the input file to create sophisticated lexical analyzers.

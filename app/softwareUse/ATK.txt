@@ -1,0 +1,29 @@
+Use Case: Quantum ATK is a software package that can perform quantum mechanical simulations on materials at the atomic level. It is used in various fields such as materials science, nanotechnology, and catalysis.
+
+Code details and examples:
+```python
+# Sample input file for running ATK calculations
+# Input file format: .py
+# Specify the material structure, simulation parameters, and calculation methods
+
+# Example input file:
+# Define material structure (e.g. Silicon crystal)
+from NanoLanguage import *
+bulk_silicon = CrystalStructure(Diamond)(5.43, Fease=[2, 2, 2])
+
+# Setup simulation parameters
+calculator = ATK()
+calculator_density = EmpiricalPotential("Silicon")
+bulk_silicon.setCalculator(calculator)
+
+# Perform DFT calculation
+nlprint(bulk_silicon)
+bulk_silicon.update()
+print(bulk_silicon.PotentialEnergy)
+```
+
+To run the above input file using Quantum ATK, you can execute the python script using the ATK python interpreter. 
+```bash
+atkpython example_input_file.py
+```
+This will run the Quantum ATK calculations based on the specified input file.

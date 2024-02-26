@@ -1,0 +1,21 @@
+I assume you are referring to the Generalized Linear Models (GLM) package in the R statistical software. 
+
+Use Case: Fitting a Poisson regression model using GLM in R
+Code details and examples:
+```R
+# Sample data
+data <- data.frame(
+  counts = c(18, 21, 16, 28, 37),
+  treatment = factor(c("A", "B", "A", "B", "A"))
+)
+
+# Fitting a Poisson regression model
+model <- glm(counts ~ treatment, data = data, family = "poisson")
+
+# Getting summary of the model
+summary(model)
+```
+
+In the above code snippet, we are fitting a Poisson regression model using the GLM function in R to evaluate the impact of treatment on counts data. The `counts` variable represents the response variable, and `treatment` is the predictor variable.
+
+To run the above code snippet, you need to have R installed on your system. You can use RStudio or any other R environment to execute the code.

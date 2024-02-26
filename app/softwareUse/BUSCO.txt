@@ -1,0 +1,27 @@
+Use Case: BUSCO is a software package used for assessing genome assembly and annotation completeness based on evolutionarily-informed expectations of gene content.
+
+Code details and examples:
+
+Input file format:
+- Genome assembly file in FASTA format
+
+Command to run BUSCO:
+```
+busco -i genome.fasta -l lineage_dataset -o output_name -m genome
+```
+
+In this command:
+- -i: input file (genome assembly in FASTA format)
+- -l: lineage dataset to be used for benchmarking (e.g., eukaryota_odb10 for eukaryotic genomes)
+- -o: output name prefix
+- -m: mode (genome for genome assembly assessment)
+
+Output:
+BUSCO will generate an output folder containing various files with statistics on the completeness of the genome assembly and annotation.
+
+Note: The specific lineage dataset to be used (-l option) may differ based on the type of genome being assessed (e.g., eukaryotic, bacterial, archaeal).
+
+Example:
+```
+busco -i genome.fasta -l eukaryota_odb10 -o genome_busco -m genome
+```

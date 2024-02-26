@@ -1,0 +1,22 @@
+I'm assuming you are referring to the Tkinter Python GUI toolkit. 
+
+Use Case: Creating a simple GUI window using Tkinter
+Code details and examples:
+```python
+import tkinter as tk
+
+# Create a main window
+root = tk.Tk()
+
+# Add a label to the window
+label = tk.Label(root, text="Hello, World!")
+label.pack()
+
+# Run the application
+root.mainloop()
+```
+
+To run the script, save it in a file (e.g., `simple_gui.py`) and run it using a Python interpreter:
+```
+python simple_gui.py
+```

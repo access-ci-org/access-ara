@@ -1,0 +1,6 @@
+Use Case: Remote development using VS Code Server  
+Code details and examples:  
+- Install the VS Code Server on a remote machine and access it through a web browser to develop code remotely.  
+- Connect to the remote VS Code Server by entering the server URL in the web browser.  
+- Use the VS Code interface to edit code, debug, and collaborate with others in real-time.  
+- Command to run: `N/A - Access the VS Code Server through a web browser`

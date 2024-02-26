@@ -1,0 +1,75 @@
+Use Case: Cairo is a 2D graphics library with support for multiple output devices. It provides a unified API for various backends like X Window System, PDF, PostScript, and image buffers.
+
+Code details and examples:
+1. Drawing a simple shape (e.g., a circle) using Cairo in Python:
+```python
+import cairo
+
+surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, 100, 100)
+context = cairo.Context(surface)
+
+context.arc(50, 50, 40, 0, 2 * 3.14159)
+context.set_source_rgb(1, 0, 0)
+context.fill()
+
+surface.write_to_png('circle.png')
+```
+
+2. Generating a PDF file with text using Cairo in C:
+```c
+#include <cairo.h>
+
+int main() {
+    cairo_surface_t *surface;
+    cairo_t *cr;
+
+    surface = cairo_pdf_surface_create("output.pdf", 595, 842);
+    cr = cairo_create(surface);
+
+    cairo_set_font_size(cr, 40);
+    cairo_move_to(cr, 50, 100);
+    cairo_set_source_rgb(cr, 0, 0, 0);
+    cairo_show_text (cr, "Hello, Cairo!");
+
+    cairo_surface_show_page(surface);
+
+    cairo_destroy(cr);
+    cairo_surface_destroy(surface);
+
+    return 0;
+}
+```
+
+3. Rendering text on an image surface with Cairo in C++:
+```cpp
+#include <cairo.h>
+#include <cairo/cairo-pdf.h>
+
+int main() {
+    int width = 400, height = 200;
+
+    cairo_surface_t *surface = cairo_image_surface_create(CAIRO_FORMAT_ARGB32, width, height);
+    cairo_t *cr = cairo_create(surface);
+
+    cairo_set_source_rgb(cr, 1.0, 1.0, 1.0);
+    cairo_paint(cr);
+
+    cairo_set_font_size(cr, 32);
+    cairo_set_source_rgb(cr, 0, 0, 0);
+    cairo_move_to(cr, 10, 50);
+    cairo_show_text(cr, "Cairo Image");
+
+    cairo_surface_write_to_png(surface, "output.png");
+
+    cairo_destroy(cr);
+    cairo_surface_destroy(surface);
+
+    return 0;
+}
+```
+
+Command to compile and run the C file:
+```bash
+gcc -o outputfile inputfile.c `pkg-config --cflags --libs cairo`
+./outputfile
+```

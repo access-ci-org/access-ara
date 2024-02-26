@@ -1,0 +1,13 @@
+Use Case: Data compression with lz4
+Code details and examples: 
+```
+# Example input file to compress using lz4
+# Create a sample file
+echo "Hello, this is a sample file for lz4 compression" > sample.txt
+
+# Compress the file using lz4
+lz4 sample.txt
+
+# Decompress the file using lz4
+lz4 -d sample.txt.lz4
+```

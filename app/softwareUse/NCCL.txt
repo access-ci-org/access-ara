@@ -1,0 +1,20 @@
+NCCL (NVIDIA Collective Communications Library) is a software library developed by NVIDIA for high-performance communication in parallel computing environments. It is designed to leverage multiple GPUs within a single node for efficient data communication.
+
+Use Case: Multi-GPU AllReduce
+Code details and examples:
+```python
+import nccl
+
+# Initialize NCCL communicator
+comm = nccl.NcclCommunicator()
+
+# Define input data
+input_data = [1, 2, 3, 4]
+
+# Perform allreduce operation across multiple GPUs
+output_data = comm.allreduce(input_data)
+
+print(output_data)
+```
+
+Please note that the above code snippet is a simplistic example and may not reflect the actual implementation details. The command to run the code will depend on how you have set up your Python environment with NCCL support.

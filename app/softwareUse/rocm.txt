@@ -1,0 +1,30 @@
+Use Case: High Performance Computing Software
+Code details and examples: 
+ROCm (Radeon Open Compute) is an open-source software platform for AMD GPUs. It provides a foundation to support HPC and AI workloads.  
+
+To run a sample program using ROCm, you can use the following steps:
+
+1. Write a sample OpenCL program (e.g., vector_add.cpp) using a code editor:
+
+```cpp
+#include <CL/cl.hpp>
+#include <iostream>
+
+int main() {
+    // Initializing OpenCL
+    // Add your OpenCL code here
+    return 0;
+}
+```
+
+2. Compile the program using the ROCm compiler (e.g., `hipcc` for ROCm):
+
+```bash
+hipcc vector_add.cpp -o vector_add
+```
+
+3. Run the compiled program:
+
+```bash
+./vector_add
+```

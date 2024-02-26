@@ -1,0 +1,25 @@
+Use Case: Quantum calculations in materials science
+
+Code details and examples:
+VASP (Vienna Ab-initio Simulation Package) is a software package for performing ab-initio quantum-mechanical molecular dynamics (MD) simulations. It is widely used in materials science research.
+
+Input files for VASP typically include:
+- INCAR: Contains parameters for the calculation
+- POSCAR: Specifies the atomic structure
+- POTCAR: Defines the pseudopotentials
+- KPOINTS: Sets the k-point mesh for the calculation
+
+Below is an example of a VASP input file (INCAR):
+```
+SYSTEM = Example
+ENCUT = 400
+ISMEAR = 0
+EDIFF = 1E-6
+```
+
+To run VASP, you would typically execute the following command:
+```
+vasp_std
+```
+
+Please note that VASP is a licensed software and may not be freely available.

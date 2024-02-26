@@ -1,0 +1,52 @@
+Use Case: Linear algebra operations on distributed-memory parallel computers with ScaLAPACK.
+
+Code details and examples: 
+ScaLAPACK is a parallel version of LAPACK for distributed-memory computers utilizing MPI for communication. It provides routines for solving systems of simultaneous linear equations, least squares solutions of linear systems, eigenvalue problems, and singular value decomposition.
+
+Example of sample input file (.dat):
+```
+5
+1.0 2.0 0.0 0.0 0.0
+2.0 1.0 2.0 0.0 0.0
+0.0 2.0 1.0 2.0 0.0
+0.0 0.0 2.0 1.0 2.0
+0.0 0.0 0.0 2.0 1.0
+```
+
+Example code snippet for solving a system of linear equations using ScaLAPACK:
+```fortran
+program scalapack_example
+  implicit none
+  include 'pblas.h'
+  include 'scalapack.h'
+  
+  integer :: n, nrhs, nb, info
+  integer :: myrank, nprocs
+  
+  ! Initialize variables
+  n = 5
+  nrhs = 1
+  nb = 2
+  
+  call blacs_pinfo(myrank, nprocs)
+  call blacs_get(0, 0, icontxt)
+  
+  ! Allocate memory for the matrices
+  allocate(a(n, n), b(n, nrhs))
+  
+  ! Initialize the matrices a and b
+  
+  ! Call ScaLAPACK routine for solving linear equations
+  call pdgesv(n, nrhs, a, 1, 1, desc_a, ipiv, b, 1, 1, desc_b, info)
+  
+  ! Print the solution matrix b
+  
+  deallocate(a, b)
+end program scalapack_example
+```
+
+Command to compile and run the code (assuming ScaLAPACK is properly linked):
+```bash
+mpif90 -o scalapack_example scalapack_example.f -lscalapack -lblacs -lblacs-f77 -lm
+mpirun -np 4 ./scalapack_example
+```

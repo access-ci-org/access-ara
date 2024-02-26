@@ -1,0 +1,28 @@
+Use Case: glib
+
+Code details and examples:
+GLib is a general-purpose utility library in C developed by GNOME and used in many software projects. It provides data structures, threads, and other high-level programming features. Below is an example of using GLib in a C program.
+
+```c
+#include <glib.h>
+
+int main() {
+    GList *list = NULL;
+    list = g_list_append(list, "Hello");
+    list = g_list_append(list, "World");
+
+    for (GList *iter = list; iter != NULL; iter = g_list_next(iter)) {
+        printf("%s\n", (char*)iter->data);
+    }
+
+    g_list_free(list);
+
+    return 0;
+}
+```
+
+To compile the code, you can use the following command:
+```
+gcc `pkg-config --cflags --libs glib-2.0` example.c -o example
+./example
+```

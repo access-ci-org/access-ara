@@ -1,0 +1,19 @@
+I'm assuming you are referring to the `pax` command in Unix-like operating systems, which is used for creating and extracting cpio archives.
+
+Use Case: Create a cpio archive with `pax`
+Code details and examples: 
+To create a cpio archive using `pax`, you can use the following command:
+```bash
+find /path/to/directory -depth | pax -w > archive.cpio
+```
+This command will create a cpio archive named `archive.cpio` containing all the files and directories in `/path/to/directory`.
+
+Use Case: Extract a cpio archive with `pax`
+Code details and examples: 
+To extract a cpio archive using `pax`, you can use the following command:
+```bash
+pax -r < archive.cpio
+```
+This command will extract the contents of the `archive.cpio` cpio archive in the current directory.
+
+Please note that the usage of `pax` may vary slightly depending on the specific Unix-like operating system.

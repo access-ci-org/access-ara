@@ -1,0 +1,38 @@
+Use Case: GUI development with GTK4
+Code details and examples:
+GTK4 is a toolkit for creating graphical user interfaces. Below is a simple example of creating a window using GTK4 in C:
+
+```c
+#include <gtk/gtk.h>
+
+// Callback function to close the window
+void on_close_app() {
+    gtk_main_quit();
+}
+
+int main(int argc, char *argv[]) {
+    gtk_init(&argc, &argv);
+
+    // Create a new window
+    GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    gtk_window_set_title(GTK_WINDOW(window), "Hello GTK4");
+    g_signal_connect(window, "destroy", G_CALLBACK(on_close_app), NULL);
+
+    // Display the window
+    gtk_widget_show_all(window);
+
+    gtk_main();
+
+    return 0;
+}
+```
+
+To compile the above code, you can use the following command:
+```bash
+gcc `pkg-config --cflags --libs gtk4` main.c -o hello_gtk4
+```
+
+To run the compiled program:
+```bash
+./hello_gtk4
+```

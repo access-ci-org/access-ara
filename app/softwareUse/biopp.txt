@@ -1,0 +1,43 @@
+Use Case: Bioinformatics package  
+Code details and examples:  
+Bio++ is a bioinformatics library that provides tools for sequence analysis, phylogenetics, molecular evolution, and population genetics. Below is an example of running a simple sequence analysis using Bio++.
+
+Sample input file (input.txt):
+```
+>seq1
+ATGCATGCATGC
+>seq2
+TACGTACGTACG
+```
+
+Code:
+```cpp
+#include <Bpp/Seq/Alphabet/Alphabet.h>
+#include <Bpp/Seq/Sequence.h>
+#include <Bpp/Seq/Io/Fasta.h>
+#include <Bpp/Phyl/Model/Nucleotide/SubstitutionModels/K80.h>
+#include <Bpp/Phyl/Tree/TreeTemplate.h>
+#include <Bpp/Phyl/Io/Newick.h>
+
+using namespace bpp;
+
+int main() {
+    // Read sequences from file
+    Fasta fastaReader;
+    SiteContainer seqs = fastaReader.readSequences("input.txt");
+
+    // Define a substitution model (K80 in this case)
+    K80 nucleotideModel(&seqs);
+
+    // Perform a simple analysis (for demonstration purposes)
+    TreeTemplate<Node> tree("((seq1,seq2)InternalNode1,seq3)Root;");
+
+    return 0;
+}
+```
+
+To compile and run the code (assuming Bio++ is installed and configured correctly):
+```
+g++ my_analysis.cpp -o my_analysis -lbpp-phy -lbpp-seq
+./my_analysis
+```

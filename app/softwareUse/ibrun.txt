@@ -1,0 +1,48 @@
+Use Case: Job submission on HPC cluster using ibrun
+
+Code details and examples:
+
+`ibrun` is a job launcher typically used on HPC clusters to distribute parallel jobs across multiple nodes. The specific usage of `ibrun` can vary depending on the HPC system you are using, as it is part of the Intel MPI library.
+
+Here is an example of running a simple MPI program using `ibrun`:
+
+Sample MPI program (hello_mpi.c):
+```c
+#include <stdio.h>
+#include <mpi.h>
+
+int main(int argc, char** argv) {
+    int rank, size;
+    
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+    
+    printf("Hello from rank %d out of %d processes\n", rank, size);
+    
+    MPI_Finalize();
+    
+    return 0;
+}
+```
+
+Compile the MPI program:
+```bash
+mpicc hello_mpi.c -o hello_mpi
+```
+
+Sample input file (input.txt):
+```
+1 2 3
+4 5 6
+7 8 9
+```
+
+Submit the MPI job using `ibrun`:
+```bash
+ibrun ./hello_mpi
+```
+
+This will execute the MPI program across multiple nodes specified by the job scheduler on the HPC system.
+
+Please note that the exact command and options for `ibrun` may vary depending on the specific MPI library and HPC system being used.

@@ -1,0 +1,37 @@
+Use Case: Working with sequence alignment files using htslib. 
+
+Code details and examples: 
+Htslib is a software library for working with high-throughput sequencing data. One common use case for htslib is to manipulate and analyze sequence alignment files (SAM/BAM/CRAM format). Here is an example of using htslib to extract information from a BAM file.
+
+Code:
+```
+#include <htslib/sam.h>
+
+int main() {
+    htsFile *bam_file = hts_open("example.bam", "r");
+    bam_hdr_t *header = sam_hdr_read(bam_file);
+    bam1_t *aln = bam_init1();
+
+    while (sam_read1(bam_file, header, aln) >= 0) {
+        // Access read information, e.g. position, sequence, quality, etc.
+        // Example: Print read name
+        printf("Read name: %s\n", bam_get_qname(aln));
+    }
+
+    bam_destroy1(aln);
+    bam_hdr_destroy(header);
+    hts_close(bam_file);
+
+    return 0;
+}
+```
+
+To compile the above code:
+```
+gcc -o extract_reads extract_reads.c -lhts
+```
+
+To run the compiled program:
+```
+./extract_reads
+```

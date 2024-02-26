@@ -1,0 +1,32 @@
+Use Case: Analyzing a large dataset using cuDF in RAPIDS
+
+Code details and examples:
+
+**Sample Input File (input.csv):**
+```
+id,age,gender,salary
+1,25,Male,50000
+2,30,Female,60000
+3,35,Male,70000
+4,40,Female,80000
+5,45,Male,90000
+```
+
+**Code (Python using cuDF):**
+```python
+import cudf
+
+# Load the data
+df = cudf.read_csv('input.csv')
+
+# Filter data
+filtered_df = df.query('age > 30')
+
+# Print the filtered dataframe
+print(filtered_df)
+```
+
+**Command to Run:**
+```
+python script.py
+```

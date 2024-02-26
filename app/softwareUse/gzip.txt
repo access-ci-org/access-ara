@@ -1,0 +1,21 @@
+Use Case: File compression with gzip
+
+Code details and examples:
+```
+# Example input file
+# Create a sample file
+echo "Hello, this is a sample text file" > sample.txt
+
+# Compress the file using gzip
+gzip sample.txt
+
+# This will create a compressed file named sample.txt.gz
+```
+
+To decompress the file:
+```
+# Decompress the file using gzip
+gzip -d sample.txt.gz
+
+# This will decompress the file back to its original state
+```

@@ -1,0 +1,20 @@
+Use Case: Library and toolkit used to configure compiler and linker flags for development tools.
+
+Code details and examples:
+- pkgconf is used to query information about packages needed for development. 
+
+Command to display information about a specific package:
+```
+pkgconf --cflags package_name
+```
+
+Command to display linker flags for a specific package:
+```
+pkgconf --libs package_name
+```
+
+For example, to get the CFLAGS and LIBS for the `openssl` package:
+```
+pkgconf --cflags openssl
+pkgconf --libs openssl
+```

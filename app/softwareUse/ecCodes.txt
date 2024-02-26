@@ -1,0 +1,23 @@
+Use Case: ecCodes is a package for processing and decoding meteorological data in GRIB format.
+
+Code details and examples:
+Sample Input File (data.grib):
+```
+# Example GRIB data file
+```
+
+Input: Specify the GRIB file to decode
+```python
+import eccodes
+
+filename = 'data.grib'
+with open(filename, 'rb') as file:
+    message = eccodes.codes_grib_new_from_file(file)
+    while message is not None:
+        # Process the GRIB message
+        eccodes.codes_release(message)
+        message = eccodes.codes_grib_new_from_file(file)
+```
+
+Command to run:
+This is a Python library, so the code can be executed in a Python environment after installing the ecCodes library.

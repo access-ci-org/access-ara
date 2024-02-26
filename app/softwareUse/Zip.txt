@@ -1,0 +1,10 @@
+Use Case: Compression and decompression of files 
+Code details and examples: 
+To compress a file:
+```
+zip compressed_file.zip input_file.txt
+```
+To extract a zip file:
+```
+unzip compressed_file.zip
+```

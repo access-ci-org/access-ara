@@ -1,0 +1,77 @@
+Use Case: Finite element library for parallel computation.
+
+Code details and examples:
+Libmesh is a C++ finite element library that provides a framework for the development of parallel adaptive mesh refinement (AMR) simulations. Below is an example of solving a simple Poisson equation using libmesh with sample input files.
+
+Sample input file (poisson_case.i):
+```
+[Mesh]
+  dim = 2
+  left = { -1.0, -1.0 }
+  right = { 1.0, 1.0 }
+  n_elements = { 4, 4 }
+
+[Variables]
+  [u]
+    order = 1
+
+[System]
+  name = Poisson
+  [diffusion]
+    coefficients = "1"
+  [source]
+    function = "exp(-100*(x*x + y*y))"
+```
+
+Sample code snippet to solve the Poisson equation:
+```cpp
+#include "libmesh/libmesh.h"
+#include "libmesh/equation_systems.h"
+#include "libmesh/explicit_system.h"
+#include "libmesh/linear_implicit_system.h"
+#include "libmesh/fe.h"
+#include "libmesh/fe_interface.h"
+#include "libmesh/dof_map.h"
+#include "libmesh/numeric_vector.h"
+#include "libmesh/zero_function.h"
+#include "libmesh/dense_submatrix.h"
+#include "libmesh/elem.h"
+#include "libmesh/zero_function.h"
+
+int main(int argc, char** argv) {
+  LibMeshInit init(argc, argv);
+
+  // Create mesh
+  Mesh mesh(2);
+  MeshTools::Generation::build_square(mesh, 4, 4, -1.0, 1.0, -1.0, 1.0, TRI3);
+
+  // Create equation systems
+  EquationSystems equation_systems(mesh);
+  ExplicitSystem& system = equation_systems.add_system<ExplicitSystem>("Poisson");
+  system.add_variable("u", FIRST);
+  system.add_variable("f", CONSTANT);
+
+  // Add diffusion and source terms
+  system.attach_quadrature_rule(&quadrature_rule);
+  FE::System::build()
+    .add_key("u")
+    .add_key("f")
+    .add_fe("u", FEType::Qk)
+    .add_fe("f", FEType::Qk)
+    .attach_equation("u", "f")
+    .attach_equation("f", "u")
+    .apply();
+  
+  // Solve system
+  equation_systems.init();
+  equation_systems.solve();
+
+  return 0;
+}
+```
+
+Command to compile and run using libmesh:
+```
+$ g++ -std=c++11 poisson_solver.cpp -o poisson_solver -I<path_to_libmesh_includes> -L<path_to_libmesh_libs> -lmesh -lpetsc -lslepc
+$ ./poisson_solver poisson_case.i
+```

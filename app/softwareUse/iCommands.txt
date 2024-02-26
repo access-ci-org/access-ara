@@ -1,0 +1,35 @@
+Use Case: iCommands is a collection of command-line utilities for managing data in the iRODS distributed data management system.
+
+Code details and examples:
+1. icd: Change the current iRODS collection.
+   ```
+   icd /tempZone/home/user1/
+   ```
+
+2. ils: List the contents of the current or specified iRODS collection.
+   ```
+   ils
+   ils /tempZone/home/user1/
+   ```
+
+3. iput: Upload a file or directory to the iRODS collection.
+   ```
+   iput myfile.txt /tempZone/home/user1/
+   ```
+
+4. iget: Download a file or directory from the iRODS collection.
+   ```
+   iget /tempZone/home/user1/myfile.txt .
+   ```
+
+5. irm: Remove a file or directory from the iRODS collection.
+   ```
+   irm /tempZone/home/user1/myfile.txt
+   ```
+
+6. ilsresc: List resources or storage devices in the iRODS system.
+   ```
+   ilsresc -l
+   ```
+
+To use iCommands, you would typically connect to an iRODS server and authenticate using your credentials before running these commands.

@@ -1,0 +1,21 @@
+Use Case: Retrieving information about installed libraries.
+
+Code details and examples:
+  
+`pkg-config` is a helper tool used when compiling applications and libraries. It helps to retrieve information about the compiler flags needed to link a library.
+
+To get the compiler flags for a specific package, you can use the following command:
+
+```bash
+pkg-config --cflags --libs <package-name>
+```
+
+For example, to get information about the `gtk+-3.0` package, you can run:
+
+```bash
+pkg-config --cflags --libs gtk+-3.0
+```
+
+This will output the compiler flags needed to compile and link a program with the `gtk+-3.0` library.
+
+Note: The above command may vary based on the package you are querying.

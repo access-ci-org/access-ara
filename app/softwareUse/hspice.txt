@@ -1,0 +1,23 @@
+Use Case: Electronic circuit simulation
+
+Code details and examples: 
+HSPICE is a popular circuit simulator used for analog and mixed-signal simulations. To run a simple transient analysis using HSPICE, you need to create a netlist file (.sp) that describes the circuit and simulation settings.
+
+Sample input file (sample_circuit.sp):
+```
+* Simple RC circuit
+V1 in 0 1.5
+R1 in out 1k
+C1 out 0 1u
+.control
+tran 0.1us 10us
+.endc
+.end
+```
+
+To run this simulation, you can use the following command:
+```
+hspice sample_circuit.sp
+```
+
+This will execute the HSPICE simulation on the provided netlist file and generate the simulation results.

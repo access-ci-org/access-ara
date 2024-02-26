@@ -1,0 +1,18 @@
+Use Case: Mathematical operations on arrays in Python
+
+Code details and examples:
+```python
+# Import the numpy library
+import numpy as np
+
+# Create an array
+a = np.array([1, 2, 3, 4, 5])
+
+# Perform mathematical operations
+mean_a = np.mean(a)
+sum_a = np.sum(a)
+
+print("Mean of array:", mean_a)
+print("Sum of array:", sum_a)
+```
+To run the code, you can save it in a Python script (e.g., `numpy_example.py`) and run it using a Python interpreter.

@@ -1,0 +1,49 @@
+NiBabel is a Python package that provides read and write access to neuroimaging file formats. It allows users to manipulate neuroimaging data in formats such as NIfTI and ANALYZE.
+
+Use Case: Load a NIfTI file using NiBabel
+Code details and examples:
+```python
+import nibabel as nib
+
+# Load a NIfTI file
+img = nib.load('example_data.nii.gz')
+
+# Access the image data
+data = img.get_fdata()
+
+# Get the shape of the data
+print(data.shape)
+```
+
+Use Case: Save data to a NIfTI file using NiBabel
+Code details and examples:
+```python
+import nibabel as nib
+import numpy as np
+
+# Create some example data
+data = np.random.rand(64, 64, 64)
+
+# Create a NIfTI object
+nifti_img = nib.Nifti1Image(data, np.eye(4))
+
+# Save the NIfTI object to a file
+nib.save(nifti_img, 'example_output.nii.gz')
+```
+
+Use Case: Get metadata information from a NIfTI file using NiBabel
+Code details and examples:
+```python
+import nibabel as nib
+
+# Load a NIfTI file
+img = nib.load('example_data.nii.gz')
+
+# Get the header information
+header = img.header
+
+# Print the header information
+print(header)
+```
+
+For more advanced usage and documentation, refer to the NiBabel official documentation at https://nipy.org/nibabel/.

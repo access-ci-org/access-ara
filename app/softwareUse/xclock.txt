@@ -1,0 +1,9 @@
+Use Case: Display a simple analog clock in a graphical window.
+
+Code details and examples:
+```bash
+xhost +
+xclock
+```
+
+Running the above commands will display a basic analog clock application on the screen. This is a simple demonstration of the X Window System's capabilities and can be used as a simple graphical tool.

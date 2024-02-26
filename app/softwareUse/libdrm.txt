@@ -1,0 +1,8 @@
+Use Case: Graphics hardware control and memory mapping library for Direct Rendering Manager (DRM)
+
+Code details and examples:
+libdrm is a low-level library designed to allow Direct Rendering Manager (DRM) clients to interface with the kernel DRM services.
+
+Sample input file format details: N/A
+
+Command to run: N/A

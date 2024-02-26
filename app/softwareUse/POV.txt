@@ -1,0 +1,30 @@
+Use Case: 3D rendering using POV-Ray
+
+Code details and examples:
+Input file format for defining scenes in POV-Ray:
+- .pov file containing scene descriptions, camera settings, light sources, objects, etc.
+
+Sample POV-Ray input file (example.pov):
+```
+camera {
+    location <0, 0, -5>
+    look_at <0, 0, 0>
+}
+
+light_source {
+    <10, 10, -10>
+    color rgb <1, 1, 1>
+}
+
+sphere {
+    <0, 0, 0>, 2
+    pigment { color rgb <1, 0, 0> }
+}
+```
+
+Command to render the scene using POV-Ray:
+```
+povray +Iexample.pov +Ooutput.png
+```
+
+This command runs POV-Ray with input file `example.pov` and generates an output image `output.png` based on the scene description provided in the input file.

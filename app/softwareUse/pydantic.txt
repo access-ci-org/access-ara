@@ -1,0 +1,38 @@
+Use Case: Pydantic is a data validation and settings management library in Python.
+
+Code details and examples:
+Sample input file (input_data.json):
+```json
+{
+    "name": "John Doe",
+    "age": 30,
+    "email": "johndoe@example.com"
+}
+```
+
+**Validation using Pydantic:**
+```python
+from pydantic import BaseModel
+
+class User(BaseModel):
+    name: str
+    age: int
+    email: str
+
+# Load data from input file
+import json
+with open("input_data.json", "r") as file:
+    data = json.load(file)
+
+# Validate input data
+try:
+    user = User(**data)
+    print(user)
+except Exception as e:
+    print(f"Input data is invalid: {e}")
+```
+
+Run the Python script to validate the input data:
+```bash
+python validate_data.py
+```

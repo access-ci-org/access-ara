@@ -1,0 +1,27 @@
+Use Case: Visualization of molecular structures in 3D using py3Dmol library.
+
+Code details and examples:
+```python
+import py3Dmol
+
+# Create a viewer object
+view = py3Dmol.view(width=800, height=600)
+
+# Load a molecular structure file (e.g. PDB format)
+pdb_file = open("input.pdb").read()
+view.addModel(pdb_file, "pdb")
+
+# Style the molecular structure
+view.setStyle({'cartoon': {'color': 'spectrum'}})
+
+# Show the viewer
+view.zoomTo()
+view.show()
+```
+
+Note: You can create the input file (e.g. input.pdb) containing the molecular structure in PDB format before running the above code.
+
+To run the code, save it in a Python file (e.g. visualize_structure.py) and run it using Python interpreter:
+```
+python visualize_structure.py
+```

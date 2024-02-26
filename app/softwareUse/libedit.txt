@@ -1,0 +1,40 @@
+Use Case: libedit
+
+Code details and examples:
+libedit is a library for command-line editing. It is typically used in UNIX-like systems as an alternative to GNU Readline. Here is a basic example of how libedit can be used:
+
+```c
+#include <stdio.h>
+#include <histedit.h>
+
+int main() {
+    EditLine *el = el_init("libedit_example", stdin, stdout, stderr);
+    History *hist = history_init();
+    HistoryEvent ev;
+
+    el_set(el, EL_PROMPT, &prompt);
+    el_set(el, EL_EDITOR, "emacs");
+
+    while (1) {
+        const char *line = el_gets(el, NULL);
+        if (!line) {
+            break;
+        }
+
+        history(hist, &ev, H_ENTER, line);
+        printf("Received input: %s\n", line);
+    }
+
+    history_end(hist);
+    el_end(el);
+    return 0;
+}
+```
+
+You can compile the above code with:
+
+```bash
+gcc -l edit -o libedit_example libedit_example.c
+```
+
+Please note that libedit is a C library, so the above code is written in C.

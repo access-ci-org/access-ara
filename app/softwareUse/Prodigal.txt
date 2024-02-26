@@ -1,0 +1,28 @@
+Use Case: Prodigal is a microbial gene prediction software widely used in bioinformatics for predicting protein-coding genes in bacterial and archaeal genomes.
+
+Code details and examples:
+1. Running Prodigal on a bacterial genome fasta file:
+```bash
+prodigal -i input.fasta -o output.gbk
+```
+In this command, `input.fasta` is the input genome file in FASTA format and `output.gbk` is the output file in GenBank format containing the predicted gene sequences.
+
+2. Running Prodigal in metagenome mode:
+```bash
+prodigal -i input.fasta -o output.gbk -p meta
+```
+In this command, `-p meta` specifies the metagenome mode which is used for predicting genes in metagenomic datasets.
+
+3. Running Prodigal with a specified training file:
+```bash
+prodigal -i input.fasta -o output.gbk -t training_file.txt
+```
+In this command, `-t training_file.txt` specifies a user-provided training file for Prodigal to use during gene prediction.
+
+4. Running Prodigal to output nucleotide sequences:
+```bash
+prodigal -i input.fasta -a output.fna
+```
+In this command, `-a output.fna` specifies the output file in FASTA format containing the predicted nucleotide sequences.
+
+Note: The above examples are command-line usage examples and may vary based on the specific version of Prodigal you are using. Always refer to the Prodigal documentation for detailed usage instructions and options.

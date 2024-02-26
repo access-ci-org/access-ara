@@ -1,0 +1,33 @@
+Use Case: Ray tracing visualization with OSPRay from the Intel oneAPI Rendering Toolkit.
+
+Code details and examples:
+- Sample input file (input.json):
+```
+{
+  "api_version": "2.0",
+  "renderer": "scivis",
+  "camera": {
+    "eye": [0, 0, 5],
+    "center": [0, 0, 0],
+    "up": [0, 1, 0]
+  },
+  "film": {
+    "width": 800,
+    "height": 600
+  },
+  "world": {
+    "type": "group",
+    "children": [
+      {
+        "type": "sphere",
+        "radius": 1
+      }
+    ]
+  }
+}
+```
+
+- Command to run OSPRay:
+```
+ospray --osp:load-modules all --osp:log-level 2 input.json output.png
+```

@@ -73,45 +73,55 @@ def read_and_transform_json(file_path):
 directory_path = "./softwareInfoJSON"
 data_dicts=[]
 
-for filename in os.listdir(directory_path):
-    if filename.endswith('.json'):
-        file_path = os.path.join(directory_path, filename)
-        data = read_and_transform_json(file_path)
-        if data is not None:
-            data_dicts.append(data)
 
-df = pd.DataFrame(data_dicts)
-df.fillna('',inplace=True)
+def combine_dfs(df, rpAndSoftware):
 
-#move column 'software name' to the begining
-df = df[['software name']+[col for col in df.columns if col != 'software name']]
+    #move column 'software name' to the begining
+    df = df[['software name']+[col for col in df.columns if col != 'software name']]
 
-#move column 'overview' to be second from the left
-col= df.pop('overview')
-df.insert(1,col.name,col)
+    #move column 'overview' to be second from the left
+    col= df.pop('overview')
+    df.insert(1,col.name,col)
 
-rpAndSoftware = pd.read_csv('./rpAndSoftwares.csv')
-rpAndSoftware.rename(columns={'Software': 'software name'}, inplace=True)
+    # create temp columns for case-insensitive comparison
+    df['software_name_temp'] = df['software name'].str.lower()
+    rpAndSoftware['software_name_temp'] =rpAndSoftware['software name'].str.lower()
 
-# create temp columns for case-insensitive comparison
-df['software_name_temp'] = df['software name'].str.lower()
-rpAndSoftware['software_name_temp'] =rpAndSoftware['software name'].str.lower()
-print(rpAndSoftware)
+    merged_df = pd.merge(df, rpAndSoftware, left_on='software_name_temp', right_on='software_name_temp', how='left')
 
-merged_df = pd.merge(df, rpAndSoftware, left_on='software_name_temp', right_on='software_name_temp', how='left')
-# print(rpAndSoftware)
+    # cleanup after merge
+    merged_df.drop('software name_y', axis=1, inplace=True)
+    merged_df.rename(columns={'software name_x': 'software name'}, inplace=True)
 
-# cleanup after merge
-merged_df.drop('software name_y', axis=1, inplace=True)
-merged_df.rename(columns={'software name_x': 'software name'}, inplace=True)
+    # drop the temp columns after merge
+    merged_df.drop(['software_name_temp'], axis=1,inplace=True)
 
-# drop the temp columns after merge
-merged_df.drop(['software_name_temp'], axis=1,inplace=True)
+    col= merged_df.pop('RP Name')
+    merged_df.insert(1,col.name,col)
 
-col= merged_df.pop('RP Name')
-merged_df.insert(1,col.name,col)
+    return(merged_df)
+
+def make_df():
+    for filename in os.listdir(directory_path):
+        if filename.endswith('.json'):
+            file_path = os.path.join(directory_path, filename)
+            data = read_and_transform_json(file_path)
+            if data is not None:
+                data_dicts.append(data)
+
+    df = pd.DataFrame(data_dicts)
+    df.fillna('',inplace=True)
+
+    rpAndSoftware = pd.read_csv('./rpAndSoftwares.csv')
+    rpAndSoftware.rename(columns={'Software': 'software name'}, inplace=True)
+
+    return combine_dfs(df, rpAndSoftware)
+
+    
+
+df = make_df()
 
 output_file_path = './combined_data.csv'
-merged_df.to_csv(output_file_path,index=False)
+df.to_csv(output_file_path,index=False)
 
-print(merged_df)
+print(df)

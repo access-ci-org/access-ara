@@ -1,0 +1,32 @@
+Use Case: Bowtie2 is a fast and memory-efficient tool for aligning sequencing reads to large genomes.
+
+Code details and examples:
+- Command to run Bowtie2:
+```
+bowtie2 -x <index_prefix> -U <input_file> -S <output_file>
+```
+
+- Sample input files:
+  - Index file: Bowtie2 requires an index of the reference genome to be built before alignment. This can be done using the `bowtie2-build` command.
+    ```
+    bowtie2-build <reference_genome.fa> <index_prefix>
+    ```
+  
+  - Input file: Fastq file containing sequencing reads to be aligned to the reference genome.
+    ```
+    @read1
+    AGCTGATCGATCGATCGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCT
+    +
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    @read2
+    TCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGA
+    +
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    ```
+
+- Running Bowtie2:
+  ```
+  bowtie2 -x reference_genome -U reads.fastq -S output.sam
+  ```
+
+This command aligns the reads in `reads.fastq` to the reference genome indexed as `reference_genome` and saves the output in SAM format to `output.sam`.

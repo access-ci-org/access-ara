@@ -1,0 +1,30 @@
+Use Case: pigz is a parallel implementation of gzip that uses multiple processors and multiple cores for compression and decompression.
+
+Code details and examples:
+1. Compression:
+```bash
+pigz input_file.txt
+```
+This command will compress the input_file.txt using pigz, which will utilize multiple processors for faster compression.
+
+2. Decompression:
+```bash
+pigz -d input_file.txt.gz
+```
+This command will decompress the input_file.txt.gz using pigz.
+
+3. Parallel compression with specified number of threads:
+```bash
+pigz -p 4 input_file.txt
+```
+This command will compress the input_file.txt using pigz with 4 threads (processors).
+
+4. Decompress with stdout:
+```bash
+pigz -dc input_file.txt.gz
+```
+This command will decompress the file input_file.txt.gz and write the output to stdout.
+
+Input file format: Input files can be any text or binary files that need to be compressed or decompressed.
+
+Make sure to adjust the number of threads according to the available resources on your system for optimal performance.

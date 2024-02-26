@@ -1,0 +1,8 @@
+Use Case: tRNAscan is a software tool used for finding transfer RNA (tRNA) genes in genomic sequence.
+Code details and examples:
+- Input format: The input for tRNAscan can be a DNA sequence in FASTA format.
+- Code:
+  ```
+  tRNAscan /path/to/input.fasta
+  ```
+- This command will run tRNAscan on the input DNA sequence file to identify tRNA genes.

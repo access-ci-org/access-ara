@@ -1,0 +1,29 @@
+Use Case: Quantum chemistry calculations with ORCA software.
+
+Code details and examples:
+ORCA is a quantum chemistry software package often used for ab initio calculations of molecular systems. It supports a wide range of quantum chemical methods including DFT, MP2, CCSD(T), and more.
+
+To run ORCA, you typically provide it with an input file containing the necessary information for your calculation. Here is an example input file for a simple energy calculation of a water molecule:
+
+Input file (water.inp):
+```
+! HF/6-31G calculation for water
+%pal nprocs 4 end
+%maxcore 2048
+* xyz 0 1
+O  0.000000  0.000000  0.117307
+H  0.000000  0.755450 -0.469226
+H  0.000000 -0.755450 -0.469226
+*
+```
+
+You can then run ORCA using a command similar to the following:
+
+Command to run ORCA:
+```
+orca water.inp > water.out
+```
+
+This command will run the ORCA calculation using the input file "water.inp" and write the output to "water.out".
+
+Please note that the actual command to run ORCA may vary based on your specific installation and system setup.

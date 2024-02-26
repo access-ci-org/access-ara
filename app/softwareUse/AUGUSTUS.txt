@@ -1,0 +1,7 @@
+Use Case: Gene prediction using AUGUSTUS
+Input File: DNA sequence file in FASTA format
+Code details and examples:
+```bash
+augustus --species=<species_name> --strand=both <input_sequence.fasta>
+```
+Replace `<species_name>` with the appropriate species name and `<input_sequence.fasta>` with the name of the input DNA sequence file in FASTA format.

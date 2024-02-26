@@ -1,0 +1,79 @@
+Use Case: Parsing an XML file using libxml2
+
+Code details and examples:
+
+Input XML file (sample.xml):
+```xml
+<?xml version="1.0"?>
+<root>
+  <person>
+    <name>John Doe</name>
+    <age>30</age>
+    <location>New York</location>
+  </person>
+  <person>
+    <name>Jane Doe</name>
+    <age>25</age>
+    <location>San Francisco</location>
+  </person>
+</root>
+```
+
+C program to parse the XML file using libxml2 (parse_xml.c):
+```c
+#include <stdio.h>
+#include <libxml/parser.h>
+
+int main() {
+    xmlDocPtr doc;
+    xmlNodePtr root, cur;
+
+    doc = xmlReadFile("sample.xml", NULL, 0);
+
+    if (doc == NULL) {
+        fprintf(stderr, "Failed to parse document.\n");
+        return 1;
+    }
+
+    root = xmlDocGetRootElement(doc);
+    for (cur = root->children; cur != NULL; cur = cur->next) {
+        if (cur->type == XML_ELEMENT_NODE) {
+            printf("Node name: %s\n", cur->name);
+            xmlNodePtr child = cur->children;
+            while (child != NULL) {
+                if (xmlNodeIsText(child)) {
+                    printf("%s: %s\n", child->parent->name, child->content);
+                }
+                child = child->next;
+            }
+        }
+    }
+
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
+
+    return 0;
+}
+```
+
+Compile the C program:
+```bash
+gcc -o parse_xml parse_xml.c `xml2-config --cflags --libs`
+```
+
+Run the compiled program:
+```bash
+./parse_xml
+```
+
+Output:
+```
+Node name: person
+name: John Doe
+age: 30
+location: New York
+Node name: person
+name: Jane Doe
+age: 25
+location: San Francisco
+```

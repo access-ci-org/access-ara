@@ -1,0 +1,13 @@
+Use Case: cisTEM is a software package for single-particle reconstruction of macromolecular complexes using cryo-electron microscopy data.
+
+Code details and examples:
+- Input files: 
+  - Particle images in MRC or TIF format
+  - Corresponding particle coordinates in STAR or CSV format
+  - Motion correction parameters in STAR or TXT format
+  - CTF parameters in STAR or TXT format
+
+- Command to run cisTEM:
+  ```
+  cisTEM --input_particles particles.star --input_micrographs micrographs.star --input_ctf ctf.star --output_volume reconstruction.mrc --symmetry C1
+  ```

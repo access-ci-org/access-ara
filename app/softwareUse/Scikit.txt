@@ -1,0 +1,22 @@
+Use Case: Machine learning library  
+Code details and examples:  
+Sample input file: N/A  
+Format required: N/A  
+Specifications: N/A  
+
+Code snippet:
+```python
+from sklearn import datasets
+from sklearn.ensemble import RandomForestClassifier
+
+# Load sample dataset
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+# Initialize Random Forest classifier
+clf = RandomForestClassifier()
+
+# Fit the model
+clf.fit(X, y)
+```

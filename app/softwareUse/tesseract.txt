@@ -1,0 +1,14 @@
+Use Case: Text recognition from images using Tesseract OCR
+
+Code details and examples:
+Sample input file (image): image.png
+
+Code:
+```bash
+tesseract image.png output -l eng
+```
+
+Command to run:
+```bash
+tesseract image.png output -l eng
+```

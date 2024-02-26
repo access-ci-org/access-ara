@@ -1,0 +1,15 @@
+XZ is a file compression tool and format that is commonly used in high-performance computing for compressing and decompressing files efficiently.
+
+Use Case: Compressing a File with XZ
+Code details and examples:
+```bash
+# Compress a file using xz
+xz -z example.txt
+```
+
+Use Case: Decompressing a File with XZ
+Code details and examples:
+```bash
+# Decompress a file using xz
+xz -d example.txt.xz
+```

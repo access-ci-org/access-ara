@@ -1,0 +1,15 @@
+Use Case: Supporting tools for Lua programming language.  
+Code details and examples:  
+- Lua source code files with the extension ".lua" are used as input files.  
+- Code snippets are written in Lua programming language.  
+- An example code snippet to print "Hello, World!" is as follows:  
+
+```lua
+print("Hello, World!")
+```
+
+- Lua source code files can be executed using the Lua interpreter.  
+Command to run the Lua source code file "hello.lua":  
+```
+lua hello.lua
+```  

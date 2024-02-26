@@ -1,0 +1,26 @@
+Use Case: Optuna is a hyperparameter optimization framework.
+Code details and examples:
+
+Sample input file (example_study.py):
+```python
+import optuna
+
+def objective(trial):
+    x = trial.suggest_uniform('x', -10, 10)
+    y = trial.suggest_uniform('y', -5, 5)
+    return (x - 2)**2 + (y + 3)**2
+
+study = optuna.create_study(direction='minimize')
+study.optimize(objective, n_trials=100)
+
+best_params = study.best_params
+best_value = study.best_value
+
+print("Best parameters:", best_params)
+print("Best value:", best_value)
+```
+
+Command to run (example_study.py):
+```
+python example_study.py
+```

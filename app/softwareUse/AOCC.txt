@@ -1,0 +1,22 @@
+AOCC stands for AMD Optimizing C/C++ Compiler. It is a high-performance compiler designed for AMD processors.
+
+Use Case: Compile a C code using AOCC compiler
+Code details and examples:
+```c
+// Sample C code (sample.c)
+#include <stdio.h>
+
+int main() {
+    printf("Hello, AOCC!\n");
+    return 0;
+}
+```
+
+To compile the sample C code using AOCC compiler:
+```bash
+aocc sample.c -o sample
+```
+
+This will produce an executable file named `sample` which can be run with `./sample`.
+
+Note: The actual command to use AOCC compiler may vary depending on the specific version and installation location.

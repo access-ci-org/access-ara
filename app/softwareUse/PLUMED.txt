@@ -1,0 +1,21 @@
+Use Case: PLUMED is an open-source library for free energy calculations in molecular systems.
+
+Code details and examples:
+PLUMED requires a configuration file (usually named plumed.dat) to specify the collective variables and biases to be used in the simulation.
+
+Sample plumed.dat file:
+```
+# Compute the distance between atoms 1 and 2
+d: DISTANCE ATOMS=1,2
+
+# Harmonic bias potential along the distance
+kappa: KAPPA ...
+BIASVALUE=5.0
+
+# Output the distance and bias energy
+PRINT ARG=d,kappa FILE=COLVAR
+```
+
+To run a simulation with PLUMED, you would typically launch your MD simulation code (e.g., GROMACS, LAMMPS) with PLUMED as a plugin. The command to run the simulation would depend on the specific simulation code you are using.
+
+It's important to note that PLUMED is typically used in conjunction with molecular dynamics simulation software, so the exact command to run would vary depending on the simulation package being employed.

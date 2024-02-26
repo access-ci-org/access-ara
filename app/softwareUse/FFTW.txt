@@ -1,0 +1,41 @@
+Use Case: Fastest Fourier Transform in the West (FFTW) is a highly optimized library for computing discrete Fourier transforms.
+Code details and examples:
+```
+// Sample input file: input.txt
+1.0 2.0 3.0
+4.0 5.0 6.0
+7.0 8.0 9.0
+
+#include <fftw3.h>
+
+int main() {
+    fftw_complex *in, *out;
+    fftw_plan p;
+    
+    in = (fftw_complex*) fftw_malloc(sizeof(fftw_complex) * 3);
+    out = (fftw_complex*) fftw_malloc(sizeof(fftw_complex) * 3);
+    
+    // Initialize the input array with data from the input file
+    // Assume the input data is read from input.txt and stored in the 'in' array
+    
+    p = fftw_plan_dft_2d(3, 3, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
+    fftw_execute(p);
+    
+    // Process the output array
+    
+    fftw_destroy_plan(p);
+    fftw_free(in);
+    fftw_free(out);
+    
+    return 0;
+}
+```
+To compile the code (assuming the file is saved as fftw_example.c) and link it with FFTW:
+```
+gcc fftw_example.c -o fftw_example -lfftw3 -lm
+```
+
+To run the compiled code:
+```
+./fftw_example
+```

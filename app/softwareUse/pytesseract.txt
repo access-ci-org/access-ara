@@ -1,0 +1,17 @@
+Use Case: pytesseract is a Python wrapper for Google's Tesseract-OCR Engine, which is used for optical character recognition.
+
+Code details and examples:
+```python
+from PIL import Image
+import pytesseract
+
+# Load an image from file
+image = Image.open('sample_image.png')
+
+# Use pytesseract to extract text from the image
+text = pytesseract.image_to_string(image)
+
+print(text)
+```
+
+Note: You need to have Tesseract-OCR installed on your system for pytesseract to work properly.

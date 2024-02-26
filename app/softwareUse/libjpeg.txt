@@ -1,0 +1,54 @@
+Use Case: Image Compression with libjpeg
+
+Code details and examples:
+```c
+#include <stdio.h>
+#include <jpeglib.h>
+
+int main() {
+    struct jpeg_compress_struct cinfo;
+    struct jpeg_error_mgr jerr;
+
+    FILE *outfile;
+    JSAMPROW row_pointer[1];
+    int image_width = 800;
+    int image_height = 600;
+    int quality = 75;
+
+    cinfo.err = jpeg_std_error(&jerr);
+    jpeg_create_compress(&cinfo);
+
+    if ((outfile = fopen("output.jpg", "wb")) == NULL) {
+        fprintf(stderr, "Error opening output file\n");
+        return 1;
+    }
+
+    jpeg_stdio_dest(&cinfo, outfile);
+
+    cinfo.image_width = image_width;
+    cinfo.image_height = image_height;
+    cinfo.input_components = 3;
+    cinfo.in_color_space = JCS_RGB;
+
+    jpeg_set_defaults(&cinfo);
+    jpeg_set_quality(&cinfo, quality, TRUE);
+
+    jpeg_start_compress(&cinfo, TRUE);
+
+    while (cinfo.next_scanline < cinfo.image_height) {
+        row_pointer[0] = (JSAMPROW)(&image_data[cinfo.next_scanline * image_width * 3]);
+        jpeg_write_scanlines(&cinfo, row_pointer, 1);
+    }
+
+    jpeg_finish_compress(&cinfo);
+    fclose(outfile);
+    jpeg_destroy_compress(&cinfo);
+
+    return 0;
+}
+```
+
+Make sure to replace `image_data` array with the actual RGB image data. Compile the code with libjpeg library (e.g., `gcc -o compress_image compress_image.c -ljpeg`) and run the executable to compress the image file.
+
+Command to compile: `gcc -o compress_image compress_image.c -ljpeg`
+Command to run: `./compress_image`

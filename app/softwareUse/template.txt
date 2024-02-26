@@ -1,0 +1,16 @@
+Use Case: Creating a template for file input
+Code details and examples:
+```
+# Template for sample input file
+
+# Example input for a program
+# Parameter A: 10
+# Parameter B: 0.5
+# Data File: data.txt
+
+# Sample data file format (data.txt):
+# X, Y
+# 1, 5
+# 2, 7
+# 3, 9
+```

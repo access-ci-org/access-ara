@@ -1,0 +1,53 @@
+Use Case: Task-based parallelism in C++ with Intel Threading Building Blocks (oneTBB)
+
+Code details and examples:
+oneTBB is a C++ library for task-based parallelism developed by Intel. It allows developers to write parallel programs that scale across multicore processors. Here is an example of using oneTBB to parallelize a loop:
+
+Sample input file (input.txt):
+```
+10
+1 2 3 4 5 6 7 8 9 10
+```
+
+Sample code snippet to parallelize a loop using oneTBB:
+```cpp
+#include <iostream>
+#include <vector>
+#include <tbb/tbb.h>
+
+using namespace tbb;
+
+int main() {
+    std::vector<int> data;
+    int n;
+
+    // Read input from file
+    std::ifstream input_file("input.txt");
+    input_file >> n;
+    data.resize(n);
+    for (int i = 0; i < n; ++i)
+        input_file >> data[i];
+
+    // Parallelize the loop
+    parallel_for(blocked_range<size_t>(0, data.size()), [&](const blocked_range<size_t>& r) {
+        for (size_t i = r.begin(); i != r.end(); ++i) {
+            data[i] *= 2;  // Double each element
+        }
+    });
+
+    // Output the results
+    for (int i = 0; i < n; ++i)
+        std::cout << data[i] << " ";
+    std::cout << std::endl;
+
+    return 0;
+}
+```
+
+To compile and run the code using oneTBB, you can use the following command:
+```
+g++ -o parallel_loop parallel_loop.cpp -ltbb
+./parallel_loop
+```
+
+This will compile the code with the oneTBB library and run the parallel loop program.

@@ -1,0 +1,33 @@
+Use Case: Slurm is a workload manager designed for Linux clusters that provides a framework for job scheduling and management. It is widely used in HPC environments.
+
+Code details and examples:
+1. Submit a job:
+```bash
+sbatch myjob.sh
+```
+
+2. Check job status:
+```bash
+squeue -u myusername
+```
+
+3. Cancel a job:
+```bash
+scancel jobID
+```
+
+4. Create a configuration file (slurm.conf) to customize Slurm settings.
+
+Sample input file (myjob.sh):
+```bash
+#!/bin/bash
+#SBATCH --job-name=myjob
+#SBATCH --output=output.txt
+#SBATCH --error=error.txt
+
+srun /path/to/myprogram
+```
+
+In this example, `myjob.sh` is a submission script for a job named `myjob` that runs `myprogram`.
+
+Note: The actual contents of `myprogram` will vary based on the specific job requirements.

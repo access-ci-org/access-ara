@@ -1,0 +1,21 @@
+Use Case: C++ programming
+
+Code details and examples:
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+To compile the above code, you can use the g++ compiler:
+```
+g++ filename.cpp -o output
+```
+
+To run the compiled executable:
+```
+./output
+```

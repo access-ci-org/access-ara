@@ -1,0 +1,17 @@
+Use Case: BEDOPS: BEDOPS is a suite of tools to address common questions raised by large-scale genomic studies by intersecting, merging, and comparing genomic intervals.
+
+Code details and examples:
+1. Intersect two BED files:
+```bash
+bedops file1.bed file2.bed > intersected.bed
+```
+
+2. Merge overlapping intervals in a BED file:
+```bash
+bedops --merge file.bed > merged.bed
+```
+
+3. Find intervals in A (file1.bed) that are not present in B (file2.bed):
+```bash
+bedops --difference file1.bed file2.bed > diff.bed
+```

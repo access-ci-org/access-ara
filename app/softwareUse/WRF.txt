@@ -1,0 +1,70 @@
+Use Case: Weather Research and Forecasting (WRF) model is a widely used mesoscale numerical weather prediction system designed for atmospheric research and operational forecasting applications.
+
+Code details and examples:
+```bash
+# Command to run WRF:
+mpirun ./wrf.exe
+```
+
+Input files:
+- namelist.input: Configuration file containing settings for the WRF model
+- wrfinput_d01: Initial conditions file for the model
+- wrfbdy_d01: Boundary conditions file for the model
+
+Code snippets:
+```bash
+# Sample namelist.input
+&time_control
+ run_days                            = 0,
+ run_hours                           = 0,
+ run_minutes                         = 0,
+ run_seconds                         = 0,
+ start_year                          = 2022, 2022, 2022,
+ start_month                         = 03,   03,   03,
+ start_day                           = 01,   01,   01,
+ start_hour                          = 00,   00,   00,
+ start_minute                        = 00,   00,   00,
+ start_second                        = 00,   00,   00,
+ end_year                            = 2022, 2022, 2022,
+ end_month                           = 03,   03,   03,
+ end_day                             = 01,   01,   01,
+ end_hour                            = 03,   03,   03,
+ end_minute                          = 00,   00,   00,
+ end_second                          = 00,   00,   00,
+ io_form_history                     = 2,
+ io_form_input                       = 2,
+ io_form_boundary                    = 2,
+ /
+
+# Sample namelist.wps
+&time_control
+ run_days                            = 0,
+ run_hours                           = 0,
+ run_minutes                         = 0,
+ run_seconds                         = 0,
+ start_year                          = 2022, 2022, 2022,
+ start_month                         = 03,   03,   03,
+ start_day                           = 01,   01,   01,
+ start_hour                          = 00,   00,   00,
+ start_minute                        = 00,   00,   00,
+ start_second                        = 00,   00,   00,
+ end_year                            = 2022, 2022, 2022,
+ end_month                           = 03,   03,   03,
+ end_day                             = 01,   01,   01,
+ end_hour                            = 00,   00,   00,
+ end_minute                          = 00,   00,   00,
+ end_second                          = 00,   00,   00,
+ /
+
+# Sample namelist.input for real.exe
+&share
+ wrf_core = 'ARW',
+ max_dom = 1,
+ start_date = '2022-03-01_00:00:00','2022-03-01_00:00:00',
+ end_date   = '2022-03-01_03:00:00','2022-03-01_03:00:00',
+/
+
+
+```
+
+Please note that the above input file samples are just examples and should be customized based on the specific requirements of your simulation.

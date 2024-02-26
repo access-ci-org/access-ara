@@ -1,0 +1,19 @@
+Use Case: aiohttp library is used for creating web servers and clients using async/await syntax in Python.
+
+Code details and examples:
+```python
+import aiohttp
+import asyncio
+
+async def fetch_url(url):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.text()
+
+url = 'http://example.com'
+response_text = asyncio.run(fetch_url(url))
+print(response_text)
+```
+
+Command to run:
+This code can be run as a Python script using a Python interpreter.

@@ -1,0 +1,12 @@
+Use Case: Extrae is a software package for tracing and visualizing parallel and distributed applications.
+
+Code details and examples:
+- To trace a parallel application:
+```bash
+extrae -in <application_binary> -o <output_trace_file>
+```
+
+- To visualize the trace data:
+```bash
+jgraph -output-format PNG -output-file <output_graph_file> <output_trace_file>
+```

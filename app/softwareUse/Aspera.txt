@@ -1,0 +1,10 @@
+Use Case: High-speed file transfer software for HPC environments.
+Code details and examples: 
+Aspera provides a command line tool called "ascp" to transfer files at high speed. To transfer a file using ascp, you can use the following command:
+```
+ascp <source_file> <destination_user>@<destination_host>:<destination_path>
+```
+For example:
+```
+ascp input.txt user@example.com:/home/user/data/
+```

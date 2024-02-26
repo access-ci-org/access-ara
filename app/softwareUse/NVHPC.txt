@@ -1,0 +1,47 @@
+Use Case: NVHPC Software Suite
+Code details and examples:
+NVHPC is Nvidia's suite of compilers and libraries for high-performance computing. It includes NVCC (Nvidia's CUDA Compiler), NVFORTRAN (Nvidia Fortran Compiler), NVCOMPILER (Nvidia C/C++ Compiler), and GPU-accelerated libraries like cuBLAS, cuFFT, cuSPARSE, etc.
+
+Sample input files:
+- For compiling CUDA code with NVCC:
+```cuda
+#include <stdio.h>
+
+__global__ void add(int a, int b, int *c) {
+    *c = a + b;
+}
+
+int main() {
+    int a = 5, b = 10, c;
+    int *d_c;
+
+    cudaMalloc((void**)&d_c, sizeof(int));
+
+    add<<<1,1>>>(a, b, d_c);
+
+    cudaMemcpy(&c, d_c, sizeof(int), cudaMemcpyDeviceToHost);
+
+    printf("Result: %d\n", c);
+
+    cudaFree(d_c);
+
+    return 0;
+}
+```
+
+- For compiling Fortran code with NVFORTRAN:
+```fortran
+program hello
+    print *, "Hello, World!"
+end program hello
+```
+
+Command to compile CUDA code using NVCC:
+```
+nvcc -o add_cuda add.cu
+```
+
+Command to compile Fortran code using NVFORTRAN:
+```
+nvfortran -o hello_fortran hello.f90
+```

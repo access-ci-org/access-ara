@@ -1,0 +1,16 @@
+Use Case: File compression and decompression
+
+Code details and examples:
+To compress a file using p7zip, you can use the following command:
+```
+7z a compressed_file.7z file_to_compress
+```
+
+To decompress a 7z file using p7zip, you can use the following command:
+```
+7z x compressed_file.7z
+```
+
+Please note that p7zip supports multiple compression formats including 7z, ZIP, GZIP, BZIP2, and TAR.
+
+Make sure you have p7zip installed on your system to use these commands.

@@ -1,0 +1,16 @@
+Use Case: pocl
+Code details and examples: 
+pocl (Portable Computing Language) is an open-source implementation of the OpenCL standard. It allows OpenCL applications to be executed on a variety of devices, including CPUs, GPUs, and other accelerators. Below is an example of running a simple OpenCL program using pocl.
+
+Sample input file (hello.cl):
+```c
+__kernel void hello_world() {
+    printf("Hello, World!\n");
+}
+```
+
+Command to compile and run the program:
+```
+pocl-standalone -I. hello.cl -o hello
+./hello
+```

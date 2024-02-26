@@ -1,0 +1,48 @@
+NSPR is the Netscape Portable Runtime library, which provides a platform-neutral API for system level and libc-like functions. It is widely used in various software applications to abstract operating system specifics.
+
+Use Case: NSPR is commonly used in Mozilla Firefox for its network operations.
+
+Code Details and Examples:
+- Sample Input File (nspr_sample.c):
+```c
+#include <stdio.h>
+#include <nspr/prinit.h>
+
+int main() {
+    PR_Init();
+    
+    // Insert NSPR code here
+
+    PR_Cleanup();
+    return 0;
+}
+```
+
+- Code snippet (nspr_sample.c) using NSPR library:
+```c
+#include <stdio.h>
+#include <nspr/prinit.h>
+
+int main() {
+    PR_Init();
+    
+    // Example: Creating a new thread
+    PRThread *thread = PR_CreateThread(PR_USER_THREAD, MyThreadFunc, NULL,
+                                       PR_PRIORITY_NORMAL, PR_GLOBAL_THREAD, PR_JOINABLE_THREAD, 0);
+    
+    PR_JoinThread(thread);
+    
+    PR_Cleanup();
+    return 0;
+}
+
+void MyThreadFunc(void *arg) {
+    printf("Hello from a new thread\n");
+}
+```
+
+- Command to compile and execute the sample code:
+```bash
+gcc nspr_sample.c -o nspr_sample -lnspr
+./nspr_sample
+```

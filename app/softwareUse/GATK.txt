@@ -1,0 +1,36 @@
+Use Case: Genome Analysis Toolkit (GATK) is a software package for analyzing high-throughput sequencing data in genomics research.
+
+Code details and examples:
+
+1. Variant calling with GATK:
+```bash
+java -jar GenomeAnalysisTK.jar -T HaplotypeCaller -R reference.fasta -I input.bam -o output.vcf
+```
+In this command:
+- `-T HaplotypeCaller`: specifies the tool for variant calling
+- `-R reference.fasta`: specifies the reference genome in FASTA format
+- `-I input.bam`: specifies the input aligned reads in BAM format
+- `-o output.vcf`: specifies the output VCF file for variants
+
+2. Genotype calling with GATK:
+```bash
+java -jar GenomeAnalysisTK.jar -T GenotypeGVCFs -R reference.fasta -V input.g.vcf -o output.vcf
+```
+In this command:
+- `-T GenotypeGVCFs`: specifies the tool for genotype calling
+- `-V input.g.vcf`: specifies the input Genomic VCF file
+- `-o output.vcf`: specifies the output VCF file for genotypes
+
+3. Base Quality Score Recalibration (BQSR) with GATK:
+```bash
+java -jar GenomeAnalysisTK.jar -T BaseRecalibrator -R reference.fasta -I input.bam -knownSites knownsites.vcf -o recal_data.table
+```
+In this command:
+- `-T BaseRecalibrator`: specifies the tool for BQSR
+- `-I input.bam`: specifies the input aligned reads in BAM format
+- `-knownSites knownsites.vcf`: specifies known variant sites for recalibration
+- `-o recal_data.table`: specifies the output recalibration table
+
+Note: Make sure to replace `GenomeAnalysisTK.jar` with the actual path to the GATK jar file.
+
+For more commands and options, refer to the official GATK documentation: https://gatk.broadinstitute.org/hc/en-us

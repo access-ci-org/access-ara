@@ -1,0 +1,22 @@
+Use Case: ccache is a compiler cache that speeds up recompilation by caching previous compilations
+
+Code details and examples:
+1. Usage:
+```
+ccache [options] compiler [compiler options]
+```
+
+2. Example with GCC:
+Let's assume you have a C file named "example.c" and you want to compile it using GCC with ccache.
+```
+ccache gcc -o example example.c
+```
+
+3. Example with sample input files:
+You can use ccache with any compiler and its options like you normally would without ccache. The caching will happen automatically.
+
+4. Specifications and details in input files:
+No specific input file format is required for ccache. It automatically caches compiled object files based on the compiler and its options.
+
+Note:
+Make sure ccache is installed and in your PATH before using it.

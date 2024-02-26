@@ -1,0 +1,24 @@
+Use Case: FTP file transfer
+Code details and examples:
+lftp is a command-line file transfer program that supports various protocols including FTP. Below is an example of how to transfer a file using lftp.
+
+### Sample input file (input.txt):
+```
+This is a sample input file for FTP transfer.
+```
+
+### Code to transfer a file using lftp:
+```
+lftp -e "put input.txt; bye" ftp://username:password@ftp_server
+```
+
+In the above code:
+- Replace `input.txt` with the file you want to transfer.
+- Replace `username` with your FTP username.
+- Replace `password` with your FTP password.
+- Replace `ftp_server` with the address of the FTP server.
+
+### Command to run the code:
+```
+lftp -e "put input.txt; bye" ftp://username:password@ftp_server
+```

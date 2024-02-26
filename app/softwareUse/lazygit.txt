@@ -1,0 +1,6 @@
+Use Case: Interactive Git interface
+Code details and examples:
+- Input files: No specific input files required for lazygit.
+- Command to run: To run lazygit, simply type `lazygit` in the terminal.
+
+Note: lazygit is an interactive Git tool that does not require specific input files or formats. Simply run the command in the terminal to launch the tool.

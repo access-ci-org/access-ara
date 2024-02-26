@@ -1,0 +1,56 @@
+Use Case: Subversion (SVN) is a version control system used for managing software projects and their source code files.
+
+Code details and examples:
+1. Create a new SVN repository:
+```
+svnadmin create /path/to/repository
+```
+
+2. Checkout a copy of the repository:
+```
+svn checkout file:///path/to/repository
+```
+
+3. Add files to the repository:
+```
+svn add file.txt
+svn commit -m "Adding a new file"
+```
+
+4. Update files from the repository:
+```
+svn update
+```
+
+5. View the commit history:
+```
+svn log
+```
+
+6. Revert changes made to a file:
+```
+svn revert file.txt
+```
+
+7. Merge changes from one branch to another:
+```
+svn merge -r start_revision:end_revision source_branch target_branch
+```
+
+8. Export a clean copy of the repository:
+```
+svn export /path/to/repository /path/to/export/folder
+```
+
+9. List all files and directories in the repository:
+```
+svn list file:///path/to/repository
+```
+
+10. Delete a file from the repository:
+```
+svn delete file.txt
+svn commit -m "Removing a file"
+```
+
+Please note that these commands are examples and may need to be adjusted based on your specific use case and repository structure.

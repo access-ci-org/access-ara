@@ -1,0 +1,11 @@
+Use Case: Performance profiling and optimization tool for HPC applications. 
+
+Code details and examples:
+* Sample input files: N/A
+
+* Format required: N/A
+
+* Command to run: 
+```bash
+amplxe-cl -collect hotspots ./my_application
+```

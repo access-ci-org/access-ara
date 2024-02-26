@@ -1,0 +1,22 @@
+Use Case: Math operations on GPU arrays  
+Code details and examples:
+```python
+import numpy as np
+import pygpu
+from pygpu import gpuarray
+
+# Initialize GPU context
+pygpu.init()
+
+# Create GPU array
+arr_gpu = gpuarray.to_gpu(np.array([1, 2, 3, 4], dtype=np.float32))
+
+# Perform element-wise multiplication on GPU
+result = arr_gpu * 2
+
+# Transfer result back to CPU
+result_cpu = result.get()
+
+print(result_cpu)
+```
+Command to run: N/A (Python script)

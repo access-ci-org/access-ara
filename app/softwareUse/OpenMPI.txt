@@ -1,0 +1,47 @@
+Use Case: OpenMPI is an open-source Message Passing Interface (MPI) library that is commonly used for parallel computing.
+
+Code details and examples:
+1. Sample input file format:
+   - For a simple "Hello, World!" program in C:
+     ```c
+     #include <stdio.h>
+     #include <mpi.h>
+
+     int main(int argc, char** argv) {
+         MPI_Init(NULL, NULL);
+         int world_rank;
+         MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
+         printf("Hello from process %d\n", world_rank);
+         MPI_Finalize();
+         return 0;
+     }
+     ```
+
+2. To compile and run the program using OpenMPI:
+   ```sh
+   mpicc hello_world.c -o hello_world
+   mpirun -np 4 ./hello_world
+   ```
+
+3. Sample input file for a parameterized computation in Python using mpi4py (a Python module that provides bindings of the Message Passing Interface (MPI) standard for Python):
+   - For a simple program to calculate the sum of numbers from 1 to N in parallel:
+     ```python
+     from mpi4py import MPI
+
+     comm = MPI.COMM_WORLD
+     rank = comm.Get_rank()
+     size = comm.Get_size()
+
+     N = 100
+     local_sum = sum(range(rank+1, N+1, size))
+
+     global_sum = comm.reduce(local_sum, op=MPI.SUM, root=0)
+
+     if rank == 0:
+         print("Sum from 1 to {} is {}".format(N, global_sum))
+     ```
+
+4. To run the Python program using OpenMPI:
+   ```sh
+   mpirun -np 4 python sum_parallel.py
+   ```

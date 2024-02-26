@@ -1,0 +1,18 @@
+Use Case: Computational geometry library.  
+Code details and examples:  
+Libvori is a computational geometry library for calculating the Voronoi diagram. Below is a sample input file format for calculating the Voronoi diagram using libvori:
+
+Sample input file (points.txt):
+```
+3
+1 1
+2 3
+4 2
+```
+
+Code:
+```bash
+libvori < points.txt
+```
+
+This command will calculate the Voronoi diagram for the points specified in the input file "points.txt".

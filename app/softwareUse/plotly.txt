@@ -1,0 +1,19 @@
+Use Case: Interactive plotting for data visualization.  
+
+Code details and examples: Plotly is a Python library used for creating interactive plots and dashboards. It can be used to create various types of plots like scatter plots, line charts, bar charts, etc. Here is an example of creating a simple scatter plot using Plotly:
+
+```python
+import plotly.express as px
+
+# Sample data
+data = {'x': [1, 2, 3, 4, 5],
+        'y': [10, 12, 8, 15, 7]}
+
+# Create a scatter plot
+fig = px.scatter(data, x='x', y='y', title='Sample Scatter Plot')
+
+# Show the plot
+fig.show()
+```
+
+This code snippet creates a scatter plot with x and y values provided in the sample data dictionary. The `px.scatter` function from Plotly Express is used to create the plot, and `fig.show()` is used to display the plot.

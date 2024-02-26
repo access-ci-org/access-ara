@@ -1,0 +1,41 @@
+Use Case: BLAST (Basic Local Alignment Search Tool) is a widely used bioinformatics tool for comparing nucleotide or protein sequences to sequence databases for finding similarities.
+
+Code details and examples:
+1. Using BLAST to search for similar sequences in a nucleotide database:
+```shell
+blastn -query query_sequence.fa -db database -out output_file.txt
+```
+Input file format (query_sequence.fa):
+```
+>Query_sequence
+ATCGATCGATCG...
+```
+2. Using BLAST to search for similar sequences in a protein database:
+```shell
+blastp -query query_protein.fasta -db database -out output_file.txt
+```
+Input file format (query_protein.fasta):
+```
+>Query_protein
+MTHKELVAVLGSGGVGKSAQIGAAIMSRQGR...
+```
+3. Using BLAST to search for similar sequences in a BLAST-formatted custom database:
+```shell
+blastp -query query_protein.fasta -db custom_database -out output_file.txt
+```
+In this case, the custom database needs to be formatted using the `makeblastdb` command before running the BLAST search.
+
+4. Using BLAST to perform a pairwise alignment between two sequences:
+```shell
+blastn -query sequence1.fa -subject sequence2.fa -out output_file.txt
+```
+Input file format (sequence1.fa and sequence2.fa):
+```
+>Sequence1
+ATCGATCGATCG...
+
+>Sequence2
+AGCTAGCTAGCT...
+```
+
+NOTE: The actual command structure may vary based on the BLAST version and the options you want to use. Please refer to the specific BLAST documentation for more details.

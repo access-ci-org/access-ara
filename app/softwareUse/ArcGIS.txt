@@ -1,0 +1,21 @@
+Use Case: GIS Mapping
+Code details and examples:
+ArcGIS is a powerful geographic information system (GIS) software used for creating, analyzing, and managing spatial data. It supports various file formats for input such as shapefiles, GeoTIFF, and CSV files. Here is an example of using ArcGIS to perform a spatial analysis using a shapefile as input:
+
+Sample Input File: input_data.shp
+Format: ESRI Shapefile
+Details: Contains polygons representing different regions with attributes such as population and area.
+
+Sample Code:
+```python
+import arcpy
+
+# Set the workspace
+arcpy.env.workspace = "C:/data"
+
+# Perform spatial analysis
+arcpy.analysis.Buffer("input_data.shp", "output_data.shp", "10 Kilometers")
+```
+
+Command to run:
+This is an example of running a Python script with ArcGIS capabilities. You can run this script using the ArcGIS Python window or any Python environment with ArcPy installed.

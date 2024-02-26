@@ -1,0 +1,14 @@
+Use Case: IDE for R programming  
+Code details and examples:  
+RStudio is an integrated development environment (IDE) for R programming. Users can write, compile, and debug R code in RStudio.  
+
+Input files: R script files (.R)  
+Sample input file content (sample_script.R):  
+```
+# This is a sample R script
+x <- 1:10
+mean(x)
+```
+
+Command to run:  
+No specific command required as RStudio provides a Graphical User Interface (GUI) for R programming. Users can simply open RStudio, create a new script, paste the code snippet, and run it using the "Run" button.

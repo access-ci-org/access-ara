@@ -1,0 +1,28 @@
+Use Case: Phylogenetic tree inference using RAxML
+
+Code details and examples:
+RAxML is a widely used program for phylogenetic tree inference based on maximum likelihood. It supports various substitution models and can handle large datasets efficiently. Below is an example of running RAxML with a DNA alignment file.
+
+**Sample Input Files:**
+
+- Alignment file (input.phy):
+```
+4 10
+Seq1    ATCGATCGAT
+Seq2    ATCGATAGCT
+Seq3    ATCGATCGAT
+Seq4    ATCGTAGCTA
+```
+
+**Command to Run:**
+```
+raxml -s input.phy -m GTRGAMMA -n output
+```
+
+- `-s`: Input alignment file
+- `-m`: Model specification (here using GTR+GAMMA model)
+- `-n`: Output file prefix
+
+Once RAxML finishes running, you can find the output files with the phylogenetic trees in the RAxML_bestTree and RAxML_bipartitions files.
+
+Please note that the actual command may vary depending on the version and installation of RAxML.

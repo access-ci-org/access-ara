@@ -1,0 +1,32 @@
+Use Case: Workflow management system for creating reproducible and scalable data analyses.
+
+Code details and examples:
+
+**Sample input files:**
+- `inputs.txt`: 
+```
+file1.txt
+file2.txt
+```
+
+**Snakefile:**
+```python
+rule all:
+    input:
+        "output.txt"
+
+rule create_output:
+    input:
+        expand("{file}.txt", file=open('inputs.txt').read().strip().splitlines())
+    output:
+        "output.txt"
+    shell:
+        "cat {input} > {output}"
+```
+
+**Command to run the workflow:**
+```
+snakemake -s Snakefile
+```
+
+This will create an `output.txt` file by concatenating the contents of `file1.txt` and `file2.txt`. The input files are specified in `inputs.txt` and the rules for creating the output file are defined in the Snakefile.

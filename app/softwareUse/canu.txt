@@ -1,0 +1,19 @@
+Use Case: Genome assembly using Canu
+Code details and examples:
+Canu is a software for assembling genomes using PacBio or Oxford Nanopore sequencing data. Here is an example of how to run Canu for genome assembly:
+
+Input files required:
+- PacBio or Nanopore sequencing data files (e.g., fastq or fasta format)
+
+Command to run Canu:
+```
+canu -p myGenome -d myGenomeFolder genomeSize=5m -nanopore-raw nanopore_data.fastq
+```
+
+In the above command:
+- `-p myGenome` specifies the prefix for output files.
+- `-d myGenomeFolder` specifies the output directory.
+- `genomeSize=5m` specifies the estimated genome size (5 megabases in this example).
+- `-nanopore-raw nanopore_data.fastq` specifies the input Nanopore sequencing data file.
+
+This is just a basic example, and Canu provides many options for genome assembly customization.

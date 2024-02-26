@@ -1,0 +1,19 @@
+Use Case: Unit conversion in scientific computing.
+
+Code details and examples:
+```python
+from udunits2 import Unit
+
+# Create a Unit object for converting temperature from Celsius to Fahrenheit
+celsius = Unit('degree_Celsius')
+fahrenheit = Unit('degree_Fahrenheit')
+
+# Define the value in Celsius
+celsius_value = 25.0
+
+# Convert Celsius to Fahrenheit
+fahrenheit_value = celsius.convert(celsius_value, fahrenheit)
+
+print(f"{celsius_value} degrees Celsius is equal to {fahrenheit_value} degrees Fahrenheit.")
+```
+Ensure you have the `udunits2` Python library installed before running this code.

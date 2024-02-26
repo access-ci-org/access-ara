@@ -1,0 +1,36 @@
+Use Case: Deep Neural Network Library (DNNL)
+Code details and examples:
+DNNL, also known as oneDNN, is a high-performance deep learning library developed by Intel. DNNL provides optimized primitives for deep learning algorithms. Below is an example of using DNNL for a simple matrix multiplication operation.
+
+```python
+import numpy as np
+import dnnl
+
+# Create input matrices
+matrix_a = np.random.randn(3, 4).astype(np.float32)
+matrix_b = np.random.randn(4, 5).astype(np.float32)
+
+# Define the expected output shape
+output_shape = (3, 5)
+
+# Create a dnnl memory object for input matrices
+memory_a = dnnl.memory(matrix_a.shape, dnnl.dt.f32, dnnl.memory.format_tag.nc)
+memory_b = dnnl.memory(matrix_b.shape, dnnl.dt.f32, dnnl.memory.format_tag.nc)
+
+# Create a dnnl memory object for the output matrix
+memory_output = dnnl.memory(output_shape, dnnl.dt.f32, dnnl.memory.format_tag.nc)
+
+# Create a dnnl primitive for matrix multiplication
+primitive_desc = dnnl.gemm_desc('T', 'N', output_shape, matrix_a.shape[1], 'F32')
+primitive = dnnl.primitive(primitive_desc, [memory_a, memory_b], [memory_output])
+
+# Execute the primitive
+primitive.execute([memory_a.pointer, memory_b.pointer], [memory_output.pointer])
+
+# Retrieve the result
+result = np.array(memory_output.pointer, copy=True).reshape(output_shape)
+
+print(result)
+```
+
+To run the code, you can save it in a file (e.g., `dnnl_example.py`) and execute it using Python. Note that you may need to have DNNL library installed and properly set up in your environment to run the code successfully.

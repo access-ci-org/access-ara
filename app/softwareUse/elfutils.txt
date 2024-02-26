@@ -1,0 +1,15 @@
+Use Case: Extract debugging information from ELF binaries using elfutils
+Code details and examples:
+
+Elfutils is a collection of utilities and libraries for handling ELF (Executable and Linkable Format) files. One common use case is to extract debugging information from ELF binaries using the `eu-readelf` tool.
+
+Sample input file (binary file): `example_binary`
+
+Command to extract debugging information:
+```
+eu-readelf -w -a example_binary
+```
+
+This command will display all debugging information present in the `example_binary` file. The `-w` flag is used to display DWARF information (debugging information) and the `-a` flag is used to display all headers of the ELF file.
+
+Please note that you may need to adjust the command based on the specific information you are interested in extracting from the ELF binary.

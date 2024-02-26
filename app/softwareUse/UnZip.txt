@@ -1,0 +1,8 @@
+Use Case: Unzip files
+
+Code details and examples:
+```
+unzip file.zip
+```
+
+You can simply use the "unzip" command followed by the name of the zip file you want to extract.

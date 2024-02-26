@@ -1,0 +1,20 @@
+Use Case: Working with HDF5 files in Python using h5py
+
+Code details and examples:
+```python
+import h5py
+
+# Create a new HDF5 file
+file = h5py.File('example.h5', 'w')
+
+# Create a dataset inside the file
+data = file.create_dataset('dataset', data=[1, 2, 3, 4, 5])
+
+# Close the file
+file.close()
+```
+
+To run the code:
+```bash
+python your_script.py
+```  

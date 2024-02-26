@@ -1,0 +1,28 @@
+Use Case: MCell is a Monte Carlo modeling and simulation software used for creating spatially realistic models of cellular signaling and molecular processes.
+
+Code details and examples:
+1. Input files: MCell requires a model file in ".mdl" format and a configuration file in ".cfg" format to run simulations.
+2. Sample model file (sample.mdl):
+```plaintext
+BeginModel
+  Species A
+    D 1e-6
+  EndSpecies
+  Species B
+    D 1e-6
+  EndSpecies
+  Reaction A + B -> C
+    k 1e-3
+  EndReaction
+EndModel
+```
+3. Sample configuration file (sample.cfg):
+```plaintext
+BeginSimulation
+  Iterations 1000
+EndSimulation
+```
+4. Command to run MCell simulation:
+```bash
+mcell sample.mdl sample.cfg
+```

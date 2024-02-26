@@ -1,0 +1,45 @@
+Use Case: Captum is an open-source library to interpret and analyze the predictions of neural networks. It provides various attribution algorithms to understand the importance of input features on the model's output.
+
+Code details and examples:
+Captum can be used with PyTorch to analyze the model's behavior. Here is an example of using Captum with a simple PyTorch model:
+
+First, install captum:
+```bash
+pip install captum
+```
+
+Then, you can use Captum to calculate feature attributions. Below is a code snippet demonstrating how to use Captum to calculate Integrated Gradients for a PyTorch model:
+
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from captum.attr import IntegratedGradients
+
+# Define a simple model
+class SimpleModel(nn.Module):
+    def __init__(self):
+        super(SimpleModel, self).__init__()
+        self.linear = nn.Linear(10, 1)
+
+    def forward(self, x):
+        return self.linear(x)
+
+model = SimpleModel()
+optimizer = optim.SGD(model.parameters(), lr=0.01)
+
+# Create input data
+input_data = torch.randn(1, 10, requires_grad=True)
+
+# Create IntegratedGradients object
+ig = IntegratedGradients(model)
+
+# Calculate feature attributions
+attributions = ig.attribute(input_data, target=0)
+
+print("Feature Attributions:", attributions)
+```
+
+In this example, we first define a simple PyTorch model and create an input tensor. We then use Captum's IntegratedGradients algorithm to calculate feature attributions for the input_data tensor.
+
+Please note that the above code is a simple example to demonstrate the usage of Captum. In a real-world scenario, you would replace the SimpleModel with your own neural network model.

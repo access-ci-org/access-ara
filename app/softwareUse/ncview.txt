@@ -1,0 +1,11 @@
+Use Case: Displaying and exploring netCDF files with ncview.
+
+Code details and examples:
+ncview is a visual browser for netCDF format files. It allows users to view and analyze the content of netCDF files interactively. Here is an example of how to use ncview to open a netCDF file:
+
+Code:
+```
+ncview path/to/netcdf_file.nc
+```
+
+Once the command is executed, a new window will open displaying the contents of the netCDF file. Users can interact with the data, visualize variables, and explore metadata using the ncview interface.

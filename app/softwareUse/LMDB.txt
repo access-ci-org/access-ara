@@ -1,0 +1,45 @@
+LMDB (Lightning Memory-Mapped Database) is a fast, memory-efficient database library. 
+
+Use Case: Creating an LMDB database with Python
+
+Code details and examples:
+```python
+import lmdb
+
+# Create a new LMDB environment
+env = lmdb.open('mydatabase', map_size=104857600)  # 100 MB map size
+
+# Begin a new write transaction
+with env.begin(write=True) as txn:
+    # Open the database
+    db = txn.cursor()
+
+    # Insert key-value pairs
+    db.put(b'key1', b'value1')
+    db.put(b'key2', b'value2')
+
+# Close the LMDB environment
+env.close()
+```
+
+Use Case: Accessing an LMDB database with Python
+
+Code details and examples:
+```python
+import lmdb
+
+# Open an existing LMDB environment
+env = lmdb.open('mydatabase', readonly=True)
+
+# Begin a read transaction
+with env.begin() as txn:
+    # Open the database
+    db = txn.cursor()
+
+    # Retrieve value for a key
+    value = db.get(b'key1')
+    print(value)
+
+# Close the LMDB environment
+env.close()
+```

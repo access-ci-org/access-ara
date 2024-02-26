@@ -1,0 +1,21 @@
+Use Case: BerkeleyGW is a set of computer codes that calculates the quasiparticle properties and the optical responses of a large variety of materials from bulk periodic crystals to nanostructures. 
+
+Code details and examples:
+1. To calculate the electronic band structures using BerkeleyGW, you can use the following input file (example.in):
+
+```
+BANDS
+    ng0    ng1    ng2    divk   ecut   nempty
+    8      8      8      6      7.0    10
+END
+```
+
+2. Run the calculation using the following command:
+
+```
+bgw.x -npools 1 -nimage 1 -input example.in > example.out
+```
+
+3. Check the output file (example.out) for the results of the electronic band structure calculation. 
+
+Please refer to the official BerkeleyGW documentation for more detailed information on usage and examples: https://www.berkeleygw.org/

@@ -1,0 +1,47 @@
+Use Case: Read and write sound files using libsndfile library.
+
+Code details and examples:
+Sample input files:
+- Input sound file: sample.wav
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <sndfile.h>
+
+int main() {
+    SF_INFO info;
+    SNDFILE *file = sf_open("sample.wav", SFM_READ, &info);
+    if (!file) {
+        printf("Error opening the file\n");
+        return 1;
+    }
+
+    printf("Sample rate: %d\n", info.samplerate);
+    printf("Channels: %d\n", info.channels);
+
+    // Read the data
+    int sampleCount = info.frames * info.channels;
+    float *data = (float *)malloc(sampleCount * sizeof(float));
+    sf_read_float(file, data, sampleCount);
+
+    // Process the data here
+
+    sf_close(file);
+    free(data);
+
+    return 0;
+}
+```
+
+Compile the code using:
+```bash
+gcc read_sound_file.c -o read_sound_file -lsndfile
+```
+
+Run the executable:
+```bash
+./read_sound_file
+```
+
+Note: This is a simple example of reading a sound file using libsndfile. Remember to handle errors and add more functionalities as needed in a real-world application.

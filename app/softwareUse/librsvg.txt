@@ -1,0 +1,16 @@
+Use Case: librsvg is a library for rendering Scalable Vector Graphics (SVG) files. It can be used to extract information from SVG files and render them to various output formats.
+
+Code details and examples:
+```bash
+# To render an SVG file to a PNG file using librsvg
+rsvg-convert input.svg -o output.png
+```
+
+Input file (input.svg):
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+```
+
+This will generate a PNG file (output.png) with a red circle on a black background.

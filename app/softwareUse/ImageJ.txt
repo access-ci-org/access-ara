@@ -1,0 +1,19 @@
+Use Case: Image analysis and processing
+
+Code details and examples:
+- Sample input files: Sample images in various formats (e.g. .tif, .jpg)
+- Format required: Depends on the specific analysis or processing task
+- Code snippet: 
+  - Example 1: opening an image
+    ```
+    File file = new File("path/to/image.tif");
+    ImagePlus image = IJ.openImage(file.getAbsolutePath());
+    image.show();
+    ```
+  - Example 2: applying a filter
+    ```
+    ImagePlus image = IJ.openImage("path/to/image.tif");
+    image.getProcessor().smooth();
+    image.show();
+    ```
+- Command to run (if available): ImageJ can be run by executing the ImageJ executable file.

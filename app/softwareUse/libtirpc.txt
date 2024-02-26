@@ -1,0 +1,25 @@
+Use Case: Remote Procedure Call (RPC) library for network communication.
+Code details and examples: 
+libtirpc is a library that provides support for the transport-independent RPC (TI-RPC) protocol. It is commonly used in Unix-based systems for remote procedure call communication between processes over a network.
+
+Sample input files: 
+- No specific input files required for using the libtirpc library.
+
+Code:
+#include <rpc/rpc.h> 
+// Include necessary header files for using the libtirpc library
+
+// Sample code demonstrating the usage of libtirpc library
+CLIENT *cl; 
+cl = clnt_create("hostname", program_number, program_version, "nettype"); 
+// Create a client handle
+if (cl == NULL) { 
+    clnt_pcreateerror("Error creating RPC client"); 
+    exit(1); 
+} 
+// Use the client handle for making RPC calls
+// Close the client handle when done
+clnt_destroy(cl);
+
+Command to run (if available): 
+- No specific command to run as libtirpc is a library for use in programming and needs to be linked with the application using it.

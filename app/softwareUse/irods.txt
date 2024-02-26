@@ -1,0 +1,23 @@
+Use Case: Data management and sharing software.
+
+Code details and examples:
+- iRODS (Integrated Rule-Oriented Data System) is a data management system that allows users to organize, share, and manage large volumes of data across different storage systems and networks.
+
+- To interact with iRODS, you can use the iCommands which provide a set of command-line utilities for managing data within an iRODS system.
+
+Example of using the icd command to change to a specific iRODS collection (directory):
+```
+icd /<irodsZone>/home/<username>/data
+```
+
+Example of using the iput command to upload a file to iRODS:
+```
+iput /path/to/local/file.txt /<irodsZone>/home/<username>/data/file.txt
+```
+
+Example of using the iget command to download a file from iRODS:
+```
+iget /<irodsZone>/home/<username>/data/file.txt /path/to/local/file.txt
+```
+
+These are just a few examples of using iCommands with iRODS. The full list of iCommands and their usage can be found in the iRODS documentation.

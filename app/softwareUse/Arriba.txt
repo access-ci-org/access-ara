@@ -1,0 +1,17 @@
+Arriba (Analysis of gene fusions, RNA-binding regions, and rearrangements). 
+
+Use Case: Arriba is a tool for detecting gene fusions, recurrent RNA binding protein (RBP) hotspots, and chromosomal rearrangements in RNA-seq data.
+
+Code details and examples:
+
+Input files:
+- RNA-seq reads in BAM format
+
+Command to run Arriba:
+```
+arriba --aligner star --reference reference.fa --transcripts transcripts.gtf --output output_dir/ input.bam
+```
+
+Note: In the command above, replace `reference.fa`, `transcripts.gtf`, `output_dir/`, and `input.bam` with the appropriate files and directories.
+
+For more information and parameters, you can refer to the Arriba documentation: [Arriba GitHub](https://github.com/suhrig/arriba)

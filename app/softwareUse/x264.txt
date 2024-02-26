@@ -1,0 +1,7 @@
+Use Case: Video encoding with x264
+Code details and examples: 
+```
+# Sample input video file: input.mp4
+# Command to encode video using x264
+x264 input.mp4 -o output.mp4
+```

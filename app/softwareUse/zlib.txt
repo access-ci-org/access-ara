@@ -1,0 +1,26 @@
+Use Case: Data compression using zlib
+
+Code details and examples:
+```python
+import zlib
+
+# Input data to be compressed
+data = b'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+
+# Compressing data using zlib
+compressed_data = zlib.compress(data)
+
+# Decompressing data
+decompressed_data = zlib.decompress(compressed_data)
+
+print("Original data:", data)
+print("Compressed data:", compressed_data)
+print("Decompressed data:", decompressed_data)
+```
+
+To run the above code, save it in a Python script (e.g., `zlib_example.py`) and execute it using a Python interpreter.
+
+Command to run:
+```bash
+python zlib_example.py
+```

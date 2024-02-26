@@ -1,0 +1,19 @@
+Use Case: Compiling a simple C++ code using the Intel oneAPI DPC++ compiler
+
+Code details and examples:
+```cpp
+// Sample C++ code (hello.cpp)
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, oneAPI!" << std::endl;
+    return 0;
+}
+```
+
+```sh
+# Command to compile the C++ code using the Intel oneAPI DPC++ compiler
+dpcpp hello.cpp -o hello
+```
+
+Note: This example assumes you have set up the oneAPI development environment and have the necessary tools installed. This code can be compiled using the `dpcpp` command, which is the Intel oneAPI DPC++ compiler.

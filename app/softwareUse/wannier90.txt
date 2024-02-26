@@ -1,0 +1,21 @@
+Use Case: Wannier90 is a tool for generating maximally-localized Wannier functions from a set of Bloch states, typically obtained from DFT calculations.
+
+Code details and examples:
+Input files (example_hr.dat):
+```
+&input
+    hr_file = 'wannier90_hr.dat'
+    output_dir = './'
+    prefix = 'silicon'
+    postproc = True
+    write_hr = True
+    write_xyz = True
+/
+```
+
+Code to run Wannier90:
+```
+wannier90.x -pp silicon
+```
+
+This command will run Wannier90 with the specified input file (example_hr.dat) to generate maximally-localized Wannier functions. Make sure to have the required input files (e.g., wannier90_hr.dat) and DFT output files ready before running Wannier90.

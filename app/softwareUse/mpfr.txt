@@ -1,0 +1,48 @@
+Use Case: Arbitrary-precision arithmetic with mpfr.
+
+Code details and examples:
+1. Example input file (input.txt):
+```
+10
+3.14159265358979323846264338327950288419716939937510
+```
+
+2. Code snippet for arbitrary-precision arithmetic using mpfr in C:
+```c
+#include <stdio.h>
+#include <mpfr.h>
+
+int main() {
+    mpfr_t x, pi;
+    mpfr_init2(x, 1000);
+    mpfr_init(pi);
+
+    FILE *file = fopen("input.txt", "r");
+    mpfr_inp_str(x, file, 10);
+    mpfr_const_pi(pi, MPFR_RNDN);
+
+    mpfr_add(x, x, pi, MPFR_RNDN);
+  
+    printf("Result: ");
+    mpfr_out_str(stdout, 10, 0, x, MPFR_RNDN);
+    printf("\n");
+
+    mpfr_clear(x);
+    mpfr_clear(pi);
+    fclose(file);
+    
+    return 0;
+}
+```
+
+3. Compile the code using mpfr library:
+```bash
+gcc -o mpfr_example mpfr_example.c -lmpfr
+```
+
+4. Run the compiled code:
+```bash
+./mpfr_example
+```
+
+This code reads a number from the input file, adds it to the value of pi with arbitrary precision, and prints the result.

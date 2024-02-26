@@ -1,0 +1,16 @@
+Use Case: Data compression
+Code details and examples:
+Brotli is a generic-purpose lossless compression algorithm that compresses data using a combination of a modern variant of the LZ77 algorithm, Huffman coding, and 2nd order context modeling. It is particularly effective for web content compression.
+
+Sample Input File (input.txt):
+This is a sample input file for Brotli compression.
+
+Compression command:
+```
+brotli input.txt
+```
+
+Decompression command:
+```
+brotli -d input.txt.br
+```

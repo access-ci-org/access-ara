@@ -1,0 +1,9 @@
+Use Case: Generating documentation from Texinfo files.  
+Code details and examples: "makeinfo" is a program that converts Texinfo files into various output formats, such as Info, HTML, and plain text. 
+
+Example of running "makeinfo" command:
+```
+makeinfo input.texi -o output.info
+```
+
+This command will convert the Texinfo file "input.texi" into an Info file "output.info".

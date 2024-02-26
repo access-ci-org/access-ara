@@ -1,0 +1,46 @@
+Use Case: gdbm - GNU dbm database library
+
+Code details and examples:
+GNU dbm is a library for manipulating hash databases. Here is an example of how to create and manipulate a gdbm database with sample input files:
+
+1. Create a new gdbm database file:
+```bash
+$ gdbmtool -c mydatabase.db
+```
+
+2. Add key-value pairs to the database:
+```bash
+$ gdbmtool -a mydatabase.db
+> add key1 value1
+> add key2 value2
+> exit
+```
+
+3. Retrieve a value from the database using a key:
+```bash
+$ gdbmtool -r mydatabase.db
+> fetch key1
+```
+
+4. Update a value in the database:
+```bash
+$ gdbmtool -u mydatabase.db
+> store key1 new_value
+> exit
+```
+
+5. Delete a key from the database:
+```bash
+$ gdbmtool -d mydatabase.db
+> delete key1
+```
+
+6. Dump the contents of the database to a text file:
+```bash
+$ gdbm_dump mydatabase.db > mydatabase_dump.txt
+```
+
+7. Restore the database from a dump file:
+```bash
+$ gdbm_load mydatabase.db < mydatabase_dump.txt
+```

@@ -1,0 +1,13 @@
+Use Case: HWLOC (Hardware Locality)
+
+Code details and examples:
+HWLOC (Hardware Locality) is a software package that provides a portable abstraction (and tool) for the hierarchical topology of modern architectures. It primarily helps applications identify the physical hardware topology of the system on which they're running.
+
+Example of running lstopo command to visualize the topology of the system:
+```
+lstopo
+```
+
+For more advanced usage such as specifying input files or customizing the output format, you can refer to the official documentation: https://www.open-mpi.org/projects/hwloc/
+
+Note: The exact command and options may vary depending on the version of HWLOC installed on your system.

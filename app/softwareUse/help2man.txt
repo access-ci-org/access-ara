@@ -1,0 +1,24 @@
+Use Case: Generating a man page for a command line tool using help2man.
+
+Code details and examples:
+1. Create a simple bash script (example_script.sh) that prints "Hello, World!" when run.
+```bash
+echo "Hello, World!"
+```
+
+2. Save the script and make it executable.
+```bash
+chmod +x example_script.sh
+```
+
+3. Use help2man to generate a man page for the script.
+```bash
+help2man ./example_script.sh -o example_script.1
+```
+
+4. View the generated man page.
+```bash
+man ./example_script.1
+```
+
+This will display the man page with the help text extracted from the script.

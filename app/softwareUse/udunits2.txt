@@ -1,0 +1,33 @@
+Use Case: udunits2 is a package for manipulating units of physical quantities.
+
+Code details and examples:
+1. Convert temperature from Celsius to Fahrenheit using udunits2:
+   Input File (temp.cdl):
+   ```
+   netcdf temp {
+   dimensions:
+       time = 1 ;
+   variables:
+       float temperature(time) ;
+       temperature:units = "degrees_celsius" ;
+   data:
+       temperature = 25.0 ;
+   }
+   ```
+   
+   Command to convert using udunits2:
+   ```
+   udunits -o temp.cdl temp.nc
+   ```
+
+2. Perform unit conversion using udunits2 in Python:
+   Code snippet:
+   ```python
+   from udunits2 import Unit
+   temperature_celsius = 25.0
+   temp_c = Unit("degrees_celsius")
+   temp_f = temp_c.convert(temperature_celsius, Unit("degrees_fahrenheit"))
+   print(temp_f)
+   ```
+
+(Note: The above Python code snippet assumes that udunits2 is installed and available in the Python environment.)

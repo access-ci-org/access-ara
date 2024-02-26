@@ -1,0 +1,23 @@
+Use Case: Securely transfer files between two remote servers using OpenSSH.
+Code details and examples:
+1. Transfer a file from the local machine to a remote server:
+```bash
+scp /path/to/local/file username@remote_server:/path/to/destination/directory
+```
+
+2. Transfer a file from a remote server to the local machine:
+```bash
+scp username@remote_server:/path/to/remote/file /path/to/destination/directory
+```
+
+3. Transfer an entire directory from the local machine to a remote server:
+```bash
+scp -r /path/to/local/directory username@remote_server:/path/to/destination/directory
+```
+
+4. Transfer an entire directory from a remote server to the local machine:
+```bash
+scp -r username@remote_server:/path/to/remote/directory /path/to/destination/directory
+```
+
+Note: Make sure you have SSH access to the remote server and the appropriate permissions to read and write files.

@@ -1,0 +1,23 @@
+Use Case: Java
+Code details and examples:
+Java is a programming language and does not have specific sample input files. Below is a simple "Hello World" program in Java.
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+To compile and run the Java program:
+1. Save the code in a file named `HelloWorld.java`.
+2. Open a command prompt or terminal.
+3. Compile the program using the command:
+   ```
+   javac HelloWorld.java
+   ```
+4. Run the compiled program using the command:
+   ```
+   java HelloWorld
+   ```

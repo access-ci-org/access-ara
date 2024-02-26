@@ -1,0 +1,48 @@
+Use Case: MATIO (MATLAB I/O)
+MATIO is a library for reading and writing MATLAB MAT files. It supports MATLAB v4 and v5 MAT file formats.
+
+Code details and examples:
+Example of a MATLAB MAT file (sample.mat):
+```
+% sample.mat
+A = [1, 2, 3; 4, 5, 6; 7, 8, 9];
+save('sample.mat', 'A');
+```
+
+Reading a MAT file using MATIO in C++:
+```cpp
+#include <matio.h>
+#include <iostream>
+
+int main() {
+    mat_t *matfp = Mat_Open("sample.mat", MAT_ACC_RDONLY);
+    if (matfp) {
+        matvar_t *matvar = Mat_VarRead(matfp, "A");
+        if (matvar) {
+            if (matvar->class_type == MAT_T_DOUBLE && matvar->rank == 2) {
+                double *data = (double*)matvar->data;
+                size_t numel = matvar->dims[0] * matvar->dims[1];
+                for (size_t i = 0; i < numel; i++) {
+                    std::cout << data[i] << " ";
+                }
+                std::cout << std::endl;
+            }
+            Mat_VarFree(matvar);
+        }
+        Mat_Close(matfp);
+    }
+    return 0;
+}
+```
+
+Compile the C++ code linking with MATIO:
+```
+g++ example.cpp -lmatio -lz -o example
+```
+
+Run the compiled code:
+```
+./example
+```
+
+This will read the MAT file "sample.mat" and print the contents of the variable "A" (matrix) stored in it.

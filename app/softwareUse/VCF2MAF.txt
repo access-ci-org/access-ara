@@ -1,0 +1,24 @@
+Use Case: Converting VCF (Variant Call Format) files to MAF (Mutation Annotation Format) files.
+
+Code details and examples:
+```bash
+vcf2maf my_input.vcf -o my_output.maf
+```
+
+SAMPLE INPUT (VCF file - my_input.vcf):
+```
+##fileformat=VCFv4.2
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+#CHROM  POS ID  REF ALT QUAL    FILTER  INFO
+1   1001    .   A   T   20  PASS    DP=30
+2   2001    .   C   G   30  PASS    DP=40
+3   3001    .   G   A   25  PASS    DP=35
+```
+
+SAMPLE OUTPUT (MAF file - my_output.maf):
+```
+Hugo_Symbol Entrez_Gene_Id Center  NCBI_Build  Chromosome  Start_Position  End_Position    Strand  Variant_Classification  Variant_Type    Reference_Allele    Tumor_Seq_Allele1    Tumor_Seq_Allele2    dbSNP_RS    dbSNP_Val_Status    Match_Norm_Seq_Allele1   Match_Norm_Seq_Allele2   Tumor_Sample_Barcode    Matched_Norm_Sample_Barcode    Tumor_Sample_UUID   Matched_Norm_Sample_UUID
+GeneA   123 Center1 GRCh37  1   1001    1001    +   Missense_Mutation   SNP A   A   T   .   dbSNP   A   A   Tumor1  Normal1  UUID_Tumor1 UUID_Normal1
+GeneB   456 Center2 GRCh37  2   2001    2001    +   In_Frame_Ins   INS C   C   CG  .   dbSNP   C   C   Tumor2  Normal2  UUID_Tumor2 UUID_Normal2
+GeneC   789 Center3 GRCh37  3   3001    3001    +   Silent  SNP G   G   A   .   dbSNP   G   G   Tumor3  Normal3  UUID_Tumor3 UUID_Normal3
+```

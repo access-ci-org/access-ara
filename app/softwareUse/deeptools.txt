@@ -1,0 +1,24 @@
+Use Case: DeepTools is a package for visualization and analysis of high-throughput sequencing data.
+
+Code details and examples:
+1. Compute matrix of ChIP-seq signal around transcription start sites:
+```bash
+computeMatrix reference-point --referencePoint TSS -b 1000 -a 1000 -R genes.bed -S signal.bw -o signal_matrix.gz
+```
+
+2. Plot heatmap of ChIP-seq signal around transcription start sites:
+```bash
+plotHeatmap -m signal_matrix.gz -out heatmap.png --colorMap RdBu
+```
+
+3. Generate profile plot of ChIP-seq signal at specific regions:
+```bash
+computeMatrix scale-regions -S signal.bw -R regions.bed -b 2000 -a 2000 -m 10000 -out profile_matrix.gz
+```
+
+4. Plot profile of ChIP-seq signal at specific regions:
+```bash
+plotProfile -m profile_matrix.gz -out profile.png
+```
+
+For more information and additional usage examples, refer to the official DeepTools documentation: https://deeptools.readthedocs.io/en/latest/

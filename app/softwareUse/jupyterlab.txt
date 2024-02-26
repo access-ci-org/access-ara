@@ -1,0 +1,8 @@
+Use Case: Interactive development environment for data science, machine learning, and scientific computing.
+
+Code details and examples:
+- Sample input files: N/A
+- Format required: N/A
+- Specifications: N/A
+- Code snippets: N/A
+- Command to run: N/A

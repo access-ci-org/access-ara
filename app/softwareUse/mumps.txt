@@ -1,0 +1,45 @@
+I'll provide information based on the assumption that you are referring to the MUMPS (Multi-User Multi-Processing System) software package commonly used for solving large sparse linear systems. 
+
+Use Case: Solving a sparse linear system using MUMPS
+Code details and examples:
+
+1. Input file format:
+    MUMPS accepts sparse matrices in the Matrix Market format (.mtx). Here is an example of a sparse matrix in Matrix Market format:
+    
+    ```
+    %%MatrixMarket matrix coordinate real general
+    % Example matrix
+    5 5 8
+    1 1 1.0
+    2 2 2.0
+    2 3 3.0
+    3 2 4.0
+    3 3 5.0
+    4 4 6.0
+    5 4 7.0
+    5 5 8.0
+    ```
+
+2. Code snippet to solve the linear system using MUMPS in Python with SciPy:
+   
+   ```python
+   import scipy.io
+   import scipy.sparse as sp
+   from scipy.sparse.linalg import spsolve
+   
+   # Load the matrix from the .mtx file
+   matrix = scipy.io.mmread("example_matrix.mtx")
+   A = sp.csc_matrix(matrix)
+   
+   # Assuming the right-hand side vector is b
+   b = np.array([1.0, 2.0, 3.0, 4.0, 5.0])
+   
+   # Solve the linear system using MUMPS
+   x = spsolve(A, b)
+   print(x)
+   ```
+
+3. Command to run (command-line):
+   MUMPS can be used through libraries like PETSc, Trilinos, or directly from Fortran/C code. The command to run depends on the specific application using MUMPS.
+
+Please adjust the code according to your specific matrix and linear system requirements.

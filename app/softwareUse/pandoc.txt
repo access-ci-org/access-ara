@@ -1,0 +1,28 @@
+Use Case: Convert a Markdown file to a PDF file using Pandoc
+Code details and examples:
+```bash
+pandoc input.md -o output.pdf
+```
+In this command:
+- `input.md` is the Markdown file you want to convert.
+- `-o output.pdf` specifies the output file name as a PDF.
+
+
+Use Case: Convert a Markdown file to an HTML file using Pandoc
+Code details and examples:
+```bash
+pandoc input.md -o output.html
+```
+In this command:
+- `input.md` is the Markdown file you want to convert.
+- `-o output.html` specifies the output file name as an HTML file.
+
+
+Use Case: Convert a Markdown file to a LaTeX file using Pandoc
+Code details and examples:
+```bash
+pandoc input.md -o output.tex
+```
+In this command:
+- `input.md` is the Markdown file you want to convert.
+- `-o output.tex` specifies the output file name as a LaTeX file.

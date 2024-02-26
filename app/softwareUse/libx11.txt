@@ -1,0 +1,33 @@
+I am assuming you are asking for information regarding the 'libx11' library used for X Window System protocol support.
+
+Use Case: X11 Programming 
+Code details and examples:
+The libx11 library provides functions for X Window System protocol support. A sample program using libx11 to create a simple window is shown below:
+
+```c
+#include <X11/Xlib.h>
+
+int main() {
+    Display *display = XOpenDisplay(NULL);
+    Window window = XCreateSimpleWindow(display, DefaultRootWindow(display), 0, 0, 200, 100, 0, 0, 0);
+    XMapWindow(display, window);
+    XFlush(display);
+    sleep(10);
+    XCloseDisplay(display);
+    return 0;
+}
+```
+
+To compile the program, you can use the following command (assuming the file is named 'sample.c'):
+
+```bash
+gcc sample.c -lX11 -o sample
+```
+
+To run the compiled program, simply execute:
+
+```bash
+./sample
+```
+
+This will create a simple X Window with a dimensions of 200x100 pixels. The window will be displayed for 10 seconds before closing.

@@ -1,0 +1,16 @@
+Use Case: Downloading a file from a URL
+
+Code details and examples:
+To download a file from a URL using curl, you can simply use the following command:
+
+```bash
+curl -O [URL]
+```
+
+For example, to download a file named example.txt from a website:
+
+```bash
+curl -O https://www.example.com/example.txt
+```
+
+This will download the file and save it in the current directory with the same name as the file on the server.

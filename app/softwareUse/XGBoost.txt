@@ -1,0 +1,54 @@
+XGBoost (Extreme Gradient Boosting) is a popular machine learning library that is known for its speed and performance in gradient boosting framework. It is widely used in machine learning competitions and industry applications.
+
+Use Case: XGBoost can be used for classification and regression tasks.
+
+Code details and examples:
+
+**Installation:**
+```
+pip install xgboost
+```
+
+**Sample Input File:**
+```
+# Importing the necessary libraries
+import xgboost as xgb
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+
+# Loading the dataset
+data = load_breast_cancer()
+X, y = data.data, data.target
+
+# Splitting the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Converting the data into DMatrix objects
+dtrain = xgb.DMatrix(X_train, label=y_train)
+dtest = xgb.DMatrix(X_test, label=y_test)
+```
+
+**Training a Model:**
+```
+# Defining the parameters for XGBoost model
+params = {
+    'objective': 'binary:logistic',
+    'eval_metric': 'logloss',
+    'max_depth': 3
+}
+
+# Training the XGBoost model
+bst = xgb.train(params, dtrain, num_boost_round=100)
+```
+
+**Making Predictions:**
+```
+# Making predictions on the test set
+predictions = bst.predict(dtest)
+```
+
+**Command to Run:**
+- Since XGBoost is a Python library, the code can be run directly in a Python environment.
+
+**Note:** 
+- For more advanced usage and tuning, refer to the official documentation: https://xgboost.readthedocs.io/en/latest/

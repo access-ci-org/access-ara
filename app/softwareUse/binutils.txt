@@ -1,0 +1,20 @@
+Use Case: Binutils is a collection of binary tools for handling binary files, including object files, executables, and libraries.
+
+Code details and examples:
+1. Disassemble an executable file:
+```bash
+objdump -d <executable_file>
+```
+Example:
+```
+objdump -d my_program.exe
+```
+
+2. View the headers of an object file:
+```bash
+readelf -h <object_file>
+```
+Example:
+```
+readelf -h my_object.o
+```

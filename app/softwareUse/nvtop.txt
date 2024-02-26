@@ -1,0 +1,7 @@
+Use Case: Monitoring NVIDIA GPUs on a Linux system.
+Code details and examples: 
+nvtop is a htop-like task monitor that displays the utilization of NVIDIA GPUs in real-time. 
+To run nvtop, simply open a terminal and type: 
+```bash
+nvtop
+```

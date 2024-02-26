@@ -1,0 +1,29 @@
+Use Case: Code generation
+
+Code details and examples: SWIG (Simplified Wrapper and Interface Generator) is a software development tool that connects programs written in C and C++ with scripting languages such as Perl, Python, Ruby, and Tcl. It allows developers to create interfaces for their C and C++ code in various scripting languages.
+
+Here is an example of using SWIG with a simple C++ function to be wrapped for Python:
+
+C++ Function (example.h):
+```cpp
+// example.h
+int add(int a, int b);
+```
+
+SWIG interface file (example.i):
+```
+// example.i
+%module example
+%{
+#include "example.h"
+%}
+
+%include "example.h"
+```
+
+To generate the Python wrapper code using SWIG, run the following command in the terminal:
+```
+swig -c++ -python example.i
+```
+
+This will generate two files, example_wrap.cxx and example.py. The example_wrap.cxx file contains the wrapper code that connects the C++ function with Python. You can then compile the wrapper code along with your C++ code to create a Python module that can be imported and used in Python scripts.

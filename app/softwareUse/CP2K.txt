@@ -1,0 +1,63 @@
+Use Case: CP2K is an open-source quantum chemistry and solid state physics software package. It can perform atomistic simulations of solid state, liquid, molecular, and biological systems.
+
+Code details and examples:
+CP2K requires input files in a specific format called the CP2K input file. Here is an example of a simple input file for a molecular dynamics simulation:
+
+```plaintext
+&GLOBAL
+  RUN_TYPE MD
+  PROJECT_NAME Water_MD
+&END GLOBAL
+
+&MOTION
+  &MD
+    ENSEMBLE NVE
+    TIMESTEP 0.5
+    STEPS 1000
+  &ENDMD
+&END MOTION
+
+&FORCE_EVAL
+  METHOD Quickstep
+  &DFT
+    BASIS_SET_FILE_NAME BASIS_MOLOPT
+    POTENTIAL_FILE_NAME GTH_POTENTIALS
+    &MGRID
+      CUTOFF 300
+    &END MGRID
+    &QS
+      METHOD GPW
+    &END QS
+  &END DFT
+&END FORCE_EVAL
+
+&SUBSYS
+  &CELL
+    ABC 10 10 10
+  &END CELL
+
+  &KIND H
+    ELEMENT H
+    BASIS_SET DZVP-MOLOPT-SR-GTH
+    POTENTIAL GTH-PBE-q1
+  &END KIND
+
+  &KIND O
+    ELEMENT O
+    BASIS_SET DZVP-MOLOPT-SR-GTH
+    POTENTIAL GTH-PBE
+  &END KIND
+
+  &TOPOLOGY
+    COORD_FILE_NAME water.xyz
+    COORD_FILE_FORMAT xyz
+    CONN_FILE_FORMAT OFF
+  &END TOPOLOGY
+&END SUBSYS
+```
+
+To run CP2K with the provided input file, you would typically use a command like:
+
+```
+cp2k.popt Water_MD.inp > Water_MD.out
+```

@@ -1,0 +1,15 @@
+Use Case: Quantum chemistry calculations
+Code details and examples:
+```
+echo "task scf" > water.nw
+echo "start" >> water.nw
+echo "geometry units angstrom" >> water.nw
+echo "  O  0.000000  0.000000  0.000000" >> water.nw
+echo "  H  0.529177  0.000000  0.000000" >> water.nw
+echo "  H -0.211668  0.926822  0.000000" >> water.nw
+echo "end" >> water.nw
+
+nwchem water.nw
+```
+
+This example sets up a simple water molecule geometry in NWChem input file format and performs a self-consistent field (SCF) calculation using NWChem.

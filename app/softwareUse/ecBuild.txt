@@ -1,0 +1,22 @@
+Use Case: Building and Compiling Code with ecBuild
+
+Code details and examples:
+Input file: MyCode.cpp
+```
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+Command to compile with ecBuild:
+```
+ecBuild MyCode.cpp -o MyExecutable
+```
+
+Command to run the compiled executable:
+```
+./MyExecutable
+```

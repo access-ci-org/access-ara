@@ -1,0 +1,29 @@
+Use Case: edgeR is a Bioconductor package in R for differential expression analysis of RNA-seq data.
+
+Code details and examples:
+```
+# Load the edgeR library
+library(edgeR)
+
+# Import count data
+counts <- as.matrix(read.csv("counts.csv", row.names = 1))
+
+# Create a DGEList object
+d <- DGEList(counts = counts)
+
+# Filter lowly expressed genes
+d <- d[rowSums(cpm(d) > 1) >= 2, , keep.lib.sizes = FALSE]
+
+# Perform differential expression analysis
+design <- model.matrix(~group, data = colData(d))
+d <- estimateDisp(d, design)
+fit <- glmFit(d, design)
+lrt <- glmLRT(fit, coef = 2)
+topTags(lrt)
+```
+
+In the above code:
+- "counts.csv" is the input file containing count data for RNA-seq samples.
+- The code reads the count data, filters lowly expressed genes, performs differential expression analysis, and returns the top significant genes.
+
+Command to run: Run each line of code in an R environment.

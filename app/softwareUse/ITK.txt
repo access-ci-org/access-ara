@@ -1,0 +1,58 @@
+Use Case: ITK is an open-source software system to support the segmentation and registration of scientific images, and in particular, medical images.
+
+Code details and examples:
+```cpp
+#include "itkImage.h"
+#include "itkImageFileReader.h"
+#include "itkImageFileWriter.h"
+#include "itkGradientMagnitudeImageFilter.h"
+
+int main(int argc, char *argv[])
+{
+    if (argc < 3)
+    {
+        std::cerr << "Usage: " << argv[0] << " inputImage outputImage" << std::endl;
+        return EXIT_FAILURE;
+    }
+
+    const char* inputImage = argv[1];
+    const char* outputImage = argv[2];
+
+    using ImageType = itk::Image<float, 2>;
+    using ReaderType = itk::ImageFileReader<ImageType>;
+    using WriterType = itk::ImageFileWriter<ImageType>;
+    using GradientFilterType = itk::GradientMagnitudeImageFilter<ImageType, ImageType>;
+
+    ReaderType::Pointer reader = ReaderType::New();
+    writerType::Pointer writer = WriterType::New();
+    GradientFilterType::Pointer gradientFilter = GradientFilterType::New();
+
+    reader->SetFileName(inputImage);
+    gradientFilter->SetInput(reader->GetOutput());
+    writer->setFilename(outputImage);
+    writer->SetInput(gradientFilter->GetOutput());
+
+    try
+    {
+        writer->Update();
+    }
+    catch (itk::ExceptionObject & ex)
+    {
+        std::cerr << "Exception caught!" << std::endl;
+        std::cerr << ex << std::endl;
+        return EXIT_FAILURE;
+    }
+
+    return EXIT_SUCCESS;
+}
+
+```
+To compile: 
+```bash
+g++ -o gradientFilter gradientFilter.cpp -I path/to/ITK/include -L path/to/ITK/lib -lITKCommon -lITKIO
+```
+
+To run:
+```bash
+./gradientFilter inputImage.jpg outputImage.jpg
+```

@@ -1,0 +1,13 @@
+Use Case: GStreamer is a multimedia framework that allows the construction of graphs of media-handling components. It is used for creating multimedia applications such as media players, video editors, and streaming servers.
+
+Code details and examples:
+GStreamer pipelines are created using gst-launch-1.0 command in the terminal. Here is an example of playing a video file using GStreamer:
+
+Command:
+```
+gst-launch-1.0 playbin uri=file:///path/to/your/video.mp4
+```
+
+This command will launch a GStreamer pipeline to play the specified video file.
+
+Please note that GStreamer pipelines can be highly customized to suit the specific needs of the multimedia application being built. Different elements such as filesrc, decodebin, videoscale, autovideosink, etc., can be used in the pipeline to process media in various ways.

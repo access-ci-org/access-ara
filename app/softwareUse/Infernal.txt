@@ -1,0 +1,52 @@
+Use Case: Infernal is a software suite for searching DNA and RNA sequence databases for homologs of RNA structure and sequence motifs. It includes programs for aligning, searching, and annotating RNA homologs.
+
+Code details and examples:
+1. cmsearch (search a CM against a sequence database):
+   - Input file format (CM file): 
+     ```
+     # STOCKHOLM 1.0
+     # EXAMPLE CM
+     // structure
+     <HMMER3/f -> INFERNAL>
+     EXAMPLE  CM
+     ACC   1.0
+     #=GF SQ SS_cons  :::::::::::::::
+     #=GF TP      rf
+     ```
+
+   - Command to run cmsearch:
+     ```
+     cmsearch example.cm sequences.fa
+     ```
+
+2. cmalign (align sequences to a CM):
+   - Input file format (CM file and sequences to align):
+     ```
+     # STOCKHOLM 1.0
+     # EXAMPLE CM
+     // structure
+     <HMMER3/f -> INFERNAL>
+     EXAMPLE  CM
+     ACC   1.0
+     #=GF SQ SS_cons  :::::::::::::::
+     #=GF TP      rf
+     ```
+
+   - Command to run cmalign:
+     ```
+     cmalign example.cm sequences.fa > aligned_sequences.sto
+     ```
+
+3. cmbuild (build a CM from a multiple sequence alignment):
+   - Input file format (Multiple sequence alignment):
+     ```
+     >seq1
+     ACUGAUGCUAGC
+     >seq2
+     ACUGAUGCUAGC
+     ```
+
+   - Command to run cmbuild:
+     ```
+     cmbuild example.cm aligned_sequences.sto
+     ```

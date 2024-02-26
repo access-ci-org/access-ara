@@ -1,0 +1,32 @@
+Use Case: ParFlow is a modeling software for modeling surface and subsurface hydrology processes. It is used for simulations of water movement in the soil and aquifers.
+
+Code details and examples:
+ParFlow input files typically include parameter files, domain files, and run files. Here is an example of an input file for running a ParFlow simulation:
+
+Parameter File (pfset.prm):
+```text
+PFLO TRANSPORT_METHOD BDF2
+PFLO SATUR_THRESHOLD 0.01
+...
+```
+
+Domain File (domain.pfd):
+```text
+DOMAIN CONFIGURATION "domain.config"
+DOMAIN DIMENSION 2
+...
+```
+
+Run File (run.sh):
+```bash
+#!/bin/bash
+mpirun -np 4 parflow < pfset.prm > pfout.log
+```
+
+To run the ParFlow simulation:
+```bash
+chmod +x run.sh
+./run.sh
+```
+
+This is a basic example, and the actual input files and configurations may vary based on the specific simulation being performed.

@@ -1,0 +1,15 @@
+Use Case: Tidal and storm surge modeling with ADCIRC
+Code details and examples:
+ADCIRC is a popular open-source system for solving problems related to water waves, storm surges, tides, and circulation. It is often used for coastal ocean modeling and prediction during extreme events such as hurricanes. Here is an example of how to run ADCIRC for tidal and storm surge modeling with sample input files.
+
+1. Sample input files:
+- fort.15: ADCIRC control file containing simulation parameters
+- nodal_att.dat: Nodal attributes file
+- fort.13: Boundary condition file
+
+2. Command to run ADCIRC:
+```bash
+adcirc
+```
+
+Note: The specific command may vary depending on the platform and installation of ADCIRC. Please refer to the ADCIRC documentation for more details on running simulations and setting up input files.

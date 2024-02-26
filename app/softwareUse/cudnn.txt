@@ -1,0 +1,12 @@
+Use Case: Deep learning framework for NVIDIA GPUs
+
+Code details and examples:
+```
+import torch
+import torch.backends.cudnn as cudnn
+
+# Enable cuDNN for better performance
+cudnn.benchmark = True
+
+# Your deep learning model code here
+```

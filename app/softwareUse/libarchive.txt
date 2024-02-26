@@ -1,0 +1,13 @@
+Use Case: libarchive library for working with archives
+
+Code details and examples:
+libarchive is a C library that can read and write archives in various formats. Here is an example of how to use libarchive to extract files from a zip archive using its command-line utility `bsdtar`. 
+
+Sample input file: test.zip (a zip archive containing several files)
+
+Command to extract files:
+```bash
+bsdtar -xvf test.zip
+```
+
+This command will extract the contents of the test.zip archive in the current directory.

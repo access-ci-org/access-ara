@@ -1,0 +1,24 @@
+Harfbuzz is an open-source text shaping engine that converts Unicode text into beautifully formatted text in various languages and scripts.
+
+Use Case: Text shaping for complex scripts
+Code details and examples:
+
+Input file (input.txt):
+```
+ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ
+```
+
+Code (pseudo-code):
+```
+import harfbuzz
+
+text = read_input_file('input.txt')
+shaped_text = harfbuzz.shape_text(text)
+
+print(shaped_text)
+```
+
+Command to run (if available):
+```
+python script.py
+```

@@ -1,0 +1,34 @@
+Use Case: CoordgenLibs is a set of chemistry software libraries used for 3D coordinate generation of chemical structures.
+
+Code details and examples:
+For using CoordgenLibs, you typically need to integrate it into your software or script. Below is an example of how CoordgenLibs can be used in a Java application to generate 3D coordinates for a chemical structure.
+
+```java
+import com.chemaxon.calculations.coordinates.Coordinates;
+import com.chemaxon.descriptors.common.MoleculeDescriptorsGenerator;
+import com.chemaxon.descriptors.common.MoleculeDescriptorsResult;
+import com.chemaxon.marvin.beans.MolPrinterSettings;
+import chemaxon.struchk.MoleculeChecker;
+import chemaxon.struc.Molecule;
+import chemaxon.struc.MoleculeInitializingException;
+
+public class CoordgenExample {
+
+    public static void main(String[] args) {
+        
+        Molecule mol = new Molecule();
+        try {
+            mol.loadMol("CCO");
+            Coordinates.generate(mol); // Generate 3D coordinates for the molecule
+            System.out.println(mol.toFormat("smiles")); // Print the molecule in SMILES format
+        } catch (MoleculeInitializingException e) {
+            e.printStackTrace();
+        }
+        
+    }
+}
+```
+
+This Java code snippet loads a simple ethanol molecule ("CCO"), generates 3D coordinates using CoordgenLibs, and then prints the molecule in SMILES format.
+
+Note: The code above is a high-level overview of how you could use CoordgenLibs in a Java application. The actual integration and usage may vary based on your specific requirements and the functionality provided by CoordgenLibs.

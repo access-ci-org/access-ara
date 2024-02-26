@@ -1,0 +1,25 @@
+Use Case: re2c is a tool for generating fast lexers.
+Code details and examples:
+re2c input file format:
+```
+re2c:yyfill:enable = 0;
+use 'namespace';
+
+re2c:define:YYCTYPE = 'unsigned char';
+re2c:define:YYCURSOR = '*p';
+re2c:define:YYLIMIT = 'pe';
+
+re2c:api:style = free-form;
+
+number = [0-9]+;
+ws = [ \t]+;
+
+%%
+{ws}      { /* skip whitespace */ }
+{number}  { printf("NUMBER: %s\n", yytext); }
+```
+
+Command to run re2c:
+```
+re2c input_file.re -o output_file.c
+```

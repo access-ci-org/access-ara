@@ -1,0 +1,66 @@
+Use Case: Threading Building Blocks (TBB) is a C++ template library developed by Intel for parallel programming. It allows developers to write parallel programs in a high-level manner without explicitly dealing with threads. 
+
+Code details and examples:
+1. Parallelizing a loop using TBB
+```cpp
+#include <iostream>
+#include <tbb/tbb.h>
+
+void parallel_square(std::vector<int>& input) {
+    tbb::parallel_for(0, input.size(), [&](int i) {
+        input[i] = input[i] * input[i];
+    });
+}
+
+int main() {
+    std::vector<int> data = {1, 2, 3, 4, 5};
+    
+    parallel_square(data);
+    
+    for(int num : data) {
+        std::cout << num << " ";
+    }
+    
+    return 0;
+}
+```
+
+2. Parallel reduction using TBB
+```cpp
+#include <iostream>
+#include <vector>
+#include <tbb/tbb.h>
+
+int parallel_sum(const std::vector<int>& input) {
+    return tbb::parallel_reduce(
+        tbb::blocked_range<const int*>(input.data(), input.data() + input.size()),
+        0,
+        [&](const tbb::blocked_range<const int*>& range, int init) {
+            return std::accumulate(range.begin(), range.end(), init);
+        },
+        std::plus<int>()
+    );
+}
+
+int main() {
+    std::vector<int> data = {1, 2, 3, 4, 5};
+    
+    int sum = parallel_sum(data);
+    
+    std::cout << "Sum: " << sum << std::endl;
+    
+    return 0;
+}
+```
+
+To compile the codes:
+```
+g++ -o parallel_square parallel_square.cpp -ltbb
+g++ -o parallel_sum parallel_sum.cpp -ltbb
+```
+
+To run the compiled binaries:
+```
+./parallel_square
+./parallel_sum
+```

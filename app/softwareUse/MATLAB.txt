@@ -1,0 +1,20 @@
+Use Case: Perform matrix multiplication in MATLAB  
+Code details and examples:  
+Sample Input File (input.txt):  
+```
+2 3
+1 2 3
+4 5 6
+```
+MATLAB code:  
+```matlab
+data = load('input.txt');
+mat1 = data(2:end, :);
+mat2 = rand(size(mat1));
+result = mat1 * mat2;
+disp(result);
+```
+Command to run:  
+```
+matlab -nodisplay -nosplash -nodesktop -r "run('script.m');"
+```

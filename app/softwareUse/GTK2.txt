@@ -1,0 +1,23 @@
+Use Case: GUI development  
+Code details and examples:  
+```python
+import gtk
+
+def on_button_clicked(widget, data=None):
+    print("Button clicked")
+
+window = gtk.Window(gtk.WINDOW_TOPLEVEL)
+window.connect("destroy", gtk.main_quit)
+window.set_title("GTK2 Example")
+
+button = gtk.Button("Click Me")
+button.connect("clicked", on_button_clicked)
+window.add(button)
+window.show_all()
+
+gtk.main()
+```
+Note: This is a simple example of creating a GTK2 window with a button that prints a message when clicked.  
+To run this code, save it in a file (e.g., `gtk_example.py`) and run it using Python.
+
+Command to run: `python gtk_example.py`

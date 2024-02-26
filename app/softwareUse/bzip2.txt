@@ -1,0 +1,24 @@
+Use Case: Compression tool for files and directories.
+
+Code details and examples:
+1. Compress a file:
+```bash
+bzip2 file.txt
+```
+
+2. Decompress a file:
+```bash
+bzip2 -d file.txt.bz2
+```
+
+3. Compress a directory:
+```bash
+tar cvf directory.tar directory/
+bzip2 directory.tar
+```
+
+4. Decompress a directory:
+```bash
+bzip2 -d directory.tar.bz2
+tar xvf directory.tar
+```

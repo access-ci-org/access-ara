@@ -1,0 +1,29 @@
+Use Case: BLAT (BLAST-Like Alignment Tool) is a sequence alignment tool that is commonly used in bioinformatics for comparing sequences.
+
+Code details and examples:
+BLAT can be run through command line with the following command:
+```
+blat <database> <query> <output>
+```
+- `<database>`: The file containing the sequences to search against.
+- `<query>`: The file containing the query sequence.
+- `<output>`: The output file to store the results of the alignment.
+
+Sample input files:
+- Database file (example.fasta):
+```
+>seq1
+ATCGTACGTA
+>seq2
+TACGTACGTA
+```
+- Query file (query.fasta):
+```
+>query1
+ATCGTACGTA
+```
+
+Example command to run BLAT:
+```
+blat example.fasta query.fasta output.psl
+```

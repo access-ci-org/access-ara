@@ -1,0 +1,11 @@
+Use Case: Trinity is a de novo RNA-Seq transcriptome assembler.
+
+Code details and examples:
+- Example input files:
+  - Sample_1.fastq
+  - Sample_2.fastq
+
+- Command to run Trinity:
+```
+Trinity --seqType fq --left Sample_1.fastq --right Sample_2.fastq --output trinity_output
+```

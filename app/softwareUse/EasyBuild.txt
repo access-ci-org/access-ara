@@ -1,0 +1,46 @@
+EasyBuild is a software build and installation framework for building software packages in a structured, repeatable, and robust way. It aims to simplify the process of building software on High-Performance Computing (HPC) clusters.
+
+Use Case: EasyBuild
+Code details and examples:
+1. Install a software package using EasyBuild:
+- To install a software package like GCC using EasyBuild, you can create an EasyConfig file (e.g., gcc.eb) with the necessary details and dependencies. Here is an example content for the gcc.eb EasyConfig file:
+
+```
+easyblock = 'ConfigureMake'
+name = 'gcc'
+version = '9.3.0'
+toolchain = {'name': 'gcc', 'version': '9.3.0'}
+source_urls = ['https://ftp.gnu.org/gnu/gcc/']
+sources = [SOURCE_TAR_GZ]
+source_md5 = 'xxxxxxx'
+moduleclass = 'tools'
+
+sanityCheckPaths = { 'files': ['bin/gcc'] } # Path(s) to verify with the sanity check, after installation
+
+sanityCheckCmd = '${GCC_PREFIX}/${name}/bin/gcc --version'
+
+modulefile = '''
+setenv("EBROOTGCC", "${prefix}")
+prepend_path("PATH", "${prefix}/bin")
+'''
+
+# dependencies
+dependencies = [('GMP', '6.2.0'), ('MPFR', '4.0.2'), ('MPC', '1.1.0')]
+
+```
+
+- Next, run EasyBuild with the created EasyConfig file to install the software package:
+
+```
+eb gcc.eb
+```
+
+2. List available software packages using EasyBuild:
+
+- To list available software packages that can be installed using EasyBuild, use the following command:
+
+```
+eb --search
+```
+
+This command will display a list of available software packages along with their versions that can be installed using EasyBuild.

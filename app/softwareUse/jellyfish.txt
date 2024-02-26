@@ -1,0 +1,30 @@
+Use Case: Count k-mers in DNA/RNA sequences.
+
+Code details and examples:
+Jellyfish is a tool for fast counting of k-mers in DNA/RNA sequences. Here is an example of how you can count k-mers in a DNA sequence using Jellyfish:
+
+**Input File (example.fasta):**
+```
+>sequence1
+ATGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCT
+>sequence2
+CGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATCGATC
+```
+
+**Counting k-mers using Jellyfish:**
+```bash
+jellyfish count -m 5 -s 100M -o kmer_counts.jf example.fasta
+```
+
+In this example:
+- "-m 5" specifies that we are counting 5-mers.
+- "-s 100M" specifies the size of the hash table.
+- "-o kmer_counts.jf" specifies the output file where the counts will be stored.
+- "example.fasta" is the input file containing DNA sequences.
+
+**Querying k-mer counts from output:**
+```bash
+jellyfish dump kmer_counts.jf
+```
+
+This will output the k-mer counts stored in the kmer_counts.jf file.

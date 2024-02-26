@@ -1,0 +1,24 @@
+Use Case: OpenEXR is a high dynamic-range (HDR) image file format used in computer graphics. It is commonly used in film and video production for storing scene-linear color data and high-resolution images.
+
+Code details and examples:
+- To display information about an OpenEXR file:
+```bash
+exrinfo example.exr
+```
+
+- To convert an OpenEXR file to a different format such as PNG:
+```bash
+exrtopng example.exr example.png
+```
+
+- To convert a PNG file to OpenEXR:
+```bash
+pngtoexr example.png example.exr
+```
+
+- To extract a specific channel from an OpenEXR file:
+```bash
+exrheader -t R example.exr
+```
+
+These are just a few examples of the commands that can be used with OpenEXR. The exact options and parameters may vary depending on the tool and version being used.

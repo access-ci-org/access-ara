@@ -1,0 +1,21 @@
+Use Case: Molecular dynamics simulation 
+Code details and examples: 
+NAMD (NAnoscale Molecular Dynamics) is a parallel molecular dynamics code designed for high-performance simulation of large biomolecular systems. Here is an example of running a NAMD simulation with a provided configuration file:
+
+Input files: 
+1. Configuration file (config.namd)
+2. Protein structure file (protein.pdb)
+
+config.namd:
+```bash
+# NAMD configuration file
+structure protein.pdb
+outputName output
+```
+
+To run NAMD: 
+```bash
+namd2 +p4 config.namd
+```
+
+In this example, "+p4" specifies that the simulation will be run using 4 processors. You can adjust the number of processors as needed for your system.

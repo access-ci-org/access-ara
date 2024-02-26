@@ -1,0 +1,15 @@
+Use Case: BWA (Burrows-Wheeler Aligner) is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome. 
+
+Code details and examples:
+BWA requires a reference genome file in FASTA format and one or more sequence read files in either FASTQ or FASTA format. Here is an example command to run BWA to align reads to a reference genome:
+
+```
+bwa index reference_genome.fasta
+bwa mem reference_genome.fasta read1.fastq read2.fastq > alignments.sam
+```
+
+In this example:
+- `bwa index` is used to index the reference genome file.
+- `bwa mem` is used to align paired-end reads (`read1.fastq` and `read2.fastq`) to the indexed reference genome and save the alignments in SAM format (`alignments.sam`).
+
+Please note that the exact command may vary depending on the specific use case and options required for the alignment task.

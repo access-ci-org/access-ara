@@ -1,0 +1,16 @@
+Use Case: OpenMS is an open-source software C++ library for LC/MS data management and analysis. It provides tools for preprocessing, visualization, and statistical analysis of mass spectrometry data.
+
+Code details and examples:
+1. FeatureFinderCentroided: This tool is used for detecting features (peaks) in centroided mass spectrometry data.
+   Sample input file (mzML format): input.mzML
+   Command to run: FeatureFinderCentroided -in input.mzML -out output.featureXML
+
+2. FileConverter: This tool converts mass spectrometry files from one format to another.
+   Sample input file (mzML format): input.mzML
+   Command to run: FileConverter -in input.mzML -out output.mzXML
+
+3. MapAlignerIdentification: This tool aligns multiple LC/MS experiments based on identified features.
+   Sample input files (featureXML format): input1.featureXML, input2.featureXML
+   Command to run: MapAlignerIdentification -in input1.featureXML input2.featureXML -out output.featureXML
+
+For more information and additional tools, refer to the OpenMS documentation and tutorials on their website.

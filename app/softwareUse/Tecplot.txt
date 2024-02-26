@@ -1,0 +1,32 @@
+Use Case: Tecplot is a visualization software commonly used in the scientific and engineering fields for analyzing and visualizing complex data sets from computational simulations.
+
+Code details and examples:
+
+Sample Tecplot input file format (.dat):
+```
+TITLE = "Sample Data"
+VARIABLES = "X", "Y", "Z", "Temperature"
+ZONE T="Sample Zone", I=4, J=3, K=2, F=POINT
+0.0 0.0 0.0 100.0
+1.0 0.0 0.0 150.0
+0.0 1.0 0.0 120.0
+1.0 1.0 0.0 130.0
+0.0 0.0 1.0 110.0
+1.0 0.0 1.0 140.0
+0.0 1.0 1.0 125.0
+1.0 1.0 1.0 135.0
+```
+
+Visualization command (assuming Tecplot is already installed):
+```
+tec360 -b -data sample_data.dat -script sample_script.mcr -quit
+```
+
+In this example:
+- The input file "sample_data.dat" contains data for variables X, Y, Z, and Temperature arranged in a structured grid format.
+- A sample Tecplot macro script "sample_script.mcr" is used to customize the visualization settings.
+- The command `tec360` is used to run Tecplot in batch mode, loading the data from the input file, executing the script, and then exiting.
+- `-b` flag indicates batch mode (no user interface).
+- `-data` flag specifies the input data file.
+- `-script` flag specifies the Tecplot macro script file.
+- `-quit` flag closes Tecplot after execution.

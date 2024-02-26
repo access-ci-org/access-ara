@@ -1,0 +1,21 @@
+Use Case: Visualization of meteorological data using NCL (NCAR Command Language)
+
+Code details and examples:
+NCL (NCAR Command Language) is a scripting language specifically designed for processing and visualizing data in the field of atmospheric and Earth sciences. Below is a simple example of plotting a contour map using NCL.
+
+Sample input file (data.nc):
+```
+f = addfile("data.nc","r")
+temperature = f->temperature
+lon = f->lon
+lat = f->lat
+```
+
+NCL code snippet:
+```bash
+ncl 'data.nc'
+```
+
+This command will run the NCL script to create a contour plot of the temperature data stored in data.nc file. 
+
+Please ensure that you have NCL installed on your system and the necessary data files are available before running the script.

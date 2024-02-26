@@ -1,0 +1,36 @@
+Use Case: libcap is a library for getting and setting POSIX capabilities.
+
+Code details and examples:
+- To install libcap library:
+```bash
+sudo apt install libcap2 libcap-dev
+```
+
+- Example code to get the capabilities of a file:
+```c
+#include <stdio.h>
+#include <sys/capability.h>
+
+int main() {
+    cap_t cap = cap_get_file("/path/to/file");
+    if (cap) {
+        printf("Capabilities of the file:\n%s\n", cap_to_text(cap, NULL));
+        cap_free(cap);
+    } else {
+        perror("cap_get_file");
+    }
+    return 0;
+}
+```
+
+- Compile the code:
+```bash
+gcc -o get_caps get_caps.c -lcap
+```
+
+- Run the compiled code:
+```bash
+./get_caps
+```
+
+This will display the capabilities of the specified file.

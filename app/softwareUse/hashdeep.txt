@@ -1,0 +1,22 @@
+Use Case: hashdeep is a cross-platform set of tools to compute hashes using multiple algorithms on files and directories.
+
+Code details and examples:
+1. Create an example file for hashing:
+   ```bash
+   echo "Hello, World!" > example.txt
+   ```
+
+2. Compute hashes of the example file using hashdeep:
+   ```bash
+   hashdeep -c sha256 example.txt
+   ```
+
+3. Compute hashes of files in a directory:
+   ```bash
+   hashdeep -r -c sha256 /path/to/directory
+   ```
+
+4. Verify hashes using a hash file:
+   ```bash
+   hashdeep -k hashfile.txt -c sha256 -a example.txt
+   ```

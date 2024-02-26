@@ -1,0 +1,25 @@
+Use Case: HMMER is a software suite for protein sequence analysis using profile hidden Markov models (HMMs).
+
+Code details and examples:
+1. **Create an HMM profile**: 
+```bash
+hmmbuild my_profile.hmm my_sequence.fasta
+```
+Input: A multiple sequence alignment file in fasta format (my_sequence.fasta)
+Output: The created HMM profile file (my_profile.hmm)
+
+2. **Search for sequences using an HMM profile**:
+```bash
+hmmsearch my_profile.hmm my_database.fasta
+```
+Input: HMM profile file (my_profile.hmm) and a database of protein sequences in fasta format (my_database.fasta)
+Output: List of sequences from the database that match the HMM profile
+
+3. **Scan a sequence using an HMM profile**:
+```bash
+hmmscan my_profile.hmm my_sequence.fasta
+```
+Input: HMM profile file (my_profile.hmm) and a single sequence in fasta format (my_sequence.fasta)
+Output: Match statistics for the sequence against the HMM profile
+
+Note: These are just basic examples, and HMMER provides various other functionalities and options for advanced usage. Make sure to check the HMMER documentation for more details.

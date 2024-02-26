@@ -1,0 +1,33 @@
+Use Case: Bash script to move files.
+
+Code details and examples:
+Code:
+```bash
+#!/bin/bash
+
+# Move all .txt files from source directory to destination directory
+source_dir="/path/to/source/directory"
+dest_dir="/path/to/destination/directory"
+
+# Check if source directory exists
+if [ ! -d "$source_dir" ]; then
+  echo "Source directory does not exist."
+  exit 1
+fi
+
+# Check if destination directory exists
+if [ ! -d "$dest_dir" ]; then
+  echo "Destination directory does not exist."
+  exit 1
+fi
+
+# Move .txt files from source to destination directory
+mv "$source_dir"/*.txt "$dest_dir"
+echo "Files moved successfully."
+```
+
+Run the script by executing:
+```bash
+chmod +x move_files.sh
+./move_files.sh
+```

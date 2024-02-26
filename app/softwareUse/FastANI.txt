@@ -1,0 +1,37 @@
+Use Case: FastANI is a tool for calculating average nucleotide identity (ANI) using fragmented nucleotide sequences. It is commonly used in microbial genomics for species comparison.
+
+Code details and examples:
+1. Input format:
+- Multiple FASTA files of nucleotide sequences (*.fa or *.fasta)
+
+2. Example command:
+```
+fastANI -q query_genome.fasta -r reference_genome.fasta
+```
+
+3. Expected output:
+- ANI value between the two genomes
+
+4. Sample input files:
+query_genome.fasta:
+```
+>seq1
+AGCTGATCGATCGATCGATCGATCGACGT
+>seq2
+AGCTGATCGATCGATCGATCGATCGTAGC
+```
+
+reference_genome.fasta:
+```
+>seq1
+AGCTGATCGATCGATCGATCGATCGACGT
+>seq3
+AGCTGATCGATCGATCGATCGATCGACGT
+```
+
+5. Code snippet explanation:
+- Use the fastANI tool with the query genome file and reference genome file to calculate the ANI value between the two genomes.
+
+Note: The above command is a general example. Please refer to the specific documentation for more options and parameters.
+
+For more information, you can visit the FastANI GitHub repository: https://github.com/ParBLiSS/FastANI

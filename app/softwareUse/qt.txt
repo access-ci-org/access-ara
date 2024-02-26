@@ -1,0 +1,76 @@
+I see you mentioned "qt" which is a cross-platform application framework that is widely used for developing application software. Here is some information with examples:
+
+Use Case: Creating a simple GUI application using Qt
+Code details and examples:
+```cpp
+// Sample Qt code for creating a simple window
+#include <QApplication>
+#include <QWidget>
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+
+    QWidget window;
+    window.resize(250, 150);
+    window.setWindowTitle("Simple Window");
+    window.show();
+
+    return app.exec();
+}
+```
+
+Input file format: N/A
+Command to compile: 
+```
+qmake -project
+qmake
+make
+```
+
+Use Case: Using Qt for creating a simple calculator GUI application
+Code details and examples:
+```cpp
+// Sample Qt code for a simple calculator application
+#include <QApplication>
+#include <QGridLayout>
+#include <QLabel>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QWidget>
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+
+    QWidget window;
+    window.setWindowTitle("Simple Calculator");
+
+    QGridLayout *layout = new QGridLayout;
+
+    QLineEdit *display = new QLineEdit();
+    display->setFixedHeight(30);
+
+    layout->addWidget(display, 0, 0, 1, 4);
+
+    const char *buttons[16] = { "7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", ".", "0", "=", "+" };
+    for (int i = 0; i < 16; ++i)
+    {
+        QPushButton *button = new QPushButton(buttons[i]);
+        layout->addWidget(button, i / 4 + 1, i % 4);
+    }
+
+    window.setLayout(layout);
+    window.show();
+
+    return app.exec();
+}
+```
+
+Input file format: N/A
+Command to compile: 
+```
+qmake -project
+qmake
+make
+```

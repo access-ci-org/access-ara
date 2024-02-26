@@ -1,0 +1,35 @@
+Use Case: GNU Debugger (gdb)
+Code details and examples:
+GNU Debugger (gdb) is used to debug programs written in C, C++, and other programming languages. It allows users to inspect what a program is doing at different stages and helps in identifying and fixing bugs in the code.
+
+Example:
+Assume we have a C program named "example.c" which contains a logical error. To debug this program using gdb, we can follow these steps:
+
+1. Compile the program with debugging symbols:
+```bash
+gcc -g -o example example.c
+```
+
+2. Start gdb and load the executable:
+```bash
+gdb ./example
+```
+
+3. Set breakpoints, run the program, and analyze variables:
+```bash
+break main
+run
+```
+
+4. Step through the program to identify the issue:
+```bash
+next
+print variable_name
+```
+
+5. Analyze the program flow and fix the bug.
+
+Command to run:
+```bash
+gdb <executable_name>
+```

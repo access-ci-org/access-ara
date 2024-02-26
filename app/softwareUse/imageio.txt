@@ -1,0 +1,17 @@
+Use Case: Imageio is a Python library that provides an easy interface to read and write a wide range of image data. It supports formats such as PNG, JPEG, GIF, BMP, TIFF, and many more.
+
+Code details and examples:
+```python
+import imageio
+
+# Reading an image
+image = imageio.imread('sample_image.png')
+
+# Displaying image shape
+print(image.shape)
+
+# Writing an image
+imageio.imwrite('output_image.jpg', image)
+```
+
+Command: N/A - Since imageio is a Python library, you can run the Python script directly using a Python interpreter.

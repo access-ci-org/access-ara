@@ -1,0 +1,49 @@
+JsonCpp is a C++ library used for parsing and formatting JSON data. Below are examples of how to use JsonCpp for reading and writing JSON files:
+
+Use Case: Read JSON file
+Code details and examples:
+```cpp
+#include <iostream>
+#include <fstream>
+#include "json/json.h"
+
+int main() {
+    Json::Value root;
+    Json::Reader reader;
+    
+    std::ifstream jsonFile("input.json", std::ifstream::binary);
+    bool parsingSuccessful = reader.parse(jsonFile, root);
+    
+    if (parsingSuccessful) {
+        std::cout << "JSON file successfully parsed:\n" << root << std::endl;
+    } else {
+        std::cout << "Failed to parse JSON file\n" << reader.getFormattedErrorMessages() << std::endl;
+    }
+    
+    jsonFile.close();
+    
+    return 0;
+}
+```
+
+Use Case: Write JSON file
+Code details and examples:
+```cpp
+#include <iostream>
+#include <fstream>
+#include "json/json.h"
+
+int main() {
+    Json::Value root;
+    root["name"] = "John Doe";
+    root["age"] = 30;
+    
+    std::ofstream jsonFile("output.json");
+    jsonFile << root;
+    jsonFile.close();
+    
+    std::cout << "JSON file successfully written\n";
+    
+    return 0;
+}
+```

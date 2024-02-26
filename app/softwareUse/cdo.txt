@@ -1,0 +1,16 @@
+Use Case: Climate Data Operators (CDO) is a collection of command-line operators to manipulate and analyze climate and NWP model data. 
+
+Code details and examples:
+CDO can be used to perform various operations on NetCDF files such as merging, splitting, remapping, calculating statistics, etc.
+
+Example command to merge two NetCDF files:
+```bash
+cdo mergetime file1.nc file2.nc merged.nc
+```
+
+Example command to calculate the mean of a variable over time:
+```bash
+cdo timmean input.nc output.nc
+```
+
+CDO has a wide range of operators and options for tasks related to climate data processing. The specific usage and options can vary based on the operation being performed.

@@ -1,0 +1,64 @@
+Use Case: ncurses is a library for creating text-based user interfaces.
+Code details and examples:
+
+1. Sample C program using ncurses to print "Hello, World!" in the center of the screen:
+
+```c
+#include <ncurses.h>
+
+int main() {
+    initscr();
+    int row, col;
+    getmaxyx(stdscr, row, col);
+    mvprintw(row/2, (col-13)/2, "Hello, World!");
+    refresh();
+    getch();
+    endwin();
+    return 0;
+}
+```
+
+2. Compiling and running the above program (assuming the file is named `hello.c`):
+
+```bash
+gcc hello.c -lncurses -o hello
+./hello
+```
+
+3. Sample input file for defining a window in ncurses:
+
+```
+5
+10
+```
+
+4. Sample C program to create a window with specified dimensions using ncurses:
+
+```c
+#include <ncurses.h>
+
+int main() {
+    initscr();
+    int height, width;
+    WINDOW *win;
+
+    printw("Enter height and width: ");
+    refresh();
+    scanw("%d%d", &height, &width);
+
+    win = newwin(height, width, 0, 0);
+    box(win, 0, 0);
+    wrefresh(win);
+
+    getch();
+    endwin();
+    return 0;
+}
+```
+
+5. Compiling and running the window creation program:
+
+```bash
+gcc window.c -lncurses -o window
+./window
+```

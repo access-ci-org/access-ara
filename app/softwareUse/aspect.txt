@@ -1,0 +1,19 @@
+Aspect is a 3D thermal convection and fluid dynamics simulation software used in geodynamics research. 
+
+Use Case: Model convection in the Earth's mantle
+Code details and examples:
+```aspect
+# Sample input file for convection simulation
+subsection Materials
+set Rock     Density 3300
+set Rock     Viscosity 10^21
+end
+
+subsection Initial temperature model
+set Initial temperature model Box
+set Initial temperature model Domain 0 0 0 1000 1000 300
+set Initial temperature model Minimum 1300
+set Initial temperature model Maximum 1800
+end
+```
+To run the simulation, use the command `aspect input.pr`.

@@ -1,0 +1,24 @@
+Use Case: Parsing JSON file
+Code details and examples:
+```
+import json
+
+# Sample JSON input file 'data.json'
+# {
+#     "name": "John Doe",
+#     "age": 30,
+#     "city": "New York"
+# }
+
+# Reading data from JSON file
+with open('data.json') as f:
+    data = json.load(f)
+
+# Accessing JSON data
+name = data['name']
+age = data['age']
+city = data['city']
+
+print(f"Name: {name}, Age: {age}, City: {city}")
+```
+To run the code, save the JSON input file as `data.json` and run the Python script.

@@ -1,0 +1,7 @@
+Use Case: FastQC is a quality control tool for high throughput sequence data.
+
+Code details and examples:
+- Sample input file: fastq file
+- Command to run FastQC: fastqc input.fastq
+
+When you run FastQC with the provided fastq file, it will generate an HTML report containing quality control results such as per base sequence quality, per sequence quality scores, sequence length distribution, overrepresented sequences, etc.

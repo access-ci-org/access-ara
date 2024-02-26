@@ -1,0 +1,36 @@
+Use Case: Image compression and manipulation with the OpenJPEG library
+
+Code details and examples:
+1. Compress image using OpenJPEG:
+```bash
+opj_compress -i input_image.ppm -o compressed_image.j2k
+```
+
+2. Decompress image using OpenJPEG:
+```bash
+opj_decompress -i compressed_image.j2k -o output_image.ppm
+```
+
+3. Convert image format using OpenJPEG:
+```bash
+opj_transform -i input_image.ppm -o output_image.jp2
+```
+
+4. Extract image information using OpenJPEG:
+```bash
+opj_dump -i input_image.jp2
+```
+
+Input file (PPM format) sample:
+```
+P3
+# Image Comments
+4 4
+255
+255 255 255 0
+255 255 255 0
+255 0 0 255
+255 0 0 255
+```
+
+Command to run the OpenJPEG tools may vary depending on the installation method and the specific version of the library. The examples provided assume the tools are available in the system PATH.

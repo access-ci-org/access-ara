@@ -1,0 +1,52 @@
+It seems like you are referring to the Message Passing Interface (MPI) library instead of "mpc". 
+
+Use Case: Message Passing Interface (MPI)
+Code details and examples:
+1. Sample input file (e.g., "input.txt") for MPI application:
+```
+4
+8
+2
+1
+```
+
+2. Sample MPI code in C language to parallelize a simple computation (e.g., summing up the numbers in the input file):
+```c
+#include <mpi.h>
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+    int rank, size;
+    int sum = 0;
+    int num;
+
+    MPI_Init(&argc, &argv);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+
+    if (rank == 0) {
+        FILE *fp = fopen("input.txt", "r");
+        while (fscanf(fp, "%d", &num) != EOF) {
+            sum += num;
+        }
+        fclose(fp);
+    }
+
+    MPI_Bcast(&sum, 1, MPI_INT, 0, MPI_COMM_WORLD);
+
+    if (rank == 0) {
+        printf("Total sum: %d\n", sum);
+    }
+
+    MPI_Finalize();
+    return 0;
+}
+```
+
+3. Command to compile and run the MPI code (assuming the file is named "mpi_sum.c"):
+```
+mpicc mpi_sum.c -o mpi_sum -lm
+mpiexec -n 4 ./mpi_sum
+```
+
+Please note that the above example is a simple demonstration of using MPI for parallel computing. The actual implementation and usage may vary depending on the specific use case.

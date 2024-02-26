@@ -1,0 +1,39 @@
+Use Case: Molecular dynamics simulation
+Code details and examples:
+NAMD (NAnoscale Molecular Dynamics) is a parallel molecular dynamics code designed for high-performance simulation of large biomolecular systems. Here is an example input file for a NAMD simulation:
+
+```bash
+# namd.conf
+structure input.pdb
+coordinates input.pdb
+outputName output
+binaryoutput no
+
+forceField CHARMM
+parameters par_all27_prot_lipid.inp
+exclude scaled1-4
+1-4scaling 1.0
+
+# Simulation settings
+timestep 1.0 ;# 1fs/step
+rigidBonds all ;# needed for water
+nonbondedFreq 1
+fullElectFrequency 2
+
+# Output settings
+outputEnergies 1000
+outputPressure 1000
+
+# Temperature and pressure control
+langevin on
+langevinDamping 1
+langevinTemp 300
+```
+
+To run the NAMD simulation using the input file above, you can use the following command:
+
+```bash
+namd3 namd.conf
+```
+
+Replace `input.pdb` with your own input PDB file and `par_all27_prot_lipid.inp` with the appropriate parameter file for your system.

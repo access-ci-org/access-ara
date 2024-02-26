@@ -1,0 +1,20 @@
+Use Case: Use biocontainers for creating reproducible computational environments for bioinformatics tools.
+
+Code details and examples: 
+1. Pulling a biocontainer image:
+```
+$ docker pull quay.io/biocontainers/bwa:0.7.17--h9bb3ff6_7
+```
+
+2. Running a biocontainer image:
+```
+$ docker run -v /path/to/data:/data quay.io/biocontainers/bwa:0.7.17--h9bb3ff6_7 bwa index /data/example.fasta
+```
+
+3. Using Singularity with a biocontainer image:
+```
+$ singularity exec docker://quay.io/biocontainers/bowtie2:2.4.4--py39h295c915_2 bowtie2 -x /path/to/index -U /path/to/reads.fastq -S /path/to/output.sam
+```
+
+4. Biocontainers registry website: https://biocontainers.pro/#/
+```

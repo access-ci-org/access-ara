@@ -1,0 +1,35 @@
+Use Case: ESMF (Earth System Modeling Framework) is a flexible and scalable software infrastructure for building and coupling climate, weather, and data assimilation applications. It provides a set of tools and libraries that facilitate the coupling of different models and data sources.
+
+Code details and examples:
+- ESMF generally requires the creation of configuration files and scripts to run coupled models. Below is a basic example of a Python script using ESMF to create a simple grid, regrid data, and output the results to a NetCDF file.
+
+Sample input files:
+1. input_data.nc (NetCDF file containing input data)
+2. output_data.nc (NetCDF file to store the results)
+
+```python
+import ESMF
+
+grid = ESMF.Grid(filename='input_data.nc', filetype=ESMF.FileFormat.GRIDSPEC)
+
+srcfield = ESMF.Field(grid, name='source_field')
+dstfield = ESMF.Field(grid, name='destination_field')
+
+regrid = ESMF.Regrid(srcfield, dstfield)
+
+regrid()
+
+dstfield.write(filename='output_data.nc', filetype=ESMF.FileFormat.GRIDSPEC)
+```
+
+This script defines a grid from an input NetCDF file, creates source and destination fields, performs a regridding operation, and writes the output to a new NetCDF file.
+
+Note: The above script is a basic example and may need modifications based on the specific requirements of the coupled models.
+
+To run the script, save it in a file (e.g., esmf_example.py) and execute it using Python:
+
+```
+python esmf_example.py
+```
+
+This will run the ESMF script and generate the output file with the regridded data.

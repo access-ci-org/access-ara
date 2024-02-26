@@ -1,0 +1,39 @@
+Use Case: Working with FASTA files
+
+Code details and examples:
+Code:
+
+```plaintext
+# Sample input file (input.fasta)
+>seq1
+ATCGATCGATCG
+>seq2
+GCTAGCTAGCTA
+
+# Viewing the content of a FASTA file
+cat input.fasta
+
+# Extracting sequences from a FASTA file
+grep "^>" input.fasta
+
+# Counting the number of sequences in a FASTA file
+grep -c "^>" input.fasta
+
+# Using Biopython to read a FASTA file and access sequences
+from Bio import SeqIO
+
+fasta_file = "input.fasta"
+for record in SeqIO.parse(fasta_file, "fasta"):
+    print(record.id)
+    print(record.seq)
+
+# Running the script to parse the fasta file
+python parse_fasta.py
+
+# Aligning sequences in a FASTA file using tools like Clustal Omega
+# Command to run Clustal Omega for multiple sequence alignment
+clustalo -i input.fasta -o output.aln
+
+# Running Clustal Omega to align sequences in the input.fasta file
+clustalo -i input.fasta -o output.aln
+```

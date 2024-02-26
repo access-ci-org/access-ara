@@ -1,0 +1,50 @@
+Use Case: libdap is a C++ implementation of the OPeNDAP protocol, allowing clients to access scientific data remotely.
+
+Code details and examples:
+```cpp
+// Sample code to access a remote dataset using libdap
+
+#include <cstdlib>
+#include <iostream>
+#include "dodsclient.h"
+
+int main() {
+    // URL of the OPeNDAP dataset
+    std::string url = "http://test.opendap.org/dap/data/nc/fnoc1.nc";
+
+    // Create a DODSClient object
+    DODSClient client;
+
+    // Connect to the remote dataset
+    if (!client.open(url)) {
+        std::cerr << "Error connecting to the dataset." << std::endl;
+        return 1;
+    }
+
+    // Fetch the data
+    DAS das;
+    DDS dds;
+    DataDDS data;
+
+    client.getDDS(dds);
+    client.getDAS(das);
+    client.getData(data);
+
+    // Print the data
+    for (int i = 0; i < data.dimensions()[0]; ++i) {
+        std::cout << data.getValue(0, i) << std::endl;
+    }
+
+    return 0;
+}
+```
+
+To compile the above code:
+```bash
+g++ -o my_opendap_client my_opendap_client.cpp -ldap -lnetcdf_c++
+```
+
+To run the compiled program:
+```bash
+./my_opendap_client
+```

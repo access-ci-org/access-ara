@@ -1,0 +1,45 @@
+Use Case: p4est is a library for dynamic, adaptive and parallel refinement on forests of octrees. It enables the construction and manipulation of forests of octrees and can be used in a variety of scientific computing applications.
+
+Code details and examples:
+1. Creating an octree:
+```c
+// Initialize p4est library
+p4est_init(NULL, SC_LP);
+
+// Create an octree
+int min_level = 0;
+int max_level = 4;
+size_t dim = 2; // Dimension of the octree (2D or 3D)
+p4est_connectivity_t *conn = p4est_connectivity_new_unitsquare(); // For 2D
+p4est_t *p4est = p4est_new(conn, min_level, max_level, dim);
+
+// Refine the octree
+int num_refinements = 3;
+p4est_refine(p4est, num_refinements);
+
+// Destroy the octree
+p4est_destroy(p4est);
+p4est_connectivity_destroy(conn);
+
+// Finalize p4est library
+p4est_finalize();
+```
+
+2. Sample input file for the octree (input.txt):
+```
+2
+3
+1 0 0
+0 1 0
+0 0 0
+1 1 1
+2 1 1
+1 2 1
+1 1 2
+```
+
+3. Command to compile and run the code (Assuming the code is saved in code.c):
+```
+gcc code.c -o octree_example -lp4est -lsc
+./octree_example
+```

@@ -1,0 +1,10 @@
+Use Case: CESM (Community Earth System Model) is a fully-coupled, community, global climate model that provides state-of-the-art computer simulations of the Earth's past, present, and future climate states.
+
+Code details and examples: 
+- CESM requires specific input data files for different model components (e.g., atmosphere, ocean, land, ice). These input files are provided as part of the model package when downloaded.
+- Model configurations and setup details are specified in a case configuration file, typically named "case.setup", which defines the experimental setup, runtime options, and other parameters.
+- To run CESM, you typically execute a script provided with the model package, such as "cesm.x", which reads the case configuration file and launches the model simulation. For example:
+  ```bash
+  ./cesm.x my_case.setup
+  ```
+- CESM also provides a graphical user interface (CESM-LE) for setting up and running model simulations, analyzing results, and visualizing output data.

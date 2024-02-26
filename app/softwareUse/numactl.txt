@@ -1,0 +1,15 @@
+Use Case: Controlling NUMA policy for processes
+
+Code details and examples:
+NUMA (Non-Uniform Memory Access) is a technique used in multiprocessor systems to improve performance by having each processor access its own local memory. `numactl` is a tool that can be used to run programs with a specific NUMA policy, controlling which memory nodes processes or threads can access.
+
+Sample Input files:
+- Specify the memory allocation policy for a command:
+  - Node interleaving policy: `numactl --interleave=all command`
+  - Bind a command to a specific node: `numactl --cpunodebind=0 --membind=0 command`
+
+Command to run:
+```
+numactl --interleave=all ./my_program
+```
+This command will run `my_program` with an interleaved memory node policy, allowing it to access memory across all available NUMA nodes.

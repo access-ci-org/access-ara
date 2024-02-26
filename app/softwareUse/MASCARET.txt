@@ -1,0 +1,40 @@
+Use Case: MASCARET is a software for 1D river hydraulic modeling. It is used for simulation of flow, sediment transport, and water quality in rivers.
+
+Code details and examples:
+MASCARET input files are typically formatted in the MASCARET input file format. Below is an example of a MASCARET input file:
+
+```
+! Example MASCARET Input File
+! Comments start with !
+
+RUN
+  NAME Example_Run
+
+TITLE
+  This is an example MASCARET input file
+
+DATA
+  START_DATE 01/01/2022
+  END_DATE 01/03/2022
+  TIME_STEP 3600
+  OUTPUT_STEP 3600
+
+BOUNDARIES
+  LEFT
+    TYPE Flow
+    FLOW_DATA 100
+  RIGHT
+    TYPE Flow
+    FLOW_DATA 150
+
+END
+```
+
+To run MASCARET with the input file above, you would typically use the MASCARET command line interface with the input file as an argument. The exact command may vary depending on your system setup and installation method.
+
+Code example:
+```
+mascaret example_input_file.txt
+```
+
+This command would run MASCARET with the provided input file.

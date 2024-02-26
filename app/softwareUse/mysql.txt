@@ -1,0 +1,50 @@
+Use Case: MySQL is a popular relational database management system widely used in web applications for data storage and retrieval.
+
+Code details and examples:
+1. Connecting to a MySQL database using Python:
+```python
+import mysql.connector
+
+# Establish a connection to the MySQL server
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="username",
+  password="password",
+  database="mydatabase"
+)
+
+# Create a cursor object
+mycursor = mydb.cursor()
+
+# Execute an SQL query
+mycursor.execute("SELECT * FROM mytable")
+
+# Fetch the result
+result = mycursor.fetchall()
+for row in result:
+    print(row)
+```
+
+2. Running a SQL query from the command line:
+```bash
+mysql -u username -p database_name -e "SELECT * FROM mytable;"
+```
+
+3. Sample input file format for loading data:
+```
+id, name, age
+1, John, 30
+2, Alice, 25
+3, Bob, 35
+```
+
+4. Loading data from a CSV file into a MySQL table:
+```sql
+LOAD DATA INFILE '/path/to/data.csv'
+INTO TABLE mytable
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+```
+
+Please note that the actual commands may vary based on your MySQL server setup and database schema.

@@ -1,0 +1,28 @@
+Use Case: Analysis of weighted ensemble simulations
+Code details and examples:
+WESTPA (Weighted Ensemble Simulation Toolkit with Parallelization and Analysis) is a software package used for the analysis of weighted ensemble simulations. It can be used to perform various types of analysis on the data generated from weighted ensemble simulations.
+
+To run WESTPA, you need to provide input files such as a WESTPA control file (west.cfg), a WESTPA system input file (system.h5), and a WESTPA kinetics input file (kinetics.h5). Below is an example of a basic WESTPA control file:
+
+```bash
+# west.cfg
+[west]
+verbosity = high
+
+[system]
+# Input file that contains information about the system
+file = system.h5
+
+[kinetics]
+# Input file that contains information about the kinetics
+file = kinetics.h5
+```
+
+To run WESTPA, you can use the following command:
+```bash
+west run west.cfg
+```
+
+This command will run WESTPA using the configuration provided in the west.cfg file.
+
+Please note that WESTPA requires a properly configured environment with all dependencies installed.

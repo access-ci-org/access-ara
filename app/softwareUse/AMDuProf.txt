@@ -1,0 +1,18 @@
+Use Case: AMDuProf is a performance profiler for AMD GPUs that can help analyze and optimize GPU-accelerated applications.
+
+Code details and examples:
+- To use AMDuProf, you first need to install it on your system. Once installed, you can use the following command to profile your application:
+```
+amduprof <application>
+```
+
+- Sample input files: Your GPU-accelerated application that you want to profile.
+
+- Specifications: AMD GPU hardware and compatible software environment.
+
+- Code snippet:
+```
+amduprof my_gpu_application
+```
+
+Note: For detailed usage and options, please refer to the official AMDuProf documentation.

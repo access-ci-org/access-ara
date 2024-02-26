@@ -1,0 +1,21 @@
+Use Case: Text processing, pattern scanning, and processing language. 
+
+Code details and examples:
+Sample input file (input.txt):
+```
+apple 5
+banana 3
+cherry 7
+```
+
+Code:
+```
+gawk '{print $1, $2 * 2}' input.txt
+```
+
+Output:
+```
+apple 10
+banana 6
+cherry 14
+```

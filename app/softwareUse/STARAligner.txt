@@ -1,0 +1,19 @@
+Use Case: STARAligner is a popular RNA-seq read aligner.
+
+Code details and examples:
+1. Alignment of paired-end reads:
+```bash
+STAR --runThreadN 4 --genomeDir /path/to/genome_index/ --readFilesIn input_R1.fastq input_R2.fastq --outFileNamePrefix output_prefix
+```
+
+2. Alignment of single-end reads:
+```bash
+STAR --runThreadN 4 --genomeDir /path/to/genome_index/ --readFilesIn input.fastq --outFileNamePrefix output_prefix
+```
+
+3. Aligning reads and output BAM files directly:
+```bash
+STAR --runThreadN 4 --genomeDir /path/to/genome_index/ --readFilesIn input.fastq --outSAMtype BAM SortedByCoordinate --outFileNamePrefix output_prefix
+```
+
+Note: Ensure that the genome index files have been generated using the STARIndexer tool before running the alignment. The number of threads used for alignment can be adjusted based on the available computational resources.

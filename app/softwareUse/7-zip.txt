@@ -1,0 +1,3 @@
+Use Case: Compression and archiving  
+Code details and examples:  
+7z a archive.7z file1.txt file2.txt  

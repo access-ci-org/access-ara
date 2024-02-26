@@ -1,0 +1,10 @@
+Use Case: Interactive Genomics Viewer (IGV)
+Code details and examples:
+Interactive Genomics Viewer (IGV) is a high-performance visualization tool for interactive exploration of large, integrated datasets. It supports a variety of data types such as BAM, BED, VCF, and other genomic file formats.
+
+Sample command to launch IGV:
+```
+igv.sh
+```
+
+To load a dataset in IGV, you can use the "File" > "Load from File" option and select the appropriate file type and file.

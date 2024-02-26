@@ -1,0 +1,5 @@
+Use Case: OpenGL Vendor-Neutral Dispatch Library (libglvnd) Library.
+
+Code details and examples:
+LIBRARY_PATH=/usr/local/lib glxinfo | grep "OpenGL renderer"
+```

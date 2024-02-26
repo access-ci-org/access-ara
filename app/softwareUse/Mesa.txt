@@ -1,0 +1,26 @@
+Use Case: Computational Chemistry
+
+Code details and examples:
+Mesa is an open-source quantum chemistry software package. It can perform various electronic structure calculations on molecules.
+
+Sample input file for Mesa (input.dat):
+```
+molecule {
+  O
+  H 1 0.96
+  H 1 0.96 2 104.5
+}
+
+basis {
+  assign primary {O H}
+  O library def2-TZVP
+  H library def2-TZVP
+}
+
+task scf
+```
+
+Command to run Mesa:
+```
+mesa input.dat
+```

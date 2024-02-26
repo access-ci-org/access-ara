@@ -1,0 +1,17 @@
+Use Case: RNA-protein binding analysis
+Code details and examples:
+- Format of the input file for CLIP analysis:
+  - The input file should be in FASTQ format containing raw sequencing data from CLIP experiments.
+  
+- Example input file (input.fq):
+  ```
+  @SEQ_ID
+  GATCGGAAGAGCACACGTCT
+  +
+  IIIIIIIIIIIIIIIIIIIII
+  ```
+
+- Command to run CLIP analysis:
+  ```
+  clip_analysis --input input.fq --parameters params.txt
+  ```

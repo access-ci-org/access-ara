@@ -1,0 +1,31 @@
+Use Case: Linear algebra library for HPC computing
+
+Code details and examples:
+1. Sample Input file (matrix multiplication in Python):
+```python
+import numpy as np
+import time
+import os
+
+# Create two random matrices
+A = np.random.rand(1000, 1000)
+B = np.random.rand(1000, 1000)
+
+start_time = time.time()
+
+C = np.dot(A, B)  # Matrix multiplication using OpenBLAS
+
+print("Time taken: %s seconds" % (time.time() - start_time))
+```
+
+2. Command to run the code (assuming Python is installed):
+```bash
+python matrix_multiplication.py
+```
+
+3. Expected Output: 
+```
+Time taken: X seconds
+```
+
+Note: OpenBLAS provides optimized implementations of basic linear algebra subprograms (BLAS) and linear algebra routines, leading to faster computations for matrix operations in high-performance computing applications.

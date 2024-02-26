@@ -1,0 +1,20 @@
+Use Case: Text editing
+Code details and examples:
+Code: 
+1. Open a file in vim:
+   ```
+   $ vim filename.txt
+   ```
+2. Edit the file in vim:
+   - Press `i` to insert text
+   - Make changes to the file
+   - Press `Esc` to exit insert mode
+   - Save the changes and exit vim: Press `:wq` and Enter
+3. Search for a specific word in the file:
+   - Press `/` followed by the word you want to search and press Enter
+   - Use `n` to move to the next occurrence of the word
+4. Replace text in the file:
+   - Press `:` to enter command mode
+   - Type `:%s/old_text/new_text/g` and press Enter (Replace "old_text" with the text to be replaced and "new_text" with the new text)
+   - Press Enter
+   - Save the changes and exit vim: Press `:wq` and Enter

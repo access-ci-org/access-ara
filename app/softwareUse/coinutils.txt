@@ -1,0 +1,43 @@
+Use Case: CoinUtils is an open-source collection of utilities and tools used by other COIN-OR projects.
+
+Code details and examples:
+
+1. Example input file (example.mps):
+```plaintext
+NAME          EXAMPLE
+ROWS
+ N  cost
+ L  constraint1
+ L  constraint2
+COLUMNS
+    cost  constraint1  constraint2
+    -1.0   1.0          1.0
+RHS
+    RHS       10.0
+BOUNDS
+ UP BOUND cost 1.0
+ENDATA
+```
+
+2. Code to load and solve the example with CoinUtils in Python:
+```python
+from coinor.cbc import model
+import coinor.coinutil.reader
+
+# Load the model from the MPS file
+filename = "example.mps"
+lp = coinor.coinutil.reader.create_bimap_from_mps(filename)
+
+# Create and solve the model using CBC
+m = model.Model(lp)
+status = m.optimize()
+
+# Print the solution status and objective value
+print("Solution status:", m.get_statistics())
+print("Objective value:", m.objective_value)
+```
+
+3. Command to run the Python script:
+```bash
+python script_name.py
+```

@@ -1,0 +1,16 @@
+Use Case: RNA-Seq by Expectation-Maximization (RSEM) is a software package for estimating gene and isoform expression levels from RNA-Seq data.
+
+Code details and examples:
+1. Sample input files for running RSEM:
+   - Reference transcriptome in fasta format (e.g., ref_transcriptome.fa)
+   - RNA-Seq reads in fastq format (e.g., sample_reads1.fq, sample_reads2.fq)
+
+2. Command to run RSEM:
+   ```
+   rsem-calculate-expression --paired-end sample_reads1.fq sample_reads2.fq ref_transcriptome rsem_output
+   ```
+
+3. Additional specifications:
+   - RSEM output will include estimated gene and isoform expression levels in TPM (Transcripts Per Million) values.
+
+Note: Please make sure to adjust the command with the actual file names and paths in your system.

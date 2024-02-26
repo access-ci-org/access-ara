@@ -1,0 +1,50 @@
+Use Case: XML Parsing  
+Code details and examples:  
+Sample input file (input.xml):
+```xml
+<root>
+    <person>
+        <name>John Doe</name>
+        <age>30</age>
+    </person>
+    <person>
+        <name>Jane Smith</name>
+        <age>25</age>
+    </person>
+</root>
+```
+
+Sample code snippet to parse XML using Xerces in Java:
+```java
+import org.apache.xerces.parsers.DOMParser;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.xml.sax.InputSource;
+
+import java.io.File;
+
+public class XMLParser {
+    public static void main(String[] args) {
+        try {
+            DOMParser parser = new DOMParser();
+            parser.parse(new InputSource(new File("input.xml").toURI().toString()));
+            Document doc = parser.getDocument();
+            Node root = doc.getDocumentElement();
+
+            // Accessing elements and attributes
+            System.out.println("Root element: " + root.getNodeName());
+
+            // Further processing of XML document
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+Command to run the Java code:
+Assuming the Java file containing the above code is XMLParser.java, you can compile and run it using:
+```bash
+javac -cp path/to/xerces.jar XMLParser.java
+java -cp .:path/to/xerces.jar XMLParser
+```

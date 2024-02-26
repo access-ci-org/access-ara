@@ -1,0 +1,32 @@
+Use Case: lifelines is a Python library for survival analysis and reliability analysis. It offers tools for estimating hazard rates, survival functions, and more.
+
+Code details and examples:
+```python
+# Sample input file (CSV format):
+# time, event
+# 5, 1
+# 10, 0
+# 15, 1
+# 20, 1
+# 25, 0
+
+from lifelines import KaplanMeierFitter
+import pandas as pd
+
+# Load data from CSV
+data = pd.read_csv('survival_data.csv')
+
+# Fit the Kaplan-Meier estimator
+kmf = KaplanMeierFitter()
+kmf.fit(data['time'], event_observed=data['event'])
+
+# Plot the Kaplan-Meier survival curve
+kmf.plot()
+```
+
+Command to run the code (after installing lifelines):
+```bash
+python script.py
+```
+
+This example demonstrates how to use lifelines to perform survival analysis using the Kaplan-Meier estimator.

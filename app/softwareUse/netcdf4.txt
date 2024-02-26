@@ -1,0 +1,38 @@
+Use Case: NetCDF4 is a library and file format for scientific data in structured array-oriented data. It provides tools for working with multidimensional array data.
+
+Code details and examples:
+```python
+# Create a NetCDF file
+import netCDF4 as nc
+
+data = np.random.rand(10, 10)
+ncFile = nc.Dataset('sample.nc', 'w', format='NETCDF4')
+ncFile.createDimension('x', 10)
+ncFile.createDimension('y', 10)
+ncVar = ncFile.createVariable('data', 'f4', ('x', 'y'))
+ncVar[:] = data
+ncFile.close()
+```
+
+```python
+# Read a NetCDF file
+import netCDF4 as nc
+
+ncFile = nc.Dataset('sample.nc', 'r')
+data = ncFile.variables['data'][:]
+ncFile.close()
+print(data)
+```
+
+```python
+# Update a NetCDF file
+import netCDF4 as nc
+
+ncFile = nc.Dataset('sample.nc', 'a')
+new_data = np.random.rand(10, 10)
+ncFile.variables['data'][:] = new_data
+ncFile.close()
+```
+
+Command to run:
+This is Python code, so you can run it using any Python environment.

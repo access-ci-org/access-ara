@@ -1,0 +1,27 @@
+Use Case: Convert a SMILES string to a 3D structure using Open Babel
+
+Code details and examples:
+1. Input file (input.txt):
+```
+C1=CC=CC=C1
+```
+
+2. Command to convert SMILES to 3D structure:
+```
+obabel input.txt -O output.xyz
+```
+
+3. Output file (output.xyz):
+```
+5
+OpenBabel12102117403D
+
+ 16 15  0  0  0  0  0  0  0  0999 V2000
+    2.1213    0.2690    0.3028 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3798   -0.8250    0.2936 C   0  0  0  0  0  0  0  0  0  0  0  0
+...
+```
+
+4. Visualization software like Avogadro can be used to open the output XYZ file for visualization.
+
+Note: Make sure Open Babel is installed in the system.

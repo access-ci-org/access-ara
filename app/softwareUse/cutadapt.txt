@@ -1,0 +1,29 @@
+Use Case: Trim adapters from sequencing reads.
+
+Code details and examples:
+```
+# Install cutadapt (if not already installed)
+# pip install cutadapt
+
+# Trim adapters from paired-end sequencing reads
+cutadapt -a ADAPTER_FWD -A ADAPTER_REV -o output_fwd.fastq -p output_rev.fastq input_fwd.fastq input_rev.fastq
+
+# Trim adapters from single-end sequencing reads
+cutadapt -a ADAPTER -o output.fastq input.fastq
+```
+
+Input file format:
+- For paired-end reads:
+  - input_fwd.fastq: FASTQ file containing forward reads
+  - input_rev.fastq: FASTQ file containing reverse reads
+- For single-end reads:
+  - input.fastq: FASTQ file containing sequencing reads
+
+Specifications:
+- ADAPTER_FWD, ADAPTER_REV, ADAPTER: The sequences of the adapters to be trimmed.
+
+Note:
+- Replace ADAPTER_FWD, ADAPTER_REV, ADAPTER with the actual adapter sequences.
+
+Command to run:
+- Replace the input and output file names and adapter sequences, then run the provided command in the terminal.

@@ -1,0 +1,32 @@
+Use Case: ReFrame is a framework for writing regression tests for HPC systems. It is a scalable and flexible framework that allows users to define, write, and run tests in a structured way.
+
+Code details and examples:
+1. Sample input file (test_python.py):
+```python
+import os
+from reframe import RunOnlyRegressionTest
+
+class MyTest(RunOnlyRegressionTest):
+    def __init__(self, partition='gpu', **kwargs):
+        super().__init__('my_test', os.path.dirname(__file__), **kwargs)
+        self.valid_systems = ['my_system:{}'.format(partition)]
+        self.valid_prog_environs = ['my_env']
+        self.executable = 'my_executable'
+        self.executable_opts = ['input.dat']
+        self.sanity_patterns = {
+            'output': 'SUCCESS'
+        }
+        self.num_tasks = 4
+        self.num_tasks_per_node = 1
+        self.reference = {
+            'my_system:gpu': {'output': 'SUCCESS'}
+        }
+
+```
+
+2. Running the test:
+```bash
+reframe -c test_python.py -r --performance-report
+```
+
+In the above example, a sample regression test is defined in a Python script using ReFrame. The test checks the output of an executable 'my_executable' with input file 'input.dat'. The test is configured to run on a system named 'my_system' with the 'gpu' partition and 'my_env' environment. The test should run with 4 tasks and 1 task per node, and the output should contain the string 'SUCCESS'.

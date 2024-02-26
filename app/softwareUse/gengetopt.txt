@@ -1,0 +1,42 @@
+Use Case: Generate a command line parser in C/C++.
+
+Code details and examples:
+```c
+// sample.ggo
+package "sample"
+version "1.0"
+purpose "Example of gengetopt usage"
+
+option "verbose"      v "Be verbose"
+option "output-file"  o "Name of the output file" string
+
+// After compiling the gengetopt file
+// Run the following command to generate the C code
+gengetopt --input=sample.ggo
+
+// Include the generated header file in your C/C++ code
+#include "sample_cmdline.h"
+
+int main(int argc, char** argv) {
+    struct cmdline_parser_params params;
+    struct gengetopt_args_info args_info;
+
+    params.initialize = 1;
+    if (cmdline_parser_ext(argc, argv, &args_info, &params) != 0) {
+        exit(1);
+    }
+
+    if (args_info.verbose_flag) {
+        printf("Verbose mode enabled.\n");
+    }
+
+    if (args_info.output_file_given) {
+        printf("Output file specified: %s\n", args_info.output_file_arg);
+    }
+
+    cmdline_parser_free(&args_info);
+    return 0;
+}
+```
+
+To run the compiled code, use the appropriate compiler command for your system.

@@ -1,0 +1,53 @@
+Use Case: p3dfft is a library of parallel 3-dimensional Fast Fourier Transforms (FFT) for large-scale scientific applications in distributed-memory environments.
+
+Code details and examples:
+Sample input file (input.dat):
+```
+16 16 16
+```
+
+Sample code snippet in C for 3D FFT using p3dfft:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include "p3dfft.h"
+
+int main(int argc, char **argv) {
+    p3dfft_plan *plan;
+    int n[3] = {16, 16, 16};
+
+    p3dfft_init();
+
+    plan = p3dfft_create_default_plan(n, P3DFFT_FORWARD, P3DFFT_COMPLEX, MPI_COMM_WORLD);
+
+    // Allocate memory for input data
+    double complex *data = (double complex *) malloc(plan->local_naftertrans * sizeof(double complex));
+
+    // Load input data from file
+    // Assuming the file contains a list of 16x16x16 complex numbers
+
+    // Transform
+    p3dfft_exec_dft(plan, data, P3DFFT_FORWARD);
+
+    // Process transformed data
+
+    free(data);
+    p3dfft_destroy_plan(plan);
+    
+    p3dfft_shutdown();
+
+    return 0;
+}
+```
+
+To compile the code (assuming the code above is saved in fft_example.c) using mpicc:
+```
+mpicc -o fft_example fft_example.c -lp3dfft -lfftw3_mpi -lfftw3 -lm
+```
+
+To run the compiled code (assuming the executable is named fft_example):
+```
+mpiexec -n <num_procs> ./fft_example
+```
+
+Make sure to replace `<num_procs>` with the desired number of MPI processes for the parallel computation.

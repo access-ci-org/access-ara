@@ -1,0 +1,20 @@
+Use Case: ondemand  
+Code details and examples:  
+- **Interactive computing with Jupyter Notebooks**  
+  Input files: Jupyter notebook (.ipynb file)  
+  Code:  
+  ```
+  jupyter notebook
+  ```  
+- **Remote visualization with ParaView**  
+  Input files: Data files for visualization  
+  Code:  
+  ```
+  paraview
+  ```  
+- **Job submission to a cluster with Slurm**  
+  Input files: Slurm script for job submission  
+  Code:  
+  ```
+  sbatch myjobscript.sh
+  ```

@@ -1,0 +1,16 @@
+Use Case: Display desktop notifications
+Code details and examples:
+```python
+import gi
+gi.require_version('Notify', '0.7')
+from gi.repository import Notify
+
+# Initialize the notification
+Notify.init("Notification Title")
+
+# Create a new notification
+notification = Notify.Notification.new("Hello World", "This is a test notification")
+
+# Show the notification
+notification.show()
+```

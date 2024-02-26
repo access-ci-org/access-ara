@@ -1,0 +1,19 @@
+Use Case: Image processing library
+Code details and examples:
+Pillow is a Python Imaging Library that adds image processing capabilities to your Python interpreter. Below is an example of how to use Pillow to open and display an image:
+
+```python
+from PIL import Image
+
+# Open an image file
+img = Image.open('image.jpg')
+
+# Display the image
+img.show()
+```
+
+To install Pillow, you can use pip:
+
+```
+pip install Pillow
+```

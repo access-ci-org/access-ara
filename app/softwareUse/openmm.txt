@@ -1,0 +1,42 @@
+Use Case: Molecular dynamics simulations
+Code details and examples:
+```
+# Sample input files: system.xml, coordinates.pdb, forcefield.xml
+# system.xml: Contains information about the molecular system
+# coordinates.pdb: Contains initial coordinates of the atoms
+# forcefield.xml: Contains force field parameters
+
+from simtk.openmm import app
+import simtk.openmm as mm
+from simtk import unit
+
+# Load the system
+system = mm.XmlSerializer.deserialize(open('system.xml').read())
+
+# Load the coordinates
+pdb = app.PDBFile('coordinates.pdb')
+
+# Load the force field
+forcefield = app.ForceField('forcefield.xml')
+
+# Create the simulation context
+integrator = mm.LangevinIntegrator(300*unit.kelvin, 1.0/unit.picosecond, 2.0*unit.femtosecond)
+platform = mm.Platform.getPlatformByName('CUDA')
+simulation = app.Simulation(topology=pdb.topology, system=system, integrator=integrator, platform=platform)
+
+# Set the initial coordinates
+simulation.context.setPositions(pdb.positions)
+
+# Minimize the energy
+simulation.minimizeEnergy()
+
+# Run dynamics
+simulation.reporters.append(app.DCDReporter('output.dcd', 1000))
+simulation.reporters.append(app.StateDataReporter('data.csv', 1000, step=True, potentialEnergy=True, temperature=True))
+simulation.step(10000)
+```
+
+To run the code:
+```bash
+python my_simulation_script.py
+```

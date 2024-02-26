@@ -1,0 +1,34 @@
+Use Case: Pegasus is a workflow management system that enables users to create, submit, monitor, and manage workflows in distributed computing environments.
+
+Code details and examples:
+Pegasus workflows are specified using a workflow description language called DAX (Directed Acyclic Graph in XML). Below is an example of a simple DAX file for a workflow with two jobs:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE adag SYSTEM "http://pegasus.isi.edu/schema/dax-2.1.xsd">
+<adag xmlns="http://pegasus.isi.edu/schema/DAX" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/DAX http://pegasus.isi.edu/schema/dax-2.1.xsd" version="2.1">
+    <job id="ID00000" name="job1" nodeLabel="example" runtime="60" cores="1">
+        <uses file="input1.txt" link="input" size="1024"/>
+        <uses file="output1.txt" link="output" size="1024"/>
+    </job>
+    <job id="ID00001" name="job2" nodeLabel="example" runtime="120" cores="1">
+        <uses file="output1.txt" link="input" size="1024"/>
+        <uses file="output2.txt" link="output" size="1024"/>
+    </job>
+    <child ref="ID00001" ref="ID00000"/>
+</adag>
+```
+
+To run a workflow using Pegasus, you can use the `pegasus-plan` command to generate an executable workflow from the DAX file. Below is an example command to generate a workflow plan:
+
+```bash
+pegasus-plan --conf pegasus.properties --dax your_workflow.dax --dir output_dir
+```
+
+After generating the workflow plan, you can submit it for execution using the `pegasus-run` command. Below is an example command to submit the workflow plan:
+
+```bash
+pegasus-run --dir output_dir
+```
+
+This will submit the workflow to the execution site specified in the configuration file `pegasus.properties` and monitor its progress.

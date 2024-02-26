@@ -1,0 +1,20 @@
+Use Case: Single-cell RNA-seq analysis with Velocyto
+
+Code details and examples:
+Velocyto is a tool for the analysis of single-cell RNA sequencing data. It can be used to estimate RNA velocity, which measures the rate of change of gene expression levels at the single-cell level. Velocyto requires processed single-cell RNA-sequencing data as input to analyze the spliced and unspliced reads.
+
+Example input files format:
+- Velocyto requires a BAM file containing mapped reads, a GTF file containing genomic annotations, and a gene whitelist file.
+
+Code example to run Velocyto:
+```
+velocyto run10x -b path/to/possorted_genome_bam.bam -m path/to/genes.gtf -o output_dir --samtools-threads 8
+```
+In this command:
+- `run10x` specifies the type of data being analyzed (10x Genomics data).
+- `-b` specifies the path to the BAM file.
+- `-m` specifies the path to the GTF file.
+- `-o` specifies the output directory.
+- `--samtools-threads` specifies the number of threads to use for running samtools.
+
+Note: The actual command may vary based on the type of single-cell RNA-seq data and the file formats used. Be sure to check the Velocyto documentation for more detailed instructions and options.

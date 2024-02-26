@@ -1,0 +1,20 @@
+I'm not sure which specific software package you are referring to. However, if you are looking for a computational biology tool related to phylogenetics, the following example might be relevant:
+
+Use Case: Phylogenetic tree reconstruction using Cactus
+Code details and examples:
+Sample input file (sequences.fasta):
+```
+>SpeciesA
+ACTGCTAGCTAGCTAGCTAGCTAGCTAGCT
+>SpeciesB
+ACTGCTAGCTAGCTAGCTAGCTAGCTAGCT
+>SpeciesC
+ACTGCTAGCTAGCTAGCTAGCTAGCTAGCT
+```
+
+Command to run Cactus for phylogenetic analysis with HAL format output:
+```
+cactus input_sequences.fasta output_hal_file.hal
+```
+
+Please provide more details if you are referring to a different software package.

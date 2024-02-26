@@ -1,0 +1,23 @@
+Use Case: libbsd is a library providing commonly used BSD functions not readily available on all operating systems.
+
+Code details and examples:
+```c
+#include <bsd/stdlib.h>
+#include <stdio.h>
+
+int main()
+{
+    // Example usage of strtonum function from libbsd
+    const char *str = "42";
+    int num = strtonum(str, 0, 100, NULL);
+    
+    printf("Parsed number: %d\n", num);
+    
+    return 0;
+}
+```
+
+To compile the code above using the libbsd library, you can use the following command:
+```bash
+gcc -o my_program my_program.c -lbsd
+```

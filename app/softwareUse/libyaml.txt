@@ -1,0 +1,50 @@
+I'm assuming you refer to the LibYAML library which is a YAML parser and emitter written in C programming language.
+
+Use Case: Parsing a YAML file using LibYAML
+Code details and examples:
+Sample input YAML file (input.yaml):
+```yaml
+name: John Doe
+age: 30
+city: New York
+```
+
+C code to parse the YAML file using LibYAML:
+```c
+#include <yaml.h>
+#include <stdio.h>
+
+int main() {
+    FILE *file = fopen("input.yaml", "r");
+    yaml_parser_t parser;
+    yaml_event_t event;
+    
+    yaml_parser_initialize(&parser);
+    yaml_parser_set_input_file(&parser, file);
+    
+    while (1) {
+        if (!yaml_parser_parse(&parser, &event)) {
+            break;
+        }
+        
+        if (event.type == YAML_SCALAR_EVENT) {
+            printf("%s: %s\n", event.data.scalar.tag, event.data.scalar.value);
+        }
+        
+        yaml_event_delete(&event);
+    }
+    
+    yaml_parser_delete(&parser);
+    fclose(file);
+    
+    return 0;
+}
+```
+
+Compile and run the code (assuming you have installed LibYAML and have the yaml.h header file):
+```bash
+gcc -o parse_yaml parse_yaml.c -lyaml
+./parse_yaml
+```
+
+This code snippet demonstrates how to use the LibYAML library to parse a YAML file and print out the key-value pairs in the YAML file.

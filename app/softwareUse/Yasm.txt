@@ -1,0 +1,31 @@
+Use Case: Assembler tool for x86 and x86-64 architectures
+
+Code details and examples:
+Yasm is an assembler tool commonly used for x86 and x86-64 architectures. Here is an example of using Yasm to assemble an x86-64 code file.
+
+Sample x86-64 code file (hello.asm):
+```asm
+section .data
+    msg db 'Hello, World!', 0
+
+section .text
+    global _start
+
+_start:
+    mov rax, 1          ; syscall number for sys_write
+    mov rdi, 1          ; file handle 1 is stdout
+    mov rsi, msg        ; message to print
+    mov rdx, 13         ; length of the message
+    syscall
+
+    mov rax, 60         ; syscall number for sys_exit
+    xor rdi, rdi        ; exit code 0
+    syscall
+```
+
+To assemble the code using Yasm:
+```bash
+yasm -f elf64 hello.asm -o hello.o
+```
+
+This command will assemble the `hello.asm` file using Yasm, specifying the output format as `elf64` and producing the object file `hello.o`.

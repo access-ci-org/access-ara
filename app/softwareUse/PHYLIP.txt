@@ -1,0 +1,28 @@
+Use Case: PHYLIP is a free package of programs for inferring phylogenies. It includes programs for phylogenetic inference using various methods, such as distance matrix, parsimony, likelihood, and Bayesian.
+
+Code details and examples:
+- Example of using the "neighbor" program in PHYLIP:
+```
+$ neighbor < input_file
+```
+- Example of input file for the "neighbor" program:
+```
+5
+SpeciesA  0.0  0.3  0.4  0.7
+SpeciesB  0.3  0.0  0.5  0.8
+SpeciesC  0.4  0.5  0.0  0.45
+SpeciesD  0.7  0.8  0.45 0.0
+```
+
+- Example of using the "dnaml" program in PHYLIP:
+```
+$ dnaml < input_file
+```
+- Example of input file for the "dnaml" program:
+```
+5  500
+1
+( (SpeciesA:0.1,SpeciesB:0.2):0.3,(SpeciesC:0.15,SpeciesD:0.25):0.4);
+```
+
+Please note that these are just examples and the actual input files may vary based on the specific program and analysis you are conducting within the PHYLIP package.

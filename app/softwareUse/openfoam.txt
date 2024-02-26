@@ -1,0 +1,24 @@
+Use Case: Computational fluid dynamics simulation using OpenFOAM
+
+Code details and examples:
+OpenFOAM is an open-source computational fluid dynamics software package. Here is an example of running a simple channel flow simulation using OpenFOAM:
+
+1. Create a case directory and set up the geometry and initial conditions:
+```bash
+mkdir channelFlow
+cd channelFlow
+cp -r $FOAM_TUTORIALS/incompressible/simpleFoam/pitzDaily .
+blockMesh
+```
+
+2. Run the simulation:
+```bash
+simpleFoam
+```
+
+3. Post-process the results:
+```bash
+paraFoam
+```
+
+This is a basic example, and OpenFOAM offers various solvers, utilities, and pre-processing tools for complex fluid flow simulations. The input files and formats can vary depending on the specific simulation setup.

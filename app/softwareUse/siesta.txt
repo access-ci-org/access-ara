@@ -1,0 +1,21 @@
+Siesta is a DFT (Density Functional Theory) code used for electronic structure calculations. 
+
+Use Case: Electronic structure calculation
+Code details and examples:
+Input file (example input.fdf):
+```
+SystemName   Siesta example
+NumberOfSpecies  1
+NumberOfAtoms  2
+BeginAtoms
+1  0.00  0.00  0.00
+2  1.54  1.54  1.54
+EndAtoms
+```
+
+Command to run:
+```
+siesta < input.fdf > output.out
+```
+
+This command will run Siesta with the parameters specified in the input file input.fdf and output the results to output.out.

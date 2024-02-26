@@ -1,0 +1,42 @@
+Use Case: Sparse linear algebra solver
+
+Code details and examples: 
+UMFPACK is a collection of routines for solving sparse linear systems Ax = b using direct methods based on LU factorization. It is commonly used in computational science and engineering applications.
+
+Input file format:
+The input matrix A and right-hand side vector b can be provided in Matrix Market (.mtx) format. Here is an example of how you can create a sparse matrix in Matrix Market format:
+
+```
+%%MatrixMarket matrix coordinate real general
+% Example 3x3 sparse matrix
+3 3 5
+1 1 1.0
+2 2 2.0
+3 3 3.0
+1 2 4.0
+2 3 5.0
+```
+
+Code:
+Here is an example code snippet in Python using `scipy` to solve a sparse linear system using UMFPACK:
+
+```python
+import numpy as np
+from scipy.sparse import coo_matrix
+from scipy.sparse.linalg import spsolve
+from scipy.io import mmread
+
+# Load the sparse matrix A and the right-hand side vector b from Matrix Market files
+A = mmread("matrixA.mtx")
+b = mmread("vectorB.mtx")
+
+# Convert the matrix A to CSR format for UMFPACK
+A_csr = A.tocsr()
+
+# Solve the linear system Ax = b using UMFPACK
+x = spsolve(A_csr, b)
+
+print(x)
+```
+
+Note: UMFPACK is part of SuiteSparse and is commonly used in conjunction with other sparse linear algebra libraries like SuperLU and CHOLMOD.

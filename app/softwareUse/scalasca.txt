@@ -1,0 +1,48 @@
+Use Case: Scalasca is a software tool that supports the performance optimization of parallel programs by measuring and analyzing their runtime behavior. It analyzes bottlenecks, inefficiencies and scalability issues in parallel applications.
+
+Code details and examples:
+1. To profile a parallel application using Scalasca, you first need to instrument your code with Scalasca's measurement API. Here is an example of a sample MPI C program that calculates the sum of an array and how you can instrument it with Scalasca:
+
+Sample input file (mpi_sum.c):
+```c
+#include <stdio.h>
+#include <mpi.h>
+
+#define ARRAY_SIZE 1000
+
+int main(int argc, char **argv) {
+    int rank, size;
+    int array[ARRAY_SIZE];
+    int sum = 0;
+
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    for (int i = 0; i < ARRAY_SIZE; i++) {
+        array[i] = i;
+        sum += array[i];
+    }
+
+    printf("Rank %d: Sum = %d\n", rank, sum);
+
+    MPI_Finalize();
+    return 0;
+}
+```
+
+Instrumenting the code with Scalasca:
+```
+mpicc -o mpi_sum mpi_sum.c -lscalasca
+```
+
+2. After compiling your instrumented code, you can run it with Scalasca using the following command:
+
+Command to run with Scalasca:
+```
+scalasca -analyze mpiexec -np 4 ./mpi_sum
+```
+
+This will profile your parallel application using Scalasca and generate a report containing performance analysis results.
+
+Please note that the above examples are illustrative and the specific commands and tools may vary based on your system setup and the version of Scalasca you are using.

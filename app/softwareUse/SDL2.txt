@@ -1,0 +1,38 @@
+Use Case: SDL2 (Simple DirectMedia Layer) is a cross-platform development library designed to provide low-level access to audio, keyboard, mouse, and graphics hardware. It is often used for developing games, multimedia applications, and emulators.
+
+Code details and examples:
+```c
+#include <SDL2/SDL.h>
+
+int main(int argc, char** argv) {
+    SDL_Init(SDL_INIT_VIDEO);
+
+    SDL_Window* window = SDL_CreateWindow("SDL2 Sample", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, 0);
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+
+    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+
+    SDL_RenderClear(renderer);
+
+    SDL_RenderPresent(renderer);
+
+    SDL_Delay(3000);
+
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+
+    SDL_Quit();
+
+    return 0;
+}
+```
+
+To compile the above code (assuming the file is named `sdl_sample.c`):
+```
+gcc sdl_sample.c -o sdl_sample `sdl2-config --cflags --libs`
+```
+
+To run the compiled executable:
+```
+./sdl_sample
+```

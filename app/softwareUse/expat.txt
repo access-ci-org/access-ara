@@ -1,0 +1,60 @@
+Use Case: Expat is an XML parser library in C. It is widely used for parsing XML files in various applications.
+
+Code details and examples:
+Sample input XML file (input.xml):
+```
+<root>
+    <name>John Doe</name>
+    <age>30</age>
+</root>
+```
+
+Sample code snippet to parse input.xml using Expat in C:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <expat.h>
+
+void startElement(void *userData, const XML_Char *name, const XML_Char **atts) {
+    printf("Element start: %s\n", name);
+}
+
+void endElement(void *userData, const XML_Char *name) {
+    printf("Element end: %s\n", name);
+}
+
+void characterData(void *userData, const XML_Char *s, int len) {
+    printf("Character data: %.*s\n", len, s);
+}
+
+int main() {
+    FILE *fp = fopen("input.xml", "r");
+
+    XML_Parser parser = XML_ParserCreate(NULL);
+    XML_SetElementHandler(parser, startElement, endElement);
+    XML_SetCharacterDataHandler(parser, characterData);
+
+    char buf[1024];
+    int bytesRead;
+    while ((bytesRead = fread(buf, 1, sizeof(buf), fp)) > 0) {
+        XML_Parse(parser, buf, bytesRead, bytesRead < sizeof(buf));
+    }
+
+    XML_Parse(parser, buf, 0, 1); // Finalizing parsing
+
+    XML_ParserFree(parser);
+    fclose(fp);
+
+    return 0;
+}
+```
+
+To compile the code, you can use a command like:
+```bash
+gcc -o xml_parser xml_parser.c -lexpat
+```
+
+And then run the compiled program:
+```bash
+./xml_parser
+```

@@ -1,0 +1,18 @@
+Use Case: LDAP server software.
+
+Code Details and Examples:
+Sample LDIF file (input file format):
+```
+dn: cn=John Doe,dc=example,dc=com
+cn: John Doe
+sn: Doe
+mail: john.doe@example.com
+objectClass: inetOrgPerson
+```
+
+Sample command to add an entry to LDAP server:
+```
+ldapadd -x -D "cn=admin,dc=example,dc=com" -W -f entry.ldif
+```
+
+Note: The actual command may vary based on the LDAP server configuration.

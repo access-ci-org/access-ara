@@ -1,0 +1,29 @@
+Use Case: Finite element analysis with OpenSees  
+Code details and examples:  
+Input file format:
+```
+# define nodes
+node 1 0.0 0.0
+node 2 0.0 5.0
+node 3 5.0 5.0
+node 4 5.0 0.0
+
+# define elements
+element quad 1 1 2 3 4 $matTag thick
+element quad 2 5 6 7 8 $matTag thick
+
+# define material
+uniaxialMaterial Elastic 1 30000
+
+# define section
+section Elastic 1 10 10
+
+# define thick
+set thick 0.1
+```
+
+Command to run OpenSees:
+```
+$ OpenSees filename.tcl
+```  
+Make sure to replace `filename.tcl` with the actual name of your OpenSees script file.

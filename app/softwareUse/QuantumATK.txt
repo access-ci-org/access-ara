@@ -1,0 +1,37 @@
+QuantumATK is a premium software package for atomic-scale modeling of materials, nanostructures, and devices. It is widely used in research areas such as solid-state physics, chemistry, and materials science.
+
+Use Case: Electronic structure calculation
+Code details and examples:
+
+Input file format (example input file for DFT calculation):
+```
+# QuantumATK input file for DFT calculation
+# Define the physical system
+PhysicalSystem(
+    name = "bulk_si",
+    valence_electrons = 8,
+    atomic_coordinates = [[0.0, 0.0, 0.0], [0.25, 0.25, 0.25]],
+    elements = [14, 14],
+    initial_spin_guess = [1.0, 1.0],
+    k_point_sampling = MonkhorstPackGrid(4, 4, 4),
+    k_point_interpolator = Kerker(epsilon=1.0e-6)
+)
+
+# Define the calculator (e.g., DFTB, ATK-DFT, etc.)
+Calculator(
+    name = "DFT",
+    method = DFTB(
+        k_point_sampling = {"path" : "automatic"}
+    )
+)
+
+# Run the calculation
+results = ATKCalculators.DFTB(bulk_si)
+energy = results.total_energy
+print(f"Total energy: {energy} eV")
+```
+
+Command to run the calculation:
+```
+quantumatk input.in > output.out
+```

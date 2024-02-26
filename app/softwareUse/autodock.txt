@@ -1,0 +1,16 @@
+Use Case: Molecular docking using AutoDock
+
+Code details and examples:
+```
+# AutoDock is a popular software for molecular docking studies. Here is an example of how to perform a molecular docking using AutoDock.
+
+# Input files required:
+# - receptor.pdbqt: 3D structure of the receptor molecule in PDBQT format
+# - ligand.pdbqt: 3D structure of the ligand molecule in PDBQT format
+# - parameter_file: AutoDock parameter file specifying the docking parameters
+
+# Command to run AutoDock:
+autodock4 -p parameter_file -r receptor.pdbqt -l ligand.pdbqt
+```
+
+Make sure to replace "parameter_file", "receptor.pdbqt", and "ligand.pdbqt" with the actual file names in your local directory.

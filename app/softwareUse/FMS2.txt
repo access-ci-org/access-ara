@@ -1,0 +1,31 @@
+Use Case: Scientific tools  
+Code details and examples:  
+FMS2 is a software package for computational chemistry. It requires input files in FMS format to run simulations.
+
+Example input file (input.fms):
+```
+title
+This is a sample input file for FMS2
+end
+
+geometry
+O 0.0 0.0 0.0
+H 1.0 0.0 0.0
+H 0.0 1.0 0.0
+end
+
+basis
+O
+cc-pVDZ
+H
+cc-pVDZ
+end
+
+energy
+end
+```
+
+To run FMS2 with the input file, you can use the following command:
+```
+fms2 input.fms
+```

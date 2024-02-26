@@ -1,0 +1,13 @@
+Use Case: Checkpointing and migration tool for distributed computing
+
+Code details and examples:
+- DMTCP (Distributed MultiThreaded CheckPointing) is a tool that allows users to transparently checkpoint and restart distributed computations.
+- To checkpoint a program using DMTCP, you can use the following command:
+  ```
+  dmtcp_checkpoint <your_program>
+  ```
+- To restart a program from a checkpoint, you can use the following command:
+  ```
+  dmtcp_restart ckpt_<your_program>_PID_<pid>
+  ```
+- DMTCP can be used with various MPI implementations and other distributed computing frameworks to enable fault tolerance and migration capabilities.

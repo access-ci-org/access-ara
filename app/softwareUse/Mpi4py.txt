@@ -1,0 +1,29 @@
+Use Case: Parallel processing in Python using MPI with mpi4py
+Code details and examples:
+1. Installation: You can install mpi4py using pip:
+```bash
+pip install mpi4py
+```
+2. Sample input file (example.py) for running MPI code with mpi4py:
+```python
+from mpi4py import MPI
+
+comm = MPI.COMM_WORLD
+size = comm.Get_size()
+rank = comm.Get_rank()
+
+if rank == 0:
+    data = {'a': 1, 'b': 2, 'c': 3}
+else:
+    data = None
+
+data = comm.bcast(data, root=0)
+print(f"Process {rank} received data: {data}")
+```
+3. Running the MPI code with mpi4py (assuming you have MPI installed):
+```bash
+mpirun -n 4 python example.py
+```
+This will run the example.py script with 4 processes.
+
+Please note that you need to have MPI installed on your system to run MPI codes.

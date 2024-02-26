@@ -1,0 +1,19 @@
+Use Case: Identify gene fusions in RNA-seq data
+Code details and examples:
+STAR-Fusion is a software tool that can detect fusion transcripts from RNA-seq data. It can also identify known and novel fusion transcripts.
+
+Sample input files format:
+- Input: RNA-seq reads in FASTQ format
+- Output: Fusion gene predictions in a tabular format
+
+Command to run STAR-Fusion:
+```bash
+STAR-Fusion --left_fq sample_R1.fq.gz --right_fq sample_R2.fq.gz --genome_lib_dir my_genome_lib_dir --output_dir fusion_output
+```
+
+In the above command:
+- `--left_fq` and `--right_fq` specify the paths to the left and right FASTQ files respectively
+- `--genome_lib_dir` specifies the path to the directory containing the STAR genome index files
+- `--output_dir` specifies the directory where the fusion output will be stored
+
+After running STAR-Fusion, you can find the fusion predictions in the output directory specified.

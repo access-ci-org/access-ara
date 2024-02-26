@@ -1,0 +1,11 @@
+Use Case: Visualizing netCDF files  
+Code details and examples:  
+```python
+import panoply
+
+# Sample input file: Example.nc (netCDF file)
+# Format required: netCDF
+# Specifications: Contains scientific data in netCDF format
+# Code snippet:
+panoply.netcdf_plot('Example.nc')
+```  

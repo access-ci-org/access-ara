@@ -1,0 +1,21 @@
+Hadoop is an open-source software framework used for distributed storage and processing of large data sets using the MapReduce programming model.
+
+Use Case: Word Count
+Code details and examples:
+1. Create a text file with sample input data:
+```shell
+echo "hello world" > input.txt
+echo "world hadoop" >> input.txt
+```
+
+2. Run the WordCount example provided with Hadoop:
+```shell
+hadoop jar hadoop-mapreduce-examples.jar wordcount input.txt output
+```
+
+3. View the output:
+```shell
+hadoop fs -cat output/part-r-00000
+```
+
+This is a basic example to showcase how Hadoop can be used to run a WordCount program on a given input file.

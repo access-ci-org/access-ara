@@ -1,0 +1,42 @@
+As DDT is a parallel debugger tool used in high-performance computing environments, I will provide a general outline for how to use a parallel debugger tool, like DDT, with an MPI program.
+
+Use Case: Using a parallel debugger tool with an MPI program 
+Code details and examples:
+
+1. Sample MPI Program (mpi_example.c):
+```c
+#include <stdio.h>
+#include "mpi.h"
+
+int main(int argc, char **argv) {
+    int rank, size;
+    
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+    
+    printf("Hello from process %d of %d\n", rank, size);
+
+    MPI_Finalize();
+    
+    return 0;
+}
+```
+
+2. Compilation of MPI Program:
+```bash
+mpicc mpi_example.c -o mpi_example
+```
+
+3. Running MPI Program:
+```bash
+mpirun -np 4 ./mpi_example
+```
+
+4. Using DDT to debug MPI Program:
+- Start DDT and create a new debugging session.
+- Select your MPI executable (e.g., mpi_example) and the number of processes.
+- Set breakpoints, inspect variables, and run the program in debug mode.
+- Use DDT's interface to analyze the behavior of the MPI program and debug any issues.
+
+Please note that the exact steps to use DDT may vary based on the specific version and configuration.

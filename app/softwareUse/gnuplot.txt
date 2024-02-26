@@ -1,0 +1,23 @@
+Use Case: Visualization of scientific data using gnuplot
+
+Code details and examples:
+Sample input file (data.txt):
+```
+1 1
+2 4
+3 9
+4 16
+5 25
+```
+
+Sample gnuplot code (script.gp):
+```
+set terminal png
+set output 'output.png'
+plot 'data.txt' with lines
+```
+
+Command to run:
+```
+gnuplot script.gp
+```

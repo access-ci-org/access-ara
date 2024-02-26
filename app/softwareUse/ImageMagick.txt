@@ -1,0 +1,35 @@
+Use Case: Image processing, conversion, and editing
+Code details and examples:
+ImageMagick is a powerful command-line tool for image manipulation, conversion, and editing. Here are some examples of how to use ImageMagick with some sample input files:
+
+1. Convert an image from one format to another:
+```bash
+convert input.jpg output.png
+```
+
+2. Resize an image:
+```bash
+convert input.jpg -resize 50% output.jpg
+```
+
+3. Crop an image:
+```bash
+convert input.jpg -crop 100x100+10+10 output.jpg
+```
+
+4. Add a border to an image:
+```bash
+convert input.jpg -bordercolor black -border 10x10 output.jpg
+```
+
+5. Rotate an image:
+```bash
+convert input.jpg -rotate 90 output.jpg
+```
+
+6. Create a thumbnail:
+```bash
+convert input.jpg -thumbnail 100x100 output.jpg
+```
+
+These are just a few examples of what you can do with ImageMagick. You can explore more options and functionalities by referring to the official documentation.

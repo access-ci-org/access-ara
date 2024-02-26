@@ -1,0 +1,43 @@
+Use Case: Arbitrary-precision arithmetic with GMP
+
+Code details and examples:
+```c
+#include <gmp.h>
+#include <stdio.h>
+
+int main() {
+    mpz_t num1, num2, result;
+    
+    // Initialize variables
+    mpz_init(num1);
+    mpz_init(num2);
+    mpz_init(result);
+    
+    // Set values
+    mpz_set_str(num1, "123456789012345678901234567890", 10);
+    mpz_set_str(num2, "987654321098765432109876543210", 10);
+    
+    // Perform addition
+    mpz_add(result, num1, num2);
+    
+    // Output result
+    gmp_printf("Result: %Zd\n", result);
+    
+    // Clear variables
+    mpz_clear(num1);
+    mpz_clear(num2);
+    mpz_clear(result);
+    
+    return 0;
+}
+```
+
+Compilation command:
+```
+gcc -o gmp_example gmp_example.c -lgmp
+```
+
+To run the compiled program:
+```
+./gmp_example
+```

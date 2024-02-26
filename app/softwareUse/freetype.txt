@@ -1,0 +1,37 @@
+Use Case: Text rendering library  
+Code details and examples:  
+Freetype is a popular software library used for rendering text on different platforms. Below is a simple example to demonstrate how to render text using Freetype in C.
+
+Input file (font file required for text rendering in this case):
+- Font file (e.g., Arial.ttf)
+
+```c
+#include <ft2build.h>
+#include FT_FREETYPE_H
+
+int main() {
+    FT_Library ft;
+    FT_Face face;
+
+    FT_Init_FreeType(&ft);
+    FT_New_Face(ft, "Arial.ttf", 0, &face);
+    FT_Set_Char_Size(face, 0, 16*64, 300, 300);
+
+    // Render text here
+
+    FT_Done_Face(face);
+    FT_Done_FreeType(ft);
+
+    return 0;
+}
+```
+
+To compile the above code using GCC:
+```bash
+gcc -o text_rendering text_rendering.c -lfreetype
+```
+
+To run the generated executable:
+```bash
+./text_rendering
+```

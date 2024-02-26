@@ -1,0 +1,32 @@
+Use Case: Graphical User Interface Development
+Code details and examples: 
+GTK3 is a popular toolkit for creating graphical user interfaces. Below is a simple example of a GTK3 window written in Python:
+
+```python
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+
+class MyWindow(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title="GTK3 Example")
+        self.set_default_size(200, 100)
+
+        self.button = Gtk.Button(label="Click Here")
+        self.button.connect("clicked", self.on_button_clicked)
+        self.add(self.button)
+
+    def on_button_clicked(self, widget):
+        print("Button was clicked!")
+
+win = MyWindow()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()
+```
+
+To run the above code, save it in a file (e.g., `gtk3_example.py`) and execute it using Python:
+
+```
+python gtk3_example.py
+```

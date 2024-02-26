@@ -1,0 +1,26 @@
+Use Case: DeepLabCut is a toolbox for markerless pose estimation of animals or objects in videos. It is widely used in neuroscience and behavioral research.
+
+Code details and examples:
+- You need to create a project with labeled frames and specify the body parts to track.
+- Use the provided config.yaml file to set up the parameters for training.
+- Run the training using the following command:
+```
+deeplabcut train-network <your-project-path> -c config.yaml
+```
+- Once the model is trained, you can analyze new videos using the following command:
+```
+deeplabcut analyze-videos <your-project-path>/config.yaml <video-file>
+```
+- Finally, you can visualize the results using the following command:
+```
+deeplabcut plot-trajectories <your-project-path>/config.yaml <video-file>
+```
+
+Sample input files:
+- config.yaml: Contains parameters for training such as body parts and network architecture.
+- labeled frames: Contains images with labeled body parts for training.
+- video file: Contains the video that you want to analyze.
+
+Note: DeepLabCut requires Python to run, and it is recommended to install it through Anaconda.
+
+For more information, you can visit the official DeepLabCut documentation: https://deeplabcut.github.io/DeepLabCut/docs/

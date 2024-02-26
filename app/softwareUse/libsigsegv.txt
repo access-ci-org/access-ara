@@ -1,0 +1,33 @@
+Use Case: Handling segmentation faults in C programs.
+
+Code details and examples:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <sigsegv.h>
+
+void segfault_handler(int signum, siginfo_t *info, void *context) {
+    printf("Segmentation fault occurred. Exiting...\n");
+    exit(EXIT_FAILURE);
+}
+
+int main() {
+    struct sigaction sa;
+    sa.sa_sigaction = segfault_handler;
+    sigemptyset(&sa.sa_mask);
+    sa.sa_flags = SA_SIGINFO;
+
+    if (sigaction(SIGSEGV, &sa, NULL) == -1) {
+        perror("sigaction");
+        return EXIT_FAILURE;
+    }
+
+    // Intentional segmentation fault
+    int *ptr = NULL;
+    *ptr = 5;
+
+    return 0;
+}
+```
+
+Note: The `libsigsegv` library is used in C programs to handle segmentation faults explicitly by defining custom signal handlers.

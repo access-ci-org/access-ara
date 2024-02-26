@@ -1,0 +1,9 @@
+Use Case: RNA-seq read alignment with STAR
+Code details and examples: 
+```
+# Create an index from a reference genome
+STAR --runMode genomeGenerate --genomeDir /path/to/genomeDir --genomeFastaFiles /path/to/genome.fasta --runThreadN 8
+
+# Align RNA-seq reads to the reference genome
+STAR --genomeDir /path/to/genomeDir --readFilesIn /path/to/read1.fastq /path/to/read2.fastq --outFileNamePrefix output_ --runThreadN 8
+```

@@ -1,0 +1,72 @@
+Use Case: Creating a simple animated GIF using giflib.
+
+Code details and examples:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <gif_lib.h>
+
+#define WIDTH 100
+#define HEIGHT 100
+
+int main() {
+    int error;
+    GifFileType* gifFile;
+
+    GifByteType* gifData = (GifByteType *) malloc(WIDTH * HEIGHT);
+    if (gifData == NULL) {
+        fprintf(stderr, "Error: Failed to allocate memory for GIF data.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    // Fill GIF data with some example pixels
+    memset(gifData, 0, WIDTH * HEIGHT);
+    for (int i = 0; i < WIDTH * HEIGHT; i++) {
+        gifData[i] = i % 256;  // Simple gradient pattern
+    }
+
+    if ((gifFile = EGifOpenFileName("output.gif", false, &error)) == NULL) {
+        PrintGifError(error);
+        exit(EXIT_FAILURE);
+    }
+
+    if (EGifPutScreenDesc(gifFile, WIDTH, HEIGHT, 8, 0) == GIF_ERROR) {
+        fprintf(stderr, "Error: Failed to write screen description.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if (EGifPutImageDesc(gifFile, 0, 0, WIDTH, HEIGHT, false, NULL) == GIF_ERROR) {
+        fprintf(stderr, "Error: Failed to write image description.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if (EGifPutLine(gifFile, gifData, WIDTH) == GIF_ERROR) {
+        fprintf(stderr, "Error: Failed to write image data.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    if (EGifCloseFile(gifFile, &error) == GIF_ERROR) {
+        PrintGifError(error);
+        exit(EXIT_FAILURE);
+    }
+
+    free(gifData);
+
+    return 0;
+}
+```
+
+To compile the above code, you can use a command like:
+```bash
+gcc -o create_gif create_gif.c -lgif
+```
+
+And then run the executable:
+```bash
+./create_gif
+```
+
+This will create a simple gradient pattern GIF image named "output.gif" in the same directory.
+
+Please note that this is a basic example and does not cover all functionalities of giflib.

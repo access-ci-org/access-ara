@@ -1,0 +1,42 @@
+Use Case: Intel oneAPI HPC Toolkit
+Code details and examples:
+```
+#!/bin/bash
+
+module load intel                       # Load Intel module
+
+icc -O3 -o hello_world hello_world.c     # Compile C code with Intel C Compiler
+./hello_world                            # Run executable
+```
+
+Input files: hello_world.c
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+Command to compile and run: bash compile_and_run.sh
+
+Use Case: Intel oneAPI Base Toolkit
+Code details and examples:
+```
+#!/bin/bash
+
+module load intel                       # Load Intel module
+
+ifort -O3 -o hello_world hello_world.f90   # Compile Fortran code with Intel Fortran Compiler
+./hello_world                            # Run executable
+```
+
+Input files: hello_world.f90
+```fortran
+program hello
+    print *, "Hello, World!"
+end program hello
+```
+
+Command to compile and run: bash compile_and_run.sh

@@ -1,0 +1,24 @@
+Use Case: BioPerl is a collection of Perl modules that are used to write Perl scripts for bioinformatics applications.
+
+Code details and examples:
+BioPerl provides modules for handling various biological data types such as sequences, alignments, and phylogenetic trees. Below is an example script using BioPerl to read a FASTA file and print out the sequences:
+
+```perl
+use Bio::SeqIO;
+
+my $input_file = "sequences.fasta";
+my $seqio = Bio::SeqIO->new(-file => $input_file, -format => "fasta");
+
+while (my $seq = $seqio->next_seq) {
+    my $id = $seq->display_id;
+    my $sequence = $seq->seq;
+    
+    print "Sequence ID: $id\n";
+    print "Sequence: $sequence\n";
+}
+```
+
+To run the script, save it in a file (e.g., `read_fasta.pl`) and run it using the Perl interpreter:
+```
+perl read_fasta.pl
+```

@@ -1,0 +1,19 @@
+Use Case: rsamtools is an R/Bioconductor package for reading, manipulating, and writing SAM/BAM files.
+
+Code details and examples:
+```R
+# Load the library
+library("Rsamtools")
+
+# Read a BAM file
+bam_file <- system.file("extdata", "ex1.bam", package="Rsamtools")
+bam <- readGAlignmentPairs(bam_file)
+
+# Explore the read data
+head(bam)
+
+# Count the number of reads
+countBam(bam_file)
+```
+
+Command to run: N/A. The code above can be run within an R environment with Rsamtools package installed.

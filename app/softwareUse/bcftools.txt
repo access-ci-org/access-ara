@@ -1,0 +1,26 @@
+Use Case: Manipulating VCF/BCF files
+Code details and examples:
+1. Filter sites with a minimum QUAL score of 30:
+```bash
+bcftools view input.vcf.gz -i 'QUAL>=30' -o output.vcf
+```
+
+2. Subset VCF file to include only a specific region:
+```bash
+bcftools view input.vcf.gz -r chr1:1000-2000 -o output.vcf
+```
+
+3. Convert VCF to BCF format:
+```bash
+bcftools view input.vcf -O b -o output.bcf
+```
+
+4. Merge multiple VCF files into a single file:
+```bash
+bcftools merge file1.vcf file2.vcf -o merged.vcf
+```
+
+5. Annotate VCF file with allele frequencies from 1000 Genomes Project:
+```bash
+bcftools annotate -a 1000Genomes.vcf.gz -c INFO/AF -o annotated.vcf input.vcf
+```

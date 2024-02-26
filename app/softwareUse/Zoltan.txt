@@ -1,0 +1,41 @@
+Zoltan is a software library for parallel partitioning, load balancing, and parallel adaptive mesh refinement.
+
+Use Case: Parallel partitioning and load balancing
+Code details and examples:
+```c++
+#include "zoltan.h"
+
+int main(int argc, char *argv[]) {
+    float x[5] = {0.0, 1.0, 2.0, 3.0, 4.0};
+    float y[5] = {0.0, 1.0, 2.0, 3.0, 4.0};
+    int global_ids[5] = {0, 1, 2, 3, 4};
+    
+    int num_objs = 5;
+    int num_dims = 2;
+    
+    float *partition_measure = NULL; // Array used to pass partitioning constraints
+    
+    struct Zoltan_Struct *zz = Zoltan_Create(MPI_COMM_WORLD);
+    
+    Zoltan_Set_Param(zz, "LB_METHOD", "GRAPH");
+    
+    int changes, numGidEntries, numLidEntries, numImport, numExport;
+    ZOLTAN_ID_PTR importGlobalGids = NULL, importLocalGids = NULL;
+    int *importProcs = NULL, *importToLocal = NULL;
+    
+    Zoltan_LB_Partition(zz, num_dims, num_objs, 0, 0, partition_measure, 
+                        &changes, &numGidEntries, &numLidEntries, 
+                        &numImport, &importGlobalGids, &importLocalGids, 
+                        &importProcs, &importToLocal);
+
+    Zoltan_Destroy(&zz);
+    
+    return 0;
+}
+```
+
+To run the code, you would typically compile it with the Zoltan library included. For example, if you have a file named `example.cpp`, you could compile it with a command like:
+```bash
+mpicxx example.cpp -I/your/zoltan/include/path -L/your/zoltan/lib/path -lzoltan -o example
+```
+where `/your/zoltan/include/path` and `/your/zoltan/lib/path` should be replaced with the actual paths to the Zoltan library on your system.

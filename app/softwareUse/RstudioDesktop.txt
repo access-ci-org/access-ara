@@ -1,0 +1,22 @@
+Use Case: Statistical analysis and data visualization in RStudio Desktop
+
+Code details and examples:
+Sample input files: 
+- Data file: 'data.csv' containing the dataset for analysis
+
+Code:
+```
+# Sample code for data analysis in RStudio Desktop
+# Load the data
+data <- read.csv("data.csv")
+
+# Perform statistical analysis
+summary(data)
+plot(data)
+
+# Generate a simple linear regression model
+lm_model <- lm(y ~ x, data=data)
+summary(lm_model)
+```
+
+Command to run in RStudio Desktop: Select the code and click on 'Run' or use shortcut key (Ctrl+Enter) to execute each line or block of code.

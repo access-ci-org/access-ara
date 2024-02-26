@@ -1,0 +1,12 @@
+Use Case: Compiler for high-performance computing applications
+
+Code details and examples:
+- PGI is a compiler suite designed for parallel computing on CPUs and GPUs. It supports Fortran, C, and C++ languages.
+- Input files can be in Fortran, C, or C++ source code format.
+
+Example code snippet:
+```bash
+pgfortran -o my_program my_program.f90
+```
+
+In this example, `my_program.f90` is a Fortran source file that will be compiled into an executable named `my_program`.

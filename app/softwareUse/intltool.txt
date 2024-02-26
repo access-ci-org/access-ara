@@ -1,0 +1,25 @@
+Use Case: intltool is a set of tools for creating and maintaining internationalized messages. It can be particularly useful for software projects that require localization and internationalization support.
+
+Code details and examples:
+intltool-merge - Merge translated strings from source code into .pot file.
+Example input file (source code file containing strings to be translated):
+```c
+printf(_("Hello, world!\n"));
+```
+
+Command to merge translated strings:
+```bash
+intltool-merge source_code.c output.pot
+```
+
+intltool-update - Update translations from .pot files.
+Example input file (translation file to be updated):
+```po
+msgid "Hello, world!"
+msgstr "Bonjour, le monde !"
+```
+
+Command to update translations:
+```bash
+intltool-update -p output.pot
+```

@@ -1,0 +1,24 @@
+Use Case: Display server protocol  
+Code details and examples:  
+Wayland is a display server protocol used in modern Linux desktop environments. Below is an example of a simple Wayland protocol file:
+
+**Sample input file `sample_protocol.xml`**:
+```
+<protocol name="sample">
+  <interface name="Sample">
+    <request name="Hello">
+      <description>Say hello</description>
+      <arg name="output" type="string" summary="Hello message"/>
+    </request>
+  </interface>
+</protocol>
+```
+
+**Code snippet**:
+```
+wayland-scanner code sample_protocol.xml sample-client.c
+wayland-scanner server-header sample_protocol.xml sample-server.h
+wayland-scanner server-code sample_protocol.xml sample-server.c
+```
+
+To run the generated code, you would typically compile and run the client and server code using a Wayland compositor such as Weston.

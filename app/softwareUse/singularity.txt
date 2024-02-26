@@ -1,0 +1,32 @@
+Use Case: Singularity is a container platform that allows users to run and share applications across different computing environments. It is commonly used in HPC and bioinformatics for reproducibility and portability of software.
+
+Code details and examples:
+1. Running a container:
+```
+singularity exec <container.sif> <command>
+```
+
+2. Running a shell inside a container:
+```
+singularity shell <container.sif>
+```
+
+3. Running a container with specific options:
+```
+singularity exec --bind <host_path>:<container_path> <container.sif> <command>
+```
+
+4. Pulling a container from a registry:
+```
+singularity pull <container_name.sif> docker://<docker_image>
+```
+
+5. Creating a container from a definition file:
+```
+sudo singularity build <container.sif> <definition_file>
+```
+
+6. Running a Singularity container with MPI support:
+```
+mpirun -np <num_procs> singularity exec --nv <container.sif> <mpi_command>
+```

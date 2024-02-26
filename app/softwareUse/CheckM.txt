@@ -1,0 +1,13 @@
+Use Case: CheckM is a software used for assessing the quality of genomes recovered from isolates, single cells, or metagenomes by identifying and estimating the completeness and contamination of the genome.
+Code details and examples:
+```bash
+checkm lineage_wf --genome input.fa -t 4 -x fasta output_dir
+```
+
+In this command:
+- `--genome input.fa` specifies the input genome file in fasta format.
+- `-t 4` specifies the number of threads to use for the analysis.
+- `-x fasta` specifies the input genome file format.
+- `output_dir` specifies the output directory where the results will be stored.
+
+Make sure to replace `input.fa` with the actual path to your input genome file.

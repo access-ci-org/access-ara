@@ -1,0 +1,9 @@
+Use Case: JupyterHub is a multi-user Hub that spawns, manages, and proxies multiple instances of the single-user Jupyter notebook server for each user. It is commonly used in educational institutions, companies, and research labs to provide a platform for interactive computing.
+
+Code details and examples: 
+```bash
+# Command to start JupyterHub
+jupyterhub
+```
+
+After running the command, users can access JupyterHub through their web browser by navigating to the provided URL. Users will then be able to launch Jupyter notebooks and run code interactively.

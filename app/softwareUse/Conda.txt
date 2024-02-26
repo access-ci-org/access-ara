@@ -1,0 +1,27 @@
+Use Case: Conda allows users to easily manage libraries and dependencies in various environments.
+
+Code details and examples:
+1. Create a conda environment:
+```bash
+conda create --name myenv python=3.8
+```
+
+2. Activate the conda environment:
+```bash
+conda activate myenv
+```
+
+3. Install a package in the conda environment:
+```bash
+conda install numpy
+```
+
+4. List installed packages in the conda environment:
+```bash
+conda list
+```
+
+5. Export environment to a YAML file:
+```bash
+conda env export > environment.yml
+```

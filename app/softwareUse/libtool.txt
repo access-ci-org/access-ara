@@ -1,0 +1,44 @@
+Use Case: libtool is a generic library support script. It hides the complexity of using shared libraries behind a consistent, portable interface.
+
+Code details and examples:
+1. Create a simple shared library using libtool:
+input file: mylib.c
+```c
+#include <stdio.h>
+
+void myfunc() {
+    printf("Hello from myfunc!\n");
+}
+```
+Compile the library:
+```
+libtool --mode=compile gcc -c mylib.c -o mylib.lo
+```
+
+Create the shared library:
+```
+libtool --mode=link gcc -o libmylib.la mylib.lo -rpath /usr/local/lib
+```
+
+2. Linking an executable to the shared library:
+input file: main.c
+```c
+void myfunc();
+
+int main() {
+    myfunc();
+    return 0;
+}
+```
+Compile the executable:
+```
+libtool --mode=compile gcc -c main.c -o main.lo
+libtool --mode=link gcc -o myexe main.lo -lmylib -rpath /usr/local/lib
+```
+
+Run the executable:
+```
+./myexe
+```
+
+Note: The actual commands may vary depending on the platform and system setup.

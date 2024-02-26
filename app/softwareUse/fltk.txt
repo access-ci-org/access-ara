@@ -1,0 +1,33 @@
+Use Case: FLTK (Fast Light Toolkit) is a cross-platform GUI toolkit for C++.
+Code details and examples:
+FLTK provides a set of widgets for creating graphical user interfaces. Below is an example of a simple FLTK program that creates a window with a button:
+
+```cpp
+#include <FL/Fl.H>
+#include <FL/Fl_Window.H>
+#include <FL/Fl_Button.H>
+
+void button_callback(Fl_Widget* widget, void*)
+{
+    Fl_Button* button = dynamic_cast<Fl_Button*>(widget);
+    button->label("Hello, FLTK!");
+}
+
+int main()
+{
+    Fl_Window window(300, 200, "FLTK Example");
+    Fl_Button button(100, 100, 100, 40, "Click Me");
+    button.callback(button_callback);
+    window.show();
+    return Fl::run();
+}
+```
+
+To compile and run this program, you can use the following commands:
+
+```bash
+g++ fltk_example.cpp -lfltk
+./a.out
+```
+
+This will compile the program and create an executable `a.out` which you can run to see the window with the button.

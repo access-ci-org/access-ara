@@ -1,0 +1,55 @@
+Use Case: GL2PS (GL to PostScript/PDF converter)
+
+Code details and examples:
+GL2PS is a C library providing high-quality vector output for OpenGL applications. It converts OpenGL/GLU primitives and standard vector graphics into PostScript or PDF.
+
+Input:
+- GL2PS accepts OpenGL draw calls as input, so you need to have an OpenGL application or code that generates graphics.
+
+Code:
+Example code snippet:
+
+```c
+#include <GL/glut.h>
+#include "gl2ps.h"
+
+void renderScene() {
+    // OpenGL draw calls to render scene
+}
+
+int main(int argc, char** argv) {
+    // Initialize OpenGL context
+
+    // Set GL2PS options
+    GLint buffsize = 0;
+    FILE* file = fopen("output.ps", "wb");
+    GLint format = GL2PS_PS;
+    GLint sort = GL2PS_SIMPLE_SORT;
+    GLint options = GL2PS_LANDSCAPE | GL2PS_COMPRESS | GL2PS_BEST_ROOT | GL2PS_SIMPLE_LINE_OFFSET;
+    GLint viewport[4];
+
+    // Capture OpenGL output to PostScript
+    gl2psBeginPage("Example", "GL2PS Test", viewport, format, sort, options, buffsize, file, NULL);
+    renderScene();
+    gl2psEndPage();
+
+    // Clean up resources
+    fclose(file);
+
+    return 0;
+}
+```
+
+To compile the code above with GL2PS, you need to link against the GL and GLU libraries and include the GL2PS library:
+
+```bash
+gcc -o myapp myapp.c -lGLU -lGL -lgl2ps
+```
+
+To run the compiled code, you simply execute the binary:
+
+```bash
+./myapp
+```
+
+This will generate a PostScript file (output.ps) with the rendered scene from the OpenGL application.

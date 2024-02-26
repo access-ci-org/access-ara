@@ -1,0 +1,49 @@
+Use Case: SCOTCH is a software package for graph partitioning, static mapping, and sparse matrix ordering.
+Code details and examples:
+1. Graph partitioning:
+Sample input file (graph.txt):
+```
+8 10
+0 1 2
+0 2 1
+1 2 3
+1 3 1
+2 3 1
+2 4 2
+3 4 1
+3 5 2
+4 6 2
+5 6 1
+```
+
+Command to run SCOTCH graph partitioning:
+```
+gmk_m2 8 10 graph.txt graph.m2
+gpmetis graph.m2 2
+```
+This will partition the graph into 2 parts.
+
+2. Sparse matrix ordering:
+Sample input file (matrix.txt):
+```
+5 5
+1 1 1
+1 2 1
+2 2 1
+3 3 1
+4 4 1
+3 4 1
+4 5 1
+5 5 1
+```
+
+Command to run SCOTCH sparse matrix ordering:
+```
+scotch_amk_p spaff matrix.txt matrix
+```
+This will perform sparse matrix ordering on the input matrix.
+
+3. Static mapping:
+SCOTCH can also be used for static mapping of tasks onto processors.
+
+Please note that the input file formats may vary depending on the specific use case within SCOTCH.

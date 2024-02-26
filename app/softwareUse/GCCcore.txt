@@ -1,0 +1,40 @@
+Use Case: GCCcore is the GNU Compiler Collection (GCC) software suite.
+
+Code details and examples:
+- To compile a C program using GCC:
+```c
+// sample.c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, world!\n");
+    return 0;
+}
+```
+Compile the program using GCC:
+```
+gcc -o sample sample.c
+```
+Run the compiled program:
+```
+./sample
+```
+
+- To compile a C++ program using GCC:
+```cpp
+// sample.cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}
+```
+Compile the program using GCC:
+```
+g++ -o sample sample.cpp
+```
+Run the compiled program:
+```
+./sample
+```

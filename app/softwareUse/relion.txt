@@ -1,0 +1,9 @@
+Use Case: RELION is a image processing software for cryo-electron microscopy. 
+
+Code details and examples:
+Sample input file format for RELION is typically a set of cryo-EM micrographs in MRC format. The software also requires a configuration file in STAR format. 
+
+An example command to run RELION is as follows:
+```
+relion_refine --i micrographs.star --ref 3D_initial_model.mrc --o refined_structure --gpu
+```

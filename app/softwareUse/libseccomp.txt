@@ -1,0 +1,40 @@
+Use Case: libseccomp is a library providing an easy to use interface for working with the Linux Kernel's syscall filtering mechanism.
+
+Code details and examples:
+Sample input file for defining syscalls to allow:
+```
+open
+read
+write
+close
+```
+
+Sample code snippet to load a filter with the desired syscalls:
+```c
+#include <seccomp.h>
+
+int main() {
+    scmp_filter_ctx ctx;
+    ctx = seccomp_init(SCMP_ACT_ALLOW);
+    
+    seccomp_rule_add(ctx, SCMP_ACT_ALLOW, SCMP_SYS(open), 0);
+    seccomp_rule_add(ctx, SCMP_ACT_ALLOW, SCMP_SYS(read), 0);
+    seccomp_rule_add(ctx, SCMP_ACT_ALLOW, SCMP_SYS(write), 0);
+    seccomp_rule_add(ctx, SCMP_ACT_ALLOW, SCMP_SYS(close), 0);
+    
+    seccomp_load(ctx);
+    // Your code here
+    seccomp_release(ctx);
+    return 0;
+}
+```
+
+Command to compile the code:
+```
+gcc seccomp_example.c -o seccomp_example -lseccomp
+```
+
+Command to run the compiled code:
+```
+./seccomp_example
+```

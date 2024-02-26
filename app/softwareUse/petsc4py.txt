@@ -1,0 +1,62 @@
+Use Case: Petsc4py is a Python interface to the Portable, Extensible Toolkit for Scientific Computation (PETSc).
+
+Code details and examples:
+
+1. Sample input files for solving a linear system using petsc4py:
+
+Matrix file (matrix.txt):
+```
+1.0 0.0 0.0
+0.0 2.0 0.0
+0.0 0.0 3.0
+```
+
+Vector file (vector.txt):
+```
+1.0
+2.0
+3.0
+```
+
+Python code to solve the linear system:
+```python
+import petsc4py.PETSc as petsc
+import numpy as np
+
+# Create PETSc matrix and vectors
+A = petsc.Mat().create()
+A.setSizes([3, 3])
+A.setUp()
+
+b = petsc.Vec().create()
+b.setSizes(3)
+b.setUp()
+
+# Load matrix and vector from files
+A.load("matrix.txt")
+b.load("vector.txt")
+
+# Create solver
+ksp = petsc.KSP()
+ksp.create()
+ksp.setOperators(A)
+ksp.setType(ksp.Type.PREONLY)
+ksp.getPC().setType(ksp.getPC().Type.LU)
+
+# Solve the linear system
+x = petsc.Vec().create()
+x.setSizes(3)
+x.setUp()
+ksp.solve(b, x)
+
+# Get the solution
+solution = x.getArray()
+
+print("Solution:")
+print(solution)
+```
+
+2. Command to run the Python code:
+```
+python linear_system_solver.py
+```

@@ -1,0 +1,13 @@
+Use Case: Protein structure prediction and design
+
+Code details and examples:
+Rosetta is a suite of software tools for protein structure prediction and design. One of the common tasks performed using Rosetta is protein structure prediction or ab initio folding.
+
+Example of running ab initio folding with Rosetta:
+```
+$ROSETTA3/bin/AbinitioRelax.default -s input.pdb -nstruct 10
+```
+
+In the example above, input.pdb is the input PDB file of the protein structure for which ab initio folding will be performed. The -nstruct flag specifies the number of structures to generate during the folding process.
+
+Please note that the actual command may vary slightly depending on the version of Rosetta and the specific task you are performing.

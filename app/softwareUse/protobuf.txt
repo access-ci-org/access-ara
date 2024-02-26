@@ -1,0 +1,52 @@
+Use Case: Protocol Buffers (protobuf) is a method of serializing structured data for use in communications protocols, data storage, and more. It is widely used in data exchange between different systems or components.
+
+Code details and examples:
+- Sample input file (proto file):
+```
+syntax = "proto3";
+
+message Person {
+  string name = 1;
+  int32 id = 2;
+  string email = 3;
+}
+```
+
+- Compiler command to generate Python code from the proto file:
+```bash
+protoc --python_out=. your_proto_file.proto
+```
+
+- Example Python code to serialize and deserialize using protobuf:
+```python
+import person_pb2
+
+# Create a Person message
+person = person_pb2.Person()
+person.name = "Alice"
+person.id = 123
+person.email = "alice@example.com"
+
+# Serialize the data
+binary_data = person.SerializeToString()
+print("Serialized data:", binary_data)
+
+# Deserialize the data
+new_person = person_pb2.Person()
+new_person.ParseFromString(binary_data)
+print("Deserialized data:")
+print("Name:", new_person.name)
+print("ID:", new_person.id)
+print("Email:", new_person.email)
+```
+
+- Sample output:
+```
+Serialized data: b'\n\x05Alice\x10{\x1a\x10alice@example.com'
+Deserialized data:
+Name: Alice
+ID: 123
+Email: alice@example.com
+```
+
+- Running the Python code will show the serialized and deserialized data as shown in the sample output.

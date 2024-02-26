@@ -1,0 +1,27 @@
+Use Case: Molecular dynamics simulations in Amber
+
+Code details and examples:
+AMBER (Assisted Model Building with Energy Refinement) is a suite of programs for molecular dynamics simulations of biomolecules. Below is an example of running a simple molecular dynamics simulation using Amber.
+
+Input files:
+1. A coordinate file in PDB format (e.g., myprotein.pdb)
+2. A parameter file for the force field (e.g., leap.in)
+3. A configuration file specifying simulation parameters (e.g., md.in)
+
+Code:
+```bash
+# Load the Amber module
+module load amber
+
+# Generate the topology and coordinate files
+tleap -f leap.in
+
+# Run the molecular dynamics simulation
+pmemd -i md.in -o md.out -p myprotein.prmtop -c myprotein.inpcrd -r md.ncrst
+```
+
+In the above code snippet:
+- `tleap` is used to generate the topology and coordinate files required for the simulation.
+- `pmemd` is used to run the molecular dynamics simulation using the specified input files.
+
+Please note that the above commands may vary based on the specific setup and requirements of your simulation.

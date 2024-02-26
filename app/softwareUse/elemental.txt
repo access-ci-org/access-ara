@@ -1,0 +1,35 @@
+Use Case: Elemental is a high-performance distributed-memory linear algebra library.
+Code details and examples:
+Input file for a sample program:
+```cpp
+// sample_input.txt
+4
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+```
+
+Sample C++ code using Elemental to perform matrix multiplication:
+```cpp
+#include "El.hpp"
+using namespace El;
+
+int main(int argc, char* argv[]) 
+{
+    Initialize(argc, argv);
+    DistMatrix<double> A, B, C;
+    Read(A, "sample_input.txt");  // Read input matrix A
+    B = A;  // Assign matrix B as a copy of A for multiplication
+    Gemm(NORMAL, NORMAL, 1.0, A, B, 0.0, C); // Compute C = A*B
+    Write(C, "output.txt", ASCII); // Write the result to an output file
+    Finalize();
+    return 0;
+}
+```
+
+Command to compile and run the code (assuming the file is named `matrix_mult.cpp`):
+```
+mpicxx matrix_mult.cpp -o matrix_mult -I/path/to/Elemental/include -L/path/to/Elemental/lib -lEl -lblas -llapack
+mpirun -np 4 ./matrix_mult
+```

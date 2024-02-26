@@ -1,0 +1,54 @@
+Use Case: Library for X C Binding (libxcb)
+
+Code details and examples:
+Libxcb is a library used for communicating with the X Window System server. It is typically used by X clients for rendering graphics and handling user input on Unix-like systems.
+
+Sample code snippet to create a simple X window using libxcb:
+
+```C
+#include <stdio.h>
+#include <xcb/xcb.h>
+
+int main() {
+    xcb_connection_t *connection;
+    xcb_screen_t *screen;
+    xcb_window_t window;
+
+    // Open connection to the X server
+    connection = xcb_connect(NULL, NULL);
+
+    // Get the default screen
+    screen = xcb_setup_roots_iterator(xcb_get_setup(connection)).data;
+
+    // Create a simple window
+    window = xcb_generate_id(connection);
+    xcb_create_window(connection, XCB_COPY_FROM_PARENT, window, screen->root, 0, 0, 640, 480, 10, XCB_WINDOW_CLASS_INPUT_OUTPUT, screen->root_visual, 0, NULL);
+
+    // Map the window to the screen
+    xcb_map_window(connection, window);
+
+    // Flush the commands to the X server
+    xcb_flush(connection);
+
+    // Main event loop
+    xcb_generic_event_t *event;
+    while ((event = xcb_wait_for_event(connection))) {
+        printf("Received event %d\n", event->response_type & ~0x80);
+        free(event);
+    }
+
+    return 0;
+}
+```
+
+To compile the above code using libxcb:
+
+```bash
+gcc -o example example.c -lxcb
+```
+
+To run the compiled executable:
+
+```bash
+./example
+```

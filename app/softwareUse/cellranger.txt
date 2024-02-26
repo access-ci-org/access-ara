@@ -1,0 +1,19 @@
+Use Case: cellranger is a set of analysis pipelines that process single-cell RNA-seq data. It includes preprocessing, clustering, gene expression analysis, and visualization tools.
+
+Code details and examples:
+1. Example of running cellranger count for processing single-cell RNA-seq data:
+```bash
+cellranger count --id=sample1 --transcriptome=refdata-cellranger-mm10-3.0.0 --fastqs=fastq_folder --sample=sample1
+```
+
+2. Example of running cellranger aggr for aggregating multiple samples:
+```bash
+cellranger aggr --id=agg1 --csv=libraries.csv
+```
+
+3. Example of running cellranger reanalyze for reanalyzing pre-processed data:
+```bash
+cellranger reanalyze --id=sample1 --matrix=sample1/outs/filtered_feature_bc_matrix
+```
+
+Note: The actual commands will depend on the specific dataset, reference genome, and the desired parameters.

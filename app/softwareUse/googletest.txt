@@ -1,0 +1,29 @@
+Use Case: Unit testing framework
+Code details and examples:
+GoogleTest is a C++ unit testing framework developed by Google. It is widely used to write and run unit tests for C++ code. Here is a simple example of a GoogleTest test case:
+
+**Sample Input files:**
+```cpp
+// sample_test.cpp
+#include <gtest/gtest.h>
+
+TEST(MathTest, TwoPlusTwoEqualsFour) {
+    EXPECT_EQ(2 + 2, 4);
+}
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
+```
+
+**Code Snippet:**
+```bash
+# Compile the test case
+$ g++ sample_test.cpp -o sample_test -lgtest -lgtest_main -pthread
+
+# Run the test case
+$ ./sample_test
+```
+
+This will run the test case `MathTest.TwoPlusTwoEqualsFour` which expects the result of `2 + 2` to be equal to `4`.

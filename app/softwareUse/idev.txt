@@ -1,0 +1,11 @@
+Use Case: Supercomputer Job Scheduling
+Code details and examples: 
+idev is a command often used on HPC clusters to request interactive development nodes for debugging and testing purposes. It allows users to get access to a compute node for a limited time without submitting a regular job through the batch system. Users can use it to compile and test their code interactively before submitting it as a batch job.
+
+To request an interactive development node using idev, users can simply type the following command:
+
+```
+idev
+```
+
+This will typically allocate a compute node and provide the user with a shell prompt on that node where they can compile, test, and debug their code interactively. The specific options and time limits for idev sessions may vary depending on the configuration of the HPC cluster.

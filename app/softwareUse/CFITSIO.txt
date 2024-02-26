@@ -1,0 +1,45 @@
+Use Case: Reading and manipulating FITS (Flexible Image Transport System) files using CFITSIO library.
+
+Code details and examples:
+```c
+#include <fitsio.h>
+
+int main() {
+    fitsfile *fptr;
+    int status = 0;
+
+    // Open FITS file
+    fits_open_file(&fptr, "sample.fits", READONLY, &status);
+
+    if (status) {
+        fits_report_error(stderr, status);
+        return status;
+    }
+
+    // Read header
+    int nkeys;
+    fits_get_hdrspace(fptr, &nkeys, NULL, &status);
+    
+    // Print out all header keywords and values
+    for (int i = 1; i <= nkeys; i++) {
+        char keyname[FLEN_KEYWORD], value[FLEN_VALUE];
+        fits_read_keyn(fptr, i, keyname, value, NULL, &status);
+        printf("%s = %s\n", keyname, value);
+    }
+
+    // Close FITS file
+    fits_close_file(fptr, &status);
+
+    return 0;
+}
+```
+
+To compile the code, you can use:
+```bash
+gcc -o read_fits read_fits.c -lcfitsio
+```
+
+To run the compiled program:
+```bash
+./read_fits
+```

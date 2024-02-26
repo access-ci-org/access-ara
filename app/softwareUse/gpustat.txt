@@ -1,0 +1,15 @@
+Use Case: Monitoring GPU utilization and memory usage on a Linux system.
+
+Code details and examples:
+Code:
+```bash
+gpustat
+```
+
+Sample output:
+```
+[2J[H[u[33m[0][0m GeForce GTX 1080 Ti | [31m66'C,  0 %[0m | [37m[41m 1943 / 11178 MB[0m | [32musername[0m([33m1M,[0m [33m1M[0m)
+[33m[1][0m GeForce GTX 1080 Ti | [31m65'C,  0 %[0m | [37m[41m  7157 / 11178 MB[0m | [32musername[0m([33m1M,[0m [33m1M[0m)
+```
+
+Note: The `gpustat` command provides a summary of the GPU(s) in the system, including temperature, utilization, memory usage, and the user running the process.

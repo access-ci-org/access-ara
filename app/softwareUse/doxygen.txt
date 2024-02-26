@@ -1,0 +1,36 @@
+Use Case: Generates documentation from source code
+Code details and examples:
+```cpp
+/**
+ * @file main.cpp
+ *
+ * @brief A simple program to demonstrate Doxygen
+ */
+
+#include <iostream>
+
+/**
+ * @brief A simple function to add two numbers
+ * @param a First number
+ * @param b Second number
+ * @return Sum of a and b
+ */
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1 = 5;
+    int num2 = 10;
+    int result = add(num1, num2);
+    std::cout << "The sum of " << num1 << " and " << num2 << " is: " << result << std::endl;
+    return 0;
+}
+```
+
+To generate documentation using Doxygen, you would typically create a configuration file (Doxyfile) and run the doxygen command in the terminal:
+```
+doxygen Doxyfile
+```
+
+Make sure the Doxyfile is properly configured with the necessary settings based on your project requirements.

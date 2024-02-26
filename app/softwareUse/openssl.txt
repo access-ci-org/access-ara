@@ -1,0 +1,19 @@
+Use Case: Secure data transmission with OpenSSL
+
+Code details and examples:
+- Encrypt a file using OpenSSL:
+```sh
+openssl enc -aes-256-cbc -salt -in input.txt -out encrypted.txt
+```
+- Decrypt a file using OpenSSL:
+```sh
+openssl enc -d -aes-256-cbc -in encrypted.txt -out decrypted.txt
+```
+- Generate a new RSA private key:
+```sh
+openssl genpkey -algorithm RSA -out private_key.pem
+```
+- Generate a new RSA public key from the private key:
+```sh
+openssl rsa -in private_key.pem -pubout -out public_key.pem
+```

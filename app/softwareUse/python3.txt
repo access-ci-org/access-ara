@@ -1,0 +1,9 @@
+Use Case: General-purpose programming language
+Code details and examples: 
+```python
+print("Hello, World!")
+```
+To run the above code, save it in a file (e.g., hello.py) and run it using the command:
+```
+python3 hello.py
+```

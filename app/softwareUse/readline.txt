@@ -1,0 +1,23 @@
+Use Case: Reading lines from a file using the `readline` method in Python.
+
+Code details and examples:
+```python
+# Opening a file and reading lines using the readline method
+with open('input.txt', 'r') as file:
+    line = file.readline()
+    while line:
+        print(line.strip())
+        line = file.readline()
+```
+
+Sample input file `input.txt`:
+```
+Hello
+This is a sample file
+With multiple lines
+```
+
+Command to run the code:
+```bash
+python read_lines.py
+```

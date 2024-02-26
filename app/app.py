@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
 import json
+import os
+import re
 import pandas as pd
 import numpy as np
 
@@ -17,9 +19,31 @@ def software_search():
 @app.route("/dynamic")
 def software_search_dynamic():
     df = pd.read_csv('./combined_data.csv')
+    df["Example Use"] = np.nan
     df.fillna('',inplace=True)
     table = df.to_html(classes='table-striped" id = "softwareTableDynamic',index=False,border=1)
     return render_template("software_search.html", table=table)
+
+@app.route("/example_use/<software_name>")
+def get_example_use(software_name):
+
+    file_directory = "./softwareUse/"
+    
+    normalize_software_name = re.escape(software_name).lower()
+
+    pattern = re.compile(normalize_software_name, re.IGNORECASE)
+
+    try:
+        for filename in os.listdir(file_directory):
+            if pattern.search(filename):
+                with open(os.path.join(file_directory,filename),'r') as file:
+                    file_content = file.read()
+                    return(jsonify({"use": file_content}))
+        return jsonify({"use": '**Unable to find use case record**'})
+    except Exception as e:
+        print(e)
+        return(jsonify({"use": '**Unable to find use case record**'})), 500
+
 
 if __name__ == '__main__':
     load_dotenv()

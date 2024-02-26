@@ -1,0 +1,13 @@
+Use Case: Finite element library for simulating electromagnetic fields in accelerator physics and engineering applications.
+
+Code details and examples: 
+```cpp
+// Example input file for OpenCARP
+mesh_file = mesh_file.msh
+material_file = material_file.mat
+stimulus_file = stimulus_file.stim
+solver_params = solver_params.cfg
+
+// Code snippet to run OpenCARP
+opencarp -i input_file.cfg
+```

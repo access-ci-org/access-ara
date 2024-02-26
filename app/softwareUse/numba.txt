@@ -1,0 +1,20 @@
+Use Case: Numba is a JIT compiler for Python that translates Python functions to optimized machine code at runtime.
+
+Code details and examples:
+Sample input file (input.py):
+```python
+import numpy as np
+from numba import jit
+
+@jit
+def add(a, b):
+    return a + b
+
+result = add(1, 2)
+print(result)
+```
+
+Command to run:
+```
+python input.py
+```

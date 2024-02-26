@@ -1,0 +1,9 @@
+Use Case: Multiphysics simulation software
+Code details and examples: 
+- COMSOL is a multiphysics simulation software that allows for the simulation of various physical phenomena such as heat transfer, structural mechanics, fluid dynamics, and electromagnetics. 
+- Sample input files for a heat transfer simulation in a rectangular domain may include geometry specifications, material properties, boundary conditions, and physics settings.
+- The input file format for COMSOL simulations is typically in a proprietary file format specific to the COMSOL Multiphysics software.
+- While specific input file examples are not provided due to proprietary format, users can use the COMSOL GUI to set up simulations by defining the geometry, selecting physics modules, specifying boundary conditions, and running the simulation.
+- To run a COMSOL simulation from the command line (for batch processing), users can use the following command:
+  `comsol batch -inputfile input_file.mph -outputfile output_file`
+- This command will run the COMSOL simulation using the input file `input_file.mph` and generate the results in the output file specified.

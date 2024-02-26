@@ -1,0 +1,24 @@
+Use Case: Data compression and decompression with zstd
+
+Code details and examples:
+Zstd is a fast compression algorithm that provides high compression ratios. It is commonly used for compressing and decompressing data efficiently. Below is an example of how to use zstd for compression and decompression:
+
+1. Compression:
+```bash
+zstd -19 input_file.txt -o compressed_file.zst
+```
+This command compresses the input_file.txt into compressed_file.zst with compression level 19.
+
+2. Decompression:
+```bash
+zstd -d compressed_file.zst -o decompressed_file.txt
+```
+This command decompresses the compressed_file.zst into decompressed_file.txt.
+
+3. Information about compressed file:
+```bash
+zstd -l compressed_file.zst
+```
+This command provides information about the compressed file such as compression ratio, original size, compressed size, etc.
+
+For more options and details, you can refer to the zstd documentation.

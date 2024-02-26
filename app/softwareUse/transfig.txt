@@ -1,0 +1,29 @@
+As Transfig is a tool for converting FIG files created by xfig to other formats, I'll provide examples of how to use Transfig to convert a FIG file to different formats.
+
+Use Case: Convert a FIG file to PNG using Transfig
+Code details and examples:
+```bash
+fig2dev -L png input.fig output.png
+```
+In this command:
+- `fig2dev` is the command for using Transfig.
+- `-L png` specifies the output format as PNG.
+- `input.fig` is the input FIG file to be converted.
+- `output.png` is the output PNG file that will be created.
+
+You can adjust the output format by changing the `-L` flag to a different format like `pdf`, `jpeg`, etc.
+
+Use Case: Convert a FIG file to PDF using Transfig
+Code details and examples:
+```bash
+fig2dev -L pdf input.fig output.pdf
+```
+In this command:
+- `fig2dev` is the command for using Transfig.
+- `-L pdf` specifies the output format as PDF.
+- `input.fig` is the input FIG file to be converted.
+- `output.pdf` is the output PDF file that will be created.
+
+Just like before, you can change the output format to a different one by modifying the `-L` flag.
+
+These commands assume that Transfig is installed and available in the system's PATH.

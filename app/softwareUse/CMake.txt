@@ -1,0 +1,41 @@
+Use Case: Build C++ project with CMake
+
+Code details and examples:
+1. Create a `CMakeLists.txt` file in your project directory:
+
+```cmake
+cmake_minimum_required(VERSION 3.10)
+project(MyProject)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(MyExecutable main.cpp)
+```
+
+2. Create a `main.cpp` file in the same directory:
+
+```cpp
+#include <iostream>
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+```
+
+3. Run CMake in your project directory to generate the build files:
+
+```bash
+cmake .
+```
+
+4. Build your project with Make (or any other build system specified in CMakeLists.txt):
+
+```bash
+make
+```
+
+5. Run the executable:
+
+```bash
+./MyExecutable
+```

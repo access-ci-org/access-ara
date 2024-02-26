@@ -1,0 +1,31 @@
+Use Case: VisiData is a terminal-based spreadsheet multitool for discovering and manipulating data.
+Code details and examples:
+1. Open a CSV file:
+```
+vd my_data.csv
+```
+
+2. Perform a simple transformation on a column:
+```
+c5.replace('old_value', 'new_value')
+```
+
+3. Filter rows based on a condition:
+```
+f my_column > 10
+```
+
+4. Sort the data based on a column:
+```
+:s my_column
+```
+
+5. Save the changes:
+```
+:w
+```
+
+6. Exit VisiData:
+```
+:q
+```

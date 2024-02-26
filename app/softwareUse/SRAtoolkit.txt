@@ -1,0 +1,14 @@
+Use Case: Downloading sequencing data from the Sequence Read Archive (SRA) using SRAtoolkit
+Code details and examples:
+```
+# Downloading sequencing data from SRA using SRAtoolkit
+
+# Install SRAtoolkit from: https://github.com/ncbi/sra-tools
+# Once installed, you can use the following command to download SRA data
+
+# Example command to download SRA data
+fastq-dump SRR390728
+
+# In the above command, SRR390728 is the accession number of the SRA dataset you want to download.
+# The downloaded data will be in fastq format.
+```

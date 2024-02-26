@@ -1,0 +1,17 @@
+I'm assuming you are referring to the Xpdf software suite which includes tools for PDF file manipulation and rendering. 
+
+Use Case: Extract text from a PDF file
+Code details and examples:
+```bash
+pdftotext input.pdf output.txt
+```
+In this example, `input.pdf` is the PDF file you want to extract text from, and `output.txt` is the resulting text file.
+
+Use Case: Convert a PDF file to an image
+Code details and examples:
+```bash
+pdftoppm input.pdf output -png
+```
+In this example, `input.pdf` is the PDF file you want to convert, and the output will be a series of PNG images with filenames like `output-1.png`, `output-2.png`, etc.
+
+Please note that the exact command syntax may vary depending on the version of Xpdf you are using.

@@ -1,0 +1,19 @@
+Use Case: Ghostscript is a powerful interpreter for the PostScript language and Portable Document Format (PDF) files. It can be used for various tasks such as converting images, merging PDF files, and more.
+
+Code details and examples:
+1. Converting a PostScript file to PDF:
+```bash
+gs -sDEVICE=pdfwrite -o output.pdf input.ps
+```
+2. Merging multiple PDF files into one:
+```bash
+gs -q -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=output.pdf file1.pdf file2.pdf
+```
+3. Extracting text from a PDF file:
+```bash
+gs -sDEVICE=txtwrite -o output.txt input.pdf
+```
+4. Compressing a PDF file:
+```bash
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
+```

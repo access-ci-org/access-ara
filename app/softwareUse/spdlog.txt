@@ -1,0 +1,35 @@
+Use Case: Logging messages to console and file using spdlog library in C++
+
+Code details and examples:
+Sample input file (input.txt):
+```
+This is a sample input file for logging purposes
+```
+
+C++ code snippet to log messages to console and file using spdlog:
+```cpp
+#include "spdlog/spdlog.h"
+
+int main() {
+    // Create a logger
+    auto logger = spdlog::stdout_color_mt("console_logger");
+    auto file_logger = spdlog::basic_logger_mt("file_logger", "logs.txt");
+
+    // Log messages
+    logger->info("This is an informational message");
+    logger->error("This is an error message");
+    file_logger->warn("This is a warning message");
+
+    return 0;
+}
+```
+
+Command to compile the C++ code (assuming spdlog library is installed):
+```bash
+g++ -o logger_example logger_example.cpp -lspdlog
+```
+
+Command to run the compiled code:
+```bash
+./logger_example
+```

@@ -1,0 +1,14 @@
+Use Case: Lossless image compression tool
+
+Code details and examples:
+Input file format: Input images in any standard image format like PNG, JPEG, etc.
+Code:
+```
+jbgtopbm input.jbg > output.pbm
+pbmtojbg output.pbm > output.jbg
+```
+Command to run:
+```
+jbgtopbm input.jbg > output.pbm
+pbmtojbg output.pbm > output.jbg
+```

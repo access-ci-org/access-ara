@@ -1,0 +1,39 @@
+Use Case: HDF5 allows for storing and managing large datasets efficiently.
+
+Code details and examples:
+- Create an HDF5 file with a dataset:
+```python
+import h5py
+
+# Create a new HDF5 file
+f = h5py.File("sample.h5", "w")
+
+# Create a dataset inside the file
+dset = f.create_dataset("data", (10,), dtype='i')
+
+# Write some data to the dataset
+dset[...] = range(10)
+
+# Close the file
+f.close()
+```
+
+- Read from an existing HDF5 file:
+```python
+import h5py
+
+# Open an existing HDF5 file in read mode
+f = h5py.File("sample.h5", "r")
+
+# Access the dataset and read the data
+data = f["data"][:]
+print(data)
+
+# Close the file
+f.close()
+```
+
+- Command to run in terminal:
+```
+python script.py
+```

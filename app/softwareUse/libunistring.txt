@@ -1,0 +1,40 @@
+Use Case: libunistring is a C library for manipulating Unicode strings and for processing textual data in different encoding forms.
+
+Code details and examples:
+libunistring provides various functions for manipulating Unicode strings, such as converting between different encoding forms, case conversion, normalization, and more. Below is a simple example of how to use the libunistring library to convert a UTF-8 string to a UTF-16 string.
+
+```c
+#include <stdio.h>
+#include <string.h>
+#include <unistr.h>
+
+int main() {
+    const char *utf8_string = "Hello, World!"; // Input UTF-8 string
+    int utf16_length = 2 * strlen(utf8_string) + 2;
+    uint16_t utf16_string[utf16_length]; // Output UTF-16 string
+
+    u8_strto32(utf8_string, utf16_string, utf16_length); // Convert UTF-8 to UTF-16
+
+    // Print the UTF-16 string
+    for (int i = 0; utf16_string[i] != 0; i++) {
+        printf("%04X ", utf16_string[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+To compile the above program, you can use a command similar to the one below (the exact command may vary based on your system):
+
+```bash
+gcc example.c -o example -lunistring
+```
+
+Then, you can run the compiled executable:
+
+```bash
+./example
+```
+
+This is a simple example to demonstrate the basic usage of libunistring for converting a UTF-8 string to a UTF-16 string. The library provides many more functions for Unicode string manipulation, and you can refer to the official documentation for more details and examples.

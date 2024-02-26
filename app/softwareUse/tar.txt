@@ -1,0 +1,13 @@
+Use Case: Archive files using tar
+
+Code details and examples:
+```
+# Create a new tar archive file
+tar -cvf archive.tar file1.txt file2.txt
+
+# Extract files from a tar archive
+tar -xvf archive.tar
+
+# List the contents of a tar archive
+tar -tvf archive.tar
+```

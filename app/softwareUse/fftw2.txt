@@ -1,0 +1,20 @@
+Use Case: Fastest Fourier Transform in the West (FFTW) version 2
+
+Code details and examples:
+FFTW version 2 is no longer actively maintained or recommended for new projects. Users are encouraged to use FFTW version 3 or higher. Below is a general example of how FFTW version 2 can be used:
+
+Input file format: The input file for FFTW version 2 typically contains the data on which the Fourier Transform needs to be performed.
+```
+# Sample input file for FFTW version 2
+1.0 2.0 3.0
+4.0 5.0 6.0
+7.0 8.0 9.0
+```
+
+Code snippet:
+```bash
+# Estimate the forward Fourier Transform in FFTW2
+fftw input.dat output.dat
+```
+
+Please note that the above command is a placeholder, and the actual command to run FFTW version 2 may differ based on the system and how FFTW version 2 was installed.

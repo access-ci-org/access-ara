@@ -1,0 +1,26 @@
+Use Case: Qt4 is a cross-platform C++ application framework. 
+
+Code details and examples:
+```cpp
+#include <QtGui>
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+
+    QWidget window;
+    window.resize(250, 150);
+    window.setWindowTitle("Qt4 Example");
+    window.show();
+
+return app.exec();
+}
+```
+
+To compile and run the Qt4 code, you can use the following commands:
+```bash
+qmake -project
+qmake
+make
+./your_application_name
+```

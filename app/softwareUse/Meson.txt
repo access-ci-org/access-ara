@@ -1,0 +1,22 @@
+Use Case: Meson is an open-source build system used to compile software packages.
+
+Code details and examples:
+1. Sample Meson build file (meson.build):
+```python
+project('hello', 'c',
+  default_options : ['buildtype=debugoptimized'])
+
+executable('demo', 'demo.c')
+```
+
+2. Creating a build directory and running Meson:
+```
+$ meson builddir
+$ cd builddir
+$ meson compile
+```
+
+3. Building the project:
+```
+$ ninja
+```

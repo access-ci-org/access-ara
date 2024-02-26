@@ -1,0 +1,23 @@
+Use Case: Read input from the user with readline library in Python
+
+Code details and examples:
+```python
+import readline
+
+def completer(text, state):
+    options = ['hello', 'world', 'python', 'code']
+    matches = [x for x in options if x.startswith(text)]
+    if state < len(matches):
+        return matches[state]
+    else:
+        return None
+
+readline.parse_and_bind("tab: complete")
+readline.set_completer(completer)
+
+while True:
+    user_input = input('Enter a word: ')
+    print('You entered:', user_input)
+```
+
+In this example, the `readline` library is used to enable tab-completion for user input. The `completer` function provides a list of options for autocompletion based on the user's input. The `parse_and_bind` function is used to bind the tab key for autocompletion, and `set_completer` is used to set the completer function. User input is read using the `input` function, and the program will continuously prompt the user for input until exited.

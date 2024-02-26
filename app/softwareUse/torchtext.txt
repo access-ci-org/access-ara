@@ -1,0 +1,38 @@
+Use Case: Natural Language Processing with Torchtext
+
+Code details and examples:
+```python
+from torchtext.data import Field, TabularDataset, BucketIterator
+
+# Define field for text and label
+text = Field(sequential=True, lower=True)
+label = Field(sequential=False, is_target=True)
+
+# Define fields for tabular data
+fields = {'text': ('text', text), 'label': ('label', label)}
+
+# Load dataset
+train_data, valid_data, test_data = TabularDataset.splits(path='data/', train='train.csv', validation='valid.csv', test='test.csv', format='csv', fields=fields)
+
+# Build vocabulary
+text.build_vocab(train_data, max_size=10000)
+label.build_vocab(train_data)
+
+# Create iterators
+train_iterator, valid_iterator, test_iterator = BucketIterator.splits(
+    (train_data, valid_data, test_data),
+    batch_size=64,
+    sort_key=lambda x: len(x.text),
+    sort_within_batch=True
+)
+
+# Sample input file (train.csv):
+# text,label
+# This is a sample sentence.,1
+# Another example of text.,0
+
+# Sample command to run:
+# python train.py --data_path data/ --train_file train.csv --valid_file valid.csv --test_file test.csv
+```
+
+Please note that the input files (train.csv, valid.csv, test.csv) should be in the specified format with appropriate headers. The command provided is an example and may need to be modified based on the training script you are using.

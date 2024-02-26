@@ -1,0 +1,31 @@
+Use Case: PCRE2 for regular expression matching  
+Code details and examples:  
+PCRE2 provides a library for regular expression matching and a set of command-line tools for working with regular expressions.  
+
+Sample input file (example.txt):
+```
+Hello, my email is user@example.com
+```
+
+Code:
+1. To compile a regular expression and match it against a file:
+```
+pcre2_compile '/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/' - < example.txt
+```
+
+2. To use PCRE2 tool to perform a regex match:
+```
+pcre2grep '\b[a-z]+\b' example.txt
+```
+
+3. To replace all occurrences of a pattern with another pattern:
+```
+pcre2_substitute 's/old/new/g' - < example.txt
+```
+
+4. To test a regular expression pattern against a string:
+```
+pcre2test
+```
+
+For detailed options and usage, refer to the PCRE2 documentation.

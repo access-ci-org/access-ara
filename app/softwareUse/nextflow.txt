@@ -1,0 +1,6 @@
+Use Case: Data processing and analysis pipeline management
+
+Code details and examples:
+```nextflow run myPipeline.nf -profile standard```
+
+In this example, `myPipeline.nf` is the name of the Nextflow script that defines the pipeline workflow. The `-profile` flag specifies the configuration profile to use. The command `nextflow run` is used to execute the pipeline.

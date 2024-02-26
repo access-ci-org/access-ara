@@ -1,0 +1,50 @@
+Use Case: UCX is a library for communication and computation offload which is used in high performance computing (HPC) environments.
+
+Code details and examples:
+1. Sample Input File: 
+- No specific input file required for using UCX.
+
+2. Code Snippet:
+- Below is an example of using UCX with MPI to send and receive messages between two processes:
+
+```c
+#include <stdio.h>
+#include <mpi.h>
+#include <ucp/api/ucp.h>
+
+int main(int argc, char **argv) {
+    MPI_Init(&argc, &argv);
+    
+    // Initialize UCX
+    ucp_context_h ucxContext;
+    ucp_config_t *ucpConfig;
+    ucp_context_config_t *ucpContextConfig;
+    ucp_init_options_t initOptions;
+    ucp_init_version(UCP_API_VERSION, &initOptions, &ucpContextConfig);
+    ucp_config_read(NULL, NULL, &ucpConfig);
+    ucp_init(&initOptions, ucpConfig, &ucxContext);
+    
+    // MPI communication
+    int rank;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    if (rank == 0) {
+        // Process 0 sends a message to Process 1
+        // UCX code here
+    } else if (rank == 1) {
+        // Process 1 receives a message from Process 0
+        // UCX code here
+    }
+    
+    // Cleanup
+    ucp_cleanup(ucxContext);
+    MPI_Finalize();
+    
+    return 0;
+}
+```
+
+3. Run Command:
+- To compile the code, you would need to link against UCX and MPI libraries. Below is a sample command for compiling the code with UCX and MPI:
+```
+mpicc -o my_program my_program.c -lucp -lmpi
+```

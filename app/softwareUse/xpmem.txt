@@ -1,0 +1,47 @@
+Use Case: Inter-node shared memory communication
+
+Code details and examples:
+XPMEM is a Linux kernel module that enables shared memory communication between processes on different nodes. It is often used in HPC environments for efficient inter-node communication. Below is an example of how to set up and use XPMEM:
+
+1. Load the xpmem kernel module:
+```bash
+sudo modprobe xpmem
+```
+
+2. To use XPMEM, you will need to allocate memory using the xpmem driver. Here is an example code snippet using C:
+
+```c
+#include <xpmem.h>
+#include <stdio.h>
+
+int main() {
+    int size = 1024; // size of shared memory
+    int flags = 0; // permission flags
+    uintptr_t addr;
+    
+    struct xpmem_addr xpmem_addr;
+
+    int xpmem_fd = xpmem_make(size, flags, &xpmem_addr);
+    if (xpmem_fd < 0) {
+        perror("xpmem_make");
+        return -1;
+    }
+
+    addr = xpmem_addr.apid;
+    
+    printf("Shared memory address: %p\n", (void *)addr);
+    
+    // Use the shared memory
+
+    xpmem_release(xpmem_fd);
+
+    return 0;
+}
+```
+
+3. Compile the code and run it. Make sure to link against the xpmem library.
+
+```bash
+gcc -o xpmem_example xpmem_example.c -lxpmem
+./xpmem_example
+```

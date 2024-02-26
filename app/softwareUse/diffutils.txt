@@ -1,0 +1,14 @@
+Use Case: Text comparison with diff 
+Code details and examples:
+```
+# Sample input files
+# file1.txt
+Hello, this is file 1.
+
+# file2.txt
+Hello, this is file 2.
+
+# Using diff command to compare two files
+diff file1.txt file2.txt
+```
+To run the command, save the sample input files as `file1.txt` and `file2.txt` and run the `diff file1.txt file2.txt` command in the terminal.

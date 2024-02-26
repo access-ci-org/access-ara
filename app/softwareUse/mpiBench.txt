@@ -1,0 +1,19 @@
+Use Case: Benchmarking MPI performance
+Code details and examples:
+mpiBench is a benchmarking tool that helps evaluate the performance of Message Passing Interface (MPI) implementations on high-performance computing systems. It provides multiple test cases to measure the communication and computation performance of MPI.
+
+To run mpiBench, you can follow these steps:
+
+1. Download and install mpiBench on your system.
+2. Prepare the input files or use the provided sample input files.
+3. Run the mpiBench executable with the desired options.
+
+Sample input files may vary depending on the specific benchmark being executed. Here is an example of running mpiBench with a simple ping-pong test:
+
+```
+$ mpiBench pingpong -n 1000
+```
+
+This command will run the ping-pong test with 1000 iterations. The output will include performance metrics such as latency, bandwidth, and message rate.
+
+Please refer to the documentation or the help menu of mpiBench for more details on available benchmarks and how to run them.

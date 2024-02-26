@@ -1,0 +1,30 @@
+Use Case: VCF file manipulation and analysis
+
+Code details and examples:
+VCFtools is a software suite for processing and analyzing VCF (Variant Call Format) files commonly used in genetics and genomics research. Here are some examples of commands you can run using VCFtools:
+
+1. Filtering VCF file by individual:
+```bash
+vcftools --vcf input.vcf --keep sample_list.txt --recode --out output
+```
+In this command, replace `input.vcf` with your VCF file, `sample_list.txt` with a text file containing a list of individuals to keep, `output` with the desired output file prefix. This command will filter the VCF file to include only the specified individuals.
+
+2. Calculating allele frequency:
+```bash
+vcftools --vcf input.vcf --freq --out output
+```
+This command will calculate the allele frequencies for all variants in the VCF file and output the results to a file with the prefix `output`.
+
+3. Extracting SNPs from VCF file:
+```bash
+vcftools --vcf input.vcf --remove-indels --recode --recode-INFO-all --out output
+```
+This command will extract only SNPs (single nucleotide polymorphisms) from the VCF file, removing indels, and output the results to a new VCF file with the prefix `output`.
+
+4. Generating a site frequency spectrum:
+```bash
+vcftools --vcf input.vcf --site-frequency --out output
+```
+This command will generate a site frequency spectrum from the VCF file, showing the distribution of allele frequencies across sites.
+
+To run these commands, make sure you have VCFtools installed and accessible in your environment.

@@ -1,0 +1,51 @@
+Use Case: Trilinos is a collection of scientific libraries for solving large-scale, complex problems. It includes packages for linear algebra, numerical optimization, and parallel computing.
+
+Code details and examples:
+Trilinos provides a variety of tools and libraries for different scientific computing tasks. Here are some examples of Trilinos packages:
+
+1. Epetra: Trilinos' linear algebra package for building and solving large, sparse linear systems.
+   Sample input files: Not applicable
+   Code:
+   ```
+   // C++ code example using Epetra
+   #include "Epetra_Map.h"
+   #include "Epetra_Vector.h"
+   #include "Epetra_CrsMatrix.h"
+   
+   Epetra_MpiComm Comm(MPI_COMM_WORLD);
+   Epetra_Map Map(nGlobalElements, 0, Comm);
+   Epetra_Vector x(Map);
+   Epetra_Vector b(Map);
+   Epetra_CrsMatrix A(Copy, Map, 3);
+   
+   // Add code here to populate A, x, and b
+   ```
+
+2. Ifpack2: Trilinos' package for scalable algebraic multigrid preconditioning.
+   Sample input files: Not applicable
+   Code:
+   ```
+   // C++ code example using Ifpack2
+   #include "Ifpack2_Factory.hpp"
+   #include "Tpetra_CrsMatrix.hpp"
+   #include "Tpetra_MultiVector.hpp"
+   
+   auto prec = Ifpack2::Factory::create("ILUT", A);
+   prec->initialize();
+   prec->compute();
+   ```
+
+3. AztecOO: Trilinos' package for solving linear and nonlinear equations using iterative methods.
+   Sample input files: Not applicable
+   Code:
+   ```
+   // C++ code example using AztecOO
+   #include "AztecOO.h"
+   
+   Epetra_LinearProblem problem(&A, &x, &b);
+   AztecOO solver(problem);
+   solver.SetAztecOption(AZ_solver, AZ_cg);
+   solver.Iterate(maxIterations, tolerance);
+   ```
+
+To run Trilinos code, you need to have Trilinos installed and properly linked in your build system. The exact commands may vary based on your specific setup and build system.

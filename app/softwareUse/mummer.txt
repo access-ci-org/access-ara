@@ -1,0 +1,28 @@
+Use Case: Whole genome alignment with MUMmer
+
+Code details and examples:
+MUMmer is a system for rapidly aligning entire genomes, whether in complete or draft form. It can often find the best global alignment between two genomes very quickly; other alignments are also available. MUMmer can also align incomplete genomes; it is capable of handling the 100s or 1000s of contigs produced by current sequencing technologies.
+
+To perform a whole genome alignment using MUMmer, you can use the 'nucmer' utility to align two DNA sequences and the 'dnadiff' utility to generate a summary report of the differences between the sequences.
+
+1. Align two DNA sequences using nucmer:
+
+Create two fasta files containing the sequences to be aligned, for example:
+- sequence1.fasta
+- sequence2.fasta
+
+```
+nucmer sequence1.fasta sequence2.fasta -p output_prefix
+```
+
+This will generate multiple output files with the specified output prefix.
+
+2. Generate a summary report of the differences using dnadiff:
+
+```
+dnadiff output_prefix.delta
+```
+
+This will generate a report detailing the differences between the two sequences.
+
+Please refer to the MUMmer documentation for more options and details on using the tool.

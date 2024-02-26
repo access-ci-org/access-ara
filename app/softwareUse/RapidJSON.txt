@@ -1,0 +1,64 @@
+Use Case: Parsing JSON data using RapidJSON
+Code details and examples:
+RapidJSON is a fast JSON parser and generator for C++ that aims to provide high performance and memory efficiency. Below is an example of how to use RapidJSON to parse a JSON data file.
+
+Sample input JSON file (input.json):
+```
+{
+  "name": "John Doe",
+  "age": 30,
+  "is_student": false,
+  "scores": [95, 87, 91]
+}
+```
+
+C++ code to parse the JSON data using RapidJSON:
+```cpp
+#include <iostream>
+#include <rapidjson/document.h>
+#include <rapidjson/filereadstream.h>
+
+using namespace rapidjson;
+
+int main() {
+    FILE* fp = fopen("input.json", "r");
+    char readBuffer[65536];
+    FileReadStream is(fp, readBuffer, sizeof(readBuffer));
+
+    Document doc;
+    doc.ParseStream(is);
+
+    if (doc.HasParseError()) {
+        std::cerr << "Error parsing JSON" << std::endl;
+        return 1;
+    }
+
+    const Value& name = doc["name"];
+    const Value& age = doc["age"];
+    const Value& is_student = doc["is_student"];
+    const Value& scores = doc["scores"];
+
+    std::cout << "Name: " << name.GetString() << std::endl;
+    std::cout << "Age: " << age.GetInt() << std::endl;
+    std::cout << "Is Student: " << is_student.GetBool() << std::endl;
+
+    std::cout << "Scores: ";
+    for (SizeType i = 0; i < scores.Size(); i++) {
+        std::cout << scores[i].GetInt() << " ";
+    }
+    std::cout << std::endl;
+
+    fclose(fp);
+    return 0;
+}
+```
+
+To compile the above code, assuming you have RapidJSON library properly installed:
+```
+g++ example.cpp -o example -I path_to_rapidjson_includes
+```
+
+Command to run the compiled code:
+```
+./example
+```

@@ -1,0 +1,14 @@
+Use Case: Computational package for electronic structure calculations in condensed matter physics and quantum chemistry.
+
+Code details and examples:
+- ELPA (Eigenvalue soLvers for Petascale Applications) is a high-performance library for solving the dense symmetric (hermitian) eigenvalue problems encountered in electronic structure calculations. It can be used for various types of eigenvalue problems, including standard eigenvalue problems, generalized eigenvalue problems, and partial symmetric eigenvalue problems.
+
+Sample input files:
+ELPA requires input data in the form of matrices for eigenvalue calculations. These matrices can be generated using various quantum chemistry software packages such as Quantum ESPRESSO, VASP, or SIESTA.
+
+Command to run ELPA:
+ELPA doesn't have a command-line interface. Instead, it is usually linked with quantum chemistry or materials science codes that require solving eigenvalue problems. The integration and usage of ELPA depend on the specific code being used. 
+
+For more details on how to integrate ELPA with specific codes, refer to the official ELPA documentation: https://elpa.mpcdf.mpg.de/
+
+Note: ELPA is typically used as a library and integrated into larger computational codes rather than being run directly from the command line.

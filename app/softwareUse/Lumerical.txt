@@ -1,0 +1,29 @@
+Use Case: Lumerical is a suite of photonic simulation software used for designing photonics, nanophotonics, and optoelectronic components and systems.
+
+Code details and examples:
+Lumerical software requires a graphical user interface (GUI) for setting up simulation parameters, defining structures, and analyzing results. Users can create input files using the GUI or script them using Lumerical's scripting language (typically based on Lua).
+
+Example input file for a simple simulation in Lumerical MODE Solutions (for photonic waveguide):
+```
+# Simple waveguide simulation
+addrectangle;
+set("name", "waveguide");
+set("x", 0);
+set("y", 0);
+set("z", 0);
+set("x span", 2e-6);
+set("y span", 0.5e-6);
+set("z span",-1);
+
+addanalysis("mode");
+run;
+```
+
+To run the simulation in Lumerical MODE Solutions, you can use the following command:
+```
+$ mode-solutions -run "input_file.lms"
+```
+
+This will run the simulation using the input file "input_file.lms" and generate the corresponding output data and results.
+
+Please note that Lumerical provides detailed documentation and examples on their official website for using their software packages.

@@ -1,0 +1,23 @@
+Use Case: Database management
+Code details and examples: 
+```sql
+-- Create a new database
+CREATE DATABASE mydatabase;
+
+-- Create a new table
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50),
+    age INT
+);
+
+-- Insert data into the table
+INSERT INTO users (name, age) VALUES ('Alice', 30), ('Bob', 25);
+
+-- Query data from the table
+SELECT * FROM users;
+```
+Command to run PostgreSQL: 
+```
+psql -U username -d database_name -f script.sql
+```

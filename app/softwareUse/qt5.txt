@@ -1,0 +1,28 @@
+Use Case: GUI application development
+Code details and examples:
+
+To create a simple GUI application using Qt5, you can use the following code:
+```cpp
+#include <QApplication>
+#include <QPushButton>
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+
+    QPushButton button("Hello World!");
+    button.show();
+
+    return app.exec();
+}
+```
+
+To compile and run the application:
+```bash
+$ qmake -project
+$ qmake
+$ make
+$ ./your_application_name
+```
+
+This will create a window with a "Hello World!" button.

@@ -1,0 +1,46 @@
+Use Case: Redis (In-Memory Data Structure Store)
+
+Code details and examples:
+1. To set a key-value pair in Redis:
+```
+SET mykey "Hello"
+```
+
+2. To get the value of a key in Redis:
+```
+GET mykey
+```
+
+3. To store a list of values in a Redis list:
+```
+LPUSH mylist "world"
+LPUSH mylist "hello"
+```
+
+4. To retrieve values from a Redis list:
+```
+LRANGE mylist 0 -1
+```
+
+5. To store a hash data structure in Redis:
+```
+HSET myhash field1 "value1"
+HSET myhash field2 "value2"
+```
+
+6. To retrieve a value from a hash in Redis:
+```
+HGET myhash field1
+```
+
+7. To publish a message to a channel in Redis:
+```
+PUBLISH mychannel "new message"
+```
+
+8. To subscribe to messages on a Redis channel using the redis-cli tool:
+```
+SUBSCRIBE mychannel
+```
+
+Note: These are just a few examples of the commands that can be used with Redis. The actual commands and usage may vary depending on the specific use case and requirements.

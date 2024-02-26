@@ -1,0 +1,32 @@
+Use Case: Nanopolish is a software package for signal-level analysis of Oxford Nanopore Technologies sequencing data.
+Code details and examples:
+Input file format:
+- Nanopore sequencing data in fast5 format
+- Alignment file in SAM or BAM format
+- Reference genome in FASTA format
+
+Code:
+1. Index the reference genome:
+```bash
+bwa index reference_genome.fa
+```
+
+2. Align the nanopore sequencing data to the reference genome:
+```bash
+bwa mem reference_genome.fa nanopore_data.fastq | samtools view -bS -F 4 - | samtools sort -o nanopore_data.sorted.bam
+```
+
+3. Index the sorted BAM file:
+```bash
+samtools index nanopore_data.sorted.bam
+```
+
+4. Run nanopolish on the aligned BAM file:
+```bash
+nanopolish eventalign -r nanopore_data.fastq -b nanopore_data.sorted.bam -g reference_genome.fa > events.tsv
+```
+
+5. Perform methylation calling with nanopolish:
+```bash
+nanopolish call-methylation -t 8 -r nanopore_data.fastq -b nanopore_data.sorted.bam -g reference_genome.fa > methylation_calls.tsv
+```

@@ -1,0 +1,48 @@
+Use Case: Graph partitioning and parallel computing with ParMETIS 
+
+Code details and examples: 
+ParMETIS is a parallel graph partitioning and fill-reducing ordering package. Below is an example of how to partition a graph using ParMETIS.
+
+```c
+#include <parmetis.h>
+
+int main(int argc, char *argv[]) {
+    // Initialize MPI
+    MPI_Init(&argc, &argv);
+
+    int num_vertices = 6;
+    int num_edges = 7;
+    idx_t *xadj = {0, 2, 5, 7, 9, 12, 14};
+    idx_t *adjncy = {1, 3, 0, 2, 4, 1, 3, 5, 0, 4, 2, 6, 1, 5};
+    idx_t num_parts = 2;
+    idx_t *part = (idx_t*) malloc(sizeof(idx_t) * num_vertices);
+    
+    idx_t options[METIS_NOPTIONS];
+    METIS_SetDefaultOptions(options);
+
+    // Call ParMETIS
+    idx_t edgecut;
+    MPI_Comm comm = MPI_COMM_WORLD;
+    idx_t nparts = num_parts;
+    idx_t objval;
+    ParMETIS_V3_PartKway(xadj, adjncy, NULL, NULL, NULL, &wgtflag, &num_parts, NULL, options, &edgecut, part, &comm);
+
+    // Clean up
+    free(part);
+    MPI_Finalize();
+
+    return 0;
+}
+```
+
+To compile the code, you can use the following command:
+
+```bash
+mpicc partition_graph.c -o partition_graph -lparmetis -lmetis
+```
+
+And to run the compiled code:
+
+```bash
+mpiexec -n <num_procs> ./partition_graph
+```

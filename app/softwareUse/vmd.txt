@@ -1,0 +1,15 @@
+Use Case: Visualization of Molecular Dynamics (VMD) is a molecular visualization program for displaying, animating, and analyzing large biomolecular systems using 3D graphics and built-in scripting languages.
+
+Code details and examples:
+```
+# Loading molecule and trajectory file
+vmd -pdb input.pdb -dcd trajectory.dcd
+
+# Running VMD script
+vmd -e script.tcl
+
+# Rendering images
+vmd -dispdev text -e render.tcl
+```
+
+For more information and detailed documentation, please refer to the VMD website: https://www.ks.uiuc.edu/Research/vmd/

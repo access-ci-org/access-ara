@@ -1,0 +1,10 @@
+Use Case: Dsuite is a software for detecting natural selection from population genomic data.
+
+Code details and examples:
+Dsuite can be run from the command line with the following command:
+
+```
+python Dsuite.py
+```
+
+For detailed usage and options, refer to the Dsuite documentation: https://github.com/millanek/Dsuite

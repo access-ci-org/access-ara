@@ -1,0 +1,46 @@
+Use Case: cuTENSOR is a GPU-accelerated library for tensor operations on NVIDIA GPUs.
+
+Code details and examples:
+cuTENSOR requires CUDA-enabled GPUs to function properly.
+
+Example code snippet for tensor multiplication using cuTENSOR:
+```cpp
+#include <iostream>
+#include <cutensor.h>
+
+int main() {
+    cutensorHandle_t handle;
+    cutensorInit(&handle);
+
+    // Define input tensors
+    float* A; // Assuming A is initialized with data
+    float* B; // Assuming B is initialized with data
+    float* C; // Result tensor
+
+    // Define tensor descriptors
+    cutensorTensorDescriptor_t descA;
+    cutensorInitTensorDescriptor(&handle, &descA, ...); // Specify tensor dimensions, data type, etc.
+    cutensorTensorDescriptor_t descB;
+    cutensorInitTensorDescriptor(&handle, &descB, ...); // Specify tensor dimensions, data type, etc.
+    cutensorTensorDescriptor_t descC;
+    cutensorInitTensorDescriptor(&handle, &descC, ...); // Specify tensor dimensions, data type, etc.
+
+    // Define alpha and beta for output scaling
+    float alpha = 1.0f;
+    float beta = 0.0f;
+
+    // Perform tensor multiplication
+    cutensorMatmul(&handle, &alpha, A, descA, B, descB, &beta, C, descC, C, descC, C, descC, C, descC, CUTENSOR_ALGO);
+
+    cutensorStatus_t status = cutensorGetErrorString(cutensorDestroy(handle));
+
+    if (status != CUTENSOR_STATUS_SUCCESS) {
+        std::cerr << "Error: cuTENSOR operation failed." << std::endl;
+        return 1;
+    }
+
+    return 0;
+}
+```
+
+Please refer to the cuTENSOR documentation for detailed information on how to set up tensor operations using cuTENSOR.

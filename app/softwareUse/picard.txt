@@ -1,0 +1,42 @@
+Use Case: Picard is a set of command line tools for manipulating high-throughput sequencing data.
+Code details and examples:
+
+1. MarkDuplicates:
+   Description: Identifies duplicate reads in a BAM or SAM file and tags them as duplicates.
+   Input format: BAM/SAM file
+   Command: 
+   ```
+   java -jar picard.jar MarkDuplicates I=input.bam O=marked_duplicates.bam M=marked_dup_metrics.txt
+   ```
+
+2. CollectAlignmentSummaryMetrics:
+   Description: Collects metrics to assess the alignment of reads in a SAM/BAM file.
+   Input format: BAM/SAM file
+   Command:
+   ```
+   java -jar picard.jar CollectAlignmentSummaryMetrics R=reference.fasta I=input.bam O=output.txt
+   ```
+
+3. SortSam:
+   Description: Sorts a SAM or BAM file by coordinate.
+   Input format: BAM/SAM file
+   Command:
+   ```
+   java -jar picard.jar SortSam INPUT=input.bam OUTPUT=sorted.bam SORT_ORDER=coordinate
+   ```
+
+4. CreateSequenceDictionary:
+   Description: Creates a sequence dictionary (SAM-style) for a reference sequence.
+   Input format: FASTA file
+   Command:
+   ```
+   java -jar picard.jar CreateSequenceDictionary REFERENCE=reference.fasta OUTPUT=reference.dict
+   ```
+
+5. CollectInsertSizeMetrics:
+   Description: Collects insert size metrics for paired-end reads.
+   Input format: BAM/SAM file
+   Command:
+   ```
+   java -jar picard.jar CollectInsertSizeMetrics INPUT=input.bam OUTPUT=output.txt HISTOGRAM_FILE=histogram.pdf
+   ```

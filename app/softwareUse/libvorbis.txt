@@ -1,0 +1,26 @@
+Use Case: Audio compression and streaming with LibVorbis
+
+Code details and examples:
+LibVorbis is a library for encoding and decoding audio data using the Vorbis audio codec. Below is an example of encoding a WAV file to the Ogg Vorbis format using the `oggenc` command-line tool provided by LibVorbis.
+
+1. Install LibVorbis using your package manager or through source code compilation.
+
+2. Encode a WAV file to Ogg Vorbis format:
+```bash
+oggenc input.wav -o output.ogg
+```
+
+In the above command:
+- `input.wav` is the input WAV file you want to encode.
+- `-o output.ogg` specifies the output Ogg Vorbis file name.
+
+3. Decode an Ogg Vorbis file to WAV format:
+```bash
+oggdec input.ogg -o output.wav
+```
+
+In the above command:
+- `input.ogg` is the input Ogg Vorbis file you want to decode.
+- `-o output.wav` specifies the output WAV file name.
+
+Note: Make sure you have the necessary permissions to read/write files in the specified locations.

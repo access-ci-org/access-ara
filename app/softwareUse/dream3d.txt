@@ -1,0 +1,15 @@
+Dream.3D is an open-source software package for digital microstructure analysis and visualization. It is used in materials science and engineering for the analysis of 3D image data. It provides a graphical user interface for easy visualization and analysis of microstructural properties.
+
+Use Case: Visualizing microstructure data in Dream.3D
+Code details and examples:
+```
+# Sample input file: An example input file for Dream.3D may include a 3D image dataset in formats such as .raw, .tif, .dat, etc.
+
+# Steps to run Dream.3D:
+1. Launch Dream.3D software.
+2. Load the input 3D image dataset.
+3. Use the various tools and filters in Dream.3D to analyze and visualize microstructural properties.
+4. Save the analyzed results or visualizations in the desired format.
+```
+
+Please note that Dream.3D is primarily a graphical software tool, and hence the interactions are done through the graphical user interface provided by the software.

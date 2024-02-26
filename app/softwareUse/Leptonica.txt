@@ -1,0 +1,37 @@
+Use Case: Image processing library in C
+Code details and examples:
+Leptonica is an open-source image processing library in C that provides a wide range of image processing functions. Here is an example of how to perform basic image processing using Leptonica.
+
+```c
+#include <stdio.h>
+#include "allheaders.h"
+
+int main() {
+    PIX *image = pixRead("input.jpg");
+    if (image == NULL) {
+        fprintf(stderr, "Error: cannot read image\n");
+        return 1;
+    }
+
+    // Convert the image to grayscale
+    PIX *grayImage = pixConvertRGBToLuminance(image);
+
+    // Save the grayscale image
+    pixWrite("output.png", grayImage, IFF_PNG);
+
+    // Clean up
+    pixDestroy(&image);
+    pixDestroy(&grayImage);
+
+    return 0;
+}
+```
+
+In this example, we read an input image "input.jpg", convert it to grayscale using Leptonica's `pixConvertRGBToLuminance` function, and then save the grayscale image as "output.png".
+
+To compile and run the code, you can use the following commands:
+
+```bash
+gcc -o image_processing image_processing.c -llept
+./image_processing
+```

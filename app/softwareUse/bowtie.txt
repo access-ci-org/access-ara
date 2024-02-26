@@ -1,0 +1,34 @@
+Use Case: Bowtie is a fast, memory-efficient short read aligner. It aligns short DNA sequences (reads) to a large reference genome.
+
+Code details and examples:
+1. Indexing the reference genome:
+```bash
+bowtie-build reference_genome.fasta reference_index
+```
+- `reference_genome.fasta` is the file containing the reference genome sequences.
+- `reference_index` is the basename for the index files to be created.
+
+2. Aligning reads to the reference genome:
+```bash
+bowtie -x reference_index -1 read1.fastq -2 read2.fastq -S aligned_reads.sam
+```
+- `-x reference_index` specifies the basename of the index files.
+- `-1 read1.fastq` and `-2 read2.fastq` are the paired-end read files to be aligned.
+- `-S aligned_reads.sam` specifies the output file in SAM format.
+
+3. Convert SAM file to BAM file (optional):
+```bash
+samtools view -S -b aligned_reads.sam > aligned_reads.bam
+```
+- `aligned_reads.sam` is the SAM format output from Bowtie.
+- `aligned_reads.bam` is the BAM format output.
+
+4. Sorting and indexing BAM file (optional):
+```bash
+samtools sort aligned_reads.bam -o aligned_reads_sorted.bam
+samtools index aligned_reads_sorted.bam
+```
+- `aligned_reads.bam` is the unsorted BAM file.
+- `aligned_reads_sorted.bam` is the sorted BAM file.
+
+Note: Make sure to replace the file names and paths with the actual ones in your case.

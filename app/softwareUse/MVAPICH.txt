@@ -1,0 +1,40 @@
+Use Case: High-performance MPI library  
+Code details and examples:  
+MVAPICH is an MPI Library for high-performance computing. To run a sample MPI job using MVAPICH, you need a host file specifying the nodes on which the MPI job will run and an executable program.  
+
+Sample host file (hostfile.txt):
+```
+node1
+node2
+node3
+```
+
+Sample MPI program (mpi_code.c):
+```c
+#include <stdio.h>
+#include <mpi.h>
+
+int main(int argc, char *argv[]) {
+    int rank, size;
+
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    printf("Hello world from rank %d out of %d processes\n", rank, size);
+
+    MPI_Finalize();
+
+    return 0;
+}
+```
+
+Compile the MPI program:
+```
+mpicc mpi_code.c -o mpi_executable
+```
+
+Run the MPI program using MVAPICH specifying the host file:
+```
+mpirun -np 4 -hostfile hostfile.txt ./mpi_executable
+```

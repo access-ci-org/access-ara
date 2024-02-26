@@ -1,0 +1,34 @@
+Use Case: fastai is a deep learning library built on top of PyTorch, providing high-level abstractions for training models efficiently.
+
+Code details and examples:
+1. Training a image classification model using fastai:
+```python
+from fastai.vision.all import *
+
+path = untar_data(URLs.MNIST_SAMPLE)
+dls = ImageDataLoaders.from_folder(path)
+learn = cnn_learner(dls, resnet18, metrics=accuracy)
+learn.fine_tune(1)
+```
+
+2. Training a text classification model using fastai:
+```python
+from fastai.text.all import *
+
+dls = TextDataLoaders.from_folder(untar_data(URLs.IMDB), valid='test')
+learn = text_classifier_learner(dls, AWD_LSTM, drop_mult=0.5, metrics=accuracy)
+learn.fine_tune(4)
+```
+
+3. Using fastai for tabular data:
+```python
+from fastai.tabular.all import *
+
+path = untar_data(URLs.ADULT_SAMPLE)
+dls = TabularDataLoaders.from_csv(path/'adult.csv', path=path, y_names="salary",
+                                  cat_names = ['workclass', 'education', 'marital-status', 'occupation', 'relationship', 'race'],
+                                  cont_names = ['age', 'fnlwgt', 'education-num'],
+                                  procs = [Categorify, FillMissing, Normalize])
+learn = tabular_learner(dls, metrics=accuracy)
+learn.fit_one_cycle(3)
+```

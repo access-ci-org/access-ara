@@ -1,0 +1,30 @@
+Use Case: Matrix element computations in quantum chemistry calculations.
+Code details and examples:
+Libint provides a library for efficient computation of molecular integrals for quantum chemistry calculations. It is commonly used in electronic structure calculations.
+
+Example of using libint to calculate molecular integrals:
+```c
+#include <libint2/eri.h>
+#include <libint2/engine.h>
+
+using namespace libint2;
+
+int main() {
+    const char* molecule = "H 0 0 0\nH 0 0 0.74";
+    const auto bf = Operator::coulomb; // compute two electron repulsion integrals
+    const auto engine = Engine(bf, max_nprim(bf), max_l(bf), 0);
+    const auto shells = engine.target(basis, basis);
+
+    const auto integrals = engine.compute(shells);
+    
+    return 0;
+}
+```
+
+To compile and run the code:
+```
+g++ -std=c++11 -o my_program my_program.cpp -l libint2
+./my_program
+```
+
+Please note that the input file containing the molecular geometry and basis set must be provided in a specific format as expected by the Libint functionality.

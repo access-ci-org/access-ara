@@ -1,0 +1,33 @@
+Morpheus is a modeling environment for cellular systems. It allows users to create mathematical models of biological systems and simulate their behavior.
+
+Use Case: Creating a simple model in Morpheus
+Code details and examples:
+```xml
+<!-- sample_model.xml -->
+<morpheus>
+    <world>
+        <size x="100" y="100" z="1"/>
+    </world>
+    
+    <cell-definitions>
+        <cell-definition name="cell">
+            <property name="celltype" value="1"/>
+        </cell-definition>
+    </cell-definitions>
+    
+    <cell-population>
+        <cell-identifier cell-type="1"/>
+        <grid>
+            <rectangle corner="0,0" opposite="50,50"/>
+            <init-rect quantity="50" celltype="1"/>
+        </grid>
+    </cell-population>
+</morpheus>
+```
+
+To run the simulation using the given model:
+```
+morpheus-cli sample_model.xml
+```
+
+This will start the simulation using the defined model in the `sample_model.xml` file.

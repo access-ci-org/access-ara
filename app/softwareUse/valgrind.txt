@@ -1,0 +1,24 @@
+Use Case: Memory debugging and profiling tool.  
+Code details and examples:  
+1. Consider a simple C program `example.c` that has a memory leak:
+```c
+#include <stdlib.h>
+
+int main() {
+    int* ptr = malloc(10 * sizeof(int));
+    // Forgot to free the allocated memory
+    return 0;
+}
+```
+
+2. Compile the program with debugging symbols:
+```
+gcc -g example.c -o example
+```
+
+3. Run the program with Valgrind to detect memory leaks:
+```
+valgrind ./example
+```
+
+4. Valgrind output will show memory leak details and can help in debugging and fixing the issue.

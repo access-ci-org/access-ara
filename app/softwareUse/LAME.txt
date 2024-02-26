@@ -1,0 +1,8 @@
+Use Case: Audio encoding  
+Code details and examples:  
+To encode an audio file using LAME, you can use the following command:  
+```
+lame input.wav output.mp3
+```  
+This command will encode the input.wav audio file into the output.mp3 file.  
+Make sure you have LAME installed on your system to use this command.

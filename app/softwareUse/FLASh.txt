@@ -1,0 +1,20 @@
+Use Case: FLASh (Fast Length Adjustment of SHort reads) is a bioinformatics tool for merging paired-end reads from the Illumina sequencing platform. 
+
+Code details and examples:
+```
+flash -m 10 -M 200 -z -o output input_R1.fastq input_R2.fastq
+```
+
+- `-m`: Minimum overlap length (default: 10)
+- `-M`: Maximum overlap length (default: 65)
+- `-z`: Compress the output with gzip
+- `-o`: Output file prefix
+
+Input files:
+- `input_R1.fastq`: Paired-end reads file 1
+- `input_R2.fastq`: Paired-end reads file 2
+
+Command to run FLASh on the example input files:
+```
+flash -m 10 -M 200 -z -o output example_R1.fastq example_R2.fastq
+```

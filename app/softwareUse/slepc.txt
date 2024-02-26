@@ -1,0 +1,23 @@
+Use Case: SLEPc is a software library for the solution of large scale sparse eigenvalue problems. It is built on top of PETSc, the Portable, Extensible Toolkit for Scientific Computation. 
+
+Code details and examples:
+SLEPc does not have a standalone executable, it needs to be used in conjunction with PETSc in your own C, C++, or Fortran code. Below is an example of using SLEPc and PETSc together in a C code for solving a dense Hermitian eigenvalue problem.
+
+```c
+#include <slepceps.h>
+#include <petscksp.h>
+
+int main(int argc, char **args)
+{
+    SlepcInitialize(&argc, &args, NULL, NULL);
+
+    // Create matrices, vectors, and solve eigenvalue problem using SLEPc and PETSc functions
+
+    SlepcFinalize();
+    return 0;
+}
+```
+
+For detailed documentation and examples, please refer to the SLEPc documentation: https://slepc.upv.es/documentation/
+
+Note: SLEPc is primarily used through the PETSc interface and does not have standalone command-line tools.

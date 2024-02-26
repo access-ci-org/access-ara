@@ -1,0 +1,20 @@
+Use Case: DICOM Read and Write in Python
+
+Code details and examples:
+```python
+import pydicom
+
+# Reading a DICOM file
+ds = pydicom.dcmread('sample.dcm')
+print(ds)
+
+# Accessing specific DICOM attributes
+print('Patient Name:', ds.PatientName)
+print('Patient ID:', ds.PatientID)
+
+# Modifying and saving a DICOM file
+ds.PatientName = 'John Doe'
+ds.save_as('modified.dcm')
+```
+
+Please note that you will need to have a DICOM file (`.dcm`) for this example to work. You can replace `'sample.dcm'` with the path to your DICOM file.

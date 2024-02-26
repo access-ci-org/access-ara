@@ -1,0 +1,52 @@
+I will provide details on Bison, which is a parser generator that is part of the GNU Project. 
+
+Use Case: Parsing a simple arithmetic expression
+Code details and examples:
+Input file (calc.y):
+```
+%token NUM
+%left '+' '-'
+%left '*' '/'
+
+%%
+
+exp: exp '+' exp 
+   | exp '-' exp 
+   | exp '*' exp 
+   | exp '/' exp 
+   | '(' exp ')' 
+   | NUM 
+   ;
+
+%%
+
+int main() {
+    yyparse();
+    return 0;
+}
+
+int yyerror(char *s) {
+    printf("Error: %s\n", s);
+}
+
+int yylex() {
+    int c = getchar();
+    if (c == '+' || c == '-' || c == '*' || c == '/')
+        return c;
+    if (isdigit(c)) {
+        ungetc(c, stdin);
+        scanf("%d", &yylval);
+        return NUM;
+    }
+    return c;
+}
+```
+
+Code to compile and run:
+```
+bison -d calc.y
+gcc -o calc calc.tab.c -lfl
+./calc
+```
+
+This example demonstrates a simple calculator parser using Bison. The input file contains the grammar rules for parsing arithmetic expressions. The code provided includes the grammar rules, main function, error handling, and lexical analysis using yylex. After creating the parser using Bison and compiling the generated code with gcc, you can run the executable to parse arithmetic expressions.

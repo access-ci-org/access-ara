@@ -1,0 +1,44 @@
+Use Case: TensorRT is a high-performance deep learning inference library developed by NVIDIA for optimizing and deploying deep learning models on NVIDIA GPUs.
+
+Code details and examples:
+1. Convert a TensorFlow model to TensorRT:
+```python
+import tensorflow as tf
+from tensorflow.python.compiler.tensorrt import trt_convert as trt
+
+# Load the TensorFlow model
+saved_model_dir = 'path/to/saved_model'
+converter = trt.TrtGraphConverter(input_saved_model_dir=saved_model_dir)
+converter.convert()
+converter.save(output_saved_model_dir='path/to/output_model')
+```
+
+2. Optimizing and running inference with TensorRT:
+```python
+import tensorrt as trt
+import numpy as np
+
+# Create a TensorRT engine from the optimized model
+with open('path/to/optimized_model.plan', 'rb') as f, trt.Runtime(TRT_LOGGER) as runtime:
+    engine = runtime.deserialize_cuda_engine(f.read())
+
+# Allocate memory for input and output
+input_data = np.random.rand(batch_size, input_channels, height, width).astype(np.float32)
+output_data = np.empty((batch_size, num_classes), dtype=np.float32)
+
+# Create an execution context from the engine
+with engine.create_execution_context() as context:
+    # Perform inference
+    context.execute(batch_size=1, bindings=[input_data.ctypes.data, output_data.ctypes.data])
+```
+
+3. Command to run TensorRT:
+TensorRT can be used directly in a Python environment as shown above. Alternatively, you can build and run TensorRT-enabled applications using the TensorRT C++ API and command-line tools.
+
+For example, to run a C++ application with TensorRT support:
+```bash
+g++ -std=c++11 my_tensorrt_app.cpp -o my_tensorrt_app -lnvinfer -L/path/to/tensorrt/lib -I/path/to/tensorrt/include
+./my_tensorrt_app
+```
+
+Note: Detailed installation instructions for NVIDIA TensorRT can be found on the NVIDIA Developer website.

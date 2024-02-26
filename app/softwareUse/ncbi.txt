@@ -1,0 +1,15 @@
+Use Case: Accessing NCBI database to query molecular data.
+
+Code details and examples:
+NCBI provides various tools and APIs to access their database. One common way to query molecular data is through the NCBI Entrez Direct UNIX command line E-utilities.
+
+Here is an example using `esearch` to search for literature about "influenza" and `efetch` to retrieve the results in XML format:
+
+```
+# Search for literature about "influenza"
+esearch -db pubmed -query "influenza" | efetch -format xml
+```
+
+This command will return XML-formatted results for the query "influenza".
+
+For more information and usage examples, you can refer to the NCBI E-utilities documentation: https://www.ncbi.nlm.nih.gov/books/NBK179288/

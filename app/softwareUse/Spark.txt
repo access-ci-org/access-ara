@@ -1,0 +1,28 @@
+Use Case: Data processing and analysis in a distributed computing environment
+
+Code details and examples: 
+1. Sample input file (input.txt):
+```
+1,John,Doe
+2,Jane,Smith
+3,Alice,Johnson
+```
+
+2. Sample PySpark code (pyspark_script.py) to read the input file and display the data:
+```python
+from pyspark.sql import SparkSession
+
+# Create a Spark session
+spark = SparkSession.builder.appName("ExampleApp").getOrCreate()
+
+# Read the input file
+df = spark.read.csv("input.txt")
+
+# Show the data
+df.show()
+```
+
+3. Command to run the PySpark script:
+```
+pyspark pyspark_script.py
+```

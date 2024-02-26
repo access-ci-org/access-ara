@@ -1,0 +1,15 @@
+Use Case: Creating a squashfs compressed filesystem.  
+
+Code details and examples:
+```bash
+mksquashfs <source_dir> <output_file>.squashfs
+```
+
+In the above command:
+- `<source_dir>` is the directory you want to compress into a squashfs filesystem.
+- `<output_file>.squashfs` is the name of the output squashfs file.
+
+For example, to create a squashfs filesystem from a directory named `myfolder` and save it as `myfolder.squashfs`, you would run:
+```bash
+mksquashfs myfolder myfolder.squashfs
+```

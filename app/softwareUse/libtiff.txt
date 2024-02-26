@@ -1,0 +1,44 @@
+Use Case: Working with tiff files using libtiff
+
+Code details and examples:
+```c
+#include <stdio.h>
+#include <tiffio.h>
+
+int main() {
+    TIFF* tiff = TIFFOpen("sample.tif", "r");
+    
+    if (tiff) {
+        uint32 width, height;
+        TIFFGetField(tiff, TIFFTAG_IMAGEWIDTH, &width);
+        TIFFGetField(tiff, TIFFTAG_IMAGELENGTH, &height);
+        
+        uint32* raster = (uint32*) _TIFFmalloc(width * height * sizeof(uint32));
+        
+        if (raster) {
+            TIFFReadRGBAImage(tiff, width, height, raster, 0);
+            
+            for (uint32 i = 0; i < height; i++) {
+                for (uint32 j = 0; j < width; j++) {
+                    printf("(%d, %d, %d, %d) ", TIFFGetR(raster[i * width + j]), TIFFGetG(raster[i * width + j]), TIFFGetB(raster[i * width + j]), TIFFGetA(raster[i * width + j]));
+                }
+                printf("\n");
+            }
+
+            _TIFFfree(raster);
+        }
+        
+        TIFFClose(tiff);
+    } else {
+        printf("Error: Unable to open the TIFF file\n");
+    }
+    
+    return 0;
+}
+```
+
+To compile and run the code:
+```bash
+gcc read_tiff.c -o read_tiff -ltiff
+./read_tiff
+```

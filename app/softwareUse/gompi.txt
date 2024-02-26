@@ -1,0 +1,15 @@
+Use Case: High-Performance Computing Software
+
+Code details and examples:
+"Gompi" seems to be a typo. Assuming you mean "OpenMPI", which is a high-performance Message Passing Interface (MPI) implementation. OpenMPI is used in parallel computing to enable applications to run efficiently on distributed systems.
+
+Input files: Typically, input files for OpenMPI applications can vary depending on the specific application being run. In general, users need to provide configuration files to specify the number of processes, communication patterns, etc.
+
+Code snippets:
+To run a sample MPI program (e.g., hello world) with OpenMPI, you can use the following command:
+```bash
+mpirun -np 4 ./a.out
+```
+This command will run the executable `a.out` with 4 processes.
+
+For more advanced usage and options, you can refer to the OpenMPI documentation at https://www.open-mpi.org/doc/current/.

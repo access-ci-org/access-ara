@@ -1,0 +1,35 @@
+Use Case: Parsing Geotiff file using libgeotiff
+
+Code details and examples:
+```c
+#include "geotiff.h"
+#include "xtiffio.h"
+#include <stdio.h>
+
+int main() {
+    GTIF *gtif;
+    TIFF *tif = XTIFFOpen("sample.tif", "r");
+    if (tif) {
+        gtif = GTIFNew(tif);
+        if (gtif) {
+            // Reading geotiff tags
+            GTIFPrint(gtif, 0, 0);
+            GTIFFree(gtif);
+        }
+        XTIFFClose(tif);
+    }
+    return 0;
+}
+```
+
+Sample input file "sample.tif" is needed for this code snippet to read geotiff tags from it.
+
+To compile the code:
+```bash
+gcc read_geotiff.c -lgeotiff -ltiff -o read_geotiff
+```
+
+To run the compiled code:
+```bash
+./read_geotiff
+```

@@ -1,0 +1,26 @@
+Use Case: Gaussian is a computational chemistry software used for electronic structure calculations.
+
+Code details and examples:
+
+Input file (example.inp):
+```
+%chk=test.chk
+# HF/6-31G(d) Opt
+
+Test optimization
+
+0 1
+C    0.000000    0.000000    0.000000
+H    1.069550    0.000000    0.000000
+H   -0.356518    1.002415    0.000000
+H   -0.713032   -0.877254   -0.602066
+H   -0.713032   -0.877254    0.602066
+
+```
+
+Command to run Gaussian (for Gaussian 16):
+```
+g16 example.inp > example.out
+```
+
+This example input file performs a geometry optimization using HF/6-31G(d) level of theory on a molecule consisting of a carbon atom and four hydrogen atoms. The output file example.out will contain the optimization results. Make sure to modify the input file according to the system and calculation you want to run.

@@ -1,0 +1,28 @@
+Use Case: Computational Chemistry Package - DFTD4
+
+Code details and examples: 
+DFTD4 is a dispersion correction method for density functional theory calculations. Below is an example input file for running DFTD4 calculations:
+
+```
+**input.dat**
+&input
+  jobtype = 'energy',
+  indep_disp = T,
+  dhgrid = 1.2,
+  disp_damp = 20,
+  dftype = 4,
+  disp_range = 1200,
+  aggdamp = 2500,
+/
+&coord
+  0 1
+  C 0.000000 0.000000 0.000000
+  C 1.400000 0.000000 0.000000
+/
+```
+
+To run DFTD4 calculations using the input file above, you can execute the following command (assuming a hypothetical program called `dftd4_executable`):
+
+```
+dftd4_executable < input.dat > output.dat
+```

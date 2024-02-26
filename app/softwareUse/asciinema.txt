@@ -1,0 +1,18 @@
+Use Case: asciinema allows you to record and share terminal sessions.
+Code details and examples:
+To install asciinema:
+```
+pip install asciinema
+```
+
+To record a terminal session:
+```
+asciinema rec demo.cast
+```
+
+To upload the recorded session to asciinema.org:
+```
+asciinema upload demo.cast
+```
+
+The recorded session can be shared by providing the link generated after uploading.

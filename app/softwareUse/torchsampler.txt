@@ -1,0 +1,23 @@
+Use Case: Sampling data from PyTorch tensors for training neural networks. 
+
+Code details and examples:
+```python
+import torch
+from torchsampler import ImbalancedDatasetSampler
+
+# Define a dummy dataset
+data = torch.randn(100, 3)
+targets = torch.randint(0, 5, (100,))
+
+# Create an instance of ImbalancedDatasetSampler
+sampler = ImbalancedDatasetSampler(targets)
+
+# Create a data loader using the sampler
+data_loader = torch.utils.data.DataLoader(data, batch_size=10, sampler=sampler)
+
+# Iterate over the data loader
+for batch in data_loader:
+    print(batch)
+```
+
+In this example, we are using the `ImbalancedDatasetSampler` from `torchsampler` to sample data from a PyTorch tensor with imbalanced class distribution. The data loader will iterate over the data in batches using the defined sampler to ensure balanced sampling during training.

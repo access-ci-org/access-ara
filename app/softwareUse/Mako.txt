@@ -1,0 +1,25 @@
+Use Case: Template engine for Python web frameworks  
+Code details and examples:  
+```python
+# Sample Mako template file (sample_template.mako)
+<html>
+<head>
+    <title>${title}</title>
+</head>
+<body>
+    <h1>${heading}</h1>
+    <p>${content}</p>
+</body>
+</html>
+```
+
+```python
+# Sample Python code to render the Mako template
+from mako.template import Template
+
+mytemplate = Template(filename='sample_template.mako')
+rendered_template = mytemplate.render(title='Sample Title', heading='Hello World!', content='This is a sample Mako template.')
+print(rendered_template)
+```
+
+Command to run (if applicable): N/A

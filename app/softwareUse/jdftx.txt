@@ -1,0 +1,25 @@
+Use Case: JDFTx (Julia DFT cross platform) is an electronic structure code for modeling materials at the level of density functional theory (DFT).
+
+Code details and examples:
+JDFTx supports various input file formats for simulations. Below is an example input file (input.in) for performing a simple DFT calculation on a molecule:
+
+```
+task: scf
+xc: PBE
+ngrid: [32, 32, 32]
+atoms:
+  - element: O
+    position: [0.0, 0.0, 0.0]
+  - element: H
+    position: [0.0, 0.0, 1.0]
+  - element: H
+    position: [1.0, 0.0, 0.0]
+```
+
+To run JDFTx with this input file, you can use the following command:
+
+```
+jdftx input.in > output.out
+```
+
+This will run the DFT calculation using the provided input file and write the output to output.out. Make sure to adjust the input parameters and geometry according to your specific simulation requirements.

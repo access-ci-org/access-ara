@@ -1,0 +1,43 @@
+Use Case: Scientific Library
+
+Code details and examples:
+libGLU is a library that provides OpenGL Utility functions for rendering 3D graphics. It is often used in conjunction with the OpenGL library for rendering 3D scenes. Below is an example of how to use libGLU to create a simple 3D cube:
+
+Sample input files: No input files required
+
+Code snippet:
+```c
+#include <GL/glu.h>
+#include <GL/gl.h>
+#include <GL/glut.h>
+
+void display() {
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glLoadIdentity();
+    glutWireCube(1.0);
+    glFlush();
+}
+
+int main(int argc, char** argv) {
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
+    glutCreateWindow("3D Cube");
+
+    glEnable(GL_DEPTH_TEST);
+
+    glutDisplayFunc(display);
+    glutMainLoop();
+
+    return 0;
+}
+```
+
+To compile the code using GCC:
+```
+gcc cube.c -o cube -lGL -lGLU -lglut
+```
+
+To run the compiled code:
+```
+./cube
+```
