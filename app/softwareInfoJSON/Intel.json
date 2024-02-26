@@ -1,0 +1,12 @@
+{
+    "software_name": "Intel",
+    "comprehensive_overview": "Intel Corporation is an American multinational corporation and technology company that produces semiconductor chips for various computing devices. They are known for their powerful processors used in personal computers, servers, and other devices.",
+    "core_features": "Intel processors are known for their high performance, power efficiency, and reliability. They are widely used in the computing industry for a variety of applications, from gaming to data centers.",
+    "general_tags": ["semiconductor", "computing", "processors"],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Hardware",
+        "software_type": "Semiconductor"
+    }
+}

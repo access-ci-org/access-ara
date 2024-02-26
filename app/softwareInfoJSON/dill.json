@@ -1,0 +1,12 @@
+{
+    "software_name": "dill",
+    "comprehensive_overview": "Dill is a powerful Python serialization library for serializing and de-serializing Python objects.",
+    "core_features": "1. Serialize Python objects to a file stream or byte string. 2. Can serialize objects with reference cycles. 3. Works with a wide range of Python data types. 4. Offers a range of customization options for serialization. 5. Supports highest protocol version available in Python.",
+    "general_tags": ["serialization", "Python"],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": ["Data Science", "Machine Learning"],
+        "software_class": "Library",
+        "software_type": "Serialization"
+    }
+}

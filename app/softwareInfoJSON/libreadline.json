@@ -1,0 +1,21 @@
+{
+  "software_name": "libreadline",
+  "comprehensive_overview": "libreadline is a library for providing line-editing capabilities in command-line interfaces. It enables users to edit command lines with features like history navigation, tab completion, and customizable key bindings.",
+  "core_features": [
+    "Line-editing functionality",
+    "History navigation",
+    "Tab completion support",
+    "Customizable key bindings"
+  ],
+  "general_tags": [
+    "line editing",
+    "command-line interface",
+    "editing features"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "User Interfaces",
+    "software_class": "Library",
+    "software_type": "Input Handling"
+  }
+}

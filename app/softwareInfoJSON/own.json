@@ -1,0 +1,55 @@
+````
+{
+  "software": [
+    {
+      "name": "Matlab",
+      "comprehensive_overview": "MATLAB is a high-performance language for technical computing. It integrates computation, visualization, and programming in an easy-to-use environment where problems and solutions are expressed in familiar mathematical notation.",
+      "core_features": "Numerical computing, data analysis, algorithm development, model creation, simulation",
+      "general_tags": ["mathematics", "data analysis", "simulation"],
+      "research_discipline": ["engineering", "mathematics"],
+      "research_area": ["computational science", "machine learning"],
+      "software_class": "interpretive software",
+      "software_type": "programming language"
+    },
+    {
+      "name": "GCC (GNU Compiler Collection)",
+      "comprehensive_overview": "GCC is a compiler system produced by the GNU Project supporting various programming languages. It provides support for various programming languages like C, C++, Objective-C, Fortran, etc., and runs on multiple platforms.",
+      "core_features": "Compiling code, optimizing performance, supporting multiple programming languages",
+      "general_tags": ["compiler", "optimization"],
+      "research_discipline": ["computer science"],
+      "research_area": ["software engineering", "high-performance computing"],
+      "software_class": "compiler",
+      "software_type": "development tool"
+    },
+    {
+      "name": "Bioconductor",
+      "comprehensive_overview": "Bioconductor provides tools for the analysis and comprehension of high-throughput genomic data. It is based on R programming language and offers a wide range of packages for bioinformatics and computational biology.",
+      "core_features": "Genomic data analysis, visualization, statistical methods, bioinformatics workflows",
+      "general_tags": ["bioinformatics", "genomics", "computational biology"],
+      "research_discipline": ["biology", "bioinformatics"],
+      "research_area": ["genomics", "transcriptomics", "proteomics"],
+      "software_class": "library",
+      "software_type": "bioinformatics tool"
+    },
+    {
+      "name": "PyTorch",
+      "comprehensive_overview": "PyTorch is an open-source machine learning library for Python, used for applications such as natural language processing and computer vision. It provides a flexible framework for building dynamic neural networks.",
+      "core_features": "Deep learning, neural networks, GPU acceleration, dynamic computation graphs",
+      "general_tags": ["machine learning", "deep learning", "neural networks"],
+      "research_discipline": ["computer science", "artificial intelligence"],
+      "research_area": ["natural language processing", "computer vision"],
+      "software_class": "library",
+      "software_type": "machine learning framework"
+    },
+    {
+      "name": "GROMACS",
+      "comprehensive_overview": "GROMACS is a versatile package for molecular dynamics simulations. It is designed for simulations of proteins, lipids, and nucleic acids.",
+      "core_features": "Molecular dynamics simulations, energy minimization, trajectory analysis, force field support",
+      "general_tags": ["molecular dynamics", "simulation", "biophysics"],
+      "research_discipline": ["chemistry", "biophysics"],
+      "research_area": ["protein structure prediction", "drug design"],
+      "software_class": "simulation software",
+      "software_type": "molecular dynamics tool"
+    }
+  ]
+}

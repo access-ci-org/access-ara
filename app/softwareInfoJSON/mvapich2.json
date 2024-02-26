@@ -1,0 +1,21 @@
+{
+    "software_name": "MVAPICH2",
+    "comprehensive_overview": "MVAPICH2 is an open-source MPI (Message Passing Interface) implementation for InfiniBand, iWARP, and RoCE communication protocols.",
+    "core_features": [
+        "High performance MPI library",
+        "Optimized for HPC clusters",
+        "Supports various communication protocols including InfiniBand, iWARP, and RoCE"
+    ],
+    "general_tags": [
+        "MPI",
+        "HPC",
+        "InfiniBand",
+        "Communication Protocols"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "High Performance Computing",
+        "software_class": "Middleware",
+        "software_type": "Library"
+    }
+}

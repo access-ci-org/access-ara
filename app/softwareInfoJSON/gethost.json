@@ -1,0 +1,21 @@
+{
+    "software_name": "GetHost",
+    "comprehensive_overview": "GetHost is a software tool used for identifying host species for viral or microbial sequences in metagenomic data. It performs species classification based on the host species of the genome using k-mer frequencies.",
+    "core_features": [
+        "Host species identification for viral or microbial sequences in metagenomic data",
+        "Classification based on host species of the genome",
+        "Utilizes k-mer frequencies for analysis"
+    ],
+    "general_tags": [
+        "host species identification",
+        "metagenomic data",
+        "classification",
+        "k-mer frequencies"
+    ],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Metagenomics",
+        "software_class": "Sequence Analysis",
+        "software_type": "Tool"
+    }
+}

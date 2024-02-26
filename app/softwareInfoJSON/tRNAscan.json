@@ -1,0 +1,20 @@
+{
+  "software": "tRNAscan-SE",
+  "comprehensive_overview": "tRNAscan-SE is a widely used software tool for the identification of transfer RNA (tRNA) genes in genomic sequences. It utilizes covariance models to predict tRNA structures and gene locations, providing valuable insights into tRNA biology and facilitating genomic annotation.",
+  "core_features": [
+    "tRNA gene prediction",
+    "Genomic sequence analysis",
+    "Covariance models"
+  ],
+  "general_tags": [
+    "tRNA identification",
+    "genomic annotation",
+    "sequence analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Genomics",
+    "software_class": "Tool",
+    "software_type": "Gene Prediction"
+  }
+}

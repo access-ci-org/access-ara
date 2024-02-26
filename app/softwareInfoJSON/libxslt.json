@@ -1,0 +1,21 @@
+{
+  "software_name": "libxslt",
+  "comprehensive_overview": "libxslt is a library for processing XSLT (Extensible Stylesheet Language Transformations) files. It enables the transformation of XML documents using XSLT stylesheets, providing powerful tools for XML document conversion and presentation.",
+  "core_features": [
+    "XSLT file processing",
+    "XML document transformation",
+    "XSLT stylesheets support",
+    "XML data presentation"
+  ],
+  "general_tags": [
+    "XSLT processing",
+    "XML transformation",
+    "stylesheets support"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "XML Processing",
+    "software_class": "Library",
+    "software_type": "XSLT Processing"
+  }
+}

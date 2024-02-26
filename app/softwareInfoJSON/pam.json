@@ -1,0 +1,12 @@
+{
+    "software_name": "PAM",
+    "comprehensive_overview": "PAM (Point Accepted Mutation) is a bioinformatics tool used for phylogenetic analysis to model amino acid replacements over evolutionary time.",
+    "core_features": "1. Models the amino acid substitutions in a phylogenetic tree. 2. Estimates the evolutionary distance between protein sequences. 3. Facilitates the construction of phylogenetic trees based on amino acid sequences.",
+    "general_tags": ["bioinformatics", "phylogenetics", "evolutionary biology"],
+    "additional_tags": {
+        "research_discipline": "Biology",
+        "research_area": "Evolutionary Biology",
+        "software_class": "Bioinformatics Tool",
+        "software_type": "Phylogenetic Analysis"
+    }
+}

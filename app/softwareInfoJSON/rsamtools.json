@@ -1,0 +1,20 @@
+{
+  "software": "rsamtools",
+  "comprehensive_overview": "Rsamtools is an R package that provides interface utilities for working with SAM (Sequence Alignment/Map) and BAM (Binary Alignment/Map) files. It offers functions for reading, writing, and manipulating sequence alignment data in bioinformatics applications.",
+  "core_features": [
+    "SAM/BAM file processing",
+    "Sequence alignment",
+    "Data manipulation"
+  ],
+  "general_tags": [
+    "bioinformatics",
+    "sequence alignment",
+    "R package"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Sequence Analysis",
+    "software_class": "Package",
+    "software_type": "Sequence Alignment"
+  }
+}

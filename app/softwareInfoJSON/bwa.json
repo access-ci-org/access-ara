@@ -1,0 +1,23 @@
+{
+    "software": "bwa",
+    "overview": "BWA (Burrows-Wheeler Aligner) is a software package for mapping low-divergent sequences against large reference genomes. It is widely used in genomics for aligning next-generation sequencing reads to a reference sequence.",
+    "core_features": [
+        "Algorithms based on Burrows-Wheeler Transform",
+        "Accurate alignment of short reads",
+        "Support for gapped alignments",
+        "Pair-end and single-end read mapping",
+        "Scalable to handle large genomes"
+    ],
+    "general_tags": [
+        "sequence alignment",
+        "short read mapping",
+        "genomics",
+        "bioinformatics analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Sequence Alignment",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Open Source"
+    }
+}

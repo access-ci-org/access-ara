@@ -1,0 +1,23 @@
+{
+	"software": "imbalanced-learn",
+	"comprehensive_overview": "Imbalanced-learn is a Python library aiming to provide a wide array of methods to cope with imbalanced data sets in machine learning. It is built upon scikit-learn and provides specific tools to deal with imbalance in classification problems.",
+	"core_features": [
+		"- Various resampling techniques (oversampling, undersampling, combination sampling)",
+		"- Cleaning methods for imbalanced data",
+		"- Integration with scikit-learn pipeline",
+		"- Support for different classification algorithms"
+	],
+	"general_tags": [
+		"machine learning",
+		"data imbalance",
+		"imbalanced data",
+		"Python",
+		"data science"
+	],
+	"additional_tags": {
+		"research_discipline": "machine learning",
+		"research_area": "imbalanced data analysis",
+		"software_class": "library",
+		"software_type": "Python package"
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "software_name": "Python2",
+    "comprehensive_overview": "Python 2 is a high-level, interpreted programming language known for its simplicity and readability. It is no longer officially supported as of January 1, 2020, with the final version being Python 2.7.",
+    "core_features": [
+        "Simple and easy to learn syntax",
+        "Dynamic typing and automatic memory management",
+        "Supports various programming paradigms like procedural, object-oriented, and functional programming"
+    ],
+    "general_tags": [
+        "programming language",
+        "interpreted language",
+        "legacy software"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Programming Language",
+        "software_type": "Legacy"
+    }
+}

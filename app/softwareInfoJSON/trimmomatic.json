@@ -1,0 +1,21 @@
+{
+  "tool": "Trimmomatic",
+  "overview": "Trimmomatic is a widely-used tool in bioinformatics for the preprocessing and quality control of high-throughput sequencing data, such as those from next-generation sequencing platforms. It offers various functions to remove adapters, trim low-quality reads, and filter sequences based on user-defined parameters.",
+  "core_features": [
+    "Adapter trimming for removing sequencing adaptors",
+    "Quality-based filtering to remove low-quality reads",
+    "Support for trimming and cropping reads based on quality scores",
+    "Multiple filtering and trimming options for customized processing"
+  ],
+  "general_tags": [
+    "bioinformatics tool",
+    "sequence data preprocessing",
+    "NGS data analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Genomics",
+    "software_class": "Tool",
+    "software_type": "Sequence Data Preprocessor"
+  }
+}

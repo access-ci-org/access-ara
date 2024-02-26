@@ -1,0 +1,21 @@
+{
+    "megalodon": {
+        "overview": "Megalodon is a tool designed for fast and accurate basecalling and methylation detection in Oxford Nanopore sequencing data. It provides efficient processing and analysis capabilities for DNA sequencing applications.",
+        "core_features": [
+            "Basecalling",
+            "Methylation detection",
+            "Oxford Nanopore sequencing"
+        ],
+        "general_tags": [
+            "Genomics",
+            "DNA Sequencing",
+            "Bioinformatics"
+        ],
+        "additional_tags": {
+            "research_discipline": "Genomics",
+            "research_area": "Sequencing Analysis",
+            "software_class": "Tool",
+            "software_type": "Sequence Analysis Software"
+        }
+    }
+}

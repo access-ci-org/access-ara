@@ -1,0 +1,21 @@
+{
+  "software_name": "libszip",
+  "comprehensive_overview": "libszip is a library for reading and writing ZIP archives, providing functionality to compress and decompress files in the ZIP format. It offers convenient APIs for managing ZIP archives and handling file compression.",
+  "core_features": [
+    "ZIP archive handling",
+    "File compression and decompression",
+    "ZIP format support",
+    "Convenient access to ZIP archive content"
+  ],
+  "general_tags": [
+    "ZIP archives",
+    "file compression",
+    "archive management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Data Compression",
+    "research_area": "Archive Management",
+    "software_class": "Library",
+    "software_type": "Compression"
+  }
+}

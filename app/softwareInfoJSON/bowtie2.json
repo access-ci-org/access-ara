@@ -1,0 +1,23 @@
+{
+    "software": "bowtie2",
+    "overview": "Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to large genomes. It is designed as an improved version of the original Bowtie aligner, offering enhanced performance and capabilities.",
+    "core_features": [
+        "Fast and sensitive read alignment",
+        "Support for gapped alignments",
+        "Alignment of short and long reads",
+        "Improved detection of structural variations",
+        "Paired-end and single-end mapping"
+    ],
+    "general_tags": [
+        "sequence alignment",
+        "short read mapping",
+        "bioinformatics analysis",
+        "high-throughput sequencing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Sequence Alignment",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Open Source"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "software": "bazel",
+    "overview": "Bazel is Google's in-house build system that supports software builds and tests for multiple programming languages. It emphasizes correctness, reproducibility, and speed.",
+    "core_features": [
+        "Scalable build system",
+        "Cross-language support",
+        "Built-in support for various languages and platforms",
+        "Distributed builds",
+        "Caching and incremental builds",
+        "Extensible with custom rules"
+    ],
+    "general_tags": [
+        "build system",
+        "software development",
+        "continuous integration",
+        "automation"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Software Engineering",
+        "software_class": "Build Tools",
+        "software_type": "Open Source"
+    }
+}

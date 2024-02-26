@@ -1,0 +1,21 @@
+{
+  "software_name": "libdrm",
+  "comprehensive_overview": "libdrm, or Direct Rendering Manager library, is a userspace library that provides interfaces for kernel modesetting and rendering hardware abstraction. It is used in conjunction with the Linux kernel DRM subsystem to manage graphics rendering on modern GPUs.",
+  "core_features": [
+    "Kernel modesetting support",
+    "Rendering hardware abstraction",
+    "Management of graphics rendering",
+    "Integration with Linux kernel DRM subsystem"
+  ],
+  "general_tags": [
+    "graphics",
+    "kernel",
+    "GPU management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Engineering",
+    "research_area": "GPU Computing",
+    "software_class": "Library",
+    "software_type": "Hardware Interface"
+  }
+}

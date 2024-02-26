@@ -1,0 +1,17 @@
+{
+    "software": "Biopp",
+    "overview": "Biopp is a C++ library for computational biology and bioinformatics, providing a set of classes and algorithms for molecular modeling, sequence analysis, and bioinformatics applications.",
+    "core_features": [
+        "C++ library for bioinformatics and computational biology",
+        "Classes and algorithms for molecular modeling and sequence analysis",
+        "Support for bioinformatics data structures and file formats",
+        "Extensive documentation and examples for usage"
+    ],
+    "general_tags": ["computational biology", "bioinformatics", "C++ library"],
+    "additional_tags": {
+        "research_discipline": "Computational Biology",
+        "research_area": "Bioinformatics",
+        "software_class": "Library",
+        "software_type": "Tool"
+    }
+}

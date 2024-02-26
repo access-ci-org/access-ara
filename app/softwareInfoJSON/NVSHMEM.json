@@ -1,0 +1,12 @@
+{
+  "software name": "NVSHMEM",
+  "comprehensive overview": "NVSHMEM is a vendor-optimized implementation of the OpenSHMEM parallel programming model for NVIDIA GPU systems, designed to provide high-performance communication capabilities for scalable GPU-accelerated systems.",
+  "core features": "High-performance communication, optimized for NVIDIA GPU systems, facilitates parallel programming using the OpenSHMEM model, supports scalable GPU-accelerated systems.",
+  "general tags": ["parallel programming", "high-performance communication", "NVIDIA GPU systems"],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "Parallel Computing",
+    "software class": "Parallel Programming Model Implementation",
+    "software type": "Library"
+  }
+}

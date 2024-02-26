@@ -1,0 +1,20 @@
+{
+  "software": "Scalasca",
+  "comprehensive_overview": "Scalasca is an integrated performance analysis toolset for parallel applications. It provides a comprehensive set of tools for performance measurement, analysis, and optimization of parallel programs running on HPC systems. Scalasca assists in identifying bottlenecks, optimizing code, and enhancing parallel application performance.",
+  "core_features": [
+    "Performance analysis",
+    "Parallel program optimization",
+    "Bottleneck identification"
+  ],
+  "general_tags": [
+    "performance analysis",
+    "parallel computing",
+    "HPC optimization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High-Performance Computing",
+    "software_class": "Toolset",
+    "software_type": "Performance Analysis"
+  }
+}

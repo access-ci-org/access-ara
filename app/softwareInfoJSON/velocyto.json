@@ -1,0 +1,21 @@
+{
+  "tool": "Velocyto",
+  "overview": "Velocyto is a computational tool for the analysis of RNA velocity, which aims to estimate the future state of individual cells in single-cell RNA sequencing data. It provides algorithms for inferring the direction and rate of change in gene expression at the single-cell level, offering insights into cellular dynamics and differentiation.",
+  "core_features": [
+    "Estimation of RNA velocity in single-cell gene expression data",
+    "Analysis of cell state transitions and differentiation trajectories",
+    "Integration with common single-cell RNA sequencing analysis pipelines",
+    "Visualization tools for exploring cellular dynamics"
+  ],
+  "general_tags": [
+    "RNA velocity analysis",
+    "single-cell RNA sequencing",
+    "computational biology tool"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computational Biology",
+    "research_area": "Single-cell Transcriptomics",
+    "software_class": "Tool",
+    "software_type": "RNA Velocity Analysis Software"
+  }
+}

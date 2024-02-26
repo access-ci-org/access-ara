@@ -1,0 +1,21 @@
+{
+  "software_name": "libtiff",
+  "comprehensive_overview": "libtiff is a library for reading and writing TIFF (Tagged Image File Format) files, supporting a wide range of image storage formats and compression methods. It provides functions for managing TIFF images and manipulating image metadata.",
+  "core_features": [
+    "Reading and writing TIFF files",
+    "Support for various image formats",
+    "Image metadata manipulation",
+    "Compression options for TIFF files"
+  ],
+  "general_tags": [
+    "TIFF files",
+    "image formats",
+    "metadata management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Graphics",
+    "research_area": "Image Processing",
+    "software_class": "Library",
+    "software_type": "Image Manipulation"
+  }
+}

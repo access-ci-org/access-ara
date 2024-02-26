@@ -1,0 +1,21 @@
+{
+	"tool": "udunits",
+	"overview": "The UDUNITS library provides support for converting between different units of physical quantities in scientific data. It enables the conversion of units such as length, time, mass, temperature, etc., to facilitate consistent unit handling in various scientific applications and datasets.",
+	"core_features": [
+		"Unit conversion for physical quantities",
+		"Support for handling unit conversions in scientific datasets",
+		"Comprehensive unit database for various measurement types",
+		"Flexible and extensible unit conversion capabilities"
+	],
+	"general_tags": [
+		"unit conversion",
+		"scientific data handling",
+		"data processing tool"
+	],
+	"additional_tags": {
+		"research_discipline": "Earth Sciences",
+		"research_area": "Climate Modeling",
+		"software_class": "Library",
+		"software_type": "Unit Conversion Tool"
+	}
+}

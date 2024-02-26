@@ -1,0 +1,20 @@
+{
+    "software name": "lftp",
+    "comprehensive overview": "lftp is a sophisticated command-line file transfer program that supports FTP, FTPS, HTTP, HTTPS, and other protocols. It allows users to perform various operations, such as file uploads, downloads, mirroring, and scriptable transfers, offering a versatile solution for managing file transfers.",
+    "core features": [
+        "Support for various file transfer protocols",
+        "Command-line interface for efficient file operations",
+        "Features like mirroring, scripting, and batch transfers"
+    ],
+    "general tags": [
+        "File Transfer",
+        "Command-line Tool",
+        "Protocol Support"
+    ],
+    "additional tags": {
+        "research discipline": "Computer Science",
+        "research area": "File Management",
+        "software class": "File Transfer Client",
+        "software type": "Command-line Tool"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "software": "poppler",
+  "comprehensive_overview": "Poppler is a software utility library for rendering Portable Document Format (PDF) files. It allows for rendering, viewing, and manipulating PDF files along with various tools for extracting information and text from PDF documents.",
+  "core_features": [
+    "PDF rendering",
+    "PDF viewing",
+    "Text extraction"
+  ],
+  "general_tags": [
+    "PDF",
+    "document processing",
+    "rendering"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data visualization",
+    "software_class": "Library",
+    "software_type": "Utility"
+  }
+}

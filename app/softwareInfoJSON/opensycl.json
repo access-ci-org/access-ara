@@ -1,0 +1,21 @@
+{
+    "software_name": "OpenSYCL",
+    "comprehensive_overview": "OpenSYCL is an open-source SYCL (Standard C++ for Heterogeneous Programming) implementation, aiming to provide a high-level abstraction for programming heterogeneous systems using C++.",
+    "core_features": [
+        "Enables writing C++ code for heterogeneous platforms",
+        "Utilizes standard C++ parallel programming models",
+        "Supports various accelerators like GPUs, FPGAs, etc.",
+        "Facilitates easier parallel programming for heterogeneous systems"
+    ],
+    "general_tags": [
+        "Heterogeneous Computing",
+        "SYCL Implementation",
+        "Open-Source"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "High Performance Computing",
+        "software_class": "Programming Tool",
+        "software_type": "Compiler"
+    }
+}

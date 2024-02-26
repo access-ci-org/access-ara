@@ -1,0 +1,20 @@
+{
+  "software": "SLEPc",
+  "comprehensive_overview": "SLEPc (Scalable Library for Eigenvalue Problem Computations) is a software library for solving large-scale eigenvalue problems arising from scientific and engineering simulations. It offers scalable algorithms for eigenvalue computations and serves as a valuable tool for parallel computations and solving eigenvalue-related issues.",
+  "core_features": [
+    "Large-scale eigenvalue problems",
+    "Scalable algorithms",
+    "Parallel computations"
+  ],
+  "general_tags": [
+    "eigenvalue problems",
+    "scientific computing",
+    "parallel algorithms"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computational Science",
+    "research_area": "Numerical Analysis",
+    "software_class": "Library",
+    "software_type": "Eigenvalue Computation"
+  }
+}

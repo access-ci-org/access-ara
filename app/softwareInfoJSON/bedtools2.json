@@ -1,0 +1,23 @@
+{
+    "software": "bedtools2",
+    "overview": "bedtools2 is a versatile and efficient software suite for manipulating genomic features and genomic intervals. It provides a wide range of tools for genomic data analysis.",
+    "core_features": [
+        "Comprehensive set of operations on genomic intervals",
+        "Efficient handling of large genomic datasets",
+        "Intersect, merge, complement, and other operations",
+        "Integration with various genomic data formats",
+        "Customizable and scriptable"
+    ],
+    "general_tags": [
+        "genomics",
+        "genomic data analysis",
+        "bioinformatics",
+        "data processing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Genomic Analysis",
+        "software_class": "Genomic tools",
+        "software_type": "Open Source"
+    }
+}

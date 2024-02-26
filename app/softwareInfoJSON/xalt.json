@@ -1,0 +1,21 @@
+{
+    "tool": "XALT",
+    "overview": "XALT (XALT: Cross-Platform Application Launching Tool) is a software tool designed to track job and process information on High-Performance Computing (HPC) systems. It captures and logs job-specific metadata such as software usage, compiler options, resource consumption, and job dependencies to facilitate performance analysis and optimization.",
+    "core_features": [
+        "Tracking and logging job-specific metadata on HPC systems",
+        "Monitoring software usage, compiler options, and resource utilization",
+        "Capturing job dependencies and software versions for reproducibility",
+        "Analyzing application performance and resource consumption"
+    ],
+    "general_tags": [
+        "HPC monitoring",
+        "job metadata tracking",
+        "performance analysis tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "High-Performance Computing",
+        "research_area": "Performance Analysis",
+        "software_class": "Tool",
+        "software_type": "HPC Monitoring Software"
+    }
+}

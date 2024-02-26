@@ -1,0 +1,20 @@
+{
+  "software_name": "Compiler",
+  "comprehensive_overview": "A compiler is a programming tool that translates code written in a high-level programming language to a lower level language (often machine code) to create an executable program.",
+  "core_features": [
+    "Translates high-level code to machine code",
+    "Performs syntax and semantic analysis",
+    "Optimizes code for efficiency"
+  ],
+  "general_tags": [
+    "programming",
+    "software development",
+    "code optimization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Programming Languages",
+    "software_class": "Development Tools",
+    "software_type": "Compiler"
+  }
+}

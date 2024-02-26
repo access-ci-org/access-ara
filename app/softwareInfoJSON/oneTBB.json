@@ -1,0 +1,20 @@
+{
+  "software_name": "oneTBB",
+  "comprehensive_overview": "oneTBB, or oneAPI Threading Building Blocks, is an open-source, high-level C++ template library for creating reliable, portable, and scalable parallel applications.",
+  "core_features": [
+    "Thread management",
+    "Task scheduling",
+    "Parallel algorithms"
+  ],
+  "general_tags": [
+    "Parallel Programming",
+    "C++ Library",
+    "Thread Management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Parallel Computing",
+    "software_class": "Library",
+    "software_type": "Parallel Processing Tool"
+  }
+}

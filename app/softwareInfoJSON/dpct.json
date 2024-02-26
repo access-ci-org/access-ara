@@ -1,0 +1,20 @@
+{
+    "software_name": "DPCT",
+    "comprehensive_overview": "DPCT (Data Parallel C++) is a compiler tool that allows developers to achieve better performance on Intel GPUs by converting CUDA code to Data Parallel C++ (DPC++). This conversion enables the code to run on GPUs that support oneAPI specifications.",
+    "core_features": [
+        "Converts CUDA code to Data Parallel C++",
+        "Enables code to run on Intel GPUs supporting oneAPI"
+    ],
+    "general_tags": [
+        "compiler",
+        "GPU",
+        "CUDA",
+        "DPC++"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Parallel Computing",
+        "software_class": "Compiler",
+        "software_type": "Development Tool"
+    }
+}

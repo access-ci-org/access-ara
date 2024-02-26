@@ -1,0 +1,19 @@
+{
+  "Keras": {
+    "overview": "Keras is an open-source neural network library written in Python that allows for easy and fast experimentation with deep learning models. It provides a user-friendly interface and supports multiple back-end neural network libraries.",
+    "core_features": [
+      "User-friendly interface",
+      "Deep learning model experimentation",
+      "Support for multiple back-ends (e.g., TensorFlow, Theano)",
+      "High-level neural networks API",
+      "Extensive documentation and community support"
+    ],
+    "general_tags": ["Neural network library", "Deep learning", "Python"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Artificial Intelligence"],
+      "research_area": ["Deep Learning", "Neural Networks"],
+      "software_class": "Library",
+      "software_type": "Deep Learning"
+    }
+  }
+}

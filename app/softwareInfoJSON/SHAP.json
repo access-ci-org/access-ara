@@ -1,0 +1,16 @@
+{
+  "software_name": "SHAP",
+  "comprehensive_overview": "SHAP (SHapley Additive exPlanations) is a unified framework that enables interpretability of machine learning models. It quantifies the impact of each feature on a model's output, providing insights into the model's behavior and predictions.",
+  "core_features": [
+    "Feature importance analysis",
+    "Interpretability of machine learning models",
+    "Shapley values computation"
+  ],
+  "general_tags": ["Interpretability", "Machine Learning", "Model Explainability"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Machine Learning Interpretability",
+    "software_class": "Interpretability Tool",
+    "software_type": "Library"
+  }
+}

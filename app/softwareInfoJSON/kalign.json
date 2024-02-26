@@ -1,0 +1,20 @@
+{
+    "software name": "Kalign",
+    "comprehensive overview": "Kalign is a versatile tool for multiple sequence alignment (MSA) that is widely used in bioinformatics and computational biology. It allows for the alignment of multiple sequences, often DNA or protein sequences, to identify common patterns and similarities for evolutionary and functional analysis.",
+    "core features": [
+        "Multiple sequence alignment for DNA and protein sequences",
+        "Identification of sequence homology and conserved regions",
+        "Alignment scoring and visualization tools"
+    ],
+    "general tags": [
+        "Bioinformatics",
+        "Sequence Alignment",
+        "Computational Biology"
+    ],
+    "additional tags": {
+        "research discipline": "Computational Biology",
+        "research area": "Sequence Analysis",
+        "software class": "Alignment Tool",
+        "software type": "Bioinformatics Tool"
+    }
+}

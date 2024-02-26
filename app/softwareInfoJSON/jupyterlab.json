@@ -1,0 +1,20 @@
+{
+    "software name": "JupyterLab",
+    "comprehensive overview": "JupyterLab is an interactive development environment provided by Project Jupyter. It offers a flexible and extensible platform for working with Jupyter notebooks, code, and data. JupyterLab supports multiple programming languages, interactive visualizations, and various tools for data exploration.",
+    "core features": [
+        "Interactive development environment for Jupyter notebooks",
+        "Flexible platform for data science, visualization, and code editing",
+        "Integration with Jupyter notebooks, text files, terminals, and custom components"
+    ],
+    "general tags": [
+        "Interactive Computing",
+        "Data Science",
+        "Development Environment"
+    ],
+    "additional tags": {
+        "research discipline": "Data Science",
+        "research area": "Interactive Computing",
+        "software class": "Integrated Development Environment",
+        "software type": "Data Analysis Tool"
+    }
+}

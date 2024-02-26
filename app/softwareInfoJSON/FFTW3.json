@@ -1,24 +1,12 @@
 {
     "software_name": "FFTW3",
-    "overview": "FFTW (Fastest Fourier Transform in the West) version 3 is an open-source software library for computing fast Fourier transformations (FFT) efficiently. It provides highly optimized algorithms for computing discrete Fourier transforms, widely used in various scientific and engineering applications.",
-    "core_features": [
-        "Fast Fourier transform",
-        "Efficient data transformation",
-        "Optimized algorithms"
-    ],
-    "general_tags": [
-        "Scientific computing",
-        "Signal processing",
-        "FFT computation"
-    ],
-    "research_discipline": [
-        "Numerical analysis",
-        "Signal processing"
-    ],
-    "research_area": [
-        "Fast Fourier transform",
-        "Computational mathematics"
-    ],
-    "software_class": "Library",
-    "software_type": "FFT computation tool"
+    "comprehensive_overview": "FFTW3 (Fastest Fourier Transform in the West 3) is a widely-used library for efficient computation of the Discrete Fourier Transform (DFT) and its inverse in various numerical applications. It offers highly optimized algorithms to perform fast and accurate Fourier transforms on complex and real-valued data.",
+    "core_features": ["Efficient computation of Discrete Fourier Transform (DFT)", "Highly optimized algorithms for fast Fourier transforms", "Supports complex and real-valued data processing"],
+    "general_tags": ["Fourier Transform", "Numerical Computation"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Fourier Transform Library",
+        "software_type": "Library"
+    }
 }

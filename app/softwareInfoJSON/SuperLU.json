@@ -1,0 +1,16 @@
+{
+  "software_name": "SuperLU",
+  "comprehensive_overview": "SuperLU is a high-performance library for the direct solution of large, sparse, nonsymmetric systems of linear equations. It utilizes direct methods such as supernodal LU factorization to efficiently solve large-scale sparse linear systems.",
+  "core_features": [
+    "Sparse linear system solution",
+    "Supernodal LU factorization",
+    "Scalable performance for large problems"
+  ],
+  "general_tags": ["Linear Algebra", "Sparse Solvers", "High Performance"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Numerical Computing",
+    "software_class": "Linear Solver",
+    "software_type": "Library"
+  }
+}

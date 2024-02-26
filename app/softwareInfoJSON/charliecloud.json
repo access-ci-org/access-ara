@@ -1,0 +1,22 @@
+{
+  "software_name": "Charliecloud",
+  "comprehensive_overview": "Charliecloud is a user-defined software stack tool that enables the user to run a virtualized application in a Docker container on high-performance computing (HPC) systems. It provides an alternative to more traditional HPC container solutions, allowing users to run their containers in user space without requiring root privileges.",
+  "core_features": [
+    "User-defined software stack tool",
+    "Runs virtualized applications in Docker containers on HPC systems",
+    "Does not require root privileges",
+    "Alternative to traditional HPC container solutions"
+  ],
+  "general_tags": [
+    "user-defined software stack",
+    "virtualization",
+    "Docker containers",
+    "HPC systems"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High-Performance Computing",
+    "software_class": "Containerization tool",
+    "software_type": "User-defined software stack"
+  }
+}

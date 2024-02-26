@@ -1,0 +1,19 @@
+{
+  "LAPACK": {
+    "overview": "LAPACK (Linear Algebra PACKage) is a software library for numerical linear algebra functions, including routines for solving systems of linear equations, least squares problems, eigenvalue problems, and singular value decomposition (SVD). It is widely used in scientific computing and high-performance computing (HPC) applications.",
+    "core_features": [
+      "Numerical linear algebra functions",
+      "Solving linear equations",
+      "Least squares problems",
+      "Eigenvalue and singular value decomposition",
+      "High-performance computing capabilities"
+    ],
+    "general_tags": ["Linear algebra", "Numerical computing", "High-performance computing"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Mathematics"],
+      "research_area": ["Numerical Linear Algebra", "Scientific Computing"],
+      "software_class": "Library",
+      "software_type": "Mathematics"
+    }
+  }
+}

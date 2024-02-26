@@ -1,0 +1,21 @@
+{
+  "software_name": "libopus",
+  "comprehensive_overview": "libopus is a high-quality audio codec library that provides efficient compression and decompression of audio data. It is optimized for both voice and music, offering low-latency audio encoding and decoding for real-time applications.",
+  "core_features": [
+    "High-quality audio compression",
+    "Optimized for voice and music",
+    "Low-latency encoding and decoding",
+    "Real-time audio processing support"
+  ],
+  "general_tags": [
+    "audio codec",
+    "compression",
+    "real-time processing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Audio Processing",
+    "research_area": "Audio Compression",
+    "software_class": "Library",
+    "software_type": "Audio Codec"
+  }
+}

@@ -1,24 +1,12 @@
 {
     "software_name": "CESM",
-    "overview": "CESM (Community Earth System Model) is a coupled climate model developed by the National Center for Atmospheric Research (NCAR) for simulating the Earth's climate system. It integrates various components including the atmosphere, ocean, land, and sea ice to study climate dynamics.",
-    "core_features": [
-        "Climate modeling",
-        "Coupled Earth system model",
-        "Atmosphere, ocean, land, sea ice components"
-    ],
-    "general_tags": [
-        "Climate research",
-        "Earth system modeling",
-        "National Center for Atmospheric Research"
-    ],
-    "research_discipline": [
-        "Climate science",
-        "Meteorology"
-    ],
-    "research_area": [
-        "Climate modeling",
-        "Earth system dynamics"
-    ],
-    "software_class": "Climate model",
-    "software_type": "Earth system modeling software"
+    "comprehensive_overview": "CESM (Community Earth System Model) is a fully-coupled, global climate model developed at the National Center for Atmospheric Research (NCAR). It simulates Earth's climate system by modeling interactions between the atmosphere, ocean, land surface, and sea ice components.",
+    "core_features": ["Global climate modeling", "Fully-coupled Earth system model", "Simulates atmosphere, ocean, land, and sea ice interactions"],
+    "general_tags": ["Climate modeling", "Earth system model"],
+    "additional_tags": {
+        "research_discipline": "Climate Science",
+        "research_area": "Earth System Modeling",
+        "software_class": "Climate Modeling",
+        "software_type": "Model"
+    }
 }

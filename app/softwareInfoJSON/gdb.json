@@ -1,0 +1,23 @@
+{
+    "software": "GDB",
+    "overview": "GDB (GNU Debugger) is a powerful and widely used debugger for software development and troubleshooting. It allows programmers to inspect and debug running programs to identify issues, trace code execution, and analyze runtime behavior.",
+    "core_features": [
+        "Source-level debugging",
+        "Breakpoints and watchpoints",
+        "Expression evaluation",
+        "Memory inspection",
+        "Thread debugging and multi-process debugging"
+    ],
+    "general_tags": [
+        "debugger",
+        "software development",
+        "code troubleshooting",
+        "runtime analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Debugging Techniques",
+        "software_class": "Debugger",
+        "software_type": "Open Source"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "software_name": "libmesh",
+  "comprehensive_overview": "libMesh is a C++ library for the numerical simulation of partial differential equations on serial and parallel computing platforms. It provides a flexible framework for building finite element simulations and performing numerical analysis.",
+  "core_features": [
+    "Numerical simulation of PDEs",
+    "Support for finite element methods",
+    "Parallel computing capabilities",
+    "Flexible framework for numerical analysis"
+  ],
+  "general_tags": [
+    "finite element method",
+    "numerical simulation",
+    "parallel computing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Engineering",
+    "research_area": "Numerical Simulation",
+    "software_class": "Library",
+    "software_type": "Numerical Analysis"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "software_name": "MDAnalysis",
+    "comprehensive_overview": "MDAnalysis is an open-source Python library for the structural analysis of molecular dynamics trajectories. It provides a flexible and powerful framework for the systematic analysis of simulation trajectories, including support for a wide range of commonly used file formats.",
+    "core_features": [
+        "Reading and writing trajectory data in various formats",
+        "Selection language for atom groups",
+        "Calculation of structural properties like RMSD, RDF, and contacts",
+        "Integration with other scientific Python libraries like NumPy and Matplotlib"
+    ],
+    "general_tags": [
+        "molecular dynamics", 
+        "trajectory analysis", 
+        "Python library", 
+        "structural analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "biophysics",
+        "research_area": "molecular dynamics simulations",
+        "software_class": "computational chemistry",
+        "software_type": "analysis tool"
+    }
+}

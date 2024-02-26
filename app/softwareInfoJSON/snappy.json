@@ -1,0 +1,12 @@
+{
+  "software_name": "Snappy",
+  "comprehensive_overview": "Snappy is a fast compression/decompression library written in C++ featuring a very high compression ratio and speed.",
+  "core_features": "High compression ratio, High speed compression and decompression, Optimized for speed and efficiency, Supports various compression formats including Snappy, Zlib, Gzip, etc.",
+  "general_tags": ["Compression", "Data Processing", "Efficiency"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Compression",
+    "software_class": "Library",
+    "software_type": "Compression"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "software name": "cuDF",
+    "comprehensive overview": "cuDF is a Python GPU DataFrame library for loading, joining, aggregating, filtering, and otherwise manipulating data.",
+    "core features": "Accelerates workflow by using GPU processing power, provides a GPU DataFrame for manipulating data, supports Apache Arrow and Pandas interoperability, enables seamless integration with cuPy and Dask, allows for parallel processing of data, and offers high-performance computing for data analysis.",
+    "general tags": ["GPU", "Data Manipulation", "High Performance Computing", "Python Library"],
+    "additional tags": {
+        "research discipline": "Computer Science",
+        "research area": "Data Science",
+        "software class": "Data Analysis",
+        "software type": "Library"
+    }
+}

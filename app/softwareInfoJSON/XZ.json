@@ -1,0 +1,16 @@
+{
+  "software_name": "XZ",
+  "comprehensive_overview": "XZ is an open-source data compression utility that uses the LZMA (Lempel-Ziv-Markov chain algorithm) compression algorithm. It is commonly used to compress files and reduce their size while maintaining high compression ratios and providing options for efficient data archiving and distribution.",
+  "core_features": [
+    "LZMA data compression",
+    "High compression ratios",
+    "Archive creation and extraction"
+  ],
+  "general_tags": ["Data Compression", "File Archiving", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Compression",
+    "software_class": "Compression Tool",
+    "software_type": "Utility"
+  }
+}

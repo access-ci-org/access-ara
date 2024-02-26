@@ -1,0 +1,22 @@
+{
+    "software_name": "Maven",
+    "comprehensive_overview": "Maven is a build automation tool used primarily for Java projects. It manages project dependencies and builds, making it easier to compile, test, package, and deploy Java applications.",
+    "core_features": [
+        "Dependency management",
+        "Build automation",
+        "Project management",
+        "Plugin-based architecture",
+        "Integration with repositories like Maven Central"
+    ],
+    "general_tags": [
+        "build automation",
+        "Java projects",
+        "dependency management"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Software Development",
+        "software_class": "Build Tool",
+        "software_type": "Build Automation"
+    }
+}

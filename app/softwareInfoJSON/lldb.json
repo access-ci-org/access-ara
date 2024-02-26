@@ -1,0 +1,21 @@
+{
+  "software_name": "lldb",
+  "comprehensive_overview": "LLDB is a debugger that is part of the LLVM project. It provides debugging capabilities for various programming languages and platforms, offering features like multi-threaded debugging, dynamic code generation, and integration with various IDEs and build systems.",
+  "core_features": [
+    "Multi-language debugging",
+    "Multi-threaded debugging support",
+    "Dynamic code generation capabilities",
+    "Integration with IDEs and build systems"
+  ],
+  "general_tags": [
+    "debugger",
+    "multi-language support",
+    "code debugging"
+  ],
+  "additional_tags": {
+    "research_discipline": "Software Development",
+    "research_area": "Debugging",
+    "software_class": "Tool",
+    "software_type": "Debugger"
+  }
+}

@@ -1,24 +1,12 @@
 {
     "software_name": "Caffe",
-    "overview": "Caffe is a deep learning framework developed by the Berkeley Vision and Learning Center for training neural networks. It is known for its speed, expressive architecture, and extensibility, making it popular for image classification and deep learning research.",
-    "core_features": [
-        "Deep learning framework",
-        "Neural network training",
-        "Image classification"
-    ],
-    "general_tags": [
-        "Deep learning",
-        "Neural networks",
-        "Image processing"
-    ],
-    "research_discipline": [
-        "Computer vision",
-        "Deep learning"
-    ],
-    "research_area": [
-        "Image classification",
-        "Deep neural networks"
-    ],
-    "software_class": "Deep learning framework",
-    "software_type": "Neural network training tool"
+    "comprehensive_overview": "Caffe is a deep learning framework developed by the Berkeley Vision and Learning Center (BVLC) designed for image recognition, segmentation, and other deep learning tasks. It provides a flexible architecture for building convolutional neural networks (CNNs) and deep neural networks for machine learning applications.",
+    "core_features": ["Deep learning framework for image recognition", "Flexible architecture for CNNs and deep neural networks", "Support for various deep learning tasks"],
+    "general_tags": ["Deep learning", "Image recognition"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Deep Learning Framework",
+        "software_type": "Tool"
+    }
 }

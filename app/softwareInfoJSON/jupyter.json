@@ -1,0 +1,20 @@
+{
+  "software name": "Jupyter",
+  "comprehensive overview": "Jupyter is an open-source web application that allows users to create and share documents containing live code, equations, visualizations, and narrative text. It supports various programming languages and is commonly used for data analysis, machine learning, and scientific research.",
+  "core features": [
+    "Web-based interactive computing environment",
+    "Support for code execution, visualization, and text formatting",
+    "Integration with multiple programming languages"
+  ],
+  "general tags": [
+    "Interactive Computing",
+    "Data Analysis",
+    "Notebook"
+  ],
+  "additional tags": {
+    "research discipline": "Data Science",
+    "research area": "Computational Research",
+    "software class": "Web Application",
+    "software type": "Interactive Computing Tool"
+  }
+}

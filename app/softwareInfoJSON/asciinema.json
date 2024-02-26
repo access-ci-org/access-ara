@@ -1,0 +1,16 @@
+{
+  "software_name": "Asciinema",
+  "comprehensive_overview": "Asciinema is a text-based, open-source solution for recording and sharing terminal sessions. It captures terminal input and output as text, allowing users to record and play back command-line sessions for tutorials, demos, and documentation.",
+  "core_features": [
+    "Text-based terminal recording",
+    "Command-line session sharing",
+    "Playback and sharing options"
+  ],
+  "general_tags": ["Terminal Recording", "Text-based Output", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Terminal Applications",
+    "software_class": "Recording Tool",
+    "software_type": "Utility"
+  }
+}

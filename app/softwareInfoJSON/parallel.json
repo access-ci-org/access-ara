@@ -1,0 +1,21 @@
+{
+    "software_name": "parallel",
+    "comprehensive_overview": "GNU parallel is a shell tool for executing jobs in parallel using one or more computers.",
+    "core_features": [
+        "Execute jobs in parallel",
+        "Distribute jobs across multiple computers",
+        "Efficiently utilize multiple CPU cores",
+        "Control parallel execution"
+    ],
+    "general_tags": [
+        "parallel computing",
+        "job execution",
+        "command line tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Parallel Computing",
+        "software_class": "Utility Tool",
+        "software_type": "Command Line Tool"
+    }
+}

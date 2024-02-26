@@ -1,0 +1,20 @@
+{
+  "software name": "hadoop",
+  "comprehensive overview": "Apache Hadoop is an open-source framework for distributed storage and processing of large-scale data sets across clusters of computers. It provides a scalable, reliable, and fault-tolerant platform for big data analytics and processing.",
+  "core features": [
+    "Distributed storage and processing of big data",
+    "Scalable framework for handling large-scale datasets",
+    "Fault tolerance and high availability for cluster computing"
+  ],
+  "general tags": [
+    "Big Data",
+    "Distributed Computing",
+    "Cluster Processing"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "Big Data Analytics",
+    "software class": "Framework",
+    "software type": "Distributed Processing System"
+  }
+}

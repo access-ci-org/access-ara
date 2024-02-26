@@ -1,0 +1,29 @@
+{
+    "PyYAML": {
+        "overview": "PyYAML is a Python library for parsing and emitting YAML (YAML Ain't Markup Language) data. It provides convenient tools for serializing and deserializing YAML documents, making it easy to work with YAML-formatted data in Python applications.",
+        "core_features": [
+            "YAML data parsing",
+            "YAML data serialization",
+            "Handling YAML documents",
+            "YAML data manipulation",
+            "Python library for YAML processing"
+        ],
+        "general_tags": [
+            "YAML parsing",
+            "YAML serialization",
+            "Python library"
+        ],
+        "additional_tags": {
+            "research_discipline": [
+                "Computer Science",
+                "Data Processing"
+            ],
+            "research_area": [
+                "YAML Handling",
+                "Data Serialization"
+            ],
+            "software_class": "Library",
+            "software_type": "Data Processing"
+        }
+    }
+}

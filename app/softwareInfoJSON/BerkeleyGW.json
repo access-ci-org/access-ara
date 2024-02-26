@@ -1,24 +1,12 @@
 {
     "software_name": "BerkeleyGW",
-    "overview": "BerkeleyGW is an open-source software package for calculating the electronic and optical properties of materials using many-body perturbation theory within the GW approximation. It is commonly used for researching materials properties at the quantum mechanical level.",
-    "core_features": [
-        "Electronic properties calculation",
-        "Optical properties analysis",
-        "Many-body perturbation theory"
-    ],
-    "general_tags": [
-        "Materials research",
-        "Quantum mechanics",
-        "Electronic structure calculations"
-    ],
-    "research_discipline": [
-        "Materials science",
-        "Condensed matter physics"
-    ],
-    "research_area": [
-        "Electronic structure",
-        "Optical properties"
-    ],
-    "software_class": "Materials simulation tool",
-    "software_type": "Electronic structure analysis software"
+    "comprehensive_overview": "BerkeleyGW is a software package for calculating the quasiparticle and optical properties of materials using the GW and Bethe-Salpeter equation (BSE) techniques in many-body perturbation theory. It is widely used in computational materials science for electronic structure calculations.",
+    "core_features": ["Calculates quasiparticle and optical properties of materials", "Applies GW and BSE techniques in many-body perturbation theory", "Used in computational materials science"],
+    "general_tags": ["Materials properties calculation", "Electronic structure"],
+    "additional_tags": {
+        "research_discipline": "Materials Science",
+        "research_area": "Computational Materials",
+        "software_class": "Material Calculation Tool",
+        "software_type": "Tool"
+    }
 }

@@ -1,0 +1,22 @@
+{
+  "software_name": "Kyric",
+  "comprehensive_overview": "Kyric is a computational tool used for analyzing large-scale biological data, including next-generation sequencing data. It offers a variety of tools and algorithms for tasks such as variant calling, structural variant analysis, and association studies.",
+  "core_features": [
+    "Variant calling",
+    "Structural variant analysis",
+    "Association studies",
+    "Large-scale data analysis"
+  ],
+  "general_tags": [
+    "Bioinformatics",
+    "Computational Biology",
+    "Genomics",
+    "Next-Generation Sequencing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Biological Sciences",
+    "research_area": "Genetics",
+    "software_class": "Bioinformatics Tool",
+    "software_type": "Analysis Tool"
+  }
+}

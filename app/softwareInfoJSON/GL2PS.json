@@ -1,24 +1,12 @@
 {
-    "software_name": "GL2PS",
-    "overview": "GL2PS (OpenGL to PostScript) is an open-source software library that converts OpenGL-generated vector graphics into various formats, including PostScript, PDF, and SVG. It is commonly used for creating high-quality vector images from OpenGL scenes for further processing and visualization.",
-    "core_features": [
-        "OpenGL to vector graphics conversion",
-        "PostScript, PDF, SVG support",
-        "High-quality image generation"
-    ],
-    "general_tags": [
-        "Vector graphics",
-        "OpenGL conversion",
-        "Graphics software"
-    ],
-    "research_discipline": [
-        "Computer graphics",
-        "Visualization"
-    ],
-    "research_area": [
-        "Vector image generation",
-        "OpenGL visualization"
-    ],
-    "software_class": "Graphics library",
-    "software_type": "Vector graphics converter"
+  "software_name": "GL2PS",
+  "comprehensive_overview": "GL2PS is a C library providing high-quality vector output for any OpenGL application. The main purpose of GL2PS is to create high-resolution vector images from 3D scenes rendered by OpenGL.",
+  "core_features": "1. Generates vector output in PostScript and PDF formats.\n2. Supports various features like solid, outlined, and composite polygons; simple polyline; compressed, antialiased, and smooth shaded colors; and text annotations.\n3. Configurable output: users can define line styles, line caps, and line joins.\n4. Compatible with any OpenGL application, making it suitable for scientific visualization, computational geometry, and computer graphics.",
+  "general_tags": ["vector output", "OpenGL", "3D rendering"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Computer Graphics",
+    "software_class": "Library",
+    "software_type": "Graphics Processing"
+  }
 }

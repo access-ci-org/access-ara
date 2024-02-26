@@ -1,0 +1,21 @@
+{
+  "software_name": "libdap",
+  "comprehensive_overview": "libdap, or the Distributed Access Protocol library, is a software library for accessing scientific data in various formats over the network using the DAP protocol. It enables users to access and manipulate structured scientific data remotely.",
+  "core_features": [
+    "Accessing scientific data over the network",
+    "Support for DAP protocol",
+    "Manipulating structured scientific data",
+    "Cross-platform compatibility"
+  ],
+  "general_tags": [
+    "data access",
+    "networking",
+    "structured data"
+  ],
+  "additional_tags": {
+    "research_discipline": "Earth Sciences",
+    "research_area": "Data Management",
+    "software_class": "Library",
+    "software_type": "Data Access"
+  }
+}

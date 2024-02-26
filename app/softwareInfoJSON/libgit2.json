@@ -1,0 +1,21 @@
+{
+  "software_name": "libgit2",
+  "comprehensive_overview": "libgit2 is a portable, pure C implementation of the Git version control system. It provides a low-level API to interact with Git repositories, enabling developers to perform various version control operations programmatically.",
+  "core_features": [
+    "Git repository interactions",
+    "Low-level version control operations",
+    "Cross-platform compatibility",
+    "Programmatic access to Git functionalities"
+  ],
+  "general_tags": [
+    "version control",
+    "git integration",
+    "source code management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Version Control Systems",
+    "software_class": "Library",
+    "software_type": "Version Control"
+  }
+}

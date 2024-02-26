@@ -1,0 +1,23 @@
+{
+    "software": "Doxygen",
+    "overview": "Doxygen is a documentation generator tool that is widely used for automatically generating documentation from annotated source code. It supports multiple programming languages and outputs documentation in various formats including HTML, LaTeX, and PDF.",
+    "core_features": [
+        "Automatic generation of documentation",
+        "Support for C, C++, Java, Python, and more",
+        "Various output formats (HTML, PDF, LaTeX)",
+        "Code structure visualization",
+        "Customizable documentation styles"
+    ],
+    "general_tags": [
+        "documentation generation",
+        "source code documentation",
+        "automated documentation",
+        "multiple language support"
+    ],
+    "additional_tags": {
+        "research_discipline": "Software Engineering",
+        "research_area": "Documentation",
+        "software_class": "Documentation Tools",
+        "software_type": "Open Source"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "software": "Cufflinks",
+    "overview": "Cufflinks is a suite of tools for transcriptome assembly and differential expression analysis of RNA-Seq data. It helps in quantifying gene and transcript expression levels, identifying novel transcripts, and determining differential expression in RNA samples.",
+    "core_features": [
+        "Transcript assembly from RNA-Seq reads",
+        "Gene and transcript expression quantification",
+        "Detection of novel transcript isoforms",
+        "Differential expression analysis",
+        "Visualization of RNA-Seq data"
+    ],
+    "general_tags": [
+        "transcriptome analysis",
+        "RNA-Seq data",
+        "differential expression",
+        "gene expression quantification"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Transcriptomics",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Open Source"
+    }
+}

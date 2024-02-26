@@ -1,0 +1,20 @@
+{
+  "software": "readline",
+  "comprehensive_overview": "Readline is a software library that facilitates line-editing capabilities in interactive command-line interfaces. It provides features like command history, line editing, and keyboard shortcuts for efficient text entry and editing within interactive command-line applications.",
+  "core_features": [
+    "Line editing",
+    "Command history",
+    "Keyboard shortcuts"
+  ],
+  "general_tags": [
+    "command-line interface",
+    "text editing",
+    "interactive"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Command-line Tools",
+    "software_class": "Library",
+    "software_type": "Line Editing"
+  }
+}

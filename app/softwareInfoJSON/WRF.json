@@ -1,0 +1,16 @@
+{
+  "software_name": "WRF",
+  "comprehensive_overview": "WRF (Weather Research and Forecasting Model) is a numerical weather prediction system used for atmospheric research and operational weather forecasting applications. It simulates atmospheric phenomena to create forecasts, predict climate patterns, and analyze meteorological data.",
+  "core_features": [
+    "Numerical weather prediction",
+    "Atmospheric modeling",
+    "Climate analysis and research"
+  ],
+  "general_tags": ["Meteorology", "Weather Forecasting", "Atmospheric Research"],
+  "additional_tags": {
+    "research_discipline": "Meteorology",
+    "research_area": "Numerical Weather Prediction",
+    "software_class": "Modeling System",
+    "software_type": "Tool"
+  }
+}

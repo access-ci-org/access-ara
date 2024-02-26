@@ -1,0 +1,20 @@
+{
+  "software": "RSEM",
+  "comprehensive_overview": "RSEM (RNA-Seq by Expectation-Maximization) is a software package for estimating gene and isoform expression levels from RNA-Seq data. It utilizes the Expectation-Maximization algorithm to estimate expression levels and provides features for transcript quantification and differential expression analysis.",
+  "core_features": [
+    "Gene expression estimation",
+    "Isoform expression quantification",
+    "Differential expression analysis"
+  ],
+  "general_tags": [
+    "RNA-Seq analysis",
+    "gene expression",
+    "transcript quantification"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Transcriptomics",
+    "software_class": "Tool",
+    "software_type": "Expression Analysis"
+  }
+}

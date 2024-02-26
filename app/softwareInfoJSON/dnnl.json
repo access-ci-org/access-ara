@@ -1,0 +1,22 @@
+{
+  "software_name": "DNNL",
+  "comprehensive_overview": "Intel Math Kernel Library for Deep Neural Networks (DNNL) is an open-source performance library for deep learning applications. It provides highly optimized building blocks to accelerate deep learning frameworks on Intel architecture.",
+  "core_features": [
+    "Optimized primitives for deep learning operations",
+    "Support for popular deep learning frameworks like TensorFlow, PyTorch, etc.",
+    "Hardware acceleration for Intel architecture",
+    "Support for convolutional, inner product, and recurrent neural network operations"
+  ],
+  "general_tags": [
+    "Deep Learning",
+    "Neural Networks",
+    "Performance Optimization",
+    "Intel Architecture"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Deep Learning",
+    "software_class": "Library",
+    "software_type": "Performance Optimization"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "software": "bokeh",
+    "overview": "Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. It allows creating interactive plots, dashboards, and data applications for data exploration and visualization.",
+    "core_features": [
+        "Interactive plotting",
+        "Web-based visualizations",
+        "Integration with Jupyter notebooks",
+        "Server-hosted, standalone, and embedded applications",
+        "Support for multiple output formats (HTML, JSON)"
+    ],
+    "general_tags": [
+        "data visualization",
+        "interactive plots",
+        "web applications",
+        "Python library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Data Science",
+        "research_area": "Visualization",
+        "software_class": "Data Visualization Tools",
+        "software_type": "Open Source"
+    }
+}

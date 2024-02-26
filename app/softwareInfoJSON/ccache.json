@@ -1,0 +1,23 @@
+{
+    "software": "ccache",
+    "overview": "ccache is a compiler cache tool that speeds up compilation by caching previous compilation results and reusing them when possible. It can significantly reduce compilation times, especially in software development workflows.",
+    "core_features": [
+        "Caching of compiled object files",
+        "Automatic reuse of cached results",
+        "Support for multiple compilers",
+        "Reduction of redundant recompilations",
+        "Integration with build systems"
+    ],
+    "general_tags": [
+        "compiler cache",
+        "build optimization",
+        "software development",
+        "compilation speed-up"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Software Development",
+        "software_class": "Build Tools",
+        "software_type": "Open Source"
+    }
+}

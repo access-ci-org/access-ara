@@ -1,0 +1,21 @@
+{
+    "tool": "X.Org",
+    "overview": "X.Org, also known as X Server, is an open-source implementation of the X Window System that provides the framework for graphical user interfaces in Unix-like operating systems. It serves as the display server handling user input, window management, and graphics rendering for X applications, enabling graphical desktop environments to function.",
+    "core_features": [
+        "Window display and management for GUI applications",
+        "Graphics rendering and input event handling",
+        "Support for multiple displays and multi-monitor setups",
+        "Integration with desktop environments and X applications"
+    ],
+    "general_tags": [
+        "X Window System",
+        "display server",
+        "graphical user interface"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Operating Systems",
+        "software_class": "Display Server",
+        "software_type": "GUI Framework"
+    }
+}

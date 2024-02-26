@@ -1,0 +1,20 @@
+{
+  "software": "py3Dmol",
+  "comprehensive_overview": "Py3Dmol is a Python library that provides interactive molecular visualization capabilities in 3D using WebGL. It enables users to create and visualize molecular structures and models with interactive features for molecular exploration.",
+  "core_features": [
+    "3D molecular visualization",
+    "Interactive rendering",
+    "WebGL integration"
+  ],
+  "general_tags": [
+    "molecular visualization",
+    "Python library",
+    "3D rendering"
+  ],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Molecular Modeling",
+    "software_class": "Library",
+    "software_type": "Visualization"
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "software_name": "python3",
+    "comprehensive_overview": "Python is a high-level, interpreted programming language known for its readability and versatility. Python3 is the latest version of Python which continues to improve on the language's functionality and features.",
+    "core_features": [
+        "Simple and easy to learn syntax",
+        "Support for multiple programming paradigms (procedural, object-oriented, functional programming)",
+        "Extensive standard library",
+        "Large community support and third-party modules",
+        "Cross-platform compatibility"
+    ],
+    "general_tags": [
+        "programming language",
+        "interpreted language",
+        "high-level language",
+        "versatile",
+        "readable",
+        "dynamic"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Programming Language",
+        "software_type": "Development Tool"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "software_name": "Morpheus",
+    "comprehensive_overview": "Morpheus is a comprehensive software tool for mathematical modeling, simulation, and analysis of biological systems. It allows users to create complex models to study biochemical networks, genetic regulation, and other biological processes.",
+    "core_features": [
+        "Mathematical modeling of biological systems",
+        "Simulation of biochemical networks",
+        "Analysis of genetic regulation",
+        "Parameter estimation and sensitivity analysis"
+    ],
+    "general_tags": [
+        "mathematical modeling",
+        "simulation",
+        "biological systems",
+        "bioinformatics"
+    ],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Systems Biology",
+        "software_class": "Modeling and Simulation",
+        "software_type": "Bioinformatics Tool"
+    }
+}

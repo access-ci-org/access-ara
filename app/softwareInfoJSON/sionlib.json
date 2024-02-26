@@ -1,0 +1,20 @@
+{
+    "software_name": "sionlib",
+    "comprehensive_overview": "Sionlib is a C++ library for reading and writing data in the Structured Information Files (SIF) format. It provides functions for easily handling SIF files, a simple and versatile format for representing graphs and matrices.",
+    "core_features": [
+        "Reading and writing data in the Structured Information Files (SIF) format",
+        "Handling graphs and matrices",
+        "Simplicity and versatility in data representation"
+    ],
+    "general_tags": [
+        "data handling",
+        "file format",
+        "C++ library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Data Structures",
+        "software_class": "Library",
+        "software_type": "Data Management"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "software": "Rosetta",
+  "comprehensive_overview": "Rosetta is a leading software suite for protein structure prediction, protein design, and protein-protein interaction modeling. It integrates a diverse set of algorithms and computational methods to predict and model protein structures, enabling research in structural biology, drug discovery, and protein engineering.",
+  "core_features": [
+    "Protein structure prediction",
+    "Protein design",
+    "Protein-protein interaction modeling"
+  ],
+  "general_tags": [
+    "protein modeling",
+    "structural biology",
+    "molecular design"
+  ],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Protein Structure Prediction",
+    "software_class": "Suite",
+    "software_type": "Protein Modeling"
+  }
+}

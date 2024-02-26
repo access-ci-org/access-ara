@@ -1,0 +1,20 @@
+{
+  "software name": "gperftools",
+  "comprehensive overview": "Google Performance Tools (gperftools) is a collection of performance analysis and profiling tools designed to help developers optimize the performance of their applications. It includes tools for CPU and heap profiling, heap checking, and more.",
+  "core features": [
+    "CPU and heap profiling for performance analysis",
+    "Memory leak detection and heap checking",
+    "Efficient and lightweight profiling tools"
+  ],
+  "general tags": [
+    "Performance Optimization",
+    "Profiling",
+    "Memory Management"
+  ],
+  "additional tags": {
+    "research discipline": "Software Development",
+    "research area": "Performance Analysis",
+    "software class": "Profiling Tools",
+    "software type": "Performance Optimization Tool"
+  }
+}

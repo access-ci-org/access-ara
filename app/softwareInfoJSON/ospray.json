@@ -1,0 +1,23 @@
+{
+  "software_name": "OSPRay",
+  "comprehensive_overview": "OSPRay is an open-source, scalable, and portable ray tracing engine for high-performance, high-fidelity visualization on Intel architecture CPUs. It is designed to efficiently utilize the latest CPU instructions and multi-core processing technologies to deliver fast and accurate rendering of complex scenes.",
+  "core_features": [
+    "High-performance ray tracing engine",
+    "Scalable and portable",
+    "Optimized for Intel architecture CPUs",
+    "Support for advanced CPU instructions",
+    "Multi-core processing support"
+  ],
+  "general_tags": [
+    "ray tracing",
+    "visualization",
+    "CPU rendering",
+    "open-source"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Computer Graphics",
+    "software_class": "Visualization Software",
+    "software_type": "Rendering Engine"
+  }
+}

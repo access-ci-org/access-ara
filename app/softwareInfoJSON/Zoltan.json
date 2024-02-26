@@ -1,0 +1,16 @@
+{
+  "software_name": "Zoltan",
+  "comprehensive_overview": "Zoltan is a library for parallel and distributed graph and mesh partitioning, ordering, and dynamic load balancing. It provides scalable algorithms and tools for optimizing the distribution of work in parallel computing environments, improving performance and efficiency.",
+  "core_features": [
+    "Graph and mesh partitioning",
+    "Dynamic load balancing",
+    "Parallel computing optimizations"
+  ],
+  "general_tags": ["Parallel Computing", "Graph Partitioning", "Load Balancing"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Parallel Algorithms",
+    "software_class": "Partitioning Library",
+    "software_type": "Library"
+  }
+}

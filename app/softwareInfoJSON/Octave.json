@@ -1,0 +1,24 @@
+{
+  "software_name": "Octave",
+  "comprehensive_overview": "Octave is a high-level programming language primarily intended for numerical computations. It provides a command-line interface for solving linear and nonlinear problems numerically, and for performing other numerical experiments using a language that is mostly compatible with MATLAB.",
+  "core_features": [
+    "High-level programming language for numerical computations",
+    "Command-line interface",
+    "Solving linear and nonlinear problems numerically",
+    "Compatibility with MATLAB syntax"
+  ],
+  "general_tags": [
+    "Numerical Computing",
+    "Programming Language",
+    "MATLAB Compatible"
+  ],
+  "additional_tags": {
+    "research_discipline": "Mathematics",
+    "research_area": [
+      "Numerical Analysis",
+      "Computational Mathematics"
+    ],
+    "software_class": "Scientific Computing",
+    "software_type": "Programming Language"
+  }
+}

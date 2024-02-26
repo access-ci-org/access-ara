@@ -1,0 +1,20 @@
+{
+  "software name": "googletest",
+  "comprehensive overview": "Google Test (also known as googletest) is a C++ testing framework developed by Google. It allows developers to write and run automated tests for C++ code, helping ensure code quality and reliability.",
+  "core features": [
+    "Support for writing and running C++ tests",
+    "Rich set of assertion macros for test verification",
+    "Integration with popular build systems like CMake"
+  ],
+  "general tags": [
+    "Testing Framework",
+    "C++",
+    "Automated Testing"
+  ],
+  "additional tags": {
+    "research discipline": "Software Engineering",
+    "research area": "Software Testing",
+    "software class": "Testing Framework",
+    "software type": "Testing Tool"
+  }
+}

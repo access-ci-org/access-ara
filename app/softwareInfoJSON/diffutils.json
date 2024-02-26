@@ -1,0 +1,23 @@
+{
+    "software": "diffutils",
+    "overview": "diffutils is a set of GNU utilities that provide file comparison and directory comparison functionalities. The tools within diffutils allow users to find differences between files, generate patch files, and perform line-by-line comparisons.",
+    "core_features": [
+        "File comparison utility (diff)",
+        "Directory comparison tool (diff directories)",
+        "Generation and application of patches (patch)",
+        "Unified and context diffs",
+        "Customizable diff output"
+    ],
+    "general_tags": [
+        "file comparison",
+        "directory comparison",
+        "patch generation",
+        "GNU utilities"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "File Comparison",
+        "software_class": "Utility Tools",
+        "software_type": "Open Source"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "software_name": "libogg",
+  "comprehensive_overview": "libogg is a library for managing the Ogg container format, which is commonly used for storing multimedia content like audio and video. It provides functions for Ogg stream multiplexing and demultiplexing, enabling efficient handling of multimedia data.",
+  "core_features": [
+    "Ogg container format management",
+    "Multiplexing and demultiplexing streams",
+    "Support for multimedia content",
+    "Efficient multimedia data handling"
+  ],
+  "general_tags": [
+    "Ogg format",
+    "multimedia",
+    "stream processing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Multimedia",
+    "research_area": "Data Containers",
+    "software_class": "Library",
+    "software_type": "Multimedia Handling"
+  }
+}

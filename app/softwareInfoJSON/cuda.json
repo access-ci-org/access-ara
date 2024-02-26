@@ -1,0 +1,23 @@
+{
+    "software": "CUDA",
+    "overview": "CUDA (Compute Unified Device Architecture) is a parallel computing platform and API model created by NVIDIA. It enables software developers to use NVIDIA GPUs for general-purpose processing, including parallel programming and accelerating computing tasks.",
+    "core_features": [
+        "GPU parallel computing capabilities",
+        "CUDA-accelerated libraries for numerical computations",
+        "Integration with programming languages like C/C++ and Python",
+        "Scalable across NVIDIA GPU architectures",
+        "Support for parallel algorithms and data processing"
+    ],
+    "general_tags": [
+        "GPU computing",
+        "parallel programming",
+        "accelerated computing",
+        "numerical computations"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Parallel Computing",
+        "software_class": "Parallel Computing Tools",
+        "software_type": "Proprietary"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "software name": "hoomd",
+  "comprehensive overview": "HOOMD-blue (Highly Optimized Object-oriented Many-particle Dynamics code) is a powerful molecular dynamics simulation package designed for large-scale simulations of particles, polymers, and complex fluids. It provides high-performance computing capabilities for studying diverse systems.",
+  "core features": [
+    "Molecular dynamics simulations for particles, polymers, and fluids",
+    "High-performance computing for large-scale simulations",
+    "Support for diverse system types and simulation setups"
+  ],
+  "general tags": [
+    "Molecular Dynamics",
+    "Simulation Software",
+    "High-Performance Computing"
+  ],
+  "additional tags": {
+    "research discipline": "Chemistry",
+    "research area": "Molecular Dynamics Simulation",
+    "software class": "Simulation Software",
+    "software type": "Simulation Tool"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "tool": "xxd",
+    "overview": "xxd is a command-line utility that is part of the Vim text editor package and is used for creating or examining binary, hexadecimal, and octal dumps of files or text input. xxd provides a convenient way to analyze file contents, extract binary data, and convert between different data representations.",
+    "core_features": [
+        "Creating hexadecimal, binary, or octal dumps of files",
+        "Converting binary data to human-readable formats",
+        "Analyzing file contents and data structures",
+        "Support for examining and editing binary files"
+    ],
+    "general_tags": [
+        "hexdump tool",
+        "binary data analysis",
+        "command-line utility"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Utility",
+        "software_type": "Binary Data Tool"
+    }
+}

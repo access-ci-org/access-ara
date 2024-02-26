@@ -1,0 +1,20 @@
+{
+  "software": "QEMU",
+  "comprehensive_overview": "QEMU is a popular open-source virtualization emulator that provides a platform for running and testing different operating systems and software on various hardware architectures. It offers CPU emulation, device modeling, and virtualization capabilities for hosting and managing virtual machines.",
+  "core_features": [
+    "Virtualization emulation",
+    "Hardware simulation",
+    "Cross-platform compatibility"
+  ],
+  "general_tags": [
+    "virtualization",
+    "emulation",
+    "hardware simulation"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Virtualization",
+    "software_class": "Emulator",
+    "software_type": "Virtualization"
+  }
+}

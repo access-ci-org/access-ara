@@ -1,0 +1,20 @@
+{
+  "software": "TeX Live",
+  "comprehensive_overview": "TeX Live is a comprehensive TeX and LaTeX distribution that provides an extensive collection of TeX-related programs, fonts, and macro packages. It offers a cross-platform TeX system for typesetting documents, mathematical formulas, publications, and other text-heavy content, widely used in academia, publishing, and science.",
+  "core_features": [
+    "TeX and LaTeX distribution",
+    "Document typesetting",
+    "Font and macro package support"
+  ],
+  "general_tags": [
+    "typesetting",
+    "TeX system",
+    "LaTeX distribution"
+  ],
+  "additional_tags": {
+    "research_discipline": "Technical Writing",
+    "research_area": "Document Preparation",
+    "software_class": "Distribution",
+    "software_type": "Typesetting System"
+  }
+}

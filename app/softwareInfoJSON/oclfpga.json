@@ -1,0 +1,20 @@
+{
+    "software_name": "oclfpga",
+    "comprehensive_overview": "oclfpga is a software tool designed for programming FPGA-based accelerators using the Open Computing Language (OpenCL) framework. It provides a platform for developers to harness the power of FPGAs for accelerating computational workloads.",
+    "core_features": [
+        "Programming FPGA-based accelerators",
+        "Utilizing the OpenCL framework",
+        "Accelerating computational workloads"
+    ],
+    "general_tags": [
+        "FPGA programming",
+        "OpenCL framework",
+        "Computational acceleration"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "High Performance Computing",
+        "software_class": "Development tools",
+        "software_type": "Compiler/Programming tool"
+    }
+}

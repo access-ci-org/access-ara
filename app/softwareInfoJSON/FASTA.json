@@ -1,24 +1,12 @@
 {
     "software_name": "FASTA",
-    "overview": "FASTA is a software tool for searching biological sequence databases using algorithms that find regions of local or global similarity between sequences. It is commonly used for sequence alignment, comparison, and database searches, providing valuable insights into biological data.",
-    "core_features": [
-        "Biological sequence searching",
-        "Sequence alignment",
-        "Database searches"
-    ],
-    "general_tags": [
-        "Bioinformatics",
-        "Sequence analysis",
-        "Alignment tool"
-    ],
-    "research_discipline": [
-        "Bioinformatics",
-        "Genomics"
-    ],
-    "research_area": [
-        "Sequence alignment",
-        "Sequence database searching"
-    ],
-    "software_class": "Bioinformatics tool",
-    "software_type": "Sequence search software"
+    "comprehensive_overview": "FASTA is a software package for DNA and protein sequence alignment and searching, offering tools for comparing biological sequences against databases. It provides rapid sequence similarity searches and multiple sequence alignment algorithms for bioinformatics and genomics research.",
+    "core_features": ["DNA and protein sequence alignment tool", "Sequence similarity searches", "Multiple sequence alignment algorithms"],
+    "general_tags": ["Sequence alignment", "Bioinformatics"],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Sequence Analysis",
+        "software_class": "Sequence Alignment Tool",
+        "software_type": "Tool"
+    }
 }

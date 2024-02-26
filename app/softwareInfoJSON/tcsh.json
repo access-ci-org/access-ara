@@ -1,0 +1,20 @@
+{
+  "software": "tcsh",
+  "comprehensive_overview": "tcsh is an enhanced version of the C shell (csh) with interactive command-line features for Unix-based systems. It provides a powerful shell with scripting capabilities, line editing, and command history functionalities. tcsh is known for its robust scripting language and interactive shell environment.",
+  "core_features": [
+    "Interactive shell",
+    "Scripting capabilities",
+    "Command-line editing"
+  ],
+  "general_tags": [
+    "Unix shell",
+    "command-line",
+    "scripting"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Shell Scripting",
+    "software_class": "Shell",
+    "software_type": "Command Interpreter"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "software": "bison",
+    "overview": "Bison is a general-purpose parser generator tool that is commonly used to generate parsers for programming languages and other structured formats. It is part of the GNU project.",
+    "core_features": [
+        "LALR(1) parsing algorithm",
+        "Generation of parser code in C, C++, or other target languages",
+        "Support for semantic actions",
+        "Integration with lexical analyzers like Flex",
+        "Error handling and reporting"
+    ],
+    "general_tags": [
+        "parser generator",
+        "programming languages",
+        "compiler construction",
+        "syntax analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Compiler Design",
+        "software_class": "Parser Generator",
+        "software_type": "Open Source"
+    }
+}

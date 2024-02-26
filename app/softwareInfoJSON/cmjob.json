@@ -1,0 +1,20 @@
+{
+  "software_name": "CMJOB",
+  "comprehensive_overview": "CMJOB is a computational tool for identifying and characterizing homologs of circular permutations in protein sequences.",
+  "core_features": [
+    "Identification of circular permutations in protein sequences",
+    "Characterization of homologs",
+    "Analysis of protein structures"
+  ],
+  "general_tags": [
+    "Proteomics",
+    "Bioinformatics",
+    "Protein Analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Proteomics",
+    "software_class": "Computational tool",
+    "software_type": "Protein sequence analysis"
+  }
+}

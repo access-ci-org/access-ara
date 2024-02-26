@@ -1,0 +1,17 @@
+{
+    "software": "Berkeley",
+    "overview": "Berkeley Software Distribution (BSD) refers to a family of Unix-like operating systems derived from the original Unix source code developed at the University of California, Berkeley. The BSD variants are known for their reliability, performance, and open-source nature.",
+    "core_features": [
+        "Unix-like operating system with emphasis on stability and security",
+        "Variants like FreeBSD, OpenBSD, NetBSD, and DragonFlyBSD",
+        "Advanced networking capabilities and security features",
+        "Support for both desktop and server environments"
+    ],
+    "general_tags": ["operating system", "Unix-like", "open source"],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Operating Systems",
+        "software_class": "Operating System",
+        "software_type": "OS Distribution"
+    }
+}

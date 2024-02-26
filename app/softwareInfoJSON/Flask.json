@@ -1,24 +1,12 @@
 {
     "software_name": "Flask",
-    "overview": "Flask is a lightweight and flexible Python web application framework. It provides tools, libraries, and features for building web applications quickly and efficiently. Flask follows the WSGI toolkit and is best suited for small to medium-sized projects where simplicity and modularity are essential.",
-    "core_features": [
-        "Web application framework",
-        "Python-based development",
-        "Modular design"
-    ],
-    "general_tags": [
-        "Web development",
-        "Python framework",
-        "WSGI compliance"
-    ],
-    "research_discipline": [
-        "Computer science",
-        "Web development"
-    ],
-    "research_area": [
-        "Web applications",
-        "Backend development"
-    ],
-    "software_class": "Web framework",
-    "software_type": "Python toolkit"
+    "comprehensive_overview": "Flask is a lightweight and versatile web application framework for Python, providing tools, libraries, and features for building web applications and APIs. It is known for its simplicity, flexibility, and extensibility, making it popular for developing small to medium-sized web applications.",
+    "core_features": ["Python web application framework", "Lightweight and versatile", "Simplicity, flexibility, and extensibility"],
+    "general_tags": ["Web development", "Python framework"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Web Framework",
+        "software_type": "Tool"
+    }
 }

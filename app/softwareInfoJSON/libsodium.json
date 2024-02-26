@@ -1,0 +1,21 @@
+{
+  "software_name": "libsodium",
+  "comprehensive_overview": "libsodium is a modern encryption library that provides secure cryptographic primitives and data protection functions. It offers high-level abstractions for encryption, decryption, and secure data handling, promoting best practices in data security.",
+  "core_features": [
+    "Secure cryptographic primitives",
+    "Encryption and decryption functions",
+    "Data protection mechanisms",
+    "High-level abstractions for data security"
+  ],
+  "general_tags": [
+    "encryption library",
+    "data protection",
+    "cryptographic primitives"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Security",
+    "research_area": "Cryptography",
+    "software_class": "Library",
+    "software_type": "Encryption"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Kraken2": {
+    "overview": "Kraken2 is a taxonomic sequence classifier that assigns taxonomic labels to DNA sequences. It uses exact k-mer matches to quickly and accurately classify sequences against a large reference database.",
+    "core_features": [
+      "Taxonomic classification of DNA sequences",
+      "Exact k-mer matching",
+      "Classification accuracy",
+      "Speed and efficiency",
+      "Large reference database support"
+    ],
+    "general_tags": ["Taxonomic classification", "DNA sequences", "Bioinformatics"],
+    "additional_tags": {
+      "research_discipline": ["Bioinformatics", "Computational Biology"],
+      "research_area": ["Metagenomics", "Microbiome Analysis"],
+      "software_class": "Tool",
+      "software_type": "Bioinformatics"
+    }
+  }
+}

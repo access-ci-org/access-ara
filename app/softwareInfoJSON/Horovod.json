@@ -1,0 +1,21 @@
+{
+  "Horovod": {
+    "overview": "Horovod is a distributed deep learning framework that is designed to run training across multiple GPU nodes efficiently. It leverages concepts such as MPI for efficient communication and synchronization between nodes.",
+    "core_features": [
+      "Distributed deep learning training",
+      "Multi-GPU node support",
+      "Efficient communication through MPI"
+    ],
+    "general_tags": [
+      "Deep Learning",
+      "Distributed Computing",
+      "GPU Acceleration"
+    ],
+    "additional_tags": {
+      "research_discipline": "Artificial Intelligence",
+      "research_area": "Deep Learning",
+      "software_class": "Framework",
+      "software_type": "Distributed Computing Tool"
+    }
+  }
+}

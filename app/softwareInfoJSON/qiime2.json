@@ -1,0 +1,20 @@
+{
+  "software": "QIIME 2",
+  "comprehensive_overview": "QIIME 2 is a next-generation bioinformatics platform for microbiome analysis that provides tools for microbial community profiling, metagenomics, and microbiome data analysis. It offers a wide range of algorithms, visualizations, and workflows for processing and interpreting microbiome sequencing data.",
+  "core_features": [
+    "Microbiome analysis",
+    "Metagenomics",
+    "Sequence data processing"
+  ],
+  "general_tags": [
+    "microbiome",
+    "bioinformatics",
+    "metagenomics"
+  ],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Microbiome Research",
+    "software_class": "Platform",
+    "software_type": "Bioinformatics"
+  }
+}

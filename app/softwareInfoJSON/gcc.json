@@ -1,0 +1,23 @@
+{
+    "software": "GCC",
+    "overview": "GCC (GNU Compiler Collection) is a free and open-source compiler system that supports various programming languages. It is widely used for compiling and building software on numerous platforms and architectures.",
+    "core_features": [
+        "Support for multiple programming languages",
+        "Optimizing and generating machine code",
+        "Cross-compilation capabilities",
+        "Extensive compiler flags and options",
+        "Modular architecture"
+    ],
+    "general_tags": [
+        "compiler system",
+        "programming languages",
+        "software development",
+        "cross-platform"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Compiler Construction",
+        "software_class": "Compiler Tools",
+        "software_type": "Open Source"
+    }
+}

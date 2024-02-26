@@ -1,0 +1,16 @@
+{
+  "software_name": "QuantumATK",
+  "comprehensive_overview": "QuantumATK is a software platform for atomic-scale modeling, simulation, and analysis of materials and nanoelectronic devices. It provides a range of tools for quantum mechanical simulations and analysis.",
+  "core_features": [
+    "Atomistic simulations",
+    "Electronic structure calculations",
+    "Modeling materials at the nanoscale"
+  ],
+  "general_tags": ["Materials Science", "Nanotechnology", "Simulation Software"],
+  "additional_tags": {
+    "research_discipline": "Materials Science",
+    "research_area": "Nanoelectronics",
+    "software_class": "Simulation",
+    "software_type": "Platform"
+  }
+}

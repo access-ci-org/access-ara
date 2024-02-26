@@ -1,0 +1,16 @@
+{
+  "software_name": "Trinity",
+  "comprehensive_overview": "Trinity is a software tool used for de novo transcriptome assembly from RNA-Seq data. It is designed to reconstruct full-length transcripts and address the challenges of assembling transcriptomes without a reference genome, contributing to gene expression and functional analysis.",
+  "core_features": [
+    "De novo transcriptome assembly",
+    "Reconstruction of full-length transcripts",
+    "Transcript quantification and differential expression analysis"
+  ],
+  "general_tags": ["Bioinformatics", "Transcriptome Assembly", "RNA-Seq Analysis"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Transcriptomics",
+    "software_class": "Assembly Tool",
+    "software_type": "Tool"
+  }
+}

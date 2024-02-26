@@ -1,0 +1,21 @@
+{
+  "HPCC": {
+    "overview": "HPCC (High Performance Computing Cluster) is an integrated and open-source platform designed for high-performance data computation and analysis. It provides a parallel processing environment for handling large-scale data processing tasks.",
+    "core_features": [
+      "High-performance data computation",
+      "Parallel processing environment",
+      "Scalable and distributed computing"
+    ],
+    "general_tags": [
+      "High-Performance Computing",
+      "Cluster Computing",
+      "Data Analysis"
+    ],
+    "additional_tags": {
+      "research_discipline": "Computer Science",
+      "research_area": "High-Performance Computing",
+      "software_class": "Platform",
+      "software_type": "Cluster Computing Tool"
+    }
+  }
+}

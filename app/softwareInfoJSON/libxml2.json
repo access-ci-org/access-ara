@@ -1,0 +1,21 @@
+{
+  "software_name": "libxml2",
+  "comprehensive_overview": "libxml2 is a library for parsing and manipulating XML (Extensible Markup Language) files. It provides functions for reading, writing, and processing XML documents, making it a versatile tool for working with structured data in XML format.",
+  "core_features": [
+    "XML parsing and manipulation",
+    "Reading and writing XML files",
+    "XML document processing",
+    "Structured data handling"
+  ],
+  "general_tags": [
+    "XML files",
+    "parsing",
+    "data processing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "XML Processing",
+    "software_class": "Library",
+    "software_type": "XML Parsing"
+  }
+}

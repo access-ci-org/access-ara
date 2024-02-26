@@ -1,0 +1,20 @@
+{
+  "software name": "h5py",
+  "comprehensive overview": "h5py is a Python library that provides an interface to the HDF5 file format, enabling users to interact with and manipulate HDF5 files in Python. HDF5 is a versatile data format commonly used for storing and managing large datasets.",
+  "core features": [
+    "Interface to HDF5 file format in Python",
+    "Creation, reading, and modification of HDF5 datasets",
+    "Efficient handling of large and complex datasets"
+  ],
+  "general tags": [
+    "Python Library",
+    "HDF5",
+    "Data Handling"
+  ],
+  "additional tags": {
+    "research discipline": "Data Science",
+    "research area": "Data Storage",
+    "software class": "Library",
+    "software type": "Data Handling Tool"
+  }
+}

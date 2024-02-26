@@ -1,0 +1,16 @@
+{
+  "software_name": "ADCIRC",
+  "comprehensive_overview": "ADCIRC (ADvanced CIRCulation) is a numerical model used for simulating storm surges, coastal flooding, and ocean circulation phenomena. It is widely employed in coastal engineering and hazard assessment to predict water levels, wave dynamics, and flooding patterns under various scenarios.",
+  "core_features": [
+    "Storm surge modeling",
+    "Coastal flooding simulation",
+    "Ocean circulation predictions"
+  ],
+  "general_tags": ["Coastal Modeling", "Storm Surge Simulation", "Ocean Circulation"],
+  "additional_tags": {
+    "research_discipline": "Oceanography",
+    "research_area": "Coastal Engineering",
+    "software_class": "Modeling Software",
+    "software_type": "Tool"
+  }
+}

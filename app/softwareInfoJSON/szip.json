@@ -1,0 +1,20 @@
+{
+  "software": "SZIP",
+  "comprehensive_overview": "SZIP is a fast, lossless compression library designed for scientific data sets typically found in high-performance computing and large-scale simulations. It offers efficient compression and decompression algorithms essential for reducing storage requirements and optimizing data transfer in scientific computing environments.",
+  "core_features": [
+    "Lossless compression",
+    "Scientific data sets",
+    "High-performance computing"
+  ],
+  "general_tags": [
+    "compression library",
+    "scientific computing",
+    "data optimization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Compression",
+    "software_class": "Library",
+    "software_type": "Compression Tool"
+  }
+}

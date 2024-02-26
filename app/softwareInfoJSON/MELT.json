@@ -1,0 +1,22 @@
+{
+    "software_name": "MELT",
+    "comprehensive_overview": "MELT (Mobile Element Locator Tool) is a software tool for detecting structural variants and mobile element insertions from next-generation sequencing data. It is particularly useful for identifying transposable element insertions in human genomes.",
+    "core_features": [
+        "Detection of structural variants",
+        "Identification of mobile element insertions",
+        "Analysis of transposable element insertions",
+        "Next-generation sequencing data processing"
+    ],
+    "general_tags": [
+        "structural variants",
+        "mobile element insertions",
+        "transposable elements",
+        "NGS data"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Structural variation analysis",
+        "software_class": "Bioinformatics",
+        "software_type": "NGS analysis"
+    }
+}

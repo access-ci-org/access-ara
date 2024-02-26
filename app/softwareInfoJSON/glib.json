@@ -1,0 +1,23 @@
+{
+    "software": "GLib",
+    "overview": "GLib is a core library that forms the foundation for the GTK, GNOME, and other software development projects. It provides data structure handling, portability, and APIs for many programming tasks, aiding in the development of robust applications.",
+    "core_features": [
+        "Data structure handling",
+        "Memory management utilities",
+        "File I/O functionality",
+        "Cross-platform compatibility",
+        "Thread support and utilities"
+    ],
+    "general_tags": [
+        "core library",
+        "software development",
+        "portability",
+        "threading"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Software Development",
+        "software_class": "Core Library",
+        "software_type": "Open Source"
+    }
+}

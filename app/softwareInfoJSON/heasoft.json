@@ -1,0 +1,20 @@
+{
+  "software name": "heasoft",
+  "comprehensive overview": "HEASoft (High Energy Astrophysics Software) is a software suite developed by NASA's High Energy Astrophysics Science Archive Research Center (HEASARC) for analyzing and processing data from high-energy astrophysics missions like Chandra and XMM-Newton.",
+  "core features": [
+    "Data analysis and processing tools for high-energy astrophysics data",
+    "Support for data reduction, modeling, and visualization",
+    "Integration with missions like Chandra and XMM-Newton"
+  ],
+  "general tags": [
+    "High-Energy Astrophysics",
+    "Data Analysis",
+    "NASA"
+  ],
+  "additional tags": {
+    "research discipline": "Astrophysics",
+    "research area": "High-Energy Astrophysics",
+    "software class": "Analysis Software",
+    "software type": "Astrophysics Tool"
+  }
+}

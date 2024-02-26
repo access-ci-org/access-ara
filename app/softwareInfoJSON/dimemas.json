@@ -1,0 +1,18 @@
+{
+    "software_name": "Dimemas",
+    "comprehensive_overview": "Dimemas is a performance simulation tool that helps users analyze the performance behavior of parallel applications. It provides a detailed simulation of the target architecture to help users understand the bottlenecks and optimize their parallel programs.",
+    "core_features": [
+        "Performance simulation of parallel applications",
+        "Detailed analysis of performance behavior",
+        "Simulation of target architecture",
+        "Identifying bottlenecks in parallel programs",
+        "Optimization of parallel programs"
+    ],
+    "general_tags": ["Performance Simulation", "Parallel Computing"],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Performance Analysis",
+        "software_class": "Performance Tools",
+        "software_type": "Simulation Tool"
+    }
+}

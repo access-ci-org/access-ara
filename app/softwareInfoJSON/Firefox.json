@@ -1,19 +1,12 @@
 {
     "software_name": "Firefox",
-    "overview": "Firefox is a free and open-source web browser developed by Mozilla. It provides a fast, secure, and customizable browsing experience with options for extensions, themes, and privacy controls. Firefox supports various operating systems and is known for its performance and user-centric features.",
-    "core_features": [
-        "Secure browsing",
-        "Customizable interface",
-        "Browser extensions",
-        "Privacy control"
-    ],
-    "general_tags": [
-        "Web browser",
-        "Open-source",
-        "Privacy features"
-    ],
-    "research_discipline": [],
-    "research_area": [],
-    "software_class": "Web browser",
-    "software_type": "Internet application"
+    "comprehensive_overview": "Firefox is a free and open-source web browser developed by Mozilla Foundation. It provides a secure, fast, and customizable browsing experience with features like tabbed browsing, privacy controls, bookmark management, and extensive add-on support.",
+    "core_features": ["Secure and customizable web browser", "Tabbed browsing", "Privacy controls and add-on support"],
+    "general_tags": ["Web browser", "Internet"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Web Browser",
+        "software_type": "Application"
+    }
 }

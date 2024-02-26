@@ -1,30 +1,12 @@
-I'll create a JSON output for GObject:
-
-```json
 {
     "software_name": "GObject",
-    "overview": "GObject is a fundamental object system library in the GNOME project. It provides a robust and efficient foundation for defining and implementing object-oriented principles in C and C++ applications, enabling object-oriented programming techniques and structures in GNOME software development.",
-    "core_features": [
-        "Object-oriented system",
-        "C/C++ application support",
-        "Object model implementation"
-    ],
-    "general_tags": [
-        "GNOME project",
-        "Object system library",
-        "Object-oriented programming"
-    ],
-    "research_discipline": [
-        "Computer science",
-        "Software development"
-    ],
-    "research_area": [
-        "Object-oriented design",
-        "Application development"
-    ],
-    "software_class": "Object system library",
-    "software_type": "Programming foundation tool"
+    "comprehensive_overview": "GObject is a fundamental and versatile object-oriented framework in the GLib library of GTK (GIMP Toolkit). It provides the core object system for building software components in C, offering features like dynamic typing, inheritance, properties, and signals for versatile programming.",
+    "core_features": ["Object-oriented framework in GLib", "Core object system for software components", "Dynamic typing, inheritance, properties, and signals"],
+    "general_tags": ["Object-oriented programming", "Software components"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Object-Oriented Framework",
+        "software_type": "Library"
+    }
 }
-``` 
-
-Let me know if you need more details or have any specific requirements!

@@ -1,0 +1,20 @@
+{
+  "software_name": "Caveman",
+  "comprehensive_overview": "Caveman is a computational algorithm used for identifying germline and somatic variants in cancer samples. It uses a Bayesian approach to accurately detect mutations in both tumor and normal tissues.",
+  "core_features": [
+    "Detection of germline and somatic variants",
+    "Bayesian approach for mutation detection",
+    "Works with tumor and normal tissue samples"
+  ],
+  "general_tags": [
+    "Variant detection",
+    "Cancer genomics",
+    "Mutation analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Genomics",
+    "research_area": "Cancer research",
+    "software_class": "Variant analysis",
+    "software_type": "Computational tool"
+  }
+}

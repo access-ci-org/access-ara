@@ -1,0 +1,23 @@
+{
+    "software": "DeepTools",
+    "overview": "DeepTools is a suite of tools for analyzing high-throughput sequencing data, especially from genomics and epigenomics experiments. It offers various utilities for generating publication-quality plots, statistics, and insights into genomic datasets.",
+    "core_features": [
+        "Quality control and filtering of NGS data",
+        "Visualization of sequencing results",
+        "Genome-wide data analysis tools",
+        "ChIP-seq and RNA-seq analysis",
+        "Interactive data exploration"
+    ],
+    "general_tags": [
+        "high-throughput sequencing",
+        "NGS data analysis",
+        "genomics",
+        "epigenomics"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "NGS Data Analysis",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Open Source"
+    }
+}

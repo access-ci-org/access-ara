@@ -1,0 +1,1011 @@
+Software,RP Name
+7-zip,OOKAMI
+Abaqus,"Stampede-2, DARWIN, Rockfish"
+abinit,"Bridges-2, Rockfish"
+Abseil,ACES
+ABySS,Bridges-2
+accessusage,"Expanse, Delta"
+ACTC,ACES
+adcirc,Stampede-2
+advisor,"Stampede-2, KyRIC"
+AI,Bridges-2
+aiohttp,ACES
+all-architectures,OOKAMI
+alpha-analysis,Rockfish
+AlphaFold,ACES
+alphafold-gpu,Rockfish
+alphapulldown,Rockfish
+amask,Stampede-2
+amber,"Bridges-2, Rockfish, Anvil"
+AMDuProf,"Expanse, Delta"
+anaconda,"Jetstream2, OOKAMI, Anvil, DARWIN, Bridges-2, Rockfish"
+anaconda3,"Expanse, ACES, Rockfish"
+anaconda3_cpu,Delta
+anaconda3_gpu,Delta
+anaconda3_mi100,Delta
+anaconda3_Rcpu,Delta
+AnnotSV,Rockfish
+ANSYS,"Stampede-2, Bridges-2, Rockfish"
+ANSYS-Fluent,DARWIN
+ant,ACES
+ANTLR,ACES
+aocc,"Expanse, OOKAMI, ACES, Delta"
+AOCC Compiler,Jetstream2
+AOCL,Bridges-2
+Apptainer,Jetstream2
+APR,ACES
+APR-util,ACES
+ArcGIS,DARWIN
+archspec,ACES
+aria2,Expanse
+arial2,Rockfish
+arm,OOKAMI
+arm-modules,OOKAMI
+armadillo,"ACES, Delta, Rockfish"
+arpack,Stampede-2
+arpack-ng,"Anvil, ACES"
+Arriba,Bridges-2
+Arrow,ACES
+asciinema,Bridges-2
+ASE,ACES
+aspect,Stampede-2
+aspera-cli,Rockfish
+Aspera-Connect,"Stampede-2, Rockfish"
+Aspherix,Rockfish
+at-spi2-atk,ACES
+at-spi2-core,ACES
+ATK,ACES
+atlas,Rockfish
+AUGUSTUS,Bridges-2
+Autoconf,ACES
+autoconf-2.69-gcc-9.3.0-u65r6re,KyRIC
+autoconf-archive-2019.01.06-gcc-9.3.0-lrequrs,KyRIC
+autodock,Rockfish
+Automake,ACES
+automake-1.16.3-gcc-9.3.0-gqwwc3j,KyRIC
+autotools,"Stampede-2, KyRIC, ACES"
+aws-cli,Anvil
+BamTools,"ACES, Bridges-2, Rockfish"
+banner,Delta
+basemap,Stampede-2
+basespace,Rockfish
+bazel,"ACES, Rockfish"
+bbftp,Anvil
+bcftools,"Bridges-2, Rockfish"
+bcl2fastq,Rockfish
+BeautifulSoup,ACES
+Bedops,Bridges-2
+bedtools,"Bridges-2, Rockfish"
+bedtools2,Rockfish
+berkeley-db-18.1.40-gcc-9.3.0-gdhsdtz,KyRIC
+BerkeleyGW,Rockfish
+binutils,ACES
+biocontainers,Stampede-2
+bioperl,"Stampede-2, Rockfish"
+biopp,Rockfish
+Biopython,ACES
+Bismark,Bridges-2
+bison,"OOKAMI, ACES"
+BLAST,"Stampede-2, Bridges-2, Rockfish"
+blast+,"OOKAMI, ACES"
+BLAT,Bridges-2
+Blender,ACES
+blis,"OOKAMI, Stampede-2, Anvil, ACES"
+bokeh,ACES
+Boost,"OOKAMI, Stampede-2, Anvil, KyRIC, ACES, Bridges-2, Rockfish"
+boost-mpi,Stampede-2
+Boost.MPI,ACES
+Boost.Python,ACES
+bowtie,Rockfish
+bowtie2,"Bridges-2, Rockfish"
+Brotli,ACES
+Brotli-python,ACES
+Brunsli,ACES
+BUSCO,Bridges-2
+bwa,"ACES, Bridges-2, Rockfish"
+bwa-mem,Rockfish
+bzip2,"Anvil, ACES, Rockfish"
+bzip2-1.0.8-gcc-9.3.0-mhfuqd4,KyRIC
+C,Bridges-2
+C++,Bridges-2
+cactus,Rockfish
+Caffe,"Stampede-2, Bridges-2"
+cairo,"ACES, Rockfish"
+canu,Stampede-2
+captum,ACES
+carp,Rockfish
+caveman,Rockfish
+caviar,Rockfish
+ccache,ACES
+ccl,KyRIC
+cdo,"ACES, Rockfish"
+cdsapi,ACES
+cellranger,Rockfish
+cellranger-atac,Rockfish
+cesm,Rockfish
+CESM-deps,ACES
+CFITSIO,ACES
+CGAL,ACES
+chapel,OOKAMI
+charliecloud,"ACES, Rockfish"
+Check,ACES
+CheckM,Bridges-2
+chemprop,ACES
+ChimeraX,ACES
+Circos,Bridges-2
+cisTEM,ACES
+Clang,ACES
+clck,KyRIC
+CliMetLab,ACES
+CLIP,ACES
+cluster-tools,OOKAMI
+cm-pmix3,OOKAMI
+CMake,"OOKAMI, Stampede-2, Anvil, KyRIC, ACES, Delta, Bridges-2, Rockfish"
+cmake-3.19.5-gcc-9.3.0-6hw3usg,KyRIC
+cmd,OOKAMI
+cmjob,"Expanse, OOKAMI"
+coinutils,Rockfish
+ColabFold,ACES
+Comp-D_MPI,Rockfish
+compiler,KyRIC
+compiler-rt,KyRIC
+compiler-rt32,KyRIC
+compiler32,KyRIC
+Comsol,DARWIN
+Conda,Bridges-2
+CoordgenLibs,ACES
+CP2K,"ACES, Bridges-2"
+CPE,OOKAMI
+CPE-nosve,OOKAMI
+cppy,ACES
+cryptsetup-2.3.1-gcc-9.3.0-bq4hfrl,KyRIC
+cuda,"Jetstream2, OOKAMI, ACES, Delta, Bridges-2, Rockfish"
+CUDAcore,ACES
+cuDF,ACES
+cudnn,"ACES, Delta, Rockfish"
+cue-login-env,"Expanse, Delta"
+cufflinks,Rockfish
+CuPy,ACES
+curl,"OOKAMI, Anvil, ACES, Rockfish"
+curl-7.74.0-gcc-9.3.0-e6rhv5y,KyRIC
+cutadapt,"Bridges-2, Rockfish"
+cuTENSOR,ACES
+Cython,ACES
+cython-blis,ACES
+dakota,"Stampede-2, Rockfish"
+dal,KyRIC
+dask,ACES
+DB,ACES
+DBus,ACES
+DCMTK,ACES
+DDT,"Stampede-2, Bridges-2"
+ddt_knl,Stampede-2
+ddt_skx,Stampede-2
+deal.ii,Bridges-2
+dealii,Stampede-2
+debugger,KyRIC
+deepdiff,ACES
+DeepLabCut,Rockfish
+deeptools,Stampede-2
+default,Delta
+default-environment,Expanse
+dev-utilities,KyRIC
+dftd4,Rockfish
+diffutils-3.7-gcc-9.3.0-sk5ev4k,KyRIC
+dill,ACES
+dimemas,KyRIC
+dm-tree,ACES
+dmtcp,Rockfish
+dnnl,KyRIC
+dnnl-cpu-gomp,KyRIC
+dnnl-cpu-iomp,KyRIC
+dnnl-cpu-tbb,KyRIC
+dorado,ACES
+dos2unix,Delta
+dot,OOKAMI
+double-conversion,ACES
+doxygen,"OOKAMI, ACES, Rockfish"
+dpct,KyRIC
+dpl,KyRIC
+dream3d,Rockfish
+DReAMM,Bridges-2
+Dsuite,Rockfish
+EasyBuild,"KyRIC, ACES"
+EasyBuild-aces,ACES
+EasyBuild-aces-myeb,ACES
+EasyBuild-aces-SCRATCH,ACES
+EasyBuild-aces-tmp,ACES
+ecBuild,ACES
+ecCodes,ACES
+eckit,Rockfish
+edgeR,Rockfish
+eigen,"Stampede-2, Anvil, ACES"
+einops,ACES
+elemental,Stampede-2
+elfutils,ACES
+elpa,"OOKAMI, ACES"
+emacs,"Anvil, Rockfish"
+ensembl-vep,Rockfish
+entrezdirect,Expanse
+ESMF,ACES
+expat,"ACES, Rockfish"
+expat-2.2.10-gcc-9.3.0-dola2tn,KyRIC
+expecttest,ACES
+extrae,KyRIC
+FASTA-Splitter,Bridges-2
+fastai,ACES
+FastANI,Bridges-2
+FASTQ-Splitter,Bridges-2
+FastQC,"Stampede-2, ACES, Bridges-2, Rockfish"
+FASTX Toolkit,Bridges-2
+fastx_toolkit,Stampede-2
+feh,Rockfish
+fenics,Rockfish
+ferret,Rockfish
+ffmpeg,"OOKAMI, Stampede-2, ACES, Rockfish"
+ffnvcodec,ACES
+FFTW,"Anvil, DARWIN, ACES, Delta, Rockfish"
+fftw-3.3.9-gcc-9.3.0-7ffoo22,KyRIC
+FFTW.MPI,ACES
+fftw2,Stampede-2
+FFTW3,"OOKAMI, Stampede-2, Bridges-2"
+file,ACES
+Firefox,"ACES, Rockfish"
+FLAC,ACES
+FLASh,Bridges-2
+Flask,ACES
+flatbuffers,ACES
+flatbuffers-python,ACES
+flex,"OOKAMI, ACES"
+FlexiBLAS,ACES
+fltk,"ACES, Rockfish"
+Fluent,Bridges-2
+FMS2,OOKAMI
+fontconfig,"ACES, Rockfish"
+Fortran,"DARWIN, Bridges-2"
+foss,ACES
+fosscuda,ACES
+freeglut,ACES
+freeipmi,OOKAMI
+freetype,"ACES, Rockfish"
+fribidi,"ACES, Rockfish"
+fujitsu,OOKAMI
+Funannotate,Bridges-2
+GAMESS,"Stampede-2, Bridges-2"
+GATK,"Stampede-2, Bridges-2, Rockfish"
+Gaussian,"Stampede-2, DARWIN, Bridges-2, Rockfish"
+gaussview,Rockfish
+gawk-5.1.0-gcc-9.3.0-is2xpxq,KyRIC
+gcc,"FASTER, Expanse, OOKAMI, Stampede-2, ACES, Delta, Bridges-2, Rockfish"
+gcc-10.2.0-gcc-9.3.0-prm4se2,KyRIC
+GCCcore,"ACES, Rockfish"
+gcccuda,ACES
+gdal,"ACES, Rockfish"
+gdb,Anvil
+gdbm-1.18.1-gcc-9.3.0-33qtrum,KyRIC
+Gdk-Pixbuf,ACES
+GDRCopy,ACES
+GeneMark-ES,Bridges-2
+gengetopt,Rockfish
+GeNT,Bridges-2
+geos,"OOKAMI, ACES, Rockfish"
+geos-chem,Rockfish
+gethost,OOKAMI
+gettext,"ACES, Rockfish"
+gettext-0.21-gcc-9.3.0-x4s52y3,KyRIC
+gfbf,ACES
+gh,Expanse
+Ghostscript,ACES
+giflib,ACES
+Git,"Expanse, OOKAMI, Stampede-2, ACES, Delta, Bridges-2, Rockfish"
+git-2.29.0-gcc-9.3.0-3xgg4ng,KyRIC
+git-annex,Rockfish
+git-lfs,"Expanse, ACES, Rockfish"
+GL2PS,ACES
+GLFW,ACES
+glib,"ACES, Rockfish"
+GLM,ACES
+glpk,"ACES, Rockfish, Rockfish"
+gmp,"OOKAMI, Anvil, ACES, Rockfish"
+gmp-6.1.2-gcc-9.3.0-hpbiokz,KyRIC
+gmt,Stampede-2
+GNU Parallel,Bridges-2
+gnu-parallel,OOKAMI
+gnu9,KyRIC
+gnuparallel,Stampede-2
+gnuplot,"OOKAMI, ACES, Rockfish"
+gnutls,Rockfish
+go,"OOKAMI, ACES, Rockfish"
+go-1.16-gcc-9.3.0-ajolq4h,KyRIC
+go-bootstrap-1.4-bootstrap-20171003-gcc-9.3.0-wjszkk6,KyRIC
+GObject-Introspection,ACES
+gompi,ACES
+gompic,ACES
+googletest,ACES
+gpaw,"Stampede-2, Anvil"
+gperf,"OOKAMI, ACES, Rockfish"
+gperftools,"OOKAMI, ACES"
+gpustat,"ACES, Rockfish"
+Graphene,ACES
+GraphicsMagick,ACES
+graphite2,ACES
+Greenlet,ACES
+groff,ACES
+GROMACS,"OOKAMI, Stampede-2, DARWIN, ACES, Delta, Bridges-2, Rockfish"
+gromacs-2021.4-gcc-9.3.0-odn2sfc,KyRIC
+gsl,"Stampede-2, Anvil, ACES, Rockfish"
+GST-plugins-bad,ACES
+GST-plugins-base,ACES
+GStreamer,ACES
+GTK2,ACES
+GTK3,ACES
+GTK4,ACES
+gts,Rockfish
+gulp,Stampede-2
+Guppy,Bridges-2
+gurobi,"DARWIN, Bridges-2, Rockfish"
+gzip,ACES
+h5py,ACES
+hadoop,Anvil
+harfbuzz,"ACES, Rockfish"
+hashdeep,Bridges-2
+hdf,"Anvil, ACES"
+HDF5,"OOKAMI, Stampede-2, Anvil, ACES, Delta, Bridges-2, Rockfish"
+heasoft,Rockfish
+help2man,ACES
+helpers,Rockfish
+hh-suite,"ACES, Rockfish"
+Highway,ACES
+hiredis,ACES
+HISAT2,Bridges-2
+hmmer,"ACES, Bridges-2, Rockfish"
+Homer,Bridges-2
+hoomd,Stampede-2
+Horovod,ACES
+HPC Toolkit,Jetstream2
+HPCC,DARWIN
+hpctoolkit,"Stampede-2, Anvil"
+HPN-SSH,Bridges-2
+hspice,Anvil
+htop,"OOKAMI, Stampede-2, Delta"
+htslib,"ACES, Bridges-2, Rockfish, Rockfish"
+hwloc,"OOKAMI, Anvil, KyRIC, ACES, Rockfish"
+hwloc-2.4.1-gcc-9.3.0-6l4b2ui,KyRIC
+Hyperopt,ACES
+hypothesis,ACES
+hypre,"Stampede-2, ACES, Rockfish"
+ibrun,Rockfish
+iCommands,Bridges-2
+ICU,ACES
+icu4c-67.1-gcc-9.3.0-rxzi3va,KyRIC
+idev,Stampede-2
+idl,Stampede-2
+igv,Rockfish
+iimpi,ACES
+imageio,ACES
+ImageJ,ACES
+ImageMagick,"OOKAMI, ACES, Delta, Rockfish"
+Imath,ACES
+imb,KyRIC
+imbalanced-learn,ACES
+imkl,ACES
+imkl-FFTW,ACES
+Imlib2,Rockfish
+impi,"Stampede-2, ACES"
+Infernal,Bridges-2
+init_opencl,KyRIC
+inspector,KyRIC
+intel,"Expanse, OOKAMI, Stampede-2, KyRIC, ACES, Rockfish"
+Intel OneAPI,Jetstream2
+Intel_AI_toolkit,Delta
+intel_ipp_ia32,KyRIC
+intel_ipp_intel64,KyRIC
+intel_ippcp_ia32,KyRIC
+intel_ippcp_intel64,KyRIC
+intel-compilers,ACES
+intel-mkl,"Anvil, Rockfish"
+intel-oneapi-advisor,Delta
+intel-oneapi-compilers,Delta
+intel-oneapi-mkl,"Anvil, Delta"
+intel-oneapi-tbb,Anvil
+intltool,ACES
+ipmitool,OOKAMI
+IPython,ACES
+irods,Stampede-2
+ISA-L,ACES
+itac,"Stampede-2, KyRIC"
+ITK,ACES
+jags,Rockfish
+jarvis-tools,Rockfish
+jasmine,Rockfish
+jasper,"ACES, Rockfish"
+java,"Jetstream2, DARWIN, ACES, Bridges-2, Rockfish, Rockfish"
+jax,ACES
+jbigkit,ACES
+jdftx,Rockfish
+jellyfish,Rockfish
+json-c,ACES
+json-c-0.13.1-gcc-9.3.0-mpcyruj,KyRIC
+JsonCpp,ACES
+julia,"OOKAMI, ACES, Bridges-2, Rockfish"
+jupyter,"Jetstream2, Anvil, Bridges-2"
+jupyterhub,"Jetstream2, Anvil"
+jupyterlab,"Jetstream2, Rockfish"
+KaHIP,ACES
+kalign,"ACES, Rockfish"
+Keras,Bridges-2
+kim-api,ACES
+kineto,ACES
+kokkos,"OOKAMI, Delta"
+Kracken2,Bridges-2
+kraken2,Rockfish
+kyric,KyRIC
+LAME,ACES
+LAMMPS,"OOKAMI, Stampede-2, DARWIN, ACES, Delta, Bridges-2, Rockfish"
+lammps_gpu,Rockfish
+lammps_plumed,Rockfish
+LAPACK,"OOKAMI, DARWIN"
+LaPlace,DARWIN
+LASSO-Python,ACES
+launcher,"Stampede-2, Anvil"
+lazygit,Bridges-2
+Leptonica,ACES
+LERC,ACES
+lftp,Rockfish
+libaec,ACES
+libaio-0.3.110-gcc-9.3.0-n4f6zic,KyRIC
+libarchive,ACES
+libbsd-0.10.0-gcc-9.3.0-3feqfmu,KyRIC
+libcap-devel,OOKAMI
+libcerf,ACES
+libdap,ACES
+libdeflate,ACES
+libdrm,ACES
+libedit-3.1-20191231-gcc-9.3.0-vx2pxkm,KyRIC
+libepoxy,ACES
+libevent,"ACES, Rockfish"
+libevent-2.1.12-gcc-9.3.0-3cujlr5,KyRIC
+libfabric,"OOKAMI, Stampede-2, Anvil, ACES, Delta, Rockfish"
+libffi,"OOKAMI, ACES, Delta"
+libffi-3.3-gcc-9.3.0-k4ehr4i,KyRIC
+libflame,"Stampede-2, Anvil"
+libgd,"OOKAMI, ACES, Rockfish"
+libgeotiff,ACES
+libgit2,ACES
+libGLU,ACES
+libglvnd,"ACES, Rockfish"
+libgpg-error-1.37-gcc-9.3.0-aezalnn,KyRIC
+libgpuarray,ACES
+libiconv,"Anvil, ACES"
+libiconv-1.16-gcc-9.3.0-rh6ayrz,KyRIC
+libidn2-2.3.0-gcc-9.3.0-aqhzlnl,KyRIC
+libint,"ACES, Rockfish"
+libjpeg,Rockfish
+libjpeg-turbo,ACES
+libmesh,"Stampede-2, Anvil, Rockfish"
+libnotify,OOKAMI
+libogg,ACES
+libopus,ACES
+libpam,Rockfish
+libpciaccess,"ACES, Rockfish"
+libpciaccess-0.16-gcc-9.3.0-fcifgo6,KyRIC
+libpng,"OOKAMI, ACES, Rockfish"
+libreadline,"ACES, Rockfish"
+librsvg,"ACES, Rockfish"
+libseccomp-2.3.3-gcc-9.3.0-qbxca3c,KyRIC
+libsigsegv-2.12-gcc-9.3.0-ieiqle7,KyRIC
+libsndfile,ACES
+libsodium,"ACES, Rockfish"
+libszip,Anvil
+libtiff,"Anvil, ACES, Rockfish"
+libtirpc,"ACES, Delta, Rockfish"
+libtool,ACES
+libtool-2.4.6-gcc-9.3.0-nercunn,KyRIC
+libunistring-0.9.10-gcc-9.3.0-ht5mbj6,KyRIC
+libunwind,"OOKAMI, ACES"
+libv8,Anvil
+libvorbis,ACES
+libvori,ACES
+libwebp,ACES
+libx11,"Anvil, Rockfish"
+libxc,"OOKAMI, ACES, Rockfish"
+libxcb,Rockfish
+libXinerama,Rockfish
+libxkbcommon,Rockfish
+libxml2,"Anvil, ACES, Rockfish"
+libxml2-2.9.10-gcc-9.3.0-pwkeovr,KyRIC
+libxslt,ACES
+libxsmm,"ACES, Rockfish"
+libyaml,ACES
+lifelines,ACES
+likwid,"OOKAMI, KyRIC"
+linaro,OOKAMI
+linasm,Rockfish
+LittleCMS,ACES
+lldb,OOKAMI
+LLVM,"OOKAMI, ACES, Delta, Rockfish"
+LMDB,ACES
+lmod,"Stampede-2, ACES"
+localres,Rockfish
+loki,Stampede-2
+lowcharts,Bridges-2
+LS-DYNA,"Stampede-2, Rockfish"
+LSMS,Bridges-2
+ltools,Stampede-2
+lua,"Expanse, OOKAMI, ACES"
+luatools,Stampede-2
+Lumerical,DARWIN
+lvm2-2.03.05-gcc-9.3.0-nkbdv7u,KyRIC
+lxml,ACES
+lz4,"OOKAMI, ACES"
+M4,ACES
+m4-1.4.18-gcc-9.3.0-ry5xd5i,KyRIC
+maeparser,ACES
+Magics,ACES
+magma,ACES
+make,"KyRIC, ACES"
+makeinfo,ACES
+Mako,ACES
+mamba,Rockfish
+map_skx,Stampede-2
+MARCC_intel,Rockfish
+MARS,Rockfish
+Mathematica,"Stampede-2, DARWIN, Rockfish"
+MATIO,ACES
+MATLAB,"Jetstream2, Expanse, OOKAMI, Stampede-2, DARWIN, Bridges-2, Rockfish"
+matlab_unlicensed,Delta
+Matplotlib,"DARWIN, ACES"
+maven,Rockfish
+MCell,Bridges-2
+mcr,Stampede-2
+mdanalysis,Rockfish
+meep,Stampede-2
+megalodon,Rockfish
+MELT,Rockfish
+MEME Suite,Bridges-2
+MemoryViewer,ACES
+mercurial,"Expanse, OOKAMI"
+Mesa,"ACES, Rockfish, Rockfish"
+Meson,ACES
+Methylpy,Bridges-2
+metis,"Stampede-2, ACES, Rockfish"
+Miniconda3,ACES
+MKL,"KyRIC, Bridges-2"
+mkl32,KyRIC
+mkmod,Stampede-2
+modtree,Delta
+module-git,OOKAMI
+module-info,OOKAMI
+MONAI,ACES
+Mongo,Jetstream2
+monitor,Anvil
+morpheus,Rockfish
+motif,ACES
+mpc,"Anvil, Rockfish"
+mpc-1.1.0-gcc-9.3.0-vqwlz4l,KyRIC
+mpfr,"OOKAMI, Anvil, ACES, Rockfish"
+mpfr-4.0.2-gcc-9.3.0-qfh5u7a,KyRIC
+MPI,"KyRIC, DARWIN, Bridges-2"
+Mpi4py,"OOKAMI, DARWIN, ACES"
+mpiBench,Rockfish
+mpich,"OOKAMI, KyRIC, Delta"
+msrsync,Rockfish
+mummer,Rockfish
+mumps,"Stampede-2, ACES"
+MVAPICH,Bridges-2
+mvapich-3.0b_s11,Delta
+mvapich2,"OOKAMI, KyRIC"
+mvapich2-3.0a_s11,Delta
+mysql,"Jetstream2, Rockfish"
+NAMD,"OOKAMI, Stampede-2, DARWIN, Bridges-2, Rockfish"
+namd3,Delta
+nanopolish,Rockfish
+NASM,ACES
+ncbi-vdb,ACES
+NCCL,ACES
+ncdf4,Rockfish
+Ncdu,"OOKAMI, Bridges-2, Rockfish"
+ncl_ncarg,Stampede-2
+nco,"Stampede-2, ACES, Rockfish"
+ncurses,"OOKAMI, ACES, Rockfish"
+ncurses-6.2-gcc-9.3.0-mntyciy,KyRIC
+ncview,"Stampede-2, Anvil, Bridges-2, Rockfish"
+netcdf,"OOKAMI, Stampede-2, Anvil, ACES"
+netcdf-c,"Anvil, Delta, Rockfish"
+netCDF-C++4,ACES
+netcdf-cxx4,Anvil
+netcdf-fortran,"Anvil, ACES, Delta, Rockfish"
+netcdf4-python,ACES
+netlib-lapack,"Anvil, Rockfish"
+netlib-scalapack,Rockfish
+netpbm,Rockfish
+nettle,ACES
+networkx,ACES
+nextflow,"Bridges-2, Rockfish, Rockfish"
+ngmlr,Rockfish
+NiBabel,ACES
+ninja,"OOKAMI, ACES"
+nlohmann_json,ACES
+NLopt,ACES
+nodejs,ACES
+NSPR,ACES
+NSS,ACES
+nsync,ACES
+null,OOKAMI
+numactl,"Anvil, ACES, Rockfish"
+numactl-2.0.14-gcc-9.3.0-x4anv2g,KyRIC
+numba,ACES
+numpy,Bridges-2
+NVHPC,"ACES, Delta, Bridges-2, Rockfish"
+nvhpc_latest,Delta
+nvhpc-gcc,Rockfish
+nvidia,OOKAMI
+NVIDIA Compiler,Jetstream2
+nvidia-container-cli,ACES
+nvidia-system-monitor-qt,Rockfish
+nvitop,Rockfish
+NVSHMEM,ACES
+nvtop,Delta
+NWCHEM,"Stampede-2, Bridges-2"
+oclfpga,KyRIC
+Octave,"OOKAMI, Bridges-2"
+ohpc,KyRIC
+omb,KyRIC
+ondemand,"Bridges-2, Rockfish"
+ondemand-vnc,Rockfish
+oneapi_rk,Stampede-2
+oneTBB,Rockfish
+ont-guppy,Rockfish
+ooops,Stampede-2
+openbabel,"ACES, Rockfish"
+OpenBLAS,"OOKAMI, Anvil, ACES, Bridges-2, Rockfish"
+openblas-0.3.13-gcc-9.3.0-mfzw4tk,KyRIC
+opencarp,Rockfish
+OpenCV,"ACES, Bridges-2"
+OpenEXR,ACES
+openfoam,"OOKAMI, Stampede-2, DARWIN, ACES, Bridges-2"
+openfoam-org,Rockfish
+OpenFold,ACES
+openjdk,"Anvil, Rockfish"
+openjdk-11.0.8_10-gcc-9.3.0-5ki5g5i,KyRIC
+OpenJPEG,ACES
+openldap,OOKAMI
+openmm,"ACES, Rockfish"
+OpenMPI,"Expanse, OOKAMI, ACES, Bridges-2, Rockfish"
+openmpi-4.0.4-gcc-9.3.0-ejhqibc,KyRIC
+openmpi-4.0.5-gcc-9.3.0-ylywa5h,KyRIC
+openmpi-5.0_beta,Delta
+openmpi4,KyRIC
+openms,Rockfish
+OpenPGM,ACES
+OpenSceneGraph,ACES
+opensees,"Stampede-2, Rockfish"
+openssh-8.4p1-gcc-9.3.0-tp56hha,KyRIC
+openssl,"OOKAMI, ACES"
+openssl-1.1.1j-gcc-9.3.0-cx56ot2,KyRIC
+opensycl,OOKAMI
+Optuna,ACES
+orca,"Bridges-2, Rockfish"
+os,KyRIC
+ospray,Stampede-2
+osu-micro-benchmarks,Delta
+own,Rockfish
+p3dfft,Stampede-2
+p4est,Stampede-2
+p7zip,OOKAMI
+pam-devel,Rockfish
+pandoc,Rockfish
+pango,"ACES, Rockfish"
+panoply,Anvil
+papi,"OOKAMI, Stampede-2, Anvil, KyRIC"
+Parabricks,ACES
+parafly,Anvil
+parallel,"Expanse, Delta, Rockfish"
+parallel-netcdf,"Stampede-2, Anvil, Delta, Rockfish"
+Paraview,"Stampede-2, DARWIN, ACES, Delta, Rockfish"
+paraview-osmesa,Stampede-2
+parflow,Rockfish
+parmetis,"ACES, Delta, Rockfish"
+parmetis_petsc,Stampede-2
+pax-utils,OOKAMI
+PCRE,ACES
+PCRE2,ACES
+pcre2-10.35-gcc-9.3.0-wgo6kna,KyRIC
+pdtoolkit,"Stampede-2, KyRIC"
+pegasus,Rockfish
+perl,"ACES, Bridges-2, Rockfish"
+perl-5.32.1-gcc-9.3.0-szd4bmj,KyRIC
+petsc,"OOKAMI, Stampede-2, Anvil, ACES, Delta"
+petsc4py,Stampede-2
+PGI,Bridges-2
+phdf5,Stampede-2
+PHYLIP,Bridges-2
+physics-tenpy,ACES
+picard,"Bridges-2, Rockfish"
+pigz,Expanse
+Pillow,ACES
+Pillow-SIMD,ACES
+pixman,"ACES, Rockfish"
+pkg-config,ACES
+pkgconf,"ACES, Rockfish"
+pkgconf-1.7.3-gcc-9.3.0-djk4uwd,KyRIC
+pkgconfig,ACES
+plink,Rockfish
+plotly.py,ACES
+PLUMED,"ACES, Delta, Bridges-2, Rockfish"
+PMIx,"KyRIC, ACES, Rockfish, Rockfish"
+pnetCDF,"Stampede-2, ACES, Bridges-2"
+pocl,ACES
+polyfun,Rockfish
+poppler,"ACES, Rockfish"
+popt-1.16-gcc-9.3.0-ijd34o6,KyRIC
+posix2ime,Delta
+Postgresql,Jetstream2
+POV-Ray,ACES
+Prodigal,Bridges-2
+proj,"ACES, Rockfish"
+prokka,"Bridges-2, Rockfish"
+protobuf,"Anvil, ACES"
+protobuf-python,ACES
+prun,KyRIC
+pwanalyzer,OOKAMI
+py-cython-0.29.21-gcc-9.3.0-u73np4p,KyRIC
+py-netcdf4,Rockfish
+py-setuptools-50.3.2-gcc-9.3.0-hrhyt55,KyRIC
+py3Dmol,ACES
+pybind11,"Stampede-2, ACES"
+PyCairo,ACES
+PyCUDA,ACES
+pydantic,ACES
+pydicom,ACES
+PyGObject,ACES
+pylauncher,Stampede-2
+pyRosetta,Rockfish
+Pysam,ACES
+pytesseract,ACES
+pytest,ACES
+pytest-xdist,ACES
+PYTHIA,ACES
+Python,"OOKAMI, DARWIN, ACES, Delta, Rockfish"
+python_cacher,Stampede-2
+python-3.8.8-gcc-9.3.0-55y3cuq,KyRIC
+Python-Anaconda,DARWIN
+Python-htseq,DARWIN
+python2,Stampede-2
+python3,"OOKAMI, Stampede-2"
+python37,OOKAMI
+pyTorch,"OOKAMI, ACES, Rockfish"
+PyTorch-Geometric,ACES
+PyTorch-Lightning,ACES
+PyYAML,ACES
+qchem,Stampede-2
+qd,OOKAMI
+qe,Rockfish
+qemu,Anvil
+Qhull,ACES
+qiime2,Rockfish
+qmn,Rockfish
+qt,"Anvil, Rockfish"
+qt4,Stampede-2
+qt5,"Stampede-2, ACES"
+Quantum Espresso,Bridges-2
+quantum-espresso,OOKAMI
+QuantumATK,DARWIN
+QuantumEspresso,OOKAMI
+r,"Jetstream2, OOKAMI, DARWIN, ACES, Bridges-2, Rockfish"
+R Studio,Jetstream2
+R_tamu,ACES
+r-4.0.4-gcc-9.3.0-y4fafhe,KyRIC
+r-raster,Rockfish
+r-sva,Rockfish
+r-textshaping,Rockfish
+RapidJSON,ACES
+RAPIDS,Bridges-2
+RAxML,Bridges-2
+Rclone,"Expanse, OOKAMI, Bridges-2"
+RDFlib,ACES
+RDKit,ACES
+RE2,ACES
+re2c,ACES
+readline,OOKAMI
+readline-8.0-gcc-9.3.0-ek27n5r,KyRIC
+readline-devel,OOKAMI
+Redis,ACES
+redis-py,ACES
+referencelapack,Stampede-2
+ReFrame,ACES
+relion,Rockfish
+remora,"Stampede-2, Rockfish"
+rhtslib,Rockfish
+rising,ACES
+rmats-turbo,Rockfish
+RNAview,Bridges-2
+rocm,Anvil
+ROOT,ACES
+rosetta,Stampede-2
+rsamtools,Rockfish
+rsem,Rockfish
+Rstats,Stampede-2
+RstatsPackages,Stampede-2
+rstudio,"Stampede-2, Rockfish"
+RstudioDesktop,Stampede-2
+Ruby,Rockfish
+rust,"OOKAMI, ACES, Rockfish"
+SAMtools,"Stampede-2, ACES, Bridges-2, Rockfish"
+sanitytool,Stampede-2
+ScaFaCoS,ACES
+ScaLAPACK,"OOKAMI, DARWIN, ACES"
+scalasca,"OOKAMI, KyRIC"
+scikit-build,ACES
+scikit-cuda,ACES
+scikit-image,ACES
+Scikit-learn,"ACES, Bridges-2"
+scipy,Bridges-2
+SciPy-bundle,ACES
+SCons,ACES
+scorep,KyRIC
+SCOTCH,ACES
+screen,Rockfish
+SDL2,ACES
+SentencePiece,ACES
+Serf,ACES
+settarg,"Stampede-2, ACES"
+seurat,Rockfish
+shadow-4.7-gcc-9.3.0-2hjnrcg,KyRIC
+SHAP,ACES
+shared,OOKAMI
+Shiny,Jetstream2
+siesta,"OOKAMI, Stampede-2"
+silo,"Stampede-2, Rockfish"
+singularity,"Jetstream2, OOKAMI, DARWIN, Bridges-2, Rockfish"
+singularity-3.7.2-gcc-9.3.0-gpxljgj,KyRIC
+singularitypro,Expanse
+sionlib,KyRIC
+SIRfindeR,Rockfish
+slepc,"Stampede-2, ACES"
+slurm,"Expanse, OOKAMI, Rockfish"
+slurm-env,Delta
+snakemake,Rockfish
+snappy,ACES
+souporcell,Rockfish
+spack,OOKAMI
+spaCy,ACES
+SPAdes,"Bridges-2, Rockfish"
+Spark,Bridges-2
+spdlog,OOKAMI
+spglib,ACES
+spglib-python,ACES
+spython,ACES
+sqlite,"Anvil, ACES, Rockfish"
+sqlite-3.34.0-gcc-9.3.0-k5dhzbj,KyRIC
+squashfs-4.4-gcc-9.3.0-kfis3v6,KyRIC
+SRA toolkit,Bridges-2
+SRA-Toolkit,ACES
+sra-tools,Rockfish
+sratoolkit,"Expanse, Stampede-2"
+STAR,Rockfish
+STAR Aligner,Bridges-2
+STAR-Fusion,Bridges-2
+statsmodels,ACES
+subversion,"Expanse, Anvil, ACES, Delta, Rockfish"
+suitesparse,"Stampede-2, ACES"
+sundials,"Stampede-2, ACES, Rockfish"
+superlu,Stampede-2
+SuperLU_DIST,ACES
+superlu_seq,Stampede-2
+superlu-dist,Rockfish
+swig,"Stampede-2, Anvil, ACES, Rockfish"
+swr,Stampede-2
+symphony,Rockfish
+synthcity,ACES
+szip,"ACES, Rockfish"
+tabix,Rockfish
+TACC,Stampede-2
+tacc_tips,Stampede-2
+tacc-apptainer,Stampede-2
+tacc-singularity,Stampede-2
+tar-1.32-gcc-9.3.0-nne6lsp,KyRIC
+TAU,"OOKAMI, Stampede-2, KyRIC, DARWIN"
+tbb,KyRIC
+tbb32,KyRIC
+Tcl,"ACES, Rockfish, Rockfish"
+tcl-intel,Rockfish
+tcsh,ACES
+Tecplot,DARWIN
+TELEMAC-MASCARET,DARWIN
+template,OOKAMI
+tensorboard,ACES
+tensorboardX,ACES
+tensorflow,"DARWIN, ACES, Bridges-2, Rockfish"
+TensorRT,ACES
+tesseract,ACES
+texinfo,Anvil
+texlive,"Stampede-2, Anvil, Rockfish"
+Theano,"ACES, Bridges-2"
+TIGER,Bridges-2
+time,ACES
+tk,"Anvil, ACES, Rockfish"
+tk-intel,Rockfish
+Tkinter,ACES
+tmux,"ACES, Bridges-2"
+torchsampler,ACES
+torchtext,ACES
+torchvision,ACES
+totalview,"Anvil, Rockfish"
+tqdm,ACES
+transfig,Bridges-2
+trilinos,"Stampede-2, ACES, Rockfish"
+trim_galore,Stampede-2
+trimmomatic,Rockfish
+Trinity,Bridges-2
+tRNAscan-se,Bridges-2
+trng,Stampede-2
+typing-extensions,ACES
+UCC,ACES
+UCC-CUDA,ACES
+UCX,"Expanse, OOKAMI, Anvil, KyRIC, ACES, Rockfish"
+UCX-CUDA,ACES
+udunits,"Stampede-2, Anvil, ACES, Rockfish"
+udunits2,Anvil
+umfpack,Stampede-2
+UnZip,ACES
+utf8proc,ACES
+util-linux,"OOKAMI, ACES"
+util-linux-2.36-gcc-9.3.0-otku36t,KyRIC
+util-linux-uuid-2.36-gcc-9.3.0-syp6lh5,KyRIC
+util-macros-1.19.1-gcc-9.3.0-cpxnkry,KyRIC
+VALET,DARWIN
+valgrind,"Stampede-2, Anvil, KyRIC, Rockfish"
+VASP,"DARWIN, Bridges-2"
+VCF2MAF,Bridges-2
+vcftools,"Bridges-2, Rockfish"
+velocyto,Rockfish
+vim,Rockfish
+VisiData,Bridges-2
+Visit,"OOKAMI, Stampede-2, Delta, Bridges-2"
+vmd,"Stampede-2, ACES, Rockfish"
+Voro++,ACES
+vpl,KyRIC
+vscodeserver,Rockfish
+vtk,"Stampede-2, ACES"
+VTune,"Stampede-2, KyRIC, ACES, Bridges-2"
+wannier90,Rockfish
+Wayland,ACES
+WebProxy,ACES
+westpa,Delta
+WIEN2k,Bridges-2
+WRF,"DARWIN, ACES"
+wxWidgets,ACES
+X11,"ACES, Rockfish"
+x264,ACES
+x265,ACES
+xalt,"Stampede-2, Rockfish"
+xarray,ACES
+xclock,Delta
+Xerces-C++,ACES
+Xfig,Bridges-2
+XGBoost,ACES
+XML-LibXML,ACES
+xorg-macros,ACES
+xpdf,Rockfish
+xpmem,OOKAMI
+xprop,ACES
+xtb,Rockfish
+xv,Rockfish
+Xvfb,ACES
+xxd,ACES
+XZ,"ACES, Rockfish"
+xz-5.2.5-gcc-9.3.0-q5425k6,KyRIC
+YACS,ACES
+yaml,OOKAMI
+Yasm,ACES
+Z3,ACES
+zarr,ACES
+ZeroMQ,ACES
+Zip,ACES
+zlib,"Anvil, ACES, Rockfish"
+zlib-1.2.11-gcc-9.3.0-mdobuge,KyRIC
+Zoltan,"Stampede-2, Bridges-2"
+zsh,"OOKAMI, Rockfish"
+zstd,"Anvil, ACES"
+zstd-1.4.5-gcc-9.3.0-46avrcd,KyRIC

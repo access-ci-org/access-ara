@@ -1,0 +1,20 @@
+{
+  "software": "Shadow",
+  "comprehensive_overview": "Shadow is a network simulation tool used for modeling, testing, and analyzing complex network infrastructures and protocols. It allows researchers and network engineers to emulate various network scenarios, evaluate performance, and study the behavior of networks under different conditions.",
+  "core_features": [
+    "Network simulation",
+    "Protocol testing",
+    "Performance analysis"
+  ],
+  "general_tags": [
+    "networking",
+    "simulation tool",
+    "protocol analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Networking",
+    "software_class": "Simulation Tool",
+    "software_type": "Network Analysis"
+  }
+}

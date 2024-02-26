@@ -1,0 +1,21 @@
+{
+  "software_name": "OpenJDK",
+  "comprehensive_overview": "OpenJDK (Open Java Development Kit) is a free and open-source implementation of the Java Platform, Standard Edition. It provides the core libraries for the Java programming language, as well as the Java Virtual Machine (JVM), and various tools needed for Java development.",
+  "core_features": [
+    "Free and open-source",
+    "Implements Java SE specifications",
+    "Includes Java libraries and JVM",
+    "Comes with development tools"
+  ],
+  "general_tags": [
+    "Java",
+    "Development",
+    "Open-source"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Programming",
+    "software_class": "Development Tools",
+    "software_type": "Compiler/Interpreter"
+  }
+}

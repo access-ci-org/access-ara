@@ -1,0 +1,20 @@
+{
+  "software": "TensorFlow",
+  "comprehensive_overview": "TensorFlow is an open-source machine learning framework developed by Google for building and training neural networks. It offers a comprehensive ecosystem of tools, libraries, and community resources for developing machine learning models, deep learning applications, and artificial intelligence solutions.",
+  "core_features": [
+    "Neural network support",
+    "Deep learning capabilities",
+    "Model training"
+  ],
+  "general_tags": [
+    "machine learning",
+    "neural networks",
+    "deep learning"
+  ],
+  "additional_tags": {
+    "research_discipline": "Artificial Intelligence",
+    "research_area": "Machine Learning",
+    "software_class": "Framework",
+    "software_type": "Machine Learning"
+  }
+}

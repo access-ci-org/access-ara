@@ -1,0 +1,20 @@
+{
+  "software": "TensorBoard",
+  "comprehensive_overview": "TensorBoard is a visualization toolkit provided with TensorFlow for monitoring and visualizing various aspects of machine learning models and data. It offers interactive dashboards for tracking training metrics, visualizing computational graphs, and analyzing model performance and behavior.",
+  "core_features": [
+    "Visualization tools",
+    "Metrics tracking",
+    "Graph visualization"
+  ],
+  "general_tags": [
+    "machine learning",
+    "visualization",
+    "model monitoring"
+  ],
+  "additional_tags": {
+    "research_discipline": "Artificial Intelligence",
+    "research_area": "Machine Learning",
+    "software_class": "Tool",
+    "software_type": "Visualization Toolkit"
+  }
+}

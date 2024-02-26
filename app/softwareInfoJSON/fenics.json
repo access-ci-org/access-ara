@@ -1,0 +1,23 @@
+{
+    "software": "FEniCS",
+    "overview": "FEniCS is an automated finite element method (FEM) framework designed for solving partial differential equations (PDEs) numerically. It provides a high-level Python interface for defining and solving complex FEM problems with efficiency and flexibility.",
+    "core_features": [
+        "Automated FEM discretization",
+        "Solving differential equations using variational forms",
+        "High-level Python API",
+        "Support for complex simulation problems",
+        "Integration with external solvers"
+    ],
+    "general_tags": [
+        "finite element method",
+        "partial differential equations",
+        "scientific computing",
+        "Python interface"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computational Science",
+        "research_area": "Finite Element Methods",
+        "software_class": "Simulation Framework",
+        "software_type": "Open Source"
+    }
+}

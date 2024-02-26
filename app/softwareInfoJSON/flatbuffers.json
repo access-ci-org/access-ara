@@ -1,0 +1,23 @@
+{
+    "software": "FlatBuffers",
+    "overview": "FlatBuffers is an efficient cross-platform serialization library for creating compact data representations that can be accessed with minimal parsing overhead. Developed by Google, it is used for data serialization and communication in various applications and systems.",
+    "core_features": [
+        "Efficient data serialization",
+        "Compact binary data format",
+        "Support for zero-copy deserialization",
+        "Schema definition for data structures",
+        "Cross-platform compatibility"
+    ],
+    "general_tags": [
+        "data serialization",
+        "compact data representation",
+        "cross-platform communication",
+        "schema-based serialization"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Data Serialization",
+        "software_class": "Serialization Library",
+        "software_type": "Open Source"
+    }
+}

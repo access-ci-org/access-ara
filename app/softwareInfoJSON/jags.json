@@ -1,0 +1,20 @@
+{
+  "software name": "JAGS",
+  "comprehensive overview": "JAGS (Just Another Gibbs Sampler) is a software for Bayesian data analysis that allows users to specify complex Bayesian models and perform Markov Chain Monte Carlo (MCMC) sampling to obtain posterior distributions of model parameters. It is widely used in statistical research and data analysis.",
+  "core features": [
+    "Bayesian data analysis using MCMC sampling",
+    "Specification of complex Bayesian models",
+    "Estimation of posterior distributions of model parameters"
+  ],
+  "general tags": [
+    "Bayesian Analysis",
+    "MCMC Sampling",
+    "Statistical Software"
+  ],
+  "additional tags": {
+    "research discipline": "Statistics",
+    "research area": "Bayesian Inference",
+    "software class": "Analysis Software",
+    "software type": "Bayesian Tool"
+  }
+}

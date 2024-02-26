@@ -1,0 +1,12 @@
+{
+  "software_name": "pcre2",
+  "comprehensive_overview": "PCRE2 is a library that implements Perl-compatible regular expressions. It is a reimplementation of the original PCRE library to provide better performance and a smaller memory footprint.",
+  "core_features": "1. Support for Perl-compatible regular expressions\n2. Improved performance compared to PCRE\n3. Smaller memory footprint\n4. Unicode support\n5. POSIX-compatible API\n6. Support for UTF-8, UTF-16, and UTF-32 encodings",
+  "general_tags": ["regular expressions", "library", "pattern matching"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Text processing, Pattern matching",
+    "software_class": "Library",
+    "software_type": "Regular Expression"
+  }
+}

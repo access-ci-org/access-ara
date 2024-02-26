@@ -1,0 +1,21 @@
+{
+  "software_name": "PAPI",
+  "comprehensive_overview": "PAPI (Performance Application Programming Interface) is a portable interface for accessing performance counter hardware on modern microprocessors. It provides a source-level interface for collecting hardware performance counter statistics, with support for various hardware architectures.",
+  "core_features": [
+    "Access to hardware performance counters",
+    "Portable interface across different architectures",
+    "Source-level interface for collecting performance statistics"
+  ],
+  "general_tags": [
+    "Performance monitoring",
+    "Hardware performance counters",
+    "Microprocessor",
+    "Performance analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Performance Analysis",
+    "software_class": "Development Tools",
+    "software_type": "Performance Monitoring"
+  }
+}

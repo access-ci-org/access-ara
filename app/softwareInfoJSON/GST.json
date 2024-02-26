@@ -1,1 +1,21 @@
-As "GST" could refer to various technologies or tools, such as the Goods and Services Tax (GST) system, GStreamer, or other contexts, please provide more details or context on the specific "GST" you are referring to so I can offer relevant information or details in a JSON format. Your clarification will help in providing accurate and tailored information.
+{
+  "GST": {
+    "overview": "GST (GNU Scientific Library) is a collection of numerical routines built for scientific computing and data analysis. It provides a wide range of functions for numerical calculations and supports multiple programming languages.",
+    "core_features": [
+      "Numerical routines for scientific computing",
+      "Cross-language support",
+      "Extensive mathematical functions"
+    ],
+    "general_tags": [
+      "Numerical Computing",
+      "Scientific Analysis",
+      "Mathematics"
+    ],
+    "additional_tags": {
+      "research_discipline": "Mathematics",
+      "research_area": "Scientific Computing",
+      "software_class": "Library",
+      "software_type": "Numerical Computation Library"
+    }
+  }
+}

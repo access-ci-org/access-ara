@@ -1,0 +1,12 @@
+{
+    "software_name": "NLopt",
+    "comprehensive_overview": "NLopt is an open-source library for nonlinear optimization that provides a common interface for a number of different optimization algorithms. It is written in C with wrappers for several other programming languages.",
+    "core_features": "NLopt offers many different algorithms for nonlinear optimization, including local derivative-free, local gradient-based, and global optimization algorithms. It allows for easy switching between different algorithms and supports both unconstrained and constrained optimization problems.",
+    "general_tags": ["optimization", "nonlinear optimization", "library", "open-source"],
+    "additional_tags": {
+        "research_discipline": "Mathematics",
+        "research_area": "Optimization",
+        "software_class": "Optimization library",
+        "software_type": "Library"
+    }
+}

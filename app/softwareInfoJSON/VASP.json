@@ -1,0 +1,16 @@
+{
+  "software_name": "VASP",
+  "comprehensive_overview": "VASP (Vienna Ab-initio Simulation Package) is a widely used software package for performing quantum mechanical calculations based on density functional theory (DFT). It is employed in materials science for predicting and analyzing the electronic structure, properties, and behaviors of materials.",
+  "core_features": [
+    "Ab-initio calculations",
+    "Electronic structure predictions",
+    "Materials properties simulations"
+  ],
+  "general_tags": ["Materials Science", "Quantum Mechanics", "Simulation Software"],
+  "additional_tags": {
+    "research_discipline": "Materials Science",
+    "research_area": "Computational Chemistry",
+    "software_class": "Simulation Package",
+    "software_type": "Tool"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "software": "SUNDIALS",
+  "comprehensive_overview": "SUNDIALS (SUite of Nonlinear and DIfferential/ALgebraic equation Solvers) is a software suite of robust numerical solvers for ordinary differential equations (ODEs) and differential-algebraic equations (DAEs). It consists of various packages like CVODE, IDA, and ARKODE, offering efficient solutions for time-dependent simulations and mathematical modeling.",
+  "core_features": [
+    "ODE solvers",
+    "DAE solvers",
+    "Time-dependent simulations"
+  ],
+  "general_tags": [
+    "numerical solvers",
+    "ODEs",
+    "DAEs"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computational Science",
+    "research_area": "Differential Equations",
+    "software_class": "Suite",
+    "software_type": "Numerical Solver"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "PyGObject": {
+        "overview": "PyGObject is a Python module that provides bindings for the GObject library, allowing Python developers to create object-oriented applications with GTK, a popular GUI toolkit. It enables developers to build graphical user interfaces (GUIs) and desktop applications using Python in conjunction with GTK libraries.",
+        "core_features": [
+            "Python bindings for GObject library",
+            "Integration with GTK toolkit",
+            "GUI development in Python",
+            "Object-oriented application creation",
+            "Desktop application development"
+        ],
+        "general_tags": [
+            "Python bindings",
+            "GTK toolkit",
+            "GUI development"
+        ],
+        "additional_tags": {
+            "research_discipline": [
+                "Computer Science",
+                "Software Development"
+            ],
+            "research_area": [
+                "Graphical User Interfaces",
+                "Desktop Applications"
+            ],
+            "software_class": "Python Module",
+            "software_type": "GUI Development"
+        }
+    }
+}

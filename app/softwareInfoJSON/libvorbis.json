@@ -1,0 +1,21 @@
+{
+  "software_name": "libvorbis",
+  "comprehensive_overview": "libvorbis is a library for encoding and decoding audio data in the Vorbis audio codec format. It offers high-quality, open-source audio compression and decompression functions, making it a widely used tool for handling Vorbis audio files.",
+  "core_features": [
+    "Vorbis audio codec support",
+    "Encoding and decoding audio data",
+    "High-quality audio compression",
+    "Open-source audio processing"
+  ],
+  "general_tags": [
+    "Vorbis codec",
+    "audio compression",
+    "audio decoding"
+  ],
+  "additional_tags": {
+    "research_discipline": "Audio Processing",
+    "research_area": "Audio Compression",
+    "software_class": "Library",
+    "software_type": "Audio Codec"
+  }
+}

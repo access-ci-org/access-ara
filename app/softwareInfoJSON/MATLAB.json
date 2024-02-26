@@ -1,0 +1,19 @@
+{
+  "MATLAB": {
+    "overview": "MATLAB is a high-level programming language and interactive environment for numerical computation, visualization, and application development. It provides a versatile platform for algorithm development, data analysis, and modeling across various disciplines.",
+    "core_features": [
+      "High-level programming language",
+      "Numerical computation capabilities",
+      "Visualization tools for data analysis",
+      "Application development environment",
+      "Extensive library of mathematical functions"
+    ],
+    "general_tags": ["Numerical computation", "Data analysis", "Visualization"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Engineering"],
+      "research_area": ["Numerical Analysis", "Modeling and Simulation"],
+      "software_class": "Programming Language",
+      "software_type": "Development"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "software_name": "Netlib",
+  "comprehensive_overview": "Netlib is a repository of software, documents, and databases focused on mathematical software and related documents, with a focus on numerical linear algebra, optimization, differential equations, and other areas of mathematics. It serves as a valuable resource for researchers, educators, and students in computational mathematics.",
+  "core_features": [
+    "Extensive collection of mathematical software libraries",
+    "Wide range of documents and databases",
+    "Focus on numerical linear algebra, optimization, and differential equations",
+    "Valuable resource for researchers, educators, and students"
+  ],
+  "general_tags": [
+    "mathematical software",
+    "numerical linear algebra",
+    "optimization",
+    "differential equations",
+    "computational mathematics"
+  ],
+  "additional_tags": {
+    "research_discipline": "Mathematics",
+    "research_area": "Computational Mathematics",
+    "software_class": "Mathematical Software Repository",
+    "software_type": "Repository"
+  }
+}

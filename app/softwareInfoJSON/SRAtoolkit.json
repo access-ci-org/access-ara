@@ -1,0 +1,16 @@
+{
+  "software_name": "SRAtoolkit",
+  "comprehensive_overview": "SRAtoolkit is a set of command-line utilities provided by the NCBI for accessing and working with data in the Sequence Read Archive (SRA). It enables users to download, convert, and manipulate high-throughput sequencing data stored in the SRA format.",
+  "core_features": [
+    "Data download and retrieval",
+    "Data format conversion",
+    "Quality control and analysis"
+  ],
+  "general_tags": ["Bioinformatics", "High-Throughput Sequencing", "Command-line Tool"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Genomics",
+    "software_class": "Data Handling",
+    "software_type": "Tool"
+  }
+}

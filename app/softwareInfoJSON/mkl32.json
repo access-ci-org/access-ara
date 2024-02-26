@@ -1,0 +1,20 @@
+{
+  "software_name": "mkl32",
+  "comprehensive_overview": "Math Kernel Library (MKL) is a library of highly optimized, extensively threaded math routines for scientific, engineering, and financial applications. These routines include BLAS, LAPACK, ScaLAPACK, Sparse Solvers, Fast Fourier Transforms, Vector Math functions, and more.",
+  "core_features": [
+    "Highly optimized math routines",
+    "Multithreaded",
+    "Suitable for scientific, engineering, and financial applications"
+  ],
+  "general_tags": [
+    "Math Kernel Library",
+    "Optimized Math Routines",
+    "Scientific Computing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Mathematics",
+    "research_area": "Scientific Computing",
+    "software_class": "Math Library",
+    "software_type": "Computational Software"
+  }
+}

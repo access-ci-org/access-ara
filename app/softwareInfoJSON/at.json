@@ -1,0 +1,17 @@
+{
+    "software": "AT",
+    "overview": "AT is a command-line scheduling tool that enables users to set up automated tasks and scripts to be executed at a specified time or under specific conditions in Unix-like operating systems.",
+    "core_features": [
+        "Set up one-time or recurring automated tasks",
+        "Support for time-based scheduling with minute-level precision",
+        "Conditional execution based on system events or outcomes of previous tasks",
+        "Logging and notification options for task execution"
+    ],
+    "general_tags": ["automation", "task scheduling", "Unix-like systems"],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "System Automation",
+        "software_class": "Utility",
+        "software_type": "Tool"
+    }
+}

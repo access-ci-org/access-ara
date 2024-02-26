@@ -1,0 +1,23 @@
+{
+    "software": "Fontconfig",
+    "overview": "Fontconfig is a library and utility used for configuring and customizing font settings on Unix-like systems. It provides a powerful tool for managing and accessing fonts, defining font families, and handling font rendering options across applications.",
+    "core_features": [
+        "Font configuration and management",
+        "Support for font matching and substitution",
+        "Font cache management",
+        "Definition of font properties",
+        "Customization of font rendering"
+    ],
+    "general_tags": [
+        "font management",
+        "font configuration",
+        "font rendering",
+        "Unix utilities"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Font Rendering",
+        "software_class": "Configuration Tools",
+        "software_type": "Open Source"
+    }
+}

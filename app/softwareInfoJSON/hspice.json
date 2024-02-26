@@ -1,0 +1,20 @@
+{
+  "software name": "HSPICE",
+  "comprehensive overview": "HSPICE is an industry-leading circuit simulation software developed by Synopsys for accurate analysis and verification of electronic circuits. It is widely used in the semiconductor industry for simulating and optimizing analog and mixed-signal designs.",
+  "core features": [
+    "Circuit simulation for analog and mixed-signal designs",
+    "Accurate model analysis of electronic circuits",
+    "Extensive library of components and models"
+  ],
+  "general tags": [
+    "Circuit Simulation",
+    "Analog Design",
+    "Mixed-Signal Circuits"
+  ],
+  "additional tags": {
+    "research discipline": "Electrical Engineering",
+    "research area": "Circuit Design",
+    "software class": "Simulation Software",
+    "software type": "Circuit Simulator"
+  }
+}

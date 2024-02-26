@@ -1,0 +1,21 @@
+{
+    "softwareName": "ffnvcodec",
+    "comprehensiveOverview": "ffnvcodec is a codec library for NVIDIA GPUs providing acceleration for video encoding and decoding on NVIDIA GPUs.",
+    "coreFeatures": [
+        "Video encoding acceleration on NVIDIA GPUs",
+        "Video decoding acceleration on NVIDIA GPUs",
+        "Support for various video codecs"
+    ],
+    "generalTags": [
+        "codec library",
+        "NVIDIA GPU acceleration",
+        "video encoding",
+        "video decoding"
+    ],
+    "additionalTags": {
+        "researchDiscipline": "Computer Science",
+        "researchArea": "Video Processing",
+        "softwareClass": "Codec Library",
+        "softwareType": "GPU Acceleration"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "software_name": "spython",
+    "comprehensive_overview": "spython is a command-line interface tool that facilitates the creation of Python virtual environments using the conda package manager.",
+    "core_features": [
+        "- Provides a simple and efficient way to create isolated Python environments.",
+        "- Integration with conda for managing packages and dependencies.",
+        "- Allows for easy activation and deactivation of virtual environments."
+    ],
+    "general_tags": [
+        "Python", 
+        "conda", 
+        "virtual environment",
+        "command-line interface"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Development Tools",
+        "software_type": "Tool"
+    }
+}

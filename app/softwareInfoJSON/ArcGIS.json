@@ -1,25 +1,12 @@
 {
-  "software_name": "ArcGIS",
-  "overview": "ArcGIS is a geographic information system (GIS) software suite developed by Esri. It provides tools for mapping, spatial analysis, and data visualization, enabling users to create interactive maps and analyze geospatial data.",
-  "core_features": [
-    "Geographic information system",
-    "Spatial analysis",
-    "Data visualization",
-    "Mapping tools"
-  ],
-  "general_tags": [
-    "Geographic information system",
-    "Spatial analysis",
-    "Data visualization"
-  ],
-  "research_discipline": [
-    "Geography",
-    "Environmental science"
-  ],
-  "research_area": [
-    "Spatial analysis",
-    "GIS applications"
-  ],
-  "software_class": "GIS software",
-  "software_type": "Mapping and analysis tool"
+    "software_name": "ArcGIS",
+    "comprehensive_overview": "ArcGIS is a geographic information system (GIS) software suite developed by Esri for creating, visualizing, analyzing, and managing spatial data. It offers powerful mapping and spatial analytics capabilities for various industries and applications.",
+    "core_features": ["Geographic information system software", "Mapping, visualization, analysis, and data management", "Spatial analytics capabilities"],
+    "general_tags": ["GIS software", "Spatial data analysis"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "GIS",
+        "software_type": "Suite"
+    }
 }

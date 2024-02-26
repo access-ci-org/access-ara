@@ -1,0 +1,20 @@
+{
+  "software name": "hdf",
+  "comprehensive overview": "Hierarchical Data Format (HDF) refers to a versatile file format commonly used to store and manage large volumes of complex data, such as scientific datasets and images. It provides a standardized and efficient way for organizing and sharing data.",
+  "core features": [
+    "Storage and management of complex datasets",
+    "Hierarchical file structure for organizing data",
+    "Support for various data types and metadata"
+  ],
+  "general tags": [
+    "Data Storage",
+    "Scientific Datasets",
+    "File Format"
+  ],
+  "additional tags": {
+    "research discipline": "Data Science",
+    "research area": "Data Management",
+    "software class": "Data Format",
+    "software type": "Data Storage Tool"
+  }
+}

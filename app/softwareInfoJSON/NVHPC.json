@@ -1,0 +1,12 @@
+{
+    "software_name": "NVHPC",
+    "comprehensive_overview": "NVHPC is a suite of compilers and tools from NVIDIA that are designed to accelerate HPC (High Performance Computing) and scientific computing applications on NVIDIA GPUs. It includes compilers, mathematical libraries, debugging, and profiling tools optimized for NVIDIA architectures.",
+    "core_features": "1. High-performance compilers for C, C++, and Fortran\n2. Optimized math libraries for accelerated computing\n3. Debugging and profiling tools for GPU applications\n4. Integration with NVIDIA GPU architectures\n5. Support for parallel computing and HPC workflows",
+    "general_tags": ["NVHPC", "NVIDIA", "HPC", "GPU", "scientific computing"],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "High Performance Computing",
+        "software_class": "Compiler",
+        "software_type": "Tool"
+    }
+}

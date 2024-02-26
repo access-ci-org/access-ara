@@ -1,0 +1,23 @@
+{
+    "software": "bioperl",
+    "overview": "Bioperl is a Perl library that provides a comprehensive set of modules for bioinformatics programming. It simplifies the development of bioinformatics tools and pipelines by offering reusable components.",
+    "core_features": [
+        "Bioinformatics data processing and manipulation",
+        "Sequence analysis and parsing",
+        "Database integration (e.g., GenBank, SwissProt)",
+        "Structural bioinformatics tools",
+        "Sequence alignment algorithms"
+    ],
+    "general_tags": [
+        "bioinformatics programming",
+        "sequence analysis",
+        "data parsing",
+        "molecular biology"
+    ],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Sequence Analysis",
+        "software_class": "Bioinformatics Libraries",
+        "software_type": "Open Source"
+    }
+}

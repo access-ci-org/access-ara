@@ -1,24 +1,12 @@
 {
     "software_name": "CuPy",
-    "overview": "CuPy is an open-source numerical computing library that provides a GPU-accelerated array library for high-performance computing with Python. It serves as a GPU-compatible alternative to NumPy, allowing accelerated numerical computations on GPUs.",
-    "core_features": [
-        "GPU-accelerated array computations",
-        "High-performance computing",
-        "Python compatibility"
-    ],
-    "general_tags": [
-        "Numerical computing",
-        "GPU acceleration",
-        "Python library"
-    ],
-    "research_discipline": [
-        "High-performance computing",
-        "Data science"
-    ],
-    "research_area": [
-        "GPU computing",
-        "Numeric arrays processing"
-    ],
-    "software_class": "Numerical computing library",
-    "software_type": "GPU-accelerated array library"
+    "comprehensive_overview": "CuPy is an open-source library that provides GPU accelerated computing with Python, designed to be compatible with NumPy. It allows users to accelerate numerical and scientific computations by leveraging the power of NVIDIA CUDA for parallel processing on GPU devices.",
+    "core_features": ["GPU-accelerated computing with Python", "NumPy compatibility", "Utilizes NVIDIA CUDA for parallel processing"],
+    "general_tags": ["GPU computing", "Array manipulation"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Computational Library",
+        "software_type": "Library"
+    }
 }

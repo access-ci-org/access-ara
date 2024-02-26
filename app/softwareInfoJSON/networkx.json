@@ -1,0 +1,21 @@
+{
+  "software_name": "NetworkX",
+  "comprehensive_overview": "NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.",
+  "core_features": [
+    "Creation of networks (nodes and edges)",
+    "Manipulation of networks",
+    "Study of complex network structures, dynamics, and functions"
+  ],
+  "general_tags": [
+    "network analysis",
+    "graph theory",
+    "Python library",
+    "network visualization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Network Science",
+    "research_area": ["Social Networks", "Biological Networks", "Transportation Networks"],
+    "software_class": "Graph Analysis",
+    "software_type": "Python Library"
+  }
+}

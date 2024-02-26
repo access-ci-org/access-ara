@@ -1,0 +1,25 @@
+{
+  "software_name": "Ghostscript",
+  "comprehensive_overview": "Ghostscript is a suite of software based on an interpreter for Adobe Systems' PostScript and PDF page description languages. It is commonly used for converting PostScript files to PDF. Ghostscript can also render PDF files, display them on the screen, or print them on printers that don't support PDF directly.",
+  "core_features": [
+    "Interpreting PostScript and PDF page description languages",
+    "Converting PostScript files to PDF",
+    "Rendering PDF files",
+    "Displaying PDF files on screen",
+    "Printing PDF files on non-PDF printers"
+  ],
+  "general_tags": [
+    "postscript", 
+    "pdf", 
+    "interpreter", 
+    "conversion", 
+    "rendering",
+    "printing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Document Processing",
+    "software_class": "Utility",
+    "software_type": "Interpreter"
+  }
+}

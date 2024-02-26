@@ -1,0 +1,23 @@
+{
+    "software": "cisTEM",
+    "overview": "cisTEM is a software package for high-resolution single-particle cryo-EM image processing and 3D reconstruction. It provides tools for processing cryo-EM data, performing image analysis, and generating protein structures.",
+    "core_features": [
+        "Automated particle picking",
+        "2D classification and data visualization",
+        "3D reconstruction and refinement",
+        "Resolution estimation",
+        "Model building and validation"
+    ],
+    "general_tags": [
+        "cryo-EM image processing",
+        "protein structure determination",
+        "single-particle analysis",
+        "structural biology"
+    ],
+    "additional_tags": {
+        "research_discipline": "Structural Biology",
+        "research_area": "Cryo-Electron Microscopy",
+        "software_class": "Image Processing Tools",
+        "software_type": "Open Source"
+    }
+}

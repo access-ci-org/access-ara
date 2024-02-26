@@ -1,0 +1,21 @@
+{
+  "software_name": "libevent",
+  "comprehensive_overview": "libevent is a high-performance event notification library that provides a simple and efficient mechanism for managing events and asynchronous I/O operations. It enables developers to write event-driven applications with ease.",
+  "core_features": [
+    "Event notification handling",
+    "Asynchronous I/O operations",
+    "Efficient event-driven programming",
+    "Support for various event types"
+  ],
+  "general_tags": [
+    "event handling",
+    "asynchronous programming",
+    "high-performance"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Networking",
+    "software_class": "Library",
+    "software_type": "Event Handling"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "software": "pytesseract",
+  "comprehensive_overview": "Pytesseract is a Python wrapper for Google's Tesseract-OCR Engine, which enables optical character recognition (OCR) functionality in Python applications. It allows for extracting text and information from images or scanned documents by recognizing and parsing text content.",
+  "core_features": [
+    "Optical Character Recognition",
+    "Image text extraction",
+    "OCR capabilities"
+  ],
+  "general_tags": [
+    "OCR",
+    "text extraction",
+    "image processing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Vision",
+    "research_area": "Text Recognition",
+    "software_class": "Library",
+    "software_type": "OCR"
+  }
+}

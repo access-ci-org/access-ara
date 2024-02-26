@@ -1,0 +1,20 @@
+{
+  "software name": "gpaw",
+  "comprehensive overview": "GPAW (Grid-based Projector-Augmented Wave Method) is a density-functional theory (DFT) software that uses a real-space grid representation and projector-augmented wave (PAW) basis sets for efficient electronic structure calculations.",
+  "core features": [
+    "Real-space grid representation for electronic structure calculations",
+    "PAW basis sets for accurate description of electron wave functions",
+    "Support for various DFT functionals and simulation setups"
+  ],
+  "general tags": [
+    "Electronic Structure",
+    "Density Functional Theory",
+    "Materials Science"
+  ],
+  "additional tags": {
+    "research discipline": "Physics",
+    "research area": "Electronic Structure Calculation",
+    "software class": "Simulation Software",
+    "software type": "DFT Tool"
+  }
+}

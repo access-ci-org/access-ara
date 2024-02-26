@@ -1,0 +1,16 @@
+{
+  "software_name": "SRA",
+  "comprehensive_overview": "SRA (Sequence Read Archive) is a publicly available repository maintained by the National Center for Biotechnology Information (NCBI) that collects and stores high-throughput sequencing data. It enables researchers to access and analyze genetic data from various organisms.",
+  "core_features": [
+    "Storage of sequence read data",
+    "Metadata annotation",
+    "Data search and retrieval"
+  ],
+  "general_tags": ["Bioinformatics", "Genomics Data", "Data Repository"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Genomics",
+    "software_class": "Data Repository",
+    "software_type": "Platform"
+  }
+}

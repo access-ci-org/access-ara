@@ -1,0 +1,12 @@
+{
+    "software_name": "NCBI",
+    "comprehensive_overview": "National Center for Biotechnology Information (NCBI) is a resource for biological information and research. It provides access to a variety of databases and tools for the scientific community.",
+    "core_features": "NCBI provides access to databases such as PubMed, GenBank, BLAST, and more. It offers tools for sequence analysis, structure analysis, literature search, and data mining. Users can search, retrieve, and analyze biological data through the NCBI platform.",
+    "general_tags": ["bioinformatics", "database", "sequence analysis", "biology"],
+    "additional_tags": {
+        "research_discipline": "Biomedical Sciences",
+        "research_area": "Genomics",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Web-based Tool"
+    }
+}

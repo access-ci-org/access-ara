@@ -1,0 +1,22 @@
+{
+  "software_name": "Compiler32",
+  "comprehensive_overview": "Compiler32 is a software development tool that provides a reliable and efficient way to compile source code into machine code that can be executed by a computer's processor.",
+  "core_features": [
+    "Compiling source code",
+    "Generating machine code",
+    "Optimizing code for performance",
+    "Debugging capabilities"
+  ],
+  "general_tags": [
+    "Compiler",
+    "Software Development",
+    "Code Optimization",
+    "Debugging"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Software Engineering",
+    "software_class": "Development Tools",
+    "software_type": "Compiler"
+  }
+}

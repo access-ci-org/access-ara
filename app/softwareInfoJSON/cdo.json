@@ -1,0 +1,23 @@
+{
+    "software": "cdo",
+    "overview": "CDO (Climate Data Operators) is a collection of command-line tools to manipulate and analyze climate and weather data. It offers a wide range of functionalities for processing and visualizing meteorological data.",
+    "core_features": [
+        "Data manipulation and transformation",
+        "Statistical and mathematical operations on climate data",
+        "Interpolation and regridding",
+        "Support for various data formats",
+        "Visualization capabilities"
+    ],
+    "general_tags": [
+        "climate data analysis",
+        "meteorology",
+        "data manipulation",
+        "command-line tools"
+    ],
+    "additional_tags": {
+        "research_discipline": "Climate Science",
+        "research_area": "Data Analysis",
+        "software_class": "Data Processing Tools",
+        "software_type": "Open Source"
+    }
+}

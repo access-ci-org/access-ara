@@ -1,0 +1,16 @@
+{
+  "software_name": "QuantumEspresso",
+  "comprehensive_overview": "QuantumEspresso is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is widely used for predicting and analyzing the properties of materials based on quantum mechanics principles.",
+  "core_features": [
+    "Density functional theory calculations",
+    "Electronic structure simulations",
+    "Ab initio molecular dynamics"
+  ],
+  "general_tags": ["Materials Science", "Computational Chemistry", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Materials Science",
+    "research_area": "Condensed Matter Physics",
+    "software_class": "Simulation",
+    "software_type": "Suite"
+  }
+}

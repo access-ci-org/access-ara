@@ -1,0 +1,24 @@
+{
+  "software_name": "NWCHEM",
+  "comprehensive_overview": "NWChem aims to provide its users with computational chemistry tools that are scalable both in their ability to treat large scientific computational chemistry problems efficiently, and in their use of available parallel computing resources from high-performance parallel supercomputers to conventional workstation clusters.",
+  "core_features": [
+    "Computational chemistry simulations",
+    "Quantum chemistry",
+    "Molecular dynamics",
+    "Density functional theory calculations",
+    "Post Hartree-Fock methods"
+  ],
+  "general_tags": [
+    "computational chemistry",
+    "quantum chemistry",
+    "molecular dynamics",
+    "density functional theory",
+    "post Hartree-Fock methods"
+  ],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Computational Chemistry",
+    "software_class": "Computational Software",
+    "software_type": "Scientific Computing"
+  }
+}

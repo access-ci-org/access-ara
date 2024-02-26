@@ -1,0 +1,21 @@
+{
+    "tool": "xclock",
+    "overview": "xclock is a simple graphical clock application in the X Window System, commonly found in Unix and Unix-like operating systems. It provides a basic analog or digital clock display on the desktop, allowing users to track time visually and customize the clock appearance.",
+    "core_features": [
+        "Analog and digital clock display",
+        "Customizable clock appearance and position",
+        "Visual time tracking on the desktop",
+        "Integration with X Window System environments"
+    ],
+    "general_tags": [
+        "desktop clock",
+        "time tracking tool",
+        "visual display"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Utility",
+        "software_type": "Clock Application"
+    }
+}

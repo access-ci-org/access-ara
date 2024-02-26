@@ -1,0 +1,19 @@
+{
+  "MONAI": {
+    "overview": "MONAI (Medical Open Network for AI) is an open-source deep learning toolkit designed for healthcare imaging tasks. It provides domain-specific abstractions for medical image analysis, offering pre-built workflows and components to accelerate AI research in medical imaging.",
+    "core_features": [
+      "Deep learning toolkit for healthcare imaging",
+      "Domain-specific abstractions for medical image analysis",
+      "Pre-built workflows and components",
+      "Accelerated AI research in medical imaging",
+      "Support for various medical imaging tasks"
+    ],
+    "general_tags": ["Deep learning", "Medical imaging", "AI toolkit"],
+    "additional_tags": {
+      "research_discipline": ["Medical Imaging", "Artificial Intelligence"],
+      "research_area": ["Healthcare AI", "Medical Image Analysis"],
+      "software_class": "Toolkit",
+      "software_type": "Deep Learning"
+    }
+  }
+}

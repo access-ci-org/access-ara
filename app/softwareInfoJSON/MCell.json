@@ -1,0 +1,22 @@
+{
+    "software_name": "MCell",
+    "comprehensive_overview": "MCell is a modeling and simulation tool for cellular biology, specifically focusing on spatial and stochastic simulation of complex biochemical systems.",
+    "core_features": [
+        "Spatial and stochastic simulation",
+        "Modeling complex biochemical systems",
+        "Integrated visualization tools"
+    ],
+    "general_tags": [
+        "cellular biology",
+        "bioinformatics",
+        "simulation",
+        "modeling",
+        "visualization"
+    ],
+    "additional_tags": {
+        "research_discipline": "Life Sciences",
+        "research_area": "Cellular Biology",
+        "software_class": "Simulation Tool",
+        "software_type": "Bioinformatics Tool"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "software": "DMTCP",
+    "overview": "DMTCP (Distributed MultiThreaded Checkpointing) is a tool for enabling checkpointing and distributed execution of multi-threaded applications. It allows applications to be checkpointed and migrated seamlessly across different computing environments.",
+    "core_features": [
+        "Transparent checkpointing for multithreaded programs",
+        "Support for distributed computing and task migration",
+        "Checkpoints can be taken at any point in the program",
+        "Integration with various programming languages",
+        "High fault tolerance capabilities"
+    ],
+    "general_tags": [
+        "checkpointing",
+        "distributed computing",
+        "multithreading",
+        "fault tolerance"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Distributed Systems",
+        "software_class": "Checkpointing Tools",
+        "software_type": "Open Source"
+    }
+}

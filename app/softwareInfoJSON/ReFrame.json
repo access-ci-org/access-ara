@@ -1,0 +1,16 @@
+{
+  "software_name": "ReFrame",
+  "comprehensive_overview": "ReFrame is a framework for writing regression tests for high-performance computing (HPC) systems. It allows users to define and run tests to verify the correctness and performance of applications and software stack components on HPC platforms.",
+  "core_features": [
+    "Regression testing for HPC systems",
+    "Customizable test definitions",
+    "Performance benchmarking"
+  ],
+  "general_tags": ["HPC", "Regression Testing", "Framework"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High-Performance Computing",
+    "software_class": "Testing Tool",
+    "software_type": "Framework"
+  }
+}

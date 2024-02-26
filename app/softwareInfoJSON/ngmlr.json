@@ -1,0 +1,12 @@
+{
+  "software_name": "ngmlr",
+  "comprehensive_overview": "Next Generation Mapping Long Reads (ngmlr) is an aligner designed to map long nanopore or PacBio reads to a reference genome for accurate variant calling and structural variation discovery.",
+  "core_features": "1. Aligns long nanopore or PacBio reads to a reference genome.\n2. Optimized for accuracy in variant calling and structural variation discovery.\n3. Supports multiple output formats for downstream analysis.",
+  "general_tags": ["ngmlr", "aligner", "variant calling", "structural variation", "long reads"],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Genomics",
+    "software_class": "Alignment Tool",
+    "software_type": "Open Source"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "software": "Banner",
+    "overview": "Banner is an enterprise resource planning (ERP) software designed for higher education institutions to manage various administrative functions such as student enrollment, course registration, financial aid, and academic records.",
+    "core_features": [
+        "Integrated system for managing student information and academic processes",
+        "Modules for enrollment management, course scheduling, grading, and degree tracking",
+        "Financial aid administration and student billing functionality",
+        "Reporting and analytics tools for monitoring institutional data"
+    ],
+    "general_tags": ["ERP", "higher education", "student management"],
+    "additional_tags": {
+        "research_discipline": "Education Management",
+        "research_area": "Higher Education Administration",
+        "software_class": "Enterprise Software",
+        "software_type": "System"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "MPI": {
+    "overview": "MPI (Message Passing Interface) is a standardized and portable message-passing system commonly used in parallel computing. It allows processes running on different nodes to exchange data and coordinate their actions for efficient parallel execution of tasks.",
+    "core_features": [
+      "Standardized message-passing system",
+      "Facilitates communication between parallel processes",
+      "Supports parallel computing applications",
+      "Scalable and portable",
+      "Enables coordination among distributed processes"
+    ],
+    "general_tags": ["Message Passing Interface", "Parallel computing", "Scalability"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "High-Performance Computing"],
+      "research_area": ["Parallel Algorithms", "Distributed Systems"],
+      "software_class": "Communication Tool",
+      "software_type": "Parallel Computing"
+    }
+  }
+}

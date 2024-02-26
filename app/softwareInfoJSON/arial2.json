@@ -1,0 +1,21 @@
+{
+  "arial2": {
+    "overview": "Arial2 is a high-performance computing (HPC) tool that helps users manage and optimize job scheduling on cluster environments. It provides features for job submission, monitoring, and resource allocation to improve the efficiency of computational tasks on HPC systems.",
+    "core_features": [
+      "Job scheduling",
+      "Resource allocation",
+      "Cluster environment management"
+    ],
+    "general_tags": [
+      "HPC",
+      "Job management",
+      "Cluster computing"
+    ],
+    "additional_tags": {
+      "research_discipline": "Computer Science",
+      "research_area": "High-Performance Computing",
+      "software_class": "HPC tool",
+      "software_type": "Job scheduler software"
+    }
+  }
+}

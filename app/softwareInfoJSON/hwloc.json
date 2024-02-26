@@ -1,0 +1,20 @@
+{
+  "software name": "hwloc",
+  "comprehensive overview": "hwloc (Hardware Locality) is a tool for exploring and manipulating the hierarchical topology of modern computing systems, including multicore processors, NUMA memory domains, and GPUs. It provides insights into system architecture for optimizing software performance and resource management.",
+  "core features": [
+    "Exploration and manipulation of system hierarchies",
+    "Identification of hardware resources and topologies",
+    "Optimization of software performance and resource utilization"
+  ],
+  "general tags": [
+    "System Topology",
+    "Resource Management",
+    "Performance Optimization"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "System Architecture",
+    "software class": "Tool",
+    "software type": "System Topology Tool"
+  }
+}

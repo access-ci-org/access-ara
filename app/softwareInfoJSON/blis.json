@@ -1,0 +1,23 @@
+{
+    "software": "blis",
+    "overview": "BLIS (BLAS-like Library Instantiation Software Framework) is a high-performance software framework for instantiating BLAS (Basic Linear Algebra Subprograms) libraries. It aims to provide optimized implementations of linear algebra routines.",
+    "core_features": [
+        "Optimized BLAS routines",
+        "Threaded parallelism",
+        "Flexible matrix operations",
+        "Support for multiple architectures",
+        "Customizable library instantiation"
+    ],
+    "general_tags": [
+        "linear algebra",
+        "parallel computing",
+        "scientific computing",
+        "performance optimization"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computational Science",
+        "research_area": "Linear Algebra",
+        "software_class": "Numerical Libraries",
+        "software_type": "Open Source"
+    }
+}

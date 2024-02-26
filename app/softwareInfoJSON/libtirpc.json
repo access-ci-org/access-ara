@@ -1,0 +1,21 @@
+{
+  "software_name": "libtirpc",
+  "comprehensive_overview": "libtirpc is a library for implementing the Transport-Independent Remote Procedure Call (TIRPC) protocol, which provides support for RPC communication over various transport layers. It enables developers to build remote procedure call interfaces that are transport-independent and robust.",
+  "core_features": [
+    "Transport-Independent RPC protocol support",
+    "Remote procedure call management",
+    "Transport layer abstraction",
+    "Interoperability across network transports"
+  ],
+  "general_tags": [
+    "RPC protocol",
+    "network communication",
+    "remote procedure calls"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Networks",
+    "research_area": "Remote Procedure Calls",
+    "software_class": "Library",
+    "software_type": "Network Communication"
+  }
+}

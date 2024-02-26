@@ -1,0 +1,20 @@
+{
+    "software_name": "extrae",
+    "comprehensive_overview": "Extrae is a performance analysis tool for parallel and distributed applications. It provides insights into the behavior and performance of applications by capturing traces of their executions.",
+    "core_features": [
+        "Performance analysis",
+        "Parallel applications",
+        "Distributed applications",
+        "Trace capture"
+    ],
+    "general_tags": [
+        "performance analysis",
+        "execution tracing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Parallel Computing",
+        "software_class": "Performance Analysis Tool",
+        "software_type": "Tool"
+    }
+}

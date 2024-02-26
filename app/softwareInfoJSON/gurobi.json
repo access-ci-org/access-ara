@@ -1,0 +1,20 @@
+{
+  "software name": "gurobi",
+  "comprehensive overview": "Gurobi Optimization is a commercial optimization software suite that provides state-of-the-art optimization solvers for linear programming, mixed-integer programming, quadratic programming, and other optimization problems. It offers high-performance solvers with advanced features and extensive APIs.",
+  "core features": [
+    "Optimization solvers for various problem types (e.g., linear, integer, quadratic)",
+    "High-performance algorithms for efficient optimization",
+    "Extensive APIs for integration with programming languages and modeling tools"
+  ],
+  "general tags": [
+    "Optimization Software",
+    "Linear Programming",
+    "Mixed-Integer Programming"
+  ],
+  "additional tags": {
+    "research discipline": "Operations Research",
+    "research area": "Optimization",
+    "software class": "Optimization Software",
+    "software type": "Commercial"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "software_name": "PDToolkit",
+    "comprehensive_overview": "PDToolkit is a bioinformatics tool specifically designed for the analysis of protein-DNA complexes. It provides a range of functionalities to analyze the interactions between proteins and DNA molecules.",
+    "core_features": [
+        "Analysis of protein-DNA complexes",
+        "Visualization of protein-DNA interactions",
+        "Identification of key amino acid residues in binding",
+        "Prediction of DNA-binding residues in proteins"
+    ],
+    "general_tags": [
+        "bioinformatics",
+        "protein-DNA interactions",
+        "molecular biology",
+        "structural bioinformatics"
+    ],
+    "additional_tags": {
+        "research_discipline": "Biochemistry",
+        "research_area": "Protein-DNA interactions",
+        "software_class": "Bioinformatics tool",
+        "software_type": "Analysis tool"
+    }
+}

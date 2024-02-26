@@ -1,0 +1,20 @@
+{
+  "software name": "ibrun",
+  "comprehensive overview": "ibrun is a command-line tool designed for parallel job launching and execution on high-performance computing (HPC) clusters with InfiniBand interconnects. It provides users with the ability to initiate and manage parallel applications efficiently across distributed computing nodes.",
+  "core features": [
+    "Job launching and management tool for HPC clusters",
+    "Parallel execution of applications on distributed nodes",
+    "Optimized for InfiniBand interconnects"
+  ],
+  "general tags": [
+    "High-Performance Computing",
+    "Parallel Computing",
+    "InfiniBand"
+  ],
+  "additional tags": {
+    "research discipline": "Computational Science",
+    "research area": "Parallel Computing",
+    "software class": "Job Management Tool",
+    "software type": "Parallel Execution Tool"
+  }
+}

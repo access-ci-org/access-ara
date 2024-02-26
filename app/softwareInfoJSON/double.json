@@ -1,0 +1,21 @@
+{
+    "software_name": "Double",
+    "comprehensive_overview": "Double is a lightweight testing library for writing test cases in Java. It focuses on simplicity and ease of use, allowing developers to write tests quickly and efficiently.",
+    "core_features": [
+        "Easy setup and integration with Java projects",
+        "Supports writing clear and concise test cases",
+        "Provides useful assertion methods for common test scenarios",
+        "Can be integrated with popular Java development tools"
+    ],
+    "general_tags": [
+        "Testing Library",
+        "Java",
+        "Unit Testing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Software Testing",
+        "software_class": "Testing Framework",
+        "software_type": "Library"
+    }
+}

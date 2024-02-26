@@ -1,0 +1,19 @@
+{
+  "Meson": {
+    "overview": "Meson is an open-source build system that focuses on simplicity and speed for configuring and building software projects. It uses a declarative language to describe build configurations and provides efficient dependency tracking and parallel build support.",
+    "core_features": [
+      "Simplified build system",
+      "Declarative build configurations",
+      "Fast and efficient builds",
+      "Dependency tracking",
+      "Parallel build capabilities"
+    ],
+    "general_tags": ["Build system", "Configuration management", "Open-source"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Software Engineering"],
+      "research_area": ["Build Automation", "Dependency Management"],
+      "software_class": "Build System",
+      "software_type": "Development"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "software": "pydicom",
+  "comprehensive_overview": "Pydicom is a Python library used for working with Digital Imaging and Communications in Medicine (DICOM) files. It provides tools for reading, modifying, and writing DICOM files, as well as accessing and manipulating medical imaging data within the DICOM standard.",
+  "core_features": [
+    "DICOM file processing",
+    "Medical imaging analysis",
+    "Data extraction"
+  ],
+  "general_tags": [
+    "DICOM files",
+    "medical imaging",
+    "Python library"
+  ],
+  "additional_tags": {
+    "research_discipline": "Medical Imaging",
+    "research_area": "DICOM Analysis",
+    "software_class": "Library",
+    "software_type": "Medical Imaging"
+  }
+}

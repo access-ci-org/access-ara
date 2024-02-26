@@ -1,0 +1,20 @@
+{
+  "software name": "imageio",
+  "comprehensive overview": "imageio is a Python library for reading and writing a wide range of image file formats, making it a versatile tool for handling image data in various applications. It provides easy access to diverse image formats for processing and analysis tasks.",
+  "core features": [
+    "Reading and writing image files in multiple formats",
+    "Support for various image manipulation and processing tasks",
+    "Integration with Python for efficient image data handling"
+  ],
+  "general tags": [
+    "Image Processing",
+    "Python Library",
+    "File Formats"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Vision",
+    "research area": "Image Analysis",
+    "software class": "Library",
+    "software type": "Image Processing Tool"
+  }
+}

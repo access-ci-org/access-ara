@@ -1,0 +1,22 @@
+{
+    "software_name": "Parafly",
+    "comprehensive_overview": "Parafly is a parallelization tool for executing tasks across multiple nodes in a high-performance computing (HPC) cluster. It aims to efficiently distribute and manage workload to improve overall throughput and speed of processing.",
+    "core_features": [
+        "Parallel execution of tasks",
+        "Optimized workload distribution",
+        "Management of tasks across nodes",
+        "High-performance computing support"
+    ],
+    "general_tags": [
+        "parallelization",
+        "HPC",
+        "cluster computing",
+        "workload distribution"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "High-Performance Computing",
+        "software_class": "Parallel Processing Tool",
+        "software_type": "HPC Tool"
+    }
+}

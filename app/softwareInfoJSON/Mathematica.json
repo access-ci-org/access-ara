@@ -1,0 +1,19 @@
+{
+  "Mathematica": {
+    "overview": "Mathematica is a computational software system developed by Wolfram Research. It provides a wide range of mathematical, scientific, and technical computing capabilities, enabling users to perform symbolic computations, visualize data, and create interactive documents.",
+    "core_features": [
+      "Symbolic computation",
+      "Scientific and technical computing",
+      "Data visualization tools",
+      "Interactive document creation",
+      "Extensive library of functions"
+    ],
+    "general_tags": ["Computational software", "Mathematics", "Data visualization"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Mathematics"],
+      "research_area": ["Symbolic Computation", "Scientific Computing"],
+      "software_class": "Computational Tool",
+      "software_type": "Mathematics"
+    }
+  }
+}

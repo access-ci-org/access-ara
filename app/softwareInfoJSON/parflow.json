@@ -1,0 +1,25 @@
+{
+    "software_name": "ParFlow",
+    "comprehensive_overview": "ParFlow is an integrated, modular, parallel, distributed hydrologic model that simulates surface and subsurface water flow across multiple scales in complex, variably saturated natural media. It is often used for modeling hydrological processes in watersheds, aquifers, and river basins.",
+    "core_features": [
+        "Modular design",
+        "Parallel and distributed computing capabilities",
+        "Simulation of surface and subsurface water flow",
+        "Variably saturated media modeling",
+        "Multi-scale modeling capabilities"
+    ],
+    "general_tags": [
+        "hydrological modeling", 
+        "surface water flow", 
+        "subsurface water flow", 
+        "watershed modeling", 
+        "aquifer modeling", 
+        "river basin modeling"
+    ],
+    "additional_tags": {
+        "research_discipline": "Hydrology",
+        "research_area": "Hydrological modeling",
+        "software_class": "Scientific modeling software",
+        "software_type": "Hydrological simulation software"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "software": "cutadapt",
+    "overview": "Cutadapt is a tool designed for removing adapter sequences, primers, poly-A tails, and other undesired sequences from high-throughput sequencing reads. It is widely used in bioinformatics for preprocessing next-generation sequencing data.",
+    "core_features": [
+        "Adapter trimming and removal",
+        "Poly-A tail removal",
+        "Quality trimming and read filtering",
+        "Support for various sequencing platforms",
+        "Customizable and versatile trimming options"
+    ],
+    "general_tags": [
+        "sequence preprocessing",
+        "adapter trimming",
+        "high-throughput sequencing",
+        "bioinformatics analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Sequence Analysis",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Open Source"
+    }
+}

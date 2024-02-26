@@ -1,0 +1,23 @@
+{
+  "software": "POV",
+  "comprehensive_overview": "POV, Persistence Of Vision, is a high-quality three-dimensional graphics rendering tool that creates stunning photorealistic images. It uses a scene description language to define all the aspects of the scene before rendering.",
+  "core_features": [
+    "Advanced three-dimensional graphics rendering",
+    "Scene description language for defining scene properties",
+    "Ability to create photorealistic images",
+    "Support for texture mapping, lighting effects, and visual effects",
+    "Animation capabilities for creating moving scenes"
+  ],
+  "general_tags": [
+    "graphics rendering",
+    "photorealistic images",
+    "scene description language",
+    "animation"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Graphics",
+    "research_area": "Three-dimensional Modeling",
+    "software_class": "Graphics Rendering",
+    "software_type": "Rendering Tool"
+  }
+}

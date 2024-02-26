@@ -1,0 +1,16 @@
+{
+  "software_name": "Xvfb",
+  "comprehensive_overview": "Xvfb (X Virtual Frame Buffer) is a virtual X server that provides a virtual display framebuffer for running GUI applications without a physical display on Unix-like systems. It allows users to perform graphical operations in headless environments and is commonly used for automated testing and server-side applications.",
+  "core_features": [
+    "Virtual X server",
+    "Headless display",
+    "Graphic operations without a physical screen"
+  ],
+  "general_tags": ["Virtual Display", "Headless Operation", "GUI Testing"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Graphical Environments",
+    "software_class": "Virtualization Tool",
+    "software_type": "Utility"
+  }
+}

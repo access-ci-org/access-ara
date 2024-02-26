@@ -1,0 +1,20 @@
+{
+  "software name": "htop",
+  "comprehensive overview": "htop is an interactive process viewer and system monitoring tool for Unix-based systems. It provides an intuitive and real-time overview of system resource usage, CPU and memory utilization, and allows users to manage processes with ease.",
+  "core features": [
+    "Interactive process viewer and system monitor",
+    "Real-time display of CPU and memory usage",
+    "Process management functionalities"
+  ],
+  "general tags": [
+    "System Monitoring",
+    "Process Viewer",
+    "Unix/Linux"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "System Monitoring",
+    "software class": "Utility",
+    "software type": "Monitoring Tool"
+  }
+}

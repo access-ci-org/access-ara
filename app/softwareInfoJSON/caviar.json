@@ -1,0 +1,20 @@
+{
+  "software_name": "Caviar",
+  "comprehensive_overview": "Caviar is a software tool used for performing fine-mapping and causal inference in complex trait genetics. It helps in prioritizing likely causal variants and estimating their effect sizes.",
+  "core_features": [
+    "Fine-mapping of causal variants",
+    "Causal inference in complex trait genetics",
+    "Estimation of effect sizes"
+  ],
+  "general_tags": [
+    "Genetics",
+    "Fine-mapping",
+    "Causal inference"
+  ],
+  "additional_tags": {
+    "research_discipline": "Genomics",
+    "research_area": "Complex trait genetics",
+    "software_class": "Bioinformatics tool",
+    "software_type": "Statistical tool"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "software name": "libXinerama",
+    "comprehensive overview": "libXinerama is a library that provides support for the Xinerama extension in the X Window System. It allows applications to obtain information about the available screens and monitor layout in a multi-monitor X11 environment, enabling better handling of multiple displays.",
+    "core features": [
+        "Xinerama extension support for multi-monitor setups",
+        "Retrieval of screen attributes and monitor information",
+        "Enhanced capabilities for managing multiple X displays"
+    ],
+    "general tags": [
+        "Xinerama Extension",
+        "Multi-Monitor Support",
+        "X Window System"
+    ],
+    "additional tags": {
+        "research discipline": "Computer Graphics",
+        "research area": "Multiple Display Management",
+        "software class": "Library",
+        "software type": "Windowing System Extension"
+    }
+}

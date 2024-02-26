@@ -1,0 +1,20 @@
+{
+  "software": "TensorboardX",
+  "comprehensive_overview": "TensorboardX is a PyTorch library that enables visualization of PyTorch models and data using TensorBoard. It allows users to log PyTorch models, metrics, gradients, and other data for visualization and monitoring in TensorBoard, enhancing the debugging and optimization process in deep learning experiments.",
+  "core_features": [
+    "Integration with PyTorch",
+    "Visualization tools",
+    "Model logging"
+  ],
+  "general_tags": [
+    "deep learning",
+    "visualization",
+    "model monitoring"
+  ],
+  "additional_tags": {
+    "research_discipline": "Artificial Intelligence",
+    "research_area": "Deep Learning",
+    "software_class": "Library",
+    "software_type": "Visualization Integration"
+  }
+}

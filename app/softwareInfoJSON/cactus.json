@@ -1,0 +1,17 @@
+{
+    "software": "Cactus",
+    "overview": "Cactus is a bioinformatics software tool specifically designed for genome alignment and comparative genomics analysis, especially focusing on the detection of conserved regions and structural variations across different species.",
+    "core_features": [
+        "Genome alignment algorithms for comparative genomics studies",
+        "Identification of conserved regions and evolutionary breakpoints",
+        "Detection of structural variations and rearrangements in genomes",
+        "Visualization tools for exploring comparative genomic results"
+    ],
+    "general_tags": ["bioinformatics", "genome alignment", "comparative genomics"],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Comparative Genomics",
+        "software_class": "Bioinformatics Tool",
+        "software_type": "Software"
+    }
+}

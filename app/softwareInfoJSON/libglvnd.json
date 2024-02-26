@@ -1,0 +1,21 @@
+{
+  "software_name": "libglvnd",
+  "comprehensive_overview": "libglvnd, or OpenGL Vendor-Neutral Dispatch library, is a library that provides a vendor-neutral dispatch layer for OpenGL functions. It enables applications to dynamically load OpenGL libraries and provides a consistent API across different graphics drivers.",
+  "core_features": [
+    "Vendor-neutral OpenGL dispatch",
+    "Dynamic loading of OpenGL libraries",
+    "Consistent API for OpenGL functions",
+    "Compatibility across graphics drivers"
+  ],
+  "general_tags": [
+    "OpenGL",
+    "dispatch layer",
+    "graphics drivers"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Graphics",
+    "research_area": "Graphics Programming",
+    "software_class": "Library",
+    "software_type": "Graphics"
+  }
+}

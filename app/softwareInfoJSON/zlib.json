@@ -1,0 +1,21 @@
+{
+    "tool": "zlib",
+    "overview": "zlib is a software library for data compression and decompression using the DEFLATE data compression algorithm. It offers a fast and efficient compression method for reducing file sizes and conserving storage space. zlib is widely used in various applications for compression and decompression of data streams and files.",
+    "core_features": [
+        "Data compression and decompression using DEFLATE algorithm",
+        "Fast and efficient file compression for storage optimization",
+        "Support for different compression levels and strategies",
+        "Integration with numerous programming languages and applications"
+    ],
+    "general_tags": [
+        "data compression",
+        "DEFLATE algorithm",
+        "compression library"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Library",
+        "software_type": "Compression Tool"
+    }
+}

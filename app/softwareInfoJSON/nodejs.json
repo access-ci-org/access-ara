@@ -1,0 +1,16 @@
+{
+    "software_name": "Node.js",
+    "comprehensive_overview": "Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside a web browser. It allows developers to use JavaScript to write command line tools and for server-side scripting.",
+    "core_features": [
+        "Asynchronous and event-driven",
+        "Fast and scalable networking",
+        "Non-blocking I/O model"
+    ],
+    "general_tags": ["runtime environment", "JavaScript", "server-side scripting"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Runtime Environment",
+        "software_type": "Open-source"
+    }
+}

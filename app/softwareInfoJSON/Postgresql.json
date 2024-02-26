@@ -1,0 +1,29 @@
+{
+    "PostgreSQL": {
+        "overview": "PostgreSQL is a powerful open-source relational database management system known for its advanced features, extensibility, and reliability. It offers ACID compliance, full support for SQL queries, and a rich set of data types, making it a popular choice for enterprise-level applications.",
+        "core_features": [
+            "Relational database management system",
+            "ACID compliance",
+            "SQL query support",
+            "Extensible features",
+            "Data integrity and reliability"
+        ],
+        "general_tags": [
+            "Relational database",
+            "SQL",
+            "Data management"
+        ],
+        "additional_tags": {
+            "research_discipline": [
+                "Computer Science",
+                "Database Management"
+            ],
+            "research_area": [
+                "Relational Databases",
+                "Query Optimization"
+            ],
+            "software_class": "Database Management System",
+            "software_type": "Database"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "software_name": "Highcharts",
+    "comprehensive_overview": "Highcharts is a JavaScript charting library that makes it easy for developers to add interactive charts to web and mobile projects. It offers a wide range of chart types, including line, bar, pie, scatter, and more, with support for animations, tooltips, and zooming. Highcharts is highly customizable and can be integrated with various front-end frameworks and back-end technologies.",
+    "core_features": [
+        "Support for a wide variety of chart types",
+        "Interactive features like tooltips and zooming",
+        "Easy customization through CSS styling and configuration options",
+        "Compatibility with different platforms and devices",
+        "Extensive documentation and active community support"
+    ],
+    "general_tags": [
+        "JavaScript",
+        "Charting Library",
+        "Data Visualization",
+        "Web Development"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Charting",
+        "software_type": "Library"
+    }
+}

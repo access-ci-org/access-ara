@@ -1,0 +1,23 @@
+{
+    "software": "FreeGLUT",
+    "overview": "FreeGLUT is an open-source alternative to the OpenGL Utility Toolkit (GLUT) library. It provides a platform-independent API for creating and managing windows and input devices in OpenGL applications, facilitating cross-platform development.",
+    "core_features": [
+        "Cross-platform window management",
+        "Creation of OpenGL rendering contexts",
+        "Event-driven programming for input handling",
+        "Support for basic GUI functionality",
+        "Open-source implementation"
+    ],
+    "general_tags": [
+        "OpenGL utility",
+        "cross-platform development",
+        "window management",
+        "input device support"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Graphics",
+        "research_area": "OpenGL Development",
+        "software_class": "Graphics Library",
+        "software_type": "Open Source"
+    }
+}

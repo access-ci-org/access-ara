@@ -1,0 +1,20 @@
+{
+   "software_name": "PETSc",
+   "comprehensive_overview": "PETSc, also known as Portable, Extensible Toolkit for Scientific Computation, is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations. It employs the MPI standard for all message-passing communication.",
+   "core_features": [
+      "Scalable solution of partial differential equations",
+      "Supports various parallel computing architectures",
+      "Efficient data structures and solvers for numerical computations"
+   ],
+   "general_tags": [
+      "scientific computing",
+      "parallel computing",
+      "numerical methods"
+   ],
+   "additional_tags": {
+      "research_discipline": "computational science",
+      "research_area": "numerical analysis",
+      "software_class": "library",
+      "software_type": "HPC tool"
+   }
+}

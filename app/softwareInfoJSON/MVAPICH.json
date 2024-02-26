@@ -1,0 +1,19 @@
+{
+  "MVAPICH": {
+    "overview": "MVAPICH (MPI for MVAPICH2) is an MPI (Message Passing Interface) library optimized for high-performance computing (HPC) environments. It leverages MPI standard compliance and fine-tuned communication protocols to achieve low-latency communication and high scalability for HPC applications.",
+    "core_features": [
+      "Optimized for HPC environments",
+      "High-performance MPI library",
+      "Low-latency communication",
+      "Scalable for large-scale systems",
+      "Fine-tuned communication protocols"
+    ],
+    "general_tags": ["MPI library", "High-performance computing", "Scalability"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "High-Performance Computing"],
+      "research_area": ["Parallel Computing", "Distributed Systems"],
+      "software_class": "Library",
+      "software_type": "Parallel Computing"
+    }
+  }
+}

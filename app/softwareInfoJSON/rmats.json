@@ -1,0 +1,20 @@
+{
+  "software": "rMATS",
+  "comprehensive_overview": "rMATS (Replicate Multivariate Analysis of Transcript Splicing) is a computational tool used for differential splicing analysis in RNA-Seq data. It enables the detection of alternative splicing events and the quantification of splicing changes across different conditions or samples.",
+  "core_features": [
+    "RNA-Seq data analysis",
+    "Differential splicing detection",
+    "Alternative splicing events"
+  ],
+  "general_tags": [
+    "RNA-Seq",
+    "splicing analysis",
+    "transcriptomics"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Transcriptomics",
+    "software_class": "Tool",
+    "software_type": "Splicing Analysis"
+  }
+}

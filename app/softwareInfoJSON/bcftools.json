@@ -1,0 +1,23 @@
+{
+    "software": "bcftools",
+    "overview": "bcftools is a set of utilities for variant calling and manipulation in VCF/BCF files. It is commonly used for analyzing genetic variation and genomic data.",
+    "core_features": [
+        "Variant calling and manipulation",
+        "Highly optimized for speed and memory usage",
+        "Integration with VCF and BCF formats",
+        "Filtering, merging, and comparing variants",
+        "Quality control and statistics"
+    ],
+    "general_tags": [
+        "genomics",
+        "variant calling",
+        "bioinformatics",
+        "data analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "Biomedical Sciences",
+        "research_area": "Genomics",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Open Source"
+    }
+}

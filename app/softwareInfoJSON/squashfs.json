@@ -1,0 +1,20 @@
+{
+  "software": "SquashFS",
+  "comprehensive_overview": "SquashFS is a compressed read-only filesystem with built-in compression providing space-efficient storage. It is commonly used in embedded systems, live CDs, and Linux distributions to compress filesystem images and reduce storage space requirements while maintaining efficient access to files.",
+  "core_features": [
+    "Read-only filesystem",
+    "Compression",
+    "Space-efficient storage"
+  ],
+  "general_tags": [
+    "filesystem compression",
+    "embedded systems",
+    "storage efficiency"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "System Administration",
+    "software_class": "Filesystem",
+    "software_type": "Compression Tool"
+  }
+}

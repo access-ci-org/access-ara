@@ -1,0 +1,16 @@
+{
+  "software_name": "PHYLIP",
+  "comprehensive_overview": "PHYLIP (the PHYLogeny Inference Package) is a package of programs for inferring evolutionary relationships among a group of species.",
+  "core_features": [
+    "Computes distance matrices",
+    "Constructs phylogenetic trees using various methods",
+    "Performs bootstrap analysis to assess tree robustness"
+  ],
+  "general_tags": ["phylogenetics", "evolutionary biology", "bioinformatics"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": ["Evolutionary Biology", "Phylogenetics"],
+    "software_class": "Bioinformatics Tool",
+    "software_type": "Computational Tool"
+  }
+}

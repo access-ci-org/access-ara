@@ -1,1 +1,23 @@
-As "C" is a programming language, additional information is typically not applicable to tools or software. If you have a specific C-based tool or software in mind, please provide its name so I can generate a detailed JSON output for that particular tool.
+```json
+{
+    "software_name": "C",
+    "comprehensive_overview": "C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.",
+    "core_features": [
+        "Procedural programming",
+        "Static type system",
+        "Efficient memory manipulation",
+        "Low-level access to computer memory"
+    ],
+    "general_tags": [
+        "programming language",
+        "procedural programming",
+        "static typing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Software Development",
+        "software_class": "Programming Language",
+        "software_type": "Compiler"
+    }
+}
+```

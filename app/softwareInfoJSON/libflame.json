@@ -1,0 +1,21 @@
+{
+  "software_name": "libflame",
+  "comprehensive_overview": "libflame is a library for dense linear algebra computations that provides high-performance implementations of basic linear algebra subprograms (BLAS) and LAPACK routines. It focuses on optimizing linear algebra operations for performance and productivity.",
+  "core_features": [
+    "High-performance linear algebra computations",
+    "Optimized BLAS and LAPACK routines",
+    "Efficient dense linear algebra operations",
+    "Productivity enhancements for linear algebra tasks"
+  ],
+  "general_tags": [
+    "linear algebra",
+    "performance optimization",
+    "BLAS"
+  ],
+  "additional_tags": {
+    "research_discipline": "Mathematics",
+    "research_area": "Numerical Linear Algebra",
+    "software_class": "Library",
+    "software_type": "Linear Algebra Computation"
+  }
+}

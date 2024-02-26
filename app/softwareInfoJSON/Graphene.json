@@ -1,0 +1,27 @@
+{
+    "software_name": "Graphene",
+    "comprehensive_overview": "Graphene is a Python library for building complex pipelines of batch and stream data processing. It allows for the creation of highly scalable and efficient workflows for data transformation and analysis.",
+    "core_features": [
+        "Batch and stream data processing",
+        "Creation of complex data processing pipelines",
+        "Scalable and efficient workflows",
+        "Data transformation and analysis"
+    ],
+    "general_tags": [
+        "data processing",
+        "workflow automation",
+        "Python library"
+    ],
+    "additional_tags": {
+        "research_discipline": [
+            "Data Science",
+            "Bioinformatics"
+        ],
+        "research_area": [
+            "Data Analytics",
+            "Genomics"
+        ],
+        "software_class": "Data Processing",
+        "software_type": "Python Library"
+    }
+}

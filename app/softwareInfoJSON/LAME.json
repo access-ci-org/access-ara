@@ -1,0 +1,19 @@
+{
+  "LAME": {
+    "overview": "LAME is an open-source audio encoder that allows the conversion of audio data to the popular MP3 format. It provides high-quality audio compression with configurable options for encoding various audio sources.",
+    "core_features": [
+      "Audio encoding to MP3 format",
+      "High-quality audio compression",
+      "Configurable encoding options",
+      "Open-source and free software",
+      "Wide compatibility with audio players"
+    ],
+    "general_tags": ["Audio encoder", "MP3 format", "Open-source"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Audio Engineering"],
+      "research_area": ["Audio Compression", "Digital Audio"],
+      "software_class": "Tool",
+      "software_type": "Audio Processing"
+    }
+  }
+}

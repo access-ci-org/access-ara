@@ -1,0 +1,21 @@
+{
+  "software_name": "libgpuarray",
+  "comprehensive_overview": "libgpuarray is a library for managing memory allocation and data transfers on GPUs. It provides a uniform interface for GPU memory management across different hardware platforms, enabling efficient computation offloading to GPUs.",
+  "core_features": [
+    "GPU memory management",
+    "Data transfer operations for GPUs",
+    "Cross-platform GPU support",
+    "Efficient computation offloading"
+  ],
+  "general_tags": [
+    "GPU computing",
+    "memory management",
+    "data transfer"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Parallel Computing",
+    "software_class": "Library",
+    "software_type": "GPU Management"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "software_name": "Mpi4py",
+    "comprehensive_overview": "Mpi4py is a Python package that allows Python programs to run in parallel on multiple processors using the Message Passing Interface (MPI) standard.",
+    "core_features": [
+        "Enables parallel computing in Python using MPI",
+        "Allows communication and coordination between processes",
+        "Supports high-performance computing and distributed memory processing"
+    ],
+    "general_tags": [
+        "Python library",
+        "Parallel computing",
+        "MPI standard",
+        "High-performance computing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Parallel and Distributed Computing",
+        "software_class": "Library",
+        "software_type": "Parallel Processing"
+    }
+}

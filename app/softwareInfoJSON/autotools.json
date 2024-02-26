@@ -1,0 +1,16 @@
+{
+  "software_name": "Autotools",
+  "comprehensive_overview": "Autotools refers to a suite of tools including Autoconf, Automake, and Libtool used in software development for ensuring portability and simplifying the build process. Autoconf is for creating configure scripts, Automake for generating Makefiles, and Libtool for handling shared libraries.",
+  "core_features": [
+    "Configuration management",
+    "Build automation",
+    "Library management"
+  ],
+  "general_tags": ["Software Development", "Build Tools", "Portability"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Software Engineering",
+    "software_class": "Development Tools",
+    "software_type": "Toolchain"
+  }
+}

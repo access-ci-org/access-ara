@@ -1,0 +1,20 @@
+{
+  "software_name": "OpenBLAS",
+  "comprehensive_overview": "OpenBLAS (Open Basic Linear Algebra Subprograms) is an open-source implementation of the BLAS (Basic Linear Algebra Subprograms) API with many hand-crafted optimizations for specific processor types.",
+  "core_features": [
+    "High-performance BLAS library",
+    "Support for various processor architectures",
+    "Optimized for specific CPU types"
+  ],
+  "general_tags": [
+    "Linear Algebra",
+    "High Performance Computing",
+    "Optimization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computational Science",
+    "research_area": "Numerical Analysis",
+    "software_class": "Library",
+    "software_type": "Scientific Computing"
+  }
+}

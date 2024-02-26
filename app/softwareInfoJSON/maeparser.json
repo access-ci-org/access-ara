@@ -1,0 +1,19 @@
+{
+  "software_name": "maeparser",
+  "comprehensive_overview": "maeparser is a Python library for parsing Molecular Operating Environment (MOE) files in Maestro format. It provides functionalities for reading and extracting data from Maestro files, making it easier for users to work with molecular structures and data stored in these files.",
+  "core_features": [
+    "Parsing MOE files in Maestro format",
+    "Reading and extracting data from Maestro files"
+  ],
+  "general_tags": [
+    "Python library",
+    "Molecular Operating Environment",
+    "Data parsing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Molecular modeling",
+    "software_class": "File parser",
+    "software_type": "Library"
+  }
+}

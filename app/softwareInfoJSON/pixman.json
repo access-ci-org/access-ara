@@ -1,0 +1,13 @@
+{
+    "software_name": "pixman",
+    "comprehensive_overview": "Pixman is a low-level software library for pixel manipulation, providing various low-level optimizations for rasterization, compositing, and other image processing operations.",
+    "core_features": "1. Low-level pixel manipulation\n2. Rasterization optimizations\n3. Compositing capabilities\n4. Image processing operations",
+    "general_tags": ["pixel manipulation", "image processing", "rasterization", "compositing"],
+    
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": ["Computer Graphics", "Image Processing"],
+        "software_class": "Library",
+        "software_type": "Low-level"
+    }
+}

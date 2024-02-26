@@ -1,0 +1,12 @@
+{
+    "software_name": "Panoply",
+    "comprehensive_overview": "Panoply is a cross-platform application that plots geo-referenced and other arrays from netCDF, HDF, GRIB, and other datasets.",
+    "core_features": ["Plotting geo-referenced arrays", "Visualizing data from netCDF, HDF, and GRIB datasets", "Cross-platform compatibility"],
+    "general_tags": ["Data Visualization", "Plotting", "NetCDF", "HDF", "GRIB"],
+    "additional_tags": {
+        "research_discipline": "Earth Sciences",
+        "research_area": ["Climate Science", "Meteorology", "Geophysics"],
+        "software_class": "Data Visualization Tool",
+        "software_type": "Plotting Tool"
+    }
+}

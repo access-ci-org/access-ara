@@ -1,0 +1,21 @@
+{
+    "tool": "x265",
+    "overview": "x265 is an open-source HEVC (High Efficiency Video Coding) encoder that enables efficient video compression for high-quality, high-resolution video content. It provides advanced encoding features and optimizations for achieving significant bitrate reduction while maintaining visual quality, making it suitable for various multimedia applications.",
+    "core_features": [
+        "HEVC/H.265 video encoding with high compression efficiency",
+        "Optimized bitrate control and quality settings",
+        "Support for various coding tools and optimization techniques",
+        "Integration with encoding workflows and multimedia applications"
+    ],
+    "general_tags": [
+        "HEVC encoding",
+        "video compression",
+        "multimedia tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "Multimedia Processing",
+        "research_area": "Video Compression",
+        "software_class": "Encoder",
+        "software_type": "Video Compression Software"
+    }
+}

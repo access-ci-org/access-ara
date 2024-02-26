@@ -1,24 +1,12 @@
 {
-  "software_name": "AUGUSTUS",
-  "overview": "AUGUSTUS is a gene prediction software that uses Hidden Markov Models (HMMs) to predict protein-coding genes in eukaryotic genomes. It is widely used for annotating genomes and identifying gene structures.",
-  "core_features": [
-    "Gene prediction",
-    "Hidden Markov Models",
-    "Genome annotation"
-  ],
-  "general_tags": [
-    "Gene prediction",
-    "Genome annotation",
-    "Bioinformatics"
-  ],
-  "research_discipline": [
-    "Bioinformatics",
-    "Genomics"
-  ],
-  "research_area": [
-    "Genome annotation",
-    "Gene prediction"
-  ],
-  "software_class": "Bioinformatics tool",
-  "software_type": "Gene prediction software"
+    "software_name": "AUGUSTUS",
+    "comprehensive_overview": "AUGUSTUS is a gene prediction tool that accurately predicts genes in eukaryotic genomes. It utilizes biological information from diverse sources to improve gene structure predictions and is widely used in genomics and evolutionary biology research.",
+    "core_features": ["Gene prediction in eukaryotic genomes", "Incorporates biological information for accurate predictions", "Utilized in genomics and evolutionary biology"],
+    "general_tags": ["Gene prediction", "Genomics"],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Gene Prediction",
+        "software_class": "Gene Prediction Tool",
+        "software_type": "Tool"
+    }
 }

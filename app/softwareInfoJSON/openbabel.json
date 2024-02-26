@@ -1,0 +1,22 @@
+{
+    "software_name": "OpenBabel",
+    "comprehensive_overview": "Open Babel is an open-source chemical toolbox designed to speak the many languages of chemical data. It's an essential chemical software tool that is used for converting chemical file formats, analyzing chemical data, and performing various chemical calculations.",
+    "core_features": [
+        "Conversion of chemical file formats",
+        "Analysis of chemical data",
+        "Chemical calculations",
+        "Chemical structure visualization"
+    ],
+    "general_tags": [
+        "Chemistry",
+        "Bioinformatics",
+        "Chemical Informatics",
+        "Molecular Modeling"
+    ],
+    "additional_tags": {
+        "research_discipline": "Chemistry",
+        "research_area": "Chemical Informatics",
+        "software_class": "Molecular Modeling",
+        "software_type": "Data Conversion and Analysis"
+    }
+}

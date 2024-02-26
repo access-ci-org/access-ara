@@ -1,24 +1,12 @@
 {
-  "software_name": "AnnotSV",
-  "overview": "AnnotSV is a tool for annotating and prioritizing structural variants in the human genome. It provides comprehensive annotations including gene impact, functional consequences, and pathogenicity predictions.",
-  "core_features": [
-    "Structural variant annotation",
-    "Gene impact assessment",
-    "Pathogenicity predictions"
-  ],
-  "general_tags": [
-    "Structural variant analysis",
-    "Genome annotation",
-    "Pathogenicity assessment"
-  ],
-  "research_discipline": [
-    "Genomics",
-    "Medical genetics"
-  ],
-  "research_area": [
-    "Structural variant analysis",
-    "Genetic disorders"
-  ],
-  "software_class": "Annotation tool",
-  "software_type": "Structural variant annotator"
+    "software_name": "AnnotSV",
+    "comprehensive_overview": "AnnotSV is a tool designed for annotating and prioritizing structural variants (SV) detected from genome sequencing data. It provides detailed annotations about SVs, such as their impact on genes, regulatory regions, and potential clinical significance.",
+    "core_features": ["Annotates and prioritizes structural variants", "Provides detailed annotations on SV impacts", "Analyzes SVs for gene and regulatory region impact"],
+    "general_tags": ["Structural variant annotation", "Genomic analysis"],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Structural Variant Analysis",
+        "software_class": "Genomic Annotation Tool",
+        "software_type": "Tool"
+    }
 }

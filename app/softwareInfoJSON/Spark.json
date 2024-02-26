@@ -1,0 +1,16 @@
+{
+  "software_name": "Spark",
+  "comprehensive_overview": "Apache Spark is an open-source, distributed computing system designed for big data processing and analytics. It provides an easy-to-use programming interface for scalable data processing, machine learning, and real-time analytics across clustered environments.",
+  "core_features": [
+    "Distributed data processing",
+    "In-memory computing",
+    "Stream processing and machine learning libraries"
+  ],
+  "general_tags": ["Big Data", "Distributed Computing", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Big Data Analytics",
+    "software_class": "Data Processing Framework",
+    "software_type": "Framework"
+  }
+}

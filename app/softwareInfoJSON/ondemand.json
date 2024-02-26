@@ -1,0 +1,19 @@
+{
+    "software_name": "OnDemand",
+    "comprehensive_overview": "OnDemand is an open-source web portal that provides access to High-Performance Computing (HPC) resources. It offers a graphical interface for users to access computing clusters, data storage, and software applications remotely through a web browser.",
+    "core_features": [
+        "Web-based portal for HPC resources",
+        "Graphical user interface for cluster computing",
+        "Remote access to data storage and software applications",
+        "Job submission and monitoring capabilities"
+    ],
+    "general_tags": [
+        "HPC", "High-Performance Computing", "Web Portal", "Remote Access"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computational Science",
+        "research_area": "High-Performance Computing",
+        "software_class": "Web Portal",
+        "software_type": "HPC Management Software"
+    }
+}

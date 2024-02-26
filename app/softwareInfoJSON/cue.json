@@ -1,0 +1,14 @@
+```json
+{
+    "software_name": "CUE",
+    "comprehensive_overview": "CUE is a data constraint language that aims to address different aspects of data validation and transformation, making it easier to define, validate, and manipulate data in a structured and declarative manner.",
+    "core_features": ["Declarative syntax for defining constraints on data", "Supports constraints for validation and transformation", "Can be integrated with various data processing tools and frameworks"],
+    "general_tags": ["Data validation", "Data transformation", "Declarative language"],
+    "additional_tags": {
+        "research_discipline": ["Data Science", "Informatics"],
+        "research_area": ["Data Management", "Data Processing"],
+        "software_class": "Data Validation",
+        "software_type": "Constraint Language"
+    }
+}
+```

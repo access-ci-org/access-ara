@@ -1,0 +1,23 @@
+{
+    "software_name": "OpenCARP",
+    "comprehensive_overview": "OpenCARP is an open-source cardiac electrophysiology simulation software that provides a flexible platform for modeling the heart at various scales.",
+    "core_features": [
+        "Cardiac electrophysiology simulation",
+        "Multi-scale modeling of the heart",
+        "Open-source and customizable",
+        "Support for complex anatomical structures",
+        "Integration with various solvers and visualization tools"
+    ],
+    "general_tags": [
+        "cardiac electrophysiology",
+        "simulation software",
+        "multi-scale modeling",
+        "open-source"
+    ],
+    "additional_tags": {
+        "research_discipline": "Biomedical Engineering",
+        "research_area": "Cardiac Electrophysiology",
+        "software_class": "Computational modeling",
+        "software_type": "Simulation tool"
+    }
+}

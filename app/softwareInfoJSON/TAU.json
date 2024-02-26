@@ -1,0 +1,16 @@
+{
+  "software_name": "TAU",
+  "comprehensive_overview": "TAU (Tuning and Analysis Utilities) is a performance analysis toolkit for measuring and diagnosing performance characteristics of parallel programs. It provides profiling, tracing, and visualization tools to optimize the performance of parallel applications across various platforms.",
+  "core_features": [
+    "Performance profiling and analysis",
+    "Parallel program optimization",
+    "Multi-platform support"
+  ],
+  "general_tags": ["Performance Analysis", "Parallel Computing", "Optimization Tool"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High-Performance Computing",
+    "software_class": "Performance Toolkit",
+    "software_type": "Tool"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "KaHIP": {
+    "overview": "KaHIP (Karlsruhe High Quality Partitioning) is a family of algorithms and software tools for performing high-quality graph partitioning. It includes various partitioning algorithms and tools for optimizing graph cuts in parallel environments.",
+    "core_features": [
+      "High-quality graph partitioning",
+      "Graph partitioning algorithms",
+      "Optimizing graph cuts",
+      "Parallel computing support",
+      "Scalable for large graphs"
+    ],
+    "general_tags": ["Graph partitioning", "Algorithms", "Parallel computing"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Graph Theory"],
+      "research_area": ["Graph Partitioning", "Parallel Computing"],
+      "software_class": "Tool",
+      "software_type": "Graph"
+    }
+  }
+}

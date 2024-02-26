@@ -1,0 +1,23 @@
+{
+    "software": "feh",
+    "overview": "feh is a lightweight and versatile image viewer for the Linux command line that supports a range of image formats. It provides basic image viewing functions and options for display manipulation, making it a useful tool for quick image viewing and management in terminal environments.",
+    "core_features": [
+        "Command line image viewer",
+        "Support for various image formats",
+        "Slideshow functionality",
+        "Basic image manipulation options",
+        "Customizable keybindings"
+    ],
+    "general_tags": [
+        "image viewer",
+        "command line tool",
+        "Linux utilities",
+        "image display"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Image Viewing",
+        "software_class": "Utility Tools",
+        "software_type": "Open Source"
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "software_name": "XGBoost",
+  "comprehensive_overview": "XGBoost (Extreme Gradient Boosting) is a scalable and optimized machine learning library known for its speed and performance in gradient boosting algorithms. It is widely used for regression, classification, and ranking tasks, providing high accuracy and efficiency in predictive modeling.",
+  "core_features": [
+    "Gradient boosting machine learning",
+    "Performance optimization",
+    "Parallel and distributed computing"
+  ],
+  "general_tags": ["Machine Learning", "Gradient Boosting", "Optimization"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Machine Learning",
+    "software_class": "Machine Learning Library",
+    "software_type": "Library"
+  }
+}

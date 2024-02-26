@@ -1,0 +1,21 @@
+{
+    "tool": "vscodeserver",
+    "overview": "VS Code Server is a remote development solution that allows developers to run Visual Studio Code (VS Code) on a remote server or cloud environment. It provides the full VS Code experience through a web browser, enabling users to edit, debug, and manage code remotely while leveraging the power of VS Code's features and extensions.",
+    "core_features": [
+        "Remote access to Visual Studio Code through a web browser",
+        "Code editing, debugging, and version control capabilities",
+        "Extension support for customizing the coding environment",
+        "Collaboration features for team development"
+    ],
+    "general_tags": [
+        "remote development",
+        "cloud IDE",
+        "web-based coding"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "IDE Server",
+        "software_type": "Remote Development Tool"
+    }
+}

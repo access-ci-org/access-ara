@@ -1,0 +1,22 @@
+{
+    "software_name": "Launcher",
+    "comprehensive_overview": "Launcher is a software utility that provides a customizable and user-friendly interface for users to organize and access their frequently used applications, files, and websites.",
+    "core_features": [
+        "Customizable interface",
+        "Quick access to applications, files, and websites",
+        "Organizational tools",
+        "Search functionality"
+    ],
+    "general_tags": [
+        "Launcher",
+        "Utility",
+        "Organizer",
+        "Access"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Utility software",
+        "software_type": "Organizational tool"
+    }
+}

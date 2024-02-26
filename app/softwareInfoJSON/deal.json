@@ -1,0 +1,12 @@
+{
+    "software_name": "deal",
+    "comprehensive_overview": "Deal.ii is a C++ software library supporting the creation of finite element codes and a wide range of applications of finite elements.",
+    "core_features": "deal.ii provides support for unstructured grid hierarchies in two and three dimensions, and for a wide range of finite elements. The core library includes support for distributed memory and shared memory parallelism, algebraic multigrid solvers, mesh adaptivity, and finite element spaces ranging from low-order linear Lagrange elements to high-order discontinuous Galerkin methods. The core library does not include an abundance of pre-written applications, but rather concentrates on providing commonly necessary functionality in a flexible and efficient framework, allowing the user to solve their particular problem effectively.",
+    "general_tags": ["C++", "finite element method", "parallel computing"],
+    "additional_tags": {
+        "research_discipline": "Engineering",
+        "research_area": ["Finite Element Analysis", "Computational Mechanics"],
+        "software_class": "Library",
+        "software_type": "Computational Software"
+    }
+}

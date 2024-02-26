@@ -1,0 +1,16 @@
+{
+  "software_name": "WebProxy",
+  "comprehensive_overview": "WebProxy is a tool or service that acts as an intermediary between a client and the internet to provide functionalities such as web content filtering, caching, and increased privacy and security. It can intercept and filter web requests, block access to certain sites, and improve network performance.",
+  "core_features": [
+    "Web content filtering",
+    "Resource caching",
+    "Anonymity and security enhancements"
+  ],
+  "general_tags": ["Proxy Server", "Web Filtering", "Network Security"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Network Security",
+    "software_class": "Proxy Tool",
+    "software_type": "Service"
+  }
+}

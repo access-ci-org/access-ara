@@ -1,0 +1,21 @@
+{
+    "tool": "zsh",
+    "overview": "Zsh (Z Shell) is an advanced and powerful shell for Unix-like operating systems, serving as an interactive command interpreter and scripting language. It offers extensive customization options, intelligent tab completion, and versatile scripting capabilities, making it popular among power users and developers.",
+    "core_features": [
+        "Interactive command line shell with advanced features",
+        "Customizable prompts, themes, and key bindings",
+        "Intelligent tab completion and spell correction",
+        "Extensive scripting capabilities for automation"
+    ],
+    "general_tags": [
+        "Unix shell",
+        "command line interface",
+        "scripting language"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Shell",
+        "software_type": "Command Interpreter"
+    }
+}

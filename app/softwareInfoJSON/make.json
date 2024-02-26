@@ -1,0 +1,22 @@
+{
+    "software_name": "Make",
+    "comprehensive_overview": "Make is a build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles which specify how to derive the target program. It is widely used in Unix-based operating systems.",
+    "core_features": [
+        "Automatic build process management",
+        "Dependency tracking",
+        "Support for parallel execution",
+        "Facilitates incremental builds"
+    ],
+    "general_tags": [
+        "Build Automation",
+        "Makefile",
+        "Unix",
+        "Open Source"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Build Automation",
+        "software_type": "Tool"
+    }
+}

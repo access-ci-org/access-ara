@@ -1,0 +1,22 @@
+{
+   "software_name": "PYTHIA",
+   "comprehensive_overview": "PYTHIA is a high-energy physics event generator widely used in particle physics research for simulating the collision and decay of particles at high energies. It is designed to accurately model the outcomes of high-energy particle interactions.",
+   "core_features": [
+      "Simulation of particle collisions and decays",
+      "Event generation for high-energy physics experiments",
+      "Incorporation of various physics models and parameters",
+      "Calculation of cross sections and kinematic distributions"
+   ],
+   "general_tags": [
+      "high-energy physics",
+      "particle physics",
+      "event generator",
+      "physics simulation"
+   ],
+   "additional_tags": {
+      "research_discipline": "Physics",
+      "research_area": "High-energy particle physics",
+      "software_class": "Simulation tool",
+      "software_type": "Event generator"
+   }
+}

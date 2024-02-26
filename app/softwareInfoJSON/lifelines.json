@@ -1,0 +1,12 @@
+{
+    "software_name": "lifelines",
+    "comprehensive_overview": "Lifelines is a Python library that provides tools for survival analysis under right censoring.",
+    "core_features": "Supports survival and hazard rate estimation, Kaplan-Meier plots, Nelson-Aalen plots, Cox proportional hazard modeling, and parametric survival regression.",
+    "general_tags": ["Python library", "Survival analysis", "Right censoring"],
+    "additional_tags": {
+        "research_discipline": "Biostatistics",
+        "research_area": "Clinical trials",
+        "software_class": "Statistical analysis",
+        "software_type": "Python library"
+    }
+}

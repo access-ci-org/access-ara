@@ -1,0 +1,20 @@
+{
+  "software": "protobuf",
+  "comprehensive_overview": "Protocol Buffers, also known as protobuf, is a language-neutral, platform-neutral, extensible mechanism for serializing structured data. It enables efficient data interchange and communication between different applications and systems.",
+  "core_features": [
+    "Data serialization",
+    "Cross-platform compatibility",
+    "Efficient data interchange"
+  ],
+  "general_tags": [
+    "serialization",
+    "interoperability",
+    "data exchange"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data communication",
+    "software_class": "Library",
+    "software_type": "Serialization"
+  }
+}

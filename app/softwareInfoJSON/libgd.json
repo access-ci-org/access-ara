@@ -1,0 +1,21 @@
+{
+  "software_name": "libgd",
+  "comprehensive_overview": "libgd is a graphics library for dynamically creating images. It provides support for various image formats, drawing functions, and image manipulation capabilities. libgd is commonly used for generating dynamic images in web applications.",
+  "core_features": [
+    "Image creation in multiple formats",
+    "Drawing functions",
+    "Image manipulation",
+    "Dynamic image generation for web applications"
+  ],
+  "general_tags": [
+    "graphics library",
+    "image creation",
+    "web development"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Graphics",
+    "research_area": "Image Processing",
+    "software_class": "Library",
+    "software_type": "Graphics"
+  }
+}

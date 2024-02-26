@@ -1,1 +1,23 @@
-Since "CLIP" is a term that can refer to different software or tools depending on the context, could you please provide more details or specify the particular software you are referring to? This additional context will help in providing a more accurate and tailored response.
+{
+    "software_name": "CLIP",
+    "comprehensive_overview": "CLIP (Cross-Linked Immunoprecipitation) is a technique used to identify the direct binding sites of RNA-binding proteins on RNAs. It involves UV crosslinking of proteins to RNA, followed by immunoprecipitation of the RNA-binding protein of interest and sequencing to identify the binding sites.",
+    "core_features": [
+        "Identification of RNA-binding protein binding sites on RNAs",
+        "UV crosslinking of proteins to RNA",
+        "Immunoprecipitation of RNA-binding proteins",
+        "Sequencing to identify binding sites"
+    ],
+    "general_tags": [
+        "CLIP",
+        "RNA-binding proteins",
+        "UV crosslinking",
+        "Immunoprecipitation",
+        "Sequencing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Molecular Biology",
+        "research_area": "RNA Research",
+        "software_class": "Experimental Technique",
+        "software_type": "Laboratory Technique"
+    }
+}

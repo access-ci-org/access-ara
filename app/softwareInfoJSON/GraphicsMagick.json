@@ -1,0 +1,12 @@
+{
+    "software_name": "GraphicsMagick",
+    "comprehensive_overview": "GraphicsMagick is a robust collection of tools and libraries to read, write, and manipulate images in over 88 major formats including popular formats like JPEG, PNG, WebP, TIFF, GIF, SVG, HEIC etc.",
+    "core_features": ["Image transformation", "Image editing", "Image processing", "Batch processing"],
+    "general_tags": ["image-processing", "graphics", "media"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Image Processing",
+        "software_type": "Tool"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "software name": "jbigkit",
+  "comprehensive overview": "jbigkit is an open-source implementation of the JBIG1 data compression standard, particularly useful for bi-level image compression tasks. It provides efficient encoding and decoding algorithms for reducing the size of black-and-white scanned images while retaining quality.",
+  "core features": [
+    "Implementation of the JBIG1 data compression standard",
+    "Specifically designed for bi-level image compression",
+    "Efficient encoding and decoding algorithms"
+  ],
+  "general tags": [
+    "JBIG1 Standard",
+    "Image Compression",
+    "Open-Source Library"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "Data Compression",
+    "software class": "Compression Library",
+    "software type": "Image Compression Tool"
+  }
+}

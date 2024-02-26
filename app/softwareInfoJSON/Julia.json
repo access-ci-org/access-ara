@@ -1,0 +1,19 @@
+{
+  "Julia": {
+    "overview": "Julia is a high-level, high-performance programming language for technical computing, with syntax that is familiar to users of other technical computing environments. It is designed for numerical and computational science.",
+    "core_features": [
+      "High-level programming language",
+      "High-performance computing",
+      "Technical computing capabilities",
+      "Familiar syntax for scientific computing",
+      "Parallel computing support"
+    ],
+    "general_tags": ["Programming language", "Technical computing", "High-performance computing"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Mathematics"],
+      "research_area": ["Numerical Computing", "Scientific Computing"],
+      "software_class": "Programming Language",
+      "software_type": "Development"
+    }
+  }
+}

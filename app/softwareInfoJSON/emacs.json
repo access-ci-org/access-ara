@@ -1,0 +1,23 @@
+{
+    "software": "Emacs",
+    "overview": "Emacs is a highly extensible, customizable, and powerful text editor primarily used for programming and script writing. It offers a variety of features, including syntax highlighting, editing modes, and an integrated environment for software development.",
+    "core_features": [
+        "Extensible with Lisp programming language",
+        "Multiple editing modes (programming languages, markup languages)",
+        "Syntax highlighting and code formatting",
+        "Customizable keybindings",
+        "Integrated tools for version control, compilation, and more"
+    ],
+    "general_tags": [
+        "text editor",
+        "Lisp-based extensibility",
+        "programming environment",
+        "software development"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Text Editing",
+        "software_class": "Text Editor",
+        "software_type": "Open Source"
+    }
+}

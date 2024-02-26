@@ -1,0 +1,16 @@
+{
+  "software_name": "Time",
+  "comprehensive_overview": "Time is a measurement unit used to quantify the duration or interval between events, or to quantify rates of change of quantities in material reality or in the conscious experience. It is a fundamental concept in various fields such as physics, mathematics, and philosophy.",
+  "core_features": [
+    "Measurement of duration",
+    "Quantification of interval between events",
+    "Quantification of rates of change"
+  ],
+  "general_tags": ["measurement", "duration", "interval", "rates of change"],
+  "additional_tags": {
+    "research_discipline": ["Physics", "Mathematics", "Philosophy"],
+    "research_area": [],
+    "software_class": "Measurement Tool",
+    "software_type": "Unit of Measurement"
+  }
+}

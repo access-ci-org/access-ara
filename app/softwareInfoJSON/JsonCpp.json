@@ -1,0 +1,18 @@
+{
+  "JsonCpp": {
+    "overview": "JsonCpp is a C++ library that allows for JSON parsing and generation. It provides an easy-to-use interface for handling JSON data within C++ applications, allowing for efficient serialization and deserialization.",
+    "core_features": [
+      "JSON parsing",
+      "JSON generation",
+      "Simple and intuitive interface",
+      "Efficient serialization and deserialization"
+    ],
+    "general_tags": ["JSON parser", "C++ library", "Serialization"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Data Science"],
+      "research_area": ["JSON Processing", "Data Serialization"],
+      "software_class": "Library",
+      "software_type": "Data Processing"
+    }
+  }
+}

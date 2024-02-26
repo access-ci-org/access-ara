@@ -1,0 +1,16 @@
+{
+  "software_name": "WIEN2k",
+  "comprehensive_overview": "WIEN2k is an all-electron density-functional theory (DFT) software package used for calculating the electronic structure of solids. It performs quantum mechanical computations to study crystal properties, band structures, and magnetic properties of materials.",
+  "core_features": [
+    "Electronic structure calculations",
+    "Density-functional theory (DFT)",
+    "Solid state physics simulations"
+  ],
+  "general_tags": ["Materials Science", "Density-Functional Theory", "Crystal Properties"],
+  "additional_tags": {
+    "research_discipline": "Materials Science",
+    "research_area": "Computational Physics",
+    "software_class": "Simulation Package",
+    "software_type": "Tool"
+  }
+}

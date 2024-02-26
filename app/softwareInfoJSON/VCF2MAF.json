@@ -1,0 +1,16 @@
+{
+  "software_name": "VCF2MAF",
+  "comprehensive_overview": "VCF2MAF is a tool used in bioinformatics to convert VCF (Variant Call Format) files into MAF (Mutation Annotation Format) files. This conversion helps in annotating and evaluating genetic variations and mutations, enabling comprehensive analysis of genomic data.",
+  "core_features": [
+    "VCF to MAF file conversion",
+    "Genetic variation annotation",
+    "Mutation analysis"
+  ],
+  "general_tags": ["Bioinformatics", "Genomics Data", "Variant Annotation"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Genomics",
+    "software_class": "Data Conversion Tool",
+    "software_type": "Tool"
+  }
+}

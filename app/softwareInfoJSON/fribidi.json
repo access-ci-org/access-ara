@@ -1,0 +1,23 @@
+{
+    "software": "FriBidi",
+    "overview": "FriBidi is a free and open-source library that provides Unicode bidirectional text support. It is used for handling bidirectional text such as Arabic or Hebrew in software applications, ensuring correct text layout and handling.",
+    "core_features": [
+        "Bidirectional text support",
+        "Unicode text processing",
+        "BiDi algorithm implementation",
+        "Text direction handling",
+        "Cross-platform compatibility"
+    ],
+    "general_tags": [
+        "Unicode text support",
+        "bidirectional text processing",
+        "text layout",
+        "open-source library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Unicode Processing",
+        "software_class": "Text Processing Library",
+        "software_type": "Open Source"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "Greenlet": {
+    "overview": "Greenlet is a lightweight, micro-threading library for Python that provides a way to work with micro-threads without the overhead of full-blown threading libraries.",
+    "core_features": [
+      "Lightweight micro-threading",
+      "Efficient context switching",
+      "Simplified concurrency in Python"
+    ],
+    "general_tags": [
+      "Python",
+      "Threading",
+      "Concurrency"
+    ],
+    "additional_tags": {
+      "research_discipline": "Computer Science",
+      "research_area": "Concurrency",
+      "software_class": "Library",
+      "software_type": "Threading Library"
+    }
+  }
+}

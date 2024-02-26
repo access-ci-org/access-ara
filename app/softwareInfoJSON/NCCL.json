@@ -1,0 +1,17 @@
+{
+    "software_name": "NCCL",
+    "comprehensive_overview": "NVIDIA Collective Communications Library (NCCL) is a library of multi-GPU collective communication primitives that are designed to be used as part of a parallel computing infrastructure.",
+    "core_features": "1. Optimized collective communication operations for multi-GPU systems. 2. Designed to work with CUDA-accelerated applications. 3. Support for common collective communication patterns like all-gather, all-reduce, broadcast, reduce, etc. 4. High performance and scalability for deep learning and HPC applications.",
+    "general_tags": [
+        "parallel computing",
+        "GPU communication",
+        "deep learning",
+        "HPC"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Parallel Computing",
+        "software_class": "Library",
+        "software_type": "Communication Library"
+    }
+}

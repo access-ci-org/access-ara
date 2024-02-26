@@ -1,0 +1,20 @@
+{
+  "software name": "htslib",
+  "comprehensive overview": "htslib is a software library for manipulating and interacting with high-throughput sequencing (HTS) data files, such as SAM (Sequence Alignment/Map) and BAM (Binary Alignment/Map) files. It provides tools for efficient access, compression, and analysis of genomic data.",
+  "core features": [
+    "Manipulation and access to high-throughput sequencing data files",
+    "Support for SAM and BAM file formats",
+    "Efficient data compression and retrieval"
+  ],
+  "general tags": [
+    "Genomic Data",
+    "Bioinformatics",
+    "Sequence Analysis"
+  ],
+  "additional tags": {
+    "research discipline": "Genomics",
+    "research area": "Sequence Alignment",
+    "software class": "Library",
+    "software type": "Genomic Data Tool"
+  }
+}

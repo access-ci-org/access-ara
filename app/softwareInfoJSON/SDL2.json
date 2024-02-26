@@ -1,0 +1,16 @@
+{
+  "software_name": "SDL2",
+  "comprehensive_overview": "SDL2 (Simple DirectMedia Layer 2) is a cross-platform development library for low-level access to audio, keyboard, mouse, joystick, and graphics hardware. It provides a straightforward API for developers to create multimedia applications and games.",
+  "core_features": [
+    "Audio, keyboard, and mouse input handling",
+    "Graphics rendering and texture management",
+    "Cross-platform compatibility"
+  ],
+  "general_tags": ["Multimedia Development", "Game Development", "Cross-Platform"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Multimedia Development",
+    "software_class": "Development Library",
+    "software_type": "Library"
+  }
+}

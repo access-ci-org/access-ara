@@ -1,0 +1,22 @@
+{
+    "software_name": "ROCm",
+    "comprehensive_overview": "ROCm, the Radeon Open Compute platform, is a versatile open-source software foundation for high-performance computing and machine learning. It includes a comprehensive solution for accelerating compute beyond graphics, enabling machine learning and high-performance computing on AMD GPUs.",
+    "core_features": [
+        "Open-source software platform",
+        "Support for AMD GPUs",
+        "Focused on high-performance computing and machine learning",
+        "Heterogeneous computing support"
+    ],
+    "general_tags": [
+        "GPU computing",
+        "HPC",
+        "Machine learning",
+        "Open source"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "High-performance computing, Machine learning",
+        "software_class": "Development Tools",
+        "software_type": "Framework"
+    }
+}

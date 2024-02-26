@@ -1,0 +1,23 @@
+{
+    "software": "GIFLIB",
+    "overview": "GIFLIB is a library that provides support for reading and writing GIF (Graphics Interchange Format) images. It offers tools and utilities for handling GIF image files, including decoding, encoding, and manipulating GIF image data.",
+    "core_features": [
+        "Reading and writing GIF images",
+        "Decoding and encoding GIF data",
+        "Color manipulation and transparency",
+        "Optimization and compression",
+        "Cross-platform compatibility"
+    ],
+    "general_tags": [
+        "GIF image format",
+        "image processing",
+        "image manipulation",
+        "file format library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Graphics",
+        "research_area": "Image Processing",
+        "software_class": "Image Library",
+        "software_type": "Open Source"
+    }
+}

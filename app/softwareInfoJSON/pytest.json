@@ -1,0 +1,20 @@
+{
+  "software": "pytest",
+  "comprehensive_overview": "Pytest is a popular testing framework for Python that enables efficient and flexible testing of Python code. It simplifies the process of writing and running tests, supports various testing methodologies, and provides detailed reporting functionalities for test results.",
+  "core_features": [
+    "Test automation",
+    "Fixture support",
+    "Parametrized testing"
+  ],
+  "general_tags": [
+    "testing",
+    "Python",
+    "test automation"
+  ],
+  "additional_tags": {
+    "research_discipline": "Software Engineering",
+    "research_area": "Software Testing",
+    "software_class": "Framework",
+    "software_type": "Testing"
+  }
+}

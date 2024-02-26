@@ -1,0 +1,12 @@
+{
+    "software_name": "OpenMM",
+    "comprehensive_overview": "OpenMM is a high performance toolkit for molecular simulation. It is designed for use in both research and education, with an emphasis on efficiency and extensibility.",
+    "core_features": "1. High performance molecular dynamics simulations. 2. Support for a wide range of molecular dynamics force fields. 3. Customizable integrators and algorithms. 4. GPU acceleration for enhanced performance. 5. Python API for ease of use and integration.",
+    "general_tags": ["molecular dynamics", "simulation", "GPU acceleration"],
+    "additional_tags": {
+        "research_discipline": "Biochemistry",
+        "research_area": "Biophysics",
+        "software_class": "Molecular dynamics simulation",
+        "software_type": "Toolkit"
+    }
+}

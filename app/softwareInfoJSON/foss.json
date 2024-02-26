@@ -1,0 +1,12 @@
+{
+  "software_name": "FOSS",
+  "comprehensive_overview": "FOSS, or Free and Open-Source Software, refers to software that is both free to use and open to the public for modification and redistribution. This licensing model allows for greater collaboration and innovation within the software community.",
+  "core_features": "1. Free to use for any purpose\n2. Source code is accessible and can be modified\n3. Can be redistributed with modifications\n4. Encourages community collaboration and transparency",
+  "general_tags": ["FOSS", "free software", "open-source software"],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "Software Development",
+    "software_type": "Open-Source"
+  }
+}

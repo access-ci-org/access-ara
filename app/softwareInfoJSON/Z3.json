@@ -1,0 +1,16 @@
+{
+  "software_name": "Z3",
+  "comprehensive_overview": "Z3 is a high-performance theorem prover developed by Microsoft Research that is used for solving satisfiability modulo theories (SMT) problems. It provides capabilities for automated reasoning and constraint solving in various domains such as software verification, automated planning, and formal methods.",
+  "core_features": [
+    "Automated reasoning",
+    "SMT solving",
+    "Constraint solving applications"
+  ],
+  "general_tags": ["Theorem Prover", "SMT Solver", "Automated Reasoning"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Formal Verification",
+    "software_class": "Theorem Proving Tool",
+    "software_type": "Solver"
+  }
+}

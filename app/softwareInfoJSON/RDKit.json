@@ -1,0 +1,16 @@
+{
+  "software_name": "RDKit",
+  "comprehensive_overview": "RDKit is an open-source cheminformatics software development kit written in C++ and Python. It provides a wide range of tools for cheminformatics, including molecule representation, substructure searching, and molecular descriptor calculation.",
+  "core_features": [
+    "Molecular structure representation",
+    "Chemical informatics algorithms",
+    "Drug discovery and design tools"
+  ],
+  "general_tags": ["Cheminformatics", "Molecule Informatics", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Drug Discovery",
+    "software_class": "Toolkit",
+    "software_type": "Library"
+  }
+}

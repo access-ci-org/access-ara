@@ -1,0 +1,21 @@
+{
+    "software_name": "NAMD",
+    "comprehensive_overview": "NAMD (Not Another Molecular Dynamics program) is a parallel molecular dynamics code designed for high-performance simulation of large biomolecular systems. It is developed by the Theoretical and Computational Biophysics Group at the University of Illinois.",
+    "core_features": [
+        "- High-performance parallel computing for molecular dynamics simulations",
+        "- Scalable to large biomolecular systems",
+        "- Supports a wide range of force fields and simulation techniques"
+    ],
+    "general_tags": [
+        "molecular dynamics",
+        "biophysics",
+        "simulation",
+        "parallel computing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Biophysics",
+        "research_area": "Molecular Dynamics",
+        "software_class": "Biomolecular Simulation",
+        "software_type": "Computational Chemistry Software"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "software name": "gmt",
+  "comprehensive overview": "Generic Mapping Tools (GMT) is an open-source collection of about 80 command-line tools for manipulating geographic and Cartesian data sets and producing high-quality maps.",
+  "core features": [
+    "Manipulation of geographic and Cartesian data sets",
+    "Creation of high-quality maps",
+    "Support for a wide range of map projections and data formats"
+  ],
+  "general tags": [
+    "Geography",
+    "Mapping",
+    "Visualization"
+  ],
+  "additional tags": {
+    "research discipline": "Geoscience",
+    "research area": "Geospatial Analysis",
+    "software class": "Toolbox",
+    "software type": "Mapping"
+  }
+}

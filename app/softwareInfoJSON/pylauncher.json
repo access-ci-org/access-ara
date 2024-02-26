@@ -1,0 +1,20 @@
+{
+  "software": "pylauncher",
+  "comprehensive_overview": "PyLauncher is a Python library that provides utilities for launching and interacting with external applications or processes from within Python scripts or applications. It offers functionalities for executing external commands, managing subprocesses, and controlling the execution flow of external processes.",
+  "core_features": [
+    "Launch external applications",
+    "Interact with subprocesses",
+    "Process management"
+  ],
+  "general_tags": [
+    "Python library",
+    "external processes",
+    "command execution"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Process Automation",
+    "software_class": "Library",
+    "software_type": "Utility"
+  }
+}

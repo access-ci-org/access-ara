@@ -1,0 +1,23 @@
+{
+    "ltools": {
+        "comprehensive_overview": "ltools is a collection of command-line utilities designed to assist with various tasks related to data processing, manipulation, and analysis.",
+        "core_features": [
+            "Command-line utilities",
+            "Data processing",
+            "Data manipulation",
+            "Data analysis"
+        ],
+        "general_tags": [
+            "command-line",
+            "data processing",
+            "data analysis",
+            "utility"
+        ],
+        "additional_tags": {
+            "research_discipline": "",
+            "research_area": "",
+            "software_class": "",
+            "software_type": ""
+        }
+    }
+}

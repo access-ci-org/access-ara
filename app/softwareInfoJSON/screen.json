@@ -1,0 +1,20 @@
+{
+  "software": "screen",
+  "comprehensive_overview": "GNU Screen is a terminal multiplexer that allows multiple shell sessions or windows within a single terminal window or session. It enables users to create, detach, reattach, and manage multiple terminal sessions simultaneously, providing flexibility and ease of use for command-line operations.",
+  "core_features": [
+    "Terminal multiplexing",
+    "Multi-session management",
+    "Shell session persistence"
+  ],
+  "general_tags": [
+    "terminal",
+    "command-line",
+    "multiplexer"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Command-line Utilities",
+    "software_class": "Utility",
+    "software_type": "Terminal Tool"
+  }
+}

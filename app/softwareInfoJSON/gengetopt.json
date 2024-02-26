@@ -1,0 +1,17 @@
+{
+    "software_name": "gengetopt",
+    "comprehensive_overview": "Gengetopt is a tool to generate C code to parse the command line arguments given when a program is invoked. It takes a simple description of the command line options and generates efficient C code to parse and validate the command line arguments.",
+    "core_features": [
+        "Generates C code for parsing command line arguments",
+        "Simple description of command line options",
+        "Efficient code generation",
+        "Ability to parse and validate command line arguments"
+    ],
+    "general_tags": ["command line", "C code generation", "argument parsing"],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Computational tools",
+        "software_class": "Code generation tool",
+        "software_type": "Command line tool"
+    }
+}

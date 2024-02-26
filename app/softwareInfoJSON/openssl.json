@@ -1,0 +1,21 @@
+{
+    "software_name": "OpenSSL",
+    "comprehensive_overview": "OpenSSL is a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.",
+    "core_features": [
+        "Implementation of SSL and TLS protocols",
+        "Cryptographic functions and utilities",
+        "Secure communication over computer networks",
+        "Support for a wide range of cryptographic algorithms"
+    ],
+    "general_tags": [
+        "cryptography",
+        "security",
+        "networking"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Library",
+        "software_type": "Security"
+    }
+}

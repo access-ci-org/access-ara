@@ -1,0 +1,22 @@
+{
+  "software_name": "OpenMPI",
+  "comprehensive_overview": "OpenMPI is an open-source Message Passing Interface (MPI) implementation that allows developers to efficiently and easily create parallel computing applications. It provides a standardized and efficient way for applications to communicate and synchronize with each other on distributed memory systems.",
+  "core_features": [
+    "Support for various programming languages such as C, C++, and Fortran",
+    "Dynamic process management",
+    "Portable and scalable",
+    "Support for multi-threaded application support",
+    "Wide range of collective operations"
+  ],
+  "general_tags": [
+    "parallel computing",
+    "message passing interface",
+    "high performance computing"
+  ],
+  "additional_tags": {
+    "research_discipline": "computer science",
+    "research_area": "parallel computing",
+    "software_class": "MPI Implementation",
+    "software_type": "Library/Tool"
+  }
+}

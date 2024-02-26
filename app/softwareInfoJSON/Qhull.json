@@ -1,0 +1,16 @@
+{
+  "software_name": "Qhull",
+  "comprehensive_overview": "Qhull is a computational geometry library that provides algorithms for computing the convex hull, Delaunay triangulation, Voronoi diagram, and other geometric structures.",
+  "core_features": [
+    "Convex hull computation",
+    "Delaunay triangulation",
+    "Voronoi diagram generation"
+  ],
+  "general_tags": ["Computational Geometry", "Algorithm", "Library"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Computational Geometry",
+    "software_class": "Algorithms",
+    "software_type": "Library"
+  }
+}

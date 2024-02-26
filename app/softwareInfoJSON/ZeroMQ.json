@@ -1,0 +1,16 @@
+{
+  "software_name": "ZeroMQ",
+  "comprehensive_overview": "ZeroMQ is a lightweight messaging library that enables distributed messaging and communication between applications. It provides building blocks for creating fast and scalable message-based systems, supporting various messaging patterns like message queuing, publish-subscribe, and request-reply.",
+  "core_features": [
+    "High-performance messaging",
+    "Distributed communication",
+    "Support for multiple messaging patterns"
+  ],
+  "general_tags": ["Messaging Library", "Distributed Systems", "Scalable Communication"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Message Queues",
+    "software_class": "Messaging System",
+    "software_type": "Library"
+  }
+}

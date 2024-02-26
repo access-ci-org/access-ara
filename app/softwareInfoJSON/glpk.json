@@ -1,0 +1,23 @@
+{
+    "software": "GLPK",
+    "overview": "GLPK (GNU Linear Programming Kit) is an open-source optimization library for solving linear programming (LP) and mixed-integer programming (MIP) problems. It provides tools for modeling, solving, and analyzing optimization problems efficiently.",
+    "core_features": [
+        "Linear programming solver",
+        "Mixed-integer programming support",
+        "Linear optimization algorithms",
+        "Matrix and vector operations",
+        "Integrated modeling language"
+    ],
+    "general_tags": [
+        "optimization library",
+        "linear programming",
+        "mixed-integer programming",
+        "open-source"
+    ],
+    "additional_tags": {
+        "research_discipline": "Operations Research",
+        "research_area": "Linear Programming",
+        "software_class": "Optimization Library",
+        "software_type": "Open Source"
+    }
+}

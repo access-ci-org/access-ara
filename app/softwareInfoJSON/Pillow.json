@@ -1,0 +1,29 @@
+{
+    "Pillow": {
+        "overview": "Pillow is a Python Imaging Library (PIL) fork that provides extensive image processing capabilities in Python. It allows users to create, open, manipulate, and save various image file formats, making it a versatile tool for image editing, processing, and enhancement.",
+        "core_features": [
+            "Image manipulation and processing",
+            "Image file I/O",
+            "Image enhancement",
+            "Support for various image formats",
+            "Efficient image operations"
+        ],
+        "general_tags": [
+            "Image processing",
+            "Python library",
+            "Image manipulation"
+        ],
+        "additional_tags": {
+            "research_discipline": [
+                "Computer Science",
+                "Image Processing"
+            ],
+            "research_area": [
+                "Image Editing",
+                "Computer Vision"
+            ],
+            "software_class": "Library",
+            "software_type": "Image Processing"
+        }
+    }
+}

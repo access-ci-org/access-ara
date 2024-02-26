@@ -1,19 +1,12 @@
 {
     "software_name": "Arrow",
-    "overview": "Arrow is a cross-language development platform for in-memory data that aims to improve data processing performance and interoperability between different systems. It provides a standardized, columnar memory format for data exchange.",
-    "core_features": [
-        "In-memory data processing",
-        "Columnar memory format",
-        "Performance optimization",
-        "Interoperability"
-    ],
-    "general_tags": [
-        "In-memory data",
-        "Data processing",
-        "Interoperability"
-    ],
-    "research_discipline": [],
-    "research_area": [],
-    "software_class": "Data processing tool",
-    "software_type": "Data exchange platform"
+    "comprehensive_overview": "Arrow is a high-performance in-memory columnar data format developed by the Apache Software Foundation. It provides a cross-language development platform for handling large datasets efficiently with a focus on analytical processing.",
+    "core_features": ["In-memory columnar data format", "High performance for large datasets", "Supports efficient analytical processing"],
+    "general_tags": ["Columnar data format", "Data processing"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Data Processing",
+        "software_type": "Library"
+    }
 }

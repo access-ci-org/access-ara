@@ -1,0 +1,20 @@
+{
+  "software": "Rust",
+  "comprehensive_overview": "Rust is a modern, safe, and highly performant programming language known for its focus on memory safety, concurrency, and zero-cost abstractions. It is widely used for system programming, web development, and building robust and secure applications.",
+  "core_features": [
+    "Memory safety",
+    "Concurrency",
+    "Performance optimization"
+  ],
+  "general_tags": [
+    "programming language",
+    "systems programming",
+    "memory management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Software Development",
+    "software_class": "Programming Language",
+    "software_type": "Development Tool"
+  }
+}

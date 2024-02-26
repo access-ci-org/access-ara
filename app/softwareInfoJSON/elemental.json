@@ -1,0 +1,22 @@
+{
+  "software_name": "Elemental",
+  "comprehensive_overview": "Elemental is a high-performance software library for distributed-memory dense linear algebra that aims to provide high performance and high productivity when performing complex linear algebra operations in parallel on large-scale computational platforms.",
+  "core_features": [
+    "Efficient distributed-memory algorithms for dense linear algebra operations",
+    "Support for a wide range of matrix factorizations, solvers, and numerical algorithms",
+    "Designed for high performance on large-scale parallel computing systems",
+    "Open-source and actively maintained by a dedicated development team"
+  ],
+  "general_tags": [
+    "linear algebra",
+    "distributed computing",
+    "parallel computing",
+    "numerical algorithms"
+  ],
+  "additional_tags": {
+    "research_discipline": "Applied Mathematics",
+    "research_area": "Parallel Computing",
+    "software_class": "Library",
+    "software_type": "Computational Software"
+  }
+}

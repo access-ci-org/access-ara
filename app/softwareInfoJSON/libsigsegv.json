@@ -1,0 +1,21 @@
+{
+  "software_name": "libsigsegv",
+  "comprehensive_overview": "libsigsegv is a library for handling segmentation fault signals in Unix-like systems. It provides a mechanism for detecting, handling, and recovering from segment violation errors during program execution.",
+  "core_features": [
+    "Signal handling for segmentation faults",
+    "Detection and recovery from segmentation errors",
+    "Error fault isolation",
+    "Unix-like system support"
+  ],
+  "general_tags": [
+    "segmentation faults",
+    "error handling",
+    "signal recovery"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Error Handling",
+    "software_class": "Library",
+    "software_type": "Signal Handling"
+  }
+}

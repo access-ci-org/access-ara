@@ -1,0 +1,21 @@
+{
+  "software_name": "libint",
+  "comprehensive_overview": "libint is a library for computing molecular integrals over Gaussian-type basis functions. It provides efficient algorithms for calculating electron repulsion integrals, overlap integrals, and other molecular integrals used in quantum chemistry.",
+  "core_features": [
+    "Computing molecular integrals",
+    "Efficient algorithms for Gaussian basis functions",
+    "Calculation of electron repulsion integrals",
+    "Support for overlap integrals"
+  ],
+  "general_tags": [
+    "quantum chemistry",
+    "molecular integrals",
+    "Gaussian basis functions"
+  ],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Quantum Chemistry",
+    "software_class": "Library",
+    "software_type": "Molecular Integration"
+  }
+}

@@ -1,24 +1,12 @@
 {
     "software_name": "BamTools",
-    "overview": "BamTools is a C++ API and toolkit for manipulating BAM (Binary Alignment/Map) files, which are used to store sequence alignment data from high-throughput sequencing experiments. It provides efficient access and tools for analyzing aligned sequencing data.",
-    "core_features": [
-        "BAM file manipulation",
-        "Sequence alignment analysis",
-        "API for read/write access"
-    ],
-    "general_tags": [
-        "BAM files",
-        "Sequence analysis",
-        "High-throughput sequencing"
-    ],
-    "research_discipline": [
-        "Bioinformatics",
-        "Genomics"
-    ],
-    "research_area": [
-        "Sequence alignment",
-        "Next-generation sequencing"
-    ],
-    "software_class": "Bioinformatics tool",
-    "software_type": "BAM file toolkit"
+    "comprehensive_overview": "BamTools is a C++ API and toolkit for reading, writing, and analyzing BAM (Binary Alignment Map) files commonly used in bioinformatics for storing sequence alignment data. It provides efficient access to sequence alignments and metadata in BAM format.",
+    "core_features": ["C++ API for BAM file manipulation", "Reads, writes, and analyzes BAM files", "Efficient access to sequence alignment data"],
+    "general_tags": ["BAM file manipulation", "Sequence alignment"],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Sequence Analysis",
+        "software_class": "Bioinformatics Toolkit",
+        "software_type": "Library"
+    }
 }

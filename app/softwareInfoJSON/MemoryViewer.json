@@ -1,0 +1,21 @@
+{
+    "MemoryViewer": {
+        "overview": "MemoryViewer is a software tool used for inspecting and analyzing memory usage and data within a computer system. It allows users to visualize memory allocations, inspect memory contents, and diagnose memory-related issues.",
+        "core_features": [
+            "Memory inspection",
+            "Data visualization",
+            "Memory issue diagnosis"
+        ],
+        "general_tags": [
+            "Memory Analysis",
+            "Memory Management",
+            "Data Visualization"
+        ],
+        "additional_tags": {
+            "research_discipline": "Computer Science",
+            "research_area": "Memory Analysis",
+            "software_class": "Tool",
+            "software_type": "Memory Analysis Tool"
+        }
+    }
+}

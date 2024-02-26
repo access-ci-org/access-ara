@@ -1,0 +1,19 @@
+{
+  "Matplotlib": {
+    "overview": "Matplotlib is a Python library used for creating static, animated, and interactive visualizations in data analysis and scientific computing. It provides a wide range of plotting functions to generate high-quality graphs, charts, and figures.",
+    "core_features": [
+      "Data visualization library",
+      "Static, animated, and interactive plotting",
+      "Support for various chart types",
+      "Customizable visualizations",
+      "Integration with data analysis workflows"
+    ],
+    "general_tags": ["Data visualization", "Python library", "Scientific computing"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Data Science"],
+      "research_area": ["Data Visualization", "Statistical Analysis"],
+      "software_class": "Library",
+      "software_type": "Data Visualization"
+    }
+  }
+}

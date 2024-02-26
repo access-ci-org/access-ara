@@ -1,0 +1,24 @@
+{
+   "software_name": "Inspector",
+   "comprehensive_overview": "Inspector is a software tool designed for analyzing and visualizing high-dimensional datasets. It provides advanced features for exploring complex data structures and identifying patterns and outliers.",
+   "core_features": [
+      "Dimensionality reduction techniques",
+      "Clustering algorithms",
+      "Feature selection methods",
+      "Interactive visualizations",
+      "Outlier detection",
+      "Pattern recognition"
+   ],
+   "general_tags": [
+      "Data analysis",
+      "Visualization",
+      "Machine learning",
+      "Outlier detection"
+   ],
+   "additional_tags": {
+      "research_discipline": "Data Science",
+      "research_area": "Big Data Analytics",
+      "software_class": "Analysis tool",
+      "software_type": "Data visualization"
+   }
+}

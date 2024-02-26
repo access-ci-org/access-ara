@@ -1,0 +1,21 @@
+{
+  "tool": "tmux",
+  "overview": "tmux is a terminal multiplexer that allows users to create multiple terminal sessions in a single window. It enables users to work on multiple tasks simultaneously and disconnect from sessions without losing work.",
+  "core_features": [
+    "Create and manage multiple terminal sessions",
+    "Split terminal windows horizontally and vertically",
+    "Detach and reattach terminal sessions",
+    "Customizable key bindings and configuration options"
+  ],
+  "general_tags": [
+    "terminal multiplexer",
+    "command line interface",
+    "productivity tool"
+  ],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "",
+    "software_type": ""
+  }
+}

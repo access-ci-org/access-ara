@@ -1,0 +1,16 @@
+{
+  "software_name": "Xerces",
+  "comprehensive_overview": "Xerces is an open-source XML parser library developed by the Apache Software Foundation. It provides tools and APIs for parsing, validating, and manipulating XML documents, ensuring well-formedness and schema conformance for XML-based data processing applications.",
+  "core_features": [
+    "XML document parsing",
+    "Schema validation",
+    "XPath querying and manipulation"
+  ],
+  "general_tags": ["XML Parsing", "Validation Library", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "XML Processing",
+    "software_class": "Parsing Library",
+    "software_type": "Library"
+  }
+}

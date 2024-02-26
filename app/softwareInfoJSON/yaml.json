@@ -1,0 +1,21 @@
+{
+    "tool": "YAML",
+    "overview": "YAML (YAML Ain't Markup Language) is a human-readable data serialization format that is commonly used for configuration files, data exchange, and structured data representation. It aims to be easily readable by humans and supports various data structures and nested data hierarchies, making it a popular choice for configuration management and data storage.",
+    "core_features": [
+        "Human-readable and intuitive data representation",
+        "Support for complex data structures and nesting",
+        "Flexible and extensible data serialization",
+        "Integration with various programming languages and tools"
+    ],
+    "general_tags": [
+        "data serialization",
+        "configuration file format",
+        "structured data representation"
+    ],
+    "additional_tags": {
+        "research_discipline": "Information Technology",
+        "research_area": "Data Management",
+        "software_class": "Data Format",
+        "software_type": "Serialization Language"
+    }
+}

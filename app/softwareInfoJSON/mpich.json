@@ -1,0 +1,22 @@
+{
+    "software_name": "MPICH",
+    "comprehensive_overview": "MPICH is a high-performance and widely portable implementation of the Message Passing Interface (MPI) standard. It is specifically designed for high-performance computing (HPC) systems.",
+    "core_features": [
+        "Implements the MPI standard for parallel programming",
+        "Supports efficient communication among processes",
+        "High performance and scalability",
+        "Portability across various hardware platforms"
+    ],
+    "general_tags": [
+        "HPC",
+        "MPI",
+        "Parallel Programming",
+        "High Performance Computing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "High Performance Computing",
+        "software_class": "Parallel Programming Tools",
+        "software_type": "Computational Software"
+    }
+}

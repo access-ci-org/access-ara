@@ -1,0 +1,20 @@
+{
+    "software name": "libcap",
+    "comprehensive overview": "libcap is a library that provides user-space interfaces and utilities for POSIX capabilities, allowing fine-grained control over privileges and permissions assigned to processes. It helps in implementing security policies, restricting capabilities, and reducing the privileged actions of applications.",
+    "core features": [
+        "User-space interfaces for POSIX capabilities",
+        "Fine-grained control over process privileges",
+        "Enhanced security through capability manipulation"
+    ],
+    "general tags": [
+        "Security",
+        "Privilege Management",
+        "POSIX"
+    ],
+    "additional tags": {
+        "research discipline": "Computer Security",
+        "research area": "Access Control",
+        "software class": "Library",
+        "software type": "Security Tool"
+    }
+}

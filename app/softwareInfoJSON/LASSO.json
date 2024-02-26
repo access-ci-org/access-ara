@@ -1,0 +1,19 @@
+{
+  "LASSO": {
+    "overview": "LASSO (Least Absolute Shrinkage and Selection Operator) is a regression analysis method that performs variable selection and regularization to improve the prediction accuracy and interpretability of statistical models. It is widely used in machine learning and statistics for feature selection.",
+    "core_features": [
+      "Regression analysis with variable selection",
+      "Regularization for model accuracy",
+      "Feature selection in statistical models",
+      "Improved model interpretability",
+      "Commonly used in machine learning and statistics"
+    ],
+    "general_tags": ["Regression analysis", "Feature selection", "Regularization"],
+    "additional_tags": {
+      "research_discipline": ["Statistics", "Machine Learning"],
+      "research_area": ["Predictive Modeling", "Feature Engineering"],
+      "software_class": "Method",
+      "software_type": "Statistical Analysis"
+    }
+  }
+}

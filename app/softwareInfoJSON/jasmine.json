@@ -1,0 +1,20 @@
+{
+  "software name": "Jasmine",
+  "comprehensive overview": "Jasmine is a behavior-driven testing framework for testing JavaScript code in web development projects. It provides a clean syntax for writing test cases and assertions, facilitating test-driven development and ensuring the quality and reliability of JavaScript applications.",
+  "core features": [
+    "Behavior-driven testing framework for JavaScript",
+    "Clean syntax for defining test cases and expectations",
+    "Support for test-driven development practices"
+  ],
+  "general tags": [
+    "JavaScript Testing",
+    "Behavior-Driven Development",
+    "Web Development"
+  ],
+  "additional tags": {
+    "research discipline": "Software Engineering",
+    "research area": "Testing",
+    "software class": "Testing Framework",
+    "software type": "Testing Tool"
+  }
+}

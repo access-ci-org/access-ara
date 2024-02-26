@@ -1,0 +1,18 @@
+{
+  "software_name": "OpenMS",
+  "comprehensive_overview": "OpenMS is an open-source software C++ library for LC/MS data management and analysis. It offers an infrastructure for the development of mass spectrometry-related software and provides methods for feature detection, quantitation, visualization, and data processing.",
+  "core_features": [
+    "LC/MS data management",
+    "Feature detection",
+    "Quantitation",
+    "Visualization",
+    "Data processing"
+  ],
+  "general_tags": ["mass spectrometry", "data analysis", "LC/MS", "open-source"],
+  "additional_tags": {
+    "research_discipline": "Biological Sciences",
+    "research_area": "Proteomics",
+    "software_class": "Data Analysis",
+    "software_type": "Library"
+  }
+}

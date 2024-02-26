@@ -1,0 +1,20 @@
+{
+  "software": "prun",
+  "comprehensive_overview": "PRUN is a parallel job runner utility used in High-Performance Computing (HPC) environments to manage and execute parallel tasks across distributed computing resources. It facilitates efficient job distribution and coordination in HPC clusters.",
+  "core_features": [
+    "Parallel job execution",
+    "Distributed computing",
+    "Resource management"
+  ],
+  "general_tags": [
+    "high-performance computing",
+    "job scheduling",
+    "cluster management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "HPC",
+    "software_class": "Utility",
+    "software_type": "Parallel Processing"
+  }
+}

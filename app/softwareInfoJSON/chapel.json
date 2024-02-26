@@ -1,0 +1,23 @@
+{
+    "software": "chapel",
+    "overview": "Chapel is a high-level parallel programming language designed for developing scalable applications on parallel computing platforms. It simplifies parallel programming by providing abstractions for distributed and shared memory systems.",
+    "core_features": [
+        "Productive parallel programming model",
+        "Distributed and shared memory abstractions",
+        "Task-based parallelism",
+        "Support for data parallelism",
+        "Portable across different architectures"
+    ],
+    "general_tags": [
+        "parallel programming",
+        "high-performance computing",
+        "distributed systems",
+        "programming languages"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Parallel Computing",
+        "software_class": "Programming Language",
+        "software_type": "Open Source"
+    }
+}

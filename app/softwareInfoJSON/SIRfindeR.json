@@ -1,0 +1,16 @@
+{
+  "software_name": "SIRfindeR",
+  "comprehensive_overview": "SIRfindeR is a software tool for identifying potential small interfering RNA (siRNA) sequences for gene silencing. It utilizes algorithms to predict efficient siRNA targets based on specific criteria and sequence properties.",
+  "core_features": [
+    "siRNA target prediction",
+    "Efficiency scoring",
+    "Off-target analysis"
+  ],
+  "general_tags": ["Bioinformatics", "siRNA Analysis", "Gene Silencing"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "RNA Interference",
+    "software_class": "Predictive Tool",
+    "software_type": "Tool"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "software_name": "TIGER",
+  "comprehensive_overview": "TIGER (Topological Information Gathering for Evaluation and Ranking) is a software tool designed for analyzing and ranking network topologies. It evaluates various network characteristics and provides insights into the structural properties of complex networks.",
+  "core_features": [
+    "Network topology analysis",
+    "Centrality and ranking metrics",
+    "Graph visualization tools"
+  ],
+  "general_tags": ["Network Analysis", "Topology Evaluation", "Graph Visualization"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Network Science",
+    "software_class": "Topology Analysis Tool",
+    "software_type": "Tool"
+  }
+}

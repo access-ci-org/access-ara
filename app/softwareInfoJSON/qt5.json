@@ -1,0 +1,20 @@
+{
+  "software": "Qt 5",
+  "comprehensive_overview": "Qt 5 is the latest version of the Qt framework, offering a modern and cross-platform C++ framework for developing GUI applications, embedded systems, and software solutions. It comes with enhanced features, tools, and libraries for creating visually engaging and responsive applications across different platforms.",
+  "core_features": [
+    "Cross-platform GUI development",
+    "Modern UI design",
+    "C++ framework"
+  ],
+  "general_tags": [
+    "GUI development",
+    "cross-platform",
+    "C++ framework"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "GUI Development",
+    "software_class": "Framework",
+    "software_type": "Development"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "tool": "xarray",
+  "overview": "xarray is a powerful Python library designed for handling multi-dimensional arrays and datasets. It provides labeled array data structures that simplify data manipulation, analysis, and visualization in scientific computing and data science applications. xarray is particularly useful for working with labeled, multi-dimensional data in climate science, geoscience, and other domains.",
+  "core_features": [
+    "Multi-dimensional labeled arrays and data structures",
+    "Alignment and broadcasting operations for array computation",
+    "Support for data I/O, slicing, indexing, and aggregation",
+    "Integration with NumPy, Pandas, and other scientific libraries"
+  ],
+  "general_tags": [
+    "array data manipulation",
+    "scientific computing",
+    "data analysis tool"
+  ],
+  "additional_tags": {
+    "research_discipline": "Data Science",
+    "research_area": "Climate Science",
+    "software_class": "Library",
+    "software_type": "Array Data Tool"
+  }
+}

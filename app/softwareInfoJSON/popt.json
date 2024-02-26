@@ -1,0 +1,20 @@
+{
+  "software": "popt",
+  "comprehensive_overview": "Popt is a command line option parsing library that provides a simple, yet powerful mechanism for parsing command-line options and arguments. It assists in simplifying the process of writing command-line interfaces for applications.",
+  "core_features": [
+    "Command-line parsing",
+    "Argument handling",
+    "Option processing"
+  ],
+  "general_tags": [
+    "command line",
+    "library",
+    "parsing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Software development",
+    "software_class": "Library",
+    "software_type": "Utility"
+  }
+}

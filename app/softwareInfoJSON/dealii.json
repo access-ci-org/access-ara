@@ -1,0 +1,23 @@
+{
+    "software": "deal.II",
+    "overview": "deal.II is an open-source finite element library designed for solving partial differential equations (PDEs) using adaptive methods. It provides a versatile set of tools and algorithms for high-performance scientific computing and numerical simulations.",
+    "core_features": [
+        "Finite element method implementations",
+        "Adaptive mesh refinement",
+        "Support for 1D, 2D, and 3D problems",
+        "Parallel computing capabilities",
+        "Integration with external solvers and libraries"
+    ],
+    "general_tags": [
+        "finite element method",
+        "PDE solvers",
+        "scientific computing",
+        "adaptive mesh refinement"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computational Science",
+        "research_area": "Numerical Simulations",
+        "software_class": "Finite Element Library",
+        "software_type": "Open Source"
+    }
+}

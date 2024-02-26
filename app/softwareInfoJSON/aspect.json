@@ -1,0 +1,21 @@
+{
+  "aspect": {
+    "overview": "Aspect is a simulation software used in the field of computational geodynamics for modeling and studying the complex behavior of the Earth's mantle. It allows researchers to simulate scenarios of continental drift, plate tectonics, and mantle convection to gain insights into the Earth's dynamic processes.",
+    "core_features": [
+      "Geodynamics simulation",
+      "Continental drift modeling",
+      "Plate tectonics simulation"
+    ],
+    "general_tags": [
+      "Geophysics",
+      "Earth science",
+      "Computational modeling"
+    ],
+    "additional_tags": {
+      "research_discipline": "Geophysics",
+      "research_area": "Computational geodynamics",
+      "software_class": "Simulation software",
+      "software_type": "Geodynamics modeling tool"
+    }
+  }
+}

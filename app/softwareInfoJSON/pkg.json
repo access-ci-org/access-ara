@@ -1,0 +1,12 @@
+{
+  "software": "pkg",
+  "comprehensive_overview": "pkg is a package manager tool used for installing, upgrading, configuring, and removing software packages on various operating systems.",
+  "core_features": "1. Package installation 2. Package upgrading 3. Package configuration 4. Package removal",
+  "general_tags": ["package manager", "software installation", "configuration management"],
+  "additional_tags": {
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Utility",
+    "software_type": "Package Manager"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "software name": "ipmitool",
+  "comprehensive overview": "ipmitool is a command-line utility that allows users to manage and monitor Intelligent Platform Management Interface (IPMI)-compliant hardware devices, such as servers, for remote management and monitoring capabilities. It provides a range of features for system administrators to control and query hardware settings.",
+  "core features": [
+    "Management and monitoring of IPMI-compliant hardware devices",
+    "Remote control and power management functionalities",
+    "Sensor data retrieval and hardware diagnostics"
+  ],
+  "general tags": [
+    "Intelligent Platform Management Interface",
+    "Hardware Management",
+    "System Administration"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Hardware",
+    "research area": "Remote Management",
+    "software class": "Utility",
+    "software type": "Hardware Management Tool"
+  }
+}

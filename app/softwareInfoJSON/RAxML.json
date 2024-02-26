@@ -1,0 +1,16 @@
+{
+  "software_name": "RAxML",
+  "comprehensive_overview": "RAxML (Randomized Axelerated Maximum Likelihood) is a program for sequential and parallel Maximum Likelihood-based inference of phylogenetic trees. It is widely used in computational biology for evolutionary analysis.",
+  "core_features": [
+    "Phylogenetic tree inference",
+    "Maximum Likelihood estimation",
+    "Support for multiple evolutionary models"
+  ],
+  "general_tags": ["Computational Biology", "Phylogenetics", "Maximum Likelihood"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Evolutionary Genomics",
+    "software_class": "Phylogenetics",
+    "software_type": "Tool"
+  }
+}

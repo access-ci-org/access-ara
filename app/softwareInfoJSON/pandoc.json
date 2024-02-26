@@ -1,0 +1,23 @@
+{
+    "software_name": "pandoc",
+    "comprehensive_overview": "Pandoc is a free and open-source document converter, widely used for converting between various markup and word processing formats.",
+    "core_features": [
+        "Converts between numerous formats such as Markdown, HTML, LaTeX, PDF, DOCX, and more",
+        "Supports a wide range of input and output formats",
+        "Handles complex document conversions with ease",
+        "Highly customizable through various options and extensions",
+        "Can be used from the command line or integrated into other tools and workflows"
+    ],
+    "general_tags": [
+        "document converter",
+        "markup language",
+        "text processing",
+        "data interchange"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Utility",
+        "software_type": "Conversion Tool"
+    }
+}

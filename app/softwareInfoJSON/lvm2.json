@@ -1,0 +1,21 @@
+{
+  "software_name": "LVM2",
+  "comprehensive_overview": "LVM2 (Logical Volume Manager 2) is a toolset that allows for logical volume management on Linux systems. It enables users to manage storage objects such as physical volumes, volume groups, and logical volumes, providing flexibility and scalability for storage allocation and management.",
+  "core_features": [
+    "Logical volume management",
+    "Management of physical volumes",
+    "Creation and management of volume groups",
+    "Allocation and management of logical volumes"
+  ],
+  "general_tags": [
+    "logical volume management",
+    "storage allocation",
+    "volume groups"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Systems",
+    "research_area": "Storage Management",
+    "software_class": "Toolset",
+    "software_type": "Storage Management"
+  }
+}

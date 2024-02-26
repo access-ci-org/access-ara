@@ -1,0 +1,19 @@
+{
+  "software_name": "Loki",
+  "comprehensive_overview": "Loki is a lightweight, easy-to-use software tool for predicting CDS (coding sequence) and finding protein-coding regions in DNA sequences.",
+  "core_features": [
+    "Predicting coding sequences in DNA sequences",
+    "Finding protein-coding regions"
+  ],
+  "general_tags": [
+    "DNA sequence analysis",
+    "Protein-coding region prediction",
+    "Bioinformatics"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Genomics",
+    "software_class": "Sequence analysis",
+    "software_type": "Prediction tool"
+  }
+}

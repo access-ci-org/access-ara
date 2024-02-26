@@ -1,0 +1,21 @@
+{
+  "software_name": "libxkbcommon",
+  "comprehensive_overview": "libxkbcommon is a library for handling keyboard input and keyboard mapping in X Window System environments. It provides utilities for managing keyboard layouts, keycodes, and input events in a consistent and portable manner.",
+  "core_features": [
+    "Keyboard input processing",
+    "Keyboard mapping utilities",
+    "Support for keyboard layouts",
+    "Cross-platform keyboard management"
+  ],
+  "general_tags": [
+    "keyboard input",
+    "keyboard mapping",
+    "input event handling"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "User Interfaces",
+    "software_class": "Library",
+    "software_type": "Keyboard Input"
+  }
+}

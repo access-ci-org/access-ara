@@ -1,0 +1,23 @@
+{
+    "software_name": "Motif",
+    "comprehensive_overview": "Motif is a software used for the discovery and analysis of sequence motifs within biological sequences, particularly DNA, RNA, and protein sequences.",
+    "core_features": [
+        "Identification of conserved motifs",
+        "Motif enrichment analysis",
+        "Visualization of motif occurrences",
+        "Comparison of motifs across sequences",
+        "Statistical analysis of motif significance"
+    ],
+    "general_tags": [
+        "Sequence motif analysis",
+        "Bioinformatics",
+        "Genomics",
+        "Computational biology"
+    ],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Genomics",
+        "software_class": "Sequence analysis",
+        "software_type": "Bioinformatics tool"
+    }
+}

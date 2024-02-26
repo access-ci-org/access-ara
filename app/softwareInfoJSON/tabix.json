@@ -1,0 +1,20 @@
+{
+  "software": "Tabix",
+  "comprehensive_overview": "Tabix is a tool and file format for indexing and querying large tab-delimited text files like genomic variants in Variant Call Format (VCF). It enables fast retrieval of genomic intervals and regions from indexed files, allowing efficient access to specific data entries without loading entire files into memory.",
+  "core_features": [
+    "Indexing text files",
+    "Genomic data querying",
+    "Interval retrieval"
+  ],
+  "general_tags": [
+    "file indexing",
+    "genomic data",
+    "data querying"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Genomic Data Analysis",
+    "software_class": "Tool",
+    "software_type": "Data Indexing"
+  }
+}

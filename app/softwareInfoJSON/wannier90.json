@@ -1,0 +1,21 @@
+{
+    "tool": "Wannier90",
+    "overview": "Wannier90 is a computational tool used in solid-state physics and materials science to construct maximally localized Wannier functions from Bloch wavefunctions. It allows researchers to analyze and manipulate electronic structures in crystalline materials, enabling a deeper understanding of electronic properties and conducting calculations for various phenomena.",
+    "core_features": [
+        "Generation of maximally localized Wannier functions",
+        "Support for electronic structure analysis in crystalline systems",
+        "Calculation of transport properties and band structures",
+        "Integration with electronic structure calculation packages"
+    ],
+    "general_tags": [
+        "solid-state physics",
+        "electronic structure analysis",
+        "materials science tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "Condensed Matter Physics",
+        "research_area": "Electronic Structure Theory",
+        "software_class": "Tool",
+        "software_type": "Electronic Structure Analysis Software"
+    }
+}

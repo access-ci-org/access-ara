@@ -1,0 +1,17 @@
+{
+    "software": "Basemap",
+    "overview": "Basemap is a matplotlib toolkit that provides map plotting functionalities for visualizing geospatial data and creating customized maps using Python.",
+    "core_features": [
+        "Plotting map projections and geographical data",
+        "Overlaying data points, shapes, and annotations on maps",
+        "Customizing map features such as colors, legends, and annotations",
+        "Support for various map coordinate systems and data sources"
+    ],
+    "general_tags": ["geospatial data visualization", "Python library", "map plotting"],
+    "additional_tags": {
+        "research_discipline": "Geoinformatics",
+        "research_area": "Geospatial Analysis",
+        "software_class": "Visualization Tool",
+        "software_type": "Library"
+    }
+}

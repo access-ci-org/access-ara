@@ -1,0 +1,16 @@
+{
+  "software_name": "STARAligner",
+  "comprehensive_overview": "STARAligner, commonly referred to as STAR, is a fast and accurate RNA-Seq read alignment software tool. It efficiently maps RNA sequencing reads to a reference genome, enabling detailed analysis of gene expression and splicing patterns.",
+  "core_features": [
+    "RNA-Seq read alignment",
+    "Splice junction detection",
+    "Gene expression quantification"
+  ],
+  "general_tags": ["Bioinformatics", "RNA-Seq Analysis", "Alignment Tool"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Transcriptomics",
+    "software_class": "Sequence Alignment",
+    "software_type": "Tool"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "software name": "Jasper",
+  "comprehensive overview": "Jasper is an open-source JPEG image codec library that provides encoding and decoding functionality for JPEG images. It is designed for high performance and is commonly used in applications that require image compression and decompression capabilities.",
+  "core features": [
+    "JPEG image codec library for encoding and decoding",
+    "Efficient compression and decompression of JPEG images",
+    "Support for various color formats and encoding options"
+  ],
+  "general tags": [
+    "JPEG Codec",
+    "Image Compression",
+    "Open-Source Library"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Graphics",
+    "research area": "Image Processing",
+    "software class": "Codec Library",
+    "software type": "Image Codec Tool"
+  }
+}

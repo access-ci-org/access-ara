@@ -1,0 +1,22 @@
+{
+  "software_name": "nco",
+  "comprehensive_overview": "NCO is a suite of command-line tools used to manipulate and analyze netCDF and HDF4 files. It provides a robust set of operations for data extraction, transformation, and visualization in various scientific fields.",
+  "core_features": [
+    "Manipulation of netCDF and HDF4 files",
+    "Data extraction and transformation",
+    "Statistical analysis and visualization",
+    "Support for large datasets"
+  ],
+  "general_tags": [
+    "data manipulation",
+    "netCDF",
+    "HDF4",
+    "data analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "Data Processing",
+    "software_type": "Command-line Interface"
+  }
+}

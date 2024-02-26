@@ -1,0 +1,16 @@
+{
+  "software_name": "Aria2",
+  "comprehensive_overview": "Aria2 is a lightweight, versatile download utility that supports HTTP, FTP, BitTorrent, and Metalink protocols. It enables users to download files in parallel, manage downloads through a command-line interface, and offers features like segmented downloading for faster transfer speeds.",
+  "core_features": [
+    "Multi-protocol support",
+    "Parallel downloads",
+    "Command-line interface"
+  ],
+  "general_tags": ["Download Manager", "Command-line Tool", "Multi-protocol Support"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Download Management",
+    "software_class": "Download Utility",
+    "software_type": "Tool"
+  }
+}

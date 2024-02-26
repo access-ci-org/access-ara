@@ -1,0 +1,20 @@
+{
+  "software": "Texinfo",
+  "comprehensive_overview": "Texinfo is a documentation system commonly used to typeset software manuals with the GNU Project. It uses a plain text format that can be converted into various output formats like HTML, PDF, and Info. Texinfo provides a structured way to write and publish documentation for software projects.",
+  "core_features": [
+    "Documentation system",
+    "Text formatting",
+    "Output conversion"
+  ],
+  "general_tags": [
+    "software manuals",
+    "plain text format",
+    "documentation"
+  ],
+  "additional_tags": {
+    "research_discipline": "Software Development",
+    "research_area": "Documentation",
+    "software_class": "System",
+    "software_type": "Documentation Tool"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "software_name": "libx11",
+  "comprehensive_overview": "libX11 is a library for the X Window System protocol, providing functions and utilities for interacting with the X server and managing graphical user interfaces in Unix-like systems. It enables developers to create X applications and handle window system interactions.",
+  "core_features": [
+    "X Window System protocol support",
+    "Interaction with X server",
+    "Graphical user interface management",
+    "Window system operations"
+  ],
+  "general_tags": [
+    "X Window System",
+    "graphical user interfaces",
+    "window management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Graphical User Interfaces",
+    "software_class": "Library",
+    "software_type": "Window System"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "software": "statsmodels",
+  "comprehensive_overview": "Statsmodels is a Python library for estimating and interpreting various statistical models. It provides a wide range of tools for statistical analysis, hypothesis testing, regression modeling, time series analysis, and more. Statsmodels is widely used in data science, econometrics, and academic research.",
+  "core_features": [
+    "Statistical modeling",
+    "Hypothesis testing",
+    "Regression analysis"
+  ],
+  "general_tags": [
+    "Python library",
+    "statistical analysis",
+    "data modeling"
+  ],
+  "additional_tags": {
+    "research_discipline": "Statistics",
+    "research_area": "Data Science",
+    "software_class": "Library",
+    "software_type": "Statistical Modeling"
+  }
+}

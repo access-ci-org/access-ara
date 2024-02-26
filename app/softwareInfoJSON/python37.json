@@ -1,0 +1,12 @@
+{
+    "software_name": "Python 3.7",
+    "comprehensive_overview": "Python 3.7 is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms and has a vast collection of libraries for various applications.",
+    "core_features": "1. Easy-to-read syntax\n2. Dynamic typing\n3. Extensive standard library\n4. Interpreted language\n5. Object-oriented programming support",
+    "general_tags": ["programming language", "interpreted", "high-level", "scripting"],
+    "additional_tags": {
+        "research_discipline": ["Computer Science", "Data Science", "Bioinformatics"],
+        "research_area": ["Machine Learning", "Data Analysis", "Genomics"],
+        "software_class": ["Programming Language"],
+        "software_type": ["Compiler"]
+    }
+}

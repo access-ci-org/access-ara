@@ -1,0 +1,12 @@
+{
+  "software_name": "nlohmann",
+  "comprehensive_overview": "nlohmann/json is a modern JSON library for C++. It has minimal dependencies, a simple interface, seamless interoperability, and supports modern C++ features.",
+  "core_features": "1. Easy to use interface for JSON manipulation\n2. Header-only library with no external dependencies\n3. Supports modern C++ features like move semantics and initializer lists\n4. High level of interoperability with other data structures\n5. Extensive documentation and active community support",
+  "general_tags": ["JSON library", "C++ library", "Modern C++"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Software Development",
+    "software_class": "Library",
+    "software_type": "JSON Parser"
+  }
+}

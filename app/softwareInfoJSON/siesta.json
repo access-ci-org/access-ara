@@ -1,0 +1,20 @@
+{
+  "software": "Siesta",
+  "comprehensive_overview": "Siesta is an efficient and versatile simulation package based on density-functional theory (DFT) for electronic structure calculations in materials science. It is specialized in atomistic simulations of solids and nanostructures, providing tools for understanding and predicting material properties at the quantum level.",
+  "core_features": [
+    "Density-functional theory",
+    "Electronic structure calculations",
+    "Material property prediction"
+  ],
+  "general_tags": [
+    "materials science",
+    "electronic structure",
+    "quantum simulations"
+  ],
+  "additional_tags": {
+    "research_discipline": "Materials Science",
+    "research_area": "Electronic Structure",
+    "software_class": "Simulation Package",
+    "software_type": "Material Modeling"
+  }
+}

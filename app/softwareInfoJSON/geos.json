@@ -1,0 +1,23 @@
+{
+    "software": "GEOS",
+    "overview": "GEOS (Geometry Engine Open Source) is a C++ library for performing geometric operations such as geometry computation and spatial operations. It provides robust and efficient algorithms for handling various geometric data structures and computational tasks.",
+    "core_features": [
+        "Geometry computation",
+        "Spatial analysis operations",
+        "Topological and geometric algorithms",
+        "Support for geometric data structures",
+        "Robust geometric predicates"
+    ],
+    "general_tags": [
+        "geometric operations",
+        "spatial analysis",
+        "computational geometry",
+        "open-source library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computational Geometry",
+        "research_area": "Geometry Computation",
+        "software_class": "Geometry Library",
+        "software_type": "Open Source"
+    }
+}

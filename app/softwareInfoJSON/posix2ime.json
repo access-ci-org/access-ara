@@ -1,0 +1,20 @@
+{
+  "software": "posix2ime",
+  "comprehensive_overview": "Posix2ime is a tool that converts POSIX timestamp values to human-readable date and time formats. It aids in interpreting and displaying epoch timestamps in a more accessible manner.",
+  "core_features": [
+    "Epoch timestamp conversion",
+    "Date-time formatting",
+    "Human-readable output"
+  ],
+  "general_tags": [
+    "time conversion",
+    "POSIX timestamp",
+    "date-time formatting"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data processing",
+    "software_class": "Tool",
+    "software_type": "Conversion"
+  }
+}

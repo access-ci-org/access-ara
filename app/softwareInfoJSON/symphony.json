@@ -1,0 +1,20 @@
+{
+  "software": "Symphony",
+  "comprehensive_overview": "Symphony is an open-source mixed-integer linear programming solver designed for solving large-scale optimization problems efficiently. It offers algorithms for mixed-integer linear programming (MILP) tasks, providing high-performance optimization capabilities for various industries and applications.",
+  "core_features": [
+    "MILP solver",
+    "Large-scale optimization",
+    "High-performance algorithms"
+  ],
+  "general_tags": [
+    "linear programming",
+    "optimization solver",
+    "open-source software"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Optimization",
+    "software_class": "Solver",
+    "software_type": "Linear Programming"
+  }
+}

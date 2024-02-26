@@ -1,0 +1,21 @@
+{
+  "archspec": {
+    "overview": "ArchSpec is a tool that helps researchers and developers understand the microarchitecture details of the CPU they are working on. It provides detailed information about the CPU's features, including the instruction set architecture, CPU cores, cache hierarchy, and more.",
+    "core_features": [
+      "Microarchitecture details",
+      "Instruction set architecture",
+      "Cache hierarchy information"
+    ],
+    "general_tags": [
+      "CPU analysis",
+      "Microarchitecture",
+      "Performance optimization"
+    ],
+    "additional_tags": {
+      "research_discipline": "Computer Science",
+      "research_area": "Hardware analysis",
+      "software_class": "System analysis tool",
+      "software_type": "Performance analysis software"
+    }
+  }
+}

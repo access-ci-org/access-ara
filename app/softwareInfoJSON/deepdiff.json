@@ -1,0 +1,20 @@
+{
+  "software_name": "deepdiff",
+  "comprehensive_overview": "deepdiff is a library for calculating the difference between two objects. It is particularly useful for comparing complex data structures in Python.",
+  "core_features": [
+    "Find the difference between two objects",
+    "Supports nested objects and custom data types",
+    "Output differences in a human-readable format"
+  ],
+  "general_tags": [
+    "Python library",
+    "Data comparison",
+    "Object differencing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data analysis",
+    "software_class": "Utility",
+    "software_type": "Python library"
+  }
+}

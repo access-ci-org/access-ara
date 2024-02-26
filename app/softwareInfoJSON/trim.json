@@ -1,0 +1,21 @@
+{
+    "tool": "trim",
+    "overview": "The TRIM (Thermal Radiation Interaction Model) software is used in computational fluid dynamics (CFD) simulations to accurately model thermal radiation exchanges within fluid flows. TRIM helps in studying the impact of thermal radiation on heat transfer and temperature distribution in various engineering applications.",
+    "core_features": [
+        "Incorporates thermal radiation effects in CFD simulations",
+        "Calculates radiative heat transfer between surfaces and fluids",
+        "Supports modeling of emittance, absorptivity, and thermal conductivity",
+        "Enhances accuracy of temperature predictions in complex fluid systems"
+    ],
+    "general_tags": [
+        "CFD simulation",
+        "thermal radiation modeling",
+        "engineering software"
+    ],
+    "additional_tags": {
+        "research_discipline": "Mechanical Engineering",
+        "research_area": "Thermal Analysis",
+        "software_class": "Simulation Tool",
+        "software_type": "Radiation Modeling Software"
+    }
+}

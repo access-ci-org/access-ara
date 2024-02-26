@@ -1,0 +1,21 @@
+{
+    "software_name": "mamba",
+    "comprehensive_overview": "Mamba is a fast, robust, and reliable package manager built for conda, the package and environment management system provided by Anaconda. It aims to be a drop-in replacement for conda, providing enhanced performance and reliability.",
+    "core_features": [
+        "Fast package management",
+        "Robust dependency resolution",
+        "Drop-in replacement for conda",
+        "Improved performance"
+    ],
+    "general_tags": [
+        "package manager",
+        "conda",
+        "environment management"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Package Manager",
+        "software_type": "Tool"
+    }
+}

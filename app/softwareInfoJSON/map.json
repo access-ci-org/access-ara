@@ -1,0 +1,23 @@
+{
+    "software": "Map",
+    "comprehensive_overview": "Map is a software used for geographical mapping and spatial data analysis. It allows users to visualize, analyze, and interpret spatial data to understand patterns, trends, and relationships in a geographic context.",
+    "core_features": [
+        "Geographical mapping",
+        "Spatial data analysis",
+        "Data visualization",
+        "Spatial pattern identification",
+        "Geospatial data interpretation"
+    ],
+    "general_tags": [
+        "mapping",
+        "geospatial analysis",
+        "spatial data",
+        "visualization"
+    ],
+    "additional_tags": {
+        "research_discipline": "Geography",
+        "research_area": "Geospatial analysis",
+        "software_class": "GIS",
+        "software_type": "Desktop application"
+    }
+}

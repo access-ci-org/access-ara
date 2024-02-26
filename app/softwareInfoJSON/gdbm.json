@@ -1,0 +1,23 @@
+{
+    "software": "GDBM",
+    "overview": "GDBM (GNU dbm) is a library that provides key-value storage using a database format that is a predecessor to NoSQL databases. It is used for storing and retrieving data with key lookup functionalities in various applications.",
+    "core_features": [
+        "Key-Value storage",
+        "Database management",
+        "Hash-based data retrieval",
+        "Atomic database transactions",
+        "Persistent data storage"
+    ],
+    "general_tags": [
+        "key-value storage",
+        "database management",
+        "data retrieval",
+        "persistent storage"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Database Management",
+        "software_class": "Database Library",
+        "software_type": "Open Source"
+    }
+}

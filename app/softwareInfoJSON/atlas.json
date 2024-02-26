@@ -1,0 +1,21 @@
+{
+  "atlas": {
+    "overview": "ATLAS (Automatically Tuned Linear Algebra Software) is a highly optimized library for linear algebra operations, providing efficient implementations of BLAS and LAPACK routines. It offers performance-tuned kernels for various CPU architectures to enhance the execution of linear algebra computations.",
+    "core_features": [
+      "Optimized linear algebra routines",
+      "BLAS and LAPACK implementations",
+      "Performance-tuned kernels"
+    ],
+    "general_tags": [
+      "Linear algebra",
+      "Optimization",
+      "Mathematics"
+    ],
+    "additional_tags": {
+      "research_discipline": "Mathematics",
+      "research_area": "High-performance computing",
+      "software_class": "Math library",
+      "software_type": "Linear algebra software"
+    }
+  }
+}

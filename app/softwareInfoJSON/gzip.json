@@ -1,0 +1,20 @@
+{
+  "software name": "gzip",
+  "comprehensive overview": "gzip is a file compression utility that is commonly used to compress and decompress files in the Unix/Linux environment. It uses the DEFLATE algorithm to reduce the size of files without losing data, resulting in efficient file storage and transfer.",
+  "core features": [
+    "File compression and decompression with the DEFLATE algorithm",
+    "High compression ratios and fast processing",
+    "Integration with Unix/Linux command-line utilities"
+  ],
+  "general tags": [
+    "File Compression",
+    "Data Storage",
+    "Unix/Linux"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "Data Compression",
+    "software class": "Utility",
+    "software type": "Compression Tool"
+  }
+}

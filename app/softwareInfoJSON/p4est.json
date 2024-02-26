@@ -1,0 +1,22 @@
+{
+    "software_name": "p4est",
+    "comprehensive_overview": "p4est is a software library for parallel computation involving adaptive mesh refinement. It primarily focuses on parallel forest-of-octrees data structures and algorithms.",
+    "core_features": [
+        "Support for parallel computation",
+        "Adaptive mesh refinement",
+        "Forest-of-octrees data structures",
+        "High-performance algorithms"
+    ],
+    "general_tags": [
+        "parallel computation",
+        "adaptive mesh refinement",
+        "parallel forest-of-octrees",
+        "high-performance computing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computational Mathematics",
+        "research_area": "Numerical Analysis",
+        "software_class": "Library",
+        "software_type": "Parallel Computing"
+    }
+}

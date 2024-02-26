@@ -1,0 +1,21 @@
+{
+    "Mesa": {
+        "overview": "Mesa is an open-source 3D graphics library that provides software-based rendering for OpenGL-compatible applications. It serves as an implementation of the OpenGL specification and supports graphics rendering on various platforms.",
+        "core_features": [
+            "OpenGL compatibility",
+            "Software-based rendering",
+            "Cross-platform support"
+        ],
+        "general_tags": [
+            "Graphics Library",
+            "OpenGL Implementation",
+            "Cross-Platform Rendering"
+        ],
+        "additional_tags": {
+            "research_discipline": "Computer Graphics",
+            "research_area": "Graphics Rendering",
+            "software_class": "Library",
+            "software_type": "Graphics Rendering Tool"
+        }
+    }
+}

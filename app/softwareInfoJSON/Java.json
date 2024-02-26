@@ -1,0 +1,19 @@
+{
+  "Java": {
+    "overview": "Java is a widely-used programming language and computing platform developed by Sun Microsystems, now owned by Oracle. It is designed to have minimal implementation dependencies and is class-based, object-oriented, and concurrent.",
+    "core_features": [
+      "Platform independence",
+      "Object-oriented programming",
+      "Concurrent programming",
+      "Rich standard library",
+      "Automated memory management"
+    ],
+    "general_tags": ["Programming language", "Platform independence", "Object-oriented"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Software Engineering"],
+      "research_area": ["Programming Languages", "Concurrency"],
+      "software_class": "Programming Language",
+      "software_type": "Development"
+    }
+  }
+}

@@ -1,1 +1,21 @@
-I don't have specific details on a software tool named "FlexiBLAS" at the moment. If you have additional context or specific information about "FlexiBLAS" that you would like me to include, please provide more details so I can create a tailored JSON output for "FlexiBLAS."
+{
+    "software_name": "FlexiBLAS",
+    "comprehensive_overview": "FlexiBLAS is a flexible linear algebra library that allows users to easily switch between different BLAS (Basic Linear Algebra Subprograms) implementations at runtime without recompiling their code. It provides a level of abstraction to simplify the usage of BLAS functions across various hardware platforms and software libraries.",
+    "core_features": [
+        "Supports different BLAS implementations",
+        "Runtime selection of BLAS library",
+        "Abstraction layer for simplified BLAS function usage"
+    ],
+    "general_tags": [
+        "linear algebra",
+        "BLAS",
+        "runtime selection",
+        "abstraction layer"
+    ],
+    "additional_tags": {
+        "research_discipline": "Mathematics",
+        "research_area": "Numerical computing",
+        "software_class": "Library",
+        "software_type": "Linear algebra"
+    }
+}

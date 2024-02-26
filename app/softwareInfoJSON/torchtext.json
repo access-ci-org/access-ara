@@ -1,0 +1,21 @@
+{
+  "tool": "torchtext",
+  "overview": "torchtext is a library in PyTorch that simplifies the process of loading and preprocessing textual data for natural language processing (NLP) tasks. It provides various functionalities to handle text data efficiently.",
+  "core_features": [
+    "Text tokenization and vocabulary management",
+    "Batching and padding text sequences",
+    "Integration with popular NLP datasets",
+    "Pre-trained word embeddings support"
+  ],
+  "general_tags": [
+    "text data preprocessing",
+    "NLP tool",
+    "PyTorch library"
+  ],
+  "additional_tags": {
+    "research_discipline": "Natural Language Processing",
+    "research_area": "Text Mining",
+    "software_class": "Library",
+    "software_type": "Text Data Preprocessor"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "software": "pwanalyzer",
+  "comprehensive_overview": "PWAnalyzer is a software tool designed for analyzing and visualizing molecular dynamics simulations of biomolecules, particularly proteins and nucleic acids. It offers various analysis modules and visualization capabilities for studying biomolecular structures and dynamics.",
+  "core_features": [
+    "Molecular dynamics analysis",
+    "Biomolecular visualization",
+    "Simulation studies"
+  ],
+  "general_tags": [
+    "molecular dynamics",
+    "biomolecular analysis",
+    "simulation visualization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Biochemistry",
+    "research_area": "Structural Biology",
+    "software_class": "Tool",
+    "software_type": "Analysis"
+  }
+}

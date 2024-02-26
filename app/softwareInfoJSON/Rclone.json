@@ -1,0 +1,16 @@
+{
+  "software_name": "Rclone",
+  "comprehensive_overview": "Rclone is a command-line program for syncing files and directories to and from various cloud storage providers. It supports a wide range of cloud services and provides features for data transfer, encryption, and synchronization.",
+  "core_features": [
+    "File syncing with cloud storage",
+    "Encryption and decryption",
+    "Multi-threaded transfers"
+  ],
+  "general_tags": ["Cloud Storage", "Data Synchronization", "Command-line Tool"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Cloud Computing",
+    "software_class": "File Management",
+    "software_type": "Tool"
+  }
+}

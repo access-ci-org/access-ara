@@ -1,0 +1,18 @@
+{
+  "Imlib2": {
+    "overview": "Imlib2 is an advanced replacement library for libraries like libXpm that provides many enhancements, while maintaining backwards compatibility. It allows for powerful image loading, saving, and manipulation in various formats.",
+    "core_features": [
+      "Image loading and saving in various formats",
+      "Image manipulation capabilities",
+      "Enhanced features compared to previous libraries",
+      "Backwards compatibility maintained"
+    ],
+    "general_tags": ["Image library", "Image manipulation", "Backwards compatibility"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Digital Arts"],
+      "research_area": ["Image Processing", "Graphics Programming"],
+      "software_class": "Library",
+      "software_type": "Graphics"
+    }
+  }
+}

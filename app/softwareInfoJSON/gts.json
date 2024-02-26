@@ -1,0 +1,20 @@
+{
+  "software name": "gts",
+  "comprehensive overview": "The GNU Triangulated Surface Library (GTS) is a library for constructing and manipulating surface meshes, particularly 3D triangulated surfaces. It offers data structures and algorithms for tasks like mesh simplification, refinement, and more.",
+  "core features": [
+    "Construction and manipulation of 3D surface meshes",
+    "Mesh simplification and refinement algorithms",
+    "Support for surface mesh operations like intersection and normal computation"
+  ],
+  "general tags": [
+    "Surface Meshes",
+    "Mesh Processing",
+    "3D Graphics"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Graphics",
+    "research area": "Mesh Processing",
+    "software class": "Library",
+    "software type": "Mesh Processing Tool"
+  }
+}

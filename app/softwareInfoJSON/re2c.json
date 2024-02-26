@@ -1,0 +1,20 @@
+{
+  "software": "re2c",
+  "comprehensive_overview": "re2c is a versatile and efficient lexer generator designed for creating robust and high-performance text scanners or lexical analyzers. It converts regular expressions into C or C++ code for fast matching and tokenization in parsing tasks, especially for programming languages and compilers.",
+  "core_features": [
+    "Lexer generation",
+    "Regular expression matching",
+    "Tokenization"
+  ],
+  "general_tags": [
+    "lexer generator",
+    "text scanning",
+    "lexical analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Compiler Design",
+    "software_class": "Tool",
+    "software_type": "Lexer Generator"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Leptonica": {
+    "overview": "Leptonica is an open-source image processing and image analysis library that provides a wide range of functionalities for working with images, such as image binarization, rotation, scaling, and more. It is widely used in OCR (Optical Character Recognition) applications.",
+    "core_features": [
+      "Image processing functions",
+      "Image analysis capabilities",
+      "Binarization techniques",
+      "Rotation and scaling operations",
+      "Support for OCR applications"
+    ],
+    "general_tags": ["Image processing", "Image analysis", "Open-source"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Image Processing"],
+      "research_area": ["OCR", "Computer Vision"],
+      "software_class": "Library",
+      "software_type": "Graphics"
+    }
+  }
+}

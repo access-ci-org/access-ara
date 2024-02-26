@@ -1,0 +1,21 @@
+{
+  "software_name": "libepoxy",
+  "comprehensive_overview": "libepoxy is a library that provides an abstraction layer for OpenGL functions. It simplifies the management of OpenGL extensions and provides a single, consistent API for accessing OpenGL capabilities across different platforms.",
+  "core_features": [
+    "Abstraction of OpenGL functions",
+    "Management of OpenGL extensions",
+    "Cross-platform compatibility",
+    "Consistent API for OpenGL access"
+  ],
+  "general_tags": [
+    "OpenGL",
+    "abstraction layer",
+    "cross-platform"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Graphics",
+    "research_area": "Graphics Programming",
+    "software_class": "Library",
+    "software_type": "Graphics"
+  }
+}

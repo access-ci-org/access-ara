@@ -1,0 +1,20 @@
+{
+    "software_name": "nvtop",
+    "comprehensive_overview": "nvtop is a htop like task monitor for NVIDIA GPUs. It can help you see the utilization of GPU resources in real-time.",
+    "core_features": [
+        "Monitor NVIDIA GPU utilization in real-time",
+        "View GPU memory usage",
+        "Support for all NVIDIA GPUs"
+    ],
+    "general_tags": [
+        "GPU monitoring",
+        "Task monitor",
+        "Performance analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "High Performance Computing",
+        "software_class": "Monitoring tool",
+        "software_type": "GPU utility"
+    }
+}

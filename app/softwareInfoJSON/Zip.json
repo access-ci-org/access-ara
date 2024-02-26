@@ -1,0 +1,16 @@
+{
+  "software_name": "Zip",
+  "comprehensive_overview": "Zip is a popular utility for compressing and archiving files and directories into a single zip file. It provides a convenient way to reduce file sizes, organize data for storage or transmission, and create compressed archives that can be easily shared and extracted.",
+  "core_features": [
+    "File compression and archiving",
+    "Support for various compression levels",
+    "Creation and extraction of zip archives"
+  ],
+  "general_tags": ["File Compression", "Archiving Tool", "Utility Software"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Compression",
+    "software_class": "Compression Tool",
+    "software_type": "Utility"
+  }
+}

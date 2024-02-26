@@ -1,0 +1,21 @@
+{
+  "software_name": "expecttest",
+  "comprehensive_overview": "ExpectTest is a Python library for unit testing with expected data. It allows users to define unit tests using a syntax that includes the expected output alongside the function call, making it easier to write and maintain tests with complex data structures or multiple return values.",
+  "core_features": [
+    "Define unit tests with expected output",
+    "Write tests using a simple syntax",
+    "Supports complex data structures and multiple return values",
+    "Integrates with existing test frameworks like pytest"
+  ],
+  "general_tags": [
+    "Python library",
+    "Unit testing",
+    "Expected output"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Software Development",
+    "software_class": "Testing tool",
+    "software_type": "Library"
+  }
+}

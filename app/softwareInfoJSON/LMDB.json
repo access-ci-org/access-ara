@@ -1,0 +1,19 @@
+{
+  "LMDB": {
+    "overview": "LMDB (Lightning Memory-Mapped Database) is a fast, memory-efficient key-value store that uses memory-mapped files for data storage. It provides high-performance transactional ACID-compliant access with low memory footprint and high concurrency.",
+    "core_features": [
+      "Key-value store",
+      "Memory-mapped file storage",
+      "High-performance transactional access",
+      "ACID-compliant operations",
+      "Low memory footprint and high concurrency"
+    ],
+    "general_tags": ["Key-value store", "Database", "Memory-mapped file"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Database Systems"],
+      "research_area": ["Data Storage", "Transaction Processing"],
+      "software_class": "Database",
+      "software_type": "Storage"
+    }
+  }
+}

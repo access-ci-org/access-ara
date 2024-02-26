@@ -1,0 +1,17 @@
+{
+    "software_name": "pax",
+    "comprehensive_overview": "pax is an open-source software for nEXO neutrinoless double beta decay analysis. It is designed to process raw data from the nEXO experiment and provide tools for signal processing, event reconstruction, and data visualization.",
+    "core_features": "1. Raw data processing capabilities\n2. Signal processing tools\n3. Event reconstruction algorithms\n4. Data visualization options",
+    "general_tags": [
+        "neutrinoless double beta decay",
+        "data analysis",
+        "signal processing",
+        "data visualization"
+    ],
+    "additional_tags": {
+        "research_discipline": "particle physics",
+        "research_area": "neutrino physics",
+        "software_class": "data processing",
+        "software_type": "data analysis"
+    }
+}

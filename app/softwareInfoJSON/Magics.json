@@ -1,0 +1,12 @@
+{
+  "software_name": "Magics",
+  "comprehensive_overview": "Magics is a meteorological plot package for visualisation of meteorological data in the format of GRIB files. It is part of the ECMWF software, and it focuses on high quality output and being easy to use for scientists working with meteorological data.",
+  "core_features": "Magics provides a wide range of plot types including contour, wind vectors, symbols, waves, and text, along with various techniques for background shading and masking. It also offers the ability to customize plots with a variety of settings and options.",
+  "general_tags": ["meteorology", "data visualization", "GRIB files"],
+  "additional_tags": {
+    "research_discipline": "Earth Sciences",
+    "research_area": "Meteorology",
+    "software_class": "Visualization Tool",
+    "software_type": "Plotting Software"
+  }
+}

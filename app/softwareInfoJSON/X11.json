@@ -1,0 +1,16 @@
+{
+  "software_name": "X11",
+  "comprehensive_overview": "X11, also known as the X Window System, is a windowing system software used in Unix-like operating systems to provide a graphical user interface. It defines a protocol for client-server communication to render graphics and manage windows, allowing applications to display graphical elements on the screen.",
+  "core_features": [
+    "Graphical user interface framework",
+    "Client-server architecture",
+    "Window management and display protocol"
+  ],
+  "general_tags": ["Windowing System", "Graphical User Interface", "X Protocol"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Graphical Systems",
+    "software_class": "Windowing System",
+    "software_type": "Framework"
+  }
+}

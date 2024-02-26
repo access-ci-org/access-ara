@@ -1,0 +1,22 @@
+{
+    "software_name": "SynthCity",
+    "comprehensive_overview": "SynthCity is a software tool designed for the modeling and simulation of urban dynamics. It provides a platform for researchers and urban planners to explore various scenarios and analyze the impacts of different urban development strategies.",
+    "core_features": [
+        "Urban dynamics modeling",
+        "Simulation of urban development scenarios",
+        "Impact analysis of strategies",
+        "Visualization of results"
+    ],
+    "general_tags": [
+        "urban dynamics",
+        "simulation",
+        "urban planning",
+        "scenario analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "Urban Studies",
+        "research_area": "Urban Planning",
+        "software_class": "Simulation Tools",
+        "software_type": "Modeling and Simulation"
+    }
+}

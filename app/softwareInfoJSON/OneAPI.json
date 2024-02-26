@@ -1,0 +1,24 @@
+```json
+{
+    "software_name": "OneAPI",
+    "comprehensive_overview": "OneAPI is an open, standards-based, open-source unified programming model that delivers a common developer experience across accelerator architecture. It offers a productive and highly efficient way to write code that targets CPUs, GPUs, FPGAs, and other accelerator devices.",
+    "core_features": [
+        "Unified programming model for heterogeneous computing",
+        "Supports CPUs, GPUs, FPGAs, and other accelerators",
+        "Open-source and standards-based",
+        "Optimized performance across different architectures"
+    ],
+    "general_tags": [
+        "Heterogeneous Computing",
+        "Unified Programming Model",
+        "Open Source",
+        "GPU Programming"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Programming Model",
+        "software_type": "Development Tool"
+    }
+}
+```  

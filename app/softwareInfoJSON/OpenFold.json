@@ -1,0 +1,12 @@
+{
+    "software_name": "OpenFold",
+    "comprehensive_overview": "OpenFold is a software tool for protein structure prediction using deep learning techniques. It focuses on predicting the 3D structure of proteins based on amino acid sequences.",
+    "core_features": "1. Protein structure prediction using deep learning algorithms\n2. Prediction of 3D protein structures from amino acid sequences\n3. Utilizes advanced deep learning models for accurate predictions",
+    "general_tags": ["protein structure prediction", "deep learning", "bioinformatics"],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Protein structure prediction",
+        "software_class": "Predictive modeling tool",
+        "software_type": "Bioinformatics tool"
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "software_name": "RNAview",
+  "comprehensive_overview": "RNAview is a software tool for the visualization and analysis of RNA secondary structures. It allows users to analyze RNA folding predictions, visualize base pairing interactions, and generate 2D structure diagrams.",
+  "core_features": [
+    "Visualization of RNA secondary structures",
+    "Base pairing analysis",
+    "2D structure diagram generation"
+  ],
+  "general_tags": ["Bioinformatics", "RNA Analysis", "Visualization Tool"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "RNA Structure Prediction",
+    "software_class": "Visualization",
+    "software_type": "Tool"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "tool": "vim",
+  "overview": "Vim is a highly configurable text editor that is popular for its efficiency and extensibility. It provides a modal editing interface that allows users to navigate and edit text quickly using keyboard shortcuts and powerful features. Vim is widely used for programming, editing configuration files, and various text editing tasks.",
+  "core_features": [
+    "Modal editing with normal, insert, visual, and command modes",
+    "Extensive customizability through plugins and configuration settings",
+    "Syntax highlighting and code completion for various programming languages",
+    "Efficient movement and editing commands for text manipulation"
+  ],
+  "general_tags": [
+    "text editor",
+    "programming tool",
+    "productivity software"
+  ],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "Text Editor",
+    "software_type": "Text Editing Tool"
+  }
+}

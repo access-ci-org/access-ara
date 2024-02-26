@@ -1,0 +1,20 @@
+{
+  "software name": "hypre",
+  "comprehensive overview": "Hypre (High-Performance Preconditioners) is a library of high-performance preconditioners and solvers for large, sparse linear systems arising from discretized partial differential equations (PDEs). It offers scalable and efficient solvers for parallel computing environments.",
+  "core features": [
+    "Preconditioners and solvers for large, sparse linear systems",
+    "Scalable algorithms for parallel computing",
+    "High-performance solutions for PDE discretization"
+  ],
+  "general tags": [
+    "Linear Solvers",
+    "Parallel Computing",
+    "Partial Differential Equations"
+  ],
+  "additional tags": {
+    "research discipline": "Numerical Analysis",
+    "research area": "Linear Algebra",
+    "software class": "Library",
+    "software type": "Solver Library"
+  }
+}

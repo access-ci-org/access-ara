@@ -1,0 +1,22 @@
+{
+    "software_name": "Kineto",
+    "comprehensive_overview": "Kineto is a PyTorch library built for performance analysis and optimization of deep learning workloads on mobile and edge devices. It provides insights into the execution of PyTorch operators on various hardware backends.",
+    "core_features": [
+        "Performance analysis",
+        "Optimization of deep learning workloads",
+        "Execution insights of PyTorch operators"
+    ],
+    "general_tags": [
+        "PyTorch",
+        "Deep Learning",
+        "Mobile Devices",
+        "Edge Devices",
+        "Performance Optimization"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Deep Learning",
+        "software_class": "Performance Analysis",
+        "software_type": "Library"
+    }
+}

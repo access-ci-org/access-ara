@@ -1,0 +1,26 @@
+{
+  "software_name": "MySQL",
+  "comprehensive_overview": "MySQL is an open-source relational database management system (RDBMS) that uses SQL (Structured Query Language). It is commonly used for web and application development, providing a reliable, scalable, and secure database solution.",
+  "core_features": [
+    "Support for wide range of platforms",
+    "ACID-compliant",
+    "Replication support",
+    "Full-text search",
+    "Stored procedures",
+    "Triggers",
+    "Views",
+    "Transactions"
+  ],
+  "general_tags": [
+    "Database Management System",
+    "Relational Database",
+    "Open-Source",
+    "SQL"
+  ],
+  "additional_tags": {
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Database Management System",
+    "software_type": "Software"
+  }
+}

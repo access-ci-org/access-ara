@@ -1,0 +1,21 @@
+{
+  "software_name": "libv8",
+  "comprehensive_overview": "libv8 is an open-source JavaScript engine library developed by the V8 project. It provides a high-performance runtime environment for executing JavaScript code standalone or embedded within other applications.",
+  "core_features": [
+    "JavaScript runtime environment",
+    "High-performance JavaScript execution",
+    "Standalone or embedded use",
+    "Compatibility with the V8 engine"
+  ],
+  "general_tags": [
+    "JavaScript engine",
+    "runtime environment",
+    "code execution"
+  ],
+  "additional_tags": {
+    "research_discipline": "Web Development",
+    "research_area": "JavaScript Engines",
+    "software_class": "Library",
+    "software_type": "JavaScript Runtime"
+  }
+}

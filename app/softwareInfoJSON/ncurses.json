@@ -1,0 +1,12 @@
+{
+    "software_name": "ncurses",
+    "comprehensive_overview": "ncurses is a programming library that provides an API that allows the programmer to write text-based user interfaces in a terminal-independent manner.",
+    "core_features": "1. Provides functions for moving the cursor, managing windows, handling mouse input, and displaying text in color. 2. Allows the design of text-based user interfaces with panels, menus, and forms. 3. Supports multiple terminal types and terminal emulators. 4. Enables the creation of interactive console applications with a modern look and feel.",
+    "general_tags": ["programming library", "text-based user interfaces", "terminal-independent", "console applications"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Library",
+        "software_type": "Development"
+    }
+}

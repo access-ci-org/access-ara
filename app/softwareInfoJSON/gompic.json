@@ -1,0 +1,20 @@
+{
+  "software name": "gompic",
+  "comprehensive overview": "GOMC (Grand Canonical Monte Carlo) and GOMC-GPU (Grand Canonical Monte Carlo on Graphics Processing Units) are versatile and efficient software packages for performing Monte Carlo simulations in the Grand Canonical ensemble.",
+  "core features": [
+    "Monte Carlo simulations in the Grand Canonical ensemble",
+    "Support for CPU and GPU parallel computing",
+    "Customizable simulation parameters and analysis tools"
+  ],
+  "general tags": [
+    "Monte Carlo Simulation",
+    "Grand Canonical Ensemble",
+    "Parallel Computing"
+  ],
+  "additional tags": {
+    "research discipline": "Computational Physics",
+    "research area": "Monte Carlo Simulations",
+    "software class": "Simulation Software",
+    "software type": "Monte Carlo Simulation Tool"
+  }
+}

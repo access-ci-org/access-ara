@@ -1,0 +1,29 @@
+{
+    "PyCUDA": {
+        "overview": "PyCUDA is a Python library that provides GPU computing capabilities using CUDA, NVIDIA's parallel computing platform. It allows Python developers to write high-performance code for parallel processing on NVIDIA GPUs, leveraging CUDA's advanced features for scientific computing and data processing.",
+        "core_features": [
+            "GPU computing with CUDA",
+            "Python bindings for CUDA",
+            "Parallel processing on NVIDIA GPUs",
+            "High-performance scientific computing",
+            "Integration of Python with GPU programming"
+        ],
+        "general_tags": [
+            "GPU computing",
+            "CUDA integration",
+            "High-performance computing"
+        ],
+        "additional_tags": {
+            "research_discipline": [
+                "Computer Science",
+                "High-Performance Computing"
+            ],
+            "research_area": [
+                "GPU Programming",
+                "Parallel Computing"
+            ],
+            "software_class": "Library",
+            "software_type": "GPU Computing"
+        }
+    }
+}

@@ -1,30 +1,20 @@
-I'll provide you with a JSON string for FLASh:
-
-```json
 {
     "software_name": "FLASh",
-    "overview": "FLASh is a software tool for merging paired-end Illumina DNA reads to reconstruct complete DNA sequences. It helps in aligning and merging DNA fragments to generate longer DNA sequences that provide a more complete picture of the original DNA fragments.",
+    "comprehensive_overview": "FLASh (Fast Length Adjustment of SHort reads) is a very accurate and fast tool for merging paired-end reads from next-generation sequencing experiments. FLASh is designed to merge pairs of reads when the original DNA fragments are shorter than twice the length of reads.",
     "core_features": [
-        "Paired-end read merging",
-        "DNA sequence reconstruction",
-        "DNA fragment alignment"
+        "Merge paired-end reads",
+        "Accurate and fast",
+        "Handles short DNA fragments effectively"
     ],
     "general_tags": [
-        "DNA sequencing",
-        "Sequence merging",
-        "Read alignment"
+        "NGS data analysis",
+        "Sequence data processing",
+        "Paired-end read merging"
     ],
-    "research_discipline": [
-        "Bioinformatics",
-        "Genomics"
-    ],
-    "research_area": [
-        "DNA sequence analysis",
-        "Read assembly"
-    ],
-    "software_class": "Genomics tool",
-    "software_type": "Sequence merging software"
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Genomics",
+        "software_class": "Sequence Analysis",
+        "software_type": "Tool"
+    }
 }
-``` 
-
-Please let me know if you need more details or have any specific requirements!

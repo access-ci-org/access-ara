@@ -1,0 +1,20 @@
+{
+  "software": "Spack",
+  "comprehensive_overview": "Spack is a flexible package manager designed for scientific computing environments and high-performance computing (HPC) systems. It allows users to easily build, install, and manage software packages and libraries across different platforms while providing features for dependency management and version control.",
+  "core_features": [
+    "Package management",
+    "Dependency resolution",
+    "Version control"
+  ],
+  "general_tags": [
+    "scientific computing",
+    "HPC",
+    "package manager"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Software Management",
+    "software_class": "Package Manager",
+    "software_type": "Management Tool"
+  }
+}

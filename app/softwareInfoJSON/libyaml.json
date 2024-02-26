@@ -1,0 +1,21 @@
+{
+  "software_name": "libyaml",
+  "comprehensive_overview": "libyaml is a YAML (YAML Ain't Markup Language) parsing and serialization library. It provides functions for reading, writing, and manipulating YAML data, offering a simple and human-readable format for structured data representation.",
+  "core_features": [
+    "YAML parsing and serialization",
+    "Read and write YAML data",
+    "Structured data handling",
+    "Human-readable data format"
+  ],
+  "general_tags": [
+    "YAML parsing",
+    "data serialization",
+    "structured data"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Serialization",
+    "software_class": "Library",
+    "software_type": "YAML Parsing"
+  }
+}

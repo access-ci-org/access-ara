@@ -1,0 +1,21 @@
+{
+  "software_name": "libgeotiff",
+  "comprehensive_overview": "libgeotiff is a library for reading and writing GeoTIFF files, which are specialized image files that contain geographic metadata. It enables developers to work with geospatial imagery and associated location information.",
+  "core_features": [
+    "Reading and writing GeoTIFF files",
+    "Support for geospatial imagery",
+    "Handling geographic metadata",
+    "Integration with geospatial applications"
+  ],
+  "general_tags": [
+    "GeoTIFF",
+    "spatial data",
+    "geographic information"
+  ],
+  "additional_tags": {
+    "research_discipline": "Geography",
+    "research_area": "Geospatial Analysis",
+    "software_class": "Library",
+    "software_type": "Geospatial"
+  }
+}

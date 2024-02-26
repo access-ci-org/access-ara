@@ -1,0 +1,20 @@
+{
+    "software name": "libarchive",
+    "comprehensive overview": "libarchive is a portable C library for reading and writing various archive formats, such as tar, cpio, zip, and more. It provides a uniform interface for handling archives and supports compression and decompression, making it a versatile tool for file archiving and extraction.",
+    "core features": [
+        "Support for reading and writing archive formats",
+        "Handling of tar, cpio, zip, and other formats",
+        "Compression and decompression functionalities"
+    ],
+    "general tags": [
+        "Archive Handling",
+        "Compression",
+        "C Library"
+    ],
+    "additional tags": {
+        "research discipline": "Data Management",
+        "research area": "Archival Systems",
+        "software class": "Library",
+        "software type": "Archive Tool"
+    }
+}

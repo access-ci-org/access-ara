@@ -1,0 +1,21 @@
+{
+  "amask": {
+    "overview": "AMASK (Automated Masking of Annotated Sequence Kinetically) is a bioinformatics tool that automates the process of masking repetitive sequences in DNA annotations. It helps improve the accuracy of genome annotations by masking repetitive regions identified in the sequence.",
+    "core_features": [
+      "Automated masking",
+      "Repetitive sequence identification",
+      "Genome annotation improvement"
+    ],
+    "general_tags": [
+      "Bioinformatics",
+      "Sequence analysis",
+      "Genome annotation"
+    ],
+    "additional_tags": {
+      "research_discipline": "Genomics",
+      "research_area": "Sequence analysis",
+      "software_class": "Bioinformatics tool",
+      "software_type": "Sequence masking software"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "software_name": "Python",
+  "comprehensive_overview": "Python is a high-level programming language known for its simplicity and readability. It is versatile and widely used in various fields including web development, data science, automation, and more.",
+  "core_features": [
+    "Simple and easy-to-read syntax",
+    "Extensive standard library",
+    "Support for multiple programming paradigms"
+  ],
+  "general_tags": ["General Purpose", "Programming Language", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Artificial Intelligence",
+    "software_class": "Development Environment",
+    "software_type": "Language"
+  }
+}

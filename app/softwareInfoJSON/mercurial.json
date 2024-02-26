@@ -1,0 +1,21 @@
+{
+    "Mercurial": {
+        "overview": "Mercurial is a distributed version control system (DVCS) that helps developers track changes to source code files and collaborate on software development projects. It enables version control, branching, and merging of code repositories.",
+        "core_features": [
+            "Distributed version control",
+            "Branching and merging",
+            "Collaborative development"
+        ],
+        "general_tags": [
+            "Version Control System",
+            "Distributed Version Control",
+            "Software Development"
+        ],
+        "additional_tags": {
+            "research_discipline": "Software Engineering",
+            "research_area": "Version Control",
+            "software_class": "Version Control System",
+            "software_type": "DVCS"
+        }
+    }
+}

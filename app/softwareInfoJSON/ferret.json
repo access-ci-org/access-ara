@@ -1,0 +1,18 @@
+{
+  "software_name": "Ferret",
+  "comprehensive_overview": "Ferret is an interactive computer visualization and analysis environment designed to meet the needs of oceanographers and meteorologists analyzing large and complex gridded data sets.",
+  "core_features": [
+    "Interactive visualization of gridded data sets",
+    "Data analysis and manipulation tools",
+    "Plotting and graphical capabilities",
+    "Support for various file formats",
+    "Customizable visualization options"
+  ],
+  "general_tags": ["visualization", "data analysis", "meteorology", "oceanography"],
+  "additional_tags": {
+    "research_discipline": "Earth Sciences",
+    "research_area": ["Oceanography", "Meteorology"],
+    "software_class": "Data Visualization and Analysis",
+    "software_type": "Interactive Environment"
+  }
+}

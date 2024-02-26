@@ -1,0 +1,20 @@
+{
+  "software": "SuiteSparse",
+  "comprehensive_overview": "SuiteSparse is a suite of sparse matrix software libraries developed primarily by Tim Davis. It includes a collection of libraries and tools for solving sparse linear systems, eigenvalue problems, and various matrix computations. SuiteSparse is commonly used in scientific computing and engineering applications.",
+  "core_features": [
+    "Sparse matrix computations",
+    "Linear system solvers",
+    "Eigenvalue problem solvers"
+  ],
+  "general_tags": [
+    "sparse matrices",
+    "scientific computing",
+    "linear algebra"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computational Science",
+    "research_area": "Sparse Linear Algebra",
+    "software_class": "Library",
+    "software_type": "Sparse Matrix Computing"
+  }
+}

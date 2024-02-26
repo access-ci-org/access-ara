@@ -1,0 +1,22 @@
+{
+    "software_name": "Git",
+    "comprehensive_overview": "Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It is commonly used for source code management in software development.",
+    "core_features": [
+        "Distributed version control system",
+        "Supports non-linear development",
+        "Branching and merging",
+        "Fast performance"
+    ],
+    "general_tags": [
+        "Version Control",
+        "Software Development",
+        "Collaboration",
+        "Source Code Management"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Version Control System",
+        "software_type": "Tool"
+    }
+}

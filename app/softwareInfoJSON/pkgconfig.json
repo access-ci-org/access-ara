@@ -1,0 +1,16 @@
+{
+    "software_name": "pkgconfig",
+    "comprehensive_overview": "pkg-config is a helper tool used when compiling applications and libraries. It helps to manage compile and link flags for libraries that the code depends on.",
+    "core_features": [
+        "Helps manage compile and link flags for libraries",
+        "Assists in locating and determining the flags needed to use a library",
+        "Simplifies the process of compiling and linking applications"
+    ],
+    "general_tags": ["compilation", "linking"],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Build Tools",
+        "software_type": "Utility"
+    }
+}

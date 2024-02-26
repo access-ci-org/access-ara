@@ -1,0 +1,22 @@
+{
+  "software_name": "dftd4",
+  "comprehensive_overview": "DFTD4 is a Python library that provides a range of advanced tools for running density functional theory (DFT) calculations and analyzing the results. It offers functionalities to perform electronic structure calculations for molecules and solids.",
+  "core_features": [
+    "Density functional theory calculations",
+    "Electronic structure analysis",
+    "Molecular and solid-state systems",
+    "Python-based for flexibility and ease of use"
+  ],
+  "general_tags": [
+    "DFT calculations",
+    "Electronic structure analysis",
+    "Python library",
+    "Computational chemistry"
+  ],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Computational chemistry",
+    "software_class": "Scientific computing",
+    "software_type": "Python library"
+  }
+}

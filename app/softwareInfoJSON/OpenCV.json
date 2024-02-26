@@ -1,0 +1,23 @@
+{
+	"software_name": "OpenCV",
+	"comprehensive_overview": "OpenCV (Open Source Computer Vision Library) is an open-source computer vision and machine learning software library. It provides a wide range of algorithms for computer vision and image processing, making it a popular choice for applications in robotics, surveillance, augmented reality, and more.",
+	"core_features": [
+		"Image/video I/O",
+		"Image processing",
+		"Object detection",
+		"Feature extraction",
+		"Machine learning"
+	],
+	"general_tags": [
+		"computer vision",
+		"image processing",
+		"machine learning",
+		"robotics"
+	],
+	"additional_tags": {
+		"research_discipline": "Computer Science",
+		"research_area": "Computer Vision",
+		"software_class": "Library",
+		"software_type": "Open Source"
+	}
+}

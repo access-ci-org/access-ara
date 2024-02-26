@@ -1,0 +1,20 @@
+{
+  "software name": "groff",
+  "comprehensive overview": "GNU troff (groff) is a typesetting system that is used to format and output documents, particularly in Unix-based systems. It supports various macro packages for customizing document layouts and styles.",
+  "core features": [
+    "Document formatting and typesetting",
+    "Support for macro packages like ms, man, and mm",
+    "Output to various formats like PostScript, PDF, and HTML"
+  ],
+  "general tags": [
+    "Typesetting",
+    "Document Formatting",
+    "Unix"
+  ],
+  "additional tags": {
+    "research discipline": "Publishing",
+    "research area": "Document Preparation",
+    "software class": "Document Processor",
+    "software type": "Typesetting System"
+  }
+}

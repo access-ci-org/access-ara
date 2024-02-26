@@ -1,0 +1,21 @@
+{
+  "Guppy": {
+    "overview": "Guppy is a memory analysis tool for Python that helps developers detect memory-related problems in their code. It provides insights into memory usage, leaks, and optimizations.",
+    "core_features": [
+      "Memory analysis",
+      "Memory profiling",
+      "Memory leak detection"
+    ],
+    "general_tags": [
+      "Python",
+      "Memory Analysis",
+      "Profiling"
+    ],
+    "additional_tags": {
+      "research_discipline": "Computer Science",
+      "research_area": "Memory Management",
+      "software_class": "Tool",
+      "software_type": "Memory Profiler"
+    }
+  }
+}

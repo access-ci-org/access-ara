@@ -1,0 +1,12 @@
+{
+    "software_name": "p3dfft",
+    "comprehensive_overview": "P3DFFT is a software library for parallel three-dimensional Fast Fourier Transform in large-scale scientific computations.",
+    "core_features": "1. Parallel implementation of 3D FFT\n2. Designed for large-scale scientific computations\n3. Supports distributed-memory parallelism\n4. Optimized for high performance",
+    "general_tags": ["scientific computing", "parallel computing", "Fast Fourier Transform"],
+    "additional_tags": {
+        "research_discipline": "Computational Science",
+        "research_area": "Numerical simulations",
+        "software_class": "Computational library",
+        "software_type": "Large-scale scientific computation tool"
+    }
+}

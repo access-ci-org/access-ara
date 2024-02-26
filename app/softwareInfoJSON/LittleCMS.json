@@ -1,0 +1,19 @@
+{
+  "LittleCMS": {
+    "overview": "LittleCMS (LCMS) is an open-source color management engine that provides color transformation and rendering capabilities for consistent color reproduction across different devices and platforms. It supports color profiles and ICC (International Color Consortium) standards.",
+    "core_features": [
+      "Color transformation and rendering",
+      "Color management engine",
+      "ICC color profiles support",
+      "Consistent color reproduction",
+      "Open-source and cross-platform"
+    ],
+    "general_tags": ["Color management", "Color transformation", "Open-source"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Digital Imaging"],
+      "research_area": ["Color Reproduction", "Color Correction"],
+      "software_class": "Library",
+      "software_type": "Graphics"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "software_name": "OpenMPI4",
+    "comprehensive_overview": "OpenMPI4 is an open-source Message Passing Interface (MPI) library that is widely used for parallel computing on a variety of hardware platforms. It allows developers to write scalable and portable parallel applications for distributed memory systems.",
+    "core_features": [
+        "Support for parallel computing",
+        "Message Passing Interface (MPI) library",
+        "Scalable and portable parallel applications",
+        "High-performance computing (HPC) capabilities"
+    ],
+    "general_tags": [
+        "Open-source",
+        "Parallel computing",
+        "Distributed systems",
+        "High-performance computing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Parallel Computing",
+        "software_class": "Library",
+        "software_type": "MPI Library"
+    }
+}

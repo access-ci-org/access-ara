@@ -1,0 +1,20 @@
+{
+    "software_name": "freeipmi",
+    "comprehensive_overview": "FreeIPMI provides in-band and out-of-band IPMI software based on the IPMI v1.5/2.0 specification. It has a number of useful features for administering IPMI enabled devices.",
+    "core_features": [
+        "In-band and out-of-band IPMI software",
+        "Support for IPMI v1.5/2.0 specification",
+        "Administration of IPMI enabled devices"
+    ],
+    "general_tags": [
+        "IPMI",
+        "Server Management",
+        "Hardware Monitoring"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Network Management",
+        "software_class": "System Administration",
+        "software_type": "Utility"
+    }
+}

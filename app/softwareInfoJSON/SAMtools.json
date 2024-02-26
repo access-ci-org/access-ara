@@ -1,0 +1,12 @@
+{
+  "software_name": "SAMtools",
+  "comprehensive_overview": "SAMtools is a suite of tools for interacting with and manipulating SAM (Sequence Alignment/Map) format files, which are commonly used in bioinformatics for representing DNA sequence alignments. It provides various utilities for processing sequence alignment data.",
+  "core_features": ["SAM/BAM file manipulation", "Alignment format conversions", "Variant calling and analysis"],
+  "general_tags": ["Bioinformatics", "Sequence Alignment", "Data Processing"],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Genomics",
+    "software_class": "Data Analysis",
+    "software_type": "Tool"
+  }
+}

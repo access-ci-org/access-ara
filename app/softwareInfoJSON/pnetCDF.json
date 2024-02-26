@@ -1,0 +1,21 @@
+{
+  "software_name": "pnetCDF",
+  "comprehensive_overview": "Parallel netCDF (pnetCDF) is a high-performance parallel I/O library for reading and writing netCDF and CDF files in parallel. It is designed to fully exploit the parallel I/O capabilities of modern parallel file systems, achieving high performance by enabling concurrent access to the same file.",
+  "core_features": [
+    "Parallel I/O for netCDF and CDF files",
+    "High-performance I/O on parallel file systems",
+    "Concurrent access to the file"
+  ],
+  "general_tags": [
+    "I/O library",
+    "Parallel computing",
+    "NetCDF",
+    "CDF"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High Performance Computing",
+    "software_class": "Parallel I/O Library",
+    "software_type": "Library"
+  }
+}

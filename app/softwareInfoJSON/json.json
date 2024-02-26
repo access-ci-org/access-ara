@@ -1,0 +1,20 @@
+{
+  "software name": "JSON",
+  "comprehensive overview": "JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write, and for machines to parse and generate. It is widely used for structuring data and transmitting information between web servers and clients.",
+  "core features": [
+    "Lightweight format for data interchange",
+    "Human-readable and machine-parseable syntax",
+    "Flexible structure for representing diverse data types"
+  ],
+  "general tags": [
+    "Data Interchange",
+    "Structured Data",
+    "Web Development"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "Data Serialization",
+    "software class": "Format",
+    "software type": "Data Interchange Format"
+  }
+}

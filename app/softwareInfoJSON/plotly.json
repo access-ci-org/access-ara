@@ -1,0 +1,12 @@
+{
+    "software_name": "Plotly",
+    "comprehensive_overview": "Plotly is a data visualization library that allows users to create interactive plots and dashboards in Python, R, and JavaScript. It offers a wide range of customizable charts, graphs, and maps for exploratory data analysis and communication of insights.",
+    "core_features": "1. Interactive data visualization\n2. Support for various chart types including scatter plots, bar charts, line charts, heatmaps, and more\n3. Ability to create dashboards with multiple interconnected visualizations\n4. Export plots in various formats like HTML, PNG, and SVG\n5. Collaboration features for sharing and editing plots",
+    "general_tags": ["data visualization", "interactive plots", "dashboards"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Data Visualization Library",
+        "software_type": "Library"
+    }
+}

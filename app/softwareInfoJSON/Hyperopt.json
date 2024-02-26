@@ -1,0 +1,21 @@
+{
+  "Hyperopt": {
+    "overview": "Hyperopt is a Python library for optimizing machine learning models by conducting hyperparameter optimization and tuning. It provides algorithms for efficient search through hyperparameter space to find the best model configurations.",
+    "core_features": [
+      "Hyperparameter optimization",
+      "Model tuning",
+      "Search algorithms for parameter space"
+    ],
+    "general_tags": [
+      "Machine Learning",
+      "Hyperparameter Optimization",
+      "Model Tuning"
+    ],
+    "additional_tags": {
+      "research_discipline": "Artificial Intelligence",
+      "research_area": "Machine Learning Optimization",
+      "software_class": "Library",
+      "software_type": "Optimization Tool"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "tool": "Xpdf",
+    "overview": "Xpdf is an open-source viewer for Portable Document Format (PDF) files, offering basic viewing, navigation, and text extraction capabilities. It provides a lightweight and efficient PDF viewer for Unix-like systems, enabling users to access and read PDF documents without the need for a full-fledged PDF reader.",
+    "core_features": [
+        "Viewing and navigating PDF documents",
+        "Text extraction and search functionality",
+        "Support for basic PDF rendering and printing",
+        "Minimalistic and lightweight PDF viewer"
+    ],
+    "general_tags": [
+        "PDF viewer",
+        "document reader",
+        "text extraction tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Viewer",
+        "software_type": "PDF Tool"
+    }
+}

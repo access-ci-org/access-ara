@@ -1,0 +1,16 @@
+{
+  "software_name": "Visit",
+  "comprehensive_overview": "Visit is an open-source, interactive parallel visualization and graphical analysis tool used for visualizing scientific data. It is particularly focused on large-scale simulations and post-processing of complex data sets, enabling researchers to analyze and present their data in a visually engaging manner.",
+  "core_features": [
+    "Parallel visualization capabilities",
+    "Support for large datasets",
+    "Advanced 2D and 3D visualization tools"
+  ],
+  "general_tags": ["Scientific Visualization", "Data Analysis", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Visualization",
+    "software_class": "Visualization Tool",
+    "software_type": "Software"
+  }
+}

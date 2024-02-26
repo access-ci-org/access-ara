@@ -1,0 +1,20 @@
+{
+  "software name": "hiredis",
+  "comprehensive overview": "hiredis is a minimalistic C client library for the Redis database serving as a lightweight and efficient interface for communication between Redis databases and applications. It allows developers to easily interact with Redis using simple and fast commands.",
+  "core features": [
+    "C client library for Redis database communication",
+    "Minimalistic design for efficient Redis interaction",
+    "Support for various Redis commands and operations"
+  ],
+  "general tags": [
+    "Redis",
+    "Database Communication",
+    "Client Library"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "Database Communication",
+    "software class": "Client Library",
+    "software type": "Database Tool"
+  }
+}

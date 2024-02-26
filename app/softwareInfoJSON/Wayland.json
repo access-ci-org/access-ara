@@ -1,0 +1,16 @@
+{
+  "software_name": "Wayland",
+  "comprehensive_overview": "Wayland is a protocol for a compositor to talk to its clients and a library for the reference implementation of that protocol. It serves as an alternative to the X Window System, providing a simpler and more efficient approach to handling graphical environments in Linux and Unix systems.",
+  "core_features": [
+    "Compositor-client protocol",
+    "Modern display server technology",
+    "Decoupling compositor from windowing system"
+  ],
+  "general_tags": ["Display Server Protocol", "Linux Graphics", "Compositor Technology"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Graphics Systems",
+    "software_class": "Display Protocol",
+    "software_type": "Framework"
+  }
+}

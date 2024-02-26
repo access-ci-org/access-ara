@@ -1,24 +1,12 @@
 {
     "software_name": "GLFW",
-    "overview": "GLFW is an open-source, multi-platform library for creating windows with OpenGL contexts and managing input. It provides a simple API for handling window creation, input events, and managing OpenGL contexts, making it a popular choice for graphics applications and games.",
-    "core_features": [
-        "Cross-platform window creation",
-        "OpenGL context management",
-        "Input event handling"
-    ],
-    "general_tags": [
-        "Graphics programming",
-        "OpenGL development",
-        "Window management"
-    ],
-    "research_discipline": [
-        "Computer graphics",
-        "Software development"
-    ],
-    "research_area": [
-        "Graphics programming",
-        "OpenGL applications"
-    ],
-    "software_class": "Graphics library",
-    "software_type": "Windowing toolkit"
+    "comprehensive_overview": "GLFW is an open-source, multi-platform library for managing windows, OpenGL contexts, and input devices for graphics application development. It simplifies the process of creating graphical user interfaces, handling user input, and managing OpenGL contexts across different platforms.",
+    "core_features": ["Window and OpenGL context management", "Input device handling", "Cross-platform GUI development"],
+    "general_tags": ["Graphics library", "Window management"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Library",
+        "software_type": "Development Tool"
+    }
 }

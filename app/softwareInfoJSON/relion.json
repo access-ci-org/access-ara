@@ -1,0 +1,20 @@
+{
+  "software": "RELION",
+  "comprehensive_overview": "RELION (REgularised LIkelihood OptimisatioN) is an image processing software package used for three-dimensional reconstruction in cryo-electron microscopy (cryo-EM). It employs Bayesian statistics and maximum likelihood estimation for high-resolution reconstruction of macromolecular structures from cryo-EM images.",
+  "core_features": [
+    "Cryo-EM image processing",
+    "Three-dimensional reconstruction",
+    "Bayesian statistics"
+  ],
+  "general_tags": [
+    "cryo-electron microscopy",
+    "image reconstruction",
+    "structural biology"
+  ],
+  "additional_tags": {
+    "research_discipline": "Biophysics",
+    "research_area": "Cryo-EM",
+    "software_class": "Tool",
+    "software_type": "Image Processing"
+  }
+}

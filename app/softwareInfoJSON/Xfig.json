@@ -1,0 +1,16 @@
+{
+  "software_name": "Xfig",
+  "comprehensive_overview": "Xfig is a vector graphics drawing tool for Unix and Linux systems that enables users to create and manipulate scalable graphics and diagrams. It provides a simple interface for creating figures, illustrations, and technical drawings, making it popular in academic and technical fields.",
+  "core_features": [
+    "Vector graphics drawing",
+    "Diagram creation",
+    "Text and object manipulation"
+  ],
+  "general_tags": ["Drawing Tool", "Vector Graphics", "Unix Software"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Graphic Design",
+    "software_class": "Graphics Tool",
+    "software_type": "Software"
+  }
+}

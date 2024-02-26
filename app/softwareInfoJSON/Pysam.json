@@ -1,0 +1,16 @@
+{
+  "software_name": "Pysam",
+  "comprehensive_overview": "Pysam is a Python module that provides a simple interface to the SAM/BAM sequence alignment and mapping format, allowing manipulation of sequence alignment data.",
+  "core_features": [
+    "Reading and writing SAM/BAM files",
+    "Indexing and querying alignment data",
+    "Extracting sequence reads and alignment information"
+  ],
+  "general_tags": ["Bioinformatics", "Sequence Alignment", "Python Module"],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Genomics",
+    "software_class": "Data Analysis",
+    "software_type": "Library"
+  }
+}

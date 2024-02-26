@@ -1,0 +1,23 @@
+{
+    "software": "bedtools",
+    "overview": "bedtools is a powerful suite of tools for manipulating genomic intervals and genomic annotations. It performs various operations on genomic features efficiently.",
+    "core_features": [
+        "Intersection, union, and set operations on genomic intervals",
+        "Genomic arithmetic operations",
+        "Feature annotation",
+        "Quality filtering and analysis",
+        "Support for BED, GFF, VCF, and other common formats"
+    ],
+    "general_tags": [
+        "genomics",
+        "genomic data analysis",
+        "bioinformatics",
+        "data processing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Genomic Analysis",
+        "software_class": "Genomic tools",
+        "software_type": "Open Source"
+    }
+}

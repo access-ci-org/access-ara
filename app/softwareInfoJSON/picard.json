@@ -1,0 +1,12 @@
+{
+    "software_name": "Picard",
+    "comprehensive_overview": "Picard is a set of Java command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF. It is used to perform various tasks such as data format conversions, quality control, metrics generation, and other sequence analysis procedures.",
+    "core_features": "Data format conversion, quality control, metrics generation, sequence analysis, HTS data manipulation",
+    "general_tags": ["Bioinformatics", "Sequence Analysis", "High-Throughput Sequencing", "Data Manipulation"],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Genomics",
+        "software_class": "HTS Data Manipulation",
+        "software_type": "Command Line Tools"
+    }
+} 

@@ -1,0 +1,19 @@
+{
+  "MKL": {
+    "overview": "MKL (Math Kernel Library) is a highly optimized, threaded, and parallel math library developed by Intel. It offers performance-optimized mathematical functions for various computations, including linear algebra, FFT, and random number generation.",
+    "core_features": [
+      "Optimized math functions",
+      "Threaded and parallel computations",
+      "Linear algebra operations",
+      "Fast Fourier Transform (FFT)",
+      "Random number generation"
+    ],
+    "general_tags": ["Math library", "Optimization", "Parallel computing"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Mathematics"],
+      "research_area": ["Numerical Computing", "Parallel Algorithms"],
+      "software_class": "Library",
+      "software_type": "Mathematics"
+    }
+  }
+}

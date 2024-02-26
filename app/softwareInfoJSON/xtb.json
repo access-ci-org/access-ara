@@ -1,0 +1,21 @@
+{
+    "tool": "XTB",
+    "overview": "XTB (X-themed Becke–Johnson exchange and Taylor dispersion model) is a quantum chemistry program that combines the XTB electronic structure method with semiempirical tight-binding models for efficient and accurate calculations of molecular properties. It offers a balance between accuracy and computational cost, making it suitable for studying chemical reactions and materials.",
+    "core_features": [
+        "Electronic structure calculations with XTB method",
+        "Incorporation of tight-binding models for molecular simulations",
+        "Prediction of molecular properties and reactivity",
+        "Efficient calculation of chemical reaction pathways"
+    ],
+    "general_tags": [
+        "quantum chemistry",
+        "electronic structure method",
+        "molecular simulations"
+    ],
+    "additional_tags": {
+        "research_discipline": "Chemistry",
+        "research_area": "Computational Chemistry",
+        "software_class": "Simulation Software",
+        "software_type": "Quantum Chemistry Tool"
+    }
+}

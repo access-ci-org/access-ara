@@ -1,0 +1,12 @@
+{
+    "software_name": "LSMS",
+    "comprehensive_overview": "The Locally Self-consistent Multiple Scattering (LSMS) code is a highly scalable, parallel electronic structure simulation tool based on real space, multiple scattering theory. It is used to study the electronic structure of materials, their physical and chemical properties, and their response to external perturbations.",
+    "core_features": "1. Highly scalable and parallel code\n2. Based on real space, multiple scattering theory\n3. Study electronic structure of materials\n4. Analyze physical and chemical properties of materials\n5. Investigate materials response to external perturbations",
+    "general_tags": ["electronic structure simulation", "materials science", "computational chemistry"],
+    "additional_tags": {
+        "research_discipline": "Materials Science",
+        "research_area": "Electronic Structure",
+        "software_class": "Electronic Structure Calculation",
+        "software_type": "Simulation Tool"
+    }
+}

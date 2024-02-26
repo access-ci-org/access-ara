@@ -1,0 +1,21 @@
+{
+  "software_name": "libxsmm",
+  "comprehensive_overview": "libxsmm is a library for small matrix-matrix multiplications (SGEMM, DGEMM, CGEMM, ZGEMM) with runtime generated code and simplicity in mind. It is efficient on Intel architectures and offers optimized routines for various matrix multiplication tasks.",
+  "core_features": [
+    "Small matrix-matrix multiplication support",
+    "Optimized routines for SGEMM, DGEMM, CGEMM, ZGEMM",
+    "Runtime generated code",
+    "Efficient on Intel architectures"
+  ],
+  "general_tags": [
+    "matrix multiplication",
+    "optimized routines",
+    "Intel architecture"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Linear Algebra",
+    "software_class": "Library",
+    "software_type": "Matrix Multiplication"
+  }
+}

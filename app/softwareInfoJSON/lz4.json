@@ -1,0 +1,21 @@
+{
+  "software_name": "LZ4",
+  "comprehensive_overview": "LZ4 is a fast compression algorithm and tool that provides high-speed compression and decompression, designed for efficiency and low latency. It is widely used for real-time compression needs, data storage, and communication protocols.",
+  "core_features": [
+    "High-speed compression",
+    "Efficient data compression",
+    "Low latency compression and decompression",
+    "Real-time compression support"
+  ],
+  "general_tags": [
+    "compression algorithm",
+    "high-speed compression",
+    "low latency"
+  ],
+  "additional_tags": {
+    "research_discipline": "Data Compression",
+    "research_area": "Compression Algorithms",
+    "software_class": "Tool",
+    "software_type": "Compression"
+  }
+}

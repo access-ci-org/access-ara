@@ -1,0 +1,16 @@
+{
+  "software_name": "Ruby",
+  "comprehensive_overview": "Ruby is a dynamic, object-oriented programming language known for its simplicity and productivity. It is widely used for web development, automation, data processing, and more.",
+  "core_features": [
+    "Object-oriented programming",
+    "Extensive library ecosystem",
+    "Simple and readable syntax"
+  ],
+  "general_tags": ["General Purpose", "Programming Language", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Web Development",
+    "software_class": "Development Environment",
+    "software_type": "Language"
+  }
+}

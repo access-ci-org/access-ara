@@ -1,0 +1,21 @@
+{
+  "software_name": "mpiBench",
+  "comprehensive_overview": "mpiBench is a software tool designed for benchmarking MPI (Message Passing Interface) performance on various parallel computing systems. It allows users to assess and compare the performance of different MPI implementations on their respective hardware configurations.",
+  "core_features": [
+    "Benchmarking MPI performance",
+    "Comparison of MPI implementations",
+    "Analysis of performance on parallel computing systems"
+  ],
+  "general_tags": [
+    "MPI",
+    "Benchmarking",
+    "Performance Analysis",
+    "Parallel Computing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Parallel Computing",
+    "software_class": "Benchmarking Tool",
+    "software_type": "Performance Evaluation"
+  }
+}

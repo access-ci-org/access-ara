@@ -1,0 +1,20 @@
+{
+  "software": "Q-Chem",
+  "comprehensive_overview": "Q-Chem is an ab initio electronic structure calculation software package used for advanced quantum chemistry simulations. It provides a range of methods for accurate quantum mechanical calculations and simulations of molecular systems, including various electronic structure models and properties calculations.",
+  "core_features": [
+    "Ab initio calculations",
+    "Quantum chemistry simulations",
+    "Electronic structure methods"
+  ],
+  "general_tags": [
+    "quantum chemistry",
+    "electronic structure",
+    "ab initio calculations"
+  ],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Quantum Chemistry",
+    "software_class": "Simulation",
+    "software_type": "Quantum Chemistry"
+  }
+}

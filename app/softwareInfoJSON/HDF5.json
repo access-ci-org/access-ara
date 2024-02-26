@@ -1,0 +1,21 @@
+{
+  "HDF5": {
+    "overview": "HDF5 (Hierarchical Data Format version 5) is a file format and library designed for the management and storage of large and complex data collections. It supports various data types, compression, and parallel I/O.",
+    "core_features": [
+      "Hierarchical data storage",
+      "Support for large and complex datasets",
+      "Compression and chunking"
+    ],
+    "general_tags": [
+      "Data Management",
+      "Data Storage",
+      "File Format"
+    ],
+    "additional_tags": {
+      "research_discipline": "Data Science",
+      "research_area": "Data Storage",
+      "software_class": "Library",
+      "software_type": "Data Management Tool"
+    }
+  }
+}

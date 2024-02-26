@@ -1,0 +1,20 @@
+{
+  "software": "polyfun",
+  "comprehensive_overview": "Polyfun is a library software that provides tools for computing properties of polynomial functions. It offers various functions and algorithms for polynomial manipulation and analysis.",
+  "core_features": [
+    "Polynomial computation",
+    "Property analysis",
+    "Function manipulation"
+  ],
+  "general_tags": [
+    "mathematics",
+    "polynomial functions",
+    "algorithms"
+  ],
+  "additional_tags": {
+    "research_discipline": "Mathematics",
+    "research_area": "Numerical analysis",
+    "software_class": "Library",
+    "software_type": "Computation"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "LLVM": {
+    "overview": "LLVM is a collection of modular and reusable compiler and toolchain technologies used for building compilers, static analysis tools, and programming language implementations. It provides a powerful infrastructure for optimizing and compiling code.",
+    "core_features": [
+      "Modular compiler technology",
+      "Toolchain for building compilers",
+      "Static analysis tools",
+      "Powerful code optimization",
+      "Support for multiple programming languages"
+    ],
+    "general_tags": ["Compiler", "Toolchain", "Code optimization"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Software Engineering"],
+      "research_area": ["Compiler Design", "Programming Language Implementation"],
+      "software_class": "Compiler Toolchain",
+      "software_type": "Development"
+    }
+  }
+}

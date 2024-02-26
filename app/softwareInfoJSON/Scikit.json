@@ -1,0 +1,16 @@
+{
+  "software_name": "Scikit",
+  "comprehensive_overview": "Scikit is a collection of machine learning and data analysis tools built on the scientific computing library NumPy. It provides efficient implementations of various algorithms for classification, regression, clustering, and more in a user-friendly Python interface.",
+  "core_features": [
+    "Machine learning algorithms",
+    "Data preprocessing and model evaluation",
+    "Integration with NumPy and SciPy libraries"
+  ],
+  "general_tags": ["Machine Learning", "Data Analysis", "Python Library"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Machine Learning",
+    "software_class": "Machine Learning Library",
+    "software_type": "Library"
+  }
+}

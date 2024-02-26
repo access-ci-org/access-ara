@@ -1,0 +1,20 @@
+{
+  "software": "spglib",
+  "comprehensive_overview": "Spglib (Space Group Library) is a C library for finding and handling crystal symmetries in materials science and solid-state physics. It provides efficient tools for crystallographic calculations, space group determination, and symmetry operations essential for studying the properties of crystalline structures.",
+  "core_features": [
+    "Crystal symmetries",
+    "Space group determination",
+    "Symmetry operations"
+  ],
+  "general_tags": [
+    "materials science",
+    "crystallography",
+    "solid-state physics"
+  ],
+  "additional_tags": {
+    "research_discipline": "Materials Science",
+    "research_area": "Crystallography",
+    "software_class": "Library",
+    "software_type": "Crystal Symmetry"
+  }
+}

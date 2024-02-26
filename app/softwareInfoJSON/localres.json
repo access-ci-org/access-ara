@@ -1,0 +1,21 @@
+{
+    "software_name": "LocalRes",
+    "comprehensive_overview": "LocalRes is a computational tool for estimating the local resource abundance in a given metagenomic sample. It uses reference genomes to detect the abundance of various resources based on the number of reads mapping to those genomes.",
+    "core_features": [
+        "Estimation of local resource abundance in metagenomic samples",
+        "Utilizes reference genomes for abundance estimation",
+        "Mapping of reads to reference genomes"
+    ],
+    "general_tags": [
+        "metagenomics",
+        "resource abundance estimation",
+        "reference genomes",
+        "read mapping"
+    ],
+    "additional_tags": {
+        "research_discipline": "Microbiology",
+        "research_area": "Metagenomics",
+        "software_class": "Bioinformatics",
+        "software_type": "Computational Tool"
+    }
+}

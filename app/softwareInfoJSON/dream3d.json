@@ -1,0 +1,24 @@
+{
+    "software_name": "Dream3D",
+    "comprehensive_overview": "Dream.3D is an open-source, extensible, cross-platform and general-purpose quantitative 3D microstructure analysis and visualization toolkit designed for any materialistic research. It is specifically created for performing digital microstructure analysis in materials and biology sciences. Dream.3D provides a comprehensive data analysis environment for solving scientific problems in 3D materials characterization.",
+    "core_features": [
+        "Quantitative 3D microstructure analysis",
+        "Visualization toolkit",
+        "Digital microstructure analysis",
+        "Cross-platform functionality",
+        "Open-source and extensible"
+    ],
+    "general_tags": [
+        "3D analysis",
+        "Microstructure analysis",
+        "Data visualization",
+        "Materials science",
+        "Biology"
+    ],
+    "additional_tags": {
+        "research_discipline": "Materials Science",
+        "research_area": "Materials characterization",
+        "software_class": "Data analysis and visualization",
+        "software_type": "Quantitative analysis tool"
+    }
+}

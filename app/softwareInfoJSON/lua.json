@@ -1,0 +1,22 @@
+{
+    "software_name": "Lua",
+    "comprehensive_overview": "Lua is a lightweight, high-level, multi-paradigm programming language designed primarily for embedded systems and clients. It is cross-platform and features a simple procedural syntax with powerful data description constructs.",
+    "core_features": [
+        "Lightweight and fast",
+        "Embeddable and extensible",
+        "Simple and efficient procedural syntax",
+        "Dynamic data structures",
+        "Automatic memory management"
+    ],
+    "general_tags": [
+        "Programming Language",
+        "Embeddable",
+        "Scripting Language"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Software Development",
+        "software_class": "Programming Language",
+        "software_type": "Stand Alone"
+    }
+}

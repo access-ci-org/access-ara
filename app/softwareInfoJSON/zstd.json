@@ -1,0 +1,21 @@
+{
+    "tool": "zstd",
+    "overview": "zstd (Zstandard) is a high-performance data compression library and command-line tool that offers fast compression and decompression speeds with the ability to achieve high compression ratios. It is designed to balance efficient compression and decompression with speed, making it suitable for various data processing and storage applications.",
+    "core_features": [
+        "High-speed data compression and decompression",
+        "Variable compression levels and strategies",
+        "Support for streaming and multi-threaded compression",
+        "Integration with common compression tools and libraries"
+    ],
+    "general_tags": [
+        "data compression",
+        "high-speed compression",
+        "compression library"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Library",
+        "software_type": "Compression Tool"
+    }
+}

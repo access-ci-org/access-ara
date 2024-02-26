@@ -1,0 +1,21 @@
+{
+  "software_name": "MUMmer",
+  "comprehensive_overview": "MUMmer is a system for rapidly aligning entire genomes, whether in complete or draft form. AMUMmer can also align sequences of any length, with a high degree of accuracy and exceptionally fast speed.",
+  "core_features": [
+    "Whole genome alignment", 
+    "Draft genome alignment", 
+    "High accuracy", 
+    "Fast speed"
+  ],
+  "general_tags": [
+    "genome alignment", 
+    "sequence alignment", 
+    "bioinformatics"
+  ],
+  "additional_tags": {
+    "research_discipline": "Genomics",
+    "research_area": "Comparative genomics",
+    "software_class": "Alignment software",
+    "software_type": "Bioinformatics tool"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "software": "FreeType",
+    "overview": "FreeType is a popular font rendering library that is used to render text onto screens. It is highly versatile and supports various font formats and rendering techniques, making it a standard tool for font handling in software applications.",
+    "core_features": [
+        "Font rendering engine",
+        "Support for TrueType and OpenType fonts",
+        "Anti-aliasing and hinting algorithms",
+        "Scalable font capabilities",
+        "Cross-platform compatibility"
+    ],
+    "general_tags": [
+        "font rendering",
+        "text rendering",
+        "scalable fonts",
+        "font handling"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Font Rendering",
+        "software_class": "Font Library",
+        "software_type": "Open Source"
+    }
+}

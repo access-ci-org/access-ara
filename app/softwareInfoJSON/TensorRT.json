@@ -1,0 +1,16 @@
+{
+  "software_name": "TensorRT",
+  "comprehensive_overview": "TensorRT is an inference optimization toolkit developed by NVIDIA for high-performance deep learning inference. It allows developers to optimize and deploy deep neural networks on NVIDIA GPUs, achieving faster inference speeds and lower latency for real-time applications.",
+  "core_features": [
+    "Deep learning model optimization",
+    "GPU-accelerated inference",
+    "Integrations with popular deep learning frameworks"
+  ],
+  "general_tags": ["Deep Learning", "Inference Optimization", "GPU Acceleration"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Deep Learning",
+    "software_class": "Inference Engine",
+    "software_type": "Toolkit"
+  }
+}

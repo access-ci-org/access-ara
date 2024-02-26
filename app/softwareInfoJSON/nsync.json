@@ -1,0 +1,21 @@
+{
+    "software_name": "nsync",
+    "comprehensive_overview": "nsync is a command-line tool written in Python for synchronizing files and directories between two locations. It is particularly useful for keeping data up to date across different systems or locations.",
+    "core_features": [
+        "Bi-directional synchronization of files and directories",
+        "Checksum comparison for efficient updating",
+        "Ability to exclude specific files or directories",
+        "Support for dry runs to preview changes"
+    ],
+    "general_tags": [
+        "file synchronization",
+        "data management",
+        "command-line tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "utility",
+        "software_type": "command-line tool"
+    }
+}

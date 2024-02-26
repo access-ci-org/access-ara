@@ -1,24 +1,12 @@
 {
     "software_name": "Clang",
-    "overview": "Clang is a compiler front end for the C, C++, and Objective-C programming languages. It is part of the LLVM project and provides a modern and modular compiler infrastructure designed for performance, correctness, and ease of use.",
-    "core_features": [
-        "C/C++/Objective-C compiler front end",
-        "Modern compiler infrastructure",
-        "Performance optimization"
-    ],
-    "general_tags": [
-        "Compiler front end",
-        "LLVM project",
-        "Performance"
-    ],
-    "research_discipline": [
-        "Computer science",
-        "Software development"
-    ],
-    "research_area": [
-        "Compiler design",
-        "Programming languages"
-    ],
-    "software_class": "Compiler front end",
-    "software_type": "Programming language tool"
+    "comprehensive_overview": "Clang is a C, C++, and Objective-C compiler front-end that is part of the LLVM (Low-Level Virtual Machine) project. It provides a modern and efficient compiler framework for a wide range of programming languages, supporting various platforms and optimizations.",
+    "core_features": ["C, C++, and Objective-C compiler front-end", "Part of the LLVM project", "Modern and efficient compiler framework"],
+    "general_tags": ["Compiler front-end", "LLVM-based"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Compiler",
+        "software_type": "Utility"
+    }
 }

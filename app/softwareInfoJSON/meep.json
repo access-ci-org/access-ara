@@ -1,0 +1,21 @@
+{
+    "Meep": {
+        "overview": "Meep is a finite-difference time-domain (FDTD) simulation software focused on electromagnetic wave propagation and optimization. It is commonly used in photonics, plasmonics, and nanophotonics research for studying light-matter interactions.",
+        "core_features": [
+            "Electromagnetic wave simulation",
+            "FDTD method",
+            "Photonics and plasmonics modeling"
+        ],
+        "general_tags": [
+            "Electromagnetic Simulation",
+            "Photonics",
+            "Nanophotonics"
+        ],
+        "additional_tags": {
+            "research_discipline": "Photonics",
+            "research_area": "Electromagnetic Wave Propagation",
+            "software_class": "Simulation Software",
+            "software_type": "FDTD Simulator"
+        }
+    }
+}

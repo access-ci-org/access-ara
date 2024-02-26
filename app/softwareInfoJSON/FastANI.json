@@ -1,24 +1,12 @@
 {
     "software_name": "FastANI",
-    "overview": "FastANI (Fast Average Nucleotide Identity Tool) is a fast alignment-free algorithm for calculating average nucleotide identity (ANI) between genomic sequences. It is commonly used in genomics for comparing the genetic similarity between microbial genomes without the need for sequence alignment.",
-    "core_features": [
-        "Average nucleotide identity calculation",
-        "Alignment-free algorithm",
-        "Genomic sequence comparison"
-    ],
-    "general_tags": [
-        "Genomics",
-        "Sequence comparison",
-        "Alignment-free tool"
-    ],
-    "research_discipline": [
-        "Bioinformatics",
-        "Genomics"
-    ],
-    "research_area": [
-        "Genome comparison",
-        "Microbial genomics"
-    ],
-    "software_class": "Genomics tool",
-    "software_type": "Sequence identity calculator"
+    "comprehensive_overview": "FastANI (Fast Average Nucleotide Identity) is a bioinformatics tool used for rapid and accurate calculation of average nucleotide identity between bacterial genomes. It aids in comparing and analyzing genomic similarities and differences between bacterial strains for taxonomic classification and evolutionary studies.",
+    "core_features": ["Calculates average nucleotide identity for bacterial genomes", "Rapid and accurate genomic comparisons", "Supports taxonomic classification and evolutionary analysis"],
+    "general_tags": ["Genomic comparison", "Taxonomic classification"],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Genomic Analysis",
+        "software_class": "Genomic Tool",
+        "software_type": "Tool"
+    }
 }

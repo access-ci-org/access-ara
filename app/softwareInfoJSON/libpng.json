@@ -1,0 +1,21 @@
+{
+  "software_name": "libpng",
+  "comprehensive_overview": "libpng is a library for reading and writing PNG (Portable Network Graphics) image files. It provides functions for PNG image manipulation, compression, and decompression, making it a popular choice for handling PNG images in software applications.",
+  "core_features": [
+    "Reading and writing PNG files",
+    "PNG image manipulation",
+    "Compression and decompression",
+    "Support for various PNG formats"
+  ],
+  "general_tags": [
+    "PNG image",
+    "image manipulation",
+    "file format"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Graphics",
+    "research_area": "Image Processing",
+    "software_class": "Library",
+    "software_type": "Image Manipulation"
+  }
+}

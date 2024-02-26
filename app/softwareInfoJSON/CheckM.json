@@ -1,24 +1,12 @@
 {
     "software_name": "CheckM",
-    "overview": "CheckM is a software tool for assessing the quality and completeness of microbial genomes and metagenome-assembled genomes (MAGs). It performs genome identification, taxonomy assignment, and completeness estimation to evaluate microbial genomic data.",
-    "core_features": [
-        "Microbial genomics evaluation",
-        "Genome completeness assessment",
-        "Taxonomy assignment"
-    ],
-    "general_tags": [
-        "Microbiome analysis",
-        "Genome quality assessment",
-        "Taxonomic classification"
-    ],
-    "research_discipline": [
-        "Microbiology",
-        "Bioinformatics"
-    ],
-    "research_area": [
-        "Microbial genomics",
-        "Metagenomics"
-    ],
-    "software_class": "Genomics tool",
-    "software_type": "Genomic quality assessment tool"
+    "comprehensive_overview": "CheckM is a software tool used for assessing the quality and completeness of microbial genome bins derived from metagenomic data. It performs genome and marker gene-based assessments to evaluate genome binning accuracy, contamination levels, and completeness in microbial communities.",
+    "core_features": ["Quality assessment of microbial genome bins", "Genome and marker gene-based evaluations", "Analysis of genome binning accuracy and completeness"],
+    "general_tags": ["Microbial genomics", "Metagenomic analysis"],
+    "additional_tags": {
+        "research_discipline": "Microbiology",
+        "research_area": "Metagenomics",
+        "software_class": "Genome Analysis Tool",
+        "software_type": "Tool"
+    }
 }

@@ -1,0 +1,21 @@
+{
+  "software_name": "libfabric",
+  "comprehensive_overview": "libfabric is a fabric-independent communication library that provides a high-performance interface for various networking fabrics. It offers a unified API for developing scalable and efficient communication layers for distributed applications.",
+  "core_features": [
+    "Fabric-independent communication",
+    "High-performance networking interface",
+    "Unified API for diverse fabrics",
+    "Scalable communication layers"
+  ],
+  "general_tags": [
+    "communication library",
+    "networking fabrics",
+    "scalable applications"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Parallel Computing",
+    "software_class": "Library",
+    "software_type": "Communication"
+  }
+}

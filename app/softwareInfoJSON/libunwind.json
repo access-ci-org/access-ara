@@ -1,0 +1,21 @@
+{
+  "software_name": "libunwind",
+  "comprehensive_overview": "libunwind is a library for querying and manipulating the call chain of active functions in a program, providing stack unwinding and backtrace capabilities. It enables developers to analyze program execution flow and diagnose issues related to function calls.",
+  "core_features": [
+    "Stack unwinding",
+    "Backtrace functionality",
+    "Call chain manipulation",
+    "Program execution analysis"
+  ],
+  "general_tags": [
+    "stack unwinding",
+    "backtrace",
+    "program analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Software Development",
+    "research_area": "Debugging",
+    "software_class": "Library",
+    "software_type": "Program Analysis"
+  }
+}

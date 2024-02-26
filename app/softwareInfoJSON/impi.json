@@ -1,0 +1,22 @@
+{
+  "software_name": "impi",
+  "comprehensive_overview": "The Intel MPI Library, a multi-fabric message passing library that implements the widely used MPI standard, is optimized for high performance on Intel architecture-based clusters. It allows applications to scale with increasing core count and interconnect bandwidth.",
+  "core_features": [
+    "Optimized for Intel architecture-based clusters",
+    "Supports multiple fabric types",
+    "High performance on clusters of various sizes",
+    "Scalability with increasing core count and interconnect bandwidth"
+  ],
+  "general_tags": [
+    "MPI Library",
+    "High Performance Computing",
+    "Cluster Computing",
+    "Message Passing Interface"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Parallel Computing",
+    "software_class": "Library",
+    "software_type": "HPC Tool"
+  }
+}

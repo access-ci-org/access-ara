@@ -1,0 +1,19 @@
+{
+  "MATIO": {
+    "overview": "MATIO is a software library for reading and writing MATLAB MAT file format data. It enables seamless integration of MATLAB data into various programming languages and environments by providing functions to work with MAT files directly.",
+    "core_features": [
+      "Read and write MATLAB MAT file format data",
+      "Integration of MATLAB data into other environments",
+      "Flexible data transfer capabilities",
+      "Support for various programming languages",
+      "Easy access to MATLAB data structures"
+    ],
+    "general_tags": ["MAT file format", "Data integration", "Cross-platform"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Data Analysis"],
+      "research_area": ["MATLAB Integration", "Data Transfer"],
+      "software_class": "Library",
+      "software_type": "Data Processing"
+    }
+  }
+}

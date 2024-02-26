@@ -1,0 +1,29 @@
+{
+    "Prodigal": {
+        "overview": "Prodigal is a fast and reliable gene prediction software that identifies protein-coding genes in genomic sequences. It uses a combination of heuristics and mathematical models to accurately predict gene coding regions in DNA sequences.",
+        "core_features": [
+            "Gene prediction software",
+            "Identifies protein-coding genes",
+            "Utilizes heuristics and models",
+            "Predicts gene coding regions",
+            "Accurate genomic sequence analysis"
+        ],
+        "general_tags": [
+            "Gene prediction",
+            "DNA sequencing",
+            "Bioinformatics"
+        ],
+        "additional_tags": {
+            "research_discipline": [
+                "Genomics",
+                "Bioinformatics"
+            ],
+            "research_area": [
+                "Gene Prediction",
+                "Genomic Sequencing"
+            ],
+            "software_class": "Prediction Tool",
+            "software_type": "Bioinformatics"
+        }
+    }
+}

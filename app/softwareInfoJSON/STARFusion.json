@@ -1,0 +1,16 @@
+{
+  "software_name": "STARFusion",
+  "comprehensive_overview": "STAR-Fusion is a software tool that identifies fusion genes from RNA sequencing data. It integrates the efficient read aligner STAR with comprehensive fusion detection algorithms, providing accurate identification of gene fusions in transcriptomic analysis.",
+  "core_features": [
+    "Fusion gene detection",
+    "Utilizes STAR for read alignment",
+    "Comprehensive fusion analysis"
+  ],
+  "general_tags": ["Bioinformatics", "Fusion Gene Analysis", "RNA-Seq"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Transcriptomics",
+    "software_class": "Gene Fusion Detection",
+    "software_type": "Tool"
+  }
+}

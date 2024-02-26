@@ -1,30 +1,12 @@
-I'll create a JSON output for FASTQ:
-
-```json
 {
     "software_name": "FASTQ",
-    "overview": "FASTQ is a text-based file format used to store both biological sequence data and associated quality scores. It is widely utilized in bioinformatics for storing high-throughput sequencing data, including DNA sequences and their corresponding quality values.",
-    "core_features": [
-        "Sequence data storage",
-        "Quality score representation",
-        "High-throughput sequencing support"
-    ],
-    "general_tags": [
-        "Bioinformatics",
-        "Sequence data format",
-        "Sequencing data storage"
-    ],
-    "research_discipline": [
-        "Genomics",
-        "Bioinformatics"
-    ],
-    "research_area": [
-        "High-throughput sequencing",
-        "Sequence data analysis"
-    ],
-    "software_class": "Data format",
-    "software_type": "Sequence data storage format"
+    "comprehensive_overview": "FASTQ is a text-based format for storing both a biological sequence (usually nucleotide sequence) and its corresponding quality scores. It is commonly used to store high-throughput sequencing data.",
+    "core_features": ["Storage of biological sequences", "Storage of quality scores", "Compatibility with high-throughput sequencing data"],
+    "general_tags": ["Bioinformatics", "Next-generation sequencing", "Data format"],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "High-throughput sequencing",
+        "software_class": "Bioinformatics tool",
+        "software_type": "Data format"
+    }
 }
-``` 
-
-If you need any more details or have specific requirements, feel free to let me know!

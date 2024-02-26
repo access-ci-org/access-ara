@@ -1,0 +1,20 @@
+{
+    "software_name": "pigz",
+    "comprehensive_overview": "pigz is a parallel implementation of gzip that uses multiple processors and multiple cores to compress and decompress files as quickly as possible. It is designed to be a replacement for gzip and provides faster compression and decompression speeds.",
+    "core_features": [
+        "- Parallel compression and decompression using multiple processors/cores",
+        "- Faster compression and decompression speeds compared to gzip",
+        "- Compresses files in the gzip format"
+    ],
+    "general_tags": [
+        "compression",
+        "parallel-processing",
+        "performance"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Compression Tool",
+        "software_type": "Utility"
+    }
+}

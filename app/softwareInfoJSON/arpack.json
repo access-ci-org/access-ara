@@ -1,0 +1,16 @@
+{
+  "software_name": "ARPACK",
+  "comprehensive_overview": "ARPACK (Arnoldi Package) is a software library for solving large-scale eigenvalue problems with iterative methods. It is widely used in scientific computing and numerical simulations to compute eigenvalues and eigenvectors of sparse matrices efficiently, enabling applications across various domains.",
+  "core_features": [
+    "Iterative eigenvalue solvers",
+    "Sparse matrix computations",
+    "Parallel and distributed eigenvalue calculations"
+  ],
+  "general_tags": ["Eigenvalue Problems", "Iterative Solver", "Sparse Matrices"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Numerical Methods",
+    "software_class": "Eigenvalue Solver",
+    "software_type": "Library"
+  }
+}

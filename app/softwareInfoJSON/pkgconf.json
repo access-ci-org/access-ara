@@ -1,0 +1,12 @@
+{
+  "software name": "pkgconf",
+  "comprehensive overview": "pkgconf is a program which helps to configure compiler and linker flags for development frameworks. It replaces the ubiquitous pkg-config utility, and is designed to be faster, simpler, and more robust.",
+  "core features": "pkgconf helps in configuring compiler and linker flags, supports specifying cflags, libs, and other metadata, provides a simple and efficient alternative to pkg-config, supports cross-compilation, multiarch installations, and per-package cflags.",
+  "general tags": ["pkg-config alternative", "compiler flags", "linker flags"],
+  "additional tags": {
+    "research discipline": [],
+    "research area": [],
+    "software class": "Development Tools",
+    "software type": "Utility"
+  }
+}

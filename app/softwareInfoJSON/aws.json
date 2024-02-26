@@ -1,0 +1,18 @@
+{
+    "software": "AWS (Amazon Web Services)",
+    "overview": "AWS is a cloud computing platform that provides a wide range of services including computing power, storage, databases, machine learning, and more on a pay-as-you-go basis.",
+    "core_features": [
+        "Elastic compute capacity with virtual servers (EC2)",
+        "Scalable storage solutions with Amazon S3",
+        "Managed databases like Amazon RDS and DynamoDB",
+        "AI and ML services with Amazon SageMaker",
+        "Secure and reliable infrastructure with comprehensive monitoring and management tools"
+    ],
+    "general_tags": ["cloud computing", "scalability", "infrastructure as a service"],
+    "additional_tags": {
+        "research_discipline": "Information Technology",
+        "research_area": "Cloud Computing",
+        "software_class": "Cloud Platform",
+        "software_type": "Service"
+    }
+}

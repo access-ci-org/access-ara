@@ -1,0 +1,16 @@
+{
+  "software_name": "Rstats",
+  "comprehensive_overview": "Rstats is a commonly used term referring to statistics and data analysis tasks performed using the R programming language. Rstats encompasses a wide range of statistical techniques, visualization methods, and data manipulation capabilities.",
+  "core_features": [
+    "Statistical modeling",
+    "Data visualization",
+    "Data manipulation and analysis"
+  ],
+  "general_tags": ["Statistics", "Data Analysis", "R Programming"],
+  "additional_tags": {
+    "research_discipline": "Statistics",
+    "research_area": "Data Science",
+    "software_class": "Statistical Software",
+    "software_type": "Tool"
+  }
+}

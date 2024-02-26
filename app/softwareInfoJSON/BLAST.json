@@ -1,24 +1,12 @@
 {
     "software_name": "BLAST",
-    "overview": "BLAST (Basic Local Alignment Search Tool) is a bioinformatics tool for comparing biological sequences, such as DNA, RNA, or proteins, to search for similarity and homology among sequences. It is widely used for sequence alignment and database searching.",
-    "core_features": [
-        "Sequence alignment",
-        "Homology search",
-        "Database searching"
-    ],
-    "general_tags": [
-        "Bioinformatics",
-        "Sequence analysis",
-        "Homology detection"
-    ],
-    "research_discipline": [
-        "Bioinformatics",
-        "Genomics"
-    ],
-    "research_area": [
-        "Sequence alignment",
-        "Genomic analysis"
-    ],
-    "software_class": "Bioinformatics tool",
-    "software_type": "Sequence alignment software"
+    "comprehensive_overview": "BLAST (Basic Local Alignment Search Tool) is a powerful bioinformatics software used for comparing nucleotide or protein sequences against databases to identify homologous sequences. It provides rapid sequence similarity searches for various biological studies.",
+    "core_features": ["Sequence alignment tool", "Compares nucleotide or protein sequences against databases", "Identifies homologous sequences"],
+    "general_tags": ["Bioinformatics", "Sequence alignment"],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Sequence Analysis",
+        "software_class": "Sequence Alignment Tool",
+        "software_type": "Tool"
+    }
 }

@@ -1,0 +1,20 @@
+{
+  "software": "Silo",
+  "comprehensive_overview": "Silo is a versatile and efficient I/O library and scientific data format used for storing and accessing simulation data, structured grids, and unstructured meshes. It provides tools for managing and parallel I/O of data in high-performance computing applications.",
+  "core_features": [
+    "Data storage",
+    "Structured grids",
+    "Parallel I/O"
+  ],
+  "general_tags": [
+    "I/O library",
+    "scientific data format",
+    "high-performance computing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Storage",
+    "software_class": "Library",
+    "software_type": "I/O Management"
+  }
+}

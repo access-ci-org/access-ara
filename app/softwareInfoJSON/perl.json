@@ -1,0 +1,24 @@
+{
+    "software_name": "Perl",
+    "comprehensive_overview": "Perl is a high-level, general-purpose, interpreted, dynamic programming language known for its powerful text processing capabilities.",
+    "core_features": [
+        "Supports both procedural and object-oriented programming",
+        "Regular expressions for text processing",
+        "Automated report generation",
+        "System administration tasks automation",
+        "Web development and network programming",
+        "Database interaction"
+    ],
+    "general_tags": [
+        "programming language",
+        "scripting",
+        "text processing",
+        "automation"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Interpreted programming language",
+        "software_type": "General-purpose"
+    }
+}

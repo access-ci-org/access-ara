@@ -1,0 +1,50 @@
+````
+{
+    "software": [
+        {
+            "software_name": "Biopython",
+            "comprehensive_overview": "Biopython is a set of freely available tools for biological computation, written in Python. It is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics.",
+            "core_features": "Sequence manipulation, molecular structure analysis, Phylogenetics, population genetics, functional genomics, and more.",
+            "general_tags": [
+                "bioinformatics",
+                "Python library"
+            ],
+            "additional_tags": {
+                "research_discipline": "Biological Sciences",
+                "research_area": "Genomics",
+                "software_class": "Library",
+                "software_type": "Bioinformatics tool"
+            }
+        },
+        {
+            "software_name": "GROMACS",
+            "comprehensive_overview": "GROMACS is a versatile package for molecular dynamics simulations, used primarily to simulate the Newtonian equations of motion for systems with hundreds to millions of particles.",
+            "core_features": "Molecular dynamics simulations, Energy minimization, Free energy calculations, Trajectory analysis, and more.",
+            "general_tags": [
+                "computational chemistry",
+                "molecular dynamics"
+            ],
+            "additional_tags": {
+                "research_discipline": "Chemistry",
+                "research_area": "Molecular Modeling",
+                "software_class": "Application",
+                "software_type": "Computational software"
+            }
+        },
+        {
+            "software_name": "SPAdes",
+            "comprehensive_overview": "SPAdes is a de novo genome assembly tool designed for single-cell and multi-cells bacterial data.",
+            "core_features": "Genome assembly, Error correction, Mismatch correction, Contigging, and Scaffolding.",
+            "general_tags": [
+                "bioinformatics",
+                "genome assembly"
+            ],
+            "additional_tags": {
+                "research_discipline": "Genomics",
+                "research_area": "Bioinformatics",
+                "software_class": "Tool",
+                "software_type": "Bioinformatics tool"
+            }
+        }
+    ]
+}

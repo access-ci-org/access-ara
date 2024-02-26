@@ -1,0 +1,20 @@
+{
+  "software name": "go",
+  "comprehensive overview": "Go, also known as Golang, is a statically typed, compiled programming language designed for efficient and scalable software development. It is known for its simplicity, readability, and concurrency support.",
+  "core features": [
+    "Statically typed language with efficient compilation",
+    "Concurrent programming support with goroutines",
+    "Simplified and readable syntax"
+  ],
+  "general tags": [
+    "Programming Language",
+    "Concurrent Programming",
+    "Efficiency"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "Programming Languages",
+    "software class": "Programming Language",
+    "software type": "Compiler"
+  }
+}

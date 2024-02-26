@@ -1,0 +1,21 @@
+{
+  "ImageJ": {
+    "overview": "ImageJ is an open-source platform for scientific image analysis and processing. It offers a wide range of functionalities and plugins for tasks such as image restoration, segmentation, feature extraction, and quantification.",
+    "core_features": [
+      "Image analysis",
+      "Image processing",
+      "Plugin architecture"
+    ],
+    "general_tags": [
+      "Image Analysis",
+      "Scientific Imaging",
+      "Open-Source Software"
+    ],
+    "additional_tags": {
+      "research_discipline": "Biomedical Imaging",
+      "research_area": "Image Processing",
+      "software_class": "Tool",
+      "software_type": "Image Analysis Software"
+    }
+  }
+}

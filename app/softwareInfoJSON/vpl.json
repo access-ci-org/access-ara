@@ -1,0 +1,21 @@
+{
+    "tool": "VPL",
+    "overview": "VPL (Virtual Programming Lab) is an online platform and learning environment for teaching and practicing programming concepts through interactive coding exercises and assignments. It provides a virtual environment where students can write, compile, and test code, allowing educators to create programming labs and assessments in various programming languages.",
+    "core_features": [
+        "Virtual programming environment for coding practice",
+        "Support for multiple programming languages and compilers",
+        "Assignment creation and grading tools for educators",
+        "Real-time feedback and automated testing of student submissions"
+    ],
+    "general_tags": [
+        "virtual programming lab",
+        "coding practice platform",
+        "education technology"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science Education",
+        "research_area": "Programming Instruction",
+        "software_class": "Educational Tool",
+        "software_type": "Programming Practice Platform"
+    }
+}

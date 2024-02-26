@@ -1,0 +1,12 @@
+{
+    "software name": "mkmod",
+    "comprehensive overview": "mkmod is a command-line tool for generating molecular knowledge models using a rule-based system.",
+    "core features": "Rule-based system for generating molecular knowledge models",
+    "general tags": ["molecular modeling", "bioinformatics"],
+    "additional tags": {
+        "research discipline": "chemistry",
+        "research area": "molecular biology",
+        "software class": "data analysis",
+        "software type": "command-line tool"
+    }
+}

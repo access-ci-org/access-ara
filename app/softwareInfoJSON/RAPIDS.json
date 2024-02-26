@@ -1,0 +1,16 @@
+{
+  "software_name": "RAPIDS",
+  "comprehensive_overview": "RAPIDS is a suite of open-source software libraries for executing end-to-end data science and analytics pipelines entirely on GPUs. It provides GPU-accelerated data processing and machine learning algorithms.",
+  "core_features": [
+    "GPU-accelerated data processing",
+    "Machine learning algorithms",
+    "Data science tools for GPU computing"
+  ],
+  "general_tags": ["Data Science", "GPU Acceleration", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Analytics",
+    "software_class": "Machine Learning",
+    "software_type": "Library"
+  }
+}

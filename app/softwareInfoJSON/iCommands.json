@@ -1,0 +1,20 @@
+{
+  "software name": "iCommands",
+  "comprehensive overview": "iCommands is a collection of command-line utilities and tools provided by the iRODS (integrated Rule-Oriented Data System) data management software for managing and interacting with iRODS repositories. It offers functionalities for data storage, retrieval, and metadata management.",
+  "core features": [
+    "Command-line utilities for managing iRODS data repositories",
+    "Data storage, retrieval, and metadata management",
+    "Integration with iRODS data management system"
+  ],
+  "general tags": [
+    "Data Management",
+    "Command-line Tools",
+    "iRODS"
+  ],
+  "additional tags": {
+    "research discipline": "Data Management",
+    "research area": "Data Repositories",
+    "software class": "Command-line Tools",
+    "software type": "Data Management Tool"
+  }
+}

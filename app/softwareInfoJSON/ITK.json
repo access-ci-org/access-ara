@@ -1,0 +1,12 @@
+{
+  "software name": "ITK",
+  "comprehensive overview": "The Insight Segmentation and Registration Toolkit (ITK) is an open-source software system designed for image analysis, particularly with medical images. It provides a range of algorithms for segmentation, registration, feature extraction, and more.",
+  "core features": "ITK offers tools for image segmentation, registration, filtering, feature extraction, and visualization. It supports 2D and 3D image processing and analysis, and provides a wide range of algorithms for medical image analysis.",
+  "general tags": ["image analysis", "medical imaging", "open-source", "algorithm"],
+  "additional tags": {
+    "research discipline": ["medical imaging", "biomedical engineering"],
+    "research area": ["image analysis", "computer vision", "medical image processing"],
+    "software class": ["image processing", "medical image analysis"],
+    "software type": ["toolkit", "library"]
+  }
+}

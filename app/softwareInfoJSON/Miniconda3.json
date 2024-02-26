@@ -1,0 +1,19 @@
+{
+  "Miniconda3": {
+    "overview": "Miniconda3 is a minimalistic distribution of the Conda package manager and Python environment that allows for easy installation of Python packages and dependencies. It provides a lightweight and customizable solution for managing software environments and dependencies.",
+    "core_features": [
+      "Minimalistic Conda package manager",
+      "Python environment management",
+      "Easy installation of Python packages",
+      "Dependency management",
+      "Customizable software environments"
+    ],
+    "general_tags": ["Package manager", "Python environment", "Dependency management"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Data Science"],
+      "research_area": ["Software Development", "Python Programming"],
+      "software_class": "Package Manager",
+      "software_type": "Development"
+    }
+  }
+}

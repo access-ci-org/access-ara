@@ -1,0 +1,16 @@
+{
+  "software_name": "Anaconda",
+  "comprehensive_overview": "Anaconda is a distribution of open-source programming and data science tools that simplifies package management and deployment. It includes popular libraries, such as NumPy, pandas, and scikit-learn, along with conda, a package and environment management system that streamlines the setup of Python environments.",
+  "core_features": [
+    "Package management",
+    "Data science libraries",
+    "Environment management with conda"
+  ],
+  "general_tags": ["Data Science", "Python Distribution", "Package Management"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Science",
+    "software_class": "Distribution Platform",
+    "software_type": "Tool"
+  }
+}

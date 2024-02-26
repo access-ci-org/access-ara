@@ -1,0 +1,23 @@
+{
+    "software": "FFmpeg",
+    "overview": "FFmpeg is a powerful multimedia framework that allows users to decode, encode, transcode, mux, demux, stream, filter, and play audio and video files. It provides a command-line tool that supports a wide range of codecs, formats, and protocols for media processing.",
+    "core_features": [
+        "Audio and video encoding/decoding",
+        "Format conversion and streaming",
+        "Filtering and manipulation of multimedia data",
+        "Cross-platform support",
+        "Extensible via libraries and tools"
+    ],
+    "general_tags": [
+        "multimedia processing",
+        "audio/video encoding",
+        "media streaming",
+        "command-line tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "Multimedia Technology",
+        "research_area": "Media Processing",
+        "software_class": "Multimedia Framework",
+        "software_type": "Open Source"
+    }
+}

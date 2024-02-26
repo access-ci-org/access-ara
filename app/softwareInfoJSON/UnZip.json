@@ -1,0 +1,16 @@
+{
+  "software_name": "UnZip",
+  "comprehensive_overview": "UnZip is a utility tool used for extracting and viewing files compressed in the ZIP format. It allows users to decompress ZIP archives, extract individual files, and preserve the directory structure of the compressed content.",
+  "core_features": [
+    "ZIP file extraction",
+    "Individual file retrieval",
+    "Directory preservation"
+  ],
+  "general_tags": ["Utility Tool", "File Extraction", "Compression Format"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "File Management",
+    "software_class": "File Utility",
+    "software_type": "Tool"
+  }
+}

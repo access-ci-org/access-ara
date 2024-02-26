@@ -1,0 +1,20 @@
+{
+  "software name": "intltool",
+  "comprehensive overview": "intltool is a set of tools for internationalizing and translating software applications. It assists developers in extracting translatable strings from source code, creating language-specific translations, and integrating multilingual support into their projects.",
+  "core features": [
+    "Internationalization and localization toolset",
+    "Extraction of translatable strings from source code",
+    "Generation of language-specific translation files"
+  ],
+  "general tags": [
+    "Internationalization",
+    "Localization",
+    "Software Translation"
+  ],
+  "additional tags": {
+    "research discipline": "Software Development",
+    "research area": "Localization",
+    "software class": "Toolset",
+    "software type": "Localization Tool"
+  }
+}

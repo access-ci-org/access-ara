@@ -1,18 +1,12 @@
 {
-  "software_name": "ATK",
-  "overview": "ATK (Accurate Tool Kit) is a software package for electronic transport calculations in nanostructures. It provides a toolkit for modeling electron transport phenomena in devices at the nanoscale.",
-  "core_features": [
-    "Electronic transport calculations",
-    "Nanostructure modeling",
-    "Device-level simulations"
-  ],
-  "general_tags": [
-    "Electronic transport",
-    "Nanostructures",
-    "Device simulations"
-  ],
-  "research_discipline": [],
-  "research_area": [],
-  "software_class": "Modeling tool",
-  "software_type": "Electronic transport toolkit"
+    "software_name": "ATK",
+    "comprehensive_overview": "ATK (Audio ToolKit) is a set of portable audio signal processing tools for software developers. It provides a collection of high-performance C++ classes and functions for digital audio processing, effects, filtering, and analysis.",
+    "core_features": ["Portable audio signal processing tools", "High-performance C++ classes for audio processing", "Supports effects, filtering, and analysis"],
+    "general_tags": ["Audio signal processing", "Digital audio"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Signal Processing",
+        "software_type": "Library"
+    }
 }

@@ -1,0 +1,21 @@
+{
+  "software_name": "librsvg",
+  "comprehensive_overview": "librsvg is a library for rendering Scalable Vector Graphics (SVG) images. It provides functions for loading, parsing, and rendering SVG files, allowing developers to display vector graphics in their applications.",
+  "core_features": [
+    "Rendering SVG images",
+    "Loading and parsing SVG files",
+    "Vector graphics rendering",
+    "Scalable image display"
+  ],
+  "general_tags": [
+    "SVG images",
+    "vector graphics",
+    "image rendering"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Graphics",
+    "research_area": "Vector Graphics",
+    "software_class": "Library",
+    "software_type": "Image Rendering"
+  }
+}

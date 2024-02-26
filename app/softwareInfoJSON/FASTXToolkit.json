@@ -1,30 +1,23 @@
-I'll provide you with information about the FASTX Toolkit:
-
-```json
 {
-    "software_name": "FASTX Toolkit",
-    "overview": "The FASTX Toolkit is a collection of command-line tools for preprocessing high-throughput sequencing data in FASTQ format. It includes utilities for quality filtering, trimming, format conversion, and various manipulations on sequencing data.",
+    "software_name": "FASTXToolkit",
+    "comprehensive_overview": "FASTX-Toolkit is a collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing. It contains tools to filter, reformat, trim, barcode-split, etc, enabling the user to quickly perform quality control and manipulation tasks on high-throughput sequencing data.",
     "core_features": [
-        "High-throughput data preprocessing",
-        "Quality filtering",
-        "Sequence trimming"
+        "Quality assessment and control of Next-Generation Sequencing data",
+        "Trimming reads based on quality scores",
+        "Barcode and adapter removal",
+        "File format conversion",
+        "Sequence filtering based on various criteria"
     ],
     "general_tags": [
         "Bioinformatics",
-        "Sequence preprocessing",
-        "FASTQ tools"
+        "NGS",
+        "Sequence analysis",
+        "Genomics"
     ],
-    "research_discipline": [
-        "Genomics",
-        "Bioinformatics"
-    ],
-    "research_area": [
-        "High-throughput sequencing",
-        "Data preprocessing"
-    ],
-    "software_class": "Bioinformatics tool",
-    "software_type": "Sequence data preprocessing toolkit"
+    "additional_tags": {
+        "research_discipline": "Biology",
+        "research_area": ["Genetics", "Genomics", "Molecular Biology"],
+        "software_class": "Data Processing",
+        "software_type": "Command Line Tool"
+    }
 }
-``` 
-
-If you need further details or have any specific requirements, feel free to let me know!

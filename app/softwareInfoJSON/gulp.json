@@ -1,0 +1,20 @@
+{
+  "software name": "gulp",
+  "comprehensive overview": "GULP (General Utility Lattice Program) is a software package for performing atomistic simulations on materials using a wide range of interatomic potentials. It is commonly used for studying structural, thermodynamic, and mechanical properties of materials.",
+  "core features": [
+    "Atomistic simulations on materials",
+    "Various interatomic potentials for material models",
+    "Analysis of structural, thermodynamic, and mechanical properties"
+  ],
+  "general tags": [
+    "Atomistic Simulation",
+    "Material Science",
+    "Interatomic Potentials"
+  ],
+  "additional tags": {
+    "research discipline": "Materials Science",
+    "research area": "Atomistic Modeling",
+    "software class": "Simulation Software",
+    "software type": "Material Simulation Tool"
+  }
+}

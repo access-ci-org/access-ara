@@ -1,0 +1,21 @@
+{
+  "software_name": "libtool",
+  "comprehensive_overview": "libtool is a generic library support script that manages the complexity of using shared libraries. It automates the process of building, installing, and managing dynamic libraries across different platforms and compilers.",
+  "core_features": [
+    "Building shared libraries",
+    "Managing library installations",
+    "Cross-platform library support",
+    "Compiler-independent library management"
+  ],
+  "general_tags": [
+    "shared libraries",
+    "library management",
+    "cross-platform support"
+  ],
+  "additional_tags": {
+    "research_discipline": "Software Development",
+    "research_area": "Library Management",
+    "software_class": "Tool",
+    "software_type": "Library Management"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "software": "elfutils",
+    "overview": "elfutils is a collection of utilities for working with ELF (Executable and Linkable Format) files used in Unix-like systems. It includes tools for analyzing, creating, and modifying ELF binaries, making it valuable for software developers and system programmers.",
+    "core_features": [
+        "Inspection and manipulation of ELF files",
+        "Symbol resolution and extraction",
+        "Debugging information extraction",
+        "Binary analysis and instrumentation",
+        "Backtracing and debugging support"
+    ],
+    "general_tags": [
+        "ELF file manipulation",
+        "binary analysis",
+        "debugging tools",
+        "Unix utilities"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Binary Analysis",
+        "software_class": "Utility Tools",
+        "software_type": "Open Source"
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "software_name": "NASM",
+  "comprehensive_overview": "NASM (Netwide Assembler) is an 80x86 assembler designed for portability and modularity. It supports various output formats, including flat binary, a.out, COFF, ELF, and Mach-O. NASM can be used to write both small programs and large applications.",
+  "core_features": [
+    "Support for multiple output formats",
+    "Modular and portable design",
+    "Suitable for writing small programs and large applications"
+  ],
+  "general_tags": ["assembler", "programming"],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "Development Tools",
+    "software_type": "Assembler"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "PyCairo": {
+        "overview": "PyCairo is a Python library that provides bindings for the Cairo graphics library. It enables developers to create 2D vector graphics and draw various shapes, text, and images on different surfaces, making it a powerful tool for generating high-quality visualizations and graphics.",
+        "core_features": [
+            "2D vector graphics creation",
+            "Drawing shapes, text, and images",
+            "Cairo graphics library bindings",
+            "Surface rendering capabilities",
+            "Customizable visualizations"
+        ],
+        "general_tags": [
+            "Vector graphics",
+            "Visualization library",
+            "Python bindings"
+        ],
+        "additional_tags": {
+            "research_discipline": [
+                "Computer Graphics",
+                "Data Visualization"
+            ],
+            "research_area": [
+                "2D Graphics",
+                "Visual Design"
+            ],
+            "software_class": "Graphics Library",
+            "software_type": "Visualization"
+        }
+    }
+}

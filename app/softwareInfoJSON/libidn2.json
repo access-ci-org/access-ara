@@ -1,0 +1,21 @@
+{
+  "software_name": "libidn2",
+  "comprehensive_overview": "libidn2 is a library that implements internationalized domain name (IDN) encoding and decoding functions. It provides support for handling domain names with non-ASCII characters according to the IDNA2008 specification.",
+  "core_features": [
+    "Internationalized domain name (IDN) support",
+    "IDNA2008 encoding and decoding",
+    "Non-ASCII characters handling",
+    "Domain name manipulation functions"
+  ],
+  "general_tags": [
+    "internationalization",
+    "domain names",
+    "IDNA2008"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Networks",
+    "research_area": "Internet Standards",
+    "software_class": "Library",
+    "software_type": "Internationalization"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "software_name": "ecBuild",
+  "comprehensive_overview": "ecBuild is a software tool for building environmental DNA (eDNA) reference databases for metabarcoding analysis. It provides a platform for users to create custom reference databases tailored to their specific research needs.",
+  "core_features": [
+    "Custom reference database creation for eDNA metabarcoding analysis",
+    "User-friendly interface for database construction",
+    "Support for multiple sequencing platforms and marker genes"
+  ],
+  "general_tags": ["eDNA", "metabarcoding", "reference database", "bioinformatics"],
+  "additional_tags": {
+    "research_discipline": "Environmental Biology",
+    "research_area": "Metabarcoding",
+    "software_class": "Data processing",
+    "software_type": "Bioinformatics tool"
+  }
+}

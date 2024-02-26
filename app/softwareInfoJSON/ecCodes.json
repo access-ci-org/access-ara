@@ -1,0 +1,23 @@
+{
+  "software_name": "ecCodes",
+  "comprehensive_overview": "ecCodes is a package developed by the ECMWF which provides an application programming interface and a set of tools for decoding and encoding messages in the following formats: BUFR, CREX, GRIB edition 1 and 2.",
+  "core_features": [
+    "Decoding and encoding of meteorological data",
+    "Supports various message formats such as BUFR, CREX, GRIB",
+    "Application programming interface (API)",
+    "Toolset for working with meteorological data"
+  ],
+  "general_tags": [
+    "meteorology",
+    "data encoding",
+    "data decoding",
+    "API",
+    "meteorological data"
+  ],
+  "additional_tags": {
+    "research_discipline": "Meteorology",
+    "research_area": "Climate Science",
+    "software_class": "Data Processing",
+    "software_type": "Library"
+  }
+}

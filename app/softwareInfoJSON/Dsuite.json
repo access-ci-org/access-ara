@@ -1,1 +1,12 @@
-I currently do not have specific details on a software tool named "Dsuite." If you have additional context or specific information about "Dsuite" that you would like me to include, please provide more details so I can create a tailored JSON output for "Dsuite."
+{
+  "software_name": "Dsuite",
+  "comprehensive_overview": "Dsuite is a software package designed for dissecting genome-wide patterns of selection within and between species. It provides various tools for analyzing genetic data and identifying signals of positive or balancing selection.",
+  "core_features": "1. Detection of selective sweeps\n2. Estimation of lineage-specific selection\n3. Identification of introgressed regions\n4. Calculating genetic differentiation metrics",
+  "general_tags": ["genomic analysis", "population genetics", "positive selection", "balancing selection"],
+  "additional_tags": {
+    "research_discipline": ["Genetics", "Evolutionary Biology"],
+    "research_area": ["Population Genetics", "Evolutionary Genomics"],
+    "software_class": "Genomic Analysis Tools",
+    "software_type": "Bioinformatics Tool"
+  }
+}

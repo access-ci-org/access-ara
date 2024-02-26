@@ -1,0 +1,21 @@
+{
+    "tool": "xv",
+    "overview": "xv is a graphics viewer for the X Window System that allows users to view and manipulate images in various formats. With its simple and user-friendly interface, xv enables users to browse, resize, convert, enhance, and display images interactively within an X Window environment.",
+    "core_features": [
+        "Viewing and browsing images in multiple formats",
+        "Image manipulation tools for resizing and editing",
+        "Converting images between different formats",
+        "User-friendly graphics interface for interactive image viewing"
+    ],
+    "general_tags": [
+        "image viewer",
+        "graphics tool",
+        "X Window System"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Viewer",
+        "software_type": "Image Processing Tool"
+    }
+}

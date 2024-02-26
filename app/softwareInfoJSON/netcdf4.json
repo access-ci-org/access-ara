@@ -1,0 +1,12 @@
+{
+  "software_name": "netcdf4",
+  "comprehensive_overview": "NetCDF (network Common Data Form) is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data.",
+  "core_features": "1. Supports creation, access, and sharing of scientific data. 2. Machine-independent data formats. 3. Array-oriented data storage. 4. Self-describing data format.",
+  "general_tags": ["data format", "scientific data", "libraries"],
+  "additional_tags": {
+    "research_discipline": ["Earth Sciences", "Atmospheric Sciences", "Climate Science"],
+    "research_area": ["Environmental Research", "Climate Modeling", "Geospatial Analysis"],
+    "software_class": "File Format Library",
+    "software_type": "Library"
+  }
+}

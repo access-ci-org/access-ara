@@ -1,0 +1,16 @@
+{
+  "software_name": "ScaFaCoS",
+  "comprehensive_overview": "ScaFaCoS (Scalable fast convolution-based coarsening scheme) is a software tool for graph coarsening aimed at improving scalability and efficiency in graph algorithms. It utilizes fast convolution-based techniques to reduce the size of graphs while preserving important structural properties.",
+  "core_features": [
+    "Graph coarsening optimization",
+    "Scalability enhancements",
+    "Structural preservation in coarsening"
+  ],
+  "general_tags": ["Graph Coarsening", "Algorithm Optimization", "Graph Scalability"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Graph Algorithms",
+    "software_class": "Graph Coarsening Tool",
+    "software_type": "Tool"
+  }
+}

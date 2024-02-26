@@ -1,0 +1,23 @@
+{
+    "software": "cellranger",
+    "overview": "Cell Ranger is a software suite designed for analyzing single-cell RNA sequencing (scRNA-seq) data. It enables the preprocessing, alignment, quantification, and downstream analysis of single-cell gene expression data.",
+    "core_features": [
+        "Processing and alignment of scRNA-seq data",
+        "Generation of gene-cell matrices",
+        "Quality control and filtering",
+        "Clustering and visualization of cell populations",
+        "Integration with popular scRNA-seq analysis tools"
+    ],
+    "general_tags": [
+        "single-cell RNA sequencing",
+        "scRNA-seq analysis",
+        "gene expression profiling",
+        "bioinformatics tools"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Single-cell Analysis",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Commercial"
+    }
+}

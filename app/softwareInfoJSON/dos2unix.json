@@ -1,0 +1,23 @@
+{
+    "software": "dos2unix",
+    "overview": "dos2unix is a command-line utility for converting text files from DOS/Windows (\r\n) line endings to Unix/Linux (\n) line endings. It helps in ensuring proper text file compatibility and formatting when transferring files between different systems.",
+    "core_features": [
+        "Conversion of line endings from DOS to Unix format",
+        "Preservation of file content",
+        "Batch processing of multiple files",
+        "Support for various text file formats",
+        "Cross-platform compatibility"
+    ],
+    "general_tags": [
+        "text file conversion",
+        "line ending manipulation",
+        "command-line utility",
+        "file format compatibility"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "File Management",
+        "software_class": "Utility Tools",
+        "software_type": "Open Source"
+    }
+}

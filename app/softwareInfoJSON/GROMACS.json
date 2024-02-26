@@ -1,24 +1,12 @@
 {
     "software_name": "GROMACS",
-    "overview": "GROMACS is a versatile molecular dynamics simulation software widely used in computational chemistry, biophysics, and bioinformatics research. It allows detailed simulations of biological macromolecules, lipids, and other complex systems to study their dynamic behavior and interactions at the atomic level.",
-    "core_features": [
-        "Molecular dynamics simulations",
-        "Biological macromolecules",
-        "High-performance computing"
-    ],
-    "general_tags": [
-        "Computational chemistry",
-        "Biophysics",
-        "Molecular modeling"
-    ],
-    "research_discipline": [
-        "Chemistry",
-        "Biophysics"
-    ],
-    "research_area": [
-        "Molecular simulations",
-        "Biological systems"
-    ],
-    "software_class": "Simulation software",
-    "software_type": "Molecular dynamics tool"
+    "comprehensive_overview": "GROMACS is a versatile package for molecular dynamics simulations, particularly designed for bio-molecular systems like proteins, lipids, and nucleic acids. It offers high performance and efficiency, supporting a range of force fields and simulation types for studying complex biomolecular interactions.",
+    "core_features": ["Molecular dynamics simulation software", "Specialized for bio-molecular systems", "High performance and efficiency"],
+    "general_tags": ["Molecular Dynamics", "Bio-molecular Systems"],
+    "additional_tags": {
+        "research_discipline": "Computational Biology",
+        "research_area": "Molecular Dynamics Simulations",
+        "software_class": "Simulation Software",
+        "software_type": "Tool"
+    }
 }

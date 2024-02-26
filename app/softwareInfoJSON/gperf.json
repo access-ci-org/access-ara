@@ -1,0 +1,20 @@
+{
+  "software name": "gperf",
+  "comprehensive overview": "GNU gperf is a perfect hash function generator, used for creating hash functions for sets of key-value pairs with no collisions. It generates C or C++ code for efficient hash table implementations.",
+  "core features": [
+    "Generation of perfect hash functions",
+    "Creation of hash functions without collisions for key-value pairs",
+    "Efficient code generation for hash table implementations"
+  ],
+  "general tags": [
+    "Hash Function",
+    "Code Generation",
+    "Efficient Algorithms"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "Algorithms",
+    "software class": "Code Generation Tool",
+    "software type": "Hash Function Generator"
+  }
+}

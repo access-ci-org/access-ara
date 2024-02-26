@@ -1,0 +1,16 @@
+{
+  "software_name": "RapidJSON",
+  "comprehensive_overview": "RapidJSON is a fast JSON parser and generator for C++. It is designed for high performance and low memory consumption, making it suitable for applications that require efficient JSON handling.",
+  "core_features": [
+    "Fast JSON parsing and generation",
+    "Memory-efficient JSON handling",
+    "Support for various JSON features"
+  ],
+  "general_tags": ["JSON", "C++ Library", "Performance"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Serialization",
+    "software_class": "JSON Library",
+    "software_type": "Library"
+  }
+}

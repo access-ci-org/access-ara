@@ -1,0 +1,20 @@
+{
+  "software": "prokka",
+  "comprehensive_overview": "Prokka is a software tool designed for rapid bacterial genome annotation. It integrates multiple bioinformatics tools and databases to automate the annotation process and provide detailed insights into bacterial genomic features.",
+  "core_features": [
+    "Genome annotation",
+    "Bioinformatics analysis",
+    "Database integration"
+  ],
+  "general_tags": [
+    "bacterial genomics",
+    "genome annotation",
+    "bioinformatics"
+  ],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Genomics",
+    "software_class": "Tool",
+    "software_type": "Annotation"
+  }
+}

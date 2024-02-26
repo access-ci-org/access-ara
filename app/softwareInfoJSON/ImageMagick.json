@@ -1,0 +1,19 @@
+{
+  "ImageMagick": {
+    "overview": "ImageMagick is a free and open-source software suite for displaying, converting, and editing raster image files. It can read and write over 200 image file formats and includes tools for creating animations and batch processing images.",
+    "core_features": [
+      "Read and write over 200 image file formats",
+      "Batch processing images",
+      "Creating animations",
+      "Conversion of images between different formats",
+      "Editing raster image files"
+    ],
+    "general_tags": ["Image processing", "Raster images", "Batch processing", "Open-source"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Digital Arts"],
+      "research_area": ["Image Processing", "Computer Vision"],
+      "software_class": "Utility",
+      "software_type": "Graphics"
+    }
+  }
+}

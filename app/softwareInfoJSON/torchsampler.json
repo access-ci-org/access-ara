@@ -1,0 +1,21 @@
+{
+  "tool": "torchsampler",
+  "overview": "torchsampler is a library that provides various data samplers for PyTorch, a popular deep learning framework. It offers efficient ways to sample data for training deep learning models.",
+  "core_features": [
+    "Different data sampling techniques such as weighted sampling and stratified sampling",
+    "Compatible with PyTorch data loaders",
+    "Easy integration with existing PyTorch pipelines",
+    "Improved data sampling performance"
+  ],
+  "general_tags": [
+    "data sampling",
+    "PyTorch library",
+    "deep learning tool"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Deep Learning",
+    "software_class": "Library",
+    "software_type": "Data Sampler"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "software_name": "MPC",
+  "comprehensive_overview": "MPC stands for Multi-Party Computation, a cryptographic protocol that allows multiple parties to jointly compute a function over their inputs without revealing them to each other. It ensures privacy and security in data processing and sharing.",
+  "core_features": [
+    "Secure multi-party computation",
+    "Privacy-preserving data analysis",
+    "Collaborative computation without data exposure",
+    "Cryptographic protocols for secure computation"
+  ],
+  "general_tags": [
+    "Cryptography",
+    "Data Privacy",
+    "Secure Computation",
+    "Data Security"
+  ],
+  "additional_tags": {
+    "research_discipline": "Cryptography",
+    "research_area": "Privacy-Preserving Data Analysis",
+    "software_class": "Security Protocol",
+    "software_type": "Cryptographic Protocol"
+  }
+}

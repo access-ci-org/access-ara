@@ -1,19 +1,12 @@
 {
     "software_name": "Boost",
-    "overview": "Boost is a collection of C++ libraries that provide support for various tasks and functionalities in C++ programming. It includes libraries for data structures, algorithms, multi-threading, and more, aiming to extend the C++ standard library.",
-    "core_features": [
-        "C++ libraries",
-        "Data structures",
-        "Algorithms",
-        "Multi-threading"
-    ],
-    "general_tags": [
-        "C++ programming",
-        "Library collection",
-        "Algorithm support"
-    ],
-    "research_discipline": [],
-    "research_area": [],
-    "software_class": "Library",
-    "software_type": "C++ library collection"
+    "comprehensive_overview": "Boost is a collection of C++ libraries that provides support for various tasks and functionalities, ranging from data structures and algorithms to system, network, and multi-threading capabilities. It is widely used in C++ software development to extend the language's functionality and performance.",
+    "core_features": ["Collection of C++ libraries", "Supports data structures, algorithms, and system capabilities", "Versatile functionalities for C++ development"],
+    "general_tags": ["C++ libraries", "Software development"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Library",
+        "software_type": "Development Tool"
+    }
 }

@@ -1,0 +1,20 @@
+{
+  "software": "spaCy",
+  "comprehensive_overview": "spaCy is an open-source natural language processing (NLP) library in Python designed for efficient text processing. It provides tools for tokenization, named entity recognition, part-of-speech tagging, parsing, and more. spaCy is known for its speed, accuracy, and ease of use in NLP tasks.",
+  "core_features": [
+    "Tokenization",
+    "Named entity recognition",
+    "Part-of-speech tagging"
+  ],
+  "general_tags": [
+    "natural language processing",
+    "Python library",
+    "text processing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Natural Language Processing",
+    "software_class": "Library",
+    "software_type": "NLP Tool"
+  }
+}

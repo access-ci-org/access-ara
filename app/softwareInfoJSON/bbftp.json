@@ -1,0 +1,23 @@
+{
+    "software": "bbftp",
+    "overview": "bbFTP is a software that enables high-performance data transfers over networks. It is particularly designed for efficiently handling large-scale data transfers.",
+    "core_features": [
+        "Optimized for fast data transfer speeds",
+        "Support for parallel and multi-stream transfers",
+        "Secure and reliable transfers",
+        "Bandwidth throttling capabilities",
+        "Checksum verification"
+    ],
+    "general_tags": [
+        "data transfer",
+        "networking",
+        "high-performance computing",
+        "data management"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computational Science",
+        "research_area": "Data Management",
+        "software_class": "Data Transfer",
+        "software_type": "Open Source"
+    }
+}

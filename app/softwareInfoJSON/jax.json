@@ -1,0 +1,23 @@
+{
+    "software_name": "jax",
+    "comprehensive_overview": "JAX is a numerical computing library that allows for high-performance and automatic differentiation of NumPy code. It provides tools for GPU/TPU acceleration and supports XLA for optimizing linear algebra operations.",
+    "core_features": [
+        "High-performance numerical computing",
+        "Automatic differentiation of NumPy code",
+        "GPU/TPU acceleration",
+        "XLA support for optimizing linear algebra operations"
+    ],
+    "general_tags": [
+        "Numerical Computing",
+        "Automatic Differentiation",
+        "GPU Acceleration",
+        "TPU Acceleration",
+        "Linear Algebra Optimization"
+    ],
+    "additional_tags": {
+        "research_discipline": "Mathematics",
+        "research_area": ["Numerical Analysis", "Optimization"],
+        "software_class": "Library",
+        "software_type": "Numerical Computing"
+    }
+}

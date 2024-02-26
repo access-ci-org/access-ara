@@ -1,0 +1,16 @@
+{
+  "software_name": "SentencePiece",
+  "comprehensive_overview": "SentencePiece is an unsupervised text tokenizer and detokenizer for neural network-based models. It allows you to train subword tokenizers directly from text data, enabling efficient handling of various languages and text normalization tasks.",
+  "core_features": [
+    "Unsupervised text tokenization",
+    "Subword tokenization models",
+    "Byte pair encoding (BPE) algorithm"
+  ],
+  "general_tags": ["Natural Language Processing", "Tokenization", "Neural Networks"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Natural Language Processing",
+    "software_class": "Tokenization Tool",
+    "software_type": "Library"
+  }
+}

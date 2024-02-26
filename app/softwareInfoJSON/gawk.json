@@ -1,0 +1,23 @@
+{
+    "software": "gawk",
+    "overview": "gawk is an interpreter for the AWK programming language, allowing text manipulation and pattern scanning. It is particularly useful for processing text files, generating reports, and performing data extraction and transformation in Unix-based environments.",
+    "core_features": [
+        "Text processing and manipulation",
+        "Pattern scanning and processing",
+        "Support for regular expressions",
+        "Variable and array manipulation",
+        "Built-in functions for data operations"
+    ],
+    "general_tags": [
+        "text processing",
+        "AWK interpreter",
+        "pattern matching",
+        "data extraction"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Text Processing",
+        "software_class": "Interpretive Programming",
+        "software_type": "Open Source"
+    }
+}

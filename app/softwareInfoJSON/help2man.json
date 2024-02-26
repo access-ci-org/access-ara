@@ -1,0 +1,20 @@
+{
+  "software name": "help2man",
+  "comprehensive overview": "help2man is a tool used to generate man pages (manual pages) for Unix/Linux commands from the help output of the command-line tools. It automates the creation of man pages, which provide documentation and usage instructions for Unix commands.",
+  "core features": [
+    "Auto-generation of man pages from command-line tool help output",
+    "Formatting of documentation for consistent man page structure",
+    "Enhanced usability and accessibility for command documentation"
+  ],
+  "general tags": [
+    "Man Pages",
+    "Documentation",
+    "Unix/Linux Commands"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "Documentation",
+    "software class": "Documentation Tool",
+    "software type": "Man Page Generator"
+  }
+}

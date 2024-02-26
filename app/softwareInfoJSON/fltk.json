@@ -1,0 +1,23 @@
+{
+    "software": "FLTK",
+    "overview": "FLTK (Fast, Light Toolkit) is a cross-platform GUI toolkit that provides a set of widgets and tools for developing graphical user interfaces in applications. It offers a lightweight and efficient solution for creating interactive graphical interfaces.",
+    "core_features": [
+        "Graphical user interface widgets",
+        "Portability across different platforms",
+        "Efficient drawing and rendering tools",
+        "Event-driven programming model",
+        "Support for OpenGL integration"
+    ],
+    "general_tags": [
+        "GUI toolkit",
+        "cross-platform development",
+        "graphical user interfaces",
+        "interactive applications"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Graphical User Interfaces",
+        "software_class": "GUI Toolkit",
+        "software_type": "Open Source"
+    }
+}

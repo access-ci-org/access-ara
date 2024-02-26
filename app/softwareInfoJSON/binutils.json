@@ -1,0 +1,23 @@
+{
+    "software": "binutils",
+    "overview": "binutils is a collection of binary tools for creating, manipulating, and analyzing binary files. It includes essential utilities for working with executable files, object files, and libraries.",
+    "core_features": [
+        "Compilation and linking utilities",
+        "Disassembly and symbolic manipulation of executables",
+        "Binary file format conversion",
+        "Debugging information handling",
+        "Support for multiple architectures"
+    ],
+    "general_tags": [
+        "binary tools",
+        "compilation",
+        "debugging",
+        "software development"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Software Development",
+        "software_class": "Development Tools",
+        "software_type": "Open Source"
+    }
+}

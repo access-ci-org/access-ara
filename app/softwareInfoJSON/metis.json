@@ -1,0 +1,21 @@
+{
+    "Metis": {
+        "overview": "Metis is a software tool for partitioning and analyzing graphs and hypergraphs, commonly used in scientific computing and graph-based applications. It enables efficient graph partitioning to optimize computational load balancing and parallel computing performance.",
+        "core_features": [
+            "Graph partitioning",
+            "Hypergraph analysis",
+            "Load balancing optimization"
+        ],
+        "general_tags": [
+            "Graph Partitioning",
+            "Scientific Computing",
+            "Load Balancing"
+        ],
+        "additional_tags": {
+            "research_discipline": "Computer Science",
+            "research_area": "Graph Partitioning",
+            "software_class": "Tool",
+            "software_type": "Graph Analysis Tool"
+        }
+    }
+}

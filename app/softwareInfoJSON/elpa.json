@@ -1,0 +1,22 @@
+{
+    "software_name": "elpa",
+    "comprehensive_overview": "ELPA (Eigenvalue soLvers for Petaflop Applications) is a highly efficient and high-performing library for the solution of dense and banded eigenvalue problems in electronic structure theory for quantum mechanical calculations in computational physics and chemistry. It provides scalable algorithms for parallel eigenvalue problem computations on modern high-performance computing systems.",
+    "core_features": [
+        "Efficient solution of dense and banded eigenvalue problems",
+        "Scalable algorithms for parallel computations",
+        "High performance on modern high-performance computing systems"
+    ],
+    "general_tags": [
+        "eigenvalue solver",
+        "quantum mechanics",
+        "computational physics",
+        "computational chemistry",
+        "high-performance computing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Quantum Physics",
+        "research_area": "Electronic Structure Theory",
+        "software_class": "Numerical Library",
+        "software_type": "Computational Physics/Chemistry Tool"
+    }
+}

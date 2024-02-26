@@ -1,0 +1,20 @@
+{
+  "software name": "iRODS",
+  "comprehensive overview": "Integrated Rule-Oriented Data System (iRODS) is an open-source data management software used to control, store, and share large volumes of distributed digital data. It provides a policy-based data management framework for organizing and accessing data across diverse storage systems.",
+  "core features": [
+    "Data control, storage, and sharing in distributed environments",
+    "Policy-based data management and access control",
+    "Integration with various storage and compute resources"
+  ],
+  "general tags": [
+    "Data Management",
+    "Data Sharing",
+    "Policy-based Control"
+  ],
+  "additional tags": {
+    "research discipline": "Data Science",
+    "research area": "Data Management",
+    "software class": "Data Management System",
+    "software type": "Data Control Tool"
+  }
+}

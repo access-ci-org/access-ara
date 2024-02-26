@@ -1,0 +1,21 @@
+{
+  "software_name": "libwebp",
+  "comprehensive_overview": "libwebp is a library for handling images in the WebP image format, developed by Google. It provides functions for encoding, decoding, and manipulating WebP images, offering efficient image compression and improved web performance.",
+  "core_features": [
+    "WebP image format support",
+    "Encoding and decoding of WebP images",
+    "Efficient image compression",
+    "Web performance optimizations"
+  ],
+  "general_tags": [
+    "WebP images",
+    "image compression",
+    "image format handling"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Graphics",
+    "research_area": "Image Compression",
+    "software_class": "Library",
+    "software_type": "Image Handling"
+  }
+}

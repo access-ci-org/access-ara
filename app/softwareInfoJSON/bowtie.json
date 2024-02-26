@@ -1,0 +1,23 @@
+{
+    "software": "bowtie",
+    "overview": "Bowtie is a fast and memory-efficient software for aligning sequencing reads to large genomes. It is widely used in bioinformatics for mapping short reads produced by high-throughput sequencing technologies.",
+    "core_features": [
+        "Ultrafast read mapping algorithm",
+        "Support for spliced alignments",
+        "Alignment of short reads to references",
+        "Memory-efficient indexing",
+        "Single-end and paired-end mapping"
+    ],
+    "general_tags": [
+        "sequence alignment",
+        "short read mapping",
+        "bioinformatics analysis",
+        "high-throughput sequencing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Sequence Alignment",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Open Source"
+    }
+}

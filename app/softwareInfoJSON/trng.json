@@ -1,0 +1,21 @@
+{
+  "tool": "trng",
+  "overview": "trng (Tina’s Random Number Generator Library) is a C++ library that provides a collection of high-quality pseudo-random number generators (PRNGs) for Monte Carlo simulations, statistical testing, and cryptography applications. It offers a range of PRNG algorithms with varying properties to suit different requirements.",
+  "core_features": [
+    "Implementation of various pseudo-random number generators",
+    "Support for statistical robustness and randomness tests",
+    "Efficient and scalable generation of random numbers",
+    "Integration with C++ for ease of use and performance"
+  ],
+  "general_tags": [
+    "random number generator",
+    "C++ library",
+    "simulation tool"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Random Number Generation",
+    "software_class": "Library",
+    "software_type": "PRNG Library"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "software_name": "PMIx",
+  "comprehensive_overview": "PMIx (Process Management Interface for Exascale) is a library that provides a high-speed, flexible, and scalable interface for managing the execution of applications in HPC environments.",
+  "core_features": [
+    "Job management",
+    "Resource management",
+    "Scalability",
+    "Fault tolerance"
+  ],
+  "general_tags": [
+    "HPC",
+    "High-Performance Computing",
+    "Process Management",
+    "Resource Management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High-Performance Computing",
+    "software_class": "Library",
+    "software_type": "Process Management"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "software_name": "MATLAB Compiler Runtime (MCR)",
+  "comprehensive_overview": "MATLAB Compiler Runtime (MCR) is a standalone set of shared libraries that enables the execution of MATLAB files or applications, without having MATLAB installed. It allows end-users to run applications compiled with MATLAB Compiler or deploy MATLAB algorithms as Excel add-ins and web applications.",
+  "core_features": [
+    "Enables execution of MATLAB applications without MATLAB installed",
+    "Supports deployment of MATLAB algorithms as Excel add-ins and web applications",
+    "Provides support for running compiled MATLAB files"
+  ],
+  "general_tags": [
+    "MATLAB",
+    "Runtime",
+    "Shared Libraries",
+    "Execution",
+    "Deployment"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computational Science",
+    "research_area": "Numerical Analysis",
+    "software_class": "Runtime Environment",
+    "software_type": "Standalone Libraries"
+  }
+}

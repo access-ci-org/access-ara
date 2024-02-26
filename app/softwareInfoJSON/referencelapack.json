@@ -1,0 +1,20 @@
+{
+  "software": "Reference LAPACK",
+  "comprehensive_overview": "Reference LAPACK is an open-source software library that provides a reference implementation of LAPACK (Linear Algebra PACKage) routines. LAPACK offers a collection of efficient and reliable linear algebra subroutines for solving systems of linear equations, eigenvalue problems, and singular value decomposition.",
+  "core_features": [
+    "Linear algebra computations",
+    "Matrix factorization",
+    "Eigenvalue and SVD operations"
+  ],
+  "general_tags": [
+    "linear algebra",
+    "computational libraries",
+    "numerical methods"
+  ],
+  "additional_tags": {
+    "research_discipline": "Mathematics",
+    "research_area": "Numerical Linear Algebra",
+    "software_class": "Library",
+    "software_type": "Linear Algebra"
+  }
+}

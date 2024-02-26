@@ -1,0 +1,21 @@
+{
+    "tool": "WESTPA",
+    "overview": "WESTPA (Weighted Ensemble Simulation Toolkit with Parallelization and Analysis) is a software package designed for performing weighted ensemble simulations in the field of computational chemistry and biophysics. It enables researchers to explore complex molecular processes by parallelizing simulations and analyzing a diverse range of system trajectories.",
+    "core_features": [
+        "Weighted ensemble simulations for rare event sampling",
+        "Analysis and visualization of complex molecular processes",
+        "Parallelization of simulations for efficient sampling",
+        "Integration with molecular dynamics software and analysis tools"
+    ],
+    "general_tags": [
+        "molecular dynamics",
+        "weighted ensemble simulation",
+        "computational chemistry tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computational Chemistry",
+        "research_area": "Biophysics",
+        "software_class": "Toolkit",
+        "software_type": "Simulation Software"
+    }
+}

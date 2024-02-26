@@ -1,0 +1,23 @@
+{ 
+    "software_name": "MAGMA",
+    "comprehensive_overview": "MAGMA is a software tool for gene-set analysis, specifically designed to analyze GWAS data. It helps in identifying sets of genes that are enriched with genetic associations towards a trait of interest.",
+    "core_features": [
+        "Gene-set analysis for GWAS data",
+        "Identifying gene sets enriched with genetic associations",
+        "Assessment of gene-level p-values and gene-set association statistics"
+    ],
+    "general_tags": [
+        "gene-set analysis",
+        "GWAS data analysis",
+        "genetic associations"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": [
+            "Genetics",
+            "Genomic epidemiology"
+        ],
+        "software_class": "Bioinformatics tool",
+        "software_type": "Statistical analysis tool"
+    }
+}

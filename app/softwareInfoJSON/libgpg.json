@@ -1,0 +1,21 @@
+{
+  "software_name": "libgpg",
+  "comprehensive_overview": "libgpg is a library that provides an API for interacting with GnuPG (GNU Privacy Guard) for encryption, decryption, and key management tasks. It allows developers to integrate GnuPG functionality into their applications.",
+  "core_features": [
+    "Encryption and decryption",
+    "Key management",
+    "GnuPG integration",
+    "Secure communication support"
+  ],
+  "general_tags": [
+    "encryption",
+    "key management",
+    "security"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Security",
+    "research_area": "Cryptography",
+    "software_class": "Library",
+    "software_type": "Encryption"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "software_name": "iDev",
+  "comprehensive_overview": "iDev is a computational tool used for the inference of protein interactions with diverse functionalities and robustness.",
+  "core_features": "iDev provides a user-friendly interface, prediction of protein-protein interactions, visualization of predicted interactions, integration of multiple data sources, and assessment of prediction confidence.",
+  "general_tags": [
+    "computational tool",
+    "protein interactions",
+    "bioinformatics"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Proteomics",
+    "software_class": "Predictive Analytics",
+    "software_type": "Tool"
+  }
+}

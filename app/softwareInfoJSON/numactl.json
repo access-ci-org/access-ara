@@ -1,0 +1,22 @@
+{
+  "software_name": "numactl",
+  "comprehensive_overview": "numactl is a command-line utility that allows to control NUMA (Non-Uniform Memory Access) policy for processes or shared memory data on a NUMA system.",
+  "core_features": [
+    "Control NUMA policies for processes.",
+    "Set memory allocation policies on NUMA systems.",
+    "Affinity control for threads and processes.",
+    "NUMA balancing options."
+  ],
+  "general_tags": [
+    "NUMA", 
+    "Memory allocation", 
+    "CPU affinity", 
+    "System performance"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "System Architecture",
+    "software_class": "System Utility",
+    "software_type": "Command-line Utility"
+  }
+}

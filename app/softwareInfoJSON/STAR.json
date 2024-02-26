@@ -1,0 +1,16 @@
+{
+  "software_name": "STAR",
+  "comprehensive_overview": "STAR (Spliced Transcripts Alignment to a Reference) is a fast and highly accurate RNA sequencing read mapper. It aligns RNA-Seq reads to a reference genome or transcriptome, enabling comprehensive analysis of gene expression and alternative splicing.",
+  "core_features": [
+    "RNA-Seq read alignment",
+    "Detection of splice junctions",
+    "Accurate gene expression quantification"
+  ],
+  "general_tags": ["Bioinformatics", "RNA-Seq Analysis", "Sequence Alignment"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Transcriptomics",
+    "software_class": "Alignment Tool",
+    "software_type": "Tool"
+  }
+}

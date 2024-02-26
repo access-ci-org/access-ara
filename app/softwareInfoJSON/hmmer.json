@@ -1,0 +1,20 @@
+{
+  "software name": "hmmer",
+  "comprehensive overview": "HMMER is a software suite for biological sequence analysis that utilizes hidden Markov models (HMMs) to identify and align sequences. It is commonly used for searching sequence databases for homologs and detecting sequence similarities.",
+  "core features": [
+    "Utilizes hidden Markov models for sequence analysis",
+    "Identification and alignment of biological sequences",
+    "Searching for homologs and detecting sequence similarities"
+  ],
+  "general tags": [
+    "Bioinformatics",
+    "Sequence Analysis",
+    "Hidden Markov Models"
+  ],
+  "additional tags": {
+    "research discipline": "Computational Biology",
+    "research area": "Sequence Alignment",
+    "software class": "Analysis Software",
+    "software type": "Biological Sequence Tool"
+  }
+}

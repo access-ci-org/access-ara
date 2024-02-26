@@ -1,0 +1,20 @@
+{
+  "software": "SQLite",
+  "comprehensive_overview": "SQLite is a lightweight, self-contained, serverless, and open-source SQL database engine. It is widely used in embedded systems, mobile applications, browsers, and small to medium-scale applications because of its simplicity, speed, reliability, and ease of use.",
+  "core_features": [
+    "Embedded SQL database",
+    "Serverless architecture",
+    "ACID compliance"
+  ],
+  "general_tags": [
+    "SQL database",
+    "embedded systems",
+    "open-source"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Databases",
+    "software_class": "Database Engine",
+    "software_type": "SQL Database"
+  }
+}

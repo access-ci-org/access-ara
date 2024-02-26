@@ -1,0 +1,20 @@
+{
+  "software name": "JARVIS",
+  "comprehensive overview": "JARVIS (Joint Automated Repository for Various Integrated Simulations) is a materials informatics platform that integrates various computational tools, databases, and AI methods for materials discovery and design. It enables researchers to accelerate materials research through data-driven approaches.",
+  "core features": [
+    "Materials informatics platform for materials discovery",
+    "Integrates computational tools and databases",
+    "Utilizes AI methods for accelerated research"
+  ],
+  "general tags": [
+    "Materials Informatics",
+    "Materials Discovery",
+    "Data-Driven Research"
+  ],
+  "additional tags": {
+    "research discipline": "Materials Science",
+    "research area": "Materials Informatics",
+    "software class": "Informatics Platform",
+    "software type": "Materials Discovery Tool"
+  }
+}

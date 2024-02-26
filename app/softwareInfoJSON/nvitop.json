@@ -1,0 +1,18 @@
+{
+  "software_name": "nvitop",
+  "comprehensive_overview": "nvtop is a htop like task monitor for NVIDIA GPUs. It can display a variety of information in a user-friendly format to easily monitor the performance of NVIDIA GPUs.",
+  "core_features": [
+    "Real-time monitoring of NVIDIA GPUs",
+    "Displays GPU utilization, memory usage, temperature, power, and more",
+    "User-friendly interface similar to htop"
+  ],
+  "general_tags": [
+    "monitoring", "performance", "GPU", "task manager"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High Performance Computing",
+    "software_class": "System Monitoring",
+    "software_type": "Command Line Tool"
+  }
+}

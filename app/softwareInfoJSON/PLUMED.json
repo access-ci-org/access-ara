@@ -1,0 +1,21 @@
+{
+  "software_name": "PLUMED",
+  "comprehensive_overview": "PLUMED is an open-source library for free energy calculations in molecular systems. It allows for easy implementation of advanced sampling methods and enhanced sampling techniques in molecular dynamics simulations.",
+  "core_features": [
+    "Free energy calculations",
+    "Advanced sampling methods",
+    "Enhanced sampling techniques",
+    "Integration with molecular dynamics simulations"
+  ],
+  "general_tags": [
+    "Molecular dynamics",
+    "Free energy calculations",
+    "Simulation"
+  ],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Computational chemistry",
+    "software_class": "Molecular dynamics",
+    "software_type": "Library"
+  }
+}

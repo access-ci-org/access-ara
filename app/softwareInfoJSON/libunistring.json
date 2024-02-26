@@ -1,0 +1,21 @@
+{
+  "software_name": "libunistring",
+  "comprehensive_overview": "libunistring is a library that provides functions for manipulating Unicode strings and characters, offering support for various Unicode operations and text processing tasks. It enables developers to work with Unicode data in a portable and efficient manner.",
+  "core_features": [
+    "Unicode string manipulation",
+    "Support for Unicode operations",
+    "Text processing functions",
+    "Portable Unicode data handling"
+  ],
+  "general_tags": [
+    "Unicode strings",
+    "text processing",
+    "Unicode operations"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Unicode Processing",
+    "software_class": "Library",
+    "software_type": "Unicode Handling"
+  }
+}

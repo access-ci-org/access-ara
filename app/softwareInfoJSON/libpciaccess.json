@@ -1,0 +1,21 @@
+{
+  "software_name": "libpciaccess",
+  "comprehensive_overview": "libpciaccess is a library that provides a hardware-independent abstraction for accessing PCI devices. It simplifies the process of interacting with PCI devices by offering a unified API for discovering, configuring, and managing PCI hardware.",
+  "core_features": [
+    "Hardware-independent PCI access",
+    "Unified API for PCI device interaction",
+    "Discovery and configuration of PCI devices",
+    "Management of PCI hardware resources"
+  ],
+  "general_tags": [
+    "PCI devices",
+    "hardware abstraction",
+    "device management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Engineering",
+    "research_area": "Hardware Interfacing",
+    "software_class": "Library",
+    "software_type": "Hardware Abstraction"
+  }
+}

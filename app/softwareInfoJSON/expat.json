@@ -1,0 +1,23 @@
+{
+    "software": "expat",
+    "overview": "Expat is an open-source XML parser library written in C. It is designed for efficiently parsing XML documents and processing XML data in various applications, providing a fast and lightweight solution for XML parsing.",
+    "core_features": [
+        "Efficient parsing of XML documents",
+        "Event-based parsing model",
+        "Support for XML namespaces",
+        "Cross-platform compatibility",
+        "Low memory footprint"
+    ],
+    "general_tags": [
+        "XML parsing",
+        "library",
+        "C programming",
+        "cross-platform"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "XML Processing",
+        "software_class": "Parser Library",
+        "software_type": "Open Source"
+    }
+}

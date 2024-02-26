@@ -1,0 +1,21 @@
+{
+  "software_name": "libedit",
+  "comprehensive_overview": "libedit is a library for reading and editing user input in a command-line interface. It provides tools for handling input editing, command history, and line parsing in a terminal environment.",
+  "core_features": [
+    "Input editing capabilities",
+    "Command history management",
+    "Line parsing functionality",
+    "Integration with command-line interfaces"
+  ],
+  "general_tags": [
+    "command-line interface",
+    "input processing",
+    "user interaction"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "User Interfaces",
+    "software_class": "Library",
+    "software_type": "Input Handling"
+  }
+}

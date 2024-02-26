@@ -1,0 +1,17 @@
+{
+    "software": "Captum",
+    "overview": "Captum is an interpretability library for PyTorch that provides state-of-the-art attribution algorithms for explaining model predictions in machine learning and deep learning applications.",
+    "core_features": [
+        "Interpretability algorithms for explaining model predictions",
+        "Support for various attribution methods like Integrated Gradients and DeepLIFT",
+        "Integration with PyTorch deep learning framework",
+        "Visualization tools for interpreting model behavior"
+    ],
+    "general_tags": ["interpretability", "attribution", "PyTorch library"],
+    "additional_tags": {
+        "research_discipline": "Machine Learning",
+        "research_area": "Interpretability",
+        "software_class": "Interpretability Tool",
+        "software_type": "Library"
+    }
+}

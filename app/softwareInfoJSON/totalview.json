@@ -1,0 +1,21 @@
+{
+  "tool": "totalview",
+  "overview": "TotalView is a scalable and interactive debugger for parallel and high-performance computing (HPC) applications. It provides advanced debugging features to help developers analyze and optimize the performance of parallel programs running on clusters or supercomputers.",
+  "core_features": [
+    "Parallel debugging for MPI, OpenMP, CUDA, and hybrid applications",
+    "Interactive source code visualizations and debugging tools",
+    "Memory debugging and leak detection",
+    "Performance analysis and optimization capabilities"
+  ],
+  "general_tags": [
+    "parallel debugging",
+    "HPC tool",
+    "performance optimization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High-Performance Computing",
+    "software_class": "Debugger",
+    "software_type": "HPC Tool"
+  }
+}

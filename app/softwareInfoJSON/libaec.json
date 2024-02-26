@@ -1,0 +1,20 @@
+{
+    "software name": "libaec",
+    "comprehensive overview": "libaec is a library for encoding and decoding data with Arithmetic Entropy Coding, providing efficient compression and decompression functions. It is commonly used for lossless compression of scientific data, such as environmental observations, numerical simulations, and sensor data.",
+    "core features": [
+        "Arithmetic entropy coding for data compression",
+        "Lossless encoding and decoding algorithms",
+        "Optimized compression for scientific datasets"
+    ],
+    "general tags": [
+        "Arithmetic Coding",
+        "Data Compression",
+        "Library"
+    ],
+    "additional tags": {
+        "research discipline": "Data Science",
+        "research area": "Data Compression",
+        "software class": "Compression Library",
+        "software type": "Data Encoding Tool"
+    }
+}

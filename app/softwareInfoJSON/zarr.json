@@ -1,0 +1,21 @@
+{
+    "tool": "Zarr",
+    "overview": "Zarr is a Python library and file format for storing and managing large, multidimensional arrays efficiently. It provides a flexible and scalable way to store array data in chunks, enabling high-performance data access, compression, and parallel I/O. Zarr is well-suited for handling multi-dimensional array data in scientific computing and data analysis.",
+    "core_features": [
+        "Efficient storage of large multidimensional arrays",
+        "Chunk-based storage for parallel I/O and compression",
+        "Support for labeled and hierarchically organized arrays",
+        "Integrates with NumPy and Dask for array manipulation"
+    ],
+    "general_tags": [
+        "array storage",
+        "data management",
+        "Python library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Data Science",
+        "research_area": "Scientific Computing",
+        "software_class": "Library",
+        "software_type": "Data Storage Tool"
+    }
+}

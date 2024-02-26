@@ -1,0 +1,29 @@
+{
+    "PyTorch": {
+        "overview": "PyTorch is an open-source machine learning library developed by Facebook AI. It enables developers to create and train neural networks using dynamic computational graphs. PyTorch offers flexibility, scalability, and ease of use for deep learning research and applications.",
+        "core_features": [
+            "Neural network creation and training",
+            "Dynamic computational graphs",
+            "Deep learning capabilities",
+            "Research-oriented library",
+            "Scalability and flexibility"
+        ],
+        "general_tags": [
+            "Machine learning",
+            "Neural networks",
+            "Deep learning"
+        ],
+        "additional_tags": {
+            "research_discipline": [
+                "Artificial Intelligence",
+                "Machine Learning"
+            ],
+            "research_area": [
+                "Deep Learning",
+                "Neural Network Research"
+            ],
+            "software_class": "Machine Learning Library",
+            "software_type": "Deep Learning"
+        }
+    }
+}

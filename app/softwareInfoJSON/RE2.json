@@ -1,0 +1,16 @@
+{
+  "software_name": "RE2",
+  "comprehensive_overview": "RE2 is a fast, safe, thread-friendly, and portable C++ library for regular expressions. It aims to provide high performance and predictable runtime behavior for regular expression matching.",
+  "core_features": [
+    "Fast regular expression matching",
+    "Thread safety",
+    "Compatibility with regular expression syntax"
+  ],
+  "general_tags": ["Regular Expressions", "C++ Library", "Performance"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Formal Languages",
+    "software_class": "Regular Expression Engine",
+    "software_type": "Library"
+  }
+}

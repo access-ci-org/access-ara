@@ -1,0 +1,20 @@
+{
+  "software name": "hashdeep",
+  "comprehensive overview": "hashdeep is a command-line tool used to compute and audit hash values for sets of files, enabling users to verify the integrity and authenticity of data. It supports multiple cryptographic hashing algorithms for secure and efficient hashing.",
+  "core features": [
+    "Calculation of hash values for files and directories",
+    "Support for various cryptographic hashing algorithms",
+    "Audit and verify data integrity using computed hash values"
+  ],
+  "general tags": [
+    "Hashing",
+    "Data Integrity",
+    "Security"
+  ],
+  "additional tags": {
+    "research discipline": "Information Security",
+    "research area": "Data Verification",
+    "software class": "Utility",
+    "software type": "Hashing Tool"
+  }
+}

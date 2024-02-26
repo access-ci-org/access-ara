@@ -1,0 +1,20 @@
+{
+  "software": "Subversion (SVN)",
+  "comprehensive_overview": "Subversion, commonly referred to as SVN, is an open-source version control system used for tracking changes in code base and managing software projects. It allows users to maintain different versions of files, collaborate on projects, and track modifications over time through a centralized repository.",
+  "core_features": [
+    "Version control",
+    "Repository management",
+    "Collaborative coding"
+  ],
+  "general_tags": [
+    "version control system",
+    "collaboration",
+    "code management"
+  ],
+  "additional_tags": {
+    "research_discipline": "Software Development",
+    "research_area": "Version Control",
+    "software_class": "VCS",
+    "software_type": "Version Control System"
+  }
+}

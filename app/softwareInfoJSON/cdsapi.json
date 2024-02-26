@@ -1,0 +1,21 @@
+{
+  "software_name": "cdsapi",
+  "comprehensive_overview": "cdsapi is a Python library for interacting with the Copernicus Climate Data Store (CDS) API. It provides functionalities to access, download, and manage climate and environmental data provided by the European Union's Copernicus program.",
+  "core_features": [
+    "Interact with the Copernicus Climate Data Store API",
+    "Download climate and environmental data",
+    "Manage data access and downloading process"
+  ],
+  "general_tags": [
+    "Python library",
+    "Climate data",
+    "Environmental data",
+    "Data access"
+  ],
+  "additional_tags": {
+    "research_discipline": "Environmental Science",
+    "research_area": "Climate Science",
+    "software_class": "Data Management",
+    "software_type": "API Library"
+  }
+}

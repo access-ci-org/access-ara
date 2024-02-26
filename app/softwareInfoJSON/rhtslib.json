@@ -1,0 +1,20 @@
+{
+  "software": "rhtslib",
+  "comprehensive_overview": "Rhtslib is a Rust programming language interface to HTSlib, a C library for working with high-throughput sequencing (HTS) data formats. It provides Rust bindings for HTSlib, enabling efficient and reliable access to genomic data stored in common formats like SAM, BAM, and VCF.",
+  "core_features": [
+    "High-throughput sequencing data",
+    "Genomic data formats",
+    "Rust bindings for HTSlib"
+  ],
+  "general_tags": [
+    "Rust programming",
+    "genomic data analysis",
+    "sequencing data formats"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Genomics",
+    "software_class": "Library",
+    "software_type": "Data Processing"
+  }
+}

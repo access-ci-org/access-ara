@@ -1,0 +1,20 @@
+{
+  "software name": "gnuplot",
+  "comprehensive overview": "Gnuplot is a powerful plotting program that allows you to create 2D and 3D graphs from data in various formats. It is widely used for visualizing numerical data and mathematical functions.",
+  "core features": [
+    "Plotting of 2D and 3D graphs",
+    "Support for various graph types (e.g., scatter plots, histograms)",
+    "Highly customizable plot settings and styles"
+  ],
+  "general tags": [
+    "Plotting",
+    "Visualization",
+    "Data Analysis"
+  ],
+  "additional tags": {
+    "research discipline": "Science",
+    "research area": "Data Visualization",
+    "software class": "Tool",
+    "software type": "Plotting Software"
+  }
+}

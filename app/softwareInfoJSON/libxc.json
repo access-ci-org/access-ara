@@ -1,0 +1,21 @@
+{
+  "software_name": "libxc",
+  "comprehensive_overview": "libxc is a library for exchange-correlation functionals in density-functional theory calculations. It provides a collection of exchange-correlation functionals used in electronic structure calculations, enabling researchers to perform accurate computational chemistry simulations.",
+  "core_features": [
+    "Exchange-correlation functionals",
+    "Density-functional theory calculations",
+    "Support for electronic structure simulations",
+    "Functional library for computational chemistry"
+  ],
+  "general_tags": [
+    "exchange-correlation",
+    "density-functional theory",
+    "computational chemistry"
+  ],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Computational Chemistry",
+    "software_class": "Library",
+    "software_type": "Quantum Chemistry"
+  }
+}

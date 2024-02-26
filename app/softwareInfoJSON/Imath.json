@@ -1,0 +1,18 @@
+{
+  "Imath": {
+    "overview": "Imath is a small, fast, and portable 2D and 3D vector, matrix, and math library designed to provide a good balance between performance and ease and simplicity of use. It is commonly used in computer graphics and visual effects applications.",
+    "core_features": [
+      "2D and 3D vector operations",
+      "Matrix computations",
+      "Mathematical operations for computer graphics",
+      "Portable and efficient implementation"
+    ],
+    "general_tags": ["Math library", "Computer graphics", "Vector operations"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Digital Arts"],
+      "research_area": ["Computer Graphics", "Visual Effects"],
+      "software_class": "Library",
+      "software_type": "Mathematics"
+    }
+  }
+}

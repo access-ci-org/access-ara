@@ -1,0 +1,21 @@
+{
+  "advisor": {
+    "overview": "Advisor is a performance tuning tool designed to help users achieve high performance for their applications on Intel software and hardware platforms. It analyzes an application's performance, recommends optimization strategies, and provides detailed performance insights.",
+    "core_features": [
+      "Performance analysis",
+      "Optimization recommendations",
+      "Performance insights"
+    ],
+    "general_tags": [
+      "Performance tuning",
+      "Intel platforms",
+      "Optimization"
+    ],
+    "additional_tags": {
+      "research_discipline": "Computer Science",
+      "research_area": "Performance computing",
+      "software_class": "Performance tuning tool",
+      "software_type": "Optimization software"
+    }
+  }
+}

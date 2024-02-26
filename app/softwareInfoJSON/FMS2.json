@@ -1,1 +1,20 @@
-I don't have specific details on "FMS2" at the moment. If you have additional context or specific information about "FMS2" that you would like me to include, please provide more details so I can create a tailored JSON output for "FMS2."
+{
+    "software_name": "FMS2",
+    "comprehensive_overview": "FMS2 is a bioinformatics tool that aids in the identification of fusion genes based on high-throughput sequencing data.",
+    "core_features": [
+        "Detection of fusion genes",
+        "Analysis of high-throughput sequencing data",
+        "Visualization of fusion gene events"
+    ],
+    "general_tags": [
+        "bioinformatics",
+        "fusion genes",
+        "high-throughput sequencing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Genomics",
+        "software_class": "Bioinformatics tool",
+        "software_type": "Analysis tool"
+    }
+}

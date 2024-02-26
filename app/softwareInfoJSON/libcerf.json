@@ -1,0 +1,21 @@
+{
+  "software_name": "libcerf",
+  "comprehensive_overview": "libcerf is a specialized software library for evaluating complex error functions and Fresnel integrals. It provides fast and accurate implementations of complex error functions, Faddeeva function, and related auxiliary functions.",
+  "core_features": [
+    "Evaluation of complex error functions",
+    "Evaluation of Fresnel integrals",
+    "High-performance implementations",
+    "Support for both single and double precision"
+  ],
+  "general_tags": [
+    "mathematics",
+    "library",
+    "numerical computation"
+  ],
+  "additional_tags": {
+    "research_discipline": "Mathematics",
+    "research_area": "Numerical Analysis",
+    "software_class": "Library",
+    "software_type": "Numerical Computation"
+  }
+}

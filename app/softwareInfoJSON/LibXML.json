@@ -1,0 +1,19 @@
+{
+  "LibXML": {
+    "overview": "LibXML is a C library for parsing, validating, and creating XML documents. It provides a robust set of functions for working with XML data, supporting XPath, XPointer, XInclude, and other XML-related technologies.",
+    "core_features": [
+      "Parsing and validating XML documents",
+      "Creating XML documents",
+      "Support for XPath and XPointer",
+      "XInclude processing",
+      "Robust XML functionality"
+    ],
+    "general_tags": ["XML library", "Parsing", "Validation"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Data Science"],
+      "research_area": ["XML Parsing", "Data Validation"],
+      "software_class": "Library",
+      "software_type": "Data Processing"
+    }
+  }
+}

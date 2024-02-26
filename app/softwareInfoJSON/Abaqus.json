@@ -1,27 +1,12 @@
 {
-  "software_name": "Abaqus",
-  "overview": "Abaqus is a finite element analysis software suite used for simulating and analyzing complex mechanical and structural engineering problems. It offers advanced capabilities for stress analysis, heat transfer, and multiphysics simulations.",
-  "core_features": [
-    "Finite element analysis",
-    "Mechanical simulations",
-    "Structural analysis",
-    "Multiphysics simulations"
-  ],
-  "general_tags": [
-    "Finite element analysis",
-    "Mechanical engineering",
-    "Structural analysis",
-    "Multiphysics simulations"
-  ],
-  "research_discipline": [
-    "Engineering",
-    "Physics"
-  ],
-  "research_area": [
-    "Mechanical engineering",
-    "Civil engineering",
-    "Aerospace engineering"
-  ],
-  "software_class": "Simulation software",
-  "software_type": "Engineering tool"
+    "software_name": "Abaqus",
+    "comprehensive_overview": "Abaqus is a finite element analysis software widely used for simulating and analyzing complex mechanical and structural behaviors in engineering applications. It offers a comprehensive suite of tools for simulation, modeling, and optimization of structures under various loading conditions.",
+    "core_features": ["Finite element analysis software", "Simulates complex mechanical and structural behaviors", "Tools for modeling and optimization"],
+    "general_tags": ["Finite element analysis", "Structural analysis"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Simulation",
+        "software_type": "Tool"
+    }
 }

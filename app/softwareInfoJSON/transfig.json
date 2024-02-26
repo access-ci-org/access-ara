@@ -1,0 +1,21 @@
+{
+  "tool": "transfig",
+  "overview": "TransFig is a tool used for converting figures produced by Xfig, a vector graphics editor, to other formats such as EPS, PDF, SVG, or PNG. It allows users to create complex vector-based illustrations and export them to widely supported file formats for publication or sharing.",
+  "core_features": [
+    "Convert Xfig figures to various formats",
+    "Preserve vector graphics quality during conversion",
+    "Command-line interface for batch processing",
+    "Supports customization and options for output"
+  ],
+  "general_tags": [
+    "vector graphics",
+    "figure conversion",
+    "graphics tool"
+  ],
+  "additional_tags": {
+    "research_discipline": "Engineering",
+    "research_area": "Technical Illustration",
+    "software_class": "Converter",
+    "software_type": "Graphics Utility"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "software_name": "SCOTCH",
+  "comprehensive_overview": "SCOTCH is a software package for graph partitioning, ordering, clustering, and sparse matrix block ordering. It provides efficient algorithms for decomposing large graphs and matrices into smaller components for parallel computing.",
+  "core_features": [
+    "Graph partitioning algorithms",
+    "Sparse matrix ordering",
+    "High-performance parallel computing"
+  ],
+  "general_tags": ["Graph Partitioning", "Sparse Matrix Ordering", "Parallel Computing"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Graph Algorithms",
+    "software_class": "Optimization Tool",
+    "software_type": "Library"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "software_name": "petsc4py",
+    "comprehensive_overview": "PETSc for Python (petsc4py) is a Python wrapper for the Portable, Extensible Toolkit for Scientific Computation (PETSc) library, an open-source suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations.",
+    "core_features": [
+        "Integration of PETSc library within Python environment",
+        "High-performance parallel computing capabilities",
+        "Scalability for solving large-scale scientific and engineering problems",
+        "Support for various numerical algorithms and solvers",
+        "Access to PETSc data structures and functionalities"
+    ],
+    "general_tags": [
+        "scientific computing",
+        "parallel computing",
+        "numerical algorithms",
+        "data structures",
+        "partial differential equations"
+    ],
+    "additional_tags": {
+        "research_discipline": "computational science",
+        "research_area": "computational mathematics",
+        "software_class" : "library",
+        "software_type": "scientific computing tool"
+    }
+}

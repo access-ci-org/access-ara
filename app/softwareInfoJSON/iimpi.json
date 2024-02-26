@@ -1,0 +1,21 @@
+{
+  "iimpi": {
+    "overview": "IIMPI (InteractiVe Library for MPI) is a software library that provides interactive tools and features for debugging, monitoring, and analyzing Message Passing Interface (MPI) applications. It offers enhanced capabilities for understanding and optimizing MPI-based parallel programs.",
+    "core_features": [
+      "Interactive debugging",
+      "MPI application monitoring",
+      "Performance analysis"
+    ],
+    "general_tags": [
+      "High-Performance Computing",
+      "MPI Applications",
+      "Debugging Tools"
+    ],
+    "additional_tags": {
+      "research_discipline": "Computer Science",
+      "research_area": "Parallel Programming",
+      "software_class": "Library",
+      "software_type": "MPI Analysis Tool"
+    }
+  }
+}

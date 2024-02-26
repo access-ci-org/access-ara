@@ -1,0 +1,20 @@
+{
+  "software name": "harfbuzz",
+  "comprehensive overview": "HarfBuzz is an open-source text shaping engine that converts Unicode text into beautifully formatted, complex scripts. It is used for accurate rendering of text in various languages, supporting features like ligatures, kerning, and more.",
+  "core features": [
+    "Text shaping engine for complex scripts",
+    "Support for ligatures, kerning, and text layout features",
+    "Accurate rendering of text in multiple languages"
+  ],
+  "general tags": [
+    "Text Rendering",
+    "Unicode",
+    "Language Support"
+  ],
+  "additional tags": {
+    "research discipline": "Typography",
+    "research area": "Text Layout",
+    "software class": "Text Engine",
+    "software type": "Text Shaping Tool"
+  }
+}

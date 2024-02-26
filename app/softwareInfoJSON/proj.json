@@ -1,0 +1,20 @@
+{
+  "software": "proj",
+  "comprehensive_overview": "PROJ is a cartographic Projections Library used for representing the shape of the Earth on a two-dimensional surface. It provides a wide range of geodetic, geocentric, and cartographic projection capabilities for accurate mapping and spatial analysis.",
+  "core_features": [
+    "Cartographic projections",
+    "Geodetic calculations",
+    "Spatial analysis"
+  ],
+  "general_tags": [
+    "cartography",
+    "geodesy",
+    "spatial analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Geography",
+    "research_area": "GIS",
+    "software_class": "Library",
+    "software_type": "Geospatial"
+  }
+}

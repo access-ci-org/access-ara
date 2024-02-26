@@ -1,0 +1,22 @@
+{
+  "software_name": "cppy",
+  "comprehensive_overview": "cppy is a library that allows seamless interoperability between C++ and Python by providing advanced features for wrapping C++ classes and functions for use in Python.",
+  "core_features": [
+    "Wrapping C++ classes and functions for use in Python",
+    "Automatic conversion of C++ types to Python objects",
+    "Support for advanced C++ features such as templates and lambdas",
+    "Efficient memory management"
+  ],
+  "general_tags": [
+    "C++",
+    "Python",
+    "Interoperability",
+    "Library"
+  ],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "Interoperability tool",
+    "software_type": "Library"
+  }
+}

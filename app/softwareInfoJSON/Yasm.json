@@ -1,0 +1,16 @@
+{
+  "software_name": "Yasm",
+  "comprehensive_overview": "Yasm is a modular assembler tool that supports multiple instruction sets and output file formats. It is designed for compiling and assembling codes into object files, providing flexibility and customization options for optimizing assembly language programming.",
+  "core_features": [
+    "Modular assembler tool",
+    "Support for multiple instruction sets",
+    "Flexible output file formats"
+  ],
+  "general_tags": ["Assembler", "Assembly Language", "Compilation Tool"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Assembly Programming",
+    "software_class": "Assembler",
+    "software_type": "Tool"
+  }
+}

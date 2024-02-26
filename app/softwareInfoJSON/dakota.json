@@ -1,0 +1,12 @@
+{
+  "software_name": "Dakota",
+  "comprehensive_overview": "Dakota is a flexible, extensible, and multi-faceted software toolkit for optimization and uncertainty quantification. It offers a wide range of algorithms for optimization, sensitivity analysis, uncertainty quantification, parameter estimation, and other computational methods.",
+  "core_features": "1. Optimization algorithms such as gradient-based, genetic algorithms, and surrogate-based methods. 2. Uncertainty quantification methods including Monte Carlo, polynomial chaos, and stochastic collocation. 3. Sensitivity analysis techniques like variance-based and derivative-based methods. 4. Hierarchical algorithms for optimization and analysis of complex systems. 5. Interface capabilities with a wide variety of simulation codes and models.",
+  "general_tags": ["optimization", "uncertainty quantification", "sensitivity analysis", "parameter estimation", "computational methods"],
+  "additional_tags": {
+    "research_discipline": "Engineering",
+    "research_area": ["Mechanical Engineering", "Civil Engineering", "Aerospace Engineering"],
+    "software_class": "Optimization and Uncertainty Quantification Toolkit",
+    "software_type": "Computational Software"
+  }
+}

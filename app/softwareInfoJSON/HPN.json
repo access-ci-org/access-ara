@@ -1,0 +1,19 @@
+{
+    "software_name": "HPN",
+    "comprehensive_overview": "HPN (Hybrid Petri Nets) is a software tool for modeling and analyzing concurrent systems using hybrid Petri nets, which are extended Petri nets with continuous variables.",
+    "core_features": [
+        "Modeling concurrent systems",
+        "Analysis using hybrid Petri nets",
+        "Incorporating continuous variables"
+    ],
+    "general_tags": [
+        "concurrent systems",
+        "modeling",
+        "analysis",
+        "Petri nets"
+    ],
+    "research_discipline": "Computer Science",
+    "research_area": "Concurrency",
+    "software_class": "Modeling and Simulation",
+    "software_type": "Tool"
+}

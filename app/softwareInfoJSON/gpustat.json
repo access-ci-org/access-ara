@@ -1,0 +1,20 @@
+{
+  "software name": "gpustat",
+  "comprehensive overview": "gpustat is a command-line tool that provides real-time monitoring and summary information about GPU utilization, memory usage, and temperature on Linux systems. It is useful for monitoring GPU performance and resource usage.",
+  "core features": [
+    "Real-time monitoring of GPU utilization and memory usage",
+    "Display of GPU temperature and other relevant metrics",
+    "Support for multiple GPUs and customizable display options"
+  ],
+  "general tags": [
+    "GPU Monitoring",
+    "Resource Utilization",
+    "Linux System"
+  ],
+  "additional tags": {
+    "research discipline": "Computer Science",
+    "research area": "GPU Computing",
+    "software class": "Monitoring Tool",
+    "software type": "GPU Monitoring Tool"
+  }
+}

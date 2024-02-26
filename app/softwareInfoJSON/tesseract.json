@@ -1,0 +1,20 @@
+{
+  "software": "Tesseract",
+  "comprehensive_overview": "Tesseract is an open-source OCR (Optical Character Recognition) engine originally developed by HP. It is widely used for recognizing and extracting text from images, supporting various languages and file formats. Tesseract provides accurate text recognition capabilities for diverse OCR applications.",
+  "core_features": [
+    "OCR engine",
+    "Text extraction",
+    "Multi-language support"
+  ],
+  "general_tags": [
+    "Optical Character Recognition",
+    "text extraction",
+    "image processing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Vision",
+    "research_area": "OCR",
+    "software_class": "Engine",
+    "software_type": "Text Recognition"
+  }
+}

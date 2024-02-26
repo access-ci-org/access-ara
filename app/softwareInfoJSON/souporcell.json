@@ -1,0 +1,19 @@
+{
+    "software_name": "souporcell",
+    "comprehensive_overview": "souporcell is a software package designed for single-cell DNA sequencing data that allows for the inference of cell lineage from somatic variants.",
+    "core_features": [
+        "Inference of cell lineage from somatic variants",
+        "Analysis of single-cell DNA sequencing data"
+    ],
+    "general_tags": [
+        "single-cell sequencing",
+        "cell lineage inference",
+        "somatic variants"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Single-cell sequencing",
+        "software_class": "Bioinformatics tool",
+        "software_type": "Analysis tool"
+    }
+}

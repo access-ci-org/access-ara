@@ -1,0 +1,12 @@
+{
+  "software name": "Qt4",
+  "comprehensive overview": "Qt4 is a cross-platform application development framework widely used for the development of GUI programs, games, and other graphical user interface applications.",
+  "core features": "Qt4 provides a comprehensive set of libraries and tools for building interactive applications with modern UI elements, support for internationalization, networking, SQL databases, multimedia, XML handling, and more. It enables developers to write code once and deploy it on multiple platforms without major modifications.",
+  "general tags": ["cross-platform", "GUI development", "application framework", "UI design"],
+  "additional tags": {
+    "research discipline": [],
+    "research area": [],
+    "software class": "Framework",
+    "software type": "Development"
+  }
+}

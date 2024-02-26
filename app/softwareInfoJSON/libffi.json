@@ -1,0 +1,21 @@
+{
+  "software_name": "libffi",
+  "comprehensive_overview": "libffi is a library that provides a high-level interface for calling functions defined at runtime. It enables dynamic calling of functions with specified calling conventions, making it useful for language implementations and runtime code generation.",
+  "core_features": [
+    "Dynamic function calling",
+    "Support for runtime-defined functions",
+    "Handling different calling conventions",
+    "Interfacing with dynamically generated code"
+  ],
+  "general_tags": [
+    "dynamic function calls",
+    "runtime interfaces",
+    "calling conventions"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Language Implementation",
+    "software_class": "Library",
+    "software_type": "Dynamic Call Interface"
+  }
+}

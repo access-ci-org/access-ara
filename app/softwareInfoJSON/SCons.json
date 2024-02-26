@@ -1,0 +1,16 @@
+{
+  "software_name": "SCons",
+  "comprehensive_overview": "SCons is a software construction tool that provides a powerful and flexible build environment for software development projects. It automates the construction process, including compilation, dependency analysis, and installation.",
+  "core_features": [
+    "Automated build process",
+    "Dependency tracking",
+    "Customizable build configurations"
+  ],
+  "general_tags": ["Build Automation", "Software Development", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Software Engineering",
+    "software_class": "Build Tool",
+    "software_type": "Tool"
+  }
+}

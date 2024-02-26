@@ -1,0 +1,22 @@
+{
+  "software_name": "SanityTool",
+  "comprehensive_overview": "SanityTool is a command line tool designed for detecting and fixing common coding mistakes and anti-patterns in software projects. It analyzes codebases to identify potential issues that could lead to bugs or errors, helping developers catch problems early in the development process.",
+  "core_features": [
+    "Code analysis for common coding mistakes",
+    "Detection of anti-patterns in software projects",
+    "Error prevention by identifying potential issues early",
+    "Command line interface for easy integration into development workflows"
+  ],
+  "general_tags": [
+    "code analysis",
+    "error detection",
+    "developer tool",
+    "anti-pattern detection"
+  ],
+  "additional_tags": {
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Development Tools",
+    "software_type": "Command Line Tool"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "software name": "libGLU",
+    "comprehensive overview": "libGLU, the OpenGL Utility Library, is a system library that provides a set of tools and utilities to supplement OpenGL capabilities, particularly for handling 3D transformations, projections, and viewports. It offers functions for simplifying 3D rendering tasks and supporting various graphics operations.",
+    "core features": [
+        "Tools for 3D transformation and projection",
+        "Utilities for managing viewports and geometric primitives",
+        "Support for OpenGL graphics operations"
+    ],
+    "general tags": [
+        "OpenGL",
+        "Graphics Library",
+        "3D Rendering"
+    ],
+    "additional tags": {
+        "research discipline": "Computer Graphics",
+        "research area": "OpenGL Programming",
+        "software class": "Graphics Library",
+        "software type": "Utility Library"
+    }
+}

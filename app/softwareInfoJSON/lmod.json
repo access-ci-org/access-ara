@@ -1,0 +1,21 @@
+{
+  "software_name": "lmod",
+  "comprehensive_overview": "Lmod is an environment module system that aids users in dynamically managing their software environments on HPC systems. It simplifies the process of loading and unloading software packages, managing versions, and handling dependencies for efficient software usage.",
+  "core_features": [
+    "Environment module system",
+    "Dynamic software environment management",
+    "Software loading and unloading",
+    "Version and dependency control"
+  ],
+  "general_tags": [
+    "environment modules",
+    "software management",
+    "dependency handling"
+  ],
+  "additional_tags": {
+    "research_discipline": "High-Performance Computing",
+    "research_area": "Software Environment",
+    "software_class": "Tool",
+    "software_type": "Environment Module System"
+  }
+}

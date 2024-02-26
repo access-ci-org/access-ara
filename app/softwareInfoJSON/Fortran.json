@@ -1,3 +1,22 @@
-As "Fortran" is a programming language, it does not have a specific software toolkit or tool associated with it. However, Fortran is widely used for scientific and engineering applications, especially in high-performance computing (HPC) and numerical simulations due to its efficiency and performance.
-
-If you have a specific Fortran-related tool or library in mind or any particular topic within Fortran that you would like detailed information on, please provide additional context so I can assist you further.
+{
+    "software_name": "Fortran",
+    "comprehensive_overview": "Fortran, short for Formula Translation, is a general-purpose, imperative programming language that is especially suited to numeric computation and scientific computing. Originally developed by IBM in the 1950s, Fortran is one of the earliest high-level programming languages.",
+    "core_features": [
+        "Designed for numeric and scientific computing",
+        "Efficient handling of arrays and complex calculations",
+        "Supports parallel computing and high-performance computing",
+        "Strongly typed and compiled language"
+    ],
+    "general_tags": [
+        "Programming Language",
+        "Numeric Computation",
+        "Scientific Computing",
+        "High-Performance Computing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computational Science",
+        "research_area": "Numerical Analysis",
+        "software_class": "General Purpose",
+        "software_type": "Compiler"
+    }
+}

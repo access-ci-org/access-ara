@@ -1,0 +1,21 @@
+{
+  "anaconda3": {
+    "overview": "Anaconda is a distribution of the Python and R programming languages for scientific computing, including data science, machine learning, and other data-intensive applications. Anaconda3 specifically refers to the Python 3 version of the Anaconda distribution.",
+    "core_features": [
+      "Python and R distribution",
+      "Data science libraries",
+      "Package management"
+    ],
+    "general_tags": [
+      "Data science",
+      "Python distribution",
+      "Package management"
+    ],
+    "additional_tags": {
+      "research_discipline": "Data Science",
+      "research_area": "Scientific computing",
+      "software_class": "Programming language distribution",
+      "software_type": "Scientific computing software"
+    }
+  }
+}

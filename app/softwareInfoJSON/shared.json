@@ -1,0 +1,25 @@
+````
+{
+    "tools": [
+        {
+            "software_name": "Shared",
+            "comprehensive_overview": "Shared is a collaboration platform that allows users to easily share files, work together on projects, and communicate in real-time.",
+            "core_features": [
+                "File sharing",
+                "Project collaboration",
+                "Real-time communication"
+            ],
+            "general_tags": [
+                "collaboration platform",
+                "file sharing",
+                "real-time communication"
+            ],
+            "additional_tags": {
+                "research_discipline": [],
+                "research_area": [],
+                "software_class": "Collaboration",
+                "software_type": "Platform"
+            }
+        }
+    ]
+}

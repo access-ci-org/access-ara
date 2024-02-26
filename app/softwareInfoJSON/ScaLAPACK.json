@@ -1,0 +1,16 @@
+{
+  "software_name": "ScaLAPACK",
+  "comprehensive_overview": "ScaLAPACK (Scalable LAPACK) is a parallel version of LAPACK (Linear Algebra PACKage) designed for distributed memory parallel computers. It provides a collection of routines for solving linear algebra problems efficiently on large-scale parallel systems.",
+  "core_features": [
+    "Parallel linear algebra operations",
+    "Scalable distributed memory computations",
+    "High-performance matrix factorizations"
+  ],
+  "general_tags": ["High-Performance Computing", "Linear Algebra", "Parallel Computing"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Numerical Computing",
+    "software_class": "Linear Algebra Library",
+    "software_type": "Library"
+  }
+}

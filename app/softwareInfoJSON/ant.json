@@ -1,0 +1,16 @@
+{
+  "software_name": "Ant",
+  "comprehensive_overview": "Ant is a build tool commonly used in Java development for automating and managing software build processes. It utilizes XML-based configuration files and predefined tasks to compile, test, and package Java applications, providing a flexible and extensible build system.",
+  "core_features": [
+    "Build automation",
+    "Dependency management",
+    "Task-based build process"
+  ],
+  "general_tags": ["Build Tool", "Java Development", "Automation"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Software Development",
+    "software_class": "Build Automation Tool",
+    "software_type": "Tool"
+  }
+}

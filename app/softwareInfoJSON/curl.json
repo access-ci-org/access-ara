@@ -1,0 +1,23 @@
+{
+    "software": "curl",
+    "overview": "cURL is a command-line tool and library for transferring data with various protocols. It supports HTTP, HTTPS, FTP, FTPS, SCP, SFTP, LDAP, and many more. cURL is highly versatile and widely used for automating data transfers and performing various network-related tasks.",
+    "core_features": [
+        "Support for multiple protocols",
+        "Data transfer with URLs",
+        "HTTP headers customization",
+        "Downloading and uploading files",
+        "Integration with scripting languages"
+    ],
+    "general_tags": [
+        "command-line tool",
+        "data transfer",
+        "network protocols",
+        "automation"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Networking",
+        "software_class": "Data Transfer Tools",
+        "software_type": "Open Source"
+    }
+}

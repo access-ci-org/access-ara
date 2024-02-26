@@ -1,0 +1,12 @@
+{
+    "software_name": "Parabricks",
+    "comprehensive_overview": "Parabricks is a software suite that provides GPU-accelerated bioinformatics analysis tools for genomics research, enabling rapid analysis of next-generation sequencing (NGS) data.",
+    "core_features": "1. GPU-accelerated bioinformatics analysis\n2. Optimized for genomics research and NGS data\n3. Rapid analysis of large genomic datasets\n4. High performance computing capabilities\n5. Support for variant calling, genome assembly, and more",
+    "general_tags": ["bioinformatics", "NGS data analysis", "GPU-acceleration", "genomics"],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Bioinformatics",
+        "software_class": "Bioinformatics tools",
+        "software_type": "Analysis software"
+    }
+}

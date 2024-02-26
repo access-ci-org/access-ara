@@ -1,0 +1,20 @@
+{
+  "software": "spdlog",
+  "comprehensive_overview": "spdlog is a fast, header-only logging library for C++. It provides efficient logging capabilities with various features like thread safety, asynchronous logging, and log rotation. spdlog is designed for high-performance logging needs while maintaining simplicity and ease of use.",
+  "core_features": [
+    "Efficient logging",
+    "Thread safety",
+    "Asynchronous logging"
+  ],
+  "general_tags": [
+    "C++ library",
+    "logging",
+    "threading"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Logging Mechanisms",
+    "software_class": "Library",
+    "software_type": "Logging Tool"
+  }
+}

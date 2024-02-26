@@ -1,0 +1,20 @@
+{
+  "software": "Singularity",
+  "comprehensive_overview": "Singularity is a containerization platform primarily used in high-performance computing (HPC) and scientific research environments. It enables users to create and run lightweight, portable containers for executing applications, managing dependencies, and ensuring reproducibility of computational workflows across different systems.",
+  "core_features": [
+    "Containerization",
+    "Reproducibility",
+    "Dependency management"
+  ],
+  "general_tags": [
+    "HPC",
+    "scientific computing",
+    "containerization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High-Performance Computing",
+    "software_class": "Container Platform",
+    "software_type": "Research Tool"
+  }
+}

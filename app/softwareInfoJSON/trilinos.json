@@ -1,0 +1,21 @@
+{
+  "tool": "Trilinos",
+  "overview": "Trilinos is an open-source collection of scientific computing libraries designed to support the development and deployment of scalable and high-performance computational software. It offers a wide range of solvers, linear algebra routines, and parallel computing capabilities for various scientific and engineering applications.",
+  "core_features": [
+    "Large collection of numerical algorithms and computational tools",
+    "Scalable parallel solvers for linear and nonlinear systems",
+    "Advanced linear algebra and optimization libraries",
+    "Support for high-performance computing (HPC) and distributed memory systems"
+  ],
+  "general_tags": [
+    "scientific computing",
+    "computational library",
+    "HPC tool"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computational Science",
+    "research_area": "Numerical Analysis",
+    "software_class": "Library",
+    "software_type": "Computational Toolkit"
+  }
+}

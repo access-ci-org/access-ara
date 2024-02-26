@@ -1,0 +1,23 @@
+{
+    "software_name": "eckit",
+    "comprehensive_overview": "Eckit is a C++ library developed by the European Centre for Medium-Range Weather Forecasts (ECMWF) that provides essential components for building high-performance, efficient and flexible software for Earth system modelling and data assimilation.",
+    "core_features": [
+        "Provides fundamental building blocks for developing Earth system models",
+        "Includes classes for handling dates, times, arrays, geometry, configuration, and more",
+        "Offers tools for dealing with I/O operations, logging, parallelization, and configuration",
+        "Designed for high performance and adaptability in the context of weather and climate modelling"
+    ],
+    "general_tags": [
+        "C++ library",
+        "Earth system modelling",
+        "Data assimilation",
+        "Weather forecasting",
+        "High performance computing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Environmental Sciences",
+        "research_area": "Weather and Climate Modelling",
+        "software_class": "Library",
+        "software_type": "Development"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "software_name": "Orca",
+    "comprehensive_overview": "Orca is an ab initio quantum chemistry program that computes DFT, HF-SCF, MCSCF, CI, MP2, CC, and coupled-cluster calculations. It is widely used for studying molecular properties and electronic structures.",
+    "core_features": [
+        "DFT calculations",
+        "HF-SCF calculations",
+        "MCSCF calculations",
+        "CI calculations",
+        "MP2 calculations",
+        "CC calculations",
+        "Coupled-cluster calculations"
+    ],
+    "general_tags": [
+        "quantum chemistry",
+        "computational chemistry",
+        "molecular properties",
+        "electronic structures"
+    ],
+    "additional_tags": {
+        "research_discipline": "Chemistry",
+        "research_area": "Quantum chemistry",
+        "software_class": "Quantum chemistry software",
+        "software_type": "Ab initio quantum chemistry program"
+    }
+}

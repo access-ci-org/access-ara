@@ -1,0 +1,23 @@
+{
+    "software": "CoinUtils",
+    "overview": "CoinUtils is a collection of utilities that are part of the Coin-OR project, which focuses on open-source optimization software. CoinUtils provides fundamental utilities and common data structures used in mathematical optimization algorithms.",
+    "core_features": [
+        "Common data structures for optimization",
+        "Linear algebra utilities",
+        "Integer and floating-point arithmetic tools",
+        "Network-related functions",
+        "Mathematical optimization support"
+    ],
+    "general_tags": [
+        "optimization software",
+        "mathematical optimization",
+        "linear algebra utilities",
+        "open-source"
+    ],
+    "additional_tags": {
+        "research_discipline": "Operations Research",
+        "research_area": "Optimization Algorithms",
+        "software_class": "Optimization Libraries",
+        "software_type": "Open Source"
+    }
+}

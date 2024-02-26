@@ -1,0 +1,22 @@
+{
+   "software name": "Highway",
+   "comprehensive overview": "Highway is a software tool designed for analyzing and visualizing high-throughput sequencing data in the field of bioinformatics. It offers a user-friendly interface and a wide range of features to assist researchers in interpreting their genomic data.",
+   "core features": [
+      "High-throughput sequencing data analysis",
+      "Data visualization tools",
+      "User-friendly interface",
+      "Genomic data interpretation"
+   ],
+   "general tags": [
+      "bioinformatics",
+      "high-throughput sequencing",
+      "data analysis",
+      "data visualization"
+   ],
+   "additional tags": {
+      "research discipline": "genomics",
+      "research area": "high-throughput sequencing",
+      "software class": "bioinformatics tool",
+      "software type": "data analysis tool"
+   }
+}

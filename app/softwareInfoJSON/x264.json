@@ -1,0 +1,21 @@
+{
+    "tool": "x264",
+    "overview": "x264 is an open-source software library for encoding video streams into the H.264/MPEG-4 AVC format. It provides a highly efficient and high-quality encoding solution widely used in video compression, streaming, and multimedia applications. x264 offers advanced encoding parameters for optimizing compression and video quality.",
+    "core_features": [
+        "Fast and high-quality H.264 video encoding",
+        "Fine-tuned compression settings for quality and performance",
+        "Support for various encoding profiles and settings",
+        "Integration with multimedia applications and video processing pipelines"
+    ],
+    "general_tags": [
+        "video encoding",
+        "H.264 compression",
+        "multimedia library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Multimedia Processing",
+        "research_area": "Video Compression",
+        "software_class": "Library",
+        "software_type": "Video Encoder"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "software": "Snakemake",
+  "comprehensive_overview": "Snakemake is a workflow management system and an agile bioinformatics pipeline creation tool. It enables the creation of reproducible and scalable data analysis workflows using a human-readable scripting language. Snakemake automates the execution and deployment of data analysis tasks in various computational environments.",
+  "core_features": [
+    "Workflow management",
+    "Pipeline creation",
+    "Reproducible data analysis"
+  ],
+  "general_tags": [
+    "bioinformatics",
+    "workflow automation",
+    "data analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Workflow Management",
+    "software_class": "Tool",
+    "software_type": "Workflow Automation"
+  }
+}

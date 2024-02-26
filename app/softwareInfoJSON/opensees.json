@@ -1,0 +1,22 @@
+{
+    "software_name": "OpenSees",
+    "comprehensive_overview": "Open System for Earthquake Engineering Simulation (OpenSees) is a software framework for simulating the seismic response of structural and geotechnical systems. It is primarily used for performing numerical simulations related to earthquake engineering.",
+    "core_features": [
+        "Advanced finite element analysis",
+        "Geotechnical modeling",
+        "Dynamic structural analysis",
+        "Parallel processing capabilities"
+    ],
+    "general_tags": [
+        "earthquake engineering",
+        "structural analysis",
+        "finite element method",
+        "simulation"
+    ],
+    "additional_tags": {
+        "research_discipline": "Civil Engineering",
+        "research_area": "Earthquake Engineering",
+        "software_class": "Simulation Software",
+        "software_type": "Finite Element Analysis Software"
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "software_name": "GaussView",
+  "comprehensive_overview": "GaussView is a graphical interface used to build, visualize, and analyze output from Gaussian calculations. It provides an interactive environment for manipulating molecular systems and viewing results of quantum chemical calculations.",
+  "core_features": [
+    "Molecular structure building",
+    "Visualization of molecular orbitals",
+    "Analysis of electronic properties",
+    "Display of molecular vibrations and more"
+  ],
+  "general_tags": [
+    "visualization",
+    "molecular modeling",
+    "quantum chemistry",
+    "computational chemistry"
+  ],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Theoretical Chemistry",
+    "software_class": "Graphical User Interface",
+    "software_type": "Visualization Tool"
+  }
+}

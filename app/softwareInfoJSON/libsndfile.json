@@ -1,0 +1,21 @@
+{
+  "software_name": "libsndfile",
+  "comprehensive_overview": "libsndfile is a library for reading and writing audio files in various formats. It provides support for handling audio data, performing format conversions, and manipulating sound files, making it a versatile tool for audio processing.",
+  "core_features": [
+    "Reading and writing audio files",
+    "Audio format conversion",
+    "Sound file manipulation",
+    "Multi-format support"
+  ],
+  "general_tags": [
+    "audio files",
+    "format conversion",
+    "sound processing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Audio Processing",
+    "research_area": "Sound Files",
+    "software_class": "Library",
+    "software_type": "Audio Handling"
+  }
+}

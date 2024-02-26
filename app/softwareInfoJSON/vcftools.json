@@ -1,0 +1,21 @@
+{
+    "tool": "vcftools",
+    "overview": "VCFtools is a versatile set of tools for working with Variant Call Format (VCF) files commonly used in genetics and genomics research. It allows researchers to perform various operations on genetic variation data, such as filtering, summarizing, and analyzing genetic variants in VCF format.",
+    "core_features": [
+        "Filtering and subsetting VCF files based on criteria",
+        "Calculating allele frequency and basic population genetics statistics",
+        "Quality control and data manipulation for genetic variant analysis",
+        "Integration with other bioinformatics tools and workflows"
+    ],
+    "general_tags": [
+        "genetics tool",
+        "VCF file processing",
+        "genomics analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genetics",
+        "research_area": "Genomic Variation",
+        "software_class": "Tool",
+        "software_type": "Genetic Variant Analysis Tool"
+    }
+}

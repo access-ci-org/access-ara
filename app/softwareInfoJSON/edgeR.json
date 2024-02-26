@@ -1,0 +1,23 @@
+{
+    "software": "edgeR",
+    "overview": "edgeR is a bioinformatics tool used for differential gene expression analysis in RNA-Seq data. It is particularly designed for identifying differential expression in high-throughput sequencing experiments and provides statistical methods for biological interpretation.",
+    "core_features": [
+        "Statistical analysis of RNA-Seq count data",
+        "Identification of differentially expressed genes",
+        "Dispersion estimation and normalization",
+        "Exploratory data analysis",
+        "Integration with other bioinformatics tools"
+    ],
+    "general_tags": [
+        "differential gene expression analysis",
+        "RNA-Seq data",
+        "bioinformatics",
+        "statistical analysis"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "RNA-Seq Analysis",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Open Source"
+    }
+}

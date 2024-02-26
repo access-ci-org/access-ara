@@ -1,0 +1,16 @@
+{
+  "software_name": "Armadillo",
+  "comprehensive_overview": "Armadillo is a high-performance C++ linear algebra library that provides a simple, intuitive interface for efficient matrix operations and numerical computations. It offers capabilities for handling dense and sparse matrices, linear algebra functions, and integration with other numerical libraries.",
+  "core_features": [
+    "Linear algebra operations",
+    "Matrix and vector calculations",
+    "Numerical computation capabilities"
+  ],
+  "general_tags": ["Linear Algebra", "Numerical Computation", "C++ Library"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Numerical Computing",
+    "software_class": "Linear Algebra Library",
+    "software_type": "Library"
+  }
+}

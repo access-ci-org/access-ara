@@ -1,0 +1,20 @@
+{
+  "software name": "jellyfish",
+  "comprehensive overview": "Jellyfish is a fast and memory-efficient software for counting k-mers in DNA sequences, which are commonly used in genome analysis and sequence assembly. It provides algorithms for k-mer counting, storage, and querying to extract valuable insights from biological data.",
+  "core features": [
+    "Efficient counting of k-mers in DNA sequences",
+    "Memory-optimized algorithms for k-mer storage",
+    "Support for querying and analysis of k-mer occurrences"
+  ],
+  "general tags": [
+    "Genome Analysis",
+    "K-mer Counting",
+    "Bioinformatics"
+  ],
+  "additional tags": {
+    "research discipline": "Computational Biology",
+    "research area": "Sequence Analysis",
+    "software class": "Tool",
+    "software type": "Sequence Analysis Tool"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "software_name": "Theano",
+  "comprehensive_overview": "Theano is an open-source numerical computation library for deep learning research, development, and deployment. It allows users to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently, making it popular for building and training neural networks.",
+  "core_features": [
+    "Symbolic math expressions",
+    "GPU computation optimization",
+    "Deep learning model development"
+  ],
+  "general_tags": ["Deep Learning", "Numerical Computation", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Deep Learning",
+    "software_class": "Numerical Library",
+    "software_type": "Library"
+  }
+}

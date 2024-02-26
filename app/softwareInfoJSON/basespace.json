@@ -1,0 +1,17 @@
+{
+    "software": "Basespace",
+    "overview": "Basespace is an Illumina cloud-based platform for bioinformatics analysis and management of genomics data, providing tools for sequencing data analysis, collaboration, and sharing.",
+    "core_features": [
+        "Automated bioinformatics pipelines for sequencing data analysis",
+        "Secure cloud storage and sharing of genomics data",
+        "Integration with popular bioinformatics tools and databases",
+        "Collaboration features for sharing results and workflows"
+    ],
+    "general_tags": ["bioinformatics", "genomics data analysis", "cloud platform"],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Bioinformatics",
+        "software_class": "Bioinformatics Platform",
+        "software_type": "Service"
+    }
+}

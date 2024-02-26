@@ -1,0 +1,21 @@
+{
+  "HISAT2": {
+    "overview": "HISAT2 is a fast and sensitive alignment software tool for mapping high-throughput sequencing data to a reference genome. It performs splice-aware alignment and enables accurate and efficient mapping of RNA-seq reads.",
+    "core_features": [
+      "High-throughput sequencing data alignment",
+      "Splice-aware alignment",
+      "RNA-seq read mapping"
+    ],
+    "general_tags": [
+      "Bioinformatics",
+      "Sequence Alignment",
+      "RNA-seq Analysis"
+    ],
+    "additional_tags": {
+      "research_discipline": "Genomics",
+      "research_area": "RNA Sequencing",
+      "software_class": "Tool",
+      "software_type": "Alignment Software"
+    }
+  }
+}

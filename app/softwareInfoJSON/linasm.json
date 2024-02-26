@@ -1,0 +1,12 @@
+{
+  "software_name": "LinASM",
+  "comprehensive_overview": "LinASM is a linear assembly language that allows for low-level programming with a focus on performance and control over hardware resources.",
+  "core_features": "1. Low-level programming capabilities\n2. Emphasis on performance optimization\n3. Control over hardware resources",
+  "general_tags": ["linear assembly language", "low-level programming", "performance optimization"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Computer Architecture",
+    "software_class": "Programming Language",
+    "software_type": "Compiler"
+  }
+}

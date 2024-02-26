@@ -1,0 +1,16 @@
+{
+  "software_name": "VisiData",
+  "comprehensive_overview": "VisiData is an open-source multitool for data exploration and analysis in the terminal. It provides a versatile and interactive environment for working with tabular data, supporting operations such as filtering, sorting, visualization, and transformation directly in the command line.",
+  "core_features": [
+    "Tabular data exploration",
+    "Interactive data analysis",
+    "Command-line data visualization"
+  ],
+  "general_tags": ["Data Analysis", "Terminal Tool", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Data Exploration",
+    "software_class": "Data Tool",
+    "software_type": "Utility"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "software_name": "Libvori",
+  "comprehensive_overview": "Libvori is a software library designed for simulating the growth of Voronoi cells in biological tissues. It is specifically tailored for modeling and analyzing cell dynamics and interactions within tissues.",
+  "core_features": [
+    "Simulation of Voronoi cell growth",
+    "Modeling cell dynamics",
+    "Analysis of cell interactions in tissues"
+  ],
+  "general_tags": [
+    "simulation",
+    "cell dynamics",
+    "tissue analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Biophysics",
+    "software_class": "Modeling & Simulation",
+    "software_type": "Library"
+  }
+}

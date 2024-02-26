@@ -1,0 +1,12 @@
+{
+    "software_name": "ncdf4",
+    "comprehensive_overview": "ncdf4 is an R package used for creating, reading, and writing netCDF files in a simple and efficient manner.",
+    "core_features": "1. Creation, reading, and writing of netCDF files. 2. Easy manipulation of netCDF variables and attributes. 3. Support for large netCDF files. 4. Integration with R language for data analysis and visualization.",
+    "general_tags": ["netCDF", "R package", "data manipulation", "file I/O"],
+    "additional_tags": {
+        "research_discipline": "Data Science",
+        "research_area": "Climate Science, Environmental Science",
+        "software_class": "Data Processing",
+        "software_type": "Library"
+    }
+}

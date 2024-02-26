@@ -1,0 +1,21 @@
+{
+    "tool": "UMFPACK",
+    "overview": "UMFPACK is a suite of sparse matrix solvers for large-scale numerical computations, particularly focusing on solving sparse linear systems efficiently. It offers a range of direct and iterative solvers optimized for sparse matrices arising in diverse scientific and engineering applications.",
+    "core_features": [
+        "Direct and iterative solvers for sparse linear systems",
+        "Support for symmetric and unsymmetric matrices",
+        "Efficient handling of large-scale sparse matrices",
+        "Optimized for numerical computations in scientific simulations"
+    ],
+    "general_tags": [
+        "sparse matrix solver",
+        "numerical computation",
+        "scientific computing tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "Numerical Analysis",
+        "research_area": "Linear Algebra",
+        "software_class": "Library",
+        "software_type": "Sparse Solver"
+    }
+}

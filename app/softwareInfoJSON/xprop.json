@@ -1,0 +1,21 @@
+{
+    "tool": "xprop",
+    "overview": "xprop is a utility in the X Window System that allows users to retrieve and display properties of X windows. It provides a way to query various attributes of application windows, such as window title, class, size, position, and other metadata, aiding in window management and debugging tasks.",
+    "core_features": [
+        "Displaying window properties and attributes",
+        "Retrieving metadata of X windows and applications",
+        "Useful for window management and debugging",
+        "Command-line interface for querying X window properties"
+    ],
+    "general_tags": [
+        "X Window System",
+        "window properties",
+        "debugging tool"
+    ],
+    "additional_tags": {
+        "research_discipline": "",
+        "research_area": "",
+        "software_class": "Utility",
+        "software_type": "Window Property Tool"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "Homer": {
+    "overview": "HOMER (Hypergeometric Optimization of Motif EnRichment) is a suite of tools for the analysis of DNA sequences to discover transcription factor binding sites and cis-regulatory elements. It offers a range of functions for motif discovery and annotation.",
+    "core_features": [
+      "Motif discovery",
+      "Transcription factor binding site analysis",
+      "Cis-regulatory element identification"
+    ],
+    "general_tags": [
+      "Bioinformatics",
+      "Genomic Analysis",
+      "DNA Sequences"
+    ],
+    "additional_tags": {
+      "research_discipline": "Genomics",
+      "research_area": "Transcription Regulation",
+      "software_class": "Tool",
+      "software_type": "Sequence Analysis Software"
+    }
+  }
+}

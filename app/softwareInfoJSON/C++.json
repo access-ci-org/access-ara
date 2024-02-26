@@ -1,1 +1,12 @@
-As "C++" is a programming language like "C", additional information is typically not applicable to tools or software. If you have a specific C++-based tool or software in mind, please provide its name so I can generate a detailed JSON output for that particular tool.
+{
+  "software name": "C++",
+  "comprehensive overview": "C++ is a high-level programming language developed by Bjarne Stroustrup as an extension of the C programming language. It is known for its efficiency, flexibility, and performance, making it widely used in developing system software, game engines, desktop applications, and more.",
+  "core features": "Strongly typed language, allows object-oriented programming, supports generic programming through templates, provides low-level memory manipulation, offers standard template library (STL) for data structures and algorithms",
+  "general tags": ["programming language", "software development", "system programming"],
+  "additional tags": {
+    "research discipline": [],
+    "research area": [],
+    "software class": "Programming language",
+    "software type": "Compiler"
+  }
+}

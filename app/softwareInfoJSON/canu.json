@@ -1,0 +1,23 @@
+{
+    "software": "canu",
+    "overview": "Canu is a software tool designed for assembling long reads produced by single-molecule sequencing technologies like PacBio and Oxford Nanopore. It is known for its efficiency in handling large genome assemblies.",
+    "core_features": [
+        "Efficient assembly of long reads",
+        "Correction of sequencing errors",
+        "Support for multi-contig assemblies",
+        "Scaling to large genomes",
+        "Capabilities for repetitive regions"
+    ],
+    "general_tags": [
+        "genome assembly",
+        "long-read sequencing",
+        "bioinformatics analysis",
+        "assembly correction"
+    ],
+    "additional_tags": {
+        "research_discipline": "Genomics",
+        "research_area": "Genome Assembly",
+        "software_class": "Bioinformatics Tools",
+        "software_type": "Open Source"
+    }
+}

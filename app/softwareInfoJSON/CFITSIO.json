@@ -1,24 +1,12 @@
 {
     "software_name": "CFITSIO",
-    "overview": "CFITSIO is a library for reading and writing data in FITS (Flexible Image Transport System) format commonly used in astronomy. It provides an interface for storing and retrieving astronomical data including images, tables, and binary data.",
-    "core_features": [
-        "FITS format support",
-        "Astronomical data handling",
-        "Image and table data access"
-    ],
-    "general_tags": [
-        "Astronomy",
-        "Data storage",
-        "FITS format"
-    ],
-    "research_discipline": [
-        "Astronomy",
-        "Astrophysics"
-    ],
-    "research_area": [
-        "Astronomical data processing",
-        "FITs format"
-    ],
-    "software_class": "Library",
-    "software_type": "FITS format data handler"
+    "comprehensive_overview": "CFITSIO is a library for reading and writing data in FITS (Flexible Image Transport System) format commonly used in astronomy and astrophysics. It provides tools for efficient access to FITS files, data manipulation, and analysis for astronomical data.",
+    "core_features": ["Library for reading and writing FITS data", "Efficient access to FITS files", "Supports data manipulation and analysis for astronomy"],
+    "general_tags": ["FITS data library", "Astronomy data analysis"],
+    "additional_tags": {
+        "research_discipline": "Astronomy",
+        "research_area": "Data Handling",
+        "software_class": "Library",
+        "software_type": "Utility"
+    }
 }

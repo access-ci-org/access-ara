@@ -1,0 +1,16 @@
+{
+  "software_name": "AutoDock",
+  "comprehensive_overview": "AutoDock is a molecular modeling software used for predicting the interaction of small molecules with proteins. It employs molecular docking algorithms to analyze and predict the binding of ligands to protein structures, facilitating drug discovery, protein-ligand binding studies, and virtual screening.",
+  "core_features": [
+    "Molecular docking simulations",
+    "Protein-ligand interaction prediction",
+    "Drug discovery and design applications"
+  ],
+  "general_tags": ["Molecular Modeling", "Drug Discovery", "Protein-Ligand Interaction"],
+  "additional_tags": {
+    "research_discipline": "Chemistry",
+    "research_area": "Computational Biology",
+    "software_class": "Modeling Software",
+    "software_type": "Tool"
+  }
+}

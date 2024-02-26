@@ -1,0 +1,24 @@
+{
+  "software_name": "OpenSceneGraph",
+  "comprehensive_overview": "OpenSceneGraph is an open-source high-performance 3D graphics toolkit. It is used for creating applications such as virtual reality, flight simulation, scientific visualization, and games.",
+  "core_features": [
+    "Cross-platform support",
+    "High-performance rendering",
+    "Scene graph architecture",
+    "Support for multiple file formats",
+    "Integration with other graphics libraries"
+  ],
+  "general_tags": [
+    "graphics",
+    "3D",
+    "visualization",
+    "simulation",
+    "games"
+  ],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "Graphics Library",
+    "software_type": "Toolkit"
+  }
+}

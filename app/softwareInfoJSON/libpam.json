@@ -1,0 +1,21 @@
+{
+  "software_name": "libpam",
+  "comprehensive_overview": "libpam, or Pluggable Authentication Modules library, is a library for enabling flexible authentication mechanisms in Unix-like systems. It allows developers to implement custom authentication methods and integrate them into the system authentication framework.",
+  "core_features": [
+    "Pluggable authentication support",
+    "Flexible authentication mechanisms",
+    "Custom authentication module integration",
+    "User authentication management"
+  ],
+  "general_tags": [
+    "authentication",
+    "security",
+    "Unix systems"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Security",
+    "research_area": "Authentication Systems",
+    "software_class": "Library",
+    "software_type": "Authentication"
+  }
+}

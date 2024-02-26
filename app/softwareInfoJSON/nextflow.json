@@ -1,0 +1,23 @@
+{
+    "software_name": "Nextflow",
+    "comprehensive_overview": "Nextflow is a data-driven workflow management system that enables the writing of parallel and scalable computational pipelines using the Groovy domain-specific language. It simplifies the implementation and reproducibility of complex analysis workflows across different computing environments.",
+    "core_features": [
+        "Declarative and data-driven workflow scripting",
+        "Support for various execution platforms including local, cluster, and cloud",
+        "Built-in support for containerization using Docker/Singularity",
+        "Traceability, dependency management, and automatic parallelization",
+        "Enhanced fault tolerance and resumption capabilities"
+    ],
+    "general_tags": [
+        "workflow management", 
+        "computational pipelines", 
+        "reproducible research", 
+        "data science"
+    ],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Genomics",
+        "software_class": "Pipeline Management",
+        "software_type": "Workflow Engine"
+    }
+}

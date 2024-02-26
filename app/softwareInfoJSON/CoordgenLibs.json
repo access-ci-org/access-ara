@@ -1,1 +1,17 @@
-I could not find specific details regarding "CoordgenLibs" at the moment. If you have additional context or specific information about "CoordgenLibs" that you would like me to include, please provide more details so I can create a detailed JSON output for "CoordgenLibs."
+{
+    "software_name": "CoordgenLibs",
+    "comprehensive_overview": "CoordgenLibs is a set of libraries for handling chemical structure generation and manipulation tasks. It aims to provide developers with tools to generate, edit, and analyze chemical structures in various formats.",
+    "core_features": [
+        "Generation of 2D and 3D coordinates for chemical structures",
+        "Editing and manipulation of chemical structures",
+        "Support for various chemical structure formats",
+        "Integration with other cheminformatics tools"
+    ],
+    "general_tags": ["cheminformatics", "chemical structures", "molecular modeling"],
+    "additional_tags": {
+        "research_discipline": "Chemistry",
+        "research_area": "Cheminformatics",
+        "software_class": "Library",
+        "software_type": "Chemical structure generation"
+    }
+}

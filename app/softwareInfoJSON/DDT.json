@@ -1,1 +1,20 @@
-I'd be glad to provide information on "DDT." However, I'd like to clarify the specific context you're referring to with "DDT" as it could represent different software, technologies, or concepts. Could you please offer more details or specify if "DDT" relates to a particular software, tool, or industry term so I can provide precise information?
+{
+  "software_name": "DDT",
+  "comprehensive_overview": "DDT (Data Debugging Tool) is a parallel program debugging tool designed to help programmers find bugs in their MPI (Message Passing Interface) programs through a user-friendly interface.",
+  "core_features": [
+    "Identifying bugs in MPI programs",
+    "User-friendly interface",
+    "Debugging support for parallel programs"
+  ],
+  "general_tags": [
+    "debugging tool",
+    "MPI programs",
+    "parallel programming"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Parallel Computing",
+    "software_class": "Debugging Tool",
+    "software_type": "MPI Debugger"
+  }
+}

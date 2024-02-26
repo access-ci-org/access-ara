@@ -1,0 +1,21 @@
+{
+    "software_name": "NiBabel",
+    "comprehensive_overview": "NiBabel is a library that provides read and write access to some common medical and neuroimaging file formats, including NIfTI1, ANALYZE (plain, SPM99, SPM2, SPM5), MGH and ECAT as well as Philips PAR/REC. The various image format classes give full or selective access to header (meta) information and access to the image data is made available via NumPy arrays.",
+    "core_features": [
+        "Read and write access to common medical and neuroimaging file formats",
+        "Provides access to header (meta) information",
+        "Allows access to image data through NumPy arrays"
+    ],
+    "general_tags": [
+        "neuroimaging",
+        "medical imaging",
+        "file formats",
+        "Python library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Neuroscience",
+        "research_area": "Medical Imaging",
+        "software_class": "Image Processing",
+        "software_type": "Python Library"
+    }
+}

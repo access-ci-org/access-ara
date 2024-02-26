@@ -1,0 +1,16 @@
+{
+    "software_name": "Optuna",
+    "comprehensive_overview": "Optuna is an open-source hyperparameter optimization framework to automate hyperparameter search for machine learning algorithms. It can be used with any machine learning framework and optimizes a wide range of models effectively.",
+    "core_features": "1. Efficient hyperparameter optimization algorithms such as TPE (Tree-structured Parzen Estimator) and CMA-ES (Covariance Matrix Adaptation Evolution Strategy).
+    2. Easy integration with major machine learning frameworks like TensorFlow, PyTorch, Scikit-learn, etc.
+    3. Visualization tools for analyzing optimization results and study hyperparameter relationships.
+    4. Support for distributed optimization for scaling hyperparameter search.
+    5. Ability to define flexible search spaces for hyperparameters.",
+    "general_tags": ["hyperparameter optimization", "machine learning", "automation"],
+    "additional_tags": {
+        "research_discipline": ["Computer Science", "Statistics"],
+        "research_area": ["Machine Learning", "Artificial Intelligence"],
+        "software_class": "Hyperparameter Optimization Framework",
+        "software_type": "Open-source"
+    }
+}

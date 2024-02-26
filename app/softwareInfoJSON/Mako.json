@@ -1,0 +1,19 @@
+{
+  "Mako": {
+    "overview": "Mako is a template library for Python that allows developers to generate dynamic content in various formats such as HTML, XML, or text files. It provides a powerful and flexible way to create templates and combine them with data to produce output.",
+    "core_features": [
+      "Template generation for dynamic content",
+      "Supports HTML, XML, and text formats",
+      "Flexible template design",
+      "Data integration and manipulation",
+      "Customizable template logic"
+    ],
+    "general_tags": ["Template library", "Dynamic content generation", "Python"],
+    "additional_tags": {
+      "research_discipline": ["Computer Science", "Web Development"],
+      "research_area": ["Template Engines", "Dynamic Web Content"],
+      "software_class": "Library",
+      "software_type": "Development"
+    }
+  }
+}

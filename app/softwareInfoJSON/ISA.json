@@ -1,0 +1,21 @@
+{
+    "software_name": "ISA",
+    "comprehensive_overview": "The ISA (Investigation, Study, Assay) infrastructure suite is a general-purpose software suite for the organization, management, and storage of life science data. It provides a framework for describing and capturing information on the experimental metadata, particularly data from high-throughput assays, in a more structured way.",
+    "core_features": [
+        "Organizing, managing, and storing life science data",
+        "Describing and capturing experimental metadata",
+        "Structured representation of data from high-throughput assays"
+    ],
+    "general_tags": [
+        "metadata management",
+        "life science data",
+        "high-throughput assays",
+        "data organization"
+    ],
+    "additional_tags": {
+        "research_discipline": "Life Sciences",
+        "research_area": "High-throughput Assays",
+        "software_class": "Metadata Management",
+        "software_type": "Data Organization"
+    }
+}

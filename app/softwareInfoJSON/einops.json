@@ -1,0 +1,20 @@
+{
+  "software_name": "einops",
+  "comprehensive_overview": "einops is a Python library for manipulating tensor shapes with a clear and concise syntax. It simplifies reshaping, permuting, and transposing tensors in a flexible way.",
+  "core_features": [
+    "Simplifies tensor reshaping",
+    "Flexible tensor manipulation operations",
+    "Clear and concise syntax"
+  ],
+  "general_tags": [
+    "Python library",
+    "Tensor manipulation",
+    "Data processing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Machine Learning",
+    "software_class": "Data Processing",
+    "software_type": "Library"
+  }
+}

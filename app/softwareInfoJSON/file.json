@@ -1,0 +1,19 @@
+```json
+{
+  "software": "File",
+  "comprehensive_overview": "File is a utility in Unix and Unix-like operating systems for determining the type of data contained in a computer file.",
+  "core_features": [
+    "Determine the type of data contained in a file"
+  ],
+  "general_tags": [
+    "file type determination",
+    "Unix utility"
+  ],
+  "additional_tags": {
+    "research_discipline": [],
+    "research_area": [],
+    "software_class": "Utility",
+    "software_type": "System tool"
+  }
+}
+```

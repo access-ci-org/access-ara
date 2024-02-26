@@ -1,0 +1,21 @@
+{
+  "tool": "tqdm",
+  "overview": "tqdm is a fast, extensible progress bar library for Python and command line applications. It provides a simple and customizable way to visualize the progress of iterative tasks, making it easier for users to track the execution of loops and tasks.",
+  "core_features": [
+    "Dynamic progress bar with time estimation",
+    "Supports various iterable objects",
+    "Customizable bar styles and appearance",
+    "Integration with Jupyter notebooks"
+  ],
+  "general_tags": [
+    "progress bar",
+    "Python library",
+    "command line tool"
+  ],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "Library",
+    "software_type": "Progress Bar"
+  }
+}

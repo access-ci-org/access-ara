@@ -1,0 +1,16 @@
+{
+  "software_name": "Shiny",
+  "comprehensive_overview": "Shiny is an R package that allows users to build interactive web applications directly from R. It simplifies the process of creating web-based data visualizations, dashboards, and interactive reports using R code without the need for web development skills.",
+  "core_features": [
+    "Web application development with R",
+    "Interactive data visualization",
+    "Reactive programming for dynamic apps"
+  ],
+  "general_tags": ["Data Visualization", "Web Applications", "R Package"],
+  "additional_tags": {
+    "research_discipline": "Statistics",
+    "research_area": "Data Science",
+    "software_class": "Web Framework",
+    "software_type": "Library"
+  }
+}

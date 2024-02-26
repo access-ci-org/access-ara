@@ -1,0 +1,23 @@
+{
+    "software": "cairo",
+    "overview": "Cairo is a 2D graphics library that provides a common API for various drawing operations. It is used by developers to create vector graphics, image composition, and rendering for applications, including desktop environments and applications.",
+    "core_features": [
+        "High-quality vector graphics rendering",
+        "Drawing primitives like paths, text, and shapes",
+        "Support for anti-aliasing and transparency",
+        "Cross-platform compatibility",
+        "Scalable and device-independent output"
+    ],
+    "general_tags": [
+        "2D graphics",
+        "vector graphics",
+        "rendering engine",
+        "cross-platform development"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Graphics",
+        "research_area": "Graphics Libraries",
+        "software_class": "Rendering Engine",
+        "software_type": "Open Source"
+    }
+}

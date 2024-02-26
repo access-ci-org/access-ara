@@ -1,0 +1,23 @@
+{
+    "software": "Gettext",
+    "overview": "Gettext is a widely used internationalization and localization library that provides tools for translating software into different languages. It enables developers to create multilingual applications with support for message catalogs and locale settings.",
+    "core_features": [
+        "Text translation and localization",
+        "Message catalogs",
+        "Support for multiple languages",
+        "Locale-aware formatting",
+        "Plural forms handling"
+    ],
+    "general_tags": [
+        "internationalization",
+        "localization",
+        "translation tools",
+        "multilingual applications"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Localization Engineering",
+        "software_class": "Localization Library",
+        "software_type": "Open Source"
+    }
+}

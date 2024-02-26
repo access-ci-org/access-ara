@@ -1,0 +1,27 @@
+```json
+{
+    "software_name": "Paraview",
+    "comprehensive_overview": "Paraview is an open-source, multi-platform data analysis and visualization application. It is designed to visualize large data sets using distributed memory computing resources.",
+    "core_features": [
+        "Supports interactive visualization of large datasets",
+        "Utilizes distributed memory computing for scalability",
+        "Offers a wide range of visualization techniques and tools",
+        "Enables data analysis and exploration",
+        "Provides a user-friendly interface for creating visualizations",
+        "Supports numerous data formats"
+    ],
+    "general_tags": [
+        "Data visualization",
+        "Data analysis",
+        "Big data",
+        "Open-source",
+        "Multi-platform"
+    ],
+    "additional_tags": {
+        "research_discipline": "Data Science",
+        "research_area": "Computational Science",
+        "software_class": "Visualization tool",
+        "software_type": "Data Analysis and Visualization"
+    }
+}
+```

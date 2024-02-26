@@ -1,0 +1,21 @@
+{
+  "software_name": "Ninja",
+  "comprehensive_overview": "Ninja is a build system that aims to be extremely fast. It replaces the widely-used Make build system and its default Ninja build configuration files are written in a simple declarative language.",
+  "core_features": [
+    "Faster build times compared to Make",
+    "Simple declarative language for build configuration",
+    "Built-in support for dependency tracking",
+    "Cross-platform compatibility"
+  ],
+  "general_tags": [
+    "Build system",
+    "Software development",
+    "Compilation"
+  ],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "Build automation",
+    "software_type": "Compiler/Build tool"
+  }
+}

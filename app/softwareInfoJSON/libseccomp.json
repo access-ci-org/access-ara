@@ -1,0 +1,21 @@
+{
+  "software_name": "libseccomp",
+  "comprehensive_overview": "libseccomp is a library for implementing secure computing mode (seccomp) filters in Linux systems. It enables developers to apply fine-grained filtering on system calls, restricting the actions that processes can perform for improved system security.",
+  "core_features": [
+    "Secure computing mode (seccomp) filtering",
+    "Fine-grained control of system calls",
+    "Process action restriction",
+    "Enhanced system security"
+  ],
+  "general_tags": [
+    "seccomp filtering",
+    "system call restriction",
+    "security"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Security",
+    "research_area": "System Hardening",
+    "software_class": "Library",
+    "software_type": "Security"
+  }
+}

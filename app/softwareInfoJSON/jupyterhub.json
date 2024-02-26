@@ -1,0 +1,20 @@
+{
+    "software name": "JupyterHub",
+    "comprehensive overview": "JupyterHub is a multi-user server for Jupyter notebooks that allows users to access Jupyter notebooks remotely via a web browser. It is commonly used in educational settings, research institutions, and data science teams to provide a collaborative and scalable environment for interactive computing and data analysis.",
+    "core features": [
+        "Multi-user server for hosting Jupyter notebooks",
+        "Remote access to Jupyter notebooks via web interface",
+        "Scalable and centralized management of computational resources"
+    ],
+    "general tags": [
+        "Interactive Computing",
+        "Collaborative Environment",
+        "Multi-User Server"
+    ],
+    "additional tags": {
+        "research discipline": "Data Science",
+        "research area": "Educational Technology",
+        "software class": "Web Application",
+        "software type": "Collaborative Computing Tool"
+    }
+}

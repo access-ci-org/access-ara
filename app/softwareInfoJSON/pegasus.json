@@ -1,0 +1,24 @@
+{
+    "software_name": "Pegasus",
+    "comprehensive_overview": "Pegasus is a workflow management system that provides automation capabilities for large-scale scientific computing. It allows users to define, create, execute, monitor, and debug workflows to facilitate complex computational tasks.",
+    "core_features": [
+        "Workflow automation",
+        "Scalability for large scientific computing",
+        "Graph-based representation of workflows",
+        "Integration with various execution environments",
+        "Dependency management",
+        "Error handling and recovery mechanisms"
+    ],
+    "general_tags": [
+        "Workflow Management",
+        "Computational Science",
+        "Automation",
+        "Scientific Computing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Computational Workflow Management",
+        "software_class": "Workflow Management System",
+        "software_type": "Automation Tool"
+    }
+}

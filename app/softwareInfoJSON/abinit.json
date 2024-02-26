@@ -1,0 +1,16 @@
+{
+  "software_name": "Abinit",
+  "comprehensive_overview": "Abinit is an open-source software package for first-principles calculations based on Density Functional Theory (DFT). It is used for studying the electronic structure, properties, and behaviors of materials at the atomic and molecular levels, providing insights into various scientific and engineering applications.",
+  "core_features": [
+    "Density Functional Theory (DFT)",
+    "Electronic structure calculations",
+    "Materials science simulations"
+  ],
+  "general_tags": ["Materials Science", "First-Principles Calculations", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Materials Science",
+    "research_area": "Computational Chemistry",
+    "software_class": "Simulation Package",
+    "software_type": "Tool"
+  }
+}

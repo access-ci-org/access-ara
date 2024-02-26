@@ -1,24 +1,12 @@
 {
     "software_name": "DCMTK",
-    "overview": "DCMTK (DICOM Toolkit) is a collection of libraries and applications for implementing the DICOM (Digital Imaging and Communications in Medicine) standard. It provides tools for the handling, storing, and converting of medical images and related data in DICOM format.",
-    "core_features": [
-        "DICOM standard implementation",
-        "Medical image handling",
-        "Data conversion"
-    ],
-    "general_tags": [
-        "Medical imaging",
-        "DICOM toolkit",
-        "Image data processing"
-    ],
-    "research_discipline": [
-        "Medical imaging",
-        "Health informatics"
-    ],
-    "research_area": [
-        "DICOM data management",
-        "Medical image analysis"
-    ],
-    "software_class": "Library & Toolkit",
-    "software_type": "DICOM implementation tool"
+    "comprehensive_overview": "DCMTK (DICOM Toolkit) is a collection of libraries and tools for handling Digital Imaging and Communications in Medicine (DICOM) image and data files. It provides a set of routines for reading, manipulating, and interpreting medical imaging data in the DICOM format.",
+    "core_features": ["Libraries for DICOM image handling", "Tools for managing medical imaging data", "Supports reading and manipulating DICOM files"],
+    "general_tags": ["DICOM handling", "Medical Imaging"],
+    "additional_tags": {
+        "research_discipline": "Medical Imaging",
+        "research_area": "DICOM Processing",
+        "software_class": "Imaging Toolkit",
+        "software_type": "Tool"
+    }
 }

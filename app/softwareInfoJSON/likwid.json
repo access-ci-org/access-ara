@@ -1,0 +1,21 @@
+{
+  "software_name": "likwid",
+  "comprehensive_overview": "Likwid (Like I Knew What I am Doing) is a performance monitoring and benchmarking tool for high-performance computing (HPC) systems. It offers capabilities for measuring hardware performance counters, memory bandwidth, cache utilization, and other metrics to analyze and optimize application performance.",
+  "core_features": [
+    "Performance monitoring",
+    "Hardware performance counters measurement",
+    "Memory bandwidth analysis",
+    "Cache utilization profiling"
+  ],
+  "general_tags": [
+    "performance monitoring",
+    "benchmarking",
+    "HPC systems"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High-Performance Computing",
+    "software_class": "Tool",
+    "software_type": "Performance Analysis"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "software_name": "NVIDIA",
+  "comprehensive_overview": "NVIDIA Corporation is an American technology company incorporated in Delaware and based in Santa Clara, California. It designs graphics processing units (GPUs) for the gaming and professional markets, as well as system on a chip units (SoCs) for the mobile computing and automotive market.",
+  "core_features": "1. High-performance GPUs for gaming and professional markets. 2. System on a Chip units for mobile computing and automotive markets.",
+  "general_tags": ["technology", "graphics processing units", "GPUs", "SoCs"],
+  "additional_tags": {
+    "research_discipline": "Computer Science, Engineering",
+    "research_area": "Graphics, High-Performance Computing",
+    "software_class": "Hardware Manufacturer",
+    "software_type": "Technology Company"
+  }
+}

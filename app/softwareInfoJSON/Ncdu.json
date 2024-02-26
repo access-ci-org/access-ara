@@ -1,0 +1,20 @@
+{
+  "software_name": "Ncdu",
+  "comprehensive_overview": "Ncdu (NCurses Disk Usage) is a disk usage analyzer with an ncurses interface. It is designed to find space hogs on a remote server where you don't have an entire graphical setup available, but it is a useful tool on local setups as well.",
+  "core_features": [
+    "Disk usage analysis",
+    "Ncurses interface",
+    "Finding space-consuming files"
+  ],
+  "general_tags": [
+    "Disk Usage",
+    "Analyzer",
+    "Ncurses"
+  ],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "Utility",
+    "software_type": "System Tool"
+  }
+}

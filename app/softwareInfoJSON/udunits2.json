@@ -1,0 +1,21 @@
+{
+    "tool": "udunits2",
+    "overview": "UDUNITS-2 is a library and utility for handling units of physical quantities, offering capabilities for unit conversion and manipulation in scientific applications. It provides a flexible and robust system for managing units and performing conversions in a consistent and reliable manner.",
+    "core_features": [
+        "Unit conversion and manipulation for physical quantities",
+        "Support for handling unit consistency and conversions in datasets",
+        "Extensive library of predefined units and conversions",
+        "Flexible API for integrating unit handling in scientific software"
+    ],
+    "general_tags": [
+        "unit conversion",
+        "scientific computing",
+        "library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Physical Sciences",
+        "research_area": "Measurement Standards",
+        "software_class": "Library",
+        "software_type": "Unit Handling Tool"
+    }
+}

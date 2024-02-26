@@ -1,0 +1,16 @@
+{
+  "software_name": "Redis",
+  "comprehensive_overview": "Redis is an open-source, in-memory data structure store used as a database, cache, and message broker. It supports various data structures such as strings, hashes, lists, sets, and sorted sets, offering high performance and scalability.",
+  "core_features": [
+    "In-memory data storage",
+    "Support for multiple data structures",
+    "Replication and clustering capabilities"
+  ],
+  "general_tags": ["Database", "In-Memory Storage", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Database Systems",
+    "software_class": "Data Store",
+    "software_type": "Database"
+  }
+}

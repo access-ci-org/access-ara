@@ -1,0 +1,12 @@
+{
+    "software": "module",
+    "comprehensive_overview": "The module command is a software tool that helps users manage environment modules on a system. Environment modules are files that set environment variables such as PATH, MANPATH, etc., to provide the appropriate software development environment for a particular software package or tool.",
+    "core_features": "1. Allows users to easily load, unload, or switch between different software environments.\n2. Manages dependencies by ensuring that the required environment variables are correctly set.\n3. Facilitates the coexistence of multiple versions of the same software package.\n4. Improves reproducibility by enabling users to specify the exact software environment for their work.",
+    "general_tags": ["environment management", "software development", "system administration"],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "System Tool",
+        "software_type": "Command Line Tool"
+    }
+}

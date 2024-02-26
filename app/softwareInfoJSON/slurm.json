@@ -1,0 +1,20 @@
+{
+  "software": "Slurm",
+  "comprehensive_overview": "Slurm is an open-source workload manager and job scheduler used in high-performance computing (HPC) clusters and environments. It provides a scalable and reliable system for allocating computing resources, scheduling tasks, and managing job workflows efficiently across compute nodes in a cluster.",
+  "core_features": [
+    "Job scheduling",
+    "Resource allocation",
+    "Cluster management"
+  ],
+  "general_tags": [
+    "HPC",
+    "job scheduler",
+    "cluster computing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "High-Performance Computing",
+    "software_class": "Workload Manager",
+    "software_type": "Job Scheduler"
+  }
+}

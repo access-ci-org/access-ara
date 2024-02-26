@@ -1,0 +1,20 @@
+{
+  "software": "Seurat",
+  "comprehensive_overview": "Seurat is a popular R package used for single-cell genomics analysis and visualization. It provides a comprehensive toolkit for exploring, analyzing, and interpreting single-cell RNA sequencing data. Seurat offers various algorithms for clustering, dimensionality reduction, and cell-type identification in single-cell datasets.",
+  "core_features": [
+    "Single-cell genomics analysis",
+    "Data exploration",
+    "Cluster identification"
+  ],
+  "general_tags": [
+    "single-cell RNA-seq",
+    "genomics analysis",
+    "R package"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Single-cell Genomics",
+    "software_class": "Package",
+    "software_type": "Genomics Analysis"
+  }
+}

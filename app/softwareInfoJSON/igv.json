@@ -1,0 +1,20 @@
+{
+  "software name": "IGV",
+  "comprehensive overview": "Integrative Genomics Viewer (IGV) is a high-performance genomics visualization tool that allows users to explore and analyze large-scale genomics data interactively. It is widely used in genomics research for visualizing genetic variants, gene expression, and epigenetic data.",
+  "core features": [
+    "Visualization of genomics data with interactive features",
+    "Support for genetic variants, gene expression, and epigenetic data",
+    "Advanced plotting and data exploration capabilities"
+  ],
+  "general tags": [
+    "Genomics",
+    "Data Visualization",
+    "Research Tool"
+  ],
+  "additional tags": {
+    "research discipline": "Genomics",
+    "research area": "Data Analysis",
+    "software class": "Visualization Tool",
+    "software type": "Genomics Tool"
+  }
+}

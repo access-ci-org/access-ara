@@ -1,0 +1,16 @@
+{
+  "software_name": "RDFlib",
+  "comprehensive_overview": "RDFlib is a Python library for working with RDF (Resource Description Framework) data. It allows developers to parse, manipulate, store, and serialize RDF data using various RDF serialization formats.",
+  "core_features": [
+    "RDF parsing and serialization",
+    "Triplestore for RDF data storage",
+    "SPARQL query support"
+  ],
+  "general_tags": ["Semantic Web", "Linked Data", "Library"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Semantic Web",
+    "software_class": "Data Management",
+    "software_type": "Library"
+  }
+}

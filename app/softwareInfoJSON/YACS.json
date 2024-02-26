@@ -1,0 +1,16 @@
+{
+  "software_name": "YACS",
+  "comprehensive_overview": "YACS (Yet Another Configuration System) is a lightweight, Python-based configuration management system used for handling configuration files and settings in applications. It provides a simple and structured way to manage and access configuration parameters in Python projects.",
+  "core_features": [
+    "Configuration file management",
+    "Parameter handling",
+    "Integration with Python applications"
+  ],
+  "general_tags": ["Configuration Management", "Python Library", "Settings Control"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Configuration Systems",
+    "software_class": "Configuration Tool",
+    "software_type": "Library"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "software_name": "osu",
+    "comprehensive_overview": "osu! is a free-to-play online rhythm game developed and published by Australian developer Dean Herbert. It was released for Microsoft Windows in September 2007. In osu!, players use a pointing device to manipulate on-screen objects to a set rhythm. The game features multiple game modes, such as osu!standard, osu!taiko, osu!catch, osu!mania, each with different gameplay mechanics.",
+    "core_features": [
+        "Rhythm-based gameplay",
+        "User-generated content",
+        "Multiplayer mode",
+        "Leaderboards",
+        "Customizable skins and beatmaps"
+    ],
+    "general_tags": [
+        "rhythm game",
+        "online game",
+        "music",
+        "rhythm-based"
+    ],
+    "additional_tags": {
+        "research_discipline": [],
+        "research_area": [],
+        "software_class": "Game",
+        "software_type": "Entertainment"
+    }
+}

@@ -1,24 +1,12 @@
 {
     "software_name": "Biopython",
-    "overview": "Biopython is a set of freely available Python tools for handling biological data. It provides modules for bioinformatics tasks such as reading and writing various sequence file formats, accessing online biological databases, and performing sequence analysis.",
-    "core_features": [
-        "Biological data handling",
-        "Sequence analysis",
-        "Database access"
-    ],
-    "general_tags": [
-        "Bioinformatics",
-        "Sequence analysis",
-        "Python library"
-    ],
-    "research_discipline": [
-        "Bioinformatics",
-        "Genomics"
-    ],
-    "research_area": [
-        "Sequence analysis",
-        "Biological data processing"
-    ],
-    "software_class": "Bioinformatics tool",
-    "software_type": "Python library"
+    "comprehensive_overview": "Biopython is a Python library for biological computation that provides tools for bioinformatics and computational biology tasks. It offers modules for DNA and protein sequence analysis, molecular modeling, phylogenetics, and genetic data processing.",
+    "core_features": ["Python library for biological computation", "DNA and protein sequence analysis tools", "Modules for molecular modeling and phylogenetics"],
+    "general_tags": ["Bioinformatics", "Computational biology"],
+    "additional_tags": {
+        "research_discipline": "Bioinformatics",
+        "research_area": "Biological Computation",
+        "software_class": "Bioinformatics Library",
+        "software_type": "Library"
+    }
 }

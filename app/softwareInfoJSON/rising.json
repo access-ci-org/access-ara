@@ -1,0 +1,22 @@
+{
+  "software_name": "Rising",
+  "comprehensive_overview": "Rising is a bioinformatics tool designed for the analysis and interpretation of RNA editing events in high-throughput sequencing data, particularly in cancer research.",
+  "core_features": [
+    "Identification of RNA editing events",
+    "Analysis of the impact of RNA editing on protein function and structure",
+    "Integration of various data sources for comprehensive analysis",
+    "Visualization tools for easy interpretation of results"
+  ],
+  "general_tags": [
+    "bioinformatics",
+    "RNA editing",
+    "sequencing data analysis",
+    "cancer research"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Cancer research",
+    "software_class": "Bioinformatics tool",
+    "software_type": "Analysis tool"
+  }
+}

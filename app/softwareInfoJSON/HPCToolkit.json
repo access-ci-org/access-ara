@@ -1,0 +1,21 @@
+{
+  "HPCToolkit": {
+    "overview": "HPCToolkit is a suite of performance tools designed for analyzing the performance of parallel and high-performance computing applications. It offers a range of tools for profiling, tracing, and analyzing the behavior of complex programs.",
+    "core_features": [
+      "Performance profiling",
+      "Tracing and analysis",
+      "Support for parallel computing"
+    ],
+    "general_tags": [
+      "Performance Analysis",
+      "Parallel Computing",
+      "Profiling"
+    ],
+    "additional_tags": {
+      "research_discipline": "Computer Science",
+      "research_area": "Performance Optimization",
+      "software_class": "Toolkit",
+      "software_type": "Performance Analysis Tool"
+    }
+  }
+}

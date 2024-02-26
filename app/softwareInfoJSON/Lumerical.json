@@ -1,0 +1,17 @@
+{
+  "software_name": "Lumerical",
+  "comprehensive_overview": "Lumerical provides photonic simulation software solutions with a focus on the design and analysis of photonic components, circuits, and systems. Their software enables engineers and researchers to simulate light propagation, diffraction, interference, polarization effects, and other optical phenomena.",
+  "core_features": [
+    "Simulation of light propagation",
+    "Design and analysis of photonic components and circuits",
+    "Modeling of optical phenomena such as diffraction, interference, and polarization effects",
+    "Integration with other simulation tools and environments"
+  ],
+  "general_tags": ["photonic simulation", "optical design", "simulation software"],
+  "additional_tags": {
+    "research_discipline": "Photonics",
+    "research_area": "Optical Engineering",
+    "software_class": "Simulation tool",
+    "software_type": "Commercial software"
+  }
+}

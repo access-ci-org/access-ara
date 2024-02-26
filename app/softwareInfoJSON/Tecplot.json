@@ -1,0 +1,16 @@
+{
+  "software_name": "Tecplot",
+  "comprehensive_overview": "Tecplot is a powerful visualization and analysis software used for visualizing scientific and engineering data. It offers a range of tools for generating high-quality plots, 2D/3D visualizations, and post-processing capabilities to analyze complex data sets.",
+  "core_features": [
+    "Advanced data visualization",
+    "Engineering and scientific plotting",
+    "Interactive data analysis tools"
+  ],
+  "general_tags": ["Data Visualization", "Engineering Analysis", "Visualization Software"],
+  "additional_tags": {
+    "research_discipline": "Engineering",
+    "research_area": "Data Visualization",
+    "software_class": "Visualization Tool",
+    "software_type": "Software"
+  }
+}

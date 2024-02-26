@@ -1,0 +1,16 @@
+{
+  "software_name": "SPAdes",
+  "comprehensive_overview": "SPAdes is a genome assembly software that is specifically designed for single-cell and multi-cell bacterial sequencing data. It uses a combination of de Bruijn graph algorithms and error correction methods to construct accurate genome sequences.",
+  "core_features": [
+    "De novo genome assembly",
+    "Single-cell sequencing support",
+    "Error correction algorithms"
+  ],
+  "general_tags": ["Bioinformatics", "Genome Assembly", "De Bruijn Graph"],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Genomics",
+    "software_class": "Genome Assembly",
+    "software_type": "Tool"
+  }
+}

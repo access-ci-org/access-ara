@@ -1,0 +1,12 @@
+{
+  "software_name": "makeinfo",
+  "comprehensive_overview": "makeinfo is a utility that is part of the GNU Texinfo suite, used for converting Texinfo source files into various output formats such as Info, HTML, and PDF. It is commonly utilized for creating documentation manuals and guides.",
+  "core_features": "1. Conversion of Texinfo source files to Info, HTML, and PDF formats.\n2. Customization options for formatting and styling the output.\n3. Integration with GNU Texinfo tools for comprehensive documentation generation.",
+  "general_tags": ["documentation", "Texinfo", "conversion"],
+  "additional_tags": {
+    "software_class": "Utility",
+    "software_type": "Tool",
+    "research_discipline": "Computer Science",
+    "research_area": "Documentation Generation"
+  }
+}

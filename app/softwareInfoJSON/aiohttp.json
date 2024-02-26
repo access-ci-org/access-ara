@@ -1,0 +1,16 @@
+{
+  "software_name": "aiohttp",
+  "comprehensive_overview": "aiohttp is a popular asynchronous framework for building web applications and APIs in Python. It leverages the asynchronous I/O capabilities of Python to handle concurrent requests efficiently, making it well-suited for high-performance web services and real-time applications.",
+  "core_features": [
+    "Asynchronous web server",
+    "WebSocket support",
+    "Request routing and middleware"
+  ],
+  "general_tags": ["Web Framework", "Asynchronous Programming", "Python Library"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Web Development",
+    "software_class": "Web Framework",
+    "software_type": "Library"
+  }
+}

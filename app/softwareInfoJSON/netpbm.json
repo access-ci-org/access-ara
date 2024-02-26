@@ -1,0 +1,12 @@
+{
+    "software_name": "netpbm",
+    "comprehensive_overview": "Netpbm is a toolkit for manipulation of graphic images, including conversion of images between different formats.",
+    "core_features": "Netpbm allows for a wide variety of image processing operations including but not limited to format conversion, basic editing, and image generation.",
+    "general_tags": ["image manipulation", "graphic images", "format conversion"],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Image Processing",
+        "software_class": "Image Processing Toolkit",
+        "software_type": "Command-line Tool"
+    }
+}

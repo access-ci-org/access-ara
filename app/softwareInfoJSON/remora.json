@@ -1,0 +1,22 @@
+{
+  "software_name": "Remora",
+  "comprehensive_overview": "Remora is a bioinformatics tool designed for analyzing and visualizing metagenomic assemblies. It facilitates the identification of genomic characteristics and provides insights into the composition and structure of metagenomes.",
+  "core_features": [
+    "Metagenomic assembly analysis",
+    "Genomic characteristics identification",
+    "Metagenome composition visualization",
+    "Metagenome structure analysis"
+  ],
+  "general_tags": [
+    "bioinformatics",
+    "metagenomics",
+    "assembly analysis",
+    "visualization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Metagenomics",
+    "software_class": "Analysis tool",
+    "software_type": "Bioinformatics tool"
+  }
+}

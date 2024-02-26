@@ -1,0 +1,21 @@
+{
+    "tool": "XPMEM",
+    "overview": "XPMEM (Cross-Page Memory) is a Linux kernel module that provides shared memory functionality for inter-process communication by allowing multiple processes to access a shared memory region. XPMEM facilitates efficient data exchange and communication between processes with reduced overhead and latency.",
+    "core_features": [
+        "Shared memory access for inter-process communication",
+        "Enables multiple processes to read and write shared memory",
+        "Reduced data transfer latency and inter-process synchronization",
+        "Kernel module integration for memory sharing"
+    ],
+    "general_tags": [
+        "shared memory",
+        "inter-process communication",
+        "Linux kernel module"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Operating Systems",
+        "software_class": "Kernel Module",
+        "software_type": "Shared Memory Tool"
+    }
+}

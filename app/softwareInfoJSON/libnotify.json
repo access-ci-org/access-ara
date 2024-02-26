@@ -1,0 +1,21 @@
+{
+  "software_name": "libnotify",
+  "comprehensive_overview": "libnotify is a library for sending desktop notifications to the user, providing a unified interface for displaying notifications on various desktop environments. It allows applications to inform users about events or updates in a user-friendly manner.",
+  "core_features": [
+    "Desktop notifications",
+    "User-friendly notification display",
+    "Support for various desktop environments",
+    "Event notification API"
+  ],
+  "general_tags": [
+    "desktop notifications",
+    "user interface",
+    "event notifications"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "User Interfaces",
+    "software_class": "Library",
+    "software_type": "Notification"
+  }
+}

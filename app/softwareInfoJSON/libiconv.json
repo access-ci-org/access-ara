@@ -1,0 +1,21 @@
+{
+  "software_name": "libiconv",
+  "comprehensive_overview": "libiconv is a library for character encoding conversion, providing facilities for converting text between different character sets. It supports a wide range of encoding formats and is commonly used for internationalization and localization tasks.",
+  "core_features": [
+    "Character encoding conversion",
+    "Support for multiple encoding formats",
+    "Internationalization and localization",
+    "Unicode transformations"
+  ],
+  "general_tags": [
+    "character encoding",
+    "text conversion",
+    "internationalization"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "Text Processing",
+    "software_class": "Library",
+    "software_type": "Encoding Conversion"
+  }
+}

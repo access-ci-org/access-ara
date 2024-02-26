@@ -1,0 +1,23 @@
+{
+    "software": "Flex",
+    "overview": "Flex is a free and open-source tool that generates scanners, also known as lexical analyzers, for use in programs written in languages like C and C++. It is commonly used to tokenize and process text or input streams efficiently.",
+    "core_features": [
+        "Generation of lexical analyzers",
+        "Pattern matching based on regular expressions",
+        "Tokenization of input text",
+        "Integration with C/C++ programs",
+        "Customizable scanner generation"
+    ],
+    "general_tags": [
+        "lexical analysis",
+        "scanner generation",
+        "tokenization",
+        "text processing"
+    ],
+    "additional_tags": {
+        "research_discipline": "Computer Science",
+        "research_area": "Lexical Analysis",
+        "software_class": "Compiler Tools",
+        "software_type": "Open Source"
+    }
+}

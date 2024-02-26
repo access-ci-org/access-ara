@@ -1,0 +1,20 @@
+{
+  "software name": "graphite2",
+  "comprehensive overview": "Graphite2 is a font processing technology that supports complex text layout and shaping for various writing systems, including scripts with contextual shaping and ligatures. It is used for rendering text accurately and beautifully.",
+  "core features": [
+    "Support for complex text layout and shaping",
+    "Rendering of scripts with contextual shaping and ligatures",
+    "High-quality and accurate text rendering"
+  ],
+  "general tags": [
+    "Text Processing",
+    "Font Technology",
+    "Text Rendering"
+  ],
+  "additional tags": {
+    "research discipline": "Typography",
+    "research area": "Text Layout",
+    "software class": "Text Processing Library",
+    "software type": "Font Technology"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "software_name": "msrsync",
+  "comprehensive_overview": "msrsync is a utility to efficiently synchronize large genomic data sets using a combination of rsync and multi-segmented rsync (MSRSync) techniques.",
+  "core_features": [
+    "Efficient synchronization of large genomic datasets",
+    "Utilizes rsync and multi-segmented rsync (MSRSync) methods",
+    "Designed for high-performance and large-scale data transfer",
+    "Supports parallel processing for faster synchronization"
+  ],
+  "general_tags": [
+    "data synchronization",
+    "genomic data",
+    "high-performance computing"
+  ],
+  "additional_tags": {
+    "research_discipline": "Bioinformatics",
+    "research_area": "Genomics",
+    "software_class": "Data Management/Transfer",
+    "software_type": "Utility"
+  }
+}

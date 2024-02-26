@@ -1,0 +1,18 @@
+{
+  "Infernal": {
+    "overview": "Infernal is a software suite for searching DNA sequence databases for homologs to a query RNA sequence. It can build and search covariance models (CMs), which are statistical models of RNA secondary structure.",
+    "core_features": [
+      "Search DNA sequence databases for homologs",
+      "Build and search covariance models (CMs)",
+      "Predict RNA secondary structure",
+      "Statistical modeling of RNA sequences"
+    ],
+    "general_tags": ["RNA sequence analysis", "Statistical modeling", "Bioinformatics"],
+    "additional_tags": {
+      "research_discipline": ["Bioinformatics", "Computational Biology"],
+      "research_area": ["RNA Analysis", "Sequence Homology"],
+      "software_class": "Tool",
+      "software_type": "Bioinformatics"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "software_name": "Dorado",
+  "comprehensive_overview": "Dorado is a bioinformatics tool used for analyzing long reads from Oxford Nanopore and PacBio sequencing technologies. It focuses on improving the assembly and polishing of these long reads to provide high-quality genome reconstructions.",
+  "core_features": [
+    "Analyze long reads from Oxford Nanopore and PacBio sequencing technologies",
+    "Improves assembly and polishing of long reads",
+    "Provides high-quality genome reconstructions"
+  ],
+  "general_tags": [
+    "Bioinformatics",
+    "Genome Assembly",
+    "Long Reads Analysis"
+  ],
+  "additional_tags": {
+    "research_discipline": "Genomics",
+    "research_area": "Bioinformatics",
+    "software_class": "Bioinformatics Tool",
+    "software_type": "Analysis Tool"
+  }
+}

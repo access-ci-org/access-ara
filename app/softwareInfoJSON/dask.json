@@ -1,0 +1,23 @@
+{
+    "software": "dask",
+    "overview": "Dask is a flexible parallel computing library in Python that enables scalable data processing. It provides advanced parallel computing capabilities for tasks such as data analytics, machine learning, and complex computations, leveraging task scheduling and distributed computing.",
+    "core_features": [
+        "Scalable computing for large datasets",
+        "Parallelization with task scheduling",
+        "Lazy evaluation for efficient computation graphs",
+        "Integration with NumPy, Pandas, and scikit-learn",
+        "Distributed computing across clusters"
+    ],
+    "general_tags": [
+        "parallel computing",
+        "distributed computing",
+        "scalable data processing",
+        "Python library"
+    ],
+    "additional_tags": {
+        "research_discipline": "Data Science",
+        "research_area": "Parallel Computing",
+        "software_class": "Parallel Computing Tools",
+        "software_type": "Open Source"
+    }
+}

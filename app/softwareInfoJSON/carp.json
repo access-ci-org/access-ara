@@ -1,0 +1,20 @@
+{
+  "software_name": "CARP",
+  "comprehensive_overview": "CARP (Cardiac Arrhythmia Research Package) is a computational software package designed for simulating cardiac electrical activity and arrhythmias. It is specifically used for studying the complex electrical behavior of the heart.",
+  "core_features": [
+    "Simulation of cardiac electrical activity",
+    "Investigation of arrhythmias",
+    "Modeling of heart tissue behavior"
+  ],
+  "general_tags": [
+    "Cardiac simulation",
+    "Arrhythmia research",
+    "Biomedical modeling"
+  ],
+  "additional_tags": {
+    "research_discipline": "Biomedical Engineering",
+    "research_area": "Cardiology",
+    "software_class": "Simulation",
+    "software_type": "Computational"
+  }
+}

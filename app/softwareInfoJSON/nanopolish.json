@@ -1,0 +1,22 @@
+{
+    "software_name": "nanopolish",
+    "comprehensive_overview": "Nanopolish is a software package for signal-level analysis of Oxford Nanopore sequencing data. It provides various tools for basecalling, alignment, and variant calling, focusing on improving the accuracy of consensus sequences.",
+    "core_features": [
+        "Signal-level analysis of Oxford Nanopore sequencing data",
+        "Basecalling optimization",
+        "Alignment improvement",
+        "Variant calling and consensus sequence refinement"
+    ],
+    "general_tags": [
+        "sequencing data analysis",
+        "variant calling",
+        "signal processing",
+        "genomics"
+    ],
+    "additional_tags": {
+        "research_discipline": "genomics",
+        "research_area": "DNA sequencing",
+        "software_class": "bioinformatics tool",
+        "software_type": "analysis tool"
+    }
+}

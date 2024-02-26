@@ -1,0 +1,21 @@
+{
+  "software_name": "M4",
+  "comprehensive_overview": "M4 is a macro processor used for generating text files. It is particularly useful for simplifying the creation of text files with repetitive sections or for automating certain text generation tasks.",
+  "core_features": [
+    "Allows for defining macros",
+    "Supports conditional statements",
+    "Provides looping structures",
+    "Can be integrated into various scripting languages"
+  ],
+  "general_tags": [
+    "macro processor",
+    "text generation",
+    "automation"
+  ],
+  "additional_tags": {
+    "research_discipline": "",
+    "research_area": "",
+    "software_class": "text processing",
+    "software_type": "utility"
+  }
+}

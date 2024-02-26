@@ -1,0 +1,16 @@
+{
+  "software_name": "UCX",
+  "comprehensive_overview": "UCX (Unified Communication X) is an open-source communication library designed for high-performance computing (HPC) systems. It provides a unified interface for efficient communication between parallel processes on different architectures, optimizing data transfers and enabling scalable performance in various HPC applications.",
+  "core_features": [
+    "High-performance communication library",
+    "Support for heterogeneous architectures",
+    "Scalable communication optimizations"
+  ],
+  "general_tags": ["High-Performance Computing", "Communication Library", "Open Source"],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "HPC Communications",
+    "software_class": "Communication Library",
+    "software_type": "Library"
+  }
+}

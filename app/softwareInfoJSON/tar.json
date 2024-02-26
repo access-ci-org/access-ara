@@ -1,0 +1,20 @@
+{
+  "software": "tar",
+  "comprehensive_overview": "tar is a command-line utility used for archiving files and directories on Unix-based systems. It allows bundling multiple files and directories into a single archive file, often compressed using utilities like gzip or bzip2. tar is commonly used for backup, data transfer, and file compression tasks.",
+  "core_features": [
+    "File archiving",
+    "Compression support",
+    "Directory bundling"
+  ],
+  "general_tags": [
+    "Unix utility",
+    "archive tool",
+    "file compression"
+  ],
+  "additional_tags": {
+    "research_discipline": "Computer Science",
+    "research_area": "File Management",
+    "software_class": "Utility",
+    "software_type": "Archiving Tool"
+  }
+}

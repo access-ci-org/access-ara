@@ -1,0 +1,20 @@
+{
+  "software": "pyRosetta",
+  "comprehensive_overview": "PyRosetta is a Python-based interface for the molecular modeling software Rosetta. It provides a versatile toolkit for protein structure prediction, design, and analysis by integrating Rosetta functionalities with Python scripting for computational biology research.",
+  "core_features": [
+    "Protein modeling",
+    "Structure prediction",
+    "Molecular design"
+  ],
+  "general_tags": [
+    "computational biology",
+    "protein structure",
+    "molecular modeling"
+  ],
+  "additional_tags": {
+    "research_discipline": "Biology",
+    "research_area": "Computational Biology",
+    "software_class": "Library",
+    "software_type": "Modeling"
+  }
+}
