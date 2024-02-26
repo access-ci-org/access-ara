@@ -149,7 +149,6 @@ def make_df():
     final_order = column_order + rest_of_columns
     df = df[final_order]
 
-    print(df)
     empty_columns = ['Unnamed: 5']
     
     df.drop(empty_columns,axis=1,inplace=True)
