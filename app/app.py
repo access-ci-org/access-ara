@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
+from .softwareStatic import create_static_table
 import json
 import os
 import re
@@ -10,16 +11,21 @@ app = Flask(__name__)
 
 @app.route("/")
 def software_search():
-    df = pd.read_csv('./softwareInfo.csv',na_filter=False)
-    print(type(df))
+    try:
+        df = pd.read_csv("./staticSearch/staticTable.csv", keep_default_na=False)
+    except FileNotFoundError as e:
+
+        df = create_static_table()
+        print(e)
+    
     table = df.to_html(classes='table-striped" id = "softwareTable',index=False,border=1)
 
     return render_template("software_search.html",table=table)
 
 @app.route("/dynamic")
 def software_search_dynamic():
-    df = pd.read_csv('./combined_data.csv')
-    df["Example Use"] = np.nan
+    df = pd.read_csv('./dynamicSearch/combined_data.csv',keep_default_na=False)
+    df.insert(9,"Example Use",np.nan)
     df.fillna('',inplace=True)
     table = df.to_html(classes='table-striped" id = "softwareTableDynamic',index=False,border=1)
     return render_template("software_search.html", table=table)
@@ -27,7 +33,7 @@ def software_search_dynamic():
 @app.route("/example_use/<software_name>")
 def get_example_use(software_name):
 
-    file_directory = "./softwareUse/"
+    file_directory = "./dynamicSearch/softwareUse/"
     
     normalize_software_name = re.escape(software_name).lower()
 

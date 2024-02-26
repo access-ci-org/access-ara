@@ -70,13 +70,25 @@ def read_and_transform_json(file_path):
         print(f"Skipping file due to JSONDecodeError: {file_path}")
         return None
 
-directory_path = "./softwareInfoJSON"
-data_dicts=[]
+def generalized_combine_dfs(df, merge_dfs):
+    for merge_df, merge_key in merge_dfs:
+        # Create temporary columns for case-insensitive comparison
+        df_temp_key = f"{merge_key}_temp"
+        merge_df_temp_key = f"{merge_key}_temp"
+        df[df_temp_key] = df[merge_key].str.lower()
+        merge_df[merge_df_temp_key] = merge_df[merge_key].str.lower()
+        
+        # Perform the merge
+        df = pd.merge(df, merge_df, left_on=df_temp_key, right_on=merge_df_temp_key, how='left', suffixes=('', '_y'))
+        
+        # Cleanup: remove temporary and duplicate columns
+        df.drop(columns=[df_temp_key, merge_df_temp_key] + [col for col in df.columns if col.endswith('_y')], inplace=True)
+    return df
 
 
-def combine_dfs(df, rpAndSoftware):
+def combine_dfs(df, rpAndSoftware, linksOnly):
 
-    #move column 'software name' to the begining
+    #move column 'software name' to the beginning
     df = df[['software name']+[col for col in df.columns if col != 'software name']]
 
     #move column 'overview' to be second from the left
@@ -93,14 +105,25 @@ def combine_dfs(df, rpAndSoftware):
     merged_df.drop('software name_y', axis=1, inplace=True)
     merged_df.rename(columns={'software name_x': 'software name'}, inplace=True)
 
+    linksOnly['software_name_temp'] = linksOnly['software name'].str.lower()
+    merged_df = pd.merge(merged_df,linksOnly, left_on='software_name_temp', right_on='software_name_temp', how='left')
+
+    # cleanup after merge
+    merged_df.drop('software name_y', axis=1, inplace=True)
+    merged_df.rename(columns={'software name_x': 'software name'}, inplace=True)
+
     # drop the temp columns after merge
     merged_df.drop(['software_name_temp'], axis=1,inplace=True)
+
 
     col= merged_df.pop('RP Name')
     merged_df.insert(1,col.name,col)
 
     return(merged_df)
 
+
+directory_path = "./dynamicSearch/softwareInfoJSON"
+data_dicts=[]
 def make_df():
     for filename in os.listdir(directory_path):
         if filename.endswith('.json'):
@@ -112,16 +135,29 @@ def make_df():
     df = pd.DataFrame(data_dicts)
     df.fillna('',inplace=True)
 
-    rpAndSoftware = pd.read_csv('./rpAndSoftwares.csv')
+    rpAndSoftware = pd.read_csv('./dynamicSearch/rpAndSoftwares.csv')
     rpAndSoftware.rename(columns={'Software': 'software name'}, inplace=True)
 
-    return combine_dfs(df, rpAndSoftware)
+    linksOnly = pd.read_csv('./dynamicSearch/softwareLinksOnly.csv')
+    linksOnly.rename(columns={'Software': 'software name'}, inplace=True)
 
+    merge_dfs=[(rpAndSoftware,'software name'),(linksOnly,'software name')]
+    df = generalized_combine_dfs(df, merge_dfs)
+
+    column_order =['software name', 'RP Name', 'overview']
+    rest_of_columns = [col for col in df.columns if col not in column_order]
+    final_order = column_order + rest_of_columns
+    df = df[final_order]
+
+    print(df)
+    empty_columns = ['Unnamed: 5']
     
+    df.drop(empty_columns,axis=1,inplace=True)
+
+    return df
+
 
 df = make_df()
 
-output_file_path = './combined_data.csv'
+output_file_path = './dynamicSearch/combined_data.csv'
 df.to_csv(output_file_path,index=False)
-
-print(df)

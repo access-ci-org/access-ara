@@ -2,6 +2,15 @@ $(document).ready(function(){
     $("#app_content").removeClass()
     $("#app_content").addClass('col')
 
+    var page_title = $("#page_title");
+    var path=window.location.pathname;
+
+    if (path.includes('dynamic')){
+        page_title.text('ACCESS Software Documentation Service (Dynamic)')
+    } else{
+        page_title.text('ACCESS Software Documentation Service (Static)')
+    }
+
     // Function to make URLs clickable
     function makeLinkClickable(data) {
         var urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -15,7 +24,7 @@ $(document).ready(function(){
         "sScrollX": "100%",
         "autoWidth": true,
         columnDefs: [{
-                targets: [5, 6,7,8,9,10], // Direct URL columns
+                targets: [5, 6,7,8,9], // Direct URL columns
                 render: function(data, type, row) {
                     if (type === 'display' && data) {
                         return makeLinkClickable(data);
@@ -36,6 +45,15 @@ $(document).ready(function(){
                     return '<button class="btn btn-info example-use-btn" type="button">Use Example</button>';
                 }
 
+            },
+            {
+                targets: [10,11,12],
+                render: function(data, type, row){
+                    if (type=='display' && data){
+                        return makeLinkClickable(data);
+                    }
+                    return data;
+                }
             }
         ]
     });
