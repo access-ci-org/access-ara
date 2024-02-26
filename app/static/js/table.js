@@ -26,13 +26,13 @@ $(document).ready(function(){
         searchBuilder: {
             conditions: {
                 string: {
-                    '=': null, // This removes the 'Equals' condition for numeric columns
+                    '=': null, // This removes the 'Equals' condition for string columns
                     'null':null,
                     '!null':null,
                     '!=':null
                 },
                 num: {
-                    '=': null, // This removes the 'Equals' condition for numeric columns
+                    '=': null,
                     'null':null,
                     '!null':null,
                     '!=':null
@@ -57,13 +57,13 @@ $(document).ready(function(){
         searchBuilder: {
             conditions: {
                 string: {
-                    '=': null, // This removes the 'Equals' condition for numeric columns
+                    '=': null,
                     'null':null,
                     '!null':null,
                     '!=':null
                 },
                 num: {
-                    '=': null, // This removes the 'Equals' condition for numeric columns
+                    '=': null,
                     'null':null,
                     '!null':null,
                     '!=':null
