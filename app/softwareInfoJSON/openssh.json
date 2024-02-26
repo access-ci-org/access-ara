@@ -1,4 +1,3 @@
-```json
 {
     "software_name": "OpenSSH",
     "comprehensive_overview": "OpenSSH is a free open source suite of tools that help you secure network connections. It encrypts all traffic (including passwords) to effectively eliminate eavesdropping, connection hijacking, and other attacks. OpenSSH provides secure tunneling capabilities and a variety of authentication methods.",
@@ -20,4 +19,3 @@
         "software_type": "Security tool"
     }
 }
-```

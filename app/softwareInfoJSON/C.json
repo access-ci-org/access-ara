@@ -1,4 +1,3 @@
-```json
 {
     "software_name": "C",
     "comprehensive_overview": "C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.",
@@ -20,4 +19,3 @@
         "software_type": "Compiler"
     }
 }
-```

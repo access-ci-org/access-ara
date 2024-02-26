@@ -12,7 +12,7 @@
       "software_type": "programming language"
     },
     {
-      "name": "GCC (GNU Compiler Collection)",
+      "name": "GCC",
       "comprehensive_overview": "GCC is a compiler system produced by the GNU Project supporting various programming languages. It provides support for various programming languages like C, C++, Objective-C, Fortran, etc., and runs on multiple platforms.",
       "core_features": "Compiling code, optimizing performance, supporting multiple programming languages",
       "general_tags": ["compiler", "optimization"],

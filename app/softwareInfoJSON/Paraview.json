@@ -1,4 +1,3 @@
-```json
 {
     "software_name": "Paraview",
     "comprehensive_overview": "Paraview is an open-source, multi-platform data analysis and visualization application. It is designed to visualize large data sets using distributed memory computing resources.",
@@ -24,4 +23,3 @@
         "software_type": "Data Analysis and Visualization"
     }
 }
-```

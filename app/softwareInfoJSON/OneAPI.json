@@ -1,4 +1,3 @@
-```json
 {
     "software_name": "OneAPI",
     "comprehensive_overview": "OneAPI is an open, standards-based, open-source unified programming model that delivers a common developer experience across accelerator architecture. It offers a productive and highly efficient way to write code that targets CPUs, GPUs, FPGAs, and other accelerator devices.",
@@ -21,4 +20,3 @@
         "software_type": "Development Tool"
     }
 }
-```  

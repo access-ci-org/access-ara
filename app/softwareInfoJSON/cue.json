@@ -1,4 +1,3 @@
-```json
 {
     "software_name": "CUE",
     "comprehensive_overview": "CUE is a data constraint language that aims to address different aspects of data validation and transformation, making it easier to define, validate, and manipulate data in a structured and declarative manner.",
@@ -11,4 +10,3 @@
         "software_type": "Constraint Language"
     }
 }
-```
