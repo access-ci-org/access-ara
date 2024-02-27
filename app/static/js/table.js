@@ -214,7 +214,7 @@ $(document).ready(function(){
         var scrollWidth = $scrollBody.get(0).scrollWidth;
         var outerWidth = $scrollBody.outerWidth();
 
-        if (scrollLeft+outerWidth >= scrollWidth){
+        if (scrollLeft+outerWidth >= (scrollWidth-1)){
             $scrollBody.parent().addClass('no-right-shadow');
         }else{
             $scrollBody.parent().removeClass('no-right-shadow');

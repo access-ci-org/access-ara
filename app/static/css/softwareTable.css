@@ -34,7 +34,7 @@
 }
   
   /* Class to hide the left shadow */
-  .no-left-shadow::before {
+.no-left-shadow::before {
     display: none;
-  }
+}
   
