@@ -1,4 +1,4 @@
-I'm assuming you are referring to the Apache Portable Runtime (APR) library which provides a predictable and consistent interface to underlying platform-specific implementations. 
+Apache Portable Runtime (APR) library which provides a predictable and consistent interface to underlying platform-specific implementations. 
 
 Use Case: Use Apache Portable Runtime for developing C/C++ applications that are intended to be portable across different platforms.
 

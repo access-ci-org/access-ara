@@ -1,4 +1,4 @@
-I'm assuming you mean the Free Lossless Audio Codec. Below are some examples with sample input files, formats required, specifications, and details for FLAC.
+Free Lossless Audio Codec. Below are some examples with sample input files, formats required, specifications, and details for FLAC.
 
 Use Case: Encode WAV file to FLAC format
 Code details and examples:

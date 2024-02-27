@@ -1,5 +1,3 @@
-I'm not familiar with a software package called FlexiBLAS. However, if you are looking for a flexible Basic Linear Algebra Subprograms (BLAS) library, you might be referring to BLIS (BLAS-like Library Instantiation Software Framework).
-
 Use Case: BLIS matrix-matrix multiplication
 Code details and examples:
 ```c

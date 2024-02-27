@@ -1,4 +1,4 @@
-I'm not certain which software package you are referring to with "prun," as it is a commonly used term in HPC environments for job submission commands. I will provide examples for a few potential interpretations:
+"prun," as it is a commonly used term in HPC environments for job submission commands. I will provide examples for a few potential interpretations:
 
 1. Use Case: prun MPI job submission command
 Code details and examples:

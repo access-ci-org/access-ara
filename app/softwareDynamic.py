@@ -144,7 +144,7 @@ def make_df():
     merge_dfs=[(rpAndSoftware,'software name'),(linksOnly,'software name')]
     df = generalized_combine_dfs(df, merge_dfs)
 
-    column_order =['software name', 'RP Name', 'overview']
+    column_order =['software name', 'RP Name']
     rest_of_columns = [col for col in df.columns if col not in column_order]
     final_order = column_order + rest_of_columns
     df = df[final_order]
@@ -152,6 +152,8 @@ def make_df():
     empty_columns = ['Unnamed: 5']
     
     df.drop(empty_columns,axis=1,inplace=True)
+
+    df.rename(columns={'overview':'Description'},inplace=True)
 
     return df
 

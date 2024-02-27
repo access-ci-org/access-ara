@@ -1,4 +1,4 @@
-I'm assuming you might be referring to NVIDIA CUDA Toolkit, which includes the `nvcc` compiler for CUDA programming. 
+NVIDIA CUDA Toolkit, which includes the `nvcc` compiler for CUDA programming. 
 
 Use Case: NVIDIA CUDA Toolkit
 Code details and examples:

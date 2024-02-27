@@ -1,8 +1,0 @@
-I'm assuming you are referring to a system performance monitoring tool called "htop" which is commonly used in the context of HPC.
-
-Use Case: Monitor system performance with htop
-Code details and examples:
-```
-htop
-```
-This command will launch the htop tool, providing a real-time overview of the system's performance, including CPU and memory usage, processes running, and more.

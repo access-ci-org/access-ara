@@ -1,4 +1,4 @@
-I'm not sure which specific software package you are referring to. However, if you are looking for a computational biology tool related to phylogenetics, the following example might be relevant:
+Computational biology tool related to phylogenetics, the following example might be relevant:
 
 Use Case: Phylogenetic tree reconstruction using Cactus
 Code details and examples:

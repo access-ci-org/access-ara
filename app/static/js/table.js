@@ -15,43 +15,67 @@ $(document).ready(function(){
     function makeLinkClickable(data) {
         var urlRegex = /(https?:\/\/[^\s]+)/g;
         return data.replace(urlRegex, function(url) {
-            return '<a href="' + url + '" target="_blank">' + url + '</a>';
+            // Insert zero-width space after slashes or dots, as an example
+            var spacedUrl = url.replace(/(\/|\.)+/g, '$&\u200B');
+            return '<a href="' + url + '" target="_blank">' + spacedUrl + '</a>';
         });
     }
 
     var staticTable = $('#softwareTable').DataTable({
-        dom:'Qlfrtip',
         "sScrollX": "100%",
         "autoWidth": true,
         searchBuilder: {
             conditions: {
                 string: {
-                    '=': null, // This removes the 'Equals' condition for string columns
-                    'null':null,
-                    '!null':null,
-                    '!=':null
-                },
-                num: {
                     '=': null,
                     'null':null,
                     '!null':null,
-                    '!=':null
+                    '!=':null,
+                    'starts':null,
+                    '!starts':null,
+                    'ends':null,
+                    '!ends':null,
+                    '!contains':null,
                 },
             }
         },
-        columnDefs: [{
-                targets: [5, 6,7,8,9], // Direct URL columns
-                render: function(data, type, row) {
-                    if (type === 'display' && data) {
-                        return makeLinkClickable(data);
+        dom:'Qlfrtip',
+        columnDefs: 
+            [
+                {
+                    searchBuilder: {
+                        defaultCondition: 'contains'
+                    },
+                    targets:[0,1,2,3,4,5,6,7,8,9],
+                },
+                {   // Direct URL columns
+                    targets: [6,7,8,9], 
+                    render: function(data, type, row) {
+                        if (type === 'display' && data) {
+                            return makeLinkClickable(data);
+                        }
+                        return data;
+                    },
+                    createdCell:function(td){
+                        $(td).css('word-wrap', 'break-all'); // Enable word-wrap
+                        $(td).css('max-width', '300px'); // Ensure max-width is applied
                     }
-                    return data;
+                },
+                {
+                    targets: 6,
+                    width:"700px"
+                },
+                {
+                    targets:5,
+                    width:"50px"
                 }
-            }]
+            ],
+        layout:{
+            top1:"searchBuilder"
+        }
     });
 
     var dynamicTable = $('#softwareTableDynamic').DataTable({
-        dom:'Qlfrtip',
         "sScrollX": "100%",
         "autoWidth": true,
         searchBuilder: {
@@ -60,38 +84,56 @@ $(document).ready(function(){
                     '=': null,
                     'null':null,
                     '!null':null,
-                    '!=':null
+                    '!=':null,
+                    'starts':null,
+                    '!starts':null,
+                    'ends':null,
+                    '!ends':null,
+                    '!contains':null,
                 },
-                num: {
-                    '=': null,
-                    'null':null,
-                    '!null':null,
-                    '!=':null
-                },
-            }
+            },
+            
         },
+        dom:'Qlfrtip',
         columnDefs:[
             {
+                searchBuilder:{
+                    defaultCondition:'contains'
+                },
+                targets:[0,1,2,3,4,5,6,7,8,9,10,11,12]
+            },
+            {   // show use case
                 targets:9,
                 render: function(data, type, row){
                     return '<button class="btn btn-info example-use-btn" type="button">Use Example</button>';
                 }
-
             },
-            {
+            {   // columns with links
                 targets: [10,11,12],
                 render: function(data, type, row){
                     if (type=='display' && data){
                         return makeLinkClickable(data);
                     }
                     return data;
+                },
+                createdCell:function(td){
+                    $(td).css('word-wrap', 'break-all'); // Enable word-wrap
+                    $(td).css('max-width', '400px'); // Ensure max-width is applied
                 }
+            },
+            {   // description column
+                targets:2,
+                width:"700px",
+            },
+            {
+                targets:3,
+                width:"300px"
             }
-        ]
+        ],
+        layout:{
+            top1:"searchBuilder"
+        }
     });
-
-    console.log($.fn.dataTable.SearchBuilder.conditions);
-
 
     // Initialize a Showdown converter with the Highlight.js extension
     var converter = new showdown.Converter({

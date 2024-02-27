@@ -1,4 +1,4 @@
-I'm assuming you are referring to the Tkinter Python GUI toolkit. 
+Tkinter Python GUI toolkit. 
 
 Use Case: Creating a simple GUI window using Tkinter
 Code details and examples:

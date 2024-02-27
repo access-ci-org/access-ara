@@ -1,4 +1,4 @@
-I'm assuming you are referring to the software package "ferret" used for the analysis and visualization of oceanographic data.
+"ferret" is used for the analysis and visualization of oceanographic data.
 
 Use Case: Loading data file in Ferret
 Code details and examples:

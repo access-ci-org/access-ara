@@ -1,4 +1,4 @@
-I'm assuming you meant to ask about the Imlib2 library for image manipulation. 
+Imlib2 library for image manipulation. 
 
 Use Case: Image loading and manipulation with Imlib2
 Code details and examples:

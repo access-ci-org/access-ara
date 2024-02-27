@@ -1,4 +1,4 @@
-I'm not sure what "tbb32" refers to, but it could potentially be related to the Intel Threading Building Blocks (TBB) library. If you meant the Intel TBB library, I can provide an example for using it.
+"tbb32" refers to, the Intel Threading Building Blocks (TBB) library. 
 
 Use Case: Parallelize a simple loop using Intel TBB
 Code details and examples:

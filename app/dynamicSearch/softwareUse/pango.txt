@@ -1,4 +1,4 @@
-I'm guessing you are referring to the PANGO font system used for rendering text. Here are some details and examples for PANGO:
+PANGO font system used for rendering text. Here are some details and examples for PANGO:
 
 Use Case: Text rendering with PANGO
 Code details and examples:

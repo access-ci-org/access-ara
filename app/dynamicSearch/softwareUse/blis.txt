@@ -1,4 +1,4 @@
-I'm not sure about the HPC software package you are referring to. It seems like you might be looking for a BLAS (Basic Linear Algebra Subprograms) library. BLIS is an optimized BLAS library that stands for BLAS-Like Library Instantiation Software. 
+BLIS is an optimized BLAS library that stands for BLAS-Like Library Instantiation Software. 
 
 Use Case: BLAS-like library instantiation software (BLIS)
 Code details and examples:

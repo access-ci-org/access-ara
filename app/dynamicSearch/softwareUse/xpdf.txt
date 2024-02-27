@@ -1,4 +1,4 @@
-I'm assuming you are referring to the Xpdf software suite which includes tools for PDF file manipulation and rendering. 
+Xpdf software suite which includes tools for PDF file manipulation and rendering. 
 
 Use Case: Extract text from a PDF file
 Code details and examples:

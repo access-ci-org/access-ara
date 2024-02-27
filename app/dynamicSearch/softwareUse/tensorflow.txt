@@ -1,5 +1,3 @@
-I'm assuming you are interested in how to use TensorFlow for a specific use case. If you need information on a different aspect of TensorFlow, please let me know. 
-
 Use Case: Training a simple neural network to classify handwritten digits using TensorFlow.
 
 Code details and examples:

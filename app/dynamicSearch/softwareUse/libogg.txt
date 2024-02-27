@@ -1,4 +1,4 @@
-I'm assuming you want to work with the libogg library for handling Ogg bitstreams. Here is an example of using libogg.
+libogg library for handling Ogg bitstreams. Here is an example of using libogg.
 
 Use Case: Encode a WAV audio file to Ogg format using the libogg library.
 Code details and examples:

@@ -1,4 +1,4 @@
-I'm assuming you are referring to DALTON, a molecular electronic structure program. Below are some examples and details for DALTON:
+DALTON, a molecular electronic structure program. Below are some examples and details for DALTON:
 
 Use Case: Molecular Geometry Optimization
 Code details and examples:

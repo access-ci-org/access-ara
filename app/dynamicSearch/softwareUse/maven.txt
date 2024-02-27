@@ -1,4 +1,4 @@
-I'm assuming you are looking for examples related to Maven, a build automation tool primarily used for Java projects.
+Maven, a build automation tool primarily used for Java projects.
 
 Use Case: Build a Java project using Maven
 Code details and examples:

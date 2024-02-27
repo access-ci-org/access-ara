@@ -1,4 +1,4 @@
-I'm assuming you are referring to the `pax` command in Unix-like operating systems, which is used for creating and extracting cpio archives.
+`pax` command in Unix-like operating systems, which is used for creating and extracting cpio archives.
 
 Use Case: Create a cpio archive with `pax`
 Code details and examples: 

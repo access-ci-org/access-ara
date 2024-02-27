@@ -1,4 +1,4 @@
-I'm guessing you are referring to trimming tools used in bioinformatics for removing low-quality bases or adapter sequences from sequencing data. Here is an example:
+Trimming tools used in bioinformatics for removing low-quality bases or adapter sequences from sequencing data. Here is an example:
 
 Use Case: Trim raw sequencing reads using Trimmomatic
 Code details and examples:

@@ -1,4 +1,4 @@
-I'm assuming you're referring to the material graphene, which is a single layer of carbon atoms arranged in a two-dimensional honeycomb lattice structure. Here are some examples of software tools and libraries related to graphene research:
+Material graphene, which is a single layer of carbon atoms arranged in a two-dimensional honeycomb lattice structure. Here are some examples of software tools and libraries related to graphene research:
 
 1. Software: Quantum ESPRESSO
    - Use Case: Quantum ESPRESSO is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is widely used for studying the properties of graphene and other materials.

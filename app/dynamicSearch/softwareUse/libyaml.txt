@@ -1,4 +1,4 @@
-I'm assuming you refer to the LibYAML library which is a YAML parser and emitter written in C programming language.
+LibYAML library which is a YAML parser and emitter written in C programming language.
 
 Use Case: Parsing a YAML file using LibYAML
 Code details and examples:

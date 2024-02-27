@@ -1,4 +1,4 @@
-I'm assuming you are referring to IDL (Interactive Data Language) by Harris Geospatial Solutions. 
+IDL (Interactive Data Language) by Harris Geospatial Solutions. 
 
 Use Case: Visualization and analysis of scientific data in astronomy, geosciences, and other fields.
 Code details and examples:
