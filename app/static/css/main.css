@@ -31,3 +31,18 @@ margin-left: 5px;
   line-height: 0;
   padding: inherit;
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* This will vertically center your items */
+  white-space: normal; /* This allows text wrapping */
+}
+
+.navbar-brand img {
+  margin-right: 10px; /* This adds some space between the image and the text */
+}
+
+.navbar-brand-text {
+  flex: 1; /* This ensures the text takes the necessary space */
+  white-space: normal; /* This will wrap the text */
+}

@@ -1,0 +1,40 @@
+.dataTables_scroll {
+    position: relative;
+}
+
+.dataTables_scroll{
+    border:3px solid #999
+}
+
+.dataTables_scroll::after,
+.dataTables_scroll::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    pointer-events: none;
+    width: 40px; /* Width of the shadow */
+}
+  
+/* Right shadow */
+.dataTables_scroll::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0.2), rgba(0,0,0,0));
+}
+
+/* Left shadow */
+.dataTables_scroll::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0));
+}
+  
+/* Class to hide the right shadow */
+.no-right-shadow::after {
+    display: none;
+}
+  
+  /* Class to hide the left shadow */
+  .no-left-shadow::before {
+    display: none;
+  }
+  

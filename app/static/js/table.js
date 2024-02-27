@@ -166,6 +166,69 @@ $(document).ready(function(){
         })
     })
 
+    var $scrollBody = $('.dataTables_scrollBody');
+    var scrollSensitivity = 100; // Distance from edge in pixels.
+    var scrollSpeed = 7; // Speed of the scroll step in pixels.
+    var scrollInterval;
+    var scrollDirection;
+  
+    function startScrolling(direction) {
+      if (scrollInterval) {
+        clearInterval(scrollInterval);
+      }
+      scrollDirection = direction;
+      scrollInterval = setInterval(function() {
+        var currentScroll = $scrollBody.scrollLeft();
+        $scrollBody.scrollLeft(currentScroll + scrollSpeed * scrollDirection);
+      }, 10); // Interval in milliseconds
+    }
+  
+    function stopScrolling() {
+      clearInterval(scrollInterval);
+    }
+  
+    // Event listener for mouse movement in the scroll body.
+    $scrollBody.mousemove(function(e) {
+      var $this = $(this);
+      var offset = $this.offset();
+      var scrollWidth = $this.get(0).scrollWidth;
+      var outerWidth = $this.outerWidth();
+      var x = e.pageX - offset.left;
+  
+      // Right edge of the table.
+      if (scrollWidth > outerWidth && x > outerWidth - scrollSensitivity) {
+        startScrolling(1); // Scroll right
+      }
+      // Left edge of the table.
+      else if (x < scrollSensitivity) {
+        startScrolling(-1); // Scroll left
+      } else {
+        stopScrolling();
+      }
+    });
+  
+    $scrollBody.mouseleave(stopScrolling);
+
+    function checkScrollEdges(){
+        let scrollLeft = $scrollBody.scrollLeft();
+        var scrollWidth = $scrollBody.get(0).scrollWidth;
+        var outerWidth = $scrollBody.outerWidth();
+
+        if (scrollLeft+outerWidth >= scrollWidth){
+            $scrollBody.parent().addClass('no-right-shadow');
+        }else{
+            $scrollBody.parent().removeClass('no-right-shadow');
+        }
+
+        if (scrollLeft===0){
+            $scrollBody.parent().addClass('no-left-shadow');
+        }else{
+            $scrollBody.parent().removeClass('no-left-shadow');
+        }
+    }
+    checkScrollEdges();
+    $scrollBody.on('scroll',checkScrollEdges);
+
 });
 
 // Define the Highlight.js extension for Showdown
