@@ -1,5 +1,5 @@
 {
-    "name": "Bioconductor",
+    "software": "Bioconductor",
     "comprehensive_overview": "Bioconductor provides tools for the analysis and comprehension of high-throughput genomic data. It is based on R programming language and offers a wide range of packages for bioinformatics and computational biology.",
     "core_features": "Genomic data analysis, visualization, statistical methods, bioinformatics workflows",
     "general_tags": ["bioinformatics", "genomics", "computational biology"],
