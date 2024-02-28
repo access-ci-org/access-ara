@@ -59,11 +59,9 @@ def get_rp_data_tables(rpNamesList):
         rpSupports = {
                         'Functionality':['Supports jobs that have a graphical component',
                                                 'GPU',
-                                                'Job is always active',
                                                 'Has a virtual machine or supports virtualization'],
                         'Suitability':[rp.graphical,
                                        rp.gpu,
-                                       rp.always_running,
                                        rp.virtual_machine]
                     }
         df = pd.DataFrame(data=rpSupports)

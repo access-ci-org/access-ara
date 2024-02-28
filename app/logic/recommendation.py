@@ -273,18 +273,6 @@ def get_recommendations(formData):
             else:
                 scoreBoard[rp] = {'score': 1, 'reasons': ["GPU"]} 
 
-    # Job needs to be running always
-    alwaysRunningNeeded = formData.get("job-run")
-    if alwaysRunningNeeded == yes:
-        arRps = RPS.select().where(RPS.always_running > 0)
-        for rp in arRps:
-            suitability = 10        # Prioritize always running to bring Jetstream2 up
-            if rp.name in scoreBoard:
-                scoreBoard[rp.name]['score'] = calculate_points(scoreBoard[rp.name]['score'],suitability)
-                scoreBoard[rp.name]['reasons'].append("Always Running")
-            else:
-                scoreBoard[rp.name] = {'score': max(suitability,1), 'reasons': ["Always Running"]}
-
     # Virtual machine
     VmNeeded = formData.get("vm")
     if VmNeeded == yes:
