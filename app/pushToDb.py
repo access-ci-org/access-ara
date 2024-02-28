@@ -5,8 +5,6 @@ from models.rpGUI import RpGUI
 from models.rpMemory import RpMemory
 from models.researchField import ResearchFields
 from models.rpResearchField import RpResearchField
-from models.jobClass import JobClass
-from models.rpJobClass import RpJobClass
 from confluence.confluenceAPI import get_conf, get_page_children_ids, get_tabulated_page_data
 from confluence.APIValidation import validate_storage_table, validate_suitability, validate_memory_table
 
@@ -200,27 +198,6 @@ def update_rp_table_form_conf(tables,pageName):
     else:
         messages.append(msg+(". Fields data was not updated."))
         print(msg+(". Fields data was not updated."))
-
-    # get the data for the jobClass tables, validate it, delete the current table, and create a new one with the new data
-    jobClassTable = tables[5]
-    jobClassIsValid,msg = validate_suitability(jobClassTable)
-    if jobClassIsValid:
-        jobClassTuple = jobClassTable.itertuples(index=False)
-        with db.atomic() as transaction:
-            try:
-                RpJobClass.delete().where(RpJobClass.rp == rp).execute()
-                for item in jobClassTuple:
-                    jobClass, jobClassCreated = JobClass.get_or_create(class_name=item[0])
-                    jobClassData = {'rp':rp,'job_class':jobClass,'suitability':item[1]}
-                    RpJobClass.create(**jobClassData)
-            except Exception as e:
-                msg = f"Error while trying to update {rpName} job class"
-                print(f"{msg} : \n", e)
-                messages.append(msg)
-                transaction.rollback()
-    else:
-        messages.append(msg+(". Job class data was not updated."))
-        print(msg+(". Job class data was not updated."))
 
     print("Errors: ", messages)
 

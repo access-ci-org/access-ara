@@ -1,7 +1,5 @@
 from models import db
 from models.rps import RPS
-from models.jobClass import JobClass
-from models.rpJobClass import RpJobClass
 from models.researchField import ResearchFields
 from models.rpResearchField import RpResearchField
 from models.software import Software
@@ -27,9 +25,9 @@ def recreate_tables():
         try:
             tables = db.get_tables()
             print(f"Dropping tables: {tables}")
-            db.drop_tables([RPS,JobClass,RpJobClass,ResearchFields,RpResearchField,Software,RpSoftware,GUI,RpGUI,RpMemory,RpInfo])
+            db.drop_tables([RPS,ResearchFields,RpResearchField,Software,RpSoftware,GUI,RpGUI,RpMemory,RpInfo])
 
-            db.create_tables([RPS,JobClass,RpJobClass,ResearchFields,RpResearchField,Software,RpSoftware,GUI,RpGUI,RpMemory,RpInfo])
+            db.create_tables([RPS,ResearchFields,RpResearchField,Software,RpSoftware,GUI,RpGUI,RpMemory,RpInfo])
             tables = db.get_tables()
             print(f"Recreated tables: {tables}")
         except Exception as e:
@@ -74,52 +72,6 @@ def reset_with_test_data():
         {"field_name":"Agriculture"},
         {"field_name":"Medicine"},
     ]
-
-    jobClass = [
-        {"class_name":"Data Analytics"},
-        {"class_name":"Data Mining"},
-        {"class_name":"NLP"},
-        {"class_name":"Textual Analysis"},
-        {"class_name":"Modeling and Simulation"},
-        {"class_name":"Bioinformatics"},
-        {"class_name":"Biophysics"},
-        {"class_name":"BioChemistry"},
-        {"class_name":"Fluid Dynamics"},
-        {"class_name":"Image Processing"},
-        {"class_name":"Machine Learning"},
-        {"class_name": "Materials Science"},
-        {"class_name":"Astronomic Science"},
-        {"class_name":"Digital Humanities"},
-        {"class_name":"Computational Chemistry"},
-        {"class_name":"Genomics"},
-        {"class_name":"Deep Learning"},
-        {"class_name":"High Energy Physics"},
-        {"class_name":"Virtual Machine"},
-        {"class_name":"General"},
-        {"class_name":"Parallel"},
-    ]
-    #Class of jobs
-    jobClassAndRps = {"Data Analytics":['delta', 'bridges-2', 'darwin'],
-                    "Data Mining":['darwin'],
-                    "NLP":['kyric'],
-                    "Textual Analysis":['delta'],
-                    "Modeling and Simulation":['delta'],
-                    "Bioinformatics":['kyric','expanse'],
-                    "Biophysics":['kyric','expanse'],
-                    "Biochemistry":['kyric','expanse'],
-                    "Fluid Dynamics":['delta'],
-                    "Materials Science":['expanse'], 
-                    "Image Processing":['darwin'], 
-                    "Machine Learning":['delta','bridges-2','darwin'],
-                    "Astronomic Science":['expanse'], 
-                    "Digital Humanities":[], 
-                    "Computational Chemistry":['expanse'], 
-                    "Genomics":[], 
-                    "Deep Learning":['delta'], 
-                    "High Energy Physics":['expanse'],
-                    "Virtual Machine":['jetstream2'], 
-                    "General":['stampede-2','darwin'], 
-                    "Parallel":['stampede-2']}
     
     #Types of GUI's
     Gui = [
@@ -287,17 +239,6 @@ def reset_with_test_data():
             RpResearchField.insert_many(rpResearch).on_conflict_replace().execute()
 
             print("Adding JobClass data")
-            JobClass.insert_many(jobClass).on_conflict_replace().execute()
-
-            rpJobClass = []
-            for jobClass in list(jobClassAndRps.keys()):
-                for rp in jobClassAndRps[jobClass]:
-                    rpJobClass.append({"rp": RPS.get(RPS.name == rp),
-                    "job_class": JobClass.get(JobClass.class_name == jobClass),
-                    "suitability":1,
-                    })
-            print("Adding RPJobClass data")
-            RpJobClass.insert_many(rpJobClass).on_conflict_replace().execute()
 
             print("Adding GUI data")
             GUI.insert_many(Gui).on_conflict_replace().execute()
@@ -443,7 +384,6 @@ if __name__ == "__main__":
         add_softwares()
         add_info()
         print("Database reset")
-
 
     except Exception as e:
         print(sys.exc_info()[2])
