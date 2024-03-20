@@ -1,19 +1,19 @@
 from models.rps import RPS
 from models.rpMemory import RpMemory
-from models.rpSoftware import RpSoftware
 from logic.research import get_research_fields
 from logic.jobClass import get_job_classes
 from logic.softwares import get_softwares 
 from logic.gui import get_guis
 from confluence.confluenceAPI import get_conf, create_conf_page
 import pandas as pd
+import os
 
 #####################
 # This page is for creating the pages for the RP data and RP software tables
 # The data is pulled from the database and then converted to html tables
 # The tables are then added to the body of the page
 # The pages are then created in Confluence
-# The pages are created under the 'Data for RP Recommendations' page
+# The pages are created under the 'Data for RP Recommendations' (id should be in env as parent_page_id) page
 # This code is not used in the app, but is used to create the pages in Confluence
 # The pages already exist in Confluence, so this code is not needed for production use
 #####################
@@ -113,7 +113,7 @@ def get_rp_software_tables(rpNamesList):
 
 def create_rp_data_conf_pages(conf, rpNamesList):
     dataTablesDict = get_rp_data_tables(rpNamesList)
-    parent_id = 245202949   # id of the parent page ('Data for RP Recommendations' page)
+    parent_id = os.getenv("parent_page_id")
     for rpName in rpNamesList:
 
         title = f'{rpName} Data' # title of the page to be created
@@ -127,7 +127,7 @@ def create_rp_data_conf_pages(conf, rpNamesList):
 
 def create_rp_softwares_conf_pages(conf, rpNamesList):
     softwareTablesDict = get_rp_software_tables(rpNamesList)
-    parent_id = 245202949 # id of the parent page ('Data for RP Recommendations' page)
+    parent_id = os.getenv("parent_page_id")
     for rpName in rpNamesList:
         title = f'{rpName} Software' # title of the page to be created
         body = ''
@@ -139,7 +139,7 @@ def create_rp_softwares_conf_pages(conf, rpNamesList):
 
 def create_total_rp_softwares_conf_pages(conf, rpNamesList):
     softwareDict = get_rp_software_tables(rpNamesList)
-    parent_id = 245202949
+    parent_id = os.getenv("parent_page_id")
     title = "All RP Software"
     body = ''
     for rpName in rpNamesList:
@@ -160,4 +160,3 @@ def create_all_rp_conf_pages():
     create_rp_data_conf_pages(conf,rpNamesList)
     create_rp_softwares_conf_pages(conf,rpNamesList)
     create_total_rp_softwares_conf_pages(conf,rpNamesList)
-

@@ -1,3 +1,4 @@
+import os
 from models import db
 from models.rps import RPS
 from models.gui import GUI
@@ -207,8 +208,9 @@ def update_db_from_conf():
     """
     conf = get_conf()
 
-    # get all the pages under the 'Data for RP Recommendations' page (parent_id = 245202949)
-    pageIds = get_page_children_ids(conf,'245202949')
+
+    parent_id = os.getenv("parent_page_id")
+    pageIds = get_page_children_ids(conf,parent_id)
     for id in pageIds:
         # get the page name and the tables in the page
         tables, pageName = get_tabulated_page_data(conf,pageID=id)

@@ -366,13 +366,13 @@ def add_info():
 
 if __name__ == "__main__":
     try:
-        whichData = sys.argv[1]
-        if whichData == 'test':
+        data_source = sys.argv[1]
+        if data_source == 'test':
             recreate_tables()
             print("Resetting database from test data")
             reset_with_test_data()
 
-        elif whichData == 'conf':
+        elif data_source == 'conf':
             tables = db.get_tables()
             if not db.get_tables():
                 recreate_tables()
