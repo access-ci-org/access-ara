@@ -242,6 +242,7 @@ def update_software_from_conf():
                         # create RpSoftware entries
                         rp_software_data = [{'rp':rp, 'software':software} for software in software_objs]
                         RpSoftware.insert_many(rp_software_data).on_conflict_replace().execute()
+                        print(f"Software for {rp_name} added")
                     except Exception as e:
                         print(f"Error while updating software for RP {rp_name}: {str(e)}")
                         db.rollback()
