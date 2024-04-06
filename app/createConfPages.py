@@ -4,18 +4,18 @@ from logic.research import get_research_fields
 from logic.jobClass import get_job_classes
 from logic.softwares import get_softwares 
 from logic.gui import get_guis
-from confluence.confluenceAPI import get_conf, create_conf_page
+from confluence.confluenceAPI import ConfluenceAPI
 import pandas as pd
 import os
 
 #####################
+# This code is not used in the app, but is used to create the pages in Confluence
+# The pages already exist in Confluence, so this code is not needed for production use
 # This page is for creating the pages for the RP data and RP software tables
 # The data is pulled from the database and then converted to html tables
 # The tables are then added to the body of the page
 # The pages are then created in Confluence
 # The pages are created under the 'Data for RP Recommendations' (id should be in env as parent_page_id) page
-# This code is not used in the app, but is used to create the pages in Confluence
-# The pages already exist in Confluence, so this code is not needed for production use
 #####################
 
 def get_rp_data_tables(rpNamesList):
@@ -111,7 +111,7 @@ def get_rp_software_tables(rpNamesList):
     return tablesDict
 
 
-def create_rp_data_conf_pages(conf, rpNamesList):
+def create_rp_data_conf_pages(conf_api, rpNamesList):
     dataTablesDict = get_rp_data_tables(rpNamesList)
     parent_id = os.getenv("parent_page_id")
     for rpName in rpNamesList:
@@ -123,9 +123,9 @@ def create_rp_data_conf_pages(conf, rpNamesList):
         for table in dataTablesDict[rpName]:
             body += table.to_html(index=False,classes='confluenceTable')
 
-        create_conf_page(conf,title=title,body=body,parent_id=parent_id)
+        conf_api.create_page(title=title,body=body,parent_id=parent_id)
 
-def create_rp_softwares_conf_pages(conf, rpNamesList):
+def create_rp_softwares_conf_pages(conf_api, rpNamesList):
     softwareTablesDict = get_rp_software_tables(rpNamesList)
     parent_id = os.getenv("parent_page_id")
     for rpName in rpNamesList:
@@ -135,9 +135,9 @@ def create_rp_softwares_conf_pages(conf, rpNamesList):
         # convert each dataframe table to html table and add to body of the page
         for table in softwareTablesDict[rpName]:
             body += table.to_html(index=False,classes='confluenceTable')
-        create_conf_page(conf,title=title,body=body,parent_id=parent_id)
+        conf_api.create_page(title=title,body=body,parent_id=parent_id)
 
-def create_total_rp_softwares_conf_pages(conf, rpNamesList):
+def create_total_rp_softwares_conf_pages(conf_api, rpNamesList):
     softwareDict = get_rp_software_tables(rpNamesList)
     parent_id = os.getenv("parent_page_id")
     title = "All RP Software"
@@ -147,16 +147,16 @@ def create_total_rp_softwares_conf_pages(conf, rpNamesList):
             body += rpName.to_html(Index=False, classes='confluenceTable')
             body += table.to_html(index=False, classes='confluenceTable')
 
-    create_conf_page(conf, title=title, body=body, parent_id=parent_id)
+    conf_api.create_page(title=title, body=body, parent_id=parent_id)
 
 
 def create_all_rp_conf_pages():
-    conf = get_conf()
+    conf_api = ConfluenceAPI()
 
     # get all the RP names
     rps = RPS.select().order_by(RPS.name)
     rpNamesList = [rp.name for rp in rps]
 
-    create_rp_data_conf_pages(conf,rpNamesList)
-    create_rp_softwares_conf_pages(conf,rpNamesList)
-    create_total_rp_softwares_conf_pages(conf,rpNamesList)
+    create_rp_data_conf_pages(conf_api,rpNamesList)
+    create_rp_softwares_conf_pages(conf_api,rpNamesList)
+    create_total_rp_softwares_conf_pages(conf_api,rpNamesList)

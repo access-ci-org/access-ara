@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-from dotenv import load_dotenv
 import json
 from .models.rps import RPS
 from .models.gui import GUI
@@ -63,5 +62,4 @@ def check_conf_page(pageId):
                            pageName=pageName)
 
 if __name__ == '__main__':
-    load_dotenv()
     app.run(debug=True, host='0.0.0.0', port=8080)

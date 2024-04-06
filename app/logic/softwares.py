@@ -1,5 +1,5 @@
-from ..models.rps import RPS
-from ..models.rpSoftware import RpSoftware
+from models.rps import RPS
+from models.rpSoftware import RpSoftware
 
 def get_softwares(rpName):
     """

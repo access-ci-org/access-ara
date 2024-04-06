@@ -9,7 +9,7 @@ from models.rpGUI import RpGUI
 from models.rpMemory import RpMemory
 from models.rpInfo import RpInfo
 from logic.rp_modules import get_modules_and_versions
-from pushToDb import update_db_from_conf
+from updateDBFromConf import update_rps_from_conf, update_software_from_conf
 import glob #for reading the text files
 import sys
 import re
@@ -371,17 +371,19 @@ if __name__ == "__main__":
             recreate_tables()
             print("Resetting database from test data")
             reset_with_test_data()
+            add_softwares()
 
         elif data_source == 'conf':
             tables = db.get_tables()
             if not db.get_tables():
                 recreate_tables()
             print("Resetting database from conf")
-            update_db_from_conf()
+            update_rps_from_conf()
+            print("Updating softwares from conf")
+            update_software_from_conf()
 
         else:
             print("Invalid argument for reset_database.\nPass in 'test' to use the test data or 'conf' to use the data from confluence")
-        add_softwares()
         add_info()
         print("Database reset")
 
