@@ -71,13 +71,6 @@ def get_image(filename):
 
     return send_file(f'static/images/{filename}', mimetype=mimetype)
 
-@app.route("/login")
-def access_login():
-    return redirect("https://support.access-ci.org/login")
-
-@app.route("/password-reset")
-def access_password_reset():
-    return redirect("https://identity.access-ci.org/password-reset")
 
 if __name__ == '__main__':
     load_dotenv()
