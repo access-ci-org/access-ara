@@ -3,9 +3,44 @@ import { fieldTagify, softwareTagify,
         addFieldTagify, addSoftwareTagify,
         fieldInWhitelist, softwareInWhitelist } from "./tags.js";
 
-$(document).ready(function(){ 
+import {header, siteMenus, footer, footerMenus, universalMenus} from "https://esm.sh/@access-ci/ui@0.2.0"
+
+const siteItems =[
+    {
+        name: "Report an Issue",
+        href: "/"
+    },
+    {
+        name: "Software Discovery Service",
+        href: "/"
+    }
+]
+
+$(document).ready(function(){
     $('html,body').animate({scrollTop:0},'fast')
 
+    universalMenus({
+        loginUrl: "/login",
+        logoutUrl: "/logout",
+        siteName: "Allocations",
+        target: document.getElementById("universal-menus"),
+    });
+    header({
+        siteName: "Support",
+        target: document.getElementById("header")
+    });
+    siteMenus({
+        items: siteItems,
+        siteName: "Allocations",
+        target: document.getElementById("site-menus"),
+      });
+
+    footerMenus({
+        items: siteItems,
+        target: document.getElementById("footer-menus"),
+    });
+    footer({ target: document.getElementById("footer") });
+    
     //event listeners for tagify fields
     addFieldTagify.on("invalid", fieldInWhitelist)
 
