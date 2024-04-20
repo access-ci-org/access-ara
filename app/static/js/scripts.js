@@ -40,7 +40,12 @@ $(document).ready(function(){
         target: document.getElementById("footer-menus"),
     });
     footer({ target: document.getElementById("footer") });
-    
+
+    const shadowHost = document.getElementById('universal-menus');
+    const shadowRoot = shadowHost.shadowRoot;
+    const loginButton = shadowRoot.querySelector('li:last-child button');
+    loginButton.remove();
+
     //event listeners for tagify fields
     addFieldTagify.on("invalid", fieldInWhitelist)
 
@@ -166,7 +171,6 @@ $(document).ready(function(){
         let form = document.getElementById("recommendation-form");
         form.reset();
     })
-    
 
 });
 
