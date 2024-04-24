@@ -5,11 +5,9 @@ import { fieldTagify, softwareTagify,
 
 import {header, siteMenus, footer, footerMenus, universalMenus} from "https://esm.sh/@access-ci/ui@0.2.0"
 
+import { showAlert } from './alerts.js';
+
 const siteItems =[
-    {
-        name: "Report an Issue",
-        href: "/"
-    },
     {
         name: "Software Discovery Service",
         href: "https://access-sds.ccs.uky.edu:7080/"
@@ -73,7 +71,7 @@ $(document).ready(function(){
                     formDataObject = formData
                 }else{
                     let alertMsg = "Not enough information to make recommendation. Please provide a more detailed response"
-                    showAlert(alertMsg)
+                    showAlert(alertMsg, 'danger')
                 }
             }).catch(function(error){
                 console.log("error when calculating score: ", error)
@@ -82,7 +80,7 @@ $(document).ready(function(){
         else
         {
             let alertMsg = "Please fill out all of the required fields"
-            showAlert(alertMsg)
+            showAlert(alertMsg, 'danger')
         }
         return false
     })
@@ -173,22 +171,6 @@ $(document).ready(function(){
     })
 
 });
-
-function showAlert(alertMsg){
-    $("#alert-div").append(
-        `<div class="alert alert-danger alert-dismissible fade show" id="alert" role="alert">
-            ${alertMsg}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>`
-    )
-    $("#alert").fadeTo(2000, 500).slideUp(1000, function(){
-        $("#alert").slideUp(1000);
-        $("#alert").alert('close')
-    });
-    $('html,body').animate({scrollTop:0},'fast')
-}
 
 function validateForm() {
     var valid = 1;

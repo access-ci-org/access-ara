@@ -1,6 +1,8 @@
-from flask import Flask, render_template, request, send_file, redirect
+from flask import Flask, render_template, request, send_file, redirect, jsonify
 from dotenv import load_dotenv
 import json
+import os
+from urllib.request import urlopen
 from .models.rps import RPS
 from .models.gui import GUI
 from .models.researchField import ResearchFields
@@ -8,6 +10,7 @@ from .models.software import Software
 from .models.rpInfo import RpInfo
 from .logic.form_logging import log_form_data
 from .logic.recommendation import get_recommendations
+from .logic.reports import sanitize_and_process_reports
 from .confluence.checkPage import check_page
 
 app = Flask(__name__, static_folder='static')
@@ -70,6 +73,29 @@ def get_image(filename):
         mimetype='image/svg+xml'
 
     return send_file(f'static/images/{filename}', mimetype=mimetype)
+
+@app.route("/report-issue", methods=['POST'])
+def report_issue():
+    issue_report = request.get_json()
+
+    report = sanitize_and_process_reports(issue_report)
+    current_datetime = report['datetime']
+
+    capture_data_url = report['captureDataUrl']
+    report.pop('captureDataUrl')
+
+    report_folder = os.path.join('reports', current_datetime)
+    os.makedirs(report_folder, exist_ok=True)
+    report_filename = os.path.join(report_folder, 'report.json')
+    with open(report_filename, 'w') as f:
+        json.dump(report, f, indent=4)
+
+    capture_data = urlopen(capture_data_url).read()
+    capture_filename = os.path.join(report_folder, report['captureFilename'])
+    with open(capture_filename, 'wb') as f:
+        f.write(capture_data)
+
+    return jsonify({'message': 'Issue reported successfully'})
 
 
 if __name__ == '__main__':
