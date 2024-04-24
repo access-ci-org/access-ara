@@ -12,7 +12,7 @@ const siteItems =[
     },
     {
         name: "Software Discovery Service",
-        href: "https://access-sds.ccs.uky.edu:7080/"
+        href: "https://access-sds.ccs.uky.edu:8080/"
     }
 ]
 
