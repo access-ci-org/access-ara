@@ -21,11 +21,11 @@
         {% endblock %}
     </title>
 </head>
-<body class="bg-light" style="display: flex; flex-direction: column; min-height: 100vh;">
+<body id="body" style="display: flex; flex-direction: column; min-height: 100vh;">
     <div style="flex: 1;">
         {%block content%}
             <div>
-                <nav class="navbar navbar-light" style="background-color: #1a5b6e;">
+                <nav>
                     {%include 'nav.html'%}
                 </nav>
             </div>
@@ -42,7 +42,7 @@
                         {% endblock%}
                     </div>
                     <div class="w-100"></div>
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         {%block app_content%}
                             {#application content is added here#}
                         {%endblock%}

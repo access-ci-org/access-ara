@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file, redirect
+from dotenv import load_dotenv
 import json
 from .models.rps import RPS
 from .models.gui import GUI
@@ -9,7 +10,7 @@ from .logic.form_logging import log_form_data
 from .logic.recommendation import get_recommendations
 from .confluence.checkPage import check_page
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 @app.route("/")
 def recommender_page():
@@ -60,6 +61,16 @@ def check_conf_page(pageId):
     return render_template("check_page.html",
                            messages=messages,
                            pageName=pageName)
+
+@app.route("/images/<filename>")
+def get_image(filename):
+    if 'png' in filename:
+        mimetype = 'image/png'
+    elif 'svg' in filename:
+        mimetype='image/svg+xml'
+
+    return send_file(f'static/images/{filename}', mimetype=mimetype)
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)
