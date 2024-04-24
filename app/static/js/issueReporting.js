@@ -34,6 +34,7 @@ function enterReportingState(){
     var alertType = 'info';
     showAlert(alertDivMessage, alertType);
     $("#reportIssueText").text('Cancel');
+    $("#submitModal #reportIssueText").text('Cancel');
     $('body').css('cursor', 'crosshair');
     $('body').on('click', handleIssueReportClick);
     $('body').on('mousemove', handleMouseMove);
@@ -200,3 +201,18 @@ $('#report-modal').on('hidden.bs.modal', function(e) {
     issueReport = {};
     $("#reportDetails").text('');
 });
+
+$("#submitModal #reportIssueBtn").on('click', function() {
+    event.stopPropagation();
+    if (!reportingIssue) {
+      enterReportingState();
+    } else {
+      exitReportingState();
+    }
+  });
+  
+  $("#submitModal #customReportBtn").on('click', function() {
+    $("#customIssueText").val('');
+    $("#reportFeedback").val('');
+    $("#report-modal").modal('show');
+  });
