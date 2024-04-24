@@ -1,3 +1,4 @@
+import os
 from models import db
 from models.rps import RPS
 from models.gui import GUI
@@ -5,7 +6,9 @@ from models.rpGUI import RpGUI
 from models.rpMemory import RpMemory
 from models.researchField import ResearchFields
 from models.rpResearchField import RpResearchField
-from confluence.confluenceAPI import get_conf, get_page_children_ids, get_tabulated_page_data
+from models.software import Software
+from models.rpSoftware import RpSoftware
+from confluence.confluenceAPI import ConfluenceAPI
 from confluence.APIValidation import validate_storage_table, validate_suitability, validate_memory_table
 
 def get_rp_storage_data(storageTable):
@@ -201,20 +204,52 @@ def update_rp_table_form_conf(tables,pageName):
 
     print("Errors: ", messages)
 
-def update_db_from_conf():
+def update_rps_from_conf():
     """
-    This function is used to update the database from the confluence pages
+    This function is used to update all rp information in the database from the confluence pages
     """
-    conf = get_conf()
+    conf_api = ConfluenceAPI()
 
-    # get all the pages under the 'Data for RP Recommendations' page (parent_id = 245202949)
-    pageIds = get_page_children_ids(conf,'245202949')
+    parent_id = os.getenv("parent_page_id")
+    pageIds = conf_api.get_page_children_ids(parent_id)
     for id in pageIds:
         # get the page name and the tables in the page
-        tables, pageName = get_tabulated_page_data(conf,pageID=id)
+        tables, pageName = conf_api.get_tabulated_page_data(page_id=id)
         if ('Data' in pageName):    # if the page name contains 'Data', then it is a data page
             update_rp_table_form_conf(tables,pageName)
 
+def update_software_from_conf():
+    """
+    This function is used to update all rp software information in the database from the confluence pages
+    """
+    conf_api = ConfluenceAPI()
+    pageIds = conf_api.get_page_children_ids()
+    for id in pageIds:
+        table, pageName = conf_api.get_tabulated_page_data(page_id=id)
+        rp_name = pageName.split()[0]
+        if "Software" in pageName and "All RP Software" != pageName:
+            # read the data from table (its a pandas df)
+            software_list = table[0].iloc[:,0].dropna().tolist()
+
+            # get the rp object based on rp_name
+            rp  = RPS.get_or_none(RPS.name == rp_name)
+            if rp:
+                with db.atomic():
+                    try:
+                        # create or get Software objects
+                        software_objs = [Software.get_or_create(software_name=name)[0] for name in software_list]
+
+                        # create RpSoftware entries
+                        rp_software_data = [{'rp':rp, 'software':software} for software in software_objs]
+                        RpSoftware.insert_many(rp_software_data).on_conflict_replace().execute()
+                        print(f"Software for {rp_name} added")
+                    except Exception as e:
+                        print(f"Error while updating software for RP {rp_name}: {str(e)}")
+                        db.rollback()
+            else:
+                print(f"RP {rp_name} not found")
+
 if __name__ == '__main__':
-    update_db_from_conf()
+    update_rps_from_conf()
+    update_software_from_conf()
     
