@@ -85,7 +85,9 @@ function handleIssueReportClick(event){
         var elementType = target.tagName.toLowerCase();
         var elementId = target.id;
         var elementClass = target.className;
-        var elementText = $(target).text().trim();
+        var elementText = $(target).clone().find('*').addBack().contents().filter(function() {
+          return this.nodeType === 3;   // select only the text
+        }).text().replace(/\s+/g, ' ').trim();  // remove extra formatting and lines
 
         // Check if the clicked element is a table cell
         var tableCellInfo = {};
