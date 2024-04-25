@@ -3,6 +3,8 @@
 {% block scripts %}
     {{super()}}
     <script async type="module" src="../static/js/tags.js"></script>
+    <script async type="module" src="../static/js/issueReporting.js"></script>
+    <script async type="module" src="../static/js/alerts.js"></script>
     <script type="module" src="../static/js/scripts.js"></script>
 {% endblock %}
 
@@ -289,4 +291,5 @@
     <button type="button" class="btn btn-outline-danger" id="clear-form">Clear Form</button>
 </form>
     {%include 'submitModal.html'%}
+    {%include 'reportMOdal.html'%}
 {%endblock%}

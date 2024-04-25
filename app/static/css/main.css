@@ -11,6 +11,10 @@ cursor: pointer;
 margin-left: 5px;
 }
 
+.hovered {
+  border: 2px solid red;
+}
+
 /* Scrollable autocomplete */
 .ui-autocomplete {
   max-height: 200px;

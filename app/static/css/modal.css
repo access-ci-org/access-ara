@@ -93,3 +93,8 @@
     position: right;
     font-weight: bold;
   }
+
+  .modal-darkened {
+    opacity: 0.5;
+    pointer-events: none;
+  }

@@ -36,12 +36,18 @@
                         <div id="alert-div"></div>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col">
-                        {%block page_title %}
-                            {#page title is added here#}
-                        {% endblock%}
+                    <div class="row justify-content-center">
+                        <div class="col justify-content-center">
+                            {%block page_title %}
+                                {#page title is added here#}
+                            {% endblock%}
+                        </div>
                     </div>
-                    <div class="w-100"></div>
+                    <div class="row justify-content-end">
+                        <div class="col-1 text-right">
+                            {%include 'reportBtns.html'%}
+                        </div>
+                    </div>
                     <div class="col-md-8">
                         {%block app_content%}
                             {#application content is added here#}
@@ -71,6 +77,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
     <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css">
+
+    <!-- html2canvas for screen capture -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
 {% endblock %}
 

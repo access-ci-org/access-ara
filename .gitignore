@@ -9,3 +9,5 @@ venv/
 formInfo.log
 .DS_Store
 queryInfo.log
+reports/
+app/reports
