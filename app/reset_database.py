@@ -56,6 +56,7 @@ def reset_with_test_data():
     {"name":"KyRIC", "scratch_tb":10, "longterm_tb":0.5, "graphical":2},
     {"name":"Rockfish", "scratch_tb":10, "longterm_tb":100, "gpu":2},
     {"name":"Stampede-2", "scratch_tb":0, "longterm_tb":1, "graphical":2},
+    {"name":"Stampede-3", "scratch_tb":0, "longterm_tb":1, "graphical":2},
     {"name":"RANCH", "scratch_tb":0, "longterm_tb":20},
     {"name":"Open Science Grid", "scratch_tb":0, "longterm_tb":0.5, "gpu":2},
     {"name":"Open Storage Network", "scratch_tb":0, "longterm_tb":0},
@@ -362,14 +363,14 @@ def add_info():
             print('Adding data to RpInfo')
             RpInfo.insert_many(rpInfo,fields=[RpInfo.rp,RpInfo.blurb,RpInfo.link,RpInfo.documentation]).on_conflict_replace().execute()
             #close the database
-        except:
+        except Exception as e:
             transaction.rollback()
             print(e)
     db.close()
 
 
 if __name__ == "__main__":
-    try:
+    # try:
         data_source = sys.argv[1]
         if data_source == 'test':
             recreate_tables()
@@ -391,7 +392,7 @@ if __name__ == "__main__":
         add_info()
         print("Database reset")
 
-    except Exception as e:
-        print(sys.exc_info()[2])
-        print(e)
+    # except Exception as e:
+    #     print(sys.exc_info()[2])
+    #     print(e)
         
