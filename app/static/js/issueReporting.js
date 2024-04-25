@@ -1,11 +1,11 @@
 import { showAlert } from './alerts.js';
 
 var issueReport = {}
-var reportingIssue = false;
+export var reportingIssue = false;
 var selectedElement = null;
 
 function handleClick(event){
-    if (reportingIssue && event.target !== $("#reportIssueBtn")[0]){
+    if (reportingIssue && !$(event.target).closest('#submitModal').length && event.target !== $("#reportIssueBtn")[0]) {
         event.preventDefault();
         event.stopPropagation();
     }
@@ -51,6 +51,7 @@ function enterReportingState(){
 function exitReportingState(){
     reportingIssue = false;
     $("#reportIssueText").text('Report Issue');
+    $("#submitModal #reportIssueText").text('Report Issue');
     $('body').css('cursor','default');
     $('body').off('click',handleIssueReportClick);
     $('body').off('mousemove', handleMouseMove);
@@ -132,8 +133,10 @@ function handleIssueReportClick(event){
 
             $("#reportDetails").text(reportDetails);
 
+            $("#submitModal").addClass("modal-darkened");
             // Show the modal
             $("#report-modal").modal('show');
+            $("#submitModal").css("overflow-y", "auto")
             
             exitReportingState();
         });
@@ -167,10 +170,14 @@ $("#sendReportBtn").on('click', function() {
 $("#customReportBtn").on('click', function() {
     $("#customIssueText").val('');
     $("#reportFeedback").val('');
+    $("#submitModal").addClass("modal-darkened");
     $("#report-modal").modal('show');
+    $("#submitModal").css("overflow-y", "auto")
+
   });
   
   $("#submitCustomReportBtn").on('click', function() {
+    $("#submitModal").addClass("modal-darkened");
     var customIssue = $("#customIssueText").val();
   
     if (customIssue) {
@@ -200,6 +207,9 @@ $("#customReportBtn").on('click', function() {
 $('#report-modal').on('hidden.bs.modal', function(e) {
     issueReport = {};
     $("#reportDetails").text('');
+    $("#reportFeedback").val('');
+    $("#submitModal").removeClass("modal-darkened");
+    $("#submitModal").css("overflow-y", "auto");
 });
 
 $("#submitModal #reportIssueBtn").on('click', function() {
@@ -215,4 +225,6 @@ $("#submitModal #reportIssueBtn").on('click', function() {
     $("#customIssueText").val('');
     $("#reportFeedback").val('');
     $("#report-modal").modal('show');
+    $("#submitModal").css("overflow-y", "auto")
+
   });

@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, send_file, redirect, jsonify
 from dotenv import load_dotenv
 import json
 import os
+from datetime import datetime
 from urllib.request import urlopen
 from .models.rps import RPS
 from .models.gui import GUI
@@ -78,22 +79,30 @@ def get_image(filename):
 def report_issue():
     issue_report = request.get_json()
 
-    report = sanitize_and_process_reports(issue_report)
-    current_datetime = report['datetime']
+    if issue_report['reportDetails']:
+        report = sanitize_and_process_reports(issue_report)
+        current_datetime = report['datetime']
 
-    capture_data_url = report['captureDataUrl']
-    report.pop('captureDataUrl')
+        capture_data_url = report['captureDataUrl']
+        report.pop('captureDataUrl')
 
-    report_folder = os.path.join('reports', current_datetime)
-    os.makedirs(report_folder, exist_ok=True)
-    report_filename = os.path.join(report_folder, 'report.json')
-    with open(report_filename, 'w') as f:
-        json.dump(report, f, indent=4)
+        report_folder = os.path.join('reports', current_datetime)
+        os.makedirs(report_folder, exist_ok=True)
+        report_filename = os.path.join(report_folder, 'report.json')
+        with open(report_filename, 'w') as f:
+            json.dump(report, f, indent=4)
 
-    capture_data = urlopen(capture_data_url).read()
-    capture_filename = os.path.join(report_folder, report['captureFilename'])
-    with open(capture_filename, 'wb') as f:
-        f.write(capture_data)
+        capture_data = urlopen(capture_data_url).read()
+        capture_filename = os.path.join(report_folder, report['captureFilename'])
+        with open(capture_filename, 'wb') as f:
+            f.write(capture_data)
+    else:
+        current_datetime = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        report_folder = os.path.join('reports', current_datetime)
+        os.makedirs(report_folder, exist_ok=True)
+        report_filename = os.path.join(report_folder, 'report.json')
+        with open(report_filename, 'w') as f:
+            json.dump(issue_report, f, indent=4)
 
     return jsonify({'message': 'Issue reported successfully'})
 

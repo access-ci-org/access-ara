@@ -7,6 +7,8 @@ import {header, siteMenus, footer, footerMenus, universalMenus} from "https://es
 
 import { showAlert } from './alerts.js';
 
+import { reportingIssue } from "./issueReporting.js";
+
 const siteItems =[
     {
         name: "Software Discovery Service",
@@ -90,7 +92,7 @@ $(document).ready(function(){
         // load the form data from the original submition
         let formData = formDataObject
         // Reads the number of boxes/recommendations in the modal to only load the subsequent three
-        var numberOfBoxes = $("#modal-body .box").length;
+        var numberOfBoxes = $("#submitModalBody .box").length;
         calculate_score(formData).then(function(recommendation){
                 
             if (!(recommendation === "{}")){
@@ -115,7 +117,7 @@ $(document).ready(function(){
         // load the form data from the original submition
         let formData = formDataObject
         // Clears the modal
-        document.querySelector('.modal-body').innerHTML = '';
+        document.querySelector('#submitModalBody').innerHTML = '';
         //Calculates the top three and displays them in the modal
         calculate_score(formData).then(function(recommendation){
             if (!(recommendation === "{}")){
@@ -156,7 +158,7 @@ $(document).ready(function(){
       });
 
     $("#submitModal").on('hidden.bs.modal',function(e){
-        $(".modal-body").empty();
+        $("#submitModalBody").empty();
 
     })
 
@@ -171,6 +173,7 @@ $(document).ready(function(){
     })
 
 });
+
 
 function validateForm() {
     var valid = 1;
@@ -302,7 +305,7 @@ async function visualize_recommendations(scores, recNum){
             </div>
             <span class="caret"><i class="fas fa-caret-down"></i></span>
             `;
-        var body = document.querySelector('.modal-body')
+        var body = document.querySelector('#submitModalBody')
         // Add the recommendation box to the modal body
         body.appendChild(box);
 
@@ -359,23 +362,26 @@ function openModal() {
     $("#submitModal").modal("show");
 }
 // Waits for the user to click on a modal box and expands/shrinks upon click. Height is relative to the length of the info inside the body
-document.querySelector('.modal-body').addEventListener('click', function(event) {
-    var target = event.target;
-    var box = target.closest('.box');
-    if (box) {
-        var content = box.querySelector('.body-container');
-        var tags = box.querySelector('.tags-container');
-        // If the box is already open
-        if (box.style.maxHeight){
-            box.style.maxHeight = null;
-            box.classList.toggle('expand');
-        }
-        // If the box is not already open
-        else{
-            var textHeight = content.clientHeight;
-            var tagHeight = tags.clientHeight;
-            box.style.maxHeight = (parseInt(textHeight) + parseInt(tagHeight) + 90 + "px");
-            box.classList.toggle('expand');
+$("#submitModalBody").on('click',function(event){
+    if (!reportingIssue){
+
+        var target = event.target;
+        var box = target.closest('.box');
+        if (box) {
+            var content = box.querySelector('.body-container');
+            var tags = box.querySelector('.tags-container');
+            // If the box is already open
+            if (box.style.maxHeight){
+                box.style.maxHeight = null;
+                box.classList.toggle('expand');
+            }
+            // If the box is not already open
+            else{
+                var textHeight = content.clientHeight;
+                var tagHeight = tags.clientHeight;
+                box.style.maxHeight = (parseInt(textHeight) + parseInt(tagHeight) + 90 + "px");
+                box.classList.toggle('expand');
+            }
         }
     }
 })
