@@ -11,7 +11,7 @@ import { reportingIssue } from "./issueReporting.js";
 
 const siteItems =[
     {
-        name: "Software Discovery Service",
+        name: "Software Documentation Service",
         href: "https://access-sds.ccs.uky.edu:8080/"
     }
 ]
