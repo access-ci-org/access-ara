@@ -8,11 +8,12 @@ from models.gui import GUI
 from models.rpGUI import RpGUI
 from models.rpMemory import RpMemory
 from models.rpInfo import RpInfo
-from logic.rp_modules import get_modules_and_versions
+import csv
 from updateDBFromConf import update_rps_from_conf, update_software_from_conf
 import glob #for reading the text files
 import sys
-import re
+import os
+from peewee import *
 
 def recreate_tables():
 
@@ -262,34 +263,60 @@ def reset_with_test_data():
             print(e)
     db.close()
 
-def add_softwares():
-    db.connect(reuse_if_open=True)
-    #Accessing all of the module text files and putting them into their respective arrays
-    with db.atomic() as transaction:
-        try:
-            modules = glob.glob('./app/softwares/*.txt')
-            rpSftw = {}
-            modulesAndVersions = {}
-            for name in modules:
-                rpName = re.search(r'([^(\\|/)]+)_(.+)', name).group(1) #get just the rp name from file path
-                modulesAndVersions,mods = get_modules_and_versions(name,modulesAndVersions)
-                rpSftw[rpName] = mods
-
-            print("Adding data to Software")
-            Software.insert_many(modulesAndVersions.items(), fields=[Software.software_name,Software.version]).on_conflict_replace().execute()
-
-            #associate modules(softwares) with specific RP
-            rpSoftware = []
-            for item in rpSftw.items():
-                rp = RPS.get(RPS.name == item[0])
-                rpSoftware.extend([(rp,Software.get(Software.software_name==software)) for software in item[1]])
-            print("Adding data to RpSoftware")
-            RpSoftware.insert_many(rpSoftware,fields=[RpSoftware.rp,RpSoftware.software]).on_conflict_replace().execute()
-        except Exception as e:
-            transaction.rollback()
-            print(e)
-    db.close()
+def add_software():
+    """
+    Add software data to the database from a CSV file and associate each software with the correct RP names.
+    """
     
+    file_path = './software/combined_data.csv'
+
+    rp_name_mapping = {
+        "aces": "ACES",
+        "anvil": "Anvil",
+        "bridges": "Bridges-2",
+        "darwin": "DARWIN",
+        "delta": "Delta",
+        "expanse": "Expanse",
+        "faster": "FASTER",
+        "jetstream": "Jetstream2",
+        "ookami": "OOKAMI",
+        "kyric": "KyRIC",
+        "stampede3": "Stampede-3",
+    }
+
+    db.connect(reuse_if_open=True)
+    with open(file_path, 'r') as file:
+        csv_reader = csv.DictReader(file)
+        for row in csv_reader:
+            software_name = row['software name']
+            rp_names = row['RP Name'].split(',')  # Split RP names by comma
+
+            # Check if software already exists, if not create it
+            software, created = Software.get_or_create(software_name=software_name)
+            
+            for rp_name in rp_names:
+                    rp_name = rp_name.strip()  # Remove any leading/trailing whitespace
+                    
+                    # Use the mapping to get the correct RP name
+                    if rp_name in rp_name_mapping:
+                        rp_name = rp_name_mapping[rp_name]
+                    else:
+                        print(f"RP name '{rp_name}' not found in mapping. Skipping this RP for software '{software_name}'.")
+                        continue
+                    
+                    # Get the RP instance
+                    try:
+                        rp = RPS.get(RPS.name == rp_name)
+                    except RPS.DoesNotExist:
+                        print(f"RP '{rp_name}' does not exist in the database. Skipping this RP for software '{software_name}'.")
+                        continue
+                    
+                    # Associate the software with the RP
+                    RpSoftware.get_or_create(software=software, rp=rp)
+
+    db.close()
+
+
 #Adds "info" to the database. This incudes a blurb about them, a link to the ACCESS resources website, and the individual documentation link
 def add_info():
     db.connect(reuse_if_open=True)
@@ -376,7 +403,7 @@ if __name__ == "__main__":
             recreate_tables()
             print("Resetting database from test data")
             reset_with_test_data()
-            add_softwares()
+            add_software()
 
         elif data_source == 'conf':
             tables = db.get_tables()
@@ -391,8 +418,4 @@ if __name__ == "__main__":
             print("Invalid argument for reset_database.\nPass in 'test' to use the test data or 'conf' to use the data from confluence")
         add_info()
         print("Database reset")
-
-    # except Exception as e:
-    #     print(sys.exc_info()[2])
-    #     print(e)
         
